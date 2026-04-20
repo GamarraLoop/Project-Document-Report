@@ -141,20 +141,43 @@ Reforzar la diferenciación de Recitex en todos los canales de marketing, destac
 ### 2.2.1. Diseño de entrevistas
 
 ##### Preguntas Generales
+- ¿Cuál es tu nombre y apellido?
+- ¿Cuántos años tienes?
+- ¿A qué te dedicas?
 
 ---
 
-#### Segmento 1: Conductores Urbanos
+#### Segmento 1: Talleres de confección 
 
 ##### Preguntas principales
+- ¿Qué haces actualmente con los residuos o sobrantes textiles que generas?
+- ¿Qué tipo de materiales sueles desechar o acumular?
+- ¿Con qué frecuencia generas estos excedentes?
+- ¿Cómo decides qué hacer con esos materiales (guardar, botar, reutilizar)?
+- ¿Has intentado venderlos o regalarlos? ¿Cómo fue esa experiencia?
+- ¿Qué es lo más difícil o incómodo al gestionar estos residuos?
+- ¿Cuánto tiempo o esfuerzo te toma lidiar con ellos?
+- ¿Qué tan cómodo te sientes usando aplicaciones móviles en tu trabajo?
+- ¿Qué tan fácil sería para ti tomar una foto de un material y subirla a una app?
+- Si existiera una app donde solo tomas una foto y automáticamente se publica el material para que otros lo recojan, ¿la usarías? ¿Qué debería tener para que realmente te sea útil?
 
 
 
 ---
 
-#### Segmento 2: Administradores de Estacionamientos Independientes
+#### Segmento 2: Artesanos/ recolectores
 
 ##### Preguntas principales
+- ¿Dónde consigues actualmente los materiales textiles que utilizas?
+- ¿Qué tipo de materiales buscas con mayor frecuencia?
+- ¿Qué dificultades tienes para encontrar materiales accesibles o reutilizables?
+- ¿Te ha pasado que no encuentras lo que necesitas? ¿Qué haces en ese caso?
+- ¿Cómo te enteras cuando alguien tiene materiales disponibles?
+- ¿Qué tan importante es para ti la cercanía del lugar donde están los materiales?
+- ¿Cuánto tiempo inviertes buscando materiales?
+- ¿Qué es lo más complicado o frustrante en ese proceso?
+- ¿Qué tan cómodo te sientes usando apps con mapas o ubicación?
+- Si existiera una app donde puedas ver materiales disponibles en un mapa y contactar al taller para recogerlos, ¿la usarías? ¿Qué funcionalidad sería indispensable para ti?
 
 
 ---
