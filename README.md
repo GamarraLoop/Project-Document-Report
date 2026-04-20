@@ -1,140 +1,386 @@
-<h1 style="text-align: center;"> Informe del Trabajo Final </h1>
-<h3 style="text-align: center;"> Universidad Peruana de Ciencias Aplicadas </h3>
+# Capítulo II: Requirements Elicitation & Analysis
 
-<img src=https://github.com/Integradis-OpenSource/TFDocOpenSource/assets/114628079/4be29e42-94e4-4b80-85ae-3433dde891e4 
-style="display: block; 
-margin-left:auto; 
-margin-right: auto; 
-width=50%"/>
+## 2.1. Competidores
+### 2.1.1. Análisis competitivo
 
-<h5 style="text-align: center"> Área: Ingeniería de Software </h5>
+<table>
+  <thead>
+    <tr>
+      <th colspan="6" align="left">Competitive Analysis Landscape</th>
+    </tr>
+    <tr>
+      <th align="left">¿Por qué llevar a cabo este análisis?</th>
+      <th colspan="5" align="left">Identificar las fortalezas, debilidades, oportunidades y amenazas de los principales competidores permite a ParkingNow delimitar su propuesta diferenciada en el mercado local: integrar detección física del estado del espacio con canales digitales de información y gestión, y enfocarse en operadores independientes de pequeña escala.</th>
+    </tr>
+    <tr>
+      <th colspan="2" align="left">(En la cabecera colocar por cada competidor nombre y logo)</th>
+      <th>Recitex<br><></th>
+      <th>Vinted<br><></th>
+      <th>Facebook Marketplace<br><></th>
+      <th>Etsy<br><img src="assets/apparka.png" alt="Logo Apparka" width="90"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="2" valign="middle">Perfil</th>
+      <td><strong>Overview</strong></td>
+      <td>Sistema para gestión de residuos textiles. Conecta talleres de confeccion con artesanos y recolectores.</td>
+      <td>Mercado en línea y comunitario, en el que se permite a los usuarios vender, comprar e intercambiar artículos de segunda mano.</td>
+      <td>Plataforma gratuita dentro de Facebook que permite encontrar, comprar y vender artículos nuevos o de segunda mano.</td>
+      <td>App dedicada al comercio electrónico, que gestiona un mercado online donde se puede comprar y vender artículos de artesanía, vintage y decorativos.</td>
+    </tr>
+    <tr>
+      <td><strong>Ventaja competitiva</strong><br>¿Qué valor ofrece a los clientes?</td>
+      <td>Clasificacion y enfoque sin transacciones monetarias.</td>
+      <td>Cuenta con una de las comisiones más bajas del mercado.</td>
+      <td>Permite una comunicación directa, para concretar transacciones, mediante este.</td>
+      <td>Tarifa por transacción baja e incluye los gastos de envio, Además, cuenta con su propio sistema de pagos.</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="middle">Perfil de Marketing</th>
+      <td><strong>Mercado objetivo</strong></td>
+      <td>Talleres de confección, artesanos, recolectores y micro emprendedores textiles.</td>
+      <td>Jóvenes y adultos interesados en artículos de segunda mano.</td>
+      <td>Publico general que utiliza Facebook.</td>
+      <td>Consumidores de productos del sector manualidades o vintage.</td>
+    </tr>
+    <tr>
+      <td><strong>Estrategias de marketing</strong></td>
+      <td>Alianza con talleres, campañas locales, educación sobre reciclaje textil.</td>
+      <td>Influencers, redes sociales y campañas ecológicas.</td>
+      <td>Publicidad dentro de Facebook.</td>
+      <td>Campañas digitales.</td>
+    </tr>
+    <tr>
+      <th rowspan="3" valign="middle">Perfil de Producto</th>
+      <td><strong>Productos & Servicios</strong></td>
+      <td>App móvil para encontrar residuos textiles</td>
+      <td>App de venta de marcas reconocidas y variedad de productos.</td>
+      <td>App que cuenta con amplia variedad de productos.</td>
+      <td>Aplicación para ubicar productos personalizados y diferenciados.</td>
+    </tr>
+    <tr>
+      <td><strong>Precios & Costos</strong></td>
+      <td>Modelo gratuito para usuarios, posible monetización futura mediante servicios Premium..</td>
+      <td>Comisión baja para vendedores.</td>
+      <td>Gratis, sin comisiones directas.</td>
+      <td>Comisión por publicación y transacción</td>
+    </tr>
+    <tr>
+      <td><strong>Canales de distribución</strong><br>(Web y/o Móvil)</td>
+      <td>Web App, Mobile App y Landing Page.</td>
+      <td>Web y app móvil.</td>
+      <td>Aplicación móvil y presencia web en faceebok.</td>
+      <td>Aplicación móvil y web.</td>
+    </tr>
+    <tr>
+      <th rowspan="4" valign="middle">Análisis SWOT</th>
+      <td><strong>Fortalezas</strong></td>
+      <td>Uso de IA para automatizar procesos, solución especializada e impacto ambiental positivo.</td>
+      <td>Comunidad activa, facilidad de uso.</td>
+      <td>Alcance masivo y cantidad de usuarios.</td>
+      <td>Marca consolidada y productos diferenciados.</td>
+    </tr>
+    <tr>
+      <td><strong>Debilidades</strong></td>
+      <td>Dependencia de adopción inicial en talleres.</td>
+      <td>Control de calidad limitado, tiempo de envios variables y algunos pases con cobertura completa del servicio.</td>
+      <td>Dependencia de los usuarios para los envíos y control de calidad.</td>
+      <td>Riesgo de fraudes</td>
+    </tr>
+    <tr>
+      <td><strong>Oportunidades</strong></td>
+      <td>Crecimiento en enconomia circular en Perú, escalable a otras industrias y unica en el sector específico.</td>
+      <td>Crecimiento de mercado y expansión a nuevos (Latam).</td>
+      <td>Incremento en el mercado de ventas de productos de manera online.  </td>
+      <td>Incremento del comercio digital.</td>
+    </tr>
+    <tr>
+      <td><strong>Amenazas</strong></td>
+      <td>Baja adopción tecnológica en el sector.</td>
+      <td>Alta competencia, perdida de confianza por malas experiencias.</td>
+      <td>Alta competencia de otras apps.</td>
+      <td>Problemas de confianza en métodos de pago afecta su uso.</td>
+    </tr>
+  </tbody>
+</table>
 
-<h5 style="text-align: center"> Curso: Arquitectura De Software Emergentes  </h5>
-<h5 style="text-align: center"> NRC: 10042 </h5>
+---
 
-<h5 style="text-align: center"> Docente: Rojas Malasquez, Royer Edelwer </h5>
+### 2.1.2. Estrategias y tácticas frente a competidores
 
-<h5 style="text-align: center"> Startup:   </h5>
 
-<h5 style="text-align: center"> Producto: ReciTex  </h5>
 
-## Team members:
+---
 
-<div style="text-align: center;">
-  
-|                Nombre                 |   Código   |
-| :-----------------------------------: | :--------: |
-|  Cuya Villegas, Rafael Alberto        |  |
-|  Gongora Castillejos, Williams        |  |
-|  Huanaco Huayta, Elizabeth Lucero     | u20211g522 |
-|  Molina Falcon, Piero Leonardo        |  |
-|  Torres Garcia, Andrés Alberto        |  |
+**Estrategia 1: **
 
-</div>
 
-<h5 style="text-align: center"> Ciclo 2026-10 </h5>
 
-# Registro de Versiones del Informe
+---
 
-El objetivo de esta sección es resumir las modificaciones relevantes que se realizan al informe durante el ciclo de vida del proyecto. Esta sección inicia en una página nueva y se incluye un cuadro con la siguiente estructura:
+**Estrategia 2: **
 
-| Versión |   Fecha    |             Autor             | Descripción de modificación                                                                                                                                                                       |
-| :-----: | :--------: | :---------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|   TB1   | 25/04/2026 | Gongora Castillejos, Williams | Realización de: <br> - Capítulo I: Introducción<br>- Capítulo II: Requirements Elicitation & Analysis <br>- Capítulo III: Requirements specification <br>- Capítulo IV: Strategic-Level Software Design |
 
-# Project Report Collaboration Insights
 
-URL del repositorio para el reporte del proyecto: https://github.com/GamarraLoop/Project-Document-Report
+---
 
-**TB1**
+**Estrategia 3**
 
-<div align="center">
-  <img src="Img/insights-tb1.png">
-</div>
 
-Para el desarrollo del informe perteneciente a la entrega TF, se dividió la implementación de secciones de la siguiente forma para cada integrante del equipo:
+---
 
-| Integrante                        | Tareas Asignadas                                                                                                                                                              |
-| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Cuya Villegas, Rafael Alberto       | Capítulo II: Requirements Elicitation & Analysis                                                                                         |
-| Gongora Castillejos, Williams         | Capítulo III: Requirements specification                                                                                          |
-| Huanaco Huayta, Elizabeth Lucero     | Capítulo I: Introducción                                                                                                       |
-| Molina Falcon, Piero Leonardo | Capítulo IV: Strategic-Level Domain-Driven Design                                                                                                              |
-| Torres Garcia, Andrés Alberto        | Capítulo IV: Strategic-Level Attribute-Driven Design, Software Architecture  |
+**Estrategia 4**
 
-**Github Collaboration Insights**
 
-Github también presenta un timeline de las ramas principales y los procesos de merge a los que se han sometido. Todas las ramas se crearon tomando en cuenta el diseño de GitFlow para una buena organización cuando se usa un software de control de versiones.
 
-Los integrantes son:
+## 2.2. Entrevistas
 
-- Cuya Villegas, Rafael Alberto ()
-- Gongora Castillejos, Williams (WiJeGo)
-- Huanaco Huayta, Elizabeth Lucero (lucerohh)
-- Molina Falcon, Piero Leonardo ()
-- Torres Garcia, Andrés Alberto (andrest04)
+### 2.2.1. Diseño de entrevistas
 
-# Contenido
+##### Preguntas Generales
 
-1. [**Capítulo I: Introducción.**](#1.) <br>
-   1.1. [Startup Profile.](#1.1.) <br>
-   1.1.1. [Descripción del startup.](#1.1.1.)<br>
-   1.1.2.[Perfiles de los integrantes del equipo.](#1.1.2.)<br>
-   1.2. [Solution Profile.](#1.2.)<br>
-   1.2.1. [Antecedentes y Problemática.](#1.2.1.)<br>
-   1.2.2. [Lean UX Process.](#1.2.2.)<br>
-   1.2.2.1 [Entrevistas.](#1.2.2.1.)<br>
-   1.2.2.2. [Lean UX Assumptions.](#1.2.2.2.)<br>
-   1.2.2.3 [Lean UX Hypothesis Statements.](#1.2.2.3.)<br>
-   1.2.2.4 [Lean UX Canvas.](#1.2.2.4.)<br>
-   1.3. [Segmentos objetivo.](#1.3.)<br>
-2. [**Capítulo II: Requirements Elicitation & Analysis.**](#2.)<br>
-   2.1. [Competidores.](#2.1.)<br>
-   2.1.1. [Análisis competitivo.](#2.1.1.)<br>
-   2.1.2. [Estrategias y tácticas frente a competidores.](#2.1.2.)<br>
-   2.2. [Entrevistas.](#2.2.)<br>
-   2.2.1. [Diseño de entrevistas.](#2.2.1.)<br>
-   2.2.2. [Registro de entrevistas.](#2.2.2.)<br>
-   2.2.3. [Análisis de entrevistas.](#2.2.3.)<br>
-   2.3. [Needfinding.](#2.3.)<br>
-   2.3.1. [User Personas.](#2.3.1.)<br>
-   2.3.2. [User Task Matrix.](#2.3.2.)<br>
-   2.3.3. [User Journey Mapping.](#2.3.3.)<br>
-   2.3.4. [Empathy Mapping.](#2.3.4.)<br>
-   2.3.5. [As-is Scenario Mapping.](#2.3.5.)<br>
-   2.4. [Ubiquitous Language](#2.4.)<br>
-3. [**Capítulo III: Requirements Specification.**](#3.)<br>
-   3.1. [To-Be Scenario Mapping.](#3.1.)<br>
-   3.2. [User Stories.](#3.2.)<br>
-   3.3. [Impact Mapping.](#3.3.)<br>
-   3.4. [Product Backlog.](#3.4.)<br>
-4. [**Capítulo IV: Solution Software Design.**](#4.)<br>
-   4.1. [Strategic-Level Attribute-Driven Design.](#4.1.)<br>
-   4.1.1. [Design Purpose.](#4.1.1.)<br>
-   4.1.2. [Attribute-Driven Design Inputs.](#4.1.2.)<br>
-   4.1.2.1. [Primary Functionality (Primary User Stories).](#4.1.2.1.)<br>
-   4.1.2.2. [Quality Attribute Scenarios.](#4.1.2.2.)<br>
-   4.1.2.3. [Constraints.](#4.1.2.3.)<br>
-   4.1.3. [Architectural Drivers Backlog.](#4.1.3.)<br>
-   4.1.4. [Architectural Design Decisions.](#4.1.4.)<br>
-   4.1.5. [Quality Attribute Scenario Refinements.](#4.1.5.)<br>
-   4.2. [Strategic-Level Domain-Driven Design.](#4.2.)<br>
-   4.2.1. [EventStorming.](#4.2.1.)<br>
-   4.2.2. [Candidate Context Discovery.](#4.2.2.)<br>
-   4.2.3. [Domain Message Flows Modeling.](#4.2.3.)<br>
-   4.2.4. [Bounded Context Canvases.](#4.2.4.)<br>
-   4.2.5. [Context Mapping.](#4.2.5.)<br>
-   4.3. [Software Architecture.](#4.3.)<br>
-   4.3.1. [Software Architecture System Landscape Diagram.](#4.3.1.)<br>
-   4.3.2. [Software Architecture Context Level Diagrams.](#4.3.2.)<br>
-   4.3.3. [Software Architecture Container Level Diagrams.](#4.3.3.)<br>
-   4.3.4. [Software Architecture Deployment Diagrams.](#4.3.4.)<br>
+---
 
-# STUDENT OUTCOME
+#### Segmento 1: Conductores Urbanos
 
-**ABET – EAC - Student Outcome 3:** Capacidad de comunicarse efectivamente con un rango de audiencias.
+##### Preguntas principales
 
-| Criterio específico                                                                                                                                                       | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Conclusiones                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.                | **Cuya Villegas, Rafael Alberto** <br><br> **Gongora Castillejos, Williams** <br><br> **Huanaco Huayta, Elizabeth Lucero** <br><br> **Molina Falcon, Piero Leonardo** <br><br> **Torres Garcia, Andrés Alberto** | **TB1:**  <br><br>
-| Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br><br> **Gongora Castillejos, Williams** <br><br> **Huanaco Huayta, Elizabeth Lucero** <br><br> **Molina Falcon, Piero Leonardo** <br><br> **Torres Garcia, Andrés Alberto**                                                                                                                                   | **TB1:**  <br><br>                                                                                                                                                                                                                                                                                            |
+
+
+---
+
+#### Segmento 2: Administradores de Estacionamientos Independientes
+
+##### Preguntas principales
+
+
+---
+
+### 2.2.2. Registro de entrevistas
+
+#### Entrevistas al Segmento 1: Talleres de confección
+
+A continuación se registran las tres entrevistas realizadas a conductores urbanos de Lima Metropolitana que utilizan vehículo propio con frecuencia y se han enfrentado de forma recurrente al problema de encontrar estacionamiento disponible en zonas de alta demanda vehicular.
+
+#### Entrevista 1
+
+| Campo             | Detalle |
+|-------------------|---------|
+| **Entrevistado**  |  |
+| **Entrevistador** |  |
+| **Sexo**          | |
+| **Edad**          |  |
+| **Distrito**      | |
+| **Timing**        |  |
+| **Link**          |  |
+| **Resumen**       |  |
+
+#### Entrevista 2
+
+| Campo             | Detalle |
+|-------------------|---------|
+| **Entrevistado**  |  |
+| **Entrevistador** |  |
+| **Sexo**          | |
+| **Edad**          |  |
+| **Distrito**      | |
+| **Timing**        |  |
+| **Link**          |  |
+| **Resumen**       |  |
+---
+#### Entrevista 3
+
+| Campo             | Detalle |
+|-------------------|---------|
+| **Entrevistado**  |  |
+| **Entrevistador** |  |
+| **Sexo**          | |
+| **Edad**          |  |
+| **Distrito**      | |
+| **Timing**        |  |
+| **Link**          |  |
+| **Resumen**       |  |
+
+#### Entrevistas al Segmento 2: Artesanos/recolectores
+
+#### Entrevista 1
+
+| Campo             | Detalle |
+|-------------------|---------|
+| **Entrevistado**  |  |
+| **Entrevistador** |  |
+| **Sexo**          | |
+| **Edad**          |  |
+| **Distrito**      | |
+| **Timing**        |  |
+| **Link**          |  |
+| **Resumen**       |  |
+
+---
+
+#### Entrevista 2
+
+| Campo             | Detalle |
+|-------------------|---------|
+| **Entrevistado**  |  |
+| **Entrevistador** |  |
+| **Sexo**          | |
+| **Edad**          |  |
+| **Distrito**      | |
+| **Timing**        |  |
+| **Link**          |  |
+| **Resumen**       |  |
+
+---
+#### Entrevista 3
+
+| Campo             | Detalle |
+|-------------------|---------|
+| **Entrevistado**  |  |
+| **Entrevistador** |  |
+| **Sexo**          | |
+| **Edad**          |  |
+| **Distrito**      | |
+| **Timing**        |  |
+| **Link**          |  |
+| **Resumen**       |  |
+---
+
+### 2.2.3. Análisis de entrevistas
+
+
+
+
+## 2.3. Needfinding
+
+### 2.3.1. User Personas
+
+
+**Figura 2**
+
+*User Persona del segmento 1*
+
+![alt text]()
+
+*Nota.* Elaboración propia (2026).
+
+
+
+---
+
+**Figura 3**
+
+*User Persona del segmento 2*
+
+![alt text]()
+
+*Nota.* Elaboración propia (2026).
+
+
+
+### 2.3.2. User Task Matrix
+
+
+
+| Tarea |Integrante 1 (Frecuencia) | Integrante 1 (Importancia) | Integrante 2 (Frecuencia) |Integrante 2 (Importancia) |
+|-------|-------------------------------|--------------------------------|--------------------------|--------------------------|
+|  | Alta | — | — |
+| | Siempre | Alta | — | — |
+| | Frecuentemente | Alta | — | — |
+|  | Siempre | Alta | — | — |
+|  | Frecuentemente | Media | — | — |
+|  | Siempre | Alta | — | — |
+|  | — | — | Siempre | Alta |
+| | — | — | Siempre | Alta |
+|  | — | — | Frecuentemente | Alta |
+| | — | — | Siempre | Alta |
+| | — | — | Frecuentemente | Alta |
+|  | — | — | Ocasionalmente | Alta |
+|  | — | — | Frecuentemente | Media |
+|  | — | — | Siempre | Alta |
+
+**Análisis**
+
+
+
+### 2.3.3. User Journey Maps
+
+
+---
+
+**Figura 4**
+
+*User Journey Map As-Is del segmento1*
+
+![User Journey Map As-Is del conductor urbano]().png)
+
+*Nota.* Elaboración propia (2026) en UXPressia.
+
+
+---
+
+**Figura 5**
+
+*User Journey Map As-Is del segmento 2*
+
+![User Journey Map As-Is ]())
+
+*Nota.* Elaboración propia (2026) en UXPressia.
+
+
+### 2.3.4. Empathy Mapping
+
+
+
+---
+
+**Figura 6**
+
+*Empathy Map del segmento 1*
+
+![alt text]()
+
+
+
+---
+
+**Figura 7**
+
+*Empathy Map del segmento 2*
+
+![alt text]()
+
+
+
+
+
+### 2.3.5. As-Is Scenario Mapping
+
+
+
+---
+
+Figura 8
+
+*As-Is Scenario Map del segmento1*
+
+![alt text](>)
+
+
+
+---
+
+Figura 9
+
+*As-Is Scenario Map del segmento2*
+
+![alt text](<>)
+
+
+
+
+
+## 2.5. Ubiquitous Language
+
+                                                                                                                                                                                                                                                                                                                                                                                                                          |
