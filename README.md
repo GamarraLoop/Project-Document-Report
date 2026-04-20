@@ -113,25 +113,27 @@
 
 ---
 
-**Estrategia 1: **
+**Estrategia Ofensiva **
 
-
-
----
-
-**Estrategia 2: **
-
-
+Aprovechar el crecimiento de la economía circular y la digitalización en el sector textil, creando una plataforma basada en IA y geolocalización. Recitex potencia su propuesta mediante la automatización del registro de residuos textiles. Además, el desarrollo del sistema visual permitirá una fácil localización de los excedentes textiles en tiempo real, esto ayudará a la conexión eficiente entre nuestros segmentos objetivos generando valor para ambos.
 
 ---
 
-**Estrategia 3**
+**Estrategia Defensiva **
 
+Analizar de manera continua las propuestas de valor de los principales competidores indirectos como Facebook Marketplace, Vinted o Etsy, con el fin de incorporar buenas prácticas y elementos diferenciadores que mantengan fresca e innovadora la solución de Recitex. Adicionalmente, se reforzará la propuesta diferenciadora mediante el uso de IA y la especialización en el sector de residuos textiles. La optimización en la experiencia del usuario será un punto clave para permitirle a nuestros usuarios un flujo rápido y sencillo.
 
 ---
 
-**Estrategia 4**
+**Estrategia de Reorientación **
 
+Validar y adaptar nuestro sistema en distintos segmentos dentro del perfil textil, como recicladores urbanos, emprendimientos de moda y asociaciones textiles, ajustando las funcionalidades según sus necesidades. Por otro lado, establecer alianzas estrátegicas con municipalidades, ONGs ambientales y centros de tecnología, que aporten conocimientos en IA y la interfaz. Esto permitirá mantener una mejora continua de nuestra plataforma y explorar nuevas funcionalidades.
+
+---
+
+**Estrategia de Supervivencia **
+
+Reforzar la diferenciación de Recitex en todos los canales de marketing, destacando su facilidad de uso, enfoque sin transacciones monetarias y su impacto ambiental positivo en la reducción de residuos textiles. También, se implementará un sistema de acompañamiento y capacitación para usuarios, con el fin de reducir la resistencia al uso de tecnología. La retroalimentación constante permitirá llevar a cabo mejorar en nuestra app, incrementando su competitividad y fortaleciendo su adopción en el mercado.
 
 
 ## 2.2. Entrevistas
