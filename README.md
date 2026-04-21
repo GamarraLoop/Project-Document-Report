@@ -272,6 +272,7 @@ Reforzar la diferenciación de Recitex en todos los canales de marketing, destac
 
 ### 2.2.3. Análisis de entrevistas
 
+De acuerdo con lo que hemos podido observar en las entrevistas realizadas a trabajadores o dueños de talleres de confección y artesanos/recolectores, se identificó que el 100% de los entrevistados gestiona los residuos textiles de forma manual, lo que evidencia una clara falta de digitalización en el proceso. En el caso de los talleres, el principal problema es la acumulación de residuos y la falta de espacio, además de la dificultad para encontrar personas que los recojan. Por otro lado, los artesanos y recolectores indicaron que obtienen materiales de forma informal, lo que implica una alta inversión de tiempo en la búsqueda, llegando incluso a perder varias horas sin resultados. Respecto al uso de tecnología, el 75% estaría dispuesto a usar una aplicación móvil, siempre que sea simple y rápida, mientras que el resto muestra cierta dificultad en su uso. Sin embargo, el 100% coincide en que sería útil contar con una herramienta que permita ver materiales disponibles, especialmente si incluye ubicación y fotos. En conclusión, el principal problema identificado es la falta de visibilidad y conexión entre quienes generan y quienes necesitan los materiales, lo que valida el desarrollo de una solución como Recitex basada en registro rápido y geolocalización.
 
 
 
