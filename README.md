@@ -24,7 +24,7 @@ width=50%"/>
   
 |                Nombre                 |   Código   |
 | :-----------------------------------: | :--------: |
-|  Cuya Villegas, Rafael Alberto        |  |
+|  Cuya Villegas, Rafael Alberto        | u201913495 |
 |  Gongora Castillejos, Williams        |  |
 |  Huanaco Huayta, Elizabeth Lucero     | u20211g522 |
 |  Molina Falcon, Piero Leonardo        |  |
@@ -68,7 +68,7 @@ Github también presenta un timeline de las ramas principales y los procesos de 
 
 Los integrantes son:
 
-- Cuya Villegas, Rafael Alberto ()
+- Cuya Villegas, Rafael Alberto (RafaelCuya)
 - Gongora Castillejos, Williams (WiJeGo)
 - Huanaco Huayta, Elizabeth Lucero (lucerohh)
 - Molina Falcon, Piero Leonardo ()
