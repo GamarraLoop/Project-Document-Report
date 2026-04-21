@@ -309,23 +309,28 @@ De acuerdo con lo que hemos podido observar en las entrevistas realizadas a trab
 
 | Tarea |Integrante 1 (Frecuencia) | Integrante 1 (Importancia) | Integrante 2 (Frecuencia) |Integrante 2 (Importancia) |
 |-------|-------------------------------|--------------------------------|--------------------------|--------------------------|
-|  | Alta | — | — |
-| | Siempre | Alta | — | — |
-| | Frecuentemente | Alta | — | — |
-|  | Siempre | Alta | — | — |
-|  | Frecuentemente | Media | — | — |
-|  | Siempre | Alta | — | — |
-|  | — | — | Siempre | Alta |
-| | — | — | Siempre | Alta |
-|  | — | — | Frecuentemente | Alta |
-| | — | — | Siempre | Alta |
-| | — | — | Frecuentemente | Alta |
-|  | — | — | Ocasionalmente | Alta |
-|  | — | — | Frecuentemente | Media |
-|  | — | — | Siempre | Alta |
+| Registrar residuos textiles| Siempre | Alta | — | — |
+| Tomar foto del material| Siempre | Alta | — | — |
+| Publicar disponibilidad de materiales | Frecuentemente | Alta | — | — |
+| Coordinar recojo con interesados | Siempre | Alta | — | — |
+| Organizar residuos en el taller | Frecuentemente | Media | — | — |
+| Buscar a quién recoja materiales | Siempre | Alta | — | — |
+| Buscar materiales reutilizables | — | — | Siempre | Alta |
+| Revisar materiales reutilizables | — | — | Siempre | Alta |
+| Filtrar por tipo/color de tela | — | — | Siempre | Alta |
+| Ubicar materiales en el mapa | — | — | Frecuentemente | Alta |
+| Contactar al taller | — | — | Siempre | Alta |
+| Coordinar recojo | — | — | Frecuentemente | Alta |
+| Comparar opciones de materiales | — | — | Ocasionalmente | Alta |
+| Seleccionar material según preferencia | — | — | Frecuentemente | Media |
+
 
 **Análisis**
+En la matriz de tareas podemos observar las actividades con mayor frecuencia e importancia, tenemos acciones como registrar materiales, tomar fotos, publicar disponibilidad y coordinar recojo para los talleres de confección. Esto evidencia la necesidad de contar con un proceso rápido y sencillo que ayude a la gestión de residuos en estos establecimientos. 
 
+Por otro lado, para el segmento Artesano/recolectores, encontramos que dentro de las tareas mas importantes estan buscar materiales, visualizar opciones disponibles, ubicarlos mediante un mapa y conectase con tallers. Esto refleja que el principal valor para este segmento es la accesibilidad y visibilidad de recursos disponibles.
+
+La matriz de tareas nos perimite identificar cuales son las funcionalidades mas críticas del sistema y en que secciones debemos centrarnos para que nuestra aplicación sea eficiente.
 
 
 ### 2.3.3. User Journey Maps
