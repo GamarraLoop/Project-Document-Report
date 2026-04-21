@@ -186,46 +186,44 @@ Reforzar la diferenciación de Recitex en todos los canales de marketing, destac
 
 #### Entrevistas al Segmento 1: Talleres de confección
 
-A continuación se registran las tres entrevistas realizadas a conductores urbanos de Lima Metropolitana que utilizan vehículo propio con frecuencia y se han enfrentado de forma recurrente al problema de encontrar estacionamiento disponible en zonas de alta demanda vehicular.
-
 #### Entrevista 1
 
 | Campo             | Detalle |
 |-------------------|---------|
-| **Entrevistado**  |  |
+| **Entrevistado**  | Juan Pérez |
 | **Entrevistador** |  |
-| **Sexo**          | |
-| **Edad**          |  |
-| **Distrito**      | |
+| **Sexo**          |Masculino |
+| **Edad**          | 45 |
+| **Distrito**      | Lince |
 | **Timing**        |  |
 | **Link**          |  |
-| **Resumen**       |  |
+| **Resumen**       | Juan comenta que genera retazos de tela casi todos los días y los acumula hasta que ocupan mucho espacio. A veces los regala o los da a recicladores, pero coordinar es complicado. Dice que le gustaría algo simple para deshacerse de esos materiales rápido, sin perder tiempo. |
 
 #### Entrevista 2
 
 | Campo             | Detalle |
 |-------------------|---------|
-| **Entrevistado**  |  |
+| **Entrevistado**  | Rosa Martínez |
 | **Entrevistador** |  |
-| **Sexo**          | |
-| **Edad**          |  |
-| **Distrito**      | |
+| **Sexo**          | Femenino |
+| **Edad**          | 34 |
+| **Distrito**      | La Victoria |
 | **Timing**        |  |
 | **Link**          |  |
-| **Resumen**       |  |
+| **Resumen**       | Rosa menciona que en el taller juntan los residuos en bolsas y luego los botan o venden barato. El problema es que no siempre hay quién los compre. Para ella, sería útil una app donde pueda publicar rápido los materiales y que alguien los recoja sin tanto trámite. |
 ---
 #### Entrevista 3
 
 | Campo             | Detalle |
 |-------------------|---------|
-| **Entrevistado**  |  |
+| **Entrevistado**  | Luis García |
 | **Entrevistador** |  |
-| **Sexo**          | |
-| **Edad**          |  |
-| **Distrito**      | |
+| **Sexo**          | Masculino |
+| **Edad**          | 52 |
+| **Distrito**      | Pueblo Libre |
 | **Timing**        |  |
 | **Link**          |  |
-| **Resumen**       |  |
+| **Resumen**       | Luis explica que generan muchos residuos y aunque intentan reutilizar algunos, la mayoría se pierde. Siente que falta una forma organizada de conectar con personas interesadas. Dice que usaría una app si le facilita ubicar y coordinar el recojo. |
 
 #### Entrevistas al Segmento 2: Artesanos/recolectores
 
@@ -233,14 +231,14 @@ A continuación se registran las tres entrevistas realizadas a conductores urban
 
 | Campo             | Detalle |
 |-------------------|---------|
-| **Entrevistado**  |  |
+| **Entrevistado**  | María López |
 | **Entrevistador** |  |
 | **Sexo**          | |
-| **Edad**          |  |
-| **Distrito**      | |
+| **Edad**          | 28 |
+| **Distrito**      | Jesús Maria |
 | **Timing**        |  |
 | **Link**          |  |
-| **Resumen**       |  |
+| **Resumen**       | María cuenta que busca materiales en Gamarra o con recicladores, pero muchas veces no encuentra lo que necesita. Pierde tiempo buscando y a veces termina comprando más caro. Le interesaría una app donde pueda ver materiales cercanos y elegir más rápido. |
 
 ---
 
@@ -248,28 +246,28 @@ A continuación se registran las tres entrevistas realizadas a conductores urban
 
 | Campo             | Detalle |
 |-------------------|---------|
-| **Entrevistado**  |  |
+| **Entrevistado**  | Carlos Ramos |
 | **Entrevistador** |  |
-| **Sexo**          | |
-| **Edad**          |  |
-| **Distrito**      | |
+| **Sexo**          | Masculino |
+| **Edad**          | 56 |
+| **Distrito**      | Lince |
 | **Timing**        |  |
 | **Link**          |  |
-| **Resumen**       |  |
+| **Resumen**       | Carlos comenta que encuentra materiales caminando y preguntando en talleres. A veces pierde medio día sin conseguir nada. Dice que le serviría mucho saber dónde hay material disponible sin tener que buscar tanto. |
 
 ---
 #### Entrevista 3
 
 | Campo             | Detalle |
 |-------------------|---------|
-| **Entrevistado**  |  |
+| **Entrevistado**  | Andrea Gonzales |
 | **Entrevistador** |  |
 | **Sexo**          | |
-| **Edad**          |  |
-| **Distrito**      | |
+| **Edad**          | 38 |
+| **Distrito**      | La Victoria |
 | **Timing**        |  |
 | **Link**          |  |
-| **Resumen**       |  |
+| **Resumen**       | Andrea menciona que le cuesta encontrar telas específicas a buen precio. Muchas veces pierde tiempo o tiene que cambiar sus diseños. Le gustaría una app con fotos claras y filtros para encontrar materiales más rápido. |
 ---
 
 ### 2.2.3. Análisis de entrevistas
