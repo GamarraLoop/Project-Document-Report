@@ -366,20 +366,18 @@ La matriz de tareas nos perimite identificar cuales son las funcionalidades mas 
 
 **Figura 6**
 
-*Empathy Map del segmento 1*
+*Empathy Map del segmento Talleres*
 
-![alt text]()
-
+<img width="1050" height="1108" alt="Image" src="https://github.com/user-attachments/assets/44eb782a-2f9e-491a-9039-520134a19136" />
 
 
 ---
 
 **Figura 7**
 
-*Empathy Map del segmento 2*
+*Empathy Map del segmento Artesanos/Recolectores*
 
-![alt text]()
-
+<img width="1050" height="1198" alt="Image" src="https://github.com/user-attachments/assets/b3477a65-6d03-45a5-9258-2236175e69f6" />
 
 
 
