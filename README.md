@@ -10,7 +10,7 @@
     </tr>
     <tr>
       <th align="left">¿Por qué llevar a cabo este análisis?</th>
-      <th colspan="5" align="left">Identificar las fortalezas, debilidades, oportunidades y amenazas de los principales competidores permite a ParkingNow delimitar su propuesta diferenciada en el mercado local: integrar detección física del estado del espacio con canales digitales de información y gestión, y enfocarse en operadores independientes de pequeña escala.</th>
+      <th colspan="5" align="left"> Identificar las fortalezas, debilidades, oportunidades y amenazas de los principales competidores nos perimite delimitar mejor nuestro proyecto y definir nuestra propuesta diferenciada en el mercado.</th>
     </tr>
     <tr>
       <th colspan="2" align="left">(En la cabecera colocar por cada competidor nombre y logo)</th>
@@ -283,9 +283,9 @@ De acuerdo con lo que hemos podido observar en las entrevistas realizadas a trab
 
 **Figura 2**
 
-*User Persona del segmento 1*
+*User Persona del segmento Talleres*
 
-![alt text]()
+<img width="1050" height="1888" alt="Image" src="https://github.com/user-attachments/assets/5edf3c3f-8724-4b9c-8274-e6ea26feaf96" />
 
 *Nota.* Elaboración propia (2026).
 
@@ -295,9 +295,9 @@ De acuerdo con lo que hemos podido observar en las entrevistas realizadas a trab
 
 **Figura 3**
 
-*User Persona del segmento 2*
+*User Persona del segmento Artesanos/Recolectores*
 
-![alt text]()
+<img width="1050" height="1888" alt="Image" src="https://github.com/user-attachments/assets/0041d088-7aa4-48f5-ad0f-106b8d71a39e" />
 
 *Nota.* Elaboración propia (2026).
 
