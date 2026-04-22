@@ -271,6 +271,18 @@ En esta sección se detallan las *Epics* y los *User Stories* (incluyendo *Techn
 <a name="3.3."></a>
 ## 3.3. Impact Mapping
 
+En esta sección se presenta el **Impact Mapping** de Gamarra Loop, una herramienta estratégica que alinea los objetivos de negocio del proyecto con el comportamiento esperado de nuestros usuarios clave: los **Talleres Textiles** (representantes de los confeccionistas que donan sus sobrantes) y los **Artesanos** (quienes recogen estos lotes para reciclarlos en Gamarra). 
+
+El mapa visualiza cómo las funcionalidades de la plataforma (Deliverables) y nuestras User Stories motivarán a estos actores a cambiar su comportamiento tradicional de descarte de telas, facilitando así el cumplimiento de nuestras metas comerciales y logísticas a corto plazo.
+
+A continuación, se detalla el Impact Map elaborado en **UXpressia**:
+
+- **URL del Impact Mapping:** [Reemplazar con el enlace público de UXpressia]
+
+**Captura de pantalla:**
+![Impact Mapping de Gamarra Loop](ruta_a_la_imagen/impact_mapping.png)
+
+<br>
 <a name="3.4."></a>
 ## 3.4. Product Backlog
 
