@@ -231,7 +231,7 @@ Los integrantes son:
 
 En esta sección se detallan las *Epics* y los *User Stories* (incluyendo *Technical Stories*) que conforman los requisitos funcionales de **Gamarra Loop**. Los criterios de aceptación están redactados siguiendo la estructura *Gherkin* (Given-When-Then), garantizando que las condiciones sean comprobables y estén enfocadas en el comportamiento del sistema sin depender de detalles específicos de la interfaz de usuario.
 
-### Cuadro Previo de Epics
+### Epics
 
 | Epic ID | Título del Epic | Descripción |
 | :--- | :--- | :--- |
@@ -241,7 +241,7 @@ En esta sección se detallan las *Epics* y los *User Stories* (incluyendo *Techn
 | **EP04** | Exploración y Recojo (Artesanos) | Funciones para que los artesanos encuentren lotes disponibles, los reserven y confirmen su recojo físico en los talleres. |
 | **EP05** | Technical Stories (APIs) | Historias técnicas orientadas a los servicios backend, APIs RESTful y comunicación con servicios externos (agnóstico a la infraestructura). |
 
-### Conjunto de User Stories
+### User Stories
 
 | User Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
 | :--- | :--- | :--- | :--- | :--- |
@@ -303,10 +303,10 @@ En esta sección se presenta el **Product Backlog** de Gamarra Loop. La prioriza
 
 **Evidencia de Herramienta de Gestión Ágil:**
 
-- **URL del Product Backlog:** [Reemplazar con enlace público a Jira/Trello/GitHub]
+- **URL del Product Backlog:** [Jira Product Backlog](https://williamsgongora1943.atlassian.net/jira/software/projects/US/list?jql=project+%3D+%22US%22+and+updatedDate+%3E%3D+-1w+ORDER+BY+resolution+ASC&atlOrigin=eyJpIjoiMDlhOTcwN2E1ZmE0NDZiNWI1MmI2Mjc3ZmE1M2Q1NGQiLCJwIjoiaiJ9)
 - **Captura de pantalla:**
 
-![Captura del Product Backlog](ruta_a_la_imagen/backlog.png)
+<img alt="productbacklog" src="https://github.com/user-attachments/assets/ab5f3c47-0d8f-4d16-9d8d-7ec465c889f4" />
 
 <a name="4."></a>
 # Capítulo IV: Solution Software Design
