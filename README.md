@@ -287,7 +287,7 @@ De acuerdo con lo que hemos podido observar en las entrevistas realizadas a trab
 
 <img width="1050" height="1888" alt="Image" src="https://github.com/user-attachments/assets/5edf3c3f-8724-4b9c-8274-e6ea26feaf96" />
 
-*Nota.* Elaboración propia (2026).
+*Nota.* Elaboración propia (2026) en UXPressia.
 
 
 
@@ -299,7 +299,7 @@ De acuerdo con lo que hemos podido observar en las entrevistas realizadas a trab
 
 <img width="1050" height="1888" alt="Image" src="https://github.com/user-attachments/assets/0041d088-7aa4-48f5-ad0f-106b8d71a39e" />
 
-*Nota.* Elaboración propia (2026).
+*Nota.* Elaboración propia (2026) en UXPressia.
 
 
 
@@ -370,16 +370,16 @@ La matriz de tareas nos perimite identificar cuales son las funcionalidades mas 
 
 <img width="1050" height="1108" alt="Image" src="https://github.com/user-attachments/assets/44eb782a-2f9e-491a-9039-520134a19136" />
 
-
+*Nota.* Elaboración propia (2026) en UXPressia.
 ---
 
 **Figura 7**
 
 *Empathy Map del segmento Artesanos/Recolectores*
 
-<img width="1050" height="1198" alt="Image" src="https://github.com/user-attachments/assets/b3477a65-6d03-45a5-9258-2236175e69f6" />
+<img width="1050" height="1108" alt="Image" src="https://github.com/user-attachments/assets/b3477a65-6d03-45a5-9258-2236175e69f6" />
 
-
+*Nota.* Elaboración propia (2026) en UXPressia.
 
 
 ### 2.3.5. As-Is Scenario Mapping
@@ -390,22 +390,23 @@ La matriz de tareas nos perimite identificar cuales son las funcionalidades mas 
 
 Figura 8
 
-*As-Is Scenario Map del segmento1*
+*As-Is Scenario Map del segmento Talleres*
 
-![alt text](>)
+<img width="1473" height="1060" alt="Image" src="https://github.com/user-attachments/assets/b988db87-3814-450e-be9b-5aac18b6c2df" />
 
-
+*Nota.* Elaboración propia (2026) en UXPressia.
 
 ---
 
 Figura 9
 
-*As-Is Scenario Map del segmento2*
+*As-Is Scenario Map del segmento Artesanos/Recolectores*
 
-![alt text](<>)
+<img width="1473" height="1060" alt="Image" src="https://github.com/user-attachments/assets/416f7ab8-266f-4519-b8b4-4506851515cb" />
 
+*Nota.* Elaboración propia (2026) en UXPressia.
 
-
+---
 
 
 ## 2.5. Ubiquitous Language
