@@ -277,12 +277,16 @@ El mapa visualiza cómo las funcionalidades de la plataforma (Deliverables) y nu
 
 A continuación, se detalla el Impact Map elaborado en **UXpressia**:
 
-- **URL del Impact Mapping:** [Reemplazar con el enlace público de UXpressia]
+* Usuario: Taller Textil (Confeccionista)
 
-**Captura de pantalla:**
-![Impact Mapping de Gamarra Loop](ruta_a_la_imagen/impact_mapping.png)
+<img alt="Image" src="https://github.com/user-attachments/assets/640a2884-48e7-419d-8bd4-e57da8cadb94" />
+
+* Usuario: Artesano
+
+<img alt="Image" src="https://github.com/user-attachments/assets/8181b44c-a400-4e70-afc4-d7e4f4c22cba" />
 
 <br>
+
 <a name="3.4."></a>
 ## 3.4. Product Backlog
 
