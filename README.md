@@ -371,6 +371,7 @@ La matriz de tareas nos perimite identificar cuales son las funcionalidades mas 
 <img width="1050" height="1108" alt="Image" src="https://github.com/user-attachments/assets/44eb782a-2f9e-491a-9039-520134a19136" />
 
 *Nota.* Elaboración propia (2026) en UXPressia.
+
 ---
 
 **Figura 7**
