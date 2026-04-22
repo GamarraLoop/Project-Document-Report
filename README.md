@@ -340,9 +340,9 @@ La matriz de tareas nos perimite identificar cuales son las funcionalidades mas 
 
 **Figura 4**
 
-*User Journey Map As-Is del segmento1*
+*User Journey Map As-Is del segmento Talleres*
 
-![User Journey Map As-Is del conductor urbano]().png)
+<img width="1885" height="1153" alt="Image" src="https://github.com/user-attachments/assets/c3862956-ea87-4aa4-bc32-1acced3f846b" />
 
 *Nota.* Elaboración propia (2026) en UXPressia.
 
@@ -351,9 +351,9 @@ La matriz de tareas nos perimite identificar cuales son las funcionalidades mas 
 
 **Figura 5**
 
-*User Journey Map As-Is del segmento 2*
+*User Journey Map As-Is del segmento Artesanos/Recolectores*
 
-![User Journey Map As-Is ]())
+<img width="1885" height="1153" alt="Image" src="https://github.com/user-attachments/assets/d9381630-288b-4326-bcd6-5d439342852a" />
 
 *Nota.* Elaboración propia (2026) en UXPressia.
 
