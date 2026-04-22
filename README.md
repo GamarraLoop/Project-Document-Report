@@ -229,7 +229,7 @@ Los integrantes son:
 <a name="3.2."></a>
 ## 3.2. User Stories
 
-En esta sección se detallan las *Epics* y los *User Stories* (incluyendo *Technical Stories*) que conforman los requisitos funcionales del proyecto **Gamarra Loop**. Los criterios de aceptación están redactados siguiendo la estructura *Gherkin* (Given-When-Then), garantizando que las condiciones sean comprobables y estén enfocadas en el comportamiento del sistema sin depender de detalles específicos de la interfaz de usuario.
+En esta sección se detallan las *Epics* y los *User Stories* (incluyendo *Technical Stories*) que conforman los requisitos funcionales de **Gamarra Loop**. Los criterios de aceptación están redactados siguiendo la estructura *Gherkin* (Given-When-Then), garantizando que las condiciones sean comprobables y estén enfocadas en el comportamiento del sistema sin depender de detalles específicos de la interfaz de usuario.
 
 ### Cuadro Previo de Epics
 
@@ -273,6 +273,40 @@ En esta sección se detallan las *Epics* y los *User Stories* (incluyendo *Techn
 
 <a name="3.4."></a>
 ## 3.4. Product Backlog
+
+En esta sección se presenta el **Product Backlog** de Gamarra Loop. La priorización se ha realizado basándose en el **valor para el negocio**, colocando en primer lugar los requisitos fundamentales para validar el modelo (Landing Page) y las funciones *core* de intercambio de textiles (publicación y reserva), dejando para iteraciones posteriores las funciones de soporte (perfiles, notificaciones y automatizaciones de limpieza).
+
+| # Orden | User Story Id | Título | Descripción | Story Points (1 / 2 / 3 / 5 / 8) |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | **US01** | Propuesta de valor en Landing Page | Como Visitante, quiero visualizar la propuesta de valor del proyecto para entender cómo funciona el reciclaje de textiles. | 2 |
+| 2 | **US02** | Sección de contacto para talleres | Como Visitante del segmento Taller, quiero leer información sobre cómo mi empresa puede afiliarse a Gamarra Loop para publicar lotes sobrantes. | 2 |
+| 3 | **US03** | Redirección a descarga de App | Como Visitante, quiero encontrar un enlace directo a la tienda de aplicaciones para descargar la aplicación móvil fácilmente. | 1 |
+| 4 | **US05** | Carga de imagen de lote de tela | Como Confeccionista, quiero tomar una foto de mis retazos de tela para publicar el lote en la plataforma. | 3 |
+| 5 | **US06** | Asignación automática de ubicación | Como Confeccionista, quiero que al publicar un lote, mi ubicación actual en Gamarra se asigne automáticamente como el punto de recojo. | 3 |
+| 6 | **US17** | Integración con Google Cloud Vision | Como Developer, quiero implementar un servicio interno que se comunique con la API de Cloud Vision para delegar el reconocimiento de imágenes. | 5 |
+| 7 | **US10** | Extracción de metadatos de imagen | Como Confeccionista, quiero que el sistema analice la foto de mi lote para determinar su material automáticamente. | 3 |
+| 8 | **US11** | Presentación de resultados de IA | Como Confeccionista, quiero visualizar la categoría en la que fue clasificado mi lote para confirmar si la IA acertó. | 2 |
+| 9 | **US18** | Endpoint de listado de lotes activos | Como Developer, quiero exponer una API que provea rápidamente los lotes disponibles para que la app cliente los muestre sin demoras. | 3 |
+| 10 | **US12** | Visualización de lotes disponibles | Como Artesano, quiero ver una lista de los lotes de tela publicados en Gamarra para saber a dónde dirigirme. | 3 |
+| 11 | **US13** | Ver detalle del lote | Como Artesano, quiero seleccionar un lote para ver su foto, el material identificado y la ubicación exacta del taller. | 2 |
+| 12 | **US19** | Servicio transaccional de reserva | Como Developer, quiero implementar un servicio seguro para cambiar el estado de un lote a 'Reservado', evitando que dos artesanos reserven el mismo lote al mismo tiempo. | 5 |
+| 13 | **US14** | Reserva de lote para recojo | Como Artesano, quiero marcar un lote como 'Reservado' para asegurar que el taller me lo guarde mientras voy en camino. | 3 |
+| 14 | **US09** | Confirmación de entrega al artesano | Como Confeccionista, quiero confirmar en la app que entregué el lote de tela al artesano que vino a recogerlo. | 2 |
+| 15 | **US15** | Confirmación de recepción | Como Artesano, quiero confirmar en mi aplicación que ya recibí el lote una vez que estoy en el taller. | 2 |
+| 16 | **US04** | Creación de perfil básico | Como Usuario, quiero crear un perfil indicando mi rol (Taller o Artesano) sin procesos complejos de contraseñas para empezar a usar la app. | 3 |
+| 17 | **US07** | Edición manual de ubicación de recojo | Como Confeccionista, quiero poder agregar referencias a la ubicación automática (ej. número de stand o galería) para que el artesano me encuentre fácilmente. | 2 |
+| 18 | **US08** | Cancelación de lote publicado | Como Confeccionista, quiero poder cancelar la publicación de mi lote en caso la tela ya no esté disponible. | 2 |
+| 19 | **US22** | Servicio de emisión de notificaciones | Como Developer, quiero implementar un servicio centralizado de notificaciones que alerte a los usuarios sobre cambios críticos en sus lotes. | 5 |
+| 20 | **US16** | Recepción de notificación de reserva | Como Confeccionista, quiero recibir una notificación inmediata cuando un artesano reserve mi lote para estar preparado para la entrega. | 3 |
+| 21 | **US20** | Servicio de compresión de imágenes | Como Developer, quiero que las fotos subidas se compriman automáticamente en el servidor/backend para ahorrar almacenamiento y acelerar la carga de listas. | 5 |
+| 22 | **US21** | Servicio programado de expiración de lotes | Como Developer, quiero configurar un cronjob o tarea programada que marque como expirados los lotes que lleven más de 48 horas sin ser recogidos. | 5 |
+
+**Evidencia de Herramienta de Gestión Ágil:**
+
+- **URL del Product Backlog:** [Reemplazar con enlace público a Jira/Trello/GitHub]
+- **Captura de pantalla:**
+
+![Captura del Product Backlog](ruta_a_la_imagen/backlog.png)
 
 <a name="4."></a>
 # Capítulo IV: Solution Software Design
