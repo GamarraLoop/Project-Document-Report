@@ -14,9 +14,9 @@ width=50%"/>
 
 <h5 style="text-align: center"> Docente: Rojas Malasquez, Royer Edelwer </h5>
 
-<h5 style="text-align: center"> Startup:   </h5>
+<h5 style="text-align: center"> Startup: Gamarra Loop </h5>
 
-<h5 style="text-align: center"> Producto: ReciTex  </h5>
+<h5 style="text-align: center"> Producto: Gamarra Loop  </h5>
 
 ## Team members:
 
@@ -25,7 +25,7 @@ width=50%"/>
 |                Nombre                 |   Código   |
 | :-----------------------------------: | :--------: |
 |  Cuya Villegas, Rafael Alberto        | u201913495 |
-|  Gongora Castillejos, Williams        |  |
+|  Gongora Castillejos, Williams        | u20221c186 |
 |  Huanaco Huayta, Elizabeth Lucero     | u20211g522 |
 |  Molina Falcon, Piero Leonardo        |  |
 |  Torres Garcia, Andrés Alberto        |  |
@@ -226,6 +226,26 @@ Los integrantes son:
 <a name="3.1."></a>
 ## 3.1. To-Be Scenario Mapping
 
+En esta sección se presenta el **To-Be Scenario Mapping** de Gamarra Loop, el cual proyecta la experiencia ideal futura de nuestros User Personas al interactuar con nuestra solución digital. 
+
+A continuación, se presentan las capturas de los To-Be Scenario Mapping elaborados:
+
+* **To-Be Scenario: Taller Textil**
+
+<img alt="Image" src="https://github.com/user-attachments/assets/b7df6679-2d37-4af3-9c3f-23807c3691f7" />
+
+*Nota.* Elaboración propia (2026) en Miro.
+
+<br>
+
+* **To-Be Scenario: Artesano**
+
+<img alt="Image" src="https://github.com/user-attachments/assets/c48a9db9-af9d-477b-98a0-357f4b78126c" />
+
+*Nota.* Elaboración propia (2026) en Miro.
+
+<br>
+
 <a name="3.2."></a>
 ## 3.2. User Stories
 
@@ -281,9 +301,15 @@ A continuación, se detalla el Impact Map elaborado en **UXpressia**:
 
 <img alt="Image" src="https://github.com/user-attachments/assets/640a2884-48e7-419d-8bd4-e57da8cadb94" />
 
+*Nota.* Elaboración propia (2026) en UXPressia.
+
+<br>
+
 * Usuario: Artesano
 
 <img alt="Image" src="https://github.com/user-attachments/assets/8181b44c-a400-4e70-afc4-d7e4f4c22cba" />
+
+*Nota.* Elaboración propia (2026) en UXPressia.
 
 <br>
 
@@ -323,6 +349,10 @@ En esta sección se presenta el **Product Backlog** de Gamarra Loop. La prioriza
 - **Captura de pantalla:**
 
 <img alt="productbacklog" src="https://github.com/user-attachments/assets/ab5f3c47-0d8f-4d16-9d8d-7ec465c889f4" />
+
+*Nota.* Elaboración propia (2026) en Jira.
+
+<br>
 
 <a name="4."></a>
 # Capítulo IV: Solution Software Design
