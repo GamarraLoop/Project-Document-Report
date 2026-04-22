@@ -394,7 +394,7 @@ Figura 8
 
 <img width="1473" height="1060" alt="Image" src="https://github.com/user-attachments/assets/b988db87-3814-450e-be9b-5aac18b6c2df" />
 
-*Nota.* Elaboración propia (2026) en UXPressia.
+*Nota.* Elaboración propia (2026) en Miro.
 
 ---
 
@@ -404,7 +404,7 @@ Figura 9
 
 <img width="1473" height="1060" alt="Image" src="https://github.com/user-attachments/assets/416f7ab8-266f-4519-b8b4-4506851515cb" />
 
-*Nota.* Elaboración propia (2026) en UXPressia.
+*Nota.* Elaboración propia (2026) en Miro.
 
 ---
 
