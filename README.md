@@ -83,7 +83,7 @@ Los integrantes son:
    1.2. [Solution Profile.](#1.2.)<br>
    1.2.1. [Antecedentes y Problemática.](#1.2.1.)<br>
    1.2.2. [Lean UX Process.](#1.2.2.)<br>
-   1.2.2.1 [Entrevistas.](#1.2.2.1.)<br>
+   1.2.2.1 [Lean UX Problem Statements.](#1.2.2.1.)<br>
    1.2.2.2. [Lean UX Assumptions.](#1.2.2.2.)<br>
    1.2.2.3 [Lean UX Hypothesis Statements.](#1.2.2.3.)<br>
    1.2.2.4 [Lean UX Canvas.](#1.2.2.4.)<br>
@@ -129,6 +129,9 @@ Los integrantes son:
    4.3.2. [Software Architecture Context Level Diagrams.](#4.3.2.)<br>
    4.3.3. [Software Architecture Container Level Diagrams.](#4.3.3.)<br>
    4.3.4. [Software Architecture Deployment Diagrams.](#4.3.4.)<br>
+7. [**Conclusiones**](#1.) <br>
+9. [**Referencias bibliográficas**](#1.) <br>
+10. [**Anexo**](#1.) <br>
 
 # STUDENT OUTCOME
 
@@ -136,8 +139,8 @@ Los integrantes son:
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br><br> **Gongora Castillejos, Williams:**<br> **TB1:** Sustenté frente al equipo la viabilidad técnica y de negocio para la gestión de requerimientos (Capítulo III), argumentando la necesidad de aplicar IA y rediseñar el flujo logístico. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br><br> **Molina Falcon, Piero Leonardo** <br><br> **Torres Garcia, Andrés Alberto** | **TB1:** El equipo logró alinear la visión del producto mediante debates estructurados, asegurando que todos los miembros comprendan a profundidad el modelo de negocio antes de iniciar el diseño arquitectónico. |
-| Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br><br> **Gongora Castillejos, Williams:** <br> **TB1:** Redacté y estructuré el Capítulo III (Requirements Specification), elaborando diagramas estratégicos (Impact Mapping, To-Be Scenario) y estandarizando las User Stories en formato Gherkin. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br><br> **Molina Falcon, Piero Leonardo** <br><br> **Torres Garcia, Andrés Alberto** | **TB1:** La documentación rigurosa y estandarizada ha demostrado ser fundamental. Redactar requerimientos sin ambigüedades ni detalles de UI garantiza una base sólida y comprensible para el posterior diseño de software. |
+| Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br><br> **Gongora Castillejos, Williams:**<br> **TB1:** Sustenté frente al equipo la viabilidad técnica y de negocio para la gestión de requerimientos (Capítulo III), argumentando la necesidad de aplicar IA y rediseñar el flujo logístico. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Sustenté frente al equipo la problemática, contexto y propuesta de solución del proyecto (Capítulo I), argumentando la necesidad de implementar una plataforma basada en IA para optimizar la gestión y reutilización de residuos textiles dentro de un enfoque de economía circular. <br><br> **Molina Falcon, Piero Leonardo** <br><br> **Torres Garcia, Andrés Alberto** | **TB1:** El equipo logró alinear la visión del producto mediante debates estructurados, asegurando que todos los miembros comprendan a profundidad el modelo de negocio antes de iniciar el diseño arquitectónico. |
+| Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br><br> **Gongora Castillejos, Williams:** <br> **TB1:** Redacté y estructuré el Capítulo III (Requirements Specification), elaborando diagramas estratégicos (Impact Mapping, To-Be Scenario) y estandarizando las User Stories en formato Gherkin. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Redacté y estructuré el Capítulo I del proyecto, desarrollando el perfil de la startup, la problemática, los segmentos de usuarios y los artefactos de Lean UX, comunicando las ideas de manera clara, organizada y comprensible para públicos tanto técnicos como no técnicos. <br><br> **Molina Falcon, Piero Leonardo** <br><br> **Torres Garcia, Andrés Alberto** | **TB1:** La documentación rigurosa y estandarizada ha demostrado ser fundamental. Redactar requerimientos sin ambigüedades ni detalles de UI garantiza una base sólida y comprensible para el posterior diseño de software. |
 
 <a name="1."></a>
 # Capítulo I: Introducción
@@ -145,11 +148,134 @@ Los integrantes son:
 <a name="1.1."></a>
 ## 1.1. Startup Profile
 
+En esta sección se presenta la descripción del startup y los perfiles de los miembros del equipo.
+
 <a name="1.1.1."></a>
 ### 1.1.1. Descripción del startup
 
+GamarraLoop está conformado por estudiantes de Ingeniería de Software con formación académica en diseño, desarrollo y arquitectura de aplicaciones modernas. Cuenta con conocimientos en desarrollo de aplicaciones móviles, backend y principios de arquitectura de software, lo que permite abordar el proyecto desde una perspectiva integral. Con respecto a su forma de trabajo, el equipo adopta un enfoque iterativo e incremental, priorizando el desarrollo de prototipos funcionales y la validación progresiva de las funcionalidades mediante retroalimentación continua. Asimismo, el equipo muestra un fuerte interés en el desarrollo de soluciones con impacto social, especialmente en contextos como el emporio comercial de Gamarra, donde la digitalización y optimización de procesos representan una oportunidad significativa para mejorar la gestión de recursos y fomentar prácticas sostenibles. Esta motivación impulsa el diseño de una propuesta tecnológica que no solo sea funcional, sino también relevante para su entorno.
+
 <a name="1.1.2."></a>
 ### 1.1.2. Perfiles de los integrantes del equipo
+
+<table align="center"  border="1" width="70%" style="text-align:center;">
+    <tr align="center">
+        <td rowspan="3">
+            <img src="Img/Alberto-Cuya.jpg" alt="Cuya Villegas, Rafael Alberto" style="margin-bottom: 5px;" width="800"/> 
+        </td>
+        <td align="left">
+            <b>Nombre y Apellido:</b>
+            <br>
+            Cuya Villegas, Rafael Alberto
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Carrera:</b>
+        <br>
+        Ingeniería de Software
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Acerca de:</b>
+        <br> 
+        </td>
+    </tr>
+    <tr align="center">
+        <td rowspan="3">
+            <img src="Img/Williams-Gongora.jpg" alt="Gongora Castillejos, Williams" style="margin-bottom: 5px;" width="800"/>
+        </td>
+        <td align="left">
+            <b>Nombre y Apellido:</b>
+            <br>
+            Gongora Castillejos, Williams
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Carrera:</b>
+        <br>
+          Ingeniería de Software 
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Acerca de:</b>
+        <br>
+        </td>
+    </tr>
+    <tr align="center">
+        <td rowspan="3">
+            <img src="Img/Elizabeth-Huanaco.jpeg" alt="Huanaco Huayta, Elizabeth Lucero"  style="margin-bottom: 5px;" width="800"/>
+        </td>
+        <td align="left">
+            <b>Nombre y Apellido: </b>
+            <br>
+            Huanaco Huayta, Elizabeth Lucero
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Carrera:</b>
+        <br>
+        Ingenieria de Software
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Acerca de:</b>
+        <br>
+         Soy estudiante del octavo ciclo de la carrera de Ingeniería de Software en la UPC, con interés en el desarrollo de soluciones tecnológicas que generen impacto real. Me motiva la posibilidad de crear aplicaciones funcionales y útiles, aplicando buenas prácticas de programación y arquitectura de software. A lo largo de mi formación académica, he venido fortaleciendo mis habilidades técnicas y de trabajo en equipo. Dentro del proyecto, me comprometo a contribuir de manera responsable y proactiva, aportando al cumplimiento de los objetivos del equipo. Busco mejorar continuamente mis capacidades y aportar al desarrollo de una solución de calidad que responda a las necesidades planteadas.
+        </td>
+    </tr>
+    <tr align="center">
+        <td rowspan="3">
+            <img src="Img/Leonardo-Molina.jpg" alt="Molina Falcon, Piero Leonardo" style="margin-bottom: 5px;" width="800"/>
+        </td>
+        <td align="left">
+            <b>Nombre y Apellido:</b>
+            <br>
+            Molina Falcon, Piero Leonardo
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Carrera:</b>
+        <br>
+        Ingeniería de Software
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Acerca de:</b>
+        <br>
+        </td>
+    </tr>
+    <tr align="center">
+        <td rowspan="3">
+            <img src="Img/Andres-Torres.jpg" alt="Torres Garcia, Andrés Alberto" style="margin-bottom: 5px;" width="800"/>
+        </td>
+        <td align="left">
+            <b>Nombre y Apellido:</b>
+            <br>
+            Torres Garcia, Andrés Alberto
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Carrera:</b>
+        <br>
+        Ingeniería de Software
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+        <b>Acerca de:</b>
+        <br>
+        </td>
+    </tr>
+</table>
 
 <a name="1.2."></a>
 ## 1.2. Solution Profile
@@ -157,23 +283,138 @@ Los integrantes son:
 <a name="1.2.1."></a>
 ### 1.2.1. Antecedentes y Problemática
 
+Según la Ellen MacArthur Fundación (2017), la industria textil genera grandes volúmenes de residuos que no son reutilizados eficientemente, lo que representa una oportunidad clave para implementar modelos de economía circular. Debido a la alta actividad productiva en el emporio comercial de Gamarra, se generan diariamente grandes cantidades de residuos textiles que, en su mayoría, no son gestionados de manera eficiente. Sin embargo, existe una creciente necesidad por parte de artesanos, emprendedores y recolectores de acceder a materia prima para sus actividades. Sin embargo, la falta de un sistema organizado dificulta la conexión entre quienes generan estos excedentes y quienes podrían reutilizarlos, provocando desperdicio de recursos y un impacto ambiental negativo.
+
+De acuerdo con la European Environment Agency (2019), la industria textil representa uno de los sectores con mayor impacto ambiental debido al alto volumen de residuos generados y al bajo nivel de reutilización de materiales. A pesar del potencial que tienen estos residuos para ser reincorporados en nuevos ciclos productivos, gran parte de ellos termina siendo desechado debido a la falta de sistemas eficientes que faciliten su clasificación, recuperación y redistribución. En este contexto, la adopción de enfoques basados en la economía circular resulta fundamental para reducir el desperdicio y promover un uso más sostenible de los recursos textiles.
+Frente a esta problemática, nuestra solución propone una plataforma digital que facilite la gestión y redistribución de residuos textiles dentro de un enfoque de economía circular. A través de nuestro producto ReciTex, los talleres podrán registrar sus excedentes de forma rápida mediante el uso de Inteligencia Artificial, la cual permitirá identificar automáticamente el tipo de material y color a partir de una fotografía. Esta información será publicada en un directorio geolocalizado, creando un espacio unificado donde artesanos y recolectores podrán identificar puntos de disponibilidad y coordinar el recojo de materiales de manera eficiente, promoviendo así la reutilización de recursos y la sostenibilidad en el sector.
+
+**WHAT (Qué): ¿Cuál es el problema?**
+
+El problema es la ineficiente gestión y aprovechamiento de los residuos textiles generados en el emporio comercial de Gamarra. Esto se traduce en acumulación de materiales reutilizables, desperdicio de recursos valiosos y falta de visibilidad sobre la disponibilidad de estos excedentes, limitando su reutilización en otros procesos productivos.
+
+**WHEN (Cuándo): ¿Cuándo sucede el problema?**
+
+El problema ocurre de manera constante durante las actividades diarias de producción en los talleres de confección, especialmente al finalizar procesos de corte y fabricación, donde se generan retazos y sobrantes que no son gestionados adecuadamente.
+
+**WHERE (Dónde): ¿Dónde surge el problema?**
+
+El problema surge principalmente en los talleres textiles ubicados en el emporio comercial de Gamarra, donde la alta concentración de producción genera grandes volúmenes de residuos sin un sistema estructurado para su gestión y redistribución.
+
+**WHO (Quién): ¿A quiénes les sucede el problema?**
+
+El problema afecta directamente a los dueños de talleres, quienes no cuentan con herramientas para gestionar sus residuos. Asimismo, afecta a recolectores que podrían reutilizar estos materiales, pero no tienen acceso a información sobre su disponibilidad. De manera indirecta, también impacta al entorno urbano debido al incremento de residuos.
+
+**WHY (Por qué): ¿Cuál es la causa del problema?**
+
+La principal causa radica en la falta de herramientas digitales accesibles que permitan registrar, clasificar y compartir información sobre los residuos textiles. Esto se ve agravado por la baja adopción tecnológica en pequeños talleres, la informalidad del sector y la ausencia de un sistema que conecte oferta y demanda de estos materiales.
+
+**HOW (Cómo): ¿Cómo llevó a los involucrados a llegar a esta situación?**
+
+La dependencia de procesos manuales y prácticas informales, junto con la ausencia de soluciones tecnológicas adaptadas a este contexto, ha generado una desconexión entre quienes generan residuos y quienes podrían reutilizarlos. Esto ha derivado en una gestión ineficiente y en la pérdida de oportunidades dentro de un modelo de economía circular.
+
+**HOW MUCH (Cuánto): ¿Cuánto afecta el problema?**
+
+Este problema impacta significativamente en la sostenibilidad ambiental y en la eficiencia del uso de recursos, generando acumulación innecesaria de residuos y desaprovechamiento de materiales reutilizables. Además, limita oportunidades económicas para pequeños emprendedores y contribuye a la contaminación en el entorno, afectando tanto al sector productivo como a la comunidad en general.
+
 <a name="1.2.2."></a>
 ### 1.2.2. Lean UX Process
 
 <a name="1.2.2.1."></a>
-#### 1.2.2.1. Entrevistas
+#### 1.2.2.1. Lean UX Problem Statements
+
+En la actualidad, la gestión de residuos textiles en entornos como el emporio comercial de Gamarra se realiza de manera informal y poco estructurada. Los talleres de confección generan constantemente excedentes de producción que, en muchos casos, no son reutilizados eficientemente debido a la falta de herramientas digitales accesibles que permitan registrar, clasificar y compartir esta información.
+
+Para los generadores de estos residuos, un problema común es la dificultad para gestionar y dar visibilidad a los materiales sobrantes, lo que conlleva a su acumulación o descarte. Por otro lado, para recolectores, resulta complicado identificar y acceder a fuentes confiables de materia prima reutilizable, lo que limita sus oportunidades de producción y crecimiento.
+
+¿Qué soluciones deberíamos brindar para lograr que los procesos relacionados con la gestión, clasificación y redistribución de residuos textiles sean más automatizados y permitan conectar de manera eficiente a los generadores con quienes pueden reutilizar estos materiales dentro de un modelo de economía circular sostenible?
 
 <a name="1.2.2.2."></a>
 #### 1.2.2.2. Lean UX Assumptions
 
+**Business Assumptions**
+
+- Creemos que nuestros usuarios necesitan una forma más eficiente y accesible de gestionar y reutilizar residuos textiles generados en entornos productivos como Gamarra.
+- Estas necesidades se pueden resolver mediante el uso de una aplicación móvil low-code asistida por Inteligencia Artificial que permita registrar, clasificar y geolocalizar los excedentes textiles de manera rápida.
+- Los clientes principales son los dueños de talleres textiles, así como recolectores que buscan acceder a materiales reutilizables de forma sencilla.
+- El valor #1 que un cliente quiere del servicio es la facilidad y rapidez para publicar o encontrar materiales disponibles, optimizando tiempo y reduciendo desperdicios.
+- El cliente también puede obtener beneficios adicionales mediante funcionalidades como clasificación automática por imagen, visualización en mapas geolocalizados y notificaciones de disponibilidad de materiales.
+- Vamos a adquirir la mayoría de los usuarios mediante campañas de concientización, marketing digital y alianzas con asociaciones textiles y comunidades de emprendedores.
+- El modelo de ingresos podrá basarse en alianzas estratégicas con organizaciones interesadas en la gestión sostenible de residuos.
+- Nuestra competencia principal son los métodos tradicionales e informales de gestión de residuos, así como plataformas genéricas que no están enfocadas en economía circular ni en el sector textil.
+- Los venceremos mediante el uso de Inteligencia Artificial, una experiencia de usuario simple (low-code) y un enfoque específico en la reutilización de materiales dentro de un ecosistema colaborativo.
+- Nuestro mayor riesgo es la baja adopción tecnológica por parte de los talleres y la resistencia al cambio frente a procesos tradicionales.
+- Resolveremos esto mediante interfaces simples, capacitación básica, demostraciones del sistema y generación de valor inmediato para los usuarios.
+
+**Assumptions Worksheet**
+
+- **¿Quién es el usuario?**  
+  Los usuarios son dueños de talleres textiles y recolectores que buscan gestionar o acceder a materiales reutilizables de manera eficiente.
+
+- **¿Dónde encaja nuestro producto en su trabajo o vida?**  
+  La aplicación se integra en las actividades diarias de producción y recolección, facilitando el registro inmediato de residuos y la búsqueda de materiales disponibles en el entorno.
+
+- **¿Qué problemas tiene nuestro producto que resolver?**  
+  La falta de visibilidad de los residuos textiles, la desconexión entre oferta y demanda de materiales reutilizables y la baja adopción de herramientas digitales en el sector.
+
+- **¿Cuándo y cómo es nuestro producto usado?**  
+  Se utiliza durante y después de los procesos de producción, cuando se generan residuos, así como en momentos de búsqueda de materiales por parte de recolectores.
+
+- **¿Qué características son importantes?**  
+  Registro rápido mediante fotografía, clasificación automática con IA, geolocalización de materiales, interfaz simple y accesible desde dispositivos móviles.
+
+- **¿Cómo debe verse nuestro producto y cómo comportarse?**  
+  Debe ser intuitivo, rápido y fácil de usar, con una interfaz limpia que permita a usuarios no técnicos interactuar sin dificultad. Además, debe responder de manera eficiente y mostrar información clara y útil en tiempo real.
+
 <a name="1.2.2.3."></a>
 #### 1.2.2.3. Lean UX Hypothesis Statements
+
+- Creemos que al permitir el registro de residuos textiles mediante el uso de fotografías y su clasificación automática con Inteligencia Artificial, se reducirá el esfuerzo y tiempo requerido por los talleres para gestionar sus excedentes. Sabremos que tenemos éxito cuando observemos un incremento significativo en la cantidad de publicaciones registradas y una reducción en el tiempo promedio de registro.
+
+- Creemos que al implementar un directorio geolocalizado de residuos textiles disponibles, se facilitará la conexión entre generadores y recolectores. Sabremos que estamos cumpliendo este objetivo cuando aumente la cantidad de interacciones y coordinaciones realizadas a partir de los puntos publicados en la plataforma.
+
+- Creemos que al ofrecer una interfaz simple y accesible (low-code), se incrementará la adopción de la plataforma por parte de usuarios con bajo nivel de experiencia tecnológica. Sabremos que tenemos éxito cuando se evidencie un crecimiento sostenido en el número de usuarios activos y una disminución en las dificultades de uso reportadas.
+
+- Creemos que al centralizar la información sobre residuos textiles disponibles, se mejorará la visibilidad de materiales reutilizables. Sabremos que estamos cumpliendo este objetivo cuando aumente la tasa de reutilización de materiales registrados dentro del sistema.
+
+- Creemos que al promover el uso de la plataforma como medio de gestión de residuos, se contribuirá a la reducción del desperdicio textil. Sabremos que estamos cumpliendo este objetivo cuando se observe una disminución en la acumulación de residuos no reutilizados en los talleres participantes.
 
 <a name="1.2.2.4."></a>
 #### 1.2.2.4. Lean UX Canvas
 
+<img src="Img/Lean-UX-Canvas.jpg" alt="Lean Ux Canvas" style="margin-bottom: 5px;" width="800"/>
+
 <a name="1.3."></a>
 ## 1.3. Segmentos objetivo
+
+En esta sección, definiremos los perfiles específicos del público objetivo para nuestro producto. Dichos grupos comparten características demográficas, comportamientos y necesidades similares, lo que permite diseñar soluciones adecuadas para optimizar la gestión y reutilización de residuos dentro de un modelo de economía circular sostenible.
+
+**Segmento 1: Talleres de Confección**
+
+- **Segmento demográfico:**  
+  Propietarios de talleres textiles con ingresos variables, generalmente pequeños o medianos empresarios que buscan optimizar sus procesos productivos y reducir desperdicios.
+
+- **Segmento geográfico:**  
+  Ubicados principalmente en zonas urbanas con alta actividad textil, como el emporio comercial de Gamarra.
+
+- **Segmento psicográfico:**  
+  Personas prácticas que buscan soluciones simples y rápidas para gestionar sus excedentes, con interés creciente en mejorar la eficiencia y reducir pérdidas.
+
+- **Segmento conductual:**  
+  Generan residuos textiles de forma constante, registran excedentes mediante fotografías, requieren herramientas que automaticen la clasificación (tipo y color) y publican la disponibilidad para coordinar el recojo con interesados.
+
+**Segmento 2: Recolectores**
+
+- **Segmento demográfico:**  
+  Recolectores, como emprendedores o artesanos, que buscan acceder a materia prima reutilizable para sus actividades productivas.
+
+- **Segmento geográfico:**  
+  Ubicados en zonas cercanas a centros de producción textil o con acceso a los mismos.
+
+- **Segmento psicográfico:**  
+  Personas con mentalidad emprendedora y enfoque en el aprovechamiento de recursos, interesadas en oportunidades económicas sostenibles.
+
+- **Segmento conductual:**  
+  Exploran mapas de materiales disponibles, filtran por tipo, color y cercanía, contactan talleres para coordinar el recojo y utilizan los materiales obtenidos como insumo para sus productos.
 
 <a name="2."></a>
 # Capítulo II: Requirements Elicitation & Analysis
@@ -416,3 +657,16 @@ En esta sección se presenta el **Product Backlog** de Gamarra Loop. La prioriza
 
 <a name="4.3.4."></a>
 ### 4.3.4. Software Architecture Deployment Diagrams
+
+<a name="7."></a>
+# Conclusiones
+
+<a name="9."></a>
+# Referencia bibliográficas
+
+- Ellen MacArthur Foundation. (2017). *A new textiles economy: Redesigning fashion’s future*. https://ellenmacarthurfoundation.org/
+
+- European Environment Agency. (2019). *Textiles in Europe’s circular economy*. https://www.eea.europa.eu/
+
+<a name="10."></a>
+# Anexos
