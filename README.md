@@ -184,7 +184,7 @@ GamarraLoop está conformado por estudiantes de Ingeniería de Software con form
     </tr>
     <tr align="center">
         <td rowspan="3">
-            <img src="Img/Williams-Gongora.jpg" alt="Gongora Castillejos, Williams" style="margin-bottom: 5px;" width="800"/>
+            <img src="Img/Williams-Gongora.png" alt="Gongora Castillejos, Williams" style="margin-bottom: 5px;" width="800"/>
         </td>
         <td align="left">
             <b>Nombre y Apellido:</b>
@@ -203,6 +203,7 @@ GamarraLoop está conformado por estudiantes de Ingeniería de Software con form
         <td align="left">
         <b>Acerca de:</b>
         <br>
+        Soy estudiante del octavo ciclo de Ingeniería de Software en la UPC, perteneciente al quinto superior de mi carrera. Me apasiona el desarrollo de soluciones tecnológicas, con un enfoque especial en el Front-end, donde disfruto construyendo interfaces funcionales, atractivas y centradas en el usuario. Cuento con experiencia técnica en tecnologías como Angular, React y Spring Boot, además de un sólido manejo de bases de datos. Me caracterizo por ser una persona creativa y empática, comprometida con el trabajo en equipo y la aplicación de buenas prácticas para entregar productos de software de alta calidad que generen un impacto real.
         </td>
     </tr>
     <tr align="center">
