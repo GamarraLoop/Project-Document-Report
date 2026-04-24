@@ -190,14 +190,14 @@ Reforzar la diferenciación de Recitex en todos los canales de marketing, destac
 
 | Campo             | Detalle |
 |-------------------|---------|
-| **Entrevistado**  | Juan Pérez |
-| **Entrevistador** |  |
+| **Entrevistado**  | Piero Gamio |
+| **Entrevistador** | Rafael Cuya |
 | **Sexo**          |Masculino |
-| **Edad**          | 45 |
+| **Edad**          | 32 |
 | **Distrito**      | Lince |
-| **Timing**        |  |
-| **Link**          |  |
-| **Resumen**       | Juan comenta que genera retazos de tela casi todos los días y los acumula hasta que ocupan mucho espacio. A veces los regala o los da a recicladores, pero coordinar es complicado. Dice que le gustaría algo simple para deshacerse de esos materiales rápido, sin perder tiempo. |
+| **Timing**        | 5:28 |
+| **Link**          |  [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQAN7gYHGcYlSLXuoJ9JBJjkAf3Zrbft26IoBjtFGzD699k?e=QFawgz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| **Resumen**       | Piero nos comenta que genera retazos de tela casi todos los días y los acumula hasta que ocupan mucho espacio. A veces los regala o los da a recicladores, pero coordinar es complicado. Dice que le gustaría algo simple para deshacerse de esos materiales rápido, sin perder tiempo. |
 
 #### Entrevista 2
 
