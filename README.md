@@ -204,12 +204,12 @@ Reforzar la diferenciación de Recitex en todos los canales de marketing, destac
 | Campo             | Detalle |
 |-------------------|---------|
 | **Entrevistado**  | Rosa Martínez |
-| **Entrevistador** |  |
+| **Entrevistador** | Williams Gongora Castillejos |
 | **Sexo**          | Femenino |
 | **Edad**          | 34 |
 | **Distrito**      | La Victoria |
-| **Timing**        |  |
-| **Link**          |  |
+| **Timing**        | 06:02 |
+| **Link**          | [Video de Entrevista](https://drive.google.com/file/d/1Pc5kJXIdPAnvehhxsKmAM4HTL7_i8k_e/view?usp=sharing) |
 | **Resumen**       | Rosa menciona que en el taller juntan los residuos en bolsas y luego los botan o venden barato. El problema es que no siempre hay quién los compre. Para ella, sería útil una app donde pueda publicar rápido los materiales y que alguien los recoja sin tanto trámite. |
 ---
 #### Entrevista 3
