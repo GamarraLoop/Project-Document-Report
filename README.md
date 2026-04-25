@@ -19,7 +19,7 @@
     </tr>
     <tr>
       <th colspan="2" align="left">(En la cabecera colocar por cada competidor nombre y logo)</th>
-      <th>Recitex<br></th>
+      <th>GamarraLoop<br></th>
       <th>Vinted<br><img width="100" height="70" alt="Image" src="https://github.com/user-attachments/assets/cf3e72d3-2b41-4568-b77a-d751fc31c81f" /></th>
       <th>Facebook Marketplace<br><img width="100" height="70" alt="Image" src="https://github.com/user-attachments/assets/9a247260-211d-49f8-8c75-bc3fd80dcae5" /></th>
       <th>Etsy<br><img width="100" height="70" alt="Image" src="https://github.com/user-attachments/assets/6d3a4d31-c35f-4fec-9143-d5eba85795dc" /></th>
