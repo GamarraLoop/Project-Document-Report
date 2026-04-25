@@ -136,8 +136,8 @@ Los integrantes son:
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br>Compartí con el equipo diversas ideas orientadas a la creación y mejora de nuestro proyecto, comunicándolas de manera clara y objetiva. Asimismo, en el desarrollo del Capítulo II, estuve a cargo de la realización de entrevistas, lo que implicó interactuar con los participantes de forma estructurada y profesional, asegurando una comunicación efectiva con personas de diferentes niveles y contextos.<br> **Gongora Castillejos, Williams:**<br> **TB1:** Sustenté frente al equipo la viabilidad técnica y de negocio para la gestión de requerimientos (Capítulo III), argumentando la necesidad de aplicar IA y rediseñar el flujo logístico. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Sustenté frente al equipo la problemática, contexto y propuesta de solución del proyecto (Capítulo I), argumentando la necesidad de implementar una plataforma basada en IA para optimizar la gestión y reutilización de residuos textiles dentro de un enfoque de economía circular. <br><br> **Molina Falcon, Piero Leonardo** <br><br> **Torres Garcia, Andrés Alberto** | **TB1:** El equipo logró alinear la visión del producto mediante debates estructurados, asegurando que todos los miembros comprendan a profundidad el modelo de negocio antes de iniciar el diseño arquitectónico. |
-| Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br>Me encargué del desarrollo del Capítulo II, diseñando entrevistas y desarrollando herramientas como mapas de análisis con el objetivo de comprender mejor a los usuarios y sus necesidades. La información fue presentada de manera clara y objetiva.<br> **Gongora Castillejos, Williams:** <br> **TB1:** Redacté y estructuré el Capítulo III (Requirements Specification), elaborando diagramas estratégicos (Impact Mapping, To-Be Scenario) y estandarizando las User Stories en formato Gherkin. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Redacté y estructuré el Capítulo I del proyecto, desarrollando el perfil de la startup, la problemática, los segmentos de usuarios y los artefactos de Lean UX, comunicando las ideas de manera clara, organizada y comprensible para públicos tanto técnicos como no técnicos. <br><br> **Molina Falcon, Piero Leonardo** <br><br> **Torres Garcia, Andrés Alberto** | **TB1:** La documentación rigurosa y estandarizada ha demostrado ser fundamental. Redactar requerimientos sin ambigüedades ni detalles de UI garantiza una base sólida y comprensible para el posterior diseño de software. |
+| Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br>Compartí con el equipo diversas ideas orientadas a la creación y mejora de nuestro proyecto, comunicándolas de manera clara y objetiva. Asimismo, en el desarrollo del Capítulo II, estuve a cargo de la realización de entrevistas, lo que implicó interactuar con los participantes de forma estructurada y profesional, asegurando una comunicación efectiva con personas de diferentes niveles y contextos.<br><br>**Gongora Castillejos, Williams:**<br> **TB1:** Sustenté frente al equipo la viabilidad técnica y de negocio para la gestión de requerimientos (Capítulo III), argumentando la necesidad de aplicar IA y rediseñar el flujo logístico. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Sustenté frente al equipo la problemática, contexto y propuesta de solución del proyecto (Capítulo I), argumentando la necesidad de implementar una plataforma basada en IA para optimizar la gestión y reutilización de residuos textiles dentro de un enfoque de economía circular. <br><br> **Molina Falcon, Piero Leonardo** <br><br> **Torres Garcia, Andrés Alberto** | **TB1:** El equipo logró alinear la visión del producto mediante debates estructurados, asegurando que todos los miembros comprendan a profundidad el modelo de negocio antes de iniciar el diseño arquitectónico. |
+| Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br>Me encargué del desarrollo del Capítulo II, diseñando entrevistas y desarrollando herramientas como mapas de análisis con el objetivo de comprender mejor a los usuarios y sus necesidades. La información fue presentada de manera clara y objetiva.<br><br> **Gongora Castillejos, Williams:** <br> **TB1:** Redacté y estructuré el Capítulo III (Requirements Specification), elaborando diagramas estratégicos (Impact Mapping, To-Be Scenario) y estandarizando las User Stories en formato Gherkin. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Redacté y estructuré el Capítulo I del proyecto, desarrollando el perfil de la startup, la problemática, los segmentos de usuarios y los artefactos de Lean UX, comunicando las ideas de manera clara, organizada y comprensible para públicos tanto técnicos como no técnicos. <br><br> **Molina Falcon, Piero Leonardo** <br><br> **Torres Garcia, Andrés Alberto** | **TB1:** La documentación rigurosa y estandarizada ha demostrado ser fundamental. Redactar requerimientos sin ambigüedades ni detalles de UI garantiza una base sólida y comprensible para el posterior diseño de software. |
 
 <a name="1."></a>
 
@@ -551,25 +551,25 @@ En esta sección, definiremos los perfiles específicos del público objetivo pa
 
 ---
 
-**Estrategia Ofensiva **
+**Estrategia Ofensiva**
 
 Aprovechar el crecimiento de la economía circular y la digitalización en el sector textil, creando una plataforma basada en IA y geolocalización. Recitex potencia su propuesta mediante la automatización del registro de residuos textiles. Además, el desarrollo del sistema visual permitirá una fácil localización de los excedentes textiles en tiempo real, esto ayudará a la conexión eficiente entre nuestros segmentos objetivos generando valor para ambos.
 
 ---
 
-**Estrategia Defensiva **
+**Estrategia Defensiva**
 
 Analizar de manera continua las propuestas de valor de los principales competidores indirectos como Facebook Marketplace, Vinted o Etsy, con el fin de incorporar buenas prácticas y elementos diferenciadores que mantengan fresca e innovadora la solución de Recitex. Adicionalmente, se reforzará la propuesta diferenciadora mediante el uso de IA y la especialización en el sector de residuos textiles. La optimización en la experiencia del usuario será un punto clave para permitirle a nuestros usuarios un flujo rápido y sencillo.
 
 ---
 
-**Estrategia de Reorientación **
+**Estrategia de Reorientación**
 
 Validar y adaptar nuestro sistema en distintos segmentos dentro del perfil textil, como recicladores urbanos, emprendimientos de moda y asociaciones textiles, ajustando las funcionalidades según sus necesidades. Por otro lado, establecer alianzas estrátegicas con municipalidades, ONGs ambientales y centros de tecnología, que aporten conocimientos en IA y la interfaz. Esto permitirá mantener una mejora continua de nuestra plataforma y explorar nuevas funcionalidades.
 
 ---
 
-**Estrategia de Supervivencia **
+**Estrategia de Supervivencia**
 
 Reforzar la diferenciación de Recitex en todos los canales de marketing, destacando su facilidad de uso, enfoque sin transacciones monetarias y su impacto ambiental positivo en la reducción de residuos textiles. También, se implementará un sistema de acompañamiento y capacitación para usuarios, con el fin de reducir la resistencia al uso de tecnología. La retroalimentación constante permitirá llevar a cabo mejorar en nuestra app, incrementando su competitividad y fortaleciendo su adopción en el mercado.
 
@@ -675,14 +675,14 @@ Reforzar la diferenciación de Recitex en todos los canales de marketing, destac
 
 | Campo             | Detalle |
 |-------------------|---------|
-| **Entrevistado**  | María López |
-| **Entrevistador** |  |
-| **Sexo**          | |
-| **Edad**          | 28 |
+| **Entrevistado**  | Anthony Martín Huapaya Cuevas |
+| **Entrevistador** | Elizabeth Lucero Huanaco Huayta |
+| **Sexo**          | Masculino |
+| **Edad**          | 26 |
 | **Distrito**      | Jesús Maria |
-| **Timing**        |  |
-| **Link**          |  |
-| **Resumen**       | María cuenta que busca materiales en Gamarra o con recicladores, pero muchas veces no encuentra lo que necesita. Pierde tiempo buscando y a veces termina comprando más caro. Le interesaría una app donde pueda ver materiales cercanos y elegir más rápido. |
+| **Timing**        | 08:05 |
+| **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211g522_upc_edu_pe/IQDfTLJqZPgERq92KZQYQyIcAamOMdEuGeg0HEMG1UtIuTU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=0w9fGL) |
+| **Resumen**       | Anthony cuenta que busca materiales en Gamarra o con recicladores, pero muchas veces no encuentra lo que necesita. Pierde tiempo buscando y a veces termina comprando más caro. Le interesaría una app donde pueda ver materiales cercanos y elegir más rápido. |
 
 ---
 
