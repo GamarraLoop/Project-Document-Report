@@ -426,4 +426,31 @@ Figura 9
 <a name="2.4."></a>
 ## 2.4. Ubiquitous Language
 
+| Término | Definición |
+|--------|-----------|
+| Recitex / GamarraLoop | Aplicación que conecta talleres de confección con artesanos/recolectores para la reutilización de residuos textiles. |
+| Residuo textil | Material sobrante generado en los procesos de confección (retazos, telas, excedentes). |
+| Excedente | Cantidad de material textil que no será utilizado por el taller y está disponible para reutilización. |
+| Lote de tela | Conjunto de residuos textiles agrupados y publicados como una unidad dentro del sistema. |
+| Taller de confección | Usuario que genera residuos textiles y los publica en la plataforma. |
+| Artesano | Usuario que reutiliza materiales textiles para crear nuevos productos. |
+| Recolector | Usuario que busca, recoge y reutiliza residuos textiles disponibles en la plataforma. |
+| Publicación de lote | Acción de registrar un lote de tela en el sistema mediante foto, ubicación y descripción. |
+| Clasificación automática | Proceso en el que la IA identifica el tipo de material y color a partir de una imagen. |
+| Geolocalización | Funcionalidad que permite ubicar los lotes en un mapa según su ubicación real. |
+| Punto de recojo | Ubicación física donde el artesano o recolector puede recoger el lote publicado. |
+| Estado del lote | Condición actual del lote dentro del sistema (Disponible, Reservado, Entregado, Expirado, Cancelado). |
+| Reserva de lote | Acción mediante la cual un artesano asegura un lote antes de recogerlo. |
+| Confirmación de entrega | Acción del taller para indicar que el lote fue entregado físicamente. |
+| Confirmación de recepción | Acción del artesano para indicar que recibió el lote correctamente. |
+| Directorio de materiales | Vista donde se muestran los lotes disponibles con información relevante. |
+| Usuario | Persona que utiliza la plataforma (taller o artesano). |
+| Perfil de usuario | Información básica del usuario dentro del sistema (nombre, rol, contacto). |
+| Interacción | Acción de contacto o coordinación entre taller y artesano. |
+| Economía circular | Modelo que promueve la reutilización de materiales para reducir residuos. |
+| Low-code | Enfoque de desarrollo que permite usar la aplicación con mínima complejidad técnica. |
+| API RESTful | Servicio backend que permite la comunicación entre frontend y sistema. |
+| Notificación | Mensaje enviado al usuario sobre eventos importantes (reserva, entrega, etc.). |
+| Expiración de lote | Estado automático que se asigna a un lote no recogido después de cierto tiempo. |
+
                                                                                                                                                                                                                                                                                                                                                                                                                           
