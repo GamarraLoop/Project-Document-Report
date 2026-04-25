@@ -274,6 +274,7 @@ GamarraLoop está conformado por estudiantes de Ingeniería de Software con form
         <td align="left">
         <b>Acerca de:</b>
         <br>
+         Soy estudiante de Ingeniería de Software en la UPC, con interés en el diseño y la arquitectura de software como base para construir soluciones tecnológicas de calidad. Me motiva comprender los fundamentos detrás de cada decisión técnica y aplicar buenas prácticas de programación, patrones de diseño y desarrollo de software. A lo largo de mi formación académica he venido fortaleciendo mis habilidades técnicas y de trabajo en equipo, comprometiéndome a aportar de manera responsable y proactiva. Dentro del proyecto, busco contribuir al cumplimiento de los objetivos planteados, aportando esfuerzo y compromiso para entregar una solución que responda a las necesidades del equipo.
         </td>
     </tr>
 </table>
