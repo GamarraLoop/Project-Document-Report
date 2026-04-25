@@ -1,6 +1,11 @@
+<a name="2."></a>
 # Capítulo II: Requirements Elicitation & Analysis
 
+
+<a name="2.1."></a>
 ## 2.1. Competidores
+
+<a name="2.1.1."></a>
 ### 2.1.1. Análisis competitivo
 
 <table>
@@ -107,6 +112,7 @@
 
 ---
 
+<a name="2.1.2."></a>
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
 
@@ -136,8 +142,10 @@ Validar y adaptar nuestro sistema en distintos segmentos dentro del perfil texti
 Reforzar la diferenciación de Recitex en todos los canales de marketing, destacando su facilidad de uso, enfoque sin transacciones monetarias y su impacto ambiental positivo en la reducción de residuos textiles. También, se implementará un sistema de acompañamiento y capacitación para usuarios, con el fin de reducir la resistencia al uso de tecnología. La retroalimentación constante permitirá llevar a cabo mejorar en nuestra app, incrementando su competitividad y fortaleciendo su adopción en el mercado.
 
 
+<a name="2.2."></a>
 ## 2.2. Entrevistas
 
+<a name="2.2.1."></a>
 ### 2.2.1. Diseño de entrevistas
 
 ##### Preguntas Generales
@@ -182,6 +190,7 @@ Reforzar la diferenciación de Recitex en todos los canales de marketing, destac
 
 ---
 
+<a name="2.2.2."></a>
 ### 2.2.2. Registro de entrevistas
 
 #### Entrevistas al Segmento 1: Talleres de confección
@@ -270,14 +279,17 @@ Reforzar la diferenciación de Recitex en todos los canales de marketing, destac
 | **Resumen**       | Andrea menciona que le cuesta encontrar telas específicas a buen precio. Muchas veces pierde tiempo o tiene que cambiar sus diseños. Le gustaría una app con fotos claras y filtros para encontrar materiales más rápido. |
 ---
 
+<a name="2.2.3."></a>
 ### 2.2.3. Análisis de entrevistas
 
 De acuerdo con lo que hemos podido observar en las entrevistas realizadas a trabajadores o dueños de talleres de confección y artesanos/recolectores, se identificó que el 100% de los entrevistados gestiona los residuos textiles de forma manual, lo que evidencia una clara falta de digitalización en el proceso. En el caso de los talleres, el principal problema es la acumulación de residuos y la falta de espacio, además de la dificultad para encontrar personas que los recojan. Por otro lado, los artesanos y recolectores indicaron que obtienen materiales de forma informal, lo que implica una alta inversión de tiempo en la búsqueda, llegando incluso a perder varias horas sin resultados. Respecto al uso de tecnología, el 75% estaría dispuesto a usar una aplicación móvil, siempre que sea simple y rápida, mientras que el resto muestra cierta dificultad en su uso. Sin embargo, el 100% coincide en que sería útil contar con una herramienta que permita ver materiales disponibles, especialmente si incluye ubicación y fotos. En conclusión, el principal problema identificado es la falta de visibilidad y conexión entre quienes generan y quienes necesitan los materiales, lo que valida el desarrollo de una solución como Recitex basada en registro rápido y geolocalización.
 
 
 
+<a name="2.3."></a>
 ## 2.3. Needfinding
 
+<a name="2.3.1."></a>
 ### 2.3.1. User Personas
 
 
@@ -303,6 +315,7 @@ De acuerdo con lo que hemos podido observar en las entrevistas realizadas a trab
 
 
 
+<a name="2.3.2."></a>
 ### 2.3.2. User Task Matrix
 
 
@@ -333,8 +346,8 @@ Por otro lado, para el segmento Artesano/recolectores, encontramos que dentro de
 La matriz de tareas nos perimite identificar cuales son las funcionalidades mas críticas del sistema y en que secciones debemos centrarnos para que nuestra aplicación sea eficiente.
 
 
-### 2.3.3. User Journey Maps
-
+<a name="2.3.3."></a>
+### 2.3.3. User Journey Mapping
 
 ---
 
@@ -358,8 +371,8 @@ La matriz de tareas nos perimite identificar cuales son las funcionalidades mas 
 *Nota.* Elaboración propia (2026) en UXPressia.
 
 
+<a name="2.3.4."></a>
 ### 2.3.4. Empathy Mapping
-
 
 
 ---
@@ -383,8 +396,8 @@ La matriz de tareas nos perimite identificar cuales son las funcionalidades mas 
 *Nota.* Elaboración propia (2026) en UXPressia.
 
 
-### 2.3.5. As-Is Scenario Mapping
-
+<a name="2.3.5."></a>
+### 2.3.5. As-is Scenario Mapping
 
 
 ---
@@ -410,6 +423,7 @@ Figura 9
 ---
 
 
-## 2.5. Ubiquitous Language
+<a name="2.4."></a>
+## 2.4. Ubiquitous Language
 
-                                                                                                                                                                                                                                                                                                                                                                                                                          |
+                                                                                                                                                                                                                                                                                                                                                                                                                          
