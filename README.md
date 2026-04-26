@@ -1382,31 +1382,45 @@ Mediante la técnica del Event Storming definimos los siguientes Bounded Context
 
 USER / PROFILE MANAGMENT
 
-Imagen USER / PROFILE MANAGMENT
+<p align="center">
+  <img src="./assets/UserProfileManagment.jpg" width="850">
+</p>
 
-PUBLICACIÓN MANAGMENT
+LOT PUBLICACIÓN MANAGMENT
 
-Imagen LOT PUBLICACIÓN MANAGMENT
+<p align="center">
+  <img src="./assets/LotPublicationManagment.jpg" width="850">
+</p>
 
 TEXTILE CLASSIFICATION MANAGEMENT
 
-Imagen TEXTILE CLASSIFICATION MANAGEMENT
+<p align="center">
+  <img src="./assets/TextileClasification.jpg" width="850">
+</p>
 
 RESERVATION MANAGEMENT
 
-Imagen RESERVATION MANAGEMENT
+<p align="center">
+  <img src="./assets/ReservationManagment.jpg" width="850">
+</p>
 
 PICKUP AND DELIVERY MANAGEMENT
 
-ImagenPICKUP AND DELIVERY MANAGEMENT
+<p align="center">
+  <img src="./assets/PickupAndDelivery.jpg" width="850">
+</p>
 
 EXPIRATION MANAGEMENT
 
-Imagen EXPIRATION MANAGEMENT
+<p align="center">
+  <img src="./assets/ExpirationManagment.jpg" width="850">
+</p>
 
 NOTIFICATION MANAGMENT
 
-Imagen NOTIFICATION MANAGMENT
+<p align="center">
+  <img src="./assets/NotificationManagment.jpg" width="850">
+</p>
 
 
 El diagrama completo se encuentra en el siguiente enlace: https://miro.com/app/board/uXjVHfI02Ag=/?share_link_id=281658940692
@@ -1419,7 +1433,11 @@ La identificación de Candidate Context Discovery en el proyecto GamarraLoop per
 A partir de ello, se identificaron capacidades principales como la publicación de lotes textiles, la clasificación automática de materiales mediante IA, la reserva de lotes y la gestión de usuarios. Estas funcionalidades fueron agrupadas en sectores lógicos para facilitar el diseño, mejorar la escalabilidad y asegurar un mejor mantenimiento del sistema.
 El objetivo principal es definir bounded contexts claros que representen correctamente el dominio del negocio y permitan construir una arquitectura de software más organizada, flexible y sostenible.
 
-Imagen Candidate Context Discovery
+<p align="center">
+  <img src="./assets/CandidateContextDiscovery. .jpg" width="850">
+</p>
+
+El diagrama completo se encuentra en el siguiente enlace: https://miro.com/app/board/uXjVHfI02Ag=/?share_link_id=281658940692
 
 <a name="4.2.3."></a>
 
@@ -1436,7 +1454,11 @@ Pickup & Delivery Management
 Notification Management
 Este modelado permite comprender cómo los bounded contexts colaboran entre sí para garantizar el correcto funcionamiento del sistema.
 
-Imagen Domain Message Flows Modeling
+<p align="center">
+  <img src="./assets/DomainMessageFlowsModelingLoop.jpg" width="850">
+</p>
+
+El diagrama completo se encuentra en el siguiente enlace: https://miro.com/app/board/uXjVHfI02Ag=/?share_link_id=281658940692
 
 <a name="4.2.4."></a>
 
