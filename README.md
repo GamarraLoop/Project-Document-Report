@@ -683,7 +683,7 @@ Reforzar la diferenciación de Recitex en todos los canales de marketing, destac
 | **Sexo**          | Masculino |
 | **Edad**          | 26 |
 | **Distrito**      | Jesús Maria |
-| **Evidencia**      | |
+| **Evidencia**      | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/8ee5a723-6712-4e05-a294-5a581f635fe0" /> |
 | **Timing**        | 08:05 |
 | **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211g522_upc_edu_pe/IQDfTLJqZPgERq92KZQYQyIcAamOMdEuGeg0HEMG1UtIuTU?e=Pjbsgr&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 | **Resumen**       | Anthony cuenta que busca materiales en Gamarra o con recicladores, pero muchas veces no encuentra lo que necesita. Pierde tiempo buscando y a veces termina comprando más caro. Le interesaría una app donde pueda ver materiales cercanos y elegir más rápido. |
@@ -699,7 +699,7 @@ Reforzar la diferenciación de Recitex en todos los canales de marketing, destac
 | **Sexo**          | Masculino |
 | **Edad**          | 28 |
 | **Distrito**      | Lince |
-| **Evidencia**      | |
+| **Evidencia**      | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/6415258b-23a7-44e0-8c03-2cc2c0870cb2" /> |
 | **Timing**        | 05:01 |
 | **Link**          |  [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQBK4us_1WkPR468kAVyanV0ASwmeiolYIAU2Cb3FhJRLc8?e=i9k3rf&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 | **Resumen**       | Carlos comenta que encuentra materiales caminando y preguntando en talleres. A veces pierde medio día sin conseguir nada. Dice que le serviría mucho saber dónde hay material disponible sin tener que buscar tanto. |
