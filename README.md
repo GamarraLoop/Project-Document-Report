@@ -1383,43 +1383,43 @@ A continuación se presentan los escenarios de atributos de calidad **refinados*
 ### 4.2.1. EventStorming
 Mediante la técnica del Event Storming definimos los siguientes Bounded Context los cuales son principales dentro del proyecto.
 
-USER / PROFILE MANAGMENT
+**USER / PROFILE MANAGMENT**
 
 <p align="center">
   <img src="./assets/UserProfileManagment.jpg" width="850">
 </p>
 
-LOT PUBLICACIÓN MANAGMENT
+**LOT PUBLICACIÓN MANAGMENT**
 
 <p align="center">
   <img src="./assets/LotPublicationManagment.jpg" width="850">
 </p>
 
-TEXTILE CLASSIFICATION MANAGEMENT
+**TEXTILE CLASSIFICATION MANAGEMENT**
 
 <p align="center">
   <img src="./assets/TextileClasification.jpg" width="850">
 </p>
 
-RESERVATION MANAGEMENT
+**RESERVATION MANAGEMENT**
 
 <p align="center">
   <img src="./assets/ReservationManagment.jpg" width="850">
 </p>
 
-PICKUP AND DELIVERY MANAGEMENT
+**PICKUP AND DELIVERY MANAGEMENT**
 
 <p align="center">
   <img src="./assets/PickupAndDelivery.jpg" width="850">
 </p>
 
-EXPIRATION MANAGEMENT
+**EXPIRATION MANAGEMENT**
 
 <p align="center">
   <img src="./assets/ExpirationManagment.jpg" width="850">
 </p>
 
-NOTIFICATION MANAGMENT
+**NOTIFICATION MANAGMENT**
 
 <p align="center">
   <img src="./assets/NotificationManagment.jpg" width="850">
@@ -1470,6 +1470,50 @@ El diagrama completo se encuentra en el siguiente enlace: https://miro.com/app/b
 En esta sección se presentan los Bounded Context Canvases de GamarraLoop, diseñados a partir del análisis estratégico del dominio y la identificación de los principales bounded contexts del sistema. Para su elaboración se siguió un proceso iterativo que incluyó la definición del contexto, reglas de negocio, lenguaje ubicuo, capacidades, dependencias y validación del diseño.
 Los bounded contexts definidos fueron: User Profile Management, Textile Classification, Lot Publication Management, Reservation Management, Pickup and Delivery y Notification Management.
 
+**Proceso metodológico**
+
+<p align="center">
+  <img src="./assets/ProcesoIterativo.jpg" width="1000">
+</p>
+
+**User Profile Management**
+
+<p align="center">
+  <img src="./assets/UserProfileManagement.jpg" width="1000">
+</p>
+
+**Textile Classification**
+
+<p align="center">
+  <img src="./assets/TextileClassification.jpg" width="1000">
+</p>
+
+**Lot Publication Management**
+
+<p align="center">
+  <img src="./assets/LotPublicationManagement.jpg" width="1000">
+</p>
+
+**Reservation Management**
+
+<p align="center">
+  <img src="./assets/ReservationManagement.jpg" width="1000">
+</p>
+
+**Pickup and Delivery**
+
+<p align="center">
+  <img src="./assets/PickupandDeliveryCanva.jpg" width="1000">
+</p>
+
+**Notification Management**
+
+<p align="center">
+  <img src="./assets/NotificationManagement.jpg" width="1000">
+</p>
+
+El diagrama completo se encuentra en el siguiente enlace: 
+https://miro.com/app/board/uXjVHc84QZA=/?share_link_id=254000344450
 
 <a name="4.2.5."></a>
 
