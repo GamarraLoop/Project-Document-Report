@@ -666,7 +666,7 @@ Reforzar la diferenciación de Recitex en todos los canales de marketing, destac
 | **Edad**          | 22 |
 | **Distrito**      | Chorrillos |
 | **Timing**        | 03:43  |
-| **Link**          | [Video de Entrevista]() |
+| **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQDKYfua_SghSL9Ho4qeQKQHAfLgcdUG9dIqtuEfJrs-yLQ?e=Podp5t&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 | **Resumen**       | Fabrizio explica que generan muchos residuos y aunque intentan reutilizar algunos, la mayoría se pierde. Siente que falta una forma organizada de conectar con personas interesadas. Dice que usaría una app si le facilita ubicar y coordinar el recojo. |
 
 #### Entrevistas al Segmento 2: Artesanos/recolectores
