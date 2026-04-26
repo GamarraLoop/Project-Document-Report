@@ -633,6 +633,11 @@ Reforzar la diferenciación de Recitex en todos los canales de marketing, destac
 
 ### 2.2.2. Registro de entrevistas
 
+#### Entrevistas Recopiladas
+
+[Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQCG3I3xirNgRLlYRp8jvFvdAVxnozrRDNJhoAe3dCki3OE?e=isARYl&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+
 #### Entrevistas al Segmento 1: Talleres de confección
 
 #### Entrevista 1
@@ -714,28 +719,16 @@ Reforzar la diferenciación de Recitex en todos los canales de marketing, destac
 
 | Campo             | Detalle |
 |-------------------|---------|
-| **Entrevistado**  | Andrea Gonzales |
-| **Entrevistador** |  |
-| **Sexo**          | |
-| **Edad**          | 38 |
-| **Distrito**      | La Victoria |
-| **Evidencia**      | |
-| **Timing**        |  |
-| **Link**          |  |
-| **Resumen**       | Andrea menciona que le cuesta encontrar telas específicas a buen precio. Muchas veces pierde tiempo o tiene que cambiar sus diseños. Le gustaría una app con fotos claras y filtros para encontrar materiales más rápido. |
----
-#### Entrevista 4
-
-| Campo             | Detalle |
-|-------------------|---------|
 | **Entrevistado**  | Julio Rivera |
 | **Entrevistador** | Piero Molina |
 | **Sexo**          | Masculino|
 | **Edad**          | 31 |
 | **Distrito**      | Jesús Maria |
+| **Evidencia**      | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/c27f7c6c-cae9-405a-90d4-4e301c1661ff" />|
 | **Timing**        | 00:06:12 |
-| **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201610857_upc_edu_pe/IQA6ngx93bFKQahKe71vdZlEAbs4qX512NgLLzsO7BpPeQw?e=dhGo60&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQCzJIS6m2xIRbHBWJGDkaK_AeiWOaK4J9QIwCrWbHR2qKw?e=d0M2U2&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 | **Resumen**       | En la entrevista realizada a Julio Rivera, se identificó que los artesanos dependen principalmente de talleres de confección, mercados textiles y contactos informales para conseguir materiales reutilizables. La principal problemática es la dificultad para encontrar materiales disponibles, cercanos y en buen estado, por lo que una plataforma con geolocalización y reserva facilitaría significativamente su trabajo. |
+
 ---
 <a name="2.2.3."></a>
 
