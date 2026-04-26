@@ -1399,13 +1399,53 @@ A continuación se presentan los escenarios de atributos de calidad **refinados*
 
 ## 4.3. Software Architecture
 
+En esta sección se presenta y explica la arquitectura de software de la solución *Gamarra Loop / ReciTex* aplicando el **C4 Model** propuesto por Simon Brown como marco de visualización progresiva, comenzando por una vista organizacional amplia (System Landscape) y avanzando luego por niveles de detalle creciente (Context, Container y Deployment). Las cuatro vistas que se desarrollan a continuación constituyen la materialización visual de las decisiones arquitectónicas tomadas en la [sección 4.1.](#4.1.) — particularmente del *Architectural Drivers Backlog* de la [sección 4.1.3.](#4.1.3.) y de los patrones evaluados en la [sección 4.1.4.](#4.1.4.) — y consumen el modelado de bounded contexts elaborado en la [sección 4.2.](#4.2.) cuando es necesario establecer límites internos del sistema.
+
+Toda la arquitectura se modeló utilizando **Structurizr**, herramienta indicada por la rúbrica del curso para C4 Model. Las vistas se especifican en el archivo [`c4/workspace.dsl`](c4/workspace.dsl) en la raíz del repositorio, lo cual permite versionar el modelo arquitectónico junto con el resto de la documentación y regenerar las imágenes en cualquier momento de forma reproducible. Las imágenes embebidas en cada subsección son el resultado de exportar dicho modelo a PlantUML y renderizarlo a PNG; los archivos PNG se almacenan en `Img/c4/`.
+
 <a name="4.3.1."></a>
 
 ### 4.3.1. Software Architecture System Landscape Diagram
 
+El **System Landscape Diagram** ofrece la mirada más amplia del C4 Model y representa la posición de *Gamarra Loop / ReciTex* dentro del ecosistema operativo del **emporio comercial de Gamarra**, mostrando exclusivamente al sistema y a los dos segmentos objetivo definidos en la [sección 1.3.](#1.3.) — Confeccionistas y Artesanos / Recolectores. A diferencia del *Context Diagram* desarrollado en la [sección 4.3.2.](#4.3.2.) —que detalla las integraciones técnicas con servicios de terceros—, esta vista omite deliberadamente los sistemas externos para enfocar la atención en la **dimensión humana** del producto: quiénes lo operan y qué intercambio habilita la plataforma dentro del distrito de La Victoria. Está pensada para comunicar el alcance de la solución a stakeholders no técnicos (cliente, equipo de producto, audiencia académica) sin introducir la complejidad de la integración cloud.
+
+![Software Architecture System Landscape Diagram — Gamarra Loop](Img/c4/structurizr-SystemLandscape.png)
+
+El diagrama integra dos categorías de elementos, ambos sustentados en capítulos previos del informe:
+
+| Categoría | Elementos | Rol en el ecosistema |
+| :--- | :--- | :--- |
+| **Usuarios primarios** (actores con interacción directa con el sistema) | Confeccionista; Artesano / Recolector | Son los dos segmentos objetivo definidos en la [sección 1.3.](#1.3.), las personas elaboradas en la [sección 2.3.1.](#2.3.1.) y los autores de las User Stories del [Capítulo III](#3.). Operan los flujos de publicación, descubrimiento, reserva y recojo de lotes textiles. |
+| **Sistema in-scope** | *Gamarra Loop* | Plataforma compuesta por una aplicación móvil multiplataforma (Flutter, construida con FlutterFlow), una landing page (HTML5/CSS3/JS) y un conjunto de servicios REST internos (Spring Boot). Es el único elemento sobre el que el equipo tiene control de implementación. |
+
 <a name="4.3.2."></a>
 
 ### 4.3.2. Software Architecture Context Level Diagrams
+
+El **Context Diagram** corresponde al primer nivel del C4 Model y representa el sistema *Gamarra Loop* como un único recuadro central rodeado por sus usuarios y por los sistemas externos con los que se integra técnicamente. A diferencia del *System Landscape* anterior, esta vista deliberadamente **excluye** a los stakeholders organizacionales (ONGs, gobierno, recicladoras) que no participan de las integraciones técnicas, y se enfoca en explicitar las dependencias externas que serán objeto de diseño detallado en la [sección 4.3.3.](#4.3.3.) (Container Level) y en el *Tactical-Level Software Design* del [Capítulo V](#5.).
+
+![Software Architecture Context Level Diagram — Gamarra Loop](Img/c4/structurizr-SystemContext.png)
+
+El cuadro a continuación documenta las **integraciones externas** del sistema *Gamarra Loop*, especificando para cada una el propósito de la integración, el protocolo de comunicación y la decisión arquitectónica que la justifica con trazabilidad explícita al *Architectural Drivers Backlog* de la [sección 4.1.3.](#4.1.3.) y a las *Architectural Design Decisions* de la [sección 4.1.4.](#4.1.4.).
+
+| Sistema externo | Propósito de la integración | Protocolo | Decisión arquitectónica que la sustenta |
+| :--- | :--- | :--- | :--- |
+| **Google Cloud Vision** | Clasificación automática del material y color a partir de la fotografía del lote | REST/JSON sobre HTTPS | **TS03** (Constraint del Lean UX Canvas) + **D05** (Clasificación automática de textiles) + **D07** (Aislamiento del proveedor de IA bajo el patrón *Hexagonal Port + Adapter*). |
+| **Firebase Authentication** | Emisión y validación de JWT anónimos para identificar usuarios sin gestión de contraseñas | JWKS sobre HTTPS | **D04** (Onboarding sin contraseñas, decisión P1: *Token de dispositivo + datos de contacto*) + **TS05** (Onboarding simplificado para usuarios con baja exposición digital). |
+| **Google Cloud Storage** | Persistencia de imágenes originales y miniaturas comprimidas de los lotes | REST sobre HTTPS + Signed URLs | Soporte directo del escenario **QA07** (Performance — compresión de imagen ≤ 5 segundos en p90) y de la *primary story* **US05**. |
+| **Google Cloud Pub/Sub** | Mensajería asíncrona para desacoplar publicación de lote, clasificación con IA y notificaciones | Pub/Sub API sobre HTTPS | **D06** (Estados explícitos del ciclo de vida del lote bajo el patrón *Domain Events*) + **D08** (Resiliencia ante degradación de Cloud Vision con *Async Queue + Retry con backoff exponencial*). |
+| **Supabase Postgres** | Persistencia transaccional con extensión PostGIS para consultas por proximidad geográfica | JDBC sobre TLS | **D02** (Listado de lotes con baja latencia y orden por proximidad) + **D01** (Reserva consistente sin doble-asignación, soportada por *optimistic locking* JPA `@Version` o *pessimistic locking* `SELECT ... FOR UPDATE`). |
+| **Google Maps Platform** | Renderizado de mapas, geocoding inverso y obtención de referencias geográficas | Maps JavaScript API + tiles | **D03** (Captura móvil de imagen y geolocalización del lote) + **TS04** (Geolocalización del dispositivo como punto de recojo). |
+| **Firebase Cloud Messaging** | Envío de notificaciones push a los dispositivos móviles | FCM API sobre HTTPS | Soporte del escenario **QA04** (Usabilidad — confirmación visual y notificación push de publicación exitosa). |
+
+Las **interacciones de los actores con el sistema** se documentan a continuación, también con trazabilidad al [Capítulo III](#3.):
+
+| Actor | Interacción primaria con *Gamarra Loop* | User Stories asociadas |
+| :--- | :--- | :--- |
+| **Confeccionista** | Publica lotes de retazos textiles capturando foto, ubicación GPS y referencias del taller | US05, US06, US07, US08 |
+| **Artesano / Recolector** | Consulta el catálogo geolocalizado de lotes disponibles, los reserva y confirma el recojo | US12, US13, US14, US15 |
+
+El diagrama explicita que **la totalidad de las dependencias externas son servicios gestionados de Google Cloud Platform**, con la única excepción de **Supabase Postgres**, que es un servicio gestionado externo a GCP. Esta heterogeneidad es una decisión consciente del equipo: Cloud SQL — la opción nativa de GCP para PostgreSQL — no dispone de un *free tier* permanente, mientras que Supabase ofrece PostgreSQL con extensión PostGIS habilitable de forma gratuita y sin límite temporal, lo cual hace viable la operación del sistema sin costos para el equipo durante toda la fase académica. La complejidad operativa adicional de gestionar dos *cloud providers* es marginal porque la conexión es estándar (JDBC sobre TLS) y se aísla detrás del *port* de persistencia del dominio en línea con el patrón *Hexagonal Port + Adapter* adoptado en la [sección 4.1.4.](#4.1.4.).
 
 <a name="4.3.3."></a>
 

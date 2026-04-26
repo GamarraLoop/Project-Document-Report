@@ -1,0 +1,26 @@
+@startuml
+title <size:24>System Landscape View</size>\n<size:24>Vista de paisaje organizacional del ecosistema de Gamarra Loop dentro del emporio comercial de Gamarra. Muestra al sistema y a sus dos segmentos objetivo, omitiendo deliberadamente los sistemas externos técnicos para enfocar la mirada humana del producto.</size>
+
+set separator none
+left to right direction
+
+<style>
+  root {
+    BackgroundColor: #ffffff
+    FontColor: #444444
+  }
+</style>
+
+!include <C4/C4>
+!include <C4/C4_Context>
+
+Person(Confeccionista, "Confeccionista", $descr="Operario o dueño de un taller textil del emporio Gamarra que genera retazos sobrantes y publica lotes para su recolección desde la app móvil.", $tags="", $link="")
+Person(ArtesanoRecolector, "Artesano / Recolector", $descr="Microemprendedor que reutiliza retazos textiles como insumo productivo. Consulta el catálogo geolocalizado, reserva lotes y coordina el recojo.", $tags="", $link="")
+System(GamarraLoop, "Gamarra Loop", $descr="Plataforma compuesta por una aplicación móvil (Flutter), una landing page (HTML/CSS/JS) y un conjunto de servicios REST (Spring Boot) que conecta a Confeccionistas con Artesanos para la circularidad de residuos textiles.", $tags="", $link="")
+
+Rel(Confeccionista, GamarraLoop, "Publica lotes de retazos textiles capturando foto, ubicación GPS y referencias del taller", $techn="", $tags="", $link="")
+Rel(ArtesanoRecolector, GamarraLoop, "Consulta el catálogo geolocalizado, reserva lotes y confirma recojos", $techn="", $tags="", $link="")
+
+SHOW_LEGEND(true)
+hide stereotypes
+@enduml

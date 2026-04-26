@@ -1,0 +1,40 @@
+@startuml
+title <size:24>System Context View: Gamarra Loop</size>\n<size:24>Vista de contexto C4 (nivel 1) del sistema Gamarra Loop, sus usuarios primarios y los sistemas externos con los que se integra técnicamente.</size>
+
+set separator none
+top to bottom direction
+
+<style>
+  root {
+    BackgroundColor: #ffffff
+    FontColor: #444444
+  }
+</style>
+
+!include <C4/C4>
+!include <C4/C4_Context>
+
+Person(Confeccionista, "Confeccionista", $descr="Operario o dueño de un taller textil del emporio Gamarra que genera retazos sobrantes y publica lotes para su recolección desde la app móvil.", $tags="", $link="")
+System(FirebaseCloudMessaging, "Firebase Cloud Messaging", $descr="Servicio gestionado de Google para entregar notificaciones push a los dispositivos móviles de Confeccionistas y Artesanos.", $tags="", $link="")
+Person(ArtesanoRecolector, "Artesano / Recolector", $descr="Microemprendedor que reutiliza retazos textiles como insumo productivo. Consulta el catálogo geolocalizado, reserva lotes y coordina el recojo.", $tags="", $link="")
+System(GamarraLoop, "Gamarra Loop", $descr="Plataforma compuesta por una aplicación móvil (Flutter), una landing page (HTML/CSS/JS) y un conjunto de servicios REST (Spring Boot) que conecta a Confeccionistas con Artesanos para la circularidad de residuos textiles.", $tags="", $link="")
+System(GoogleCloudVision, "Google Cloud Vision", $descr="Servicio gestionado de Google que clasifica automáticamente imágenes de textiles y devuelve etiquetas y niveles de confianza sobre el material y color del lote.", $tags="", $link="")
+System(FirebaseAuthentication, "Firebase Authentication", $descr="Servicio gestionado de Google que emite y valida JWT anónimos para identificar a Confeccionistas y Artesanos sin gestión de contraseñas.", $tags="", $link="")
+System(GoogleCloudStorage, "Google Cloud Storage", $descr="Servicio gestionado de Google para almacenar imágenes originales y miniaturas (thumbnails) de los lotes publicados por los Confeccionistas.", $tags="", $link="")
+System(GoogleCloudPubSub, "Google Cloud Pub/Sub", $descr="Servicio gestionado de Google de mensajería asíncrona para desacoplar la publicación de lotes de la clasificación con IA y de las notificaciones.", $tags="", $link="")
+System(SupabasePostgres, "Supabase Postgres", $descr="Servicio gestionado externo (no GCP) que provee PostgreSQL con la extensión PostGIS para consultas geoespaciales por proximidad.", $tags="", $link="")
+System(GoogleMapsPlatform, "Google Maps Platform", $descr="Servicio gestionado de Google que provee renderizado de mapas, geocoding inverso y referencias geográficas para localizar lotes y rutas de recojo.", $tags="", $link="")
+
+Rel(Confeccionista, GamarraLoop, "Publica lotes de retazos textiles capturando foto, ubicación GPS y referencias del taller", $techn="", $tags="", $link="")
+Rel(ArtesanoRecolector, GamarraLoop, "Consulta el catálogo geolocalizado, reserva lotes y confirma recojos", $techn="", $tags="", $link="")
+Rel(GamarraLoop, GoogleCloudVision, "Solicita clasificación automática del material y color del lote", $techn="REST/JSON sobre HTTPS", $tags="", $link="")
+Rel(GamarraLoop, FirebaseAuthentication, "Valida tokens JWT anónimos del usuario", $techn="JWKS sobre HTTPS", $tags="", $link="")
+Rel(GamarraLoop, GoogleCloudStorage, "Persiste imágenes originales y miniaturas comprimidas", $techn="REST sobre HTTPS + Signed URLs", $tags="", $link="")
+Rel(GamarraLoop, GoogleCloudPubSub, "Publica y consume eventos de dominio (lote.publicado, clasificacion.solicitada, lote.reservado, lote.expirado)", $techn="Pub/Sub API sobre HTTPS", $tags="", $link="")
+Rel(GamarraLoop, SupabasePostgres, "Persiste y consulta agregados (lotes, usuarios, reservas) con índices PostGIS para orden por proximidad", $techn="JDBC sobre TLS", $tags="", $link="")
+Rel(GamarraLoop, GoogleMapsPlatform, "Renderiza mapas, obtiene geocoding inverso y referencias geográficas", $techn="Maps JavaScript API + tiles", $tags="", $link="")
+Rel(GamarraLoop, FirebaseCloudMessaging, "Envía notificaciones push (publicación exitosa, reserva confirmada, lote por expirar)", $techn="FCM API sobre HTTPS", $tags="", $link="")
+
+SHOW_LEGEND(true)
+hide stereotypes
+@enduml
