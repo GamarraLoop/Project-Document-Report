@@ -1378,14 +1378,65 @@ A continuación se presentan los escenarios de atributos de calidad **refinados*
 <a name="4.2.1."></a>
 
 ### 4.2.1. EventStorming
+Mediante la técnica del Event Storming definimos los siguientes Bounded Context los cuales son principales dentro del proyecto.
+
+USER / PROFILE MANAGMENT
+
+Imagen USER / PROFILE MANAGMENT
+
+PUBLICACIÓN MANAGMENT
+
+Imagen LOT PUBLICACIÓN MANAGMENT
+
+TEXTILE CLASSIFICATION MANAGEMENT
+
+Imagen TEXTILE CLASSIFICATION MANAGEMENT
+
+RESERVATION MANAGEMENT
+
+Imagen RESERVATION MANAGEMENT
+
+PICKUP AND DELIVERY MANAGEMENT
+
+ImagenPICKUP AND DELIVERY MANAGEMENT
+
+EXPIRATION MANAGEMENT
+
+Imagen EXPIRATION MANAGEMENT
+
+NOTIFICATION MANAGMENT
+
+Imagen NOTIFICATION MANAGMENT
+
+
+El diagrama completo se encuentra en el siguiente enlace: https://miro.com/app/board/uXjVHfI02Ag=/?share_link_id=281658940692
 
 <a name="4.2.2."></a>
 
 ### 4.2.2. Candidate Context Discovery
 
+La identificación de Candidate Context Discovery en el proyecto GamarraLoop permite descubrir las principales áreas del negocio que pueden separarse en distintos bounded contexts dentro del sistema. Este proceso se enfoca en analizar la gestión de excedentes textiles y la interacción entre confeccionistas, artesanos y el sistema dentro de la plataforma.
+A partir de ello, se identificaron capacidades principales como la publicación de lotes textiles, la clasificación automática de materiales mediante IA, la reserva de lotes y la gestión de usuarios. Estas funcionalidades fueron agrupadas en sectores lógicos para facilitar el diseño, mejorar la escalabilidad y asegurar un mejor mantenimiento del sistema.
+El objetivo principal es definir bounded contexts claros que representen correctamente el dominio del negocio y permitan construir una arquitectura de software más organizada, flexible y sostenible.
+
+Imagen Candidate Context Discovery
+
 <a name="4.2.3."></a>
 
 ### 4.2.3. Domain Message Flows Modeling
+
+El Domain Message Flows Modeling permite visualizar cómo colaboran los bounded contexts del sistema para resolver los principales procesos de negocio dentro de Gamarra Loop (Recitex). Esta técnica ayuda a representar el intercambio de mensajes entre actores, bounded contexts y sistemas externos, facilitando la comprensión del flujo de información dentro de la plataforma.
+Para este proceso se aplicó la técnica de Domain Storytelling, la cual permite modelar la secuencia de acciones realizadas por los usuarios y las respuestas automáticas del sistema. Esto permite identificar claramente los actores involucrados, los bounded contexts participantes y sus interacciones.
+En nuestro proyecto se seleccionó el escenario “Lot Publication and Pickup Management”, ya que representa uno de los flujos principales del negocio: desde que el confeccionista publica un lote textil hasta que el artesano o recolector realiza la reserva, coordina la entrega y recibe la notificación correspondiente.
+Los bounded contexts involucrados son:
+Lot Publication Management
+Textile Classification Management
+Reservation Management
+Pickup & Delivery Management
+Notification Management
+Este modelado permite comprender cómo los bounded contexts colaboran entre sí para garantizar el correcto funcionamiento del sistema.
+
+Imagen Domain Message Flows Modeling
 
 <a name="4.2.4."></a>
 
