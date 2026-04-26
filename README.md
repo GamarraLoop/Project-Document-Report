@@ -1397,11 +1397,15 @@ Mediante la técnica del Event Storming definimos los siguientes Bounded Context
 
 **USER / PROFILE MANAGMENT**
 
+Gestiona las cuentas de usuario, perfiles y preferencias dentro de la plataforma. Permite el registro, autenticación, actualización de perfil y control de credenciales para confeccionistas y artesanos, asegurando que solo usuarios válidos y activos puedan participar en el sistema.
+
 <p align="center">
   <img src="./assets/UserProfileManagment.jpg" width="850">
 </p>
 
 **LOT PUBLICACIÓN MANAGMENT**
+
+Gestiona la publicación de lotes textiles disponibles para reserva dentro de la plataforma. Permite al confeccionista capturar la información del lote, registrar la ubicación de recojo mediante GPS, enviar imágenes para clasificación automática y publicar únicamente lotes validados y completos.
 
 <p align="center">
   <img src="./assets/LotPublicationManagment.jpg" width="850">
@@ -1409,11 +1413,15 @@ Mediante la técnica del Event Storming definimos los siguientes Bounded Context
 
 **TEXTILE CLASSIFICATION MANAGEMENT**
 
+Se encarga de clasificar los lotes textiles según tipo de tela, color, material, calidad y cantidad disponible. Utiliza clasificación automática por imagen mediante servicios de IA y validación manual cuando sea necesario para asegurar la precisión de los datos antes de la publicación.
+
 <p align="center">
   <img src="./assets/TextileClasification.jpg" width="850">
 </p>
 
 **RESERVATION MANAGEMENT**
+
+Administra la reserva de lotes textiles publicados por parte de los artesanos. Controla la disponibilidad, confirmación, cancelación y expiración de reservas, garantizando que un lote solo pueda ser reservado por un usuario a la vez y dentro de un período válido.
 
 <p align="center">
   <img src="./assets/ReservationManagment.jpg" width="850">
@@ -1421,17 +1429,23 @@ Mediante la técnica del Event Storming definimos los siguientes Bounded Context
 
 **PICKUP AND DELIVERY MANAGEMENT**
 
+Gestiona el proceso de recojo y entrega de los lotes reservados. Permite coordinar el punto de recogida, hacer seguimiento del estado de entrega, confirmar la recepción y cerrar correctamente el proceso logístico entre confeccionista y artesano.
+
 <p align="center">
   <img src="./assets/PickupAndDelivery.jpg" width="850">
 </p>
 
 **EXPIRATION MANAGEMENT**
 
+Controla la expiración automática de los lotes cuando no son recogidos dentro del tiempo límite establecido. Verifica periódicamente los lotes pendientes, cambia su estado a expirado cuando corresponde y activa las notificaciones necesarias para informar a los usuarios involucrados.
+
 <p align="center">
   <img src="./assets/ExpirationManagment.jpg" width="850">
 </p>
 
 **NOTIFICATION MANAGMENT**
+
+Administra el envío de notificaciones y alertas generadas por eventos importantes del sistema, como publicación de lotes, reservas, entregas, recepciones y expiraciones. Garantiza la comunicación oportuna entre confeccionistas y artesanos mediante servicios de notificación push y alertas automáticas.
 
 <p align="center">
   <img src="./assets/NotificationManagment.jpg" width="850">
