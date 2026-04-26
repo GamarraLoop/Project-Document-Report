@@ -1,0 +1,154 @@
+@startuml
+title <size:24>Deployment View: Gamarra Loop - Production</size>\n<size:24>Vista de deployment C4 del sistema Gamarra Loop en su entorno de producción. La API REST se despliega como contenedor stateless en Google Cloud Run, la landing page estática en GitHub Pages y la aplicación móvil corre nativa en los dispositivos de los usuarios. La persistencia transaccional vive en Supabase Postgres (servicio gestionado externo a GCP).</size>
+
+set separator none
+top to bottom direction
+skinparam ranksep 20
+skinparam nodesep 5
+hide stereotype
+
+<style>
+  root {
+    BackgroundColor: #ffffff;
+    FontColor: #444444;
+  }
+  // Element,API
+  .Element-RWxlbWVudCxBUEk= {
+    BackgroundColor: #1168bd;
+    LineColor: #0b4884;
+    LineStyle: 0;
+    LineThickness: 2;
+    FontColor: #ffffff;
+    FontSize: 24;
+    HorizontalAlignment: center;
+    Shadowing: 0;
+    MaximumWidth: 450;
+  }
+  // Element,Mobile
+  .Element-RWxlbWVudCxNb2JpbGU= {
+    BackgroundColor: #1168bd;
+    LineColor: #0b4884;
+    LineStyle: 0;
+    LineThickness: 2;
+    FontColor: #ffffff;
+    FontSize: 24;
+    HorizontalAlignment: center;
+    Shadowing: 0;
+    MaximumWidth: 450;
+  }
+  // Element,Software System,External,Database
+  .Element-RWxlbWVudCxTb2Z0d2FyZSBTeXN0ZW0sRXh0ZXJuYWwsRGF0YWJhc2U= {
+    BackgroundColor: #3ecf8e;
+    LineColor: #2b9063;
+    LineStyle: 0;
+    LineThickness: 2;
+    FontColor: #ffffff;
+    FontSize: 24;
+    HorizontalAlignment: center;
+    Shadowing: 0;
+    MaximumWidth: 450;
+  }
+  // Element,Software System,External,GCP
+  .Element-RWxlbWVudCxTb2Z0d2FyZSBTeXN0ZW0sRXh0ZXJuYWwsR0NQ {
+    BackgroundColor: #4285f4;
+    LineColor: #2e5daa;
+    LineStyle: 0;
+    LineThickness: 2;
+    FontColor: #ffffff;
+    FontSize: 24;
+    HorizontalAlignment: center;
+    Shadowing: 0;
+    MaximumWidth: 450;
+  }
+  // Element,Web
+  .Element-RWxlbWVudCxXZWI= {
+    BackgroundColor: #1168bd;
+    LineColor: #0b4884;
+    LineStyle: 0;
+    LineThickness: 2;
+    FontColor: #ffffff;
+    FontSize: 24;
+    HorizontalAlignment: center;
+    Shadowing: 0;
+    MaximumWidth: 450;
+  }
+  // Relationship
+  .Relationship-UmVsYXRpb25zaGlw {
+    LineThickness: 2;
+    LineStyle: 10-10;
+    LineColor: #444444;
+    FontColor: #444444;
+    FontSize: 24;
+  }
+  // Element
+  .DeploymentNode-RWxlbWVudA== {
+    BackgroundColor: #ffffff;
+    LineColor: #444444;
+    LineStyle: 0;
+    LineThickness: 2;
+    FontColor: #444444;
+    FontSize: 24;
+    HorizontalAlignment: center;
+    Shadowing: 0;
+  }
+  // Element,External
+  .DeploymentNode-RWxlbWVudCxFeHRlcm5hbA== {
+    BackgroundColor: #999999;
+    LineColor: #6b6b6b;
+    LineStyle: 0;
+    LineThickness: 2;
+    FontColor: #ffffff;
+    FontSize: 24;
+    HorizontalAlignment: center;
+    Shadowing: 0;
+  }
+  // Element,GCP
+  .DeploymentNode-RWxlbWVudCxHQ1A= {
+    BackgroundColor: #4285f4;
+    LineColor: #2e5daa;
+    LineStyle: 0;
+    LineThickness: 2;
+    FontColor: #ffffff;
+    FontSize: 24;
+    HorizontalAlignment: center;
+    Shadowing: 0;
+  }
+</style>
+
+rectangle "Dispositivo móvil del usuario\n<size:16>[Deployment Node: Android 8+ / iOS 14+]</size>" <<DeploymentNode-RWxlbWVudA==>> as Production.Dispositivomóvildelusuario {
+  rectangle "==Mobile App\n<size:16>[Container: Flutter (FlutterFlow) / Dart]</size>\n\nAplicación móvil multiplataforma para Confeccionistas y Artesanos. Captura foto y ubicación GPS del lote, consume el catálogo geolocalizado, gestiona reservas y recibe notificaciones push del recojo." <<Element-RWxlbWVudCxNb2JpbGU=>> as Production.Dispositivomóvildelusuario.MobileApp_1
+}
+
+rectangle "GitHub Pages\n<size:16>[Deployment Node: CDN global de GitHub]</size>" <<DeploymentNode-RWxlbWVudCxFeHRlcm5hbA==>> as Production.GitHubPages {
+  rectangle "==Landing Page\n<size:16>[Container: HTML5 / CSS3 / JavaScript]</size>\n\nSitio estático informativo del proyecto Gamarra Loop / ReciTex. Presenta la propuesta de valor a Confeccionistas, Artesanos y stakeholders externos. No realiza llamadas al backend." <<Element-RWxlbWVudCxXZWI=>> as Production.GitHubPages.LandingPage_1
+}
+
+rectangle "Google Cloud Platform\n<size:16>[Deployment Node: Región us-central1]</size>" <<DeploymentNode-RWxlbWVudCxHQ1A=>> as Production.GoogleCloudPlatform {
+  rectangle "Cloud Run\n<size:16>[Deployment Node: Cloud Run]</size>" <<DeploymentNode-RWxlbWVudA==>> as Production.GoogleCloudPlatform.CloudRun {
+    hexagon "==API REST\n<size:16>[Container: Spring Boot / Java 21]</size>\n\nBackend monolítico modular que expone endpoints REST autenticados con JWT. Internamente se organiza en 7 bounded contexts (User Profile, Lot Publication, Textile Classification, Reservation, Pickup and Delivery, Expiration, Notification — ver Capítulo V) bajo el patrón Hexagonal Port + Adapter decidido en la sección 4.1.4." <<Element-RWxlbWVudCxBUEk=>> as Production.GoogleCloudPlatform.CloudRun.APIREST_1
+  }
+
+  rectangle "==Google Cloud Vision\n<size:16>[Software System]</size>\n\nServicio gestionado de Google que clasifica automáticamente imágenes de textiles y devuelve etiquetas y niveles de confianza sobre el material y color del lote." <<Element-RWxlbWVudCxTb2Z0d2FyZSBTeXN0ZW0sRXh0ZXJuYWwsR0NQ>> as Production.GoogleCloudPlatform.GoogleCloudVision_1
+  rectangle "==Firebase Authentication\n<size:16>[Software System]</size>\n\nServicio gestionado de Google que emite y valida JWT anónimos para identificar a Confeccionistas y Artesanos sin gestión de contraseñas." <<Element-RWxlbWVudCxTb2Z0d2FyZSBTeXN0ZW0sRXh0ZXJuYWwsR0NQ>> as Production.GoogleCloudPlatform.FirebaseAuthentication_1
+  rectangle "==Google Cloud Storage\n<size:16>[Software System]</size>\n\nServicio gestionado de Google para almacenar imágenes originales y miniaturas (thumbnails) de los lotes publicados por los Confeccionistas." <<Element-RWxlbWVudCxTb2Z0d2FyZSBTeXN0ZW0sRXh0ZXJuYWwsR0NQ>> as Production.GoogleCloudPlatform.GoogleCloudStorage_1
+  rectangle "==Google Cloud Pub/Sub\n<size:16>[Software System]</size>\n\nServicio gestionado de Google de mensajería asíncrona para desacoplar la publicación de lotes de la clasificación con IA y de las notificaciones." <<Element-RWxlbWVudCxTb2Z0d2FyZSBTeXN0ZW0sRXh0ZXJuYWwsR0NQ>> as Production.GoogleCloudPlatform.GoogleCloudPubSub_1
+  rectangle "==Google Maps Platform\n<size:16>[Software System]</size>\n\nServicio gestionado de Google que provee renderizado de mapas, geocoding inverso y referencias geográficas para localizar lotes y rutas de recojo." <<Element-RWxlbWVudCxTb2Z0d2FyZSBTeXN0ZW0sRXh0ZXJuYWwsR0NQ>> as Production.GoogleCloudPlatform.GoogleMapsPlatform_1
+  rectangle "==Firebase Cloud Messaging\n<size:16>[Software System]</size>\n\nServicio gestionado de Google para entregar notificaciones push a los dispositivos móviles de Confeccionistas y Artesanos." <<Element-RWxlbWVudCxTb2Z0d2FyZSBTeXN0ZW0sRXh0ZXJuYWwsR0NQ>> as Production.GoogleCloudPlatform.FirebaseCloudMessaging_1
+}
+
+rectangle "Supabase Cloud\n<size:16>[Deployment Node: Región us-east-1]</size>" <<DeploymentNode-RWxlbWVudCxFeHRlcm5hbA==>> as Production.SupabaseCloud {
+  database "==Supabase Postgres\n<size:16>[Software System]</size>\n\nServicio gestionado externo (no GCP) que provee PostgreSQL con la extensión PostGIS para consultas geoespaciales por proximidad." <<Element-RWxlbWVudCxTb2Z0d2FyZSBTeXN0ZW0sRXh0ZXJuYWwsRGF0YWJhc2U=>> as Production.SupabaseCloud.SupabasePostgres_1
+}
+
+Production.Dispositivomóvildelusuario.MobileApp_1 --> Production.GoogleCloudPlatform.CloudRun.APIREST_1 <<Relationship-UmVsYXRpb25zaGlw>> : "Consume endpoints REST autenticados con JWT\n<size:16>[JSON sobre HTTPS]</size>"
+Production.GoogleCloudPlatform.CloudRun.APIREST_1 --> Production.GoogleCloudPlatform.GoogleCloudVision_1 <<Relationship-UmVsYXRpb25zaGlw>> : "Solicita clasificación automática del material y color del lote (vía Anti-Corruption Layer)\n<size:16>[REST/JSON sobre HTTPS]</size>"
+Production.Dispositivomóvildelusuario.MobileApp_1 --> Production.GoogleCloudPlatform.FirebaseAuthentication_1 <<Relationship-UmVsYXRpb25zaGlw>> : "Inicia sesión anónima y obtiene JWT del dispositivo\n<size:16>[Firebase SDK sobre HTTPS]</size>"
+Production.GoogleCloudPlatform.CloudRun.APIREST_1 --> Production.GoogleCloudPlatform.FirebaseAuthentication_1 <<Relationship-UmVsYXRpb25zaGlw>> : "Valida tokens JWT entrantes mediante JWKS\n<size:16>[JWKS sobre HTTPS]</size>"
+Production.GoogleCloudPlatform.CloudRun.APIREST_1 --> Production.GoogleCloudPlatform.GoogleCloudStorage_1 <<Relationship-UmVsYXRpb25zaGlw>> : "Persiste imágenes originales y miniaturas comprimidas\n<size:16>[REST sobre HTTPS]</size>"
+Production.GoogleCloudPlatform.CloudRun.APIREST_1 --> Production.GoogleCloudPlatform.GoogleCloudPubSub_1 <<Relationship-UmVsYXRpb25zaGlw>> : "Publica y consume eventos de dominio (lote.publicado, clasificacion.solicitada, lote.reservado, lote.expirado)\n<size:16>[Pub/Sub API sobre HTTPS]</size>"
+Production.Dispositivomóvildelusuario.MobileApp_1 --> Production.GoogleCloudPlatform.GoogleMapsPlatform_1 <<Relationship-UmVsYXRpb25zaGlw>> : "Renderiza mapas y obtiene geocoding inverso en el cliente\n<size:16>[Maps SDK + tiles]</size>"
+Production.Dispositivomóvildelusuario.MobileApp_1 --> Production.GoogleCloudPlatform.FirebaseCloudMessaging_1 <<Relationship-UmVsYXRpb25zaGlw>> : "Registra token de dispositivo y recibe notificaciones push\n<size:16>[FCM SDK sobre HTTPS]</size>"
+Production.GoogleCloudPlatform.CloudRun.APIREST_1 --> Production.GoogleCloudPlatform.FirebaseCloudMessaging_1 <<Relationship-UmVsYXRpb25zaGlw>> : "Envía notificaciones push a dispositivos registrados\n<size:16>[FCM API sobre HTTPS]</size>"
+Production.GoogleCloudPlatform.CloudRun.APIREST_1 --> Production.SupabaseCloud.SupabasePostgres_1 <<Relationship-UmVsYXRpb25zaGlw>> : "Persiste y consulta agregados (lotes, usuarios, reservas) con índices PostGIS para orden por proximidad\n<size:16>[JDBC sobre TLS]</size>"
+
+@enduml
