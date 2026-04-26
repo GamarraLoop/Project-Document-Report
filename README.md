@@ -639,6 +639,7 @@ Reforzar la diferenciación de Recitex en todos los canales de marketing, destac
 | **Sexo**          |Masculino |
 | **Edad**          | 32 |
 | **Distrito**      | Lince |
+| **Evidencia**      | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/31ec6e5c-a093-4842-a4ef-fbbd5eb8d613" /> |
 | **Timing**        | 05:28 |
 | **Link**          |  [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQAN7gYHGcYlSLXuoJ9JBJjkAf3Zrbft26IoBjtFGzD699k?e=QFawgz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 | **Resumen**       | Piero nos comenta que genera retazos de tela casi todos los días y los acumula hasta que ocupan mucho espacio. A veces los regala o los da a recicladores, pero coordinar es complicado. Dice que le gustaría algo simple para deshacerse de esos materiales rápido, sin perder tiempo. |
@@ -652,6 +653,7 @@ Reforzar la diferenciación de Recitex en todos los canales de marketing, destac
 | **Sexo**          | Femenino |
 | **Edad**          | 34 |
 | **Distrito**      | La Victoria |
+| **Evidencia**      | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/dd520da8-4c74-437d-92a9-1ac85b71d07c" /> |
 | **Timing**        | 06:02 |
 | **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQArNG8BqQYzTr7f2-UB5DbSAeSejaqnHHuiyOv-EuvjNpw?e=DdlBtz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 | **Resumen**       | Rosa menciona que en el taller juntan los residuos en bolsas y luego los botan o venden barato. El problema es que no siempre hay quién los compre. Para ella, sería útil una app donde pueda publicar rápido los materiales y que alguien los recoja sin tanto trámite. |
@@ -665,6 +667,7 @@ Reforzar la diferenciación de Recitex en todos los canales de marketing, destac
 | **Sexo**          | Masculino |
 | **Edad**          | 22 |
 | **Distrito**      | Chorrillos |
+| **Evidencia**      | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/521237d3-acb0-47dc-a613-4a31956d8dd6" /> |
 | **Timing**        | 03:43  |
 | **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQDKYfua_SghSL9Ho4qeQKQHAfLgcdUG9dIqtuEfJrs-yLQ?e=Podp5t&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 | **Resumen**       | Fabrizio explica que generan muchos residuos y aunque intentan reutilizar algunos, la mayoría se pierde. Siente que falta una forma organizada de conectar con personas interesadas. Dice que usaría una app si le facilita ubicar y coordinar el recojo. |
@@ -680,6 +683,7 @@ Reforzar la diferenciación de Recitex en todos los canales de marketing, destac
 | **Sexo**          | Masculino |
 | **Edad**          | 26 |
 | **Distrito**      | Jesús Maria |
+| **Evidencia**      | |
 | **Timing**        | 08:05 |
 | **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211g522_upc_edu_pe/IQDfTLJqZPgERq92KZQYQyIcAamOMdEuGeg0HEMG1UtIuTU?e=Pjbsgr&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 | **Resumen**       | Anthony cuenta que busca materiales en Gamarra o con recicladores, pero muchas veces no encuentra lo que necesita. Pierde tiempo buscando y a veces termina comprando más caro. Le interesaría una app donde pueda ver materiales cercanos y elegir más rápido. |
@@ -695,6 +699,7 @@ Reforzar la diferenciación de Recitex en todos los canales de marketing, destac
 | **Sexo**          | Masculino |
 | **Edad**          | 28 |
 | **Distrito**      | Lince |
+| **Evidencia**      | |
 | **Timing**        | 05:01 |
 | **Link**          |  [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQBK4us_1WkPR468kAVyanV0ASwmeiolYIAU2Cb3FhJRLc8?e=i9k3rf&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 | **Resumen**       | Carlos comenta que encuentra materiales caminando y preguntando en talleres. A veces pierde medio día sin conseguir nada. Dice que le serviría mucho saber dónde hay material disponible sin tener que buscar tanto. |
@@ -709,6 +714,7 @@ Reforzar la diferenciación de Recitex en todos los canales de marketing, destac
 | **Sexo**          | |
 | **Edad**          | 38 |
 | **Distrito**      | La Victoria |
+| **Evidencia**      | |
 | **Timing**        |  |
 | **Link**          |  |
 | **Resumen**       | Andrea menciona que le cuesta encontrar telas específicas a buen precio. Muchas veces pierde tiempo o tiene que cambiar sus diseños. Le gustaría una app con fotos claras y filtros para encontrar materiales más rápido. |
