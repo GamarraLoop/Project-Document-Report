@@ -1554,7 +1554,7 @@ El Context Mapping permite identificar y visualizar las relaciones estructurales
 El diagrama presentado muestra cómo cada Bounded Context mantiene su independencia funcional mientras colabora con los demás para completar el flujo principal del negocio, desde el registro del usuario hasta la publicación, clasificación, reserva, recojo y notificación final del lote textil. Esta estructura permite una mejor escalabilidad del sistema, facilita el mantenimiento futuro y asegura que los cambios en un contexto no impacten directamente en todo el dominio, cumpliendo así con los principios fundamentales de Domain-Driven Design.
 
  https://lucid.app/lucidchart/ec20dbd0-3469-494a-b742-630a12a29cbd/edit?viewport_loc=-836%2C39%2C4359%2C1543%2C0_0&invitationId=inv_b8a17edd-7cb1-4abc-b7a9-cb7bc8908400
-[El diagrama completo se encuentra en el siguiente enlace:](https://lucid.app/lucidchart/ec20dbd0-3469-494a-b742-630a12a29cbd/edit?viewport_loc=-836%2C39%2C4359%2C1543%2C0_0&invitationId=inv_b8a17edd-7cb1-4abc-b7a9-cb7bc8908400)
+El diagrama completo se encuentra en el siguiente enlace:https://lucid.app/lucidchart/ec20dbd0-3469-494a-b742-630a12a29cbd/edit?viewport_loc=-836%2C39%2C4359%2C1543%2C0_0&invitationId=inv_b8a17edd-7cb1-4abc-b7a9-cb7bc8908400
 
 <a name="4.3."></a>
 
