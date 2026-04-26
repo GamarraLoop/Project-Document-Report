@@ -1411,7 +1411,7 @@ A continuación se presentan los escenarios de atributos de calidad **refinados*
 ### 4.2.1. EventStorming
 Mediante la técnica del Event Storming definimos los siguientes Bounded Context los cuales son principales dentro del proyecto.
 
-**USER / PROFILE MANAGMENT**
+**USUARIO REGISTRADO**
 
 Gestiona las cuentas de usuario, perfiles y preferencias dentro de la plataforma. Permite el registro, autenticación, actualización de perfil y control de credenciales para confeccionistas y artesanos, asegurando que solo usuarios válidos y activos puedan participar en el sistema.
 
@@ -1419,7 +1419,7 @@ Gestiona las cuentas de usuario, perfiles y preferencias dentro de la plataforma
   <img src="./assets/UserProfileManagment.jpg" width="850">
 </p>
 
-**LOT PUBLICACIÓN MANAGMENT**
+**LOTE REGISTRADO**
 
 Gestiona la publicación de lotes textiles disponibles para reserva dentro de la plataforma. Permite al confeccionista capturar la información del lote, registrar la ubicación de recojo mediante GPS, enviar imágenes para clasificación automática y publicar únicamente lotes validados y completos.
 
@@ -1427,7 +1427,7 @@ Gestiona la publicación de lotes textiles disponibles para reserva dentro de la
   <img src="./assets/LotPublicationManagment.jpg" width="850">
 </p>
 
-**TEXTILE CLASSIFICATION MANAGEMENT**
+**LOTE CLASIFICADO POR IA**
 
 Se encarga de clasificar los lotes textiles según tipo de tela, color, material, calidad y cantidad disponible. Utiliza clasificación automática por imagen mediante servicios de IA y validación manual cuando sea necesario para asegurar la precisión de los datos antes de la publicación.
 
@@ -1435,7 +1435,7 @@ Se encarga de clasificar los lotes textiles según tipo de tela, color, material
   <img src="./assets/TextileClasification.jpg" width="850">
 </p>
 
-**RESERVATION MANAGEMENT**
+**RESERVA SOLICITADA**
 
 Administra la reserva de lotes textiles publicados por parte de los artesanos. Controla la disponibilidad, confirmación, cancelación y expiración de reservas, garantizando que un lote solo pueda ser reservado por un usuario a la vez y dentro de un período válido.
 
@@ -1443,7 +1443,7 @@ Administra la reserva de lotes textiles publicados por parte de los artesanos. C
   <img src="./assets/ReservationManagment.jpg" width="850">
 </p>
 
-**PICKUP AND DELIVERY MANAGEMENT**
+**RESERVA PROGRAMADA**
 
 Gestiona el proceso de recojo y entrega de los lotes reservados. Permite coordinar el punto de recogida, hacer seguimiento del estado de entrega, confirmar la recepción y cerrar correctamente el proceso logístico entre confeccionista y artesano.
 
@@ -1451,7 +1451,7 @@ Gestiona el proceso de recojo y entrega de los lotes reservados. Permite coordin
   <img src="./assets/PickupAndDelivery.jpg" width="850">
 </p>
 
-**EXPIRATION MANAGEMENT**
+**LOTE EXPIRADO**
 
 Controla la expiración automática de los lotes cuando no son recogidos dentro del tiempo límite establecido. Verifica periódicamente los lotes pendientes, cambia su estado a expirado cuando corresponde y activa las notificaciones necesarias para informar a los usuarios involucrados.
 
@@ -1459,7 +1459,7 @@ Controla la expiración automática de los lotes cuando no son recogidos dentro 
   <img src="./assets/ExpirationManagment.jpg" width="850">
 </p>
 
-**NOTIFICATION MANAGMENT**
+**NOTIFICACIÓN ENVIADA**
 
 Administra el envío de notificaciones y alertas generadas por eventos importantes del sistema, como publicación de lotes, reservas, entregas, recepciones y expiraciones. Garantiza la comunicación oportuna entre confeccionistas y artesanos mediante servicios de notificación push y alertas automáticas.
 
