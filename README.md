@@ -1409,7 +1409,7 @@ Toda la arquitectura se modeló utilizando **Structurizr**, herramienta indicada
 
 El **System Landscape Diagram** ofrece la mirada más amplia del C4 Model y representa la posición de *Gamarra Loop / ReciTex* dentro del ecosistema operativo del **emporio comercial de Gamarra**, mostrando exclusivamente al sistema y a los dos segmentos objetivo definidos en la [sección 1.3.](#1.3.) — Confeccionistas y Artesanos / Recolectores. A diferencia del *Context Diagram* desarrollado en la [sección 4.3.2.](#4.3.2.) —que detalla las integraciones técnicas con servicios de terceros—, esta vista omite deliberadamente los sistemas externos para enfocar la atención en la **dimensión humana** del producto: quiénes lo operan y qué intercambio habilita la plataforma dentro del distrito de La Victoria. Está pensada para comunicar el alcance de la solución a stakeholders no técnicos (cliente, equipo de producto, audiencia académica) sin introducir la complejidad de la integración cloud.
 
-<img src="Img/c4/SystemLandscape.png" alt="Software Architecture System Landscape Diagram — Gamarra Loop" width="500"/>
+<img src="Img/c4/SystemLandscape.png" alt="Software Architecture System Landscape Diagram — Gamarra Loop"/>
 
 El diagrama integra dos categorías de elementos, ambos sustentados en capítulos previos del informe:
 
@@ -1424,7 +1424,7 @@ El diagrama integra dos categorías de elementos, ambos sustentados en capítulo
 
 El **Context Diagram** corresponde al primer nivel del C4 Model y representa el sistema *Gamarra Loop* como un único recuadro central rodeado por sus usuarios y por los sistemas externos con los que se integra técnicamente. A diferencia del *System Landscape* anterior, esta vista deliberadamente **excluye** a los stakeholders organizacionales (ONGs, gobierno, recicladoras) que no participan de las integraciones técnicas, y se enfoca en explicitar las dependencias externas que serán objeto de diseño detallado en la [sección 4.3.3.](#4.3.3.) (Container Level) y en el *Tactical-Level Software Design* del [Capítulo V](#5.).
 
-<img src="Img/c4/SystemContext.png" alt="Software Architecture Context Level Diagram — Gamarra Loop" width="700"/>
+<img src="Img/c4/SystemContext.png" alt="Software Architecture Context Level Diagram — Gamarra Loop"/>
 
 El cuadro a continuación documenta las **integraciones externas** del sistema *Gamarra Loop*, especificando para cada una el propósito de la integración, el protocolo de comunicación y la decisión arquitectónica que la justifica con trazabilidad explícita al *Architectural Drivers Backlog* de la [sección 4.1.3.](#4.1.3.) y a las *Architectural Design Decisions* de la [sección 4.1.4.](#4.1.4.).
 
@@ -1453,7 +1453,7 @@ El diagrama explicita que **la totalidad de las dependencias externas son servic
 
 El **Container Diagram** corresponde al segundo nivel del C4 Model y descompone el sistema _Gamarra Loop_ — que en la [sección 4.3.2.](#4.3.2.) era una caja única — en las **unidades ejecutables** que lo constituyen, mostrando para cada una su tecnología, responsabilidad y forma de comunicación con las demás. A diferencia del _Context Diagram_, esta vista omite deliberadamente a los stakeholders organizacionales del [System Landscape](#4.3.1.) y se enfoca en lo que el equipo efectivamente construye, despliega y opera. Los sistemas externos del 4.3.2. se mantienen presentes pero su relación se _re-asigna_ desde el sistema completo hacia el container puntual que los consume, lo cual permite leer con precisión qué pieza del sistema depende de qué proveedor cloud.
 
-<img src="Img/c4/Containers.png" alt="Software Architecture Container Level Diagram — Gamarra Loop" width="700"/>
+<img src="Img/c4/Containers.png" alt="Software Architecture Container Level Diagram — Gamarra Loop"/>
 
 El diagrama identifica **tres containers** dentro del sistema _Gamarra Loop_, todos ellos derivados directamente de la _primary functionality_ y de las _constraints_ declaradas en la [sección 4.1.2.](#4.1.2.):
 
@@ -1491,7 +1491,7 @@ La vista materializa la decisión de **monolito modular** del [Capítulo IV](#4.
 
 El **Deployment Diagram** corresponde al cuarto nivel del C4 Model y proyecta los _containers_ del [4.3.3.](#4.3.3.) sobre la **infraestructura concreta** donde corren en producción. A diferencia de los niveles previos —que describían la solución en términos puramente lógicos—, esta vista responde preguntas operativas explícitas: dónde se aloja cada pieza, qué proveedor cloud la sostiene, cómo se conecta el cliente final con el backend y qué propiedades de costo, escalabilidad y resiliencia se obtienen de cada elección. La organización de los nodos materializa, además, una decisión consciente del equipo: distribuir la solución entre **tres proveedores cloud heterogéneos** (Google Cloud Platform, Supabase y GitHub Pages) priorizando _free tiers_ permanentes sobre la uniformidad arquitectónica, en línea con la _constraint_ implícita de operar el sistema sin costos durante toda la fase académica.
 
-<img src="Img/c4/DeploymentProduction.png" alt="Software Architecture Deployment Diagram — Gamarra Loop / Production" width="700"/>
+<img src="Img/c4/DeploymentProduction.png" alt="Software Architecture Deployment Diagram — Gamarra Loop / Production"/>
 
 El entorno **_Production_** se compone de **cuatro _deployment nodes_** raíz, cada uno representando un proveedor o tipo de hospedaje distinto:
 
