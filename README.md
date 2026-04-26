@@ -24,7 +24,7 @@ width=50%"/>
 |  Cuya Villegas, Rafael Alberto        | u201913495 |
 |  Gongora Castillejos, Williams        | u20221c186 |
 |  Huanaco Huayta, Elizabeth Lucero     | u20211g522 |
-|  Molina Falcon, Piero Leonardo        |  |
+|  Molina Falcon, Piero Leonardo        | u201610857 |
 |  Torres Garcia, Andrés Alberto        | u202220528 |
 
 </div>
@@ -68,7 +68,7 @@ Los integrantes son:
 - Cuya Villegas, Rafael Alberto (RafaelCuya)
 - Gongora Castillejos, Williams (WiJeGo)
 - Huanaco Huayta, Elizabeth Lucero (lucerohh)
-- Molina Falcon, Piero Leonardo ()
+- Molina Falcon, Piero Leonardo (PieroMFAL)
 - Torres Garcia, Andrés Alberto (andrest04)
 
 # Contenido
@@ -136,6 +136,8 @@ Los integrantes son:
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
+| Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br>Compartí con el equipo diversas ideas orientadas a la creación y mejora de nuestro proyecto, comunicándolas de manera clara y objetiva. Asimismo, en el desarrollo del Capítulo II, estuve a cargo de la realización de entrevistas, lo que implicó interactuar con los participantes de forma estructurada y profesional, asegurando una comunicación efectiva con personas de diferentes niveles y contextos.<br><br>**Gongora Castillejos, Williams:**<br> **TB1:** Sustenté frente al equipo la viabilidad técnica y de negocio para la gestión de requerimientos (Capítulo III), argumentando la necesidad de aplicar IA y rediseñar el flujo logístico. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Sustenté frente al equipo la problemática, contexto y propuesta de solución del proyecto (Capítulo I), argumentando la necesidad de implementar una plataforma basada en IA para optimizar la gestión y reutilización de residuos textiles dentro de un enfoque de economía circular. <br><br> **Molina Falcon, Piero Leonardo** <br>**TB1:** Sustenté ante el equipo la definición de los bounded contexts y la delimitación del dominio en el Capítulo IV (Strategic Design), explicando la importancia del EventStorming, Candidate Context Discovery y Context Mapping para estructurar correctamente la arquitectura del sistema. Asimismo, argumenté cómo estas decisiones permitían mejorar la escalabilidad, mantenibilidad y claridad de los procesos de negocio dentro de GamarraLoop.<br><br> **Torres Garcia, Andrés Alberto** | **TB1:** El equipo logró alinear la visión del producto mediante debates estructurados, asegurando que todos los miembros comprendan a profundidad el modelo de negocio antes de iniciar el diseño arquitectónico. |
+| Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br>Me encargué del desarrollo del Capítulo II, diseñando entrevistas y desarrollando herramientas como mapas de análisis con el objetivo de comprender mejor a los usuarios y sus necesidades. La información fue presentada de manera clara y objetiva.<br><br> **Gongora Castillejos, Williams:** <br> **TB1:** Redacté y estructuré el Capítulo III (Requirements Specification), elaborando diagramas estratégicos (Impact Mapping, To-Be Scenario) y estandarizando las User Stories en formato Gherkin. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Redacté y estructuré el Capítulo I del proyecto, desarrollando el perfil de la startup, la problemática, los segmentos de usuarios y los artefactos de Lean UX, comunicando las ideas de manera clara, organizada y comprensible para públicos tanto técnicos como no técnicos. <br><br> **Molina Falcon, Piero Leonardo** <br>**TB1:** Redacté y estructuré el Capítulo IV (Strategic Design), desarrollando el EventStorming, Candidate Context Discovery, Domain Message Flows Modeling, Bounded Context Canvases y Context Mapping, organizando los bounded contexts del sistema y definiendo las relaciones estratégicas entre ellos para una arquitectura clara, escalable y alineada al dominio del negocio.<br><br> **Torres Garcia, Andrés Alberto** | **TB1:** La documentación rigurosa y estandarizada ha demostrado ser fundamental. Redactar requerimientos sin ambigüedades ni detalles de UI garantiza una base sólida y comprensible para el posterior diseño de software. |
 | Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br>Compartí con el equipo diversas ideas orientadas a la creación y mejora de nuestro proyecto, comunicándolas de manera clara y objetiva. Asimismo, en el desarrollo del Capítulo II, estuve a cargo de la realización de entrevistas, lo que implicó interactuar con los participantes de forma estructurada y profesional, asegurando una comunicación efectiva con personas de diferentes niveles y contextos.<br><br>**Gongora Castillejos, Williams:**<br> **TB1:** Sustenté frente al equipo la viabilidad técnica y de negocio para la gestión de requerimientos (Capítulo III), argumentando la necesidad de aplicar IA y rediseñar el flujo logístico. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Sustenté frente al equipo la problemática, contexto y propuesta de solución del proyecto (Capítulo I), argumentando la necesidad de implementar una plataforma basada en IA para optimizar la gestión y reutilización de residuos textiles dentro de un enfoque de economía circular. <br><br> **Molina Falcon, Piero Leonardo** <br><br> **Torres Garcia, Andrés Alberto** <br> **TB1:** Sustenté frente al equipo el proceso de Attribute-Driven Design aplicado al Capítulo IV, argumentando la priorización de los diez drivers arquitectónicos en dos ejes (importancia para stakeholders e impacto en complejidad técnica), la elección del estilo monolito modular frente a microservicios para una solución en fase de validación, y la distribución entre tres proveedores cloud heterogéneos (Google Cloud Platform, Supabase y GitHub Pages) priorizando free tiers permanentes sobre la uniformidad arquitectónica. Asimismo, expuse los trade-offs explícitos asumidos por la arquitectura: cold start de Cloud Run, optimistic vs pessimistic locking en la reserva concurrente, y clasificación asíncrona vs síncrona ante la dependencia con Google Cloud Vision. | **TB1:** El equipo logró alinear la visión del producto mediante debates estructurados, asegurando que todos los miembros comprendan a profundidad el modelo de negocio antes de iniciar el diseño arquitectónico. |
 | Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br>Me encargué del desarrollo del Capítulo II, diseñando entrevistas y desarrollando herramientas como mapas de análisis con el objetivo de comprender mejor a los usuarios y sus necesidades. La información fue presentada de manera clara y objetiva.<br><br> **Gongora Castillejos, Williams:** <br> **TB1:** Redacté y estructuré el Capítulo III (Requirements Specification), elaborando diagramas estratégicos (Impact Mapping, To-Be Scenario) y estandarizando las User Stories en formato Gherkin. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Redacté y estructuré el Capítulo I del proyecto, desarrollando el perfil de la startup, la problemática, los segmentos de usuarios y los artefactos de Lean UX, comunicando las ideas de manera clara, organizada y comprensible para públicos tanto técnicos como no técnicos. <br><br> **Molina Falcon, Piero Leonardo** <br><br> **Torres Garcia, Andrés Alberto** <br> **TB1:** Redacté y estructuré las secciones de Strategic-Level Attribute-Driven Design (4.1) y Software Architecture (4.3) del Capítulo IV. Documenté el Architectural Drivers Backlog con diez drivers priorizados (D01–D10), los siete escenarios de atributos de calidad en formato SEI de seis dimensiones (QA01–QA07), las seis Technical Stories que actúan como constraints (TS01–TS06), la matriz de Architectural Design Decisions con la evaluación de dos a tres patrones candidatos por driver con sus pros y contras, y los Quality Attribute Scenario Refinements con Business Goals, Questions e Issues asociados. Adicionalmente, modelé las cuatro vistas del C4 Model (System Landscape, Context, Container y Deployment) en Structurizr y las acompañé de tablas con trazabilidad explícita a los drivers, escenarios de calidad y User Stories del Capítulo III. | **TB1:** La documentación rigurosa y estandarizada ha demostrado ser fundamental. Redactar requerimientos sin ambigüedades ni detalles de UI garantiza una base sólida y comprensible para el posterior diseño de software. |
 
@@ -233,28 +235,31 @@ GamarraLoop está conformado por estudiantes de Ingeniería de Software con form
         </td>
     </tr>
     <tr align="center">
-        <td rowspan="3">
-            <img src="Img/Leonardo-Molina.jpg" alt="Molina Falcon, Piero Leonardo" style="margin-bottom: 5px;" width="800"/>
-        </td>
-        <td align="left">
-            <b>Nombre y Apellido:</b>
-            <br>
-            Molina Falcon, Piero Leonardo
-        </td>
-    </tr>
-    <tr>
-        <td align="left">
+    <td rowspan="3">
+        <img src="assets/piero.png" alt="Molina Falcon, Piero Leonardo" style="margin-bottom: 5px;" width="800"/>
+    </td>
+    <td align="left">
+        <b>Nombre y Apellido:</b>
+        <br>
+        Molina Falcon, Piero Leonardo
+    </td>
+</tr>
+
+<tr>
+    <td align="left">
         <b>Carrera:</b>
         <br>
         Ingeniería de Software
-        </td>
-    </tr>
-    <tr>
-        <td align="left">
+    </td>
+</tr>
+
+<tr>
+    <td align="left">
         <b>Acerca de:</b>
         <br>
-        </td>
-    </tr>
+        Soy estudiante de Ingeniería de Software en la UPC, con interés en el diseño de arquitecturas de software, desarrollo de soluciones tecnológicas y optimización de procesos mediante enfoques estructurados. Me considero una persona analítica, disciplinada y orientada a resultados, con capacidad para trabajar en equipo y aportar soluciones claras y eficientes. Dentro del proyecto, contribuí en el desarrollo del Capítulo IV (Strategic Design), especialmente en el Candidate Context Discovery, Domain Message Flows Modeling, Bounded Context Canvases y Context Mapping, apoyando en la definición estratégica de la arquitectura del sistema.
+    </td>
+</tr>
     <tr align="center">
         <td rowspan="3">
             <img src="Img/Andres-Torres.jpg" alt="Torres Garcia, Andrés Alberto" style="margin-bottom: 5px;" width="800"/>
@@ -719,7 +724,19 @@ Reforzar la diferenciación de Recitex en todos los canales de marketing, destac
 | **Link**          |  |
 | **Resumen**       | Andrea menciona que le cuesta encontrar telas específicas a buen precio. Muchas veces pierde tiempo o tiene que cambiar sus diseños. Le gustaría una app con fotos claras y filtros para encontrar materiales más rápido. |
 ---
+#### Entrevista 4
 
+| Campo             | Detalle |
+|-------------------|---------|
+| **Entrevistado**  | Julio Rivera |
+| **Entrevistador** | Piero Molina |
+| **Sexo**          | Masculino|
+| **Edad**          | 31 |
+| **Distrito**      | Jesús Maria |
+| **Timing**        | 00:06:12 |
+| **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201610857_upc_edu_pe/IQA6ngx93bFKQahKe71vdZlEAbs4qX512NgLLzsO7BpPeQw?e=dhGo60&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| **Resumen**       | En la entrevista realizada a Julio Rivera, se identificó que los artesanos dependen principalmente de talleres de confección, mercados textiles y contactos informales para conseguir materiales reutilizables. La principal problemática es la dificultad para encontrar materiales disponibles, cercanos y en buen estado, por lo que una plataforma con geolocalización y reserva facilitaría significativamente su trabajo. |
+---
 <a name="2.2.3."></a>
 
 ### 2.2.3. Análisis de entrevistas
@@ -1399,22 +1416,168 @@ A continuación se presentan los escenarios de atributos de calidad **refinados*
 <a name="4.2.1."></a>
 
 ### 4.2.1. EventStorming
+Mediante la técnica del Event Storming definimos los siguientes Bounded Context los cuales son principales dentro del proyecto.
+
+**USER / PROFILE MANAGMENT**
+
+Gestiona las cuentas de usuario, perfiles y preferencias dentro de la plataforma. Permite el registro, autenticación, actualización de perfil y control de credenciales para confeccionistas y artesanos, asegurando que solo usuarios válidos y activos puedan participar en el sistema.
+
+<p align="center">
+  <img src="./assets/UserProfileManagment.jpg" width="850">
+</p>
+
+**LOT PUBLICACIÓN MANAGMENT**
+
+Gestiona la publicación de lotes textiles disponibles para reserva dentro de la plataforma. Permite al confeccionista capturar la información del lote, registrar la ubicación de recojo mediante GPS, enviar imágenes para clasificación automática y publicar únicamente lotes validados y completos.
+
+<p align="center">
+  <img src="./assets/LotPublicationManagment.jpg" width="850">
+</p>
+
+**TEXTILE CLASSIFICATION MANAGEMENT**
+
+Se encarga de clasificar los lotes textiles según tipo de tela, color, material, calidad y cantidad disponible. Utiliza clasificación automática por imagen mediante servicios de IA y validación manual cuando sea necesario para asegurar la precisión de los datos antes de la publicación.
+
+<p align="center">
+  <img src="./assets/TextileClasification.jpg" width="850">
+</p>
+
+**RESERVATION MANAGEMENT**
+
+Administra la reserva de lotes textiles publicados por parte de los artesanos. Controla la disponibilidad, confirmación, cancelación y expiración de reservas, garantizando que un lote solo pueda ser reservado por un usuario a la vez y dentro de un período válido.
+
+<p align="center">
+  <img src="./assets/ReservationManagment.jpg" width="850">
+</p>
+
+**PICKUP AND DELIVERY MANAGEMENT**
+
+Gestiona el proceso de recojo y entrega de los lotes reservados. Permite coordinar el punto de recogida, hacer seguimiento del estado de entrega, confirmar la recepción y cerrar correctamente el proceso logístico entre confeccionista y artesano.
+
+<p align="center">
+  <img src="./assets/PickupAndDelivery.jpg" width="850">
+</p>
+
+**EXPIRATION MANAGEMENT**
+
+Controla la expiración automática de los lotes cuando no son recogidos dentro del tiempo límite establecido. Verifica periódicamente los lotes pendientes, cambia su estado a expirado cuando corresponde y activa las notificaciones necesarias para informar a los usuarios involucrados.
+
+<p align="center">
+  <img src="./assets/ExpirationManagment.jpg" width="850">
+</p>
+
+**NOTIFICATION MANAGMENT**
+
+Administra el envío de notificaciones y alertas generadas por eventos importantes del sistema, como publicación de lotes, reservas, entregas, recepciones y expiraciones. Garantiza la comunicación oportuna entre confeccionistas y artesanos mediante servicios de notificación push y alertas automáticas.
+
+<p align="center">
+  <img src="./assets/NotificationManagment.jpg" width="850">
+</p>
+
+
+El diagrama completo se encuentra en el siguiente enlace: https://miro.com/app/board/uXjVHfI02Ag=/?share_link_id=281658940692
 
 <a name="4.2.2."></a>
 
 ### 4.2.2. Candidate Context Discovery
 
+La identificación de Candidate Context Discovery en el proyecto GamarraLoop permite descubrir las principales áreas del negocio que pueden separarse en distintos bounded contexts dentro del sistema. Este proceso se enfoca en analizar la gestión de excedentes textiles y la interacción entre confeccionistas, artesanos y el sistema dentro de la plataforma.
+A partir de ello, se identificaron capacidades principales como la publicación de lotes textiles, la clasificación automática de materiales mediante IA, la reserva de lotes y la gestión de usuarios. Estas funcionalidades fueron agrupadas en sectores lógicos para facilitar el diseño, mejorar la escalabilidad y asegurar un mejor mantenimiento del sistema.
+El objetivo principal es definir bounded contexts claros que representen correctamente el dominio del negocio y permitan construir una arquitectura de software más organizada, flexible y sostenible.
+
+<p align="center">
+  <img src="./assets/CandidateContextDiscovery. .jpg" width="850">
+</p>
+
+El diagrama completo se encuentra en el siguiente enlace: https://miro.com/app/board/uXjVHfI02Ag=/?share_link_id=281658940692
+
 <a name="4.2.3."></a>
 
 ### 4.2.3. Domain Message Flows Modeling
+
+El Domain Message Flows Modeling permite visualizar cómo colaboran los bounded contexts del sistema para resolver los principales procesos de negocio dentro de Gamarra Loop (Recitex). Esta técnica ayuda a representar el intercambio de mensajes entre actores, bounded contexts y sistemas externos, facilitando la comprensión del flujo de información dentro de la plataforma.
+Para este proceso se aplicó la técnica de Domain Storytelling, la cual permite modelar la secuencia de acciones realizadas por los usuarios y las respuestas automáticas del sistema. Esto permite identificar claramente los actores involucrados, los bounded contexts participantes y sus interacciones.
+En nuestro proyecto se seleccionó el escenario “Lot Publication and Pickup Management”, ya que representa uno de los flujos principales del negocio: desde que el confeccionista publica un lote textil hasta que el artesano o recolector realiza la reserva, coordina la entrega y recibe la notificación correspondiente.
+Los bounded contexts involucrados son:
+Lot Publication Management
+Textile Classification Management
+Reservation Management
+Pickup & Delivery Management
+Notification Management
+Este modelado permite comprender cómo los bounded contexts colaboran entre sí para garantizar el correcto funcionamiento del sistema.
+
+<p align="center">
+  <img src="./assets/DomainMessageFlowsModelingLoop.jpg" width="850">
+</p>
+
+El diagrama completo se encuentra en el siguiente enlace: https://miro.com/app/board/uXjVHfI02Ag=/?share_link_id=281658940692
 
 <a name="4.2.4."></a>
 
 ### 4.2.4. Bounded Context Canvases
 
+En esta sección se presentan los Bounded Context Canvases de GamarraLoop, diseñados a partir del análisis estratégico del dominio y la identificación de los principales bounded contexts del sistema. Para su elaboración se siguió un proceso iterativo que incluyó la definición del contexto, reglas de negocio, lenguaje ubicuo, capacidades, dependencias y validación del diseño.
+Los bounded contexts definidos fueron: User Profile Management, Textile Classification, Lot Publication Management, Reservation Management, Pickup and Delivery y Notification Management.
+
+**Proceso metodológico**
+
+<p align="center">
+  <img src="./assets/ProcesoIterativo.jpg" width="1000">
+</p>
+
+**User Profile Management**
+
+<p align="center">
+  <img src="./assets/UserProfileManagement.jpg" width="1000">
+</p>
+
+**Textile Classification**
+
+<p align="center">
+  <img src="./assets/TextileClassification.jpg" width="1000">
+</p>
+
+**Lot Publication Management**
+
+<p align="center">
+  <img src="./assets/LotPublicationManagement.jpg" width="1000">
+</p>
+
+**Reservation Management**
+
+<p align="center">
+  <img src="./assets/ReservationManagement.jpg" width="1000">
+</p>
+
+**Pickup and Delivery**
+
+<p align="center">
+  <img src="./assets/PickupandDeliveryCanva.jpg" width="1000">
+</p>
+
+**Notification Management**
+
+<p align="center">
+  <img src="./assets/NotificationManagement.jpg" width="1000">
+</p>
+
+El diagrama completo se encuentra en el siguiente enlace: 
+https://miro.com/app/board/uXjVHc84QZA=/?share_link_id=254000344450
+
 <a name="4.2.5."></a>
 
 ### 4.2.5. Context Mapping
+
+El Context Mapping permite identificar y visualizar las relaciones estructurales entre los Bounded Contexts definidos en GamarraLoop, mostrando cómo colaboran entre sí y cómo se intercambia la información dentro del dominio del negocio. A través de este proceso se analizaron las dependencias entre contextos como publicación de lotes, clasificación textil, reservas, entregas, expiraciones y notificaciones, buscando mantener una arquitectura con bajo acoplamiento y alta cohesión. Además, se aplicaron patrones de Domain-Driven Design como Customer/Supplier, Conformist y Anti-Corruption Layer (ACL), permitiendo una mejor separación de responsabilidades y una integración más controlada con servicios externos como la clasificación automática mediante inteligencia artificial.
+
+<p align="center">
+  <img src="./assets/ContextMapingGamarraLoop.png" width="850">
+</p>
+
+El diagrama presentado muestra cómo cada Bounded Context mantiene su independencia funcional mientras colabora con los demás para completar el flujo principal del negocio, desde el registro del usuario hasta la publicación, clasificación, reserva, recojo y notificación final del lote textil. Esta estructura permite una mejor escalabilidad del sistema, facilita el mantenimiento futuro y asegura que los cambios en un contexto no impacten directamente en todo el dominio, cumpliendo así con los principios fundamentales de Domain-Driven Design.
+
+ https://lucid.app/lucidchart/ec20dbd0-3469-494a-b742-630a12a29cbd/edit?viewport_loc=-836%2C39%2C4359%2C1543%2C0_0&invitationId=inv_b8a17edd-7cb1-4abc-b7a9-cb7bc8908400
+El diagrama completo se encuentra en el siguiente enlace:https://lucid.app/lucidchart/ec20dbd0-3469-494a-b742-630a12a29cbd/edit?viewport_loc=-836%2C39%2C4359%2C1543%2C0_0&invitationId=inv_b8a17edd-7cb1-4abc-b7a9-cb7bc8908400
 
 <a name="4.3."></a>
 
