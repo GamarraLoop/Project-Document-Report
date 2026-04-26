@@ -233,28 +233,31 @@ GamarraLoop está conformado por estudiantes de Ingeniería de Software con form
         </td>
     </tr>
     <tr align="center">
-        <td rowspan="3">
-            <img src="Img/Leonardo-Molina.jpg" alt="Molina Falcon, Piero Leonardo" style="margin-bottom: 5px;" width="800"/>
-        </td>
-        <td align="left">
-            <b>Nombre y Apellido:</b>
-            <br>
-            Molina Falcon, Piero Leonardo
-        </td>
-    </tr>
-    <tr>
-        <td align="left">
+    <td rowspan="3">
+        <img src="assets/piero.png" alt="Molina Falcon, Piero Leonardo" style="margin-bottom: 5px;" width="800"/>
+    </td>
+    <td align="left">
+        <b>Nombre y Apellido:</b>
+        <br>
+        Molina Falcon, Piero Leonardo
+    </td>
+</tr>
+
+<tr>
+    <td align="left">
         <b>Carrera:</b>
         <br>
         Ingeniería de Software
-        </td>
-    </tr>
-    <tr>
-        <td align="left">
+    </td>
+</tr>
+
+<tr>
+    <td align="left">
         <b>Acerca de:</b>
         <br>
-        </td>
-    </tr>
+        Soy estudiante de Ingeniería de Software en la UPC, con interés en el diseño de arquitecturas de software, desarrollo de soluciones tecnológicas y optimización de procesos mediante enfoques estructurados. Me considero una persona analítica, disciplinada y orientada a resultados, con capacidad para trabajar en equipo y aportar soluciones claras y eficientes. Dentro del proyecto, contribuí en el desarrollo del Capítulo IV (Strategic Design), especialmente en el Candidate Context Discovery, Domain Message Flows Modeling, Bounded Context Canvases y Context Mapping, apoyando en la definición estratégica de la arquitectura del sistema.
+    </td>
+</tr>
     <tr align="center">
         <td rowspan="3">
             <img src="Img/Andres-Torres.jpg" alt="Torres Garcia, Andrés Alberto" style="margin-bottom: 5px;" width="800"/>
