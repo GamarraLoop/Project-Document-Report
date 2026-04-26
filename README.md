@@ -639,7 +639,7 @@ Reforzar la diferenciación de Recitex en todos los canales de marketing, destac
 | **Sexo**          |Masculino |
 | **Edad**          | 32 |
 | **Distrito**      | Lince |
-| **Timing**        | 5:28 |
+| **Timing**        | 05:28 |
 | **Link**          |  [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQAN7gYHGcYlSLXuoJ9JBJjkAf3Zrbft26IoBjtFGzD699k?e=QFawgz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 | **Resumen**       | Piero nos comenta que genera retazos de tela casi todos los días y los acumula hasta que ocupan mucho espacio. A veces los regala o los da a recicladores, pero coordinar es complicado. Dice que le gustaría algo simple para deshacerse de esos materiales rápido, sin perder tiempo. |
 
@@ -660,14 +660,14 @@ Reforzar la diferenciación de Recitex en todos los canales de marketing, destac
 
 | Campo             | Detalle |
 |-------------------|---------|
-| **Entrevistado**  | Luis García |
-| **Entrevistador** |  |
+| **Entrevistado**  | Fabrizio |
+| **Entrevistador** | Andrés Torres |
 | **Sexo**          | Masculino |
-| **Edad**          | 52 |
-| **Distrito**      | Pueblo Libre |
-| **Timing**        |  |
-| **Link**          |  |
-| **Resumen**       | Luis explica que generan muchos residuos y aunque intentan reutilizar algunos, la mayoría se pierde. Siente que falta una forma organizada de conectar con personas interesadas. Dice que usaría una app si le facilita ubicar y coordinar el recojo. |
+| **Edad**          | 22 |
+| **Distrito**      | Chorrillos |
+| **Timing**        | 03:43  |
+| **Link**          | [Video de Entrevista]() |
+| **Resumen**       | Fabrizio explica que generan muchos residuos y aunque intentan reutilizar algunos, la mayoría se pierde. Siente que falta una forma organizada de conectar con personas interesadas. Dice que usaría una app si le facilita ubicar y coordinar el recojo. |
 
 #### Entrevistas al Segmento 2: Artesanos/recolectores
 
@@ -681,7 +681,7 @@ Reforzar la diferenciación de Recitex en todos los canales de marketing, destac
 | **Edad**          | 26 |
 | **Distrito**      | Jesús Maria |
 | **Timing**        | 08:05 |
-| **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211g522_upc_edu_pe/IQDfTLJqZPgERq92KZQYQyIcAamOMdEuGeg0HEMG1UtIuTU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=0w9fGL) |
+| **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211g522_upc_edu_pe/IQDfTLJqZPgERq92KZQYQyIcAamOMdEuGeg0HEMG1UtIuTU?e=Pjbsgr&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 | **Resumen**       | Anthony cuenta que busca materiales en Gamarra o con recicladores, pero muchas veces no encuentra lo que necesita. Pierde tiempo buscando y a veces termina comprando más caro. Le interesaría una app donde pueda ver materiales cercanos y elegir más rápido. |
 
 ---
@@ -695,7 +695,7 @@ Reforzar la diferenciación de Recitex en todos los canales de marketing, destac
 | **Sexo**          | Masculino |
 | **Edad**          | 28 |
 | **Distrito**      | Lince |
-| **Timing**        | 5:01 |
+| **Timing**        | 05:01 |
 | **Link**          |  [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQBK4us_1WkPR468kAVyanV0ASwmeiolYIAU2Cb3FhJRLc8?e=i9k3rf&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 | **Resumen**       | Carlos comenta que encuentra materiales caminando y preguntando en talleres. A veces pierde medio día sin conseguir nada. Dice que le serviría mucho saber dónde hay material disponible sin tener que buscar tanto. |
 
