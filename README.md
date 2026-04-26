@@ -1467,6 +1467,10 @@ El diagrama completo se encuentra en el siguiente enlace: https://miro.com/app/b
 
 ### 4.2.4. Bounded Context Canvases
 
+En esta sección se presentan los Bounded Context Canvases de GamarraLoop, diseñados a partir del análisis estratégico del dominio y la identificación de los principales bounded contexts del sistema. Para su elaboración se siguió un proceso iterativo que incluyó la definición del contexto, reglas de negocio, lenguaje ubicuo, capacidades, dependencias y validación del diseño.
+Los bounded contexts definidos fueron: User Profile Management, Textile Classification, Lot Publication Management, Reservation Management, Pickup and Delivery y Notification Management.
+
+
 <a name="4.2.5."></a>
 
 ### 4.2.5. Context Mapping
