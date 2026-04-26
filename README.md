@@ -776,7 +776,7 @@ De acuerdo con lo que hemos podido observar en las entrevistas realizadas a trab
 
 
 
-| Tarea |Integrante 1 (Frecuencia) | Integrante 1 (Importancia) | Integrante 2 (Frecuencia) |Integrante 2 (Importancia) |
+| Tarea |Usuario 1 (Frecuencia) | Usuario 1 (Importancia) | Usuario 2 (Frecuencia) |Usuario 2 (Importancia) |
 |-------|-------------------------------|--------------------------------|--------------------------|--------------------------|
 | Registrar residuos textiles| Siempre | Alta | — | — |
 | Tomar foto del material| Siempre | Alta | — | — |
