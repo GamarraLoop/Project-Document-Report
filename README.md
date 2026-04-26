@@ -716,7 +716,19 @@ Reforzar la diferenciación de Recitex en todos los canales de marketing, destac
 | **Link**          |  |
 | **Resumen**       | Andrea menciona que le cuesta encontrar telas específicas a buen precio. Muchas veces pierde tiempo o tiene que cambiar sus diseños. Le gustaría una app con fotos claras y filtros para encontrar materiales más rápido. |
 ---
+#### Entrevista 4
 
+| Campo             | Detalle |
+|-------------------|---------|
+| **Entrevistado**  | Julio Rivera |
+| **Entrevistador** | Piero Molina |
+| **Sexo**          | Masculino|
+| **Edad**          | 31 |
+| **Distrito**      | Jesús Maria |
+| **Timing**        | 00:06:12 |
+| **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201610857_upc_edu_pe/IQA6ngx93bFKQahKe71vdZlEAbs4qX512NgLLzsO7BpPeQw?e=dhGo60&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| **Resumen**       | En la entrevista realizada a Julio Rivera, se identificó que los artesanos dependen principalmente de talleres de confección, mercados textiles y contactos informales para conseguir materiales reutilizables. La principal problemática es la dificultad para encontrar materiales disponibles, cercanos y en buen estado, por lo que una plataforma con geolocalización y reserva facilitaría significativamente su trabajo. |
+---
 <a name="2.2.3."></a>
 
 ### 2.2.3. Análisis de entrevistas
