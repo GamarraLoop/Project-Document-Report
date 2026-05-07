@@ -173,6 +173,14 @@ Estos elementos permiten mejorar la presencia digital de GamarraLoop y asegurar 
 
 <a name="6.2.4."></a>
 ### 6.2.4. Navigation Systems. 
+
+El sistema de navegación de GamarraLoop está diseñado para ser claro, intuitivo y consistente dentro de la aplicación móvil. Se busca que tanto talleres como artesanos puedan desplazarse por la plataforma sin dificultad, identificando rápidamente las acciones principales como publicar un lote, explorar materiales, reservar o gestionar sus actividades.
+En la aplicación móvil, la navegación se organiza mediante una barra inferior (bottom navigation) que agrupa las funciones más utilizadas, tales como Inicio, Explorar, Publicar, Mis actividades y Perfil. Esta estructura permite a los usuarios moverse rápidamente entre secciones y realizar acciones clave en pocos pasos, reduciendo la complejidad de uso.
+Adicionalmente, se emplea navegación contextual dentro de cada sección. Por ejemplo, desde la vista de exploración, el usuario puede acceder al detalle de un lote, visualizar su ubicación y ejecutar acciones como reservar o contactar al taller. Esto mantiene un flujo continuo y lógico durante la interacción.
+El uso de iconos, colores e indicadores visuales refuerza la navegación, facilitando la identificación de acciones importantes y estados de los lotes. Los colores de estado (disponible, reservado, etc.) permiten interpretar rápidamente la información sin necesidad de leer en detalle.
+Asimismo, la integración de funcionalidades como geolocalización y clasificación automática de materiales se presenta de forma transparente dentro de la navegación, asegurando que el usuario acceda a información relevante en el momento adecuado.
+En conjunto, el sistema de navegación está diseñado para ofrecer una experiencia fluida, rápida y sin fricciones, adaptándose a las necesidades de los distintos tipos de usuarios dentro del ecosistema de reutilización textil.
+
 <a name="6.3."></a>
 ## 6.3. Landing Page UI Design. 
 <a name="6.3.1."></a>
