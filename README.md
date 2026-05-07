@@ -62,9 +62,58 @@ En relación con el componente tecnológico, la aplicación integrará servicios
 ## 6.2. Information Architecture.
 
 En esta sección se detallan las decisiones y fundamentos relacionados con la organización del contenido dentro de la aplicación móvil de GamarraLoop. Estas propuestas están orientadas a garantizar que los usuarios, tanto talleres como artesanos, puedan comprender y utilizar las funcionalidades de la plataforma de manera sencilla y sin fricciones.
+Las decisiones consideran aspectos clave como la organización de la información, el etiquetado de los elementos, la navegación dentro de la aplicación y los mecanismos de búsqueda y filtrado de lotes. Todo ello con el objetivo de facilitar el acceso a los materiales disponibles, optimizar la interacción entre usuarios y mejorar la experiencia general dentro del sistema.
 
 <a name="6.2.1."></a>
 ### 6.2.1. Labeling Systems. 
+
+En esta sección se describen los sistemas de etiquetado utilizados en la aplicación móvil de GamarraLoop. El objetivo del etiquetado es facilitar la comprensión del sistema, permitiendo que los usuarios identifiquen rápidamente las funciones disponibles y naveguen de manera intuitiva. Se busca mantener consistencia en los nombres, utilizando términos claros, simples y familiares para los talleres y artesanos.
+
+**Etiquetas de Encabezados (Headings)**
+
+Las etiquetas de encabezado permiten organizar el contenido principal dentro de la aplicación:
+
+-	Inicio (Home): Muestra un resumen de los lotes disponibles y accesos rápidos a las funciones principales.
+-	Publicar Lote: Permite a los talleres registrar y publicar nuevos residuos textiles.
+-	Explorar Materiales: Sección donde los artesanos pueden visualizar los lotes disponibles.
+-	Mis Lotes: Lista de publicaciones realizadas por el usuario (taller).
+-	Mis Reservas: Muestra los lotes que el artesano ha reservado.
+-	Perfil: Información del usuario y configuración básica de la cuenta.
+  
+**Etiquetas Textuales (Text Labels)**
+
+Estas etiquetas ayudan a los usuarios a identificar acciones dentro de la aplicación:
+
+-	Publicar (Publish): Acción para registrar un nuevo lote de tela.
+-	Tomar Foto (Take Photo): Permite capturar la imagen del material.
+-	Reservar (Reserve): Acción para asegurar un lote disponible.
+-	Disponible (Available): Indica que el lote puede ser recolectado.
+-	Reservado (Reserved): Indica que el lote ya fue apartado por un usuario.
+-	Entregado (Delivered): Confirma que el lote ya fue recogido.
+-	Buscar (Search): Permite encontrar materiales específicos.
+-	Filtrar (Filter): Ayuda a refinar resultados por tipo, color u otros atributos.
+-	Ubicación (Location): Muestra el punto de recojo del lote.
+-	Confirmar Entrega: Acción del taller para validar la entrega del lote.
+-	Confirmar Recepción: Acción del artesano para confirmar que recibió el material.
+  
+**Etiquetas Icónicas (Iconic Labels)**
+
+Se utilizan íconos para reforzar visualmente las acciones y facilitar la navegación:
+
+-	Cámara: Representa la captura de imágenes del lote.
+-	Ubicación (pin): Indica el punto de recojo en el mapa.
+-	Caja / paquete: Representa los lotes de material textil.
+-	Campana: Notificaciones sobre reservas o cambios de estado.
+-	Check: Confirmación de entrega o recepción.
+-	Reloj: Indica estado pendiente o en proceso.
+-	Indicadores de estado:
+  o	Verde: lote disponible
+  o	Amarillo: lote reservado
+  o	Rojo: lote no disponible (cancelado o expirado)
+  o	Gris: lote entregado
+ 	
+Estas etiquetas se aplican de manera consistente en toda la aplicación móvil, permitiendo que los usuarios reconozcan fácilmente las funciones sin necesidad de aprendizaje previo. Además, el uso de indicadores visuales facilita la interpretación rápida del estado de los lotes, mejorando la eficiencia y la experiencia general dentro de la plataforma.
+
 <a name="6.2.2"></a>
 ### 6.2.2. Searching Systems.
 <a name="6.2.3."></a> 
