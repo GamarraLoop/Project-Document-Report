@@ -60,6 +60,9 @@ En relación con el componente tecnológico, la aplicación integrará servicios
 
 <a name="6.2."></a> 
 ## 6.2. Information Architecture.
+
+En esta sección se detallan las decisiones y fundamentos relacionados con la organización del contenido dentro de la aplicación móvil de GamarraLoop. Estas propuestas están orientadas a garantizar que los usuarios, tanto talleres como artesanos, puedan comprender y utilizar las funcionalidades de la plataforma de manera sencilla y sin fricciones.
+
 <a name="6.2.1."></a>
 ### 6.2.1. Labeling Systems. 
 <a name="6.2.2"></a>
