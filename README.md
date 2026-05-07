@@ -107,10 +107,10 @@ Se utilizan íconos para reforzar visualmente las acciones y facilitar la navega
 -	Check: Confirmación de entrega o recepción.
 -	Reloj: Indica estado pendiente o en proceso.
 -	Indicadores de estado:
-  o	Verde: lote disponible
-  o	Amarillo: lote reservado
-  o	Rojo: lote no disponible (cancelado o expirado)
-  o	Gris: lote entregado
+  - Verde: lote disponible
+  - Amarillo: lote reservado
+  -	Rojo: lote no disponible (cancelado o expirado)
+  -	Gris: lote entregado
  	
 Estas etiquetas se aplican de manera consistente en toda la aplicación móvil, permitiendo que los usuarios reconozcan fácilmente las funciones sin necesidad de aprendizaje previo. Además, el uso de indicadores visuales facilita la interpretación rápida del estado de los lotes, mejorando la eficiencia y la experiencia general dentro de la plataforma.
 
@@ -138,6 +138,39 @@ Estos métodos se complementan entre sí, ofreciendo una experiencia de búsqued
 
 <a name="6.2.3."></a> 
 ### 6.2.3. SEO Tags and Meta Tags. 
+
+Los SEO Tags y Meta Tags permiten que la landing page informativa de GamarraLoop sea fácilmente identificable por los motores de búsqueda, mejorando su visibilidad y facilitando que potenciales usuarios (talleres y artesanos) encuentren la solución. Además, contribuyen a una correcta visualización en distintos dispositivos y a una mejor organización del contenido web.
+
+**Title**
+
+El título define el nombre del proyecto en el navegador y en los resultados de búsqueda:
+
+<title>GamarraLoop - Reutilización de Residuos Textiles</title>
+
+**Description**
+
+Describe de forma breve el propósito de la plataforma, destacando su enfoque en economía circular:
+
+<meta name="description" content="GamarraLoop es una plataforma que conecta talleres textiles con artesanos para reutilizar residuos de tela, promoviendo la economía circular en Gamarra.">
+
+**Keywords y Viewport**
+
+Se incluyen etiquetas que ayudan a posicionar la página y asegurar su correcta adaptación en dispositivos móviles:
+
+<meta name="keywords" content="reciclaje textil, Gamarra, economía circular, reutilización de telas, residuos textiles, artesanos, talleres">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+**Author / Copyright**
+
+Identifica la autoría del contenido y los derechos del proyecto:
+
+<meta name="author" content="Equipo GamarraLoop">
+
+<meta name="copyright" content="GamarraLoop 2026">
+
+Estos elementos permiten mejorar la presencia digital de GamarraLoop y asegurar una correcta indexación en buscadores, facilitando la difusión de la propuesta y el acceso a nuevos usuarios interesados en la reutilización de materiales textiles.
+
 <a name="6.2.4."></a>
 ### 6.2.4. Navigation Systems. 
 <a name="6.3."></a>
