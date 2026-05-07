@@ -1,10 +1,16 @@
 
 <a name="6."></a>
 # Capítulo VI: Solution UX Design
+
 <a name="6.1."></a>
 6.1. Style Guidelines. 
+
+En este capítulo se presentan los lineamientos de estilo y las herramientas que se emplearán para el diseño del proyecto. Se detallarán los criterios visuales, componentes y recursos que permitirán mantener una identidad a lo largo de la aplicación, así como una experiencia de usuario clara y consistente. Estos lineamientos servirán como base para el desarrollo de las interfaces, asegurando una experiencia confortable para el usuario.
+
 <a name="6.1.1."></a>
 6.1.1. General Style Guidelines.
+
+
 <a name="6.1.2."></a> 
 6.1.2. Web, Mobile & Devices Style Guidelines.
 <a name="6.2."></a> 
