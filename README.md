@@ -52,6 +52,12 @@ El negro se utiliza para el contenido principal debido a su alta legibilidad sob
 
 <a name="6.1.2."></a> 
 ### 6.1.2. Web, Mobile & Devices Style Guidelines.
+
+En GamarraLoop se contempla el desarrollo de una aplicación móvil, diseñada para ofrecer una experiencia fluida y accesible en distintos dispositivos. Se prioriza una interacción simple e intuitiva, donde tanto talleres como artesanos puedan utilizar la plataforma sin complicaciones, accediendo rápidamente a funciones clave como la publicación, búsqueda y reserva de lotes de material textil.
+En cuanto al diseño, se aplicará el patrón visual en Z, organizando los elementos de manera natural y fácil de seguir. En la parte superior se ubican el logo y las acciones principales, seguidos por opciones de navegación claras, y posteriormente el contenido relevante como los lotes disponibles, filtros y detalles. Esta estructura permite que los usuarios comprendan rápidamente el funcionamiento de la aplicación y ejecuten acciones de forma eficiente.
+Para la interfaz, se utilizará una paleta de colores basada en tonos beige claro, verde oscuro y negro, transmitiendo una identidad visual alineada con la sostenibilidad y la reutilización de materiales. Asimismo, se incorporan colores de estado que permiten identificar rápidamente la disponibilidad de los lotes (verde para disponible, amarillo para reservado y rojo para no disponible), facilitando la toma de decisiones dentro de la aplicación.
+En relación con el componente tecnológico, la aplicación integrará servicios de clasificación automática de imágenes, permitiendo identificar el tipo de material textil a partir de fotografías. Esta información se mostrará de manera clara dentro de la interfaz, ayudando a los usuarios a evaluar rápidamente los lotes disponibles y mejorando la confiabilidad del sistema.
+
 <a name="6.2."></a> 
 ## 6.2. Information Architecture.
 <a name="6.2.1."></a>
