@@ -116,6 +116,26 @@ Estas etiquetas se aplican de manera consistente en toda la aplicación móvil, 
 
 <a name="6.2.2"></a>
 ### 6.2.2. Searching Systems.
+
+Los sistemas de búsqueda de GamarraLoop están diseñados para que los usuarios puedan encontrar lotes de material textil de manera rápida e intuitiva dentro de la aplicación móvil. Estos métodos priorizan la simplicidad, la accesibilidad y la relevancia de la información, facilitando la conexión entre talleres y artesanos.
+**Búsqueda por texto**
+
+Los usuarios pueden buscar materiales ingresando palabras clave en la barra de búsqueda, como tipo de tela, color o características específicas (por ejemplo, “algodón”, “denim”, “retazos”). Esto permite encontrar lotes de manera directa y reducir el tiempo de exploración.
+
+**Búsqueda por filtros**
+
+La aplicación incorpora opciones de filtrado que permiten refinar los resultados según distintos criterios, como tipo de material, color, estado del lote o cercanía. Esta funcionalidad facilita a los artesanos encontrar materiales que se ajusten a sus necesidades específicas.
+
+**Búsqueda por ubicación**
+
+La plataforma utiliza la ubicación del usuario para mostrar los lotes disponibles más cercanos. Esto resulta clave para optimizar el proceso de recojo, permitiendo a los artesanos identificar rápidamente opciones accesibles dentro de su zona.
+
+**Búsqueda por mapa**
+
+Se incluye un mapa interactivo donde los usuarios pueden visualizar la ubicación de los lotes publicados. A través de indicadores visuales, es posible identificar rápidamente su estado (disponible, reservado, etc.), lo que facilita la toma de decisiones en tiempo real.
+
+Estos métodos se complementan entre sí, ofreciendo una experiencia de búsqueda eficiente y flexible, adaptada a las necesidades tanto de los talleres como de los artesanos dentro del ecosistema de reutilización textil.
+
 <a name="6.2.3."></a> 
 ### 6.2.3. SEO Tags and Meta Tags. 
 <a name="6.2.4."></a>
