@@ -58,15 +58,7 @@ Para el desarrollo del informe perteneciente a la entrega TF, se dividió la imp
 | Gongora Castillejos, Williams    | Capítulo III: Requirements specification                                    |
 | Huanaco Huayta, Elizabeth Lucero | Capítulo I: Introducción                                                    |
 | Molina Falcon, Piero Leonardo    | Capítulo IV: Strategic-Level Domain-Driven Design                           |
-| Torres Garcia, Andrés Alberto    | Capítulo IV: Strategic-Level Attribute-Driven Design, Software Architecture |
-
-**TP**
-
-Para el desarrollo del informe perteneciente a la entrega TP, se dividió la implementación de secciones de la siguiente forma:
-
-| Integrante                       | Tareas Asignadas                                                                                                          |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Torres Garcia, Andrés Alberto    | Capítulo VI: Solution UX Design (6.1 Style Guidelines, 6.2 Information Architecture, 6.3 Landing Page UI Design, 6.4 Applications UX/UI Design) |
+| Torres Garcia, Andrés Alberto    | Capítulo IV: Strategic-Level Attribute-Driven Design, Software Architecture <br> Capítulo VI: Solution UX Design (6.1 Style Guidelines, 6.2 Information Architecture, 6.3 Landing Page UI Design, 6.4 Applications UX/UI Design) |
 
 **Github Collaboration Insights**
 
