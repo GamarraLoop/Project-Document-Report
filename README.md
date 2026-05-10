@@ -1949,7 +1949,7 @@ Las dos aplicaciones de alcance son:
 
 La propuesta traduce las decisiones de Style Guidelines (6.1: paleta beige claro / verde oscuro / negro, jerarquía tipográfica de cuatro niveles, componentes basados en Material Design) y de Arquitectura de Información (6.2: Labeling, Searching, SEO/Meta y Navigation Systems) hacia layouts concretos y navegables. Cada wireframe y cada wireflow se traza explícitamente a las User Stories del Capítulo III y a los User Persona del 2.3.1, garantizando consistencia entre el espacio del problema (Capítulos I–III) y el espacio de la solución (Capítulo VI).
 
-Las herramientas utilizadas son Figma para los wireframes (mismas que en 6.3) y un layout compuesto en Figma para los wireflows que reaprovecha los frames de 6.4.1 como pasos de cada flujo.
+Las herramientas utilizadas son Figma para los wireframes (mismas que en 6.3) y un layout compuesto en Figma para los wireflows que reaprovecha los frames de 6.4.1 como pasos de cada flujo. Enlace al archivo Figma con todos los wireframes y wireflow diagrams de esta sección: https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design
 
 <a name="6.4.1"></a>
 ### 6.4.1. Applications Wireframes.
@@ -1966,23 +1966,23 @@ La App Confeccionista cubre el ciclo completo de oferta: alta del usuario, publi
 
 <table>
   <tr>
-    <td align="center"><img src="assets/applications/wireframes-confeccionista/c-w01-splash.png" alt="C-W01 — Splash" width="220"/><br/><sub><b>C-W01</b> · Splash / Acceso</sub></td>
-    <td align="center"><img src="assets/applications/wireframes-confeccionista/c-w02-onboarding.png" alt="C-W02 — Onboarding" width="220"/><br/><sub><b>C-W02</b> · Onboarding (rol + datos)</sub></td>
-    <td align="center"><img src="assets/applications/wireframes-confeccionista/c-w03-home.png" alt="C-W03 — Home" width="220"/><br/><sub><b>C-W03</b> · Home / Mis lotes</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w01-splash.png" alt="C-W01 — Splash" width="220"/><br/><sub><b>C-W01</b> · Splash / Acceso</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w02-onboarding.png" alt="C-W02 — Onboarding" width="220"/><br/><sub><b>C-W02</b> · Onboarding (rol + datos)</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w03-home.png" alt="C-W03 — Home" width="220"/><br/><sub><b>C-W03</b> · Home / Mis lotes</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="assets/applications/wireframes-confeccionista/c-w04-publicar-foto.png" alt="C-W04 — Publicar foto" width="220"/><br/><sub><b>C-W04</b> · Publicar · Paso 1 (foto)</sub></td>
-    <td align="center"><img src="assets/applications/wireframes-confeccionista/c-w05-publicar-ia.png" alt="C-W05 — Publicar IA" width="220"/><br/><sub><b>C-W05</b> · Publicar · Paso 2 (clasificación IA)</sub></td>
-    <td align="center"><img src="assets/applications/wireframes-confeccionista/c-w06-publicar-ubicacion.png" alt="C-W06 — Publicar ubicación" width="220"/><br/><sub><b>C-W06</b> · Publicar · Paso 3 (ubicación)</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w04-publicar-foto.png" alt="C-W04 — Publicar foto" width="220"/><br/><sub><b>C-W04</b> · Publicar · Paso 1 (foto)</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w05-publicar-ia.png" alt="C-W05 — Publicar IA" width="220"/><br/><sub><b>C-W05</b> · Publicar · Paso 2 (clasificación IA)</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w06-publicar-ubicacion.png" alt="C-W06 — Publicar ubicación" width="220"/><br/><sub><b>C-W06</b> · Publicar · Paso 3 (ubicación)</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="assets/applications/wireframes-confeccionista/c-w07-publicar-confirmacion.png" alt="C-W07 — Publicar confirmación" width="220"/><br/><sub><b>C-W07</b> · Publicar · Paso 4 (confirmación)</sub></td>
-    <td align="center"><img src="assets/applications/wireframes-confeccionista/c-w08-detalle-lote.png" alt="C-W08 — Detalle de lote" width="220"/><br/><sub><b>C-W08</b> · Detalle de Mi Lote</sub></td>
-    <td align="center"><img src="assets/applications/wireframes-confeccionista/c-w09-notificacion.png" alt="C-W09 — Notificación" width="220"/><br/><sub><b>C-W09</b> · Notificación de reserva</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w07-publicar-confirmacion.png" alt="C-W07 — Publicar confirmación" width="220"/><br/><sub><b>C-W07</b> · Publicar · Paso 4 (confirmación)</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w08-detalle-lote.png" alt="C-W08 — Detalle de lote" width="220"/><br/><sub><b>C-W08</b> · Detalle de Mi Lote</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w09-notificacion.png" alt="C-W09 — Notificación" width="220"/><br/><sub><b>C-W09</b> · Notificación de reserva</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="assets/applications/wireframes-confeccionista/c-w10-confirmar-entrega.png" alt="C-W10 — Confirmar entrega" width="220"/><br/><sub><b>C-W10</b> · Confirmar entrega</sub></td>
-    <td align="center"><img src="assets/applications/wireframes-confeccionista/c-w11-cancelar-lote.png" alt="C-W11 — Cancelar lote" width="220"/><br/><sub><b>C-W11</b> · Cancelar lote (modal)</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w10-confirmar-entrega.png" alt="C-W10 — Confirmar entrega" width="220"/><br/><sub><b>C-W10</b> · Confirmar entrega</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w11-cancelar-lote.png" alt="C-W11 — Cancelar lote" width="220"/><br/><sub><b>C-W11</b> · Cancelar lote (modal)</sub></td>
     <td></td>
   </tr>
 </table>
@@ -2007,18 +2007,18 @@ La App Artesano cubre el ciclo de demanda: alta del usuario, exploración de lot
 
 <table>
   <tr>
-    <td align="center"><img src="assets/applications/wireframes-artesano/a-w01-splash.png" alt="A-W01 — Splash" width="220"/><br/><sub><b>A-W01</b> · Splash / Acceso</sub></td>
-    <td align="center"><img src="assets/applications/wireframes-artesano/a-w02-onboarding.png" alt="A-W02 — Onboarding" width="220"/><br/><sub><b>A-W02</b> · Onboarding (rol + datos)</sub></td>
-    <td align="center"><img src="assets/applications/wireframes-artesano/a-w03-home.png" alt="A-W03 — Home" width="220"/><br/><sub><b>A-W03</b> · Home / Explorar</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w01-splash.png" alt="A-W01 — Splash" width="220"/><br/><sub><b>A-W01</b> · Splash / Acceso</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w02-onboarding.png" alt="A-W02 — Onboarding" width="220"/><br/><sub><b>A-W02</b> · Onboarding (rol + datos)</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w03-home.png" alt="A-W03 — Home" width="220"/><br/><sub><b>A-W03</b> · Home / Explorar</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="assets/applications/wireframes-artesano/a-w04-lista-lotes.png" alt="A-W04 — Lista de lotes" width="220"/><br/><sub><b>A-W04</b> · Lista de lotes disponibles</sub></td>
-    <td align="center"><img src="assets/applications/wireframes-artesano/a-w05-detalle-lote.png" alt="A-W05 — Detalle de lote" width="220"/><br/><sub><b>A-W05</b> · Detalle de lote</sub></td>
-    <td align="center"><img src="assets/applications/wireframes-artesano/a-w06-reserva-confirmada.png" alt="A-W06 — Reserva confirmada" width="220"/><br/><sub><b>A-W06</b> · Reserva confirmada</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w04-lista-lotes.png" alt="A-W04 — Lista de lotes" width="220"/><br/><sub><b>A-W04</b> · Lista de lotes disponibles</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w05-detalle-lote.png" alt="A-W05 — Detalle de lote" width="220"/><br/><sub><b>A-W05</b> · Detalle de lote</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w06-reserva-confirmada.png" alt="A-W06 — Reserva confirmada" width="220"/><br/><sub><b>A-W06</b> · Reserva confirmada</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="assets/applications/wireframes-artesano/a-w07-mis-reservas.png" alt="A-W07 — Mis reservas" width="220"/><br/><sub><b>A-W07</b> · Mis reservas</sub></td>
-    <td align="center"><img src="assets/applications/wireframes-artesano/a-w08-confirmar-recepcion.png" alt="A-W08 — Confirmar recepción" width="220"/><br/><sub><b>A-W08</b> · Confirmar recepción</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w07-mis-reservas.png" alt="A-W07 — Mis reservas" width="220"/><br/><sub><b>A-W07</b> · Mis reservas</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w08-confirmar-recepcion.png" alt="A-W08 — Confirmar recepción" width="220"/><br/><sub><b>A-W08</b> · Confirmar recepción</sub></td>
     <td></td>
   </tr>
 </table>
@@ -2057,33 +2057,33 @@ Se documentan 7 wireflows en total: 4 para la App Confeccionista (UG-C01 a UG-C0
 
 - **UG-C01 — "Como Confeccionista, quiero registrarme por primera vez en la app."** *User Stories:* US04. *Flujo:* C-W01 → C-W02 → C-W03. Desde la pantalla de Splash, el usuario toca "Ingresar como Confeccionista", lo que abre el formulario de alta simplificada de C-W02. Al completar nombre, contacto y stand opcional, el sistema da de alta el perfil sin contraseña (en línea con TS05) y lleva al Home con cero lotes y mensaje guiado.
 
-![Wireflow UG-C01](assets/applications/wireflows/ug-c01-registro.png)
+![Wireflow UG-C01](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-c01-registro.png)
 
 - **UG-C02 — "Como Confeccionista, quiero publicar un lote de tela."** *User Stories:* US05, US06, US07, US10, US11. *Flujo:* C-W03 → C-W04 → C-W05 → C-W06 → C-W07 → C-W08. El usuario inicia el flujo desde el Home mediante el FAB "Publicar". El paso 1 (C-W04) captura la foto (US05) y la envía al servicio de IA (US10). El paso 2 (C-W05) muestra los resultados de la clasificación (US11), que el Confeccionista puede aceptar o corregir manualmente. El paso 3 (C-W06) asigna la ubicación automática por GPS (US06) y permite agregar una referencia textual (US07). El paso 4 (C-W07) presenta el resumen completo del lote y, al confirmar, el sistema crea el lote en estado "Disponible" y lleva a la vista de detalle (C-W08) ya como lote publicado.
 
-![Wireflow UG-C02](assets/applications/wireflows/ug-c02-publicar-lote.png)
+![Wireflow UG-C02](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-c02-publicar-lote.png)
 
 - **UG-C03 — "Como Confeccionista, quiero recibir la reserva y confirmar la entrega."** *User Stories:* US16, US09. *Flujo:* C-W09 → C-W08 (estado Reservado) → C-W10 → C-W08 (estado Entregado). El flujo se dispara cuando un artesano reserva el lote: la notificación push (C-W09, US16) llega al dispositivo del Confeccionista. Al tocar "Ver lote", abre el detalle (C-W08), ahora con el chip de estado en amarillo ("Reservado") y el botón de cancelación reemplazado por "Confirmar entrega". Al avanzar a C-W10, el usuario revisa los datos del artesano, confirma manualmente que entregó físicamente el lote (checkbox + CTA) y el sistema actualiza el estado a "Entregado" (US09), reflejado al volver a C-W08.
 
-![Wireflow UG-C03](assets/applications/wireflows/ug-c03-reserva-entrega.png)
+![Wireflow UG-C03](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-c03-reserva-entrega.png)
 
 - **UG-C04 — "Como Confeccionista, quiero cancelar un lote que ya no está disponible."** *User Stories:* US08. *Flujo:* C-W03 → C-W08 → C-W11 → C-W08 (estado Cancelado). Desde el Home (C-W03), el usuario toca un lote en estado "Disponible" y entra a su detalle (C-W08). El botón secundario "Cancelar publicación" abre un modal de confirmación (C-W11) con mensaje de irreversibilidad. Al confirmar, el sistema cambia el estado del lote a "Cancelado" (US08) y lo oculta de las consultas públicas, manteniéndolo visible solo en el historial del Confeccionista.
 
-![Wireflow UG-C04](assets/applications/wireflows/ug-c04-cancelar-lote.png)
+![Wireflow UG-C04](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-c04-cancelar-lote.png)
 
 **Wireflows — App Artesano**
 
 - **UG-A01 — "Como Artesano, quiero registrarme por primera vez en la app."** *User Stories:* US04. *Flujo:* A-W01 → A-W02 → A-W03. Espejo del UG-C01: desde el Splash, el usuario toca "Ingresar como Artesano", completa el alta sin contraseña en A-W02 y aterriza directamente en la vista Explorar (A-W03), que ya muestra los lotes disponibles cercanos. Esta aterrizaje sin pasos intermedios prioriza el time-to-value para un perfil cuyo principal objetivo es encontrar materiales.
 
-![Wireflow UG-A01](assets/applications/wireflows/ug-a01-registro.png)
+![Wireflow UG-A01](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-a01-registro.png)
 
 - **UG-A02 — "Como Artesano, quiero explorar lotes disponibles y revisar su detalle."** *User Stories:* US12, US13. *Flujo:* A-W03 → A-W04 → A-W05. Desde el Home (A-W03), donde se muestran los tres lotes más cercanos como teaser, el usuario accede al listado completo en A-W04, donde puede filtrar y ordenar (US12). Al tocar una card específica entra al detalle del lote (A-W05, US13), que expone foto ampliada, clasificación de IA, ubicación exacta con distancia desde la posición actual y CTA primario para reservar.
 
-![Wireflow UG-A02](assets/applications/wireflows/ug-a02-explorar-detalle.png)
+![Wireflow UG-A02](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-a02-explorar-detalle.png)
 
 - **UG-A03 — "Como Artesano, quiero reservar un lote y confirmar su recepción."** *User Stories:* US14, US15. *Flujo:* A-W05 → A-W06 → A-W07 → A-W08. Desde el detalle del lote (A-W05), el usuario toca "Reservar este lote" (US14). El sistema ejecuta la transición transaccional (US19 en backend) y muestra la pantalla de confirmación (A-W06) con el recap del lote, el deadline de retiro y el aviso al Confeccionista emitido en paralelo (US16). Posteriormente, desde la vista "Mis reservas" (A-W07), el Artesano accede a la card de la reserva activa y toca "Confirmar recepción" (A-W08), donde confirma manualmente la recepción física (US15) tras llegar al taller. El sistema marca el lote como completado en su histórico.
 
-![Wireflow UG-A03](assets/applications/wireflows/ug-a03-reservar-recibir.png)
+![Wireflow UG-A03](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-a03-reservar-recibir.png)
 
 **Trazabilidad consolidada**
 
