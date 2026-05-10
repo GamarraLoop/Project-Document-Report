@@ -182,11 +182,59 @@ Asimismo, la integración de funcionalidades como geolocalización y clasificaci
 En conjunto, el sistema de navegación está diseñado para ofrecer una experiencia fluida, rápida y sin fricciones, adaptándose a las necesidades de los distintos tipos de usuarios dentro del ecosistema de reutilización textil.
 
 <a name="6.3."></a>
-## 6.3. Landing Page UI Design. 
+## 6.3. Landing Page UI Design.
+
+En esta sección se presenta la propuesta de UI para el Landing Page de GamarraLoop. La propuesta traduce las decisiones de arquitectura de información descritas en la sección 6.2 (Labeling, Searching, SEO/Meta y Navigation Systems) y los lineamientos visuales definidos en 6.1 (paleta beige/verde oscuro/negro, tipografía con jerarquía de cuatro niveles y componentes basados en Material Design) hacia un layout concreto y navegable.
+
+El objetivo del Landing es comunicar de forma directa la propuesta de valor del modelo de negocio a los tres segmentos objetivo (Confeccionistas de Gamarra, recolectores/artesanos y aliados del ecosistema circular) y conducir a cada uno hacia el call-to-action correspondiente. El recorrido visual prioriza un hero claro con la propuesta de valor, secciones secuenciales de beneficios por segmento, evidencia (modelo de economía circular y bounded contexts del producto), formulario de contacto y footer con enlaces legales e institucionales, de modo que la lectura siga el patrón Z típico de landings de conversión.
+
+Se elabora la propuesta en dos vistas obligatorias: Desktop Web Browser y Mobile Web Browser. Ambas comparten estructura semántica, jerarquía y CTAs, pero ajustan densidad de información, agrupamiento de secciones y patrón de navegación según el dispositivo, siguiendo principios de diseño responsivo y diseño inclusivo (contraste suficiente, áreas táctiles adecuadas, textos escalables y navegación operable por teclado).
+
 <a name="6.3.1."></a>
-### 6.3.1. Landing Page Wireframe. 
+### 6.3.1. Landing Page Wireframe.
+
+Los wireframes presentan la estructura de bloques, jerarquía y flujo de lectura del Landing Page antes de aplicar color, tipografía final e imágenes. Su objetivo es validar la arquitectura de información, el orden de los contenidos y la ubicación de los call-to-action por segmento.
+
+Herramienta utilizada: Figma. Enlace al archivo de wireframes: https://www.figma.com/design/J1GM7YvXifXyoHeMuIaHdP/Landing-Page?node-id=0-1
+
+**Versión Desktop Web Browser**
+
+<img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/landing-page/landing-page-wireframe-desktop.png" alt="Landing Page Wireframe — Desktop" width="900"/>
+
+El wireframe Desktop organiza el contenido en una retícula amplia que aprovecha el ancho del viewport. La barra de navegación superior fija expone las secciones principales del sitio (Inicio, Cómo funciona, Segmentos, Sobre nosotros, Contacto) y ubica el CTA primario a la derecha, siguiendo el principio de jerarquía visual y consistencia con los patrones convencionales de la web. El hero ocupa el primer pliegue con un encabezado que comunica la propuesta de valor y un CTA dominante; las secciones siguientes presentan los beneficios diferenciados por segmento (Confeccionistas y recolectores) en bloques paralelos, aplicando el principio de proximidad y simetría para facilitar la comparación. El cierre incluye un bloque de evidencia del modelo circular, un formulario de contacto y un footer con enlaces a términos y condiciones, política de privacidad y redes.
+
+La distribución refleja las decisiones de la sección 6.2: las etiquetas de navegación (Labeling Systems) se mantienen breves y orientadas a la acción del visitante; el buscador y los filtros previstos en 6.2.2 quedan reservados para las Web Applications, mientras que el Landing privilegia un recorrido lineal y guiado.
+
+**Versión Mobile Web Browser**
+
+<img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/landing-page/landing-page-wireframe-mobile.png" alt="Landing Page Wireframe — Mobile" width="320"/>
+
+El wireframe Mobile reorganiza el mismo contenido en una columna única. La barra de navegación se reduce a un patrón hamburger menu para liberar espacio del viewport y el CTA primario se mantiene visible en el hero. Las secciones que en Desktop aparecen en paralelo (beneficios por segmento) se apilan verticalmente, preservando el mismo orden de lectura y la misma jerarquía tipográfica. Se aplican principios de diseño inclusivo: tamaños de toque mínimos de 44px para botones y enlaces, contraste adecuado en los placeholders y suficiente espacio en blanco para evitar errores de pulsado.
+
+La consistencia entre ambas versiones garantiza que un visitante que descubra GamarraLoop desde el móvil y luego acceda desde escritorio reconozca la misma estructura, los mismos labels y los mismos puntos de conversión.
+
 <a name="6.3.2."></a>
-### 6.3.2. Landing Page Mock-up. 
+### 6.3.2. Landing Page Mock-up.
+
+Los mock-ups aplican sobre la estructura validada en los wireframes el Design System definido en 6.1: paleta beige claro como fondo, verde oscuro como color de interacción principal, negro para tipografía y elementos estructurales, jerarquía tipográfica de cuatro niveles (headings, body, buttons, links) y componentes de Material Design. El resultado refleja la identidad visual de GamarraLoop —sostenibilidad, reutilización y conexión con el ecosistema textil— manteniendo la legibilidad y el contraste necesarios para diseño inclusivo.
+
+Herramienta utilizada: Figma. Enlace al archivo de mock-ups: https://www.figma.com/design/J1GM7YvXifXyoHeMuIaHdP/Landing-Page?node-id=1-2
+
+**Versión Desktop Web Browser**
+
+<img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/landing-page/landing-page-mockup-desktop.png" alt="Landing Page Mock-up — Desktop" width="900"/>
+
+En la versión Desktop, los bloques heredados del wireframe se visten con la paleta institucional. El hero incorpora una imagen ilustrativa del contexto Gamarra/textil junto al headline principal y un CTA verde oscuro de alto contraste sobre el fondo beige, dirigido al segmento Confeccionista. Las secciones intermedias presentan los beneficios por segmento con iconografía coherente con el logotipo (hilo, aguja, ciclo) reforzando la asociación de marca, y aplican espaciado generoso para favorecer la legibilidad. Los CTAs secundarios mantienen el mismo color de interacción pero con variantes de jerarquía (botón sólido para acción primaria, botón outline para acción secundaria), siguiendo la guía de componentes establecida en 6.1.
+
+Las decisiones de arquitectura de información se preservan: las etiquetas de los CTAs son específicas por segmento (por ejemplo, "Publicar excedentes" para Confeccionistas y "Explorar lotes disponibles" para recolectores) y redirigen a las vistas correspondientes de las Web Applications o a la sección de descarga de la aplicación móvil, cumpliendo el requisito del enunciado sobre consistencia entre Landing y aplicaciones.
+
+**Versión Mobile Web Browser**
+
+<img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/landing-page/landing-page-mockup-mobile.png" alt="Landing Page Mock-up — Mobile" width="320"/>
+
+La versión Mobile traslada el Design System a la columna única definida en el wireframe. Los CTAs verde oscuro mantienen el mismo tamaño de toque y contraste que en Desktop; la tipografía conserva la jerarquía y se ajusta el tamaño base para garantizar legibilidad en pantallas pequeñas sin necesidad de zoom. El menú hamburger despliega la misma estructura de navegación definida en 6.2.4, y los formularios reducen los campos visibles por fila a uno solo, manteniendo un solo punto de foco a la vez para favorecer la accesibilidad.
+
+En conjunto, los mock-ups Desktop y Mobile evidencian la aplicación del Design System, los principios de diseño visual (jerarquía, contraste, proximidad, consistencia), el diseño inclusivo (contraste de color suficiente, áreas táctiles adecuadas, tipografía escalable, foco visible) y la arquitectura de información definida en 6.2, asegurando una experiencia coherente entre el Landing Page y los demás productos digitales de la solución.
 <a name="6.4."></a>
 ## 6.4. Applications UX/UI Design. 
 <a name="6.4.1"></a>
