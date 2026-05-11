@@ -38,7 +38,7 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 | Versión |   Fecha    |             Autor             | Descripción de modificación                                                                                                                                                                       |
 | :-----: | :--------: | :---------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |   TB1   | 25/04/2026 | Huanaco Huayta, Elizabeth Lucero <br> Cuya Villegas, Rafael Alberto <br> Gongora Castillejos, Williams <br> Torres Garcia, Andrés Alberto <br> | Realización de: <br> - Capítulo I: Introducción<br>- Capítulo II: Requirements Elicitation & Analysis <br>- Capítulo III: Requirements specification <br>- Capítulo IV: Strategic-Level Software Design (Strategic-Level Attribute-Driven Design y Software Architecture) |
-|   TP    | 10/05/2026 | Torres Garcia, Andrés Alberto | Realización de: <br> - Capítulo VI: Solution UX Design (6.1. Style Guidelines, 6.2. Information Architecture, 6.3. Landing Page UI Design — wireframes y mock-ups Desktop/Mobile, 6.4. Applications UX/UI Design — 19 wireframes móviles para App Confeccionista y App Artesano y 7 wireflow diagrams trazados a los User Goals derivados de US04–US16) |
+|   TP    | 10/05/2026 | Huanaco Huayta, Elizabeth Lucero <br> Cuya Villegas, Rafael Alberto <br> Gongora Castillejos, Williams <br> Torres Garcia, Andrés Alberto | Realización de: <br> - Capítulo V: Tactical-Level Software DesignBounded Context: Textile Classification <br> - Capítulo V: Tactical-Level Software DesignBounded Context: Reservation Management <br> - Capítulo VI: Solution UX Design (6.1. Style Guidelines, 6.2. Information Architecture, 6.3. Landing Page UI Design: wireframes y mock-ups Desktop/Mobile, 6.4. Applications UX/UI Design) |
 
 # Project Report Collaboration Insights
 
@@ -55,8 +55,8 @@ Para el desarrollo del informe perteneciente a la entrega TF, se dividió la imp
 | Integrante                       | Tareas Asignadas                                                            |
 | -------------------------------- | --------------------------------------------------------------------------- |
 | Cuya Villegas, Rafael Alberto    | Capítulo II: Requirements Elicitation & Analysis                            |
-| Gongora Castillejos, Williams    | Capítulo III: Requirements specification                                    |
-| Huanaco Huayta, Elizabeth Lucero | Capítulo I: Introducción                                                    |
+| Gongora Castillejos, Williams    | Capítulo III: Requirements specification <br> Capítulo V: Tactical-Level Software Design (Bounded Context: Textile Classification)                                  |
+| Huanaco Huayta, Elizabeth Lucero | Capítulo I: Introducción <br> Capítulo V: Tactical-Level Software Design (Bounded Context: Reservation Management)                                                           |
 | Molina Falcon, Piero Leonardo    | Capítulo IV: Strategic-Level Domain-Driven Design                           |
 | Torres Garcia, Andrés Alberto    | Capítulo IV: Strategic-Level Attribute-Driven Design, Software Architecture <br> Capítulo VI: Solution UX Design (6.1 Style Guidelines, 6.2 Information Architecture, 6.3 Landing Page UI Design, 6.4 Applications UX/UI Design) |
 
@@ -127,7 +127,26 @@ Los integrantes son:
    4.3.2. [Software Architecture Context Level Diagrams.](#4.3.2.)<br>
    4.3.3. [Software Architecture Container Level Diagrams.](#4.3.3.)<br>
    4.3.4. [Software Architecture Deployment Diagrams.](#4.3.4.)<br>
-5. [**Capítulo VI: Solution UX Design.**](#6.)<br>
+5. [**Capítulo V: Tactical-Level Software Design.**](#5.)<br>
+   5.1. [Bounded Context: Textile Classification.](#5.1.)<br>
+   5.1.1. [Domain Layer.](#5.1.1.)<br>
+   5.1.2. [Interface Layer.](#5.1.2.)<br>
+   5.1.3. [Application Layer.](#5.1.3.)<br>
+   5.1.4. [Infrastructure Layer.](#5.1.4.)<br>
+   5.1.6. [Bounded Context Software Architecture Component Level Diagrams.](#5.1.6.)<br>
+   5.1.7. [Bounded Context Software Architecture Code Level Diagrams.](#5.1.7.)<br>
+   5.1.7.1. [Bounded Context Domain Layer Class Diagrams.](#5.1.7.1.)<br>
+   5.1.7.2. [Bounded Context Database Design Diagram.](#5.1.7.2.)<br>
+   5.2. [Bounded Context: Reservation Management.](#5.2.)<br>
+   5.2.1. [Domain Layer.](#5.2.1.)<br>
+   5.2.2. [Interface Layer.](#5.2.2.)<br>
+   5.2.3. [Application Layer.](#5.2.3.)<br>
+   5.2.4. [Infrastructure Layer.](#5.2.4.)<br>
+   5.2.5. [Bounded Context Software Architecture Component Level Diagrams.](#5.2.5.)<br>
+   5.2.6. [Bounded Context Software Architecture Code Level Diagrams.](#5.2.6.)<br>
+   5.2.6.1. [Bounded Context Domain Layer Class Diagrams.](#5.2.6.1.)<br>
+   5.2.6.2. [Bounded Context Database Design Diagram.](#5.2.6.2.)<br>
+6. [**Capítulo VI: Solution UX Design.**](#6.)<br>
    6.1. [Style Guidelines.](#6.1.)<br>
    6.1.1. [General Style Guidelines.](#6.1.1.)<br>
    6.1.2. [Web, Mobile & Devices Style Guidelines.](#6.1.2.)<br>
@@ -142,9 +161,9 @@ Los integrantes son:
    6.4. [Applications UX/UI Design.](#6.4.)<br>
    6.4.1. [Applications Wireframes.](#6.4.1)<br>
    6.4.2. [Applications Wireflow Diagrams.](#6.4.2)<br>
-6. [**Conclusiones**](#7.) <br>
-7. [**Referencias bibliográficas**](#9.) <br>
-8. [**Anexo**](#10.) <br>
+7. [**Conclusiones**](#8.) <br>
+8. [**Referencias bibliográficas**](#9.) <br>
+9. [**Anexo**](#10.) <br>
 
 # STUDENT OUTCOME
 
@@ -152,8 +171,8 @@ Los integrantes son:
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br> **TB1:**  Compartí con el equipo diversas ideas orientadas a la creación y mejora de nuestro proyecto, comunicándolas de manera clara y objetiva. Asimismo, en el desarrollo del Capítulo II, estuve a cargo de la realización de entrevistas, lo que implicó interactuar con los participantes de forma estructurada y profesional, asegurando una comunicación efectiva con personas de diferentes niveles y contextos.<br><br>**Gongora Castillejos, Williams:**<br> **TB1:** Sustenté frente al equipo la viabilidad técnica y de negocio para la gestión de requerimientos (Capítulo III), argumentando la necesidad de aplicar IA y rediseñar el flujo logístico. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Sustenté frente al equipo la problemática, contexto y propuesta de solución del proyecto (Capítulo I), argumentando la necesidad de implementar una plataforma basada en IA para optimizar la gestión y reutilización de residuos textiles dentro de un enfoque de economía circular. <br><br> **Molina Falcon, Piero Leonardo** <br>**TB1:** Sustenté ante el equipo la definición de los bounded contexts y la delimitación del dominio en el Capítulo IV (Strategic Design), explicando la importancia del EventStorming, Candidate Context Discovery y Context Mapping para estructurar correctamente la arquitectura del sistema. Asimismo, argumenté cómo estas decisiones permitían mejorar la escalabilidad, mantenibilidad y claridad de los procesos de negocio dentro de GamarraLoop.<br><br> **Torres Garcia, Andrés Alberto** <br> **TB1:** Sustenté frente al equipo el proceso de Attribute-Driven Design aplicado al Capítulo IV, argumentando la priorización de los diez drivers arquitectónicos en dos ejes (importancia para stakeholders e impacto en complejidad técnica), la elección del estilo monolito modular frente a microservicios para una solución en fase de validación, y la distribución entre tres proveedores cloud heterogéneos (Google Cloud Platform, Supabase y GitHub Pages) priorizando free tiers permanentes sobre la uniformidad arquitectónica. Asimismo, expuse los trade-offs explícitos asumidos por la arquitectura: cold start de Cloud Run, optimistic vs pessimistic locking en la reserva concurrente, y clasificación asíncrona vs síncrona ante la dependencia con Google Cloud Vision. <br><br> **TP:** Sustenté frente al equipo las decisiones de diseño de experiencia para el Capítulo VI, argumentando cómo los Style Guidelines (paleta beige/verde oscuro/negro, tipografía y componentes Material Design) y la Arquitectura de Información (Labeling, Searching, SEO/Meta y Navigation Systems) se traducen en el Landing Page de GamarraLoop. Expliqué la racional detrás de las versiones Desktop y Mobile, la jerarquía de CTAs por segmento (Confeccionistas y recolectores) y la consistencia visual y de navegación entre el Landing Page y las Mobile Applications. Adicionalmente, sustenté la propuesta de Applications UX/UI Design (6.4), explicando por qué la solución se materializa en dos apps móviles nativas separadas (App Confeccionista y App Artesano) en línea con la Technical Story TS01, cómo cada wireflow se deriva agregando User Stories del Capítulo III por User Persona, y cómo la trazabilidad UG → US → Bounded Context cierra el bucle entre los Capítulos III, IV y VI. | **TB1:** El equipo logró alinear la visión del producto mediante debates estructurados, asegurando que todos los miembros comprendan a profundidad el modelo de negocio antes de iniciar el diseño arquitectónico. <br><br> **TP:** La discusión de las decisiones de UX permitió al equipo unificar criterios sobre la experiencia esperada por cada segmento objetivo, asegurando consistencia entre el Landing Page y las aplicaciones antes de avanzar con la implementación. |
-| Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br> **TB1:** Me encargué del desarrollo del Capítulo II, diseñando entrevistas y desarrollando herramientas como mapas de análisis con el objetivo de comprender mejor a los usuarios y sus necesidades. La información fue presentada de manera clara y objetiva.<br><br> **Gongora Castillejos, Williams:** <br> **TB1:** Redacté y estructuré el Capítulo III (Requirements Specification), elaborando diagramas estratégicos (Impact Mapping, To-Be Scenario) y estandarizando las User Stories en formato Gherkin. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Redacté y estructuré el Capítulo I del proyecto, desarrollando el perfil de la startup, la problemática, los segmentos de usuarios y los artefactos de Lean UX, comunicando las ideas de manera clara, organizada y comprensible para públicos tanto técnicos como no técnicos. <br><br> **Molina Falcon, Piero Leonardo** <br>**TB1:** Redacté y estructuré el Capítulo IV (Strategic Design), desarrollando el EventStorming, Candidate Context Discovery, Domain Message Flows Modeling, Bounded Context Canvases y Context Mapping, organizando los bounded contexts del sistema y definiendo las relaciones estratégicas entre ellos para una arquitectura clara, escalable y alineada al dominio del negocio.<br><br> **Torres Garcia, Andrés Alberto** <br> **TB1:** Redacté y estructuré las secciones de Strategic-Level Attribute-Driven Design (4.1) y Software Architecture (4.3) del Capítulo IV. Documenté el Architectural Drivers Backlog con diez drivers priorizados (D01–D10), los siete escenarios de atributos de calidad en formato SEI de seis dimensiones (QA01–QA07), las seis Technical Stories que actúan como constraints (TS01–TS06), la matriz de Architectural Design Decisions con la evaluación de dos a tres patrones candidatos por driver con sus pros y contras, y los Quality Attribute Scenario Refinements con Business Goals, Questions e Issues asociados. Adicionalmente, modelé las cuatro vistas del C4 Model (System Landscape, Context, Container y Deployment) en Structurizr y las acompañé de tablas con trazabilidad explícita a los drivers, escenarios de calidad y User Stories del Capítulo III. <br><br> **TP:** Redacté y estructuré el Capítulo VI: Solution UX Design. Documenté en 6.1 los Style Guidelines de marca, tipografía, paleta de colores y componentes Material Design; en 6.2 la Arquitectura de Información (Labeling Systems, Searching Systems, SEO/Meta Tags y Navigation Systems); en 6.3 el Landing Page UI Design con wireframes y mock-ups para Desktop Web Browser y Mobile Web Browser elaborados en Figma, explicando la aplicación de principios de diseño visual, diseño inclusivo y arquitectura de información en cada vista; y en 6.4 el Applications UX/UI Design completo, con 19 wireframes móviles de baja fidelidad (11 para App Confeccionista y 8 para App Artesano) y 7 wireflow diagrams (UG-C01 a UG-C04 y UG-A01 a UG-A03), todos elaborados en Figma a 375×812 con el mismo Design System, y acompañados de una tabla de trazabilidad explícita que vincula cada User Goal con sus User Stories del Capítulo III y los Bounded Contexts del Capítulo IV. | **TB1:** La documentación rigurosa y estandarizada ha demostrado ser fundamental. Redactar requerimientos sin ambigüedades ni detalles de UI garantiza una base sólida y comprensible para el posterior diseño de software. <br><br> **TP:** Documentar la propuesta de UX por capa (Style Guidelines → Information Architecture → UI Design) demostró ser efectivo para mantener trazabilidad entre las decisiones de marca, la arquitectura de información y los artefactos visuales finales, facilitando la comprensión del informe por audiencias técnicas y no técnicas. |
+| Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br> **TB1:**  Compartí con el equipo diversas ideas orientadas a la creación y mejora de nuestro proyecto, comunicándolas de manera clara y objetiva. Asimismo, en el desarrollo del Capítulo II, estuve a cargo de la realización de entrevistas, lo que implicó interactuar con los participantes de forma estructurada y profesional, asegurando una comunicación efectiva con personas de diferentes niveles y contextos.<br><br>**Gongora Castillejos, Williams:**<br> **TB1:** Sustenté frente al equipo la viabilidad técnica y de negocio para la gestión de requerimientos (Capítulo III), argumentando la necesidad de aplicar IA y rediseñar el flujo logístico. <br><br> **TP:** Sustenté frente al equipo las decisiones de diseño arquitectónico a nivel táctico para el Capítulo V, argumentando la aplicación del patrón Hexagonal (Ports & Adapters) en el Bounded Context de Textile Classification. Expliqué cómo la separación en capas (Domain, Application, Infrastructure, Interface) garantiza la independencia de la lógica de negocio y cómo la integración asíncrona mediante Pub/Sub resuelve dependencias externas complejas, asegurando que la solución técnica sea escalable y fácil de comunicar al resto del equipo de desarrollo. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Sustenté frente al equipo la problemática, contexto y propuesta de solución del proyecto (Capítulo I), argumentando la necesidad de implementar una plataforma basada en IA para optimizar la gestión y reutilización de residuos textiles dentro de un enfoque de economía circular. <br><br> **Molina Falcon, Piero Leonardo** <br>**TB1:** Sustenté ante el equipo la definición de los bounded contexts y la delimitación del dominio en el Capítulo IV (Strategic Design), explicando la importancia del EventStorming, Candidate Context Discovery y Context Mapping para estructurar correctamente la arquitectura del sistema. Asimismo, argumenté cómo estas decisiones permitían mejorar la escalabilidad, mantenibilidad y claridad de los procesos de negocio dentro de GamarraLoop.<br><br> **Torres Garcia, Andrés Alberto** <br> **TB1:** Sustenté frente al equipo el proceso de Attribute-Driven Design aplicado al Capítulo IV, argumentando la priorización de los diez drivers arquitectónicos en dos ejes (importancia para stakeholders e impacto en complejidad técnica), la elección del estilo monolito modular frente a microservicios para una solución en fase de validación, y la distribución entre tres proveedores cloud heterogéneos (Google Cloud Platform, Supabase y GitHub Pages) priorizando free tiers permanentes sobre la uniformidad arquitectónica. Asimismo, expuse los trade-offs explícitos asumidos por la arquitectura: cold start de Cloud Run, optimistic vs pessimistic locking en la reserva concurrente, y clasificación asíncrona vs síncrona ante la dependencia con Google Cloud Vision. <br><br> **TP:** Sustenté frente al equipo las decisiones de diseño de experiencia para el Capítulo VI, argumentando cómo los Style Guidelines (paleta beige/verde oscuro/negro, tipografía y componentes Material Design) y la Arquitectura de Información (Labeling, Searching, SEO/Meta y Navigation Systems) se traducen en el Landing Page de GamarraLoop. Expliqué la racional detrás de las versiones Desktop y Mobile, la jerarquía de CTAs por segmento (Confeccionistas y recolectores) y la consistencia visual y de navegación entre el Landing Page y las Mobile Applications. Adicionalmente, sustenté la propuesta de Applications UX/UI Design (6.4), explicando por qué la solución se materializa en dos apps móviles nativas separadas (App Confeccionista y App Artesano) en línea con la Technical Story TS01, cómo cada wireflow se deriva agregando User Stories del Capítulo III por User Persona, y cómo la trazabilidad UG → US → Bounded Context cierra el bucle entre los Capítulos III, IV y VI. | **TB1:** El equipo logró alinear la visión del producto mediante debates estructurados, asegurando que todos los miembros comprendan a profundidad el modelo de negocio antes de iniciar el diseño arquitectónico. <br><br> **TP:** La discusión de las decisiones de UX permitió al equipo unificar criterios sobre la experiencia esperada por cada segmento objetivo, asegurando consistencia entre el Landing Page y las aplicaciones antes de avanzar con la implementación. |
+| Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br> **TB1:** Me encargué del desarrollo del Capítulo II, diseñando entrevistas y desarrollando herramientas como mapas de análisis con el objetivo de comprender mejor a los usuarios y sus necesidades. La información fue presentada de manera clara y objetiva.<br><br> **Gongora Castillejos, Williams:** <br> **TB1:** Redacté y estructuré el Capítulo III (Requirements Specification), elaborando diagramas estratégicos (Impact Mapping, To-Be Scenario) y estandarizando las User Stories en formato Gherkin. <br><br> **TP:** Redacté y estructuré la sección de Tactical-Level Software Design (Capítulo V) correspondiente al Bounded Context de Textile Classification. Documenté de manera objetiva y rigurosa la responsabilidad de cada capa arquitectónica (Domain, Interface, Application, Infrastructure) y elaboré los diagramas a nivel de componentes (C4 Model), clases y diseño de base de datos relacional. Utilicé herramientas especializadas como Structurizr, PlantUML y Vertabelo, garantizando que la documentación técnica mantenga una alta trazabilidad con los requerimientos previos y sea comprensible para el equipo técnico. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Redacté y estructuré el Capítulo I del proyecto, desarrollando el perfil de la startup, la problemática, los segmentos de usuarios y los artefactos de Lean UX, comunicando las ideas de manera clara, organizada y comprensible para públicos tanto técnicos como no técnicos. <br><br> **Molina Falcon, Piero Leonardo** <br>**TB1:** Redacté y estructuré el Capítulo IV (Strategic Design), desarrollando el EventStorming, Candidate Context Discovery, Domain Message Flows Modeling, Bounded Context Canvases y Context Mapping, organizando los bounded contexts del sistema y definiendo las relaciones estratégicas entre ellos para una arquitectura clara, escalable y alineada al dominio del negocio.<br><br> **Torres Garcia, Andrés Alberto** <br> **TB1:** Redacté y estructuré las secciones de Strategic-Level Attribute-Driven Design (4.1) y Software Architecture (4.3) del Capítulo IV. Documenté el Architectural Drivers Backlog con diez drivers priorizados (D01–D10), los siete escenarios de atributos de calidad en formato SEI de seis dimensiones (QA01–QA07), las seis Technical Stories que actúan como constraints (TS01–TS06), la matriz de Architectural Design Decisions con la evaluación de dos a tres patrones candidatos por driver con sus pros y contras, y los Quality Attribute Scenario Refinements con Business Goals, Questions e Issues asociados. Adicionalmente, modelé las cuatro vistas del C4 Model (System Landscape, Context, Container y Deployment) en Structurizr y las acompañé de tablas con trazabilidad explícita a los drivers, escenarios de calidad y User Stories del Capítulo III. <br><br> **TP:** Redacté y estructuré el Capítulo VI: Solution UX Design. Documenté en 6.1 los Style Guidelines de marca, tipografía, paleta de colores y componentes Material Design; en 6.2 la Arquitectura de Información (Labeling Systems, Searching Systems, SEO/Meta Tags y Navigation Systems); en 6.3 el Landing Page UI Design con wireframes y mock-ups para Desktop Web Browser y Mobile Web Browser elaborados en Figma, explicando la aplicación de principios de diseño visual, diseño inclusivo y arquitectura de información en cada vista; y en 6.4 el Applications UX/UI Design completo, con 19 wireframes móviles de baja fidelidad (11 para App Confeccionista y 8 para App Artesano) y 7 wireflow diagrams (UG-C01 a UG-C04 y UG-A01 a UG-A03), todos elaborados en Figma a 375×812 con el mismo Design System, y acompañados de una tabla de trazabilidad explícita que vincula cada User Goal con sus User Stories del Capítulo III y los Bounded Contexts del Capítulo IV. | **TB1:** La documentación rigurosa y estandarizada ha demostrado ser fundamental. Redactar requerimientos sin ambigüedades ni detalles de UI garantiza una base sólida y comprensible para el posterior diseño de software. <br><br> **TP:** Documentar la propuesta de UX por capa (Style Guidelines → Information Architecture → UI Design) demostró ser efectivo para mantener trazabilidad entre las decisiones de marca, la arquitectura de información y los artefactos visuales finales, facilitando la comprensión del informe por audiencias técnicas y no técnicas. |
 
 
 <a name="1."></a>
@@ -1483,7 +1502,7 @@ Administra el envío de notificaciones y alertas generadas por eventos important
 </p>
 
 
-El diagrama completo se encuentra en el siguiente enlace: https://miro.com/app/board/uXjVHfI02Ag=/?share_link_id=281658940692
+El diagrama completo se encuentra en el siguiente enlace: [EventStorming](https://miro.com/app/board/uXjVHfI02Ag=/?share_link_id=281658940692)
 
 <a name="4.2.2."></a>
 
@@ -1497,7 +1516,7 @@ El objetivo principal es definir bounded contexts claros que representen correct
   <img src="./assets/CandidateContextDiscovery. .jpg" width="850">
 </p>
 
-El diagrama completo se encuentra en el siguiente enlace: https://miro.com/app/board/uXjVHfI02Ag=/?share_link_id=281658940692
+El diagrama completo se encuentra en el siguiente enlace: [Candidate Context Discovery](https://miro.com/app/board/uXjVHfI02Ag=/?share_link_id=281658940692)
 
 <a name="4.2.3."></a>
 
@@ -1518,7 +1537,7 @@ Este modelado permite comprender cómo los bounded contexts colaboran entre sí 
   <img src="./assets/DomainMessageFlowsModelingLoop.jpg" width="850">
 </p>
 
-El diagrama completo se encuentra en el siguiente enlace: https://miro.com/app/board/uXjVHfI02Ag=/?share_link_id=281658940692
+El diagrama completo se encuentra en el siguiente enlace: [Domain Message Flows Modeling](https://miro.com/app/board/uXjVHfI02Ag=/?share_link_id=281658940692)
 
 <a name="4.2.4."></a>
 
@@ -1570,7 +1589,7 @@ Los bounded contexts definidos fueron: User Profile Management, Textile Classifi
 </p>
 
 El diagrama completo se encuentra en el siguiente enlace: 
-https://miro.com/app/board/uXjVHc84QZA=/?share_link_id=254000344450
+[Bounded Context Canvases](https://miro.com/app/board/uXjVHc84QZA=/?share_link_id=254000344450)
 
 <a name="4.2.5."></a>
 
@@ -1584,8 +1603,8 @@ El Context Mapping permite identificar y visualizar las relaciones estructurales
 
 El diagrama presentado muestra cómo cada Bounded Context mantiene su independencia funcional mientras colabora con los demás para completar el flujo principal del negocio, desde el registro del usuario hasta la publicación, clasificación, reserva, recojo y notificación final del lote textil. Esta estructura permite una mejor escalabilidad del sistema, facilita el mantenimiento futuro y asegura que los cambios en un contexto no impacten directamente en todo el dominio, cumpliendo así con los principios fundamentales de Domain-Driven Design.
 
- https://lucid.app/lucidchart/ec20dbd0-3469-494a-b742-630a12a29cbd/edit?viewport_loc=-836%2C39%2C4359%2C1543%2C0_0&invitationId=inv_b8a17edd-7cb1-4abc-b7a9-cb7bc8908400
-El diagrama completo se encuentra en el siguiente enlace:https://lucid.app/lucidchart/ec20dbd0-3469-494a-b742-630a12a29cbd/edit?viewport_loc=-836%2C39%2C4359%2C1543%2C0_0&invitationId=inv_b8a17edd-7cb1-4abc-b7a9-cb7bc8908400
+
+El diagrama completo se encuentra en el siguiente enlace: [Context Mapping](https://lucid.app/lucidchart/ec20dbd0-3469-494a-b742-630a12a29cbd/edit?viewport_loc=-836%2C39%2C4359%2C1543%2C0_0&invitationId=inv_b8a17edd-7cb1-4abc-b7a9-cb7bc8908400)
 
 <a name="4.3."></a>
 
@@ -1873,13 +1892,13 @@ El siguiente diagrama de base de datos detalla los objetos de persistencia neces
 
 > **Decisión de diseño:** Se optó por una **tabla única** con un campo `JSONB` para las etiquetas en lugar de una tabla normalizada `classification_labels` con FK. Esta decisión se justifica porque las etiquetas son inmutables una vez que la clasificación se completa (se generan y escriben una sola vez) y el patrón de acceso es siempre recuperar el conjunto completo de etiquetas de una solicitud, nunca etiquetas individuales en aislamiento. El índice GIN sobre el campo `JSONB` garantiza eficiencia en las consultas de búsqueda por material sin sacrificar la simplicidad del esquema.
 
-<a name="5.4."></a>
-## 5.4. Bounded Context: Reservation Management
+<a name="5.2."></a>
+## 5.2. Bounded Context: Reservation Management
 
 El Bounded Context Reservation Management es responsable de gestionar el ciclo de vida de las reservas de lotes textiles dentro de la plataforma GamarraLoop. Este contexto permite que los artesanos o recolectores puedan reservar materiales disponibles publicados por los talleres de confección, evitando conflictos de disponibilidad y asegurando la trazabilidad del proceso de recojo.
 
-<a name="5.4.1."></a>
-### 5.4.1. Domain Layer
+<a name="5.2.1."></a>
+### 5.2.1. Domain Layer
 
 
 **Sub-capa Model**
@@ -1910,8 +1929,8 @@ El Bounded Context Reservation Management es responsable de gestionar el ciclo d
 | Interface | ReservationExpirationService   | Servicio para expiración automática de reservas.                   | Detectar y procesar reservas vencidas.                        | Utiliza Reservation y ReservationPeriod.                                   |
 | Interface | ReservationNotificationService | Servicio para emisión de notificaciones relacionadas con reservas. | Informar eventos importantes del flujo de reserva.            | Relacionado con Notification Management.                                   |
 
-<a name="5.4.2."></a>
-### 5.4.2. Interface Layer
+<a name="5.2.2."></a>
+### 5.2.2. Interface Layer
 
 **Sub-capa REST**
 
@@ -1931,8 +1950,8 @@ El Bounded Context Reservation Management es responsable de gestionar el ciclo d
 | Assembler  | ReservationResourceFromEntityAssembler            | Convierte una entidad Reservation en un recurso de respuesta.                     | Traducir objetos del dominio a estructuras legibles para el cliente.                                | Usado por ReservationController.                                                                |
 | Assembler | ConfirmPickupResourceFromEntityAssembler | Convierte una entidad PickupConfirmation en un recurso de respuesta. | Traducir confirmaciones del dominio a respuestas claras para el cliente. | Usado por ReservationController. |
 
-<a name="5.4.3."></a>
-### 5.4.3. Application Layer
+<a name="5.2.3."></a>
+### 5.2.3. Application Layer
 
 **Sub-capa Internal**
 | Tipo    | Nombre                             | Descripción                                                              | Responsabilidad Principal                                                              | Relación con otros elementos                                                                             |
@@ -1942,8 +1961,8 @@ El Bounded Context Reservation Management es responsable de gestionar el ciclo d
 | Service | ReservationExpirationServiceImpl   | Implementación del servicio de expiración automática de reservas.        | Detectar reservas vencidas y actualizar su estado automáticamente.                     | Implementa ReservationExpirationService. Utiliza Reservation y ReservationPeriod.                        |
 | Service | ReservationNotificationServiceImpl | Implementación del servicio de notificaciones relacionadas con reservas. | Gestionar el envío de notificaciones sobre eventos importantes del flujo de reservas.  | Implementa ReservationNotificationService. Interactúa con Notification Management.                       |
 
-<a name="5.4.4."></a>
-### 5.4.4. Infrastructure Layer
+<a name="5.2.4."></a>
+### 5.2.4. Infrastructure Layer
 
 **Sub-capa Infrastructure**
 
@@ -1954,21 +1973,21 @@ El Bounded Context Reservation Management es responsable de gestionar el ciclo d
 | Service    | PublicationGateway           | Servicio de integración con Publication Management.                     | Consultar disponibilidad y estado de publicaciones antes de generar reservas.         | Utilizado por ReservationCommandServiceImpl y ReservationExpirationServiceImpl.                                           |
 | Service    | SchedulerService             | Servicio encargado de tareas automáticas programadas.                   | Ejecutar procesos periódicos de expiración de reservas vencidas.                      | Utilizado por ReservationExpirationServiceImpl.  
 
-<a name="5.4.5."></a>
-### 5.4.5. Bounded Context Software Architecture Component Level Diagrams
+<a name="5.2.5."></a>
+### 5.2.5. Bounded Context Software Architecture Component Level Diagrams
 
 <img src="Img/c4/reservation-management-component-diagram.png" alt="Reservation Management Component Diagram" style="margin-bottom: 5px;" width="1000"/>
 
-<a name="5.4.6."></a>
-### 5.4.6. Bounded Context Software Architecture Code Level Diagrams
+<a name="5.2.6."></a>
+### 5.2.6. Bounded Context Software Architecture Code Level Diagrams
 
-<a name="5.4.6.1."></a>
-### 5.4.6.1. Bounded Context Domain Layer Class Diagrams
+<a name="5.2.6.1."></a>
+### 5.2.6.1. Bounded Context Domain Layer Class Diagrams
 
 <img src="Img/class/reservation-management-class-diagram.svg" alt="Reservation Management Class Diagram" style="margin-bottom: 5px;" width="1000" height="500"/>
 
-<a name="5.4.6.2."></a>
-### 5.4.6.2. Bounded Context Database Design Diagram
+<a name="5.2.6.2."></a>
+### 5.2.6.2. Bounded Context Database Design Diagram
 
 <img src="Img/database/reservation-management-design-database.png" alt="Reservation Management Class Diagram" style="margin-bottom: 5px;" width="1000"/>
 
@@ -2222,7 +2241,8 @@ Las dos aplicaciones de alcance son:
 
 La propuesta traduce las decisiones de Style Guidelines (6.1: paleta beige claro / verde oscuro / negro, jerarquía tipográfica de cuatro niveles, componentes basados en Material Design) y de Arquitectura de Información (6.2: Labeling, Searching, SEO/Meta y Navigation Systems) hacia layouts concretos y navegables. Cada wireframe y cada wireflow se traza explícitamente a las User Stories del Capítulo III y a los User Persona del 2.3.1, garantizando consistencia entre el espacio del problema (Capítulos I–III) y el espacio de la solución (Capítulo VI).
 
-Las herramientas utilizadas son Figma para los wireframes (mismas que en 6.3) y un layout compuesto en Figma para los wireflows que reaprovecha los frames de 6.4.1 como pasos de cada flujo. Enlace al archivo Figma con todos los wireframes y wireflow diagrams de esta sección: https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design
+Las herramientas utilizadas son Figma para los wireframes (mismas que en 6.3) y un layout compuesto en Figma para los wireflows que reaprovecha los frames de 6.4.1 como pasos de cada flujo. Enlace al archivo Figma con todos los wireframes y wireflow diagrams de esta sección: 
+[Applications Wireframes and Wireflows](https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design)
 
 <a name="6.4.1"></a>
 ### 6.4.1. Applications Wireframes.
@@ -2375,11 +2395,8 @@ La siguiente tabla consolida la trazabilidad de cada User Goal con sus User Stor
 Esta trazabilidad garantiza que cada User Goal cierra el bucle entre el espacio del problema (User Personas y User Stories) y el espacio de la solución (wireframes, bounded contexts y servicios documentados en los Capítulos IV y V).
 
 
-<a name="7."></a>
-
-
-
 <a name="8."></a>
+
 # Conclusiones
 
 <a name="9."></a>
