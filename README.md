@@ -1699,6 +1699,108 @@ La elección de **Cloud Run** como _runtime_ del backend introduce un único _tr
 
 La **distribución entre tres proveedores** (GCP + Supabase + GitHub Pages) materializa la prioridad del equipo de mantener la solución dentro de _free tiers_ permanentes durante toda la fase académica, aceptando como costo la ausencia de un único panel de observabilidad y de una factura unificada. Esta decisión es reversible: tanto la persistencia (Supabase → Cloud SQL) como el hospedaje estático (GitHub Pages → Firebase Hosting) podrían migrarse a GCP sin cambios al código del backend, dado que ambos componentes están aislados detrás de interfaces estándar (JDBC/TLS y HTTP estático sobre CDN, respectivamente).
 
+<a name="5."></a>
+# Capítulo V: Tactical-Level Software Design
+
+<a name="5.4."></a>
+## 5.4. Bounded Context: Reservation Management
+
+El Bounded Context Reservation Management es responsable de gestionar el ciclo de vida de las reservas de lotes textiles dentro de la plataforma GamarraLoop. Este contexto permite que los artesanos o recolectores puedan reservar materiales disponibles publicados por los talleres de confección, evitando conflictos de disponibilidad y asegurando la trazabilidad del proceso de recojo.
+
+<a name="5.4.1."></a>
+### 5.4.1. Domain Layer
+
+
+**Sub-capa Model**
+| Tipo         | Nombre                 | Descripción                                                                     | Responsabilidad Principal                                                                      | Relación con otros elementos                                               |
+| ------------ | ---------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| Aggregate    | Reservation            | Representa la reserva de un lote textil realizada por un artesano o recolector. | Centralizar el ciclo de vida de la reserva y garantizar la consistencia del proceso de recojo. | Relacionado con PickupConfirmation, ReservationStatus, Publication y User. |
+| Entity    | PickupConfirmation     | Representa la confirmación de entrega y recepción de un lote reservado.         | Validar y registrar el recojo exitoso del lote textil.                                         | Relacionado con Reservation.                                               |
+| Value Object       | ReservationStatus      | Estado actual de una reserva dentro del sistema.                                | Controlar las transiciones válidas del flujo de reserva.                                       | Relacionado con Reservation.                                               |
+| Value Object | PickupLocation         | Representa la ubicación exacta donde será recogido el lote textil.              | Estandarizar la información geográfica asociada al recojo.                                     | Relacionado con Reservation y Publication.                                 |
+| Value Object | ReservationPeriod      | Intervalo de tiempo válido para una reserva.                                    | Gestionar expiraciones y tiempos límite de recojo.                                             | Relacionado con Reservation.                                               |
+| Value Object | ReservationNote        | Comentario adicional asociado a la reserva.                                     | Permitir agregar observaciones relevantes para la coordinación del recojo.                     | Relacionado con Reservation.                                               |
+| Command      | CreateReservation      | Registra una nueva reserva sobre un lote disponible.                            | Crear una reserva válida asociada a un lote textil.                                            | Usa Reservation, Publication y User.                                       |
+| Command      | CancelReservation      | Cancela una reserva activa.                                                     | Cambiar el estado de la reserva y liberar el lote.                                             | Usa Reservation.                                                           |
+| Command      | ConfirmPickup          | Registra la confirmación del recojo físico del lote.                            | Completar el proceso de entrega y recepción.                                                   | Usa Reservation y PickupConfirmation.                                      |
+| Command      | ExpireReservation      | Marca automáticamente una reserva como expirada.                                | Liberar reservas vencidas no atendidas.                                                        | Usa Reservation y ReservationPeriod.                                       |
+| Command      | UpdateReservationNote  | Actualiza observaciones asociadas a la reserva.                                 | Mantener información complementaria actualizada.                                               | Usa Reservation y ReservationNote.                                         |
+| Query        | GetReservationById     | Recupera la información detallada de una reserva.                               | Consultar datos completos de una reserva específica.                                           | Consulta Reservation y PickupConfirmation.                                 |
+| Query        | GetReservationsByUser  | Recupera las reservas realizadas por un usuario.                                | Permitir seguimiento de reservas activas e históricas.                                         | Consulta Reservation y User.                                               |
+| Query        | GetActiveReservations  | Recupera todas las reservas activas del sistema.                                | Facilitar monitoreo y gestión operativa.                                                       | Consulta Reservation.                                                      |
+| Query        | GetExpiredReservations | Recupera reservas expiradas automáticamente.                                    | Permitir auditoría y control de reservas vencidas.                                             | Consulta Reservation y ReservationPeriod.                                  |
+
+
+**Sub-capa Services**
+| Tipo      | Nombre                         | Descripción                                                        | Responsabilidad Principal                                     | Relación con otros elementos                                               |
+| --------- | ------------------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| Interface | ReservationCommandService      | Servicio para comandos relacionados con reservas.                  | Declarar métodos para crear, cancelar, actualizar y confirmar reservas.  | Implementado por ReservationCommandServiceImpl. Usado en capa Application. |
+| Interface | ReservationQueryService        | Servicio para consultas relacionadas con reservas.                 | Declarar métodos para recuperar información de reservas.      | Implementado por ReservationQueryServiceImpl. Usado en capa Application.   |
+| Interface | ReservationExpirationService   | Servicio para expiración automática de reservas.                   | Detectar y procesar reservas vencidas.                        | Utiliza Reservation y ReservationPeriod.                                   |
+| Interface | ReservationNotificationService | Servicio para emisión de notificaciones relacionadas con reservas. | Informar eventos importantes del flujo de reserva.            | Relacionado con Notification Management.                                   |
+
+<a name="5.4.2."></a>
+### 5.4.2. Interface Layer
+
+**Sub-capa REST**
+
+| Tipo       | Nombre                                            | Descripción                                                                       | Responsabilidad Principal                                                                           | Relación con otros elementos                                                                    |
+| ---------- | ------------------------------------------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Controller | ReservationController                             | Controlador REST para gestionar reservas de lotes textiles.                       | Recibir solicitudes relacionadas con reservas, coordinar comandos y devolver respuestas al cliente. | Utiliza ReservationRequestResource, ReservationResponseResource y sus respectivos assemblers.   |
+| Resource   | CreateReservationRequestResource                  | Estructura de una petición para crear una nueva reserva.                          | Representar los datos enviados por el cliente para registrar una reserva.                           | Usado por ReservationController para enviar datos al sistema.                                   |
+| Resource   | CancelReservationRequestResource                  | Estructura de una petición para cancelar una reserva.                             | Representar los datos necesarios para cancelar una reserva activa.                                  | Usado por ReservationController.                                                                |
+| Resource   | UpdateReservationNoteRequestResource              | Estructura de una petición para actualizar observaciones de una reserva.          | Representar información complementaria asociada a la reserva.                                       | Usado por ReservationController.                                                                |
+| Resource   | ReservationResponseResource                       | Estructura de respuesta con información detallada de una reserva.                 | Devolver al cliente una representación clara del estado de la reserva.                              | Usado por ReservationController como respuesta.                                                 |
+| Resource | ConfirmPickupRequestResource | Estructura de una petición para confirmar el recojo de un lote textil. | Representar datos de confirmación enviados por el usuario. | Usado por ReservationController. |
+| Resource | ConfirmPickupResponseResource | Estructura de respuesta con información de confirmación de recojo. | Devolver al cliente el resultado del proceso de confirmación. | Usado por ReservationController. |
+| Assembler  | CreateReservationCommandFromResourceAssembler     | Convierte un recurso de petición en un comando de creación de reserva.            | Traducir datos de entrada del cliente a comandos de dominio.                                        | Usado por ReservationController.                                                                |
+| Assembler  | CancelReservationCommandFromResourceAssembler     | Convierte un recurso de petición en un comando de cancelación.                    | Transformar solicitudes del cliente en comandos del dominio.                                        | Usado por ReservationController.                                                                |
+| Assembler  | UpdateReservationNoteCommandFromResourceAssembler | Convierte un recurso de petición en un comando de actualización de observaciones. | Traducir solicitudes del cliente a comandos de dominio.                                             | Usado por ReservationController.                                                                |
+| Assembler | ConfirmPickupCommandFromResourceAssembler | Convierte un recurso de petición en un comando de confirmación de recojo. | Traducir datos del cliente a comandos de dominio relacionados con confirmaciones. | Usado por ReservationController. |
+| Assembler  | ReservationResourceFromEntityAssembler            | Convierte una entidad Reservation en un recurso de respuesta.                     | Traducir objetos del dominio a estructuras legibles para el cliente.                                | Usado por ReservationController.                                                                |
+| Assembler | ConfirmPickupResourceFromEntityAssembler | Convierte una entidad PickupConfirmation en un recurso de respuesta. | Traducir confirmaciones del dominio a respuestas claras para el cliente. | Usado por ReservationController. |
+
+<a name="5.4.3."></a>
+### 5.4.3. Application Layer
+
+**Sub-capa Internal**
+| Tipo    | Nombre                             | Descripción                                                              | Responsabilidad Principal                                                              | Relación con otros elementos                                                                             |
+| ------- | ---------------------------------- | ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Service | ReservationCommandServiceImpl      | Implementación del servicio de comandos para reservas.                   | Ejecutar la lógica de creación, cancelación, actualización y confirmación de reservas. | Implementa ReservationCommandService. Utiliza Reservation, PickupConfirmation y repositorios de dominio. |
+| Service | ReservationQueryServiceImpl        | Implementación del servicio de consultas para reservas.                  | Obtener información de reservas mediante distintas consultas del sistema.              | Implementa ReservationQueryService. Consulta entidades Reservation y PickupConfirmation.                 |
+| Service | ReservationExpirationServiceImpl   | Implementación del servicio de expiración automática de reservas.        | Detectar reservas vencidas y actualizar su estado automáticamente.                     | Implementa ReservationExpirationService. Utiliza Reservation y ReservationPeriod.                        |
+| Service | ReservationNotificationServiceImpl | Implementación del servicio de notificaciones relacionadas con reservas. | Gestionar el envío de notificaciones sobre eventos importantes del flujo de reservas.  | Implementa ReservationNotificationService. Interactúa con Notification Management.                       |
+
+<a name="5.4.4."></a>
+### 5.4.4. Infrastructure Layer
+
+**Sub-capa Infrastructure**
+
+| Tipo       | Nombre                       | Descripción                                                             | Responsabilidad Principal                                                             | Relación con otros elementos                                                                                              |
+| ---------- | ---------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Repository | ReservationRepository        | Repositorio para gestionar reservas de lotes textiles.                  | Encargado de la persistencia y recuperación de datos relacionados con reservas.       | Relacionado con la entidad Reservation, interactúa con la base de datos para almacenar y consultar reservas.              |
+| Service    | NotificationGateway          | Servicio de integración con el bounded context Notification Management. | Enviar notificaciones relacionadas con reservas y confirmaciones de recojo.           | Utilizado por ReservationNotificationServiceImpl.                                                                         |
+| Service    | PublicationGateway           | Servicio de integración con Publication Management.                     | Consultar disponibilidad y estado de publicaciones antes de generar reservas.         | Utilizado por ReservationCommandServiceImpl y ReservationExpirationServiceImpl.                                           |
+| Service    | SchedulerService             | Servicio encargado de tareas automáticas programadas.                   | Ejecutar procesos periódicos de expiración de reservas vencidas.                      | Utilizado por ReservationExpirationServiceImpl.  
+
+<a name="5.4.5."></a>
+### 5.4.5. Bounded Context Software Architecture Component Level Diagrams
+
+<img src="Img/c4/reservation-management-component-diagram.png" alt="Reservation Management Component Diagram" style="margin-bottom: 5px;" width="1000"/>
+
+<a name="5.4.6."></a>
+### 5.4.6. Bounded Context Software Architecture Code Level Diagrams
+
+<a name="5.4.6.1."></a>
+### 5.4.6.1. Bounded Context Domain Layer Class Diagrams
+
+<img src="Img/class/reservation-management-class-diagram.svg" alt="Reservation Management Class Diagram" style="margin-bottom: 5px;" width="1000" height="500"/>
+
+<a name="5.4.6.2."></a>
+### 5.4.6.2. Bounded Context Database Design Diagram
+
+<img src="Img/database/reservation-management-design-database.png" alt="Reservation Management Class Diagram" style="margin-bottom: 5px;" width="1000"/>
+
 <a name="6."></a>
 # Capítulo VI: Solution UX Design
 
