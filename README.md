@@ -38,6 +38,7 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 | Versión |   Fecha    |             Autor             | Descripción de modificación                                                                                                                                                                       |
 | :-----: | :--------: | :---------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |   TB1   | 25/04/2026 | Huanaco Huayta, Elizabeth Lucero <br> Cuya Villegas, Rafael Alberto <br> Gongora Castillejos, Williams <br> Torres Garcia, Andrés Alberto <br> | Realización de: <br> - Capítulo I: Introducción<br>- Capítulo II: Requirements Elicitation & Analysis <br>- Capítulo III: Requirements specification <br>- Capítulo IV: Strategic-Level Software Design (Strategic-Level Attribute-Driven Design y Software Architecture) |
+|   TP    | 10/05/2026 | Torres Garcia, Andrés Alberto | Realización de: <br> - Capítulo VI: Solution UX Design (6.1. Style Guidelines, 6.2. Information Architecture, 6.3. Landing Page UI Design — wireframes y mock-ups Desktop/Mobile, 6.4. Applications UX/UI Design — 19 wireframes móviles para App Confeccionista y App Artesano y 7 wireflow diagrams trazados a los User Goals derivados de US04–US16) |
 
 # Project Report Collaboration Insights
 
@@ -57,7 +58,7 @@ Para el desarrollo del informe perteneciente a la entrega TF, se dividió la imp
 | Gongora Castillejos, Williams    | Capítulo III: Requirements specification                                    |
 | Huanaco Huayta, Elizabeth Lucero | Capítulo I: Introducción                                                    |
 | Molina Falcon, Piero Leonardo    | Capítulo IV: Strategic-Level Domain-Driven Design                           |
-| Torres Garcia, Andrés Alberto    | Capítulo IV: Strategic-Level Attribute-Driven Design, Software Architecture |
+| Torres Garcia, Andrés Alberto    | Capítulo IV: Strategic-Level Attribute-Driven Design, Software Architecture <br> Capítulo VI: Solution UX Design (6.1 Style Guidelines, 6.2 Information Architecture, 6.3 Landing Page UI Design, 6.4 Applications UX/UI Design) |
 
 **Github Collaboration Insights**
 
@@ -126,9 +127,24 @@ Los integrantes son:
    4.3.2. [Software Architecture Context Level Diagrams.](#4.3.2.)<br>
    4.3.3. [Software Architecture Container Level Diagrams.](#4.3.3.)<br>
    4.3.4. [Software Architecture Deployment Diagrams.](#4.3.4.)<br>
-5. [**Conclusiones**](#1.) <br>
-6. [**Referencias bibliográficas**](#1.) <br>
-7. [**Anexo**](#1.) <br>
+5. [**Capítulo VI: Solution UX Design.**](#6.)<br>
+   6.1. [Style Guidelines.](#6.1.)<br>
+   6.1.1. [General Style Guidelines.](#6.1.1.)<br>
+   6.1.2. [Web, Mobile & Devices Style Guidelines.](#6.1.2.)<br>
+   6.2. [Information Architecture.](#6.2.)<br>
+   6.2.1. [Labeling Systems.](#6.2.1.)<br>
+   6.2.2. [Searching Systems.](#6.2.2)<br>
+   6.2.3. [SEO Tags and Meta Tags.](#6.2.3.)<br>
+   6.2.4. [Navigation Systems.](#6.2.4.)<br>
+   6.3. [Landing Page UI Design.](#6.3.)<br>
+   6.3.1. [Landing Page Wireframe.](#6.3.1.)<br>
+   6.3.2. [Landing Page Mock-up.](#6.3.2.)<br>
+   6.4. [Applications UX/UI Design.](#6.4.)<br>
+   6.4.1. [Applications Wireframes.](#6.4.1)<br>
+   6.4.2. [Applications Wireflow Diagrams.](#6.4.2)<br>
+6. [**Conclusiones**](#7.) <br>
+7. [**Referencias bibliográficas**](#9.) <br>
+8. [**Anexo**](#10.) <br>
 
 # STUDENT OUTCOME
 
@@ -136,8 +152,8 @@ Los integrantes son:
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br> **TB1:**  Compartí con el equipo diversas ideas orientadas a la creación y mejora de nuestro proyecto, comunicándolas de manera clara y objetiva. Asimismo, en el desarrollo del Capítulo II, estuve a cargo de la realización de entrevistas, lo que implicó interactuar con los participantes de forma estructurada y profesional, asegurando una comunicación efectiva con personas de diferentes niveles y contextos.<br><br>**Gongora Castillejos, Williams:**<br> **TB1:** Sustenté frente al equipo la viabilidad técnica y de negocio para la gestión de requerimientos (Capítulo III), argumentando la necesidad de aplicar IA y rediseñar el flujo logístico. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Sustenté frente al equipo la problemática, contexto y propuesta de solución del proyecto (Capítulo I), argumentando la necesidad de implementar una plataforma basada en IA para optimizar la gestión y reutilización de residuos textiles dentro de un enfoque de economía circular. <br><br> **Molina Falcon, Piero Leonardo** <br>**TB1:** Sustenté ante el equipo la definición de los bounded contexts y la delimitación del dominio en el Capítulo IV (Strategic Design), explicando la importancia del EventStorming, Candidate Context Discovery y Context Mapping para estructurar correctamente la arquitectura del sistema. Asimismo, argumenté cómo estas decisiones permitían mejorar la escalabilidad, mantenibilidad y claridad de los procesos de negocio dentro de GamarraLoop.<br><br> **Torres Garcia, Andrés Alberto** <br> **TB1:** Sustenté frente al equipo el proceso de Attribute-Driven Design aplicado al Capítulo IV, argumentando la priorización de los diez drivers arquitectónicos en dos ejes (importancia para stakeholders e impacto en complejidad técnica), la elección del estilo monolito modular frente a microservicios para una solución en fase de validación, y la distribución entre tres proveedores cloud heterogéneos (Google Cloud Platform, Supabase y GitHub Pages) priorizando free tiers permanentes sobre la uniformidad arquitectónica. Asimismo, expuse los trade-offs explícitos asumidos por la arquitectura: cold start de Cloud Run, optimistic vs pessimistic locking en la reserva concurrente, y clasificación asíncrona vs síncrona ante la dependencia con Google Cloud Vision. | **TB1:** El equipo logró alinear la visión del producto mediante debates estructurados, asegurando que todos los miembros comprendan a profundidad el modelo de negocio antes de iniciar el diseño arquitectónico. |
-| Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br> **TB1:** Me encargué del desarrollo del Capítulo II, diseñando entrevistas y desarrollando herramientas como mapas de análisis con el objetivo de comprender mejor a los usuarios y sus necesidades. La información fue presentada de manera clara y objetiva.<br><br> **Gongora Castillejos, Williams:** <br> **TB1:** Redacté y estructuré el Capítulo III (Requirements Specification), elaborando diagramas estratégicos (Impact Mapping, To-Be Scenario) y estandarizando las User Stories en formato Gherkin. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Redacté y estructuré el Capítulo I del proyecto, desarrollando el perfil de la startup, la problemática, los segmentos de usuarios y los artefactos de Lean UX, comunicando las ideas de manera clara, organizada y comprensible para públicos tanto técnicos como no técnicos. <br><br> **Molina Falcon, Piero Leonardo** <br>**TB1:** Redacté y estructuré el Capítulo IV (Strategic Design), desarrollando el EventStorming, Candidate Context Discovery, Domain Message Flows Modeling, Bounded Context Canvases y Context Mapping, organizando los bounded contexts del sistema y definiendo las relaciones estratégicas entre ellos para una arquitectura clara, escalable y alineada al dominio del negocio.<br><br> **Torres Garcia, Andrés Alberto** <br> **TB1:** Redacté y estructuré las secciones de Strategic-Level Attribute-Driven Design (4.1) y Software Architecture (4.3) del Capítulo IV. Documenté el Architectural Drivers Backlog con diez drivers priorizados (D01–D10), los siete escenarios de atributos de calidad en formato SEI de seis dimensiones (QA01–QA07), las seis Technical Stories que actúan como constraints (TS01–TS06), la matriz de Architectural Design Decisions con la evaluación de dos a tres patrones candidatos por driver con sus pros y contras, y los Quality Attribute Scenario Refinements con Business Goals, Questions e Issues asociados. Adicionalmente, modelé las cuatro vistas del C4 Model (System Landscape, Context, Container y Deployment) en Structurizr y las acompañé de tablas con trazabilidad explícita a los drivers, escenarios de calidad y User Stories del Capítulo III. | **TB1:** La documentación rigurosa y estandarizada ha demostrado ser fundamental. Redactar requerimientos sin ambigüedades ni detalles de UI garantiza una base sólida y comprensible para el posterior diseño de software. |
+| Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br> **TB1:**  Compartí con el equipo diversas ideas orientadas a la creación y mejora de nuestro proyecto, comunicándolas de manera clara y objetiva. Asimismo, en el desarrollo del Capítulo II, estuve a cargo de la realización de entrevistas, lo que implicó interactuar con los participantes de forma estructurada y profesional, asegurando una comunicación efectiva con personas de diferentes niveles y contextos.<br><br>**Gongora Castillejos, Williams:**<br> **TB1:** Sustenté frente al equipo la viabilidad técnica y de negocio para la gestión de requerimientos (Capítulo III), argumentando la necesidad de aplicar IA y rediseñar el flujo logístico. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Sustenté frente al equipo la problemática, contexto y propuesta de solución del proyecto (Capítulo I), argumentando la necesidad de implementar una plataforma basada en IA para optimizar la gestión y reutilización de residuos textiles dentro de un enfoque de economía circular. <br><br> **Molina Falcon, Piero Leonardo** <br>**TB1:** Sustenté ante el equipo la definición de los bounded contexts y la delimitación del dominio en el Capítulo IV (Strategic Design), explicando la importancia del EventStorming, Candidate Context Discovery y Context Mapping para estructurar correctamente la arquitectura del sistema. Asimismo, argumenté cómo estas decisiones permitían mejorar la escalabilidad, mantenibilidad y claridad de los procesos de negocio dentro de GamarraLoop.<br><br> **Torres Garcia, Andrés Alberto** <br> **TB1:** Sustenté frente al equipo el proceso de Attribute-Driven Design aplicado al Capítulo IV, argumentando la priorización de los diez drivers arquitectónicos en dos ejes (importancia para stakeholders e impacto en complejidad técnica), la elección del estilo monolito modular frente a microservicios para una solución en fase de validación, y la distribución entre tres proveedores cloud heterogéneos (Google Cloud Platform, Supabase y GitHub Pages) priorizando free tiers permanentes sobre la uniformidad arquitectónica. Asimismo, expuse los trade-offs explícitos asumidos por la arquitectura: cold start de Cloud Run, optimistic vs pessimistic locking en la reserva concurrente, y clasificación asíncrona vs síncrona ante la dependencia con Google Cloud Vision. <br><br> **TP:** Sustenté frente al equipo las decisiones de diseño de experiencia para el Capítulo VI, argumentando cómo los Style Guidelines (paleta beige/verde oscuro/negro, tipografía y componentes Material Design) y la Arquitectura de Información (Labeling, Searching, SEO/Meta y Navigation Systems) se traducen en el Landing Page de GamarraLoop. Expliqué la racional detrás de las versiones Desktop y Mobile, la jerarquía de CTAs por segmento (Confeccionistas y recolectores) y la consistencia visual y de navegación entre el Landing Page y las Mobile Applications. Adicionalmente, sustenté la propuesta de Applications UX/UI Design (6.4), explicando por qué la solución se materializa en dos apps móviles nativas separadas (App Confeccionista y App Artesano) en línea con la Technical Story TS01, cómo cada wireflow se deriva agregando User Stories del Capítulo III por User Persona, y cómo la trazabilidad UG → US → Bounded Context cierra el bucle entre los Capítulos III, IV y VI. | **TB1:** El equipo logró alinear la visión del producto mediante debates estructurados, asegurando que todos los miembros comprendan a profundidad el modelo de negocio antes de iniciar el diseño arquitectónico. <br><br> **TP:** La discusión de las decisiones de UX permitió al equipo unificar criterios sobre la experiencia esperada por cada segmento objetivo, asegurando consistencia entre el Landing Page y las aplicaciones antes de avanzar con la implementación. |
+| Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br> **TB1:** Me encargué del desarrollo del Capítulo II, diseñando entrevistas y desarrollando herramientas como mapas de análisis con el objetivo de comprender mejor a los usuarios y sus necesidades. La información fue presentada de manera clara y objetiva.<br><br> **Gongora Castillejos, Williams:** <br> **TB1:** Redacté y estructuré el Capítulo III (Requirements Specification), elaborando diagramas estratégicos (Impact Mapping, To-Be Scenario) y estandarizando las User Stories en formato Gherkin. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Redacté y estructuré el Capítulo I del proyecto, desarrollando el perfil de la startup, la problemática, los segmentos de usuarios y los artefactos de Lean UX, comunicando las ideas de manera clara, organizada y comprensible para públicos tanto técnicos como no técnicos. <br><br> **Molina Falcon, Piero Leonardo** <br>**TB1:** Redacté y estructuré el Capítulo IV (Strategic Design), desarrollando el EventStorming, Candidate Context Discovery, Domain Message Flows Modeling, Bounded Context Canvases y Context Mapping, organizando los bounded contexts del sistema y definiendo las relaciones estratégicas entre ellos para una arquitectura clara, escalable y alineada al dominio del negocio.<br><br> **Torres Garcia, Andrés Alberto** <br> **TB1:** Redacté y estructuré las secciones de Strategic-Level Attribute-Driven Design (4.1) y Software Architecture (4.3) del Capítulo IV. Documenté el Architectural Drivers Backlog con diez drivers priorizados (D01–D10), los siete escenarios de atributos de calidad en formato SEI de seis dimensiones (QA01–QA07), las seis Technical Stories que actúan como constraints (TS01–TS06), la matriz de Architectural Design Decisions con la evaluación de dos a tres patrones candidatos por driver con sus pros y contras, y los Quality Attribute Scenario Refinements con Business Goals, Questions e Issues asociados. Adicionalmente, modelé las cuatro vistas del C4 Model (System Landscape, Context, Container y Deployment) en Structurizr y las acompañé de tablas con trazabilidad explícita a los drivers, escenarios de calidad y User Stories del Capítulo III. <br><br> **TP:** Redacté y estructuré el Capítulo VI: Solution UX Design. Documenté en 6.1 los Style Guidelines de marca, tipografía, paleta de colores y componentes Material Design; en 6.2 la Arquitectura de Información (Labeling Systems, Searching Systems, SEO/Meta Tags y Navigation Systems); en 6.3 el Landing Page UI Design con wireframes y mock-ups para Desktop Web Browser y Mobile Web Browser elaborados en Figma, explicando la aplicación de principios de diseño visual, diseño inclusivo y arquitectura de información en cada vista; y en 6.4 el Applications UX/UI Design completo, con 19 wireframes móviles de baja fidelidad (11 para App Confeccionista y 8 para App Artesano) y 7 wireflow diagrams (UG-C01 a UG-C04 y UG-A01 a UG-A03), todos elaborados en Figma a 375×812 con el mismo Design System, y acompañados de una tabla de trazabilidad explícita que vincula cada User Goal con sus User Stories del Capítulo III y los Bounded Contexts del Capítulo IV. | **TB1:** La documentación rigurosa y estandarizada ha demostrado ser fundamental. Redactar requerimientos sin ambigüedades ni detalles de UI garantiza una base sólida y comprensible para el posterior diseño de software. <br><br> **TP:** Documentar la propuesta de UX por capa (Style Guidelines → Information Architecture → UI Design) demostró ser efectivo para mantener trazabilidad entre las decisiones de marca, la arquitectura de información y los artefactos visuales finales, facilitando la comprensión del informe por audiencias técnicas y no técnicas. |
 
 
 <a name="1."></a>
@@ -1857,10 +1873,513 @@ El siguiente diagrama de base de datos detalla los objetos de persistencia neces
 
 > **Decisión de diseño:** Se optó por una **tabla única** con un campo `JSONB` para las etiquetas en lugar de una tabla normalizada `classification_labels` con FK. Esta decisión se justifica porque las etiquetas son inmutables una vez que la clasificación se completa (se generan y escriben una sola vez) y el patrón de acceso es siempre recuperar el conjunto completo de etiquetas de una solicitud, nunca etiquetas individuales en aislamiento. El índice GIN sobre el campo `JSONB` garantiza eficiencia en las consultas de búsqueda por material sin sacrificar la simplicidad del esquema.
 
+<a name="5.4."></a>
+## 5.4. Bounded Context: Reservation Management
+
+El Bounded Context Reservation Management es responsable de gestionar el ciclo de vida de las reservas de lotes textiles dentro de la plataforma GamarraLoop. Este contexto permite que los artesanos o recolectores puedan reservar materiales disponibles publicados por los talleres de confección, evitando conflictos de disponibilidad y asegurando la trazabilidad del proceso de recojo.
+
+<a name="5.4.1."></a>
+### 5.4.1. Domain Layer
+
+
+**Sub-capa Model**
+| Tipo         | Nombre                 | Descripción                                                                     | Responsabilidad Principal                                                                      | Relación con otros elementos                                               |
+| ------------ | ---------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| Aggregate    | Reservation            | Representa la reserva de un lote textil realizada por un artesano o recolector. | Centralizar el ciclo de vida de la reserva y garantizar la consistencia del proceso de recojo. | Relacionado con PickupConfirmation, ReservationStatus, Publication y User. |
+| Entity    | PickupConfirmation     | Representa la confirmación de entrega y recepción de un lote reservado.         | Validar y registrar el recojo exitoso del lote textil.                                         | Relacionado con Reservation.                                               |
+| Value Object       | ReservationStatus      | Estado actual de una reserva dentro del sistema.                                | Controlar las transiciones válidas del flujo de reserva.                                       | Relacionado con Reservation.                                               |
+| Value Object | PickupLocation         | Representa la ubicación exacta donde será recogido el lote textil.              | Estandarizar la información geográfica asociada al recojo.                                     | Relacionado con Reservation y Publication.                                 |
+| Value Object | ReservationPeriod      | Intervalo de tiempo válido para una reserva.                                    | Gestionar expiraciones y tiempos límite de recojo.                                             | Relacionado con Reservation.                                               |
+| Value Object | ReservationNote        | Comentario adicional asociado a la reserva.                                     | Permitir agregar observaciones relevantes para la coordinación del recojo.                     | Relacionado con Reservation.                                               |
+| Command      | CreateReservation      | Registra una nueva reserva sobre un lote disponible.                            | Crear una reserva válida asociada a un lote textil.                                            | Usa Reservation, Publication y User.                                       |
+| Command      | CancelReservation      | Cancela una reserva activa.                                                     | Cambiar el estado de la reserva y liberar el lote.                                             | Usa Reservation.                                                           |
+| Command      | ConfirmPickup          | Registra la confirmación del recojo físico del lote.                            | Completar el proceso de entrega y recepción.                                                   | Usa Reservation y PickupConfirmation.                                      |
+| Command      | ExpireReservation      | Marca automáticamente una reserva como expirada.                                | Liberar reservas vencidas no atendidas.                                                        | Usa Reservation y ReservationPeriod.                                       |
+| Command      | UpdateReservationNote  | Actualiza observaciones asociadas a la reserva.                                 | Mantener información complementaria actualizada.                                               | Usa Reservation y ReservationNote.                                         |
+| Query        | GetReservationById     | Recupera la información detallada de una reserva.                               | Consultar datos completos de una reserva específica.                                           | Consulta Reservation y PickupConfirmation.                                 |
+| Query        | GetReservationsByUser  | Recupera las reservas realizadas por un usuario.                                | Permitir seguimiento de reservas activas e históricas.                                         | Consulta Reservation y User.                                               |
+| Query        | GetActiveReservations  | Recupera todas las reservas activas del sistema.                                | Facilitar monitoreo y gestión operativa.                                                       | Consulta Reservation.                                                      |
+| Query        | GetExpiredReservations | Recupera reservas expiradas automáticamente.                                    | Permitir auditoría y control de reservas vencidas.                                             | Consulta Reservation y ReservationPeriod.                                  |
+
+
+**Sub-capa Services**
+| Tipo      | Nombre                         | Descripción                                                        | Responsabilidad Principal                                     | Relación con otros elementos                                               |
+| --------- | ------------------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| Interface | ReservationCommandService      | Servicio para comandos relacionados con reservas.                  | Declarar métodos para crear, cancelar, actualizar y confirmar reservas.  | Implementado por ReservationCommandServiceImpl. Usado en capa Application. |
+| Interface | ReservationQueryService        | Servicio para consultas relacionadas con reservas.                 | Declarar métodos para recuperar información de reservas.      | Implementado por ReservationQueryServiceImpl. Usado en capa Application.   |
+| Interface | ReservationExpirationService   | Servicio para expiración automática de reservas.                   | Detectar y procesar reservas vencidas.                        | Utiliza Reservation y ReservationPeriod.                                   |
+| Interface | ReservationNotificationService | Servicio para emisión de notificaciones relacionadas con reservas. | Informar eventos importantes del flujo de reserva.            | Relacionado con Notification Management.                                   |
+
+<a name="5.4.2."></a>
+### 5.4.2. Interface Layer
+
+**Sub-capa REST**
+
+| Tipo       | Nombre                                            | Descripción                                                                       | Responsabilidad Principal                                                                           | Relación con otros elementos                                                                    |
+| ---------- | ------------------------------------------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Controller | ReservationController                             | Controlador REST para gestionar reservas de lotes textiles.                       | Recibir solicitudes relacionadas con reservas, coordinar comandos y devolver respuestas al cliente. | Utiliza ReservationRequestResource, ReservationResponseResource y sus respectivos assemblers.   |
+| Resource   | CreateReservationRequestResource                  | Estructura de una petición para crear una nueva reserva.                          | Representar los datos enviados por el cliente para registrar una reserva.                           | Usado por ReservationController para enviar datos al sistema.                                   |
+| Resource   | CancelReservationRequestResource                  | Estructura de una petición para cancelar una reserva.                             | Representar los datos necesarios para cancelar una reserva activa.                                  | Usado por ReservationController.                                                                |
+| Resource   | UpdateReservationNoteRequestResource              | Estructura de una petición para actualizar observaciones de una reserva.          | Representar información complementaria asociada a la reserva.                                       | Usado por ReservationController.                                                                |
+| Resource   | ReservationResponseResource                       | Estructura de respuesta con información detallada de una reserva.                 | Devolver al cliente una representación clara del estado de la reserva.                              | Usado por ReservationController como respuesta.                                                 |
+| Resource | ConfirmPickupRequestResource | Estructura de una petición para confirmar el recojo de un lote textil. | Representar datos de confirmación enviados por el usuario. | Usado por ReservationController. |
+| Resource | ConfirmPickupResponseResource | Estructura de respuesta con información de confirmación de recojo. | Devolver al cliente el resultado del proceso de confirmación. | Usado por ReservationController. |
+| Assembler  | CreateReservationCommandFromResourceAssembler     | Convierte un recurso de petición en un comando de creación de reserva.            | Traducir datos de entrada del cliente a comandos de dominio.                                        | Usado por ReservationController.                                                                |
+| Assembler  | CancelReservationCommandFromResourceAssembler     | Convierte un recurso de petición en un comando de cancelación.                    | Transformar solicitudes del cliente en comandos del dominio.                                        | Usado por ReservationController.                                                                |
+| Assembler  | UpdateReservationNoteCommandFromResourceAssembler | Convierte un recurso de petición en un comando de actualización de observaciones. | Traducir solicitudes del cliente a comandos de dominio.                                             | Usado por ReservationController.                                                                |
+| Assembler | ConfirmPickupCommandFromResourceAssembler | Convierte un recurso de petición en un comando de confirmación de recojo. | Traducir datos del cliente a comandos de dominio relacionados con confirmaciones. | Usado por ReservationController. |
+| Assembler  | ReservationResourceFromEntityAssembler            | Convierte una entidad Reservation en un recurso de respuesta.                     | Traducir objetos del dominio a estructuras legibles para el cliente.                                | Usado por ReservationController.                                                                |
+| Assembler | ConfirmPickupResourceFromEntityAssembler | Convierte una entidad PickupConfirmation en un recurso de respuesta. | Traducir confirmaciones del dominio a respuestas claras para el cliente. | Usado por ReservationController. |
+
+<a name="5.4.3."></a>
+### 5.4.3. Application Layer
+
+**Sub-capa Internal**
+| Tipo    | Nombre                             | Descripción                                                              | Responsabilidad Principal                                                              | Relación con otros elementos                                                                             |
+| ------- | ---------------------------------- | ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Service | ReservationCommandServiceImpl      | Implementación del servicio de comandos para reservas.                   | Ejecutar la lógica de creación, cancelación, actualización y confirmación de reservas. | Implementa ReservationCommandService. Utiliza Reservation, PickupConfirmation y repositorios de dominio. |
+| Service | ReservationQueryServiceImpl        | Implementación del servicio de consultas para reservas.                  | Obtener información de reservas mediante distintas consultas del sistema.              | Implementa ReservationQueryService. Consulta entidades Reservation y PickupConfirmation.                 |
+| Service | ReservationExpirationServiceImpl   | Implementación del servicio de expiración automática de reservas.        | Detectar reservas vencidas y actualizar su estado automáticamente.                     | Implementa ReservationExpirationService. Utiliza Reservation y ReservationPeriod.                        |
+| Service | ReservationNotificationServiceImpl | Implementación del servicio de notificaciones relacionadas con reservas. | Gestionar el envío de notificaciones sobre eventos importantes del flujo de reservas.  | Implementa ReservationNotificationService. Interactúa con Notification Management.                       |
+
+<a name="5.4.4."></a>
+### 5.4.4. Infrastructure Layer
+
+**Sub-capa Infrastructure**
+
+| Tipo       | Nombre                       | Descripción                                                             | Responsabilidad Principal                                                             | Relación con otros elementos                                                                                              |
+| ---------- | ---------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Repository | ReservationRepository        | Repositorio para gestionar reservas de lotes textiles.                  | Encargado de la persistencia y recuperación de datos relacionados con reservas.       | Relacionado con la entidad Reservation, interactúa con la base de datos para almacenar y consultar reservas.              |
+| Service    | NotificationGateway          | Servicio de integración con el bounded context Notification Management. | Enviar notificaciones relacionadas con reservas y confirmaciones de recojo.           | Utilizado por ReservationNotificationServiceImpl.                                                                         |
+| Service    | PublicationGateway           | Servicio de integración con Publication Management.                     | Consultar disponibilidad y estado de publicaciones antes de generar reservas.         | Utilizado por ReservationCommandServiceImpl y ReservationExpirationServiceImpl.                                           |
+| Service    | SchedulerService             | Servicio encargado de tareas automáticas programadas.                   | Ejecutar procesos periódicos de expiración de reservas vencidas.                      | Utilizado por ReservationExpirationServiceImpl.  
+
+<a name="5.4.5."></a>
+### 5.4.5. Bounded Context Software Architecture Component Level Diagrams
+
+<img src="Img/c4/reservation-management-component-diagram.png" alt="Reservation Management Component Diagram" style="margin-bottom: 5px;" width="1000"/>
+
+<a name="5.4.6."></a>
+### 5.4.6. Bounded Context Software Architecture Code Level Diagrams
+
+<a name="5.4.6.1."></a>
+### 5.4.6.1. Bounded Context Domain Layer Class Diagrams
+
+<img src="Img/class/reservation-management-class-diagram.svg" alt="Reservation Management Class Diagram" style="margin-bottom: 5px;" width="1000" height="500"/>
+
+<a name="5.4.6.2."></a>
+### 5.4.6.2. Bounded Context Database Design Diagram
+
+<img src="Img/database/reservation-management-design-database.png" alt="Reservation Management Class Diagram" style="margin-bottom: 5px;" width="1000"/>
+
+<a name="6."></a>
+# Capítulo VI: Solution UX Design
+
+<a name="6.1."></a>
+## 6.1. Style Guidelines. 
+
+En este capítulo se presentan los lineamientos de estilo y las herramientas que se emplearán para el diseño del proyecto. Se detallarán los criterios visuales, componentes y recursos que permitirán mantener una identidad a lo largo de la aplicación, así como una experiencia de usuario clara y consistente. Estos lineamientos servirán como base para el desarrollo de las interfaces, asegurando una experiencia confortable para el usuario.
+
+<a name="6.1.1."></a>
+### 6.1.1. General Style Guidelines.
+
+**Brand Overview**
+
+En un entorno como Gamarra, donde la producción textil es intensa y constante, la generación de residuos de tela es un problema frecuente que muchas veces no cuenta con una gestión adecuada. Retazos, excedentes y materiales sobrantes suelen ser descartados sin ser aprovechados, a pesar de su potencial para reutilización.
+GamarraLoop nace como una solución digital que conecta talleres de confección con artesanos y recolectores, facilitando la reutilización de estos residuos textiles. A través de una aplicación móvil, los talleres pueden publicar sus excedentes de manera rápida, mientras que los usuarios interesados pueden visualizar, filtrar y ubicar estos materiales en tiempo real.
+La plataforma integra funcionalidades como geolocalización y clasificación automática de materiales mediante inteligencia artificial, permitiendo mejorar la visibilidad de los recursos disponibles. De esta manera, se busca reducir el desperdicio textil, fomentar la economía circular y generar valor tanto económico como ambiental dentro del ecosistema de Gamarra.
+
+**Brand Name**
+
+El nombre GamarraLoop surge de la combinación de dos conceptos clave. Por un lado, “Gamarra”, que representa el principal emporio textil del Perú y el contexto donde se desarrolla la problemática. Por otro lado, “Loop”, que hace referencia a un ciclo continuo, simbolizando la reutilización de materiales dentro de un modelo de economía circular.
+
+El nombre transmite la idea de cerrar el ciclo de vida de los textiles, evitando que los residuos se conviertan en desecho y, en su lugar, se reintegren al sistema productivo. Además, el uso del término en inglés le da un enfoque moderno, tecnológico y fácil de recordar, alineado con una solución digital innovadora.
+A continuación, se presenta el logotipo de GamarraLoop, el cual refleja visualmente el concepto de reutilización textil mediante elementos como hilo, aguja y formas circulares que representan el flujo continuo de materiales dentro de la plataforma.
+<img src="./assets/GamarraLoop-logo.jpeg" alt="Logo GamarraLoop" width="591">
+
+**Typography**
+
+La tipografía en GamarraLoop cumple un papel importante en la claridad de la información y en la experiencia de uso dentro de la aplicación. Se ha priorizado el uso de fuentes modernas y altamente legibles, considerando que los usuarios necesitan interactuar de forma rápida y sencilla mientras gestionan o buscan materiales textiles.
+La jerarquía tipográfica se organiza en cuatro niveles principales: headings (encabezados) para destacar secciones clave, body (texto) para el contenido general, buttons (botones) para acciones relevantes dentro del sistema y links (enlaces) para la navegación. Esta estructura permite mantener un orden visual claro y consistente en toda la interfaz.
+Para el diseño se han seleccionado tipografías que equilibran estética y funcionalidad. Se emplea una fuente con mayor personalidad para títulos y elementos destacados, aportando identidad visual a la aplicación, mientras que para los textos se utiliza una tipografía limpia y fácil de leer, asegurando una correcta comprensión del contenido en distintos dispositivos. Además, el uso de colores como verde oscuro y negro en la tipografía refuerza la identidad del proyecto y mejora el contraste visual.
+
+<img src="./assets/Typograpy.png" alt="Typography" width="301">
+
+**Colors**
+
+La elección de colores en GamarraLoop está orientada a reflejar sostenibilidad, orden y conexión con el entorno textil, alineándose con el enfoque de economía circular del proyecto.
+
+**Color Primario(Beige claro):**
+
+El beige claro se utiliza como color predominante en los fondos de la aplicación. Este color transmite calidez, naturalidad y simplicidad, evocando materiales textiles y generando una experiencia visual más amigable. Además, permite que los demás elementos destaquen sin sobrecargar la interfaz.
+
+**Colores Secundarios(Verde y negro):**
+
+El verde oscuro es el color principal de interacción dentro de la aplicación. Representa sostenibilidad, reutilización y crecimiento, valores clave del proyecto. Se utiliza en botones, encabezados y elementos importantes de la interfaz.
+
+El negro complementa la paleta aportando contraste y elegancia. Se emplea principalmente en textos y algunos elementos estructurales, garantizando una alta legibilidad.
+
+**Colores de texto(Negro y Verde):**
+
+El negro se utiliza para el contenido principal debido a su alta legibilidad sobre fondos claros. Por otro lado, el verde oscuro se emplea en títulos, etiquetas y elementos destacados, reforzando la identidad visual de la plataforma.
+
+<a name="6.1.2."></a> 
+### 6.1.2. Web, Mobile & Devices Style Guidelines.
+
+En GamarraLoop se contempla el desarrollo de una aplicación móvil, diseñada para ofrecer una experiencia fluida y accesible en distintos dispositivos. Se prioriza una interacción simple e intuitiva, donde tanto talleres como artesanos puedan utilizar la plataforma sin complicaciones, accediendo rápidamente a funciones clave como la publicación, búsqueda y reserva de lotes de material textil.
+En cuanto al diseño, se aplicará el patrón visual en Z, organizando los elementos de manera natural y fácil de seguir. En la parte superior se ubican el logo y las acciones principales, seguidos por opciones de navegación claras, y posteriormente el contenido relevante como los lotes disponibles, filtros y detalles. Esta estructura permite que los usuarios comprendan rápidamente el funcionamiento de la aplicación y ejecuten acciones de forma eficiente.
+Para la interfaz, se utilizará una paleta de colores basada en tonos beige claro, verde oscuro y negro, transmitiendo una identidad visual alineada con la sostenibilidad y la reutilización de materiales. Asimismo, se incorporan colores de estado que permiten identificar rápidamente la disponibilidad de los lotes (verde para disponible, amarillo para reservado y rojo para no disponible), facilitando la toma de decisiones dentro de la aplicación.
+En relación con el componente tecnológico, la aplicación integrará servicios de clasificación automática de imágenes, permitiendo identificar el tipo de material textil a partir de fotografías. Esta información se mostrará de manera clara dentro de la interfaz, ayudando a los usuarios a evaluar rápidamente los lotes disponibles y mejorando la confiabilidad del sistema.
+
+<a name="6.2."></a> 
+## 6.2. Information Architecture.
+
+En esta sección se detallan las decisiones y fundamentos relacionados con la organización del contenido dentro de la aplicación móvil de GamarraLoop. Estas propuestas están orientadas a garantizar que los usuarios, tanto talleres como artesanos, puedan comprender y utilizar las funcionalidades de la plataforma de manera sencilla y sin fricciones.
+Las decisiones consideran aspectos clave como la organización de la información, el etiquetado de los elementos, la navegación dentro de la aplicación y los mecanismos de búsqueda y filtrado de lotes. Todo ello con el objetivo de facilitar el acceso a los materiales disponibles, optimizar la interacción entre usuarios y mejorar la experiencia general dentro del sistema.
+
+<a name="6.2.1."></a>
+### 6.2.1. Labeling Systems. 
+
+En esta sección se describen los sistemas de etiquetado utilizados en la aplicación móvil de GamarraLoop. El objetivo del etiquetado es facilitar la comprensión del sistema, permitiendo que los usuarios identifiquen rápidamente las funciones disponibles y naveguen de manera intuitiva. Se busca mantener consistencia en los nombres, utilizando términos claros, simples y familiares para los talleres y artesanos.
+
+**Etiquetas de Encabezados (Headings)**
+
+Las etiquetas de encabezado permiten organizar el contenido principal dentro de la aplicación:
+
+-	Inicio (Home): Muestra un resumen de los lotes disponibles y accesos rápidos a las funciones principales.
+-	Publicar Lote: Permite a los talleres registrar y publicar nuevos residuos textiles.
+-	Explorar Materiales: Sección donde los artesanos pueden visualizar los lotes disponibles.
+-	Mis Lotes: Lista de publicaciones realizadas por el usuario (taller).
+-	Mis Reservas: Muestra los lotes que el artesano ha reservado.
+-	Perfil: Información del usuario y configuración básica de la cuenta.
+  
+**Etiquetas Textuales (Text Labels)**
+
+Estas etiquetas ayudan a los usuarios a identificar acciones dentro de la aplicación:
+
+-	Publicar (Publish): Acción para registrar un nuevo lote de tela.
+-	Tomar Foto (Take Photo): Permite capturar la imagen del material.
+-	Reservar (Reserve): Acción para asegurar un lote disponible.
+-	Disponible (Available): Indica que el lote puede ser recolectado.
+-	Reservado (Reserved): Indica que el lote ya fue apartado por un usuario.
+-	Entregado (Delivered): Confirma que el lote ya fue recogido.
+-	Buscar (Search): Permite encontrar materiales específicos.
+-	Filtrar (Filter): Ayuda a refinar resultados por tipo, color u otros atributos.
+-	Ubicación (Location): Muestra el punto de recojo del lote.
+-	Confirmar Entrega: Acción del taller para validar la entrega del lote.
+-	Confirmar Recepción: Acción del artesano para confirmar que recibió el material.
+  
+**Etiquetas Icónicas (Iconic Labels)**
+
+Se utilizan íconos para reforzar visualmente las acciones y facilitar la navegación:
+
+-	Cámara: Representa la captura de imágenes del lote.
+-	Ubicación (pin): Indica el punto de recojo en el mapa.
+-	Caja / paquete: Representa los lotes de material textil.
+-	Campana: Notificaciones sobre reservas o cambios de estado.
+-	Check: Confirmación de entrega o recepción.
+-	Reloj: Indica estado pendiente o en proceso.
+-	Indicadores de estado:
+  - Verde: lote disponible
+  - Amarillo: lote reservado
+  -	Rojo: lote no disponible (cancelado o expirado)
+  -	Gris: lote entregado
+ 	
+Estas etiquetas se aplican de manera consistente en toda la aplicación móvil, permitiendo que los usuarios reconozcan fácilmente las funciones sin necesidad de aprendizaje previo. Además, el uso de indicadores visuales facilita la interpretación rápida del estado de los lotes, mejorando la eficiencia y la experiencia general dentro de la plataforma.
+
+<a name="6.2.2"></a>
+### 6.2.2. Searching Systems.
+
+Los sistemas de búsqueda de GamarraLoop están diseñados para que los usuarios puedan encontrar lotes de material textil de manera rápida e intuitiva dentro de la aplicación móvil. Estos métodos priorizan la simplicidad, la accesibilidad y la relevancia de la información, facilitando la conexión entre talleres y artesanos.
+**Búsqueda por texto**
+
+Los usuarios pueden buscar materiales ingresando palabras clave en la barra de búsqueda, como tipo de tela, color o características específicas (por ejemplo, “algodón”, “denim”, “retazos”). Esto permite encontrar lotes de manera directa y reducir el tiempo de exploración.
+
+**Búsqueda por filtros**
+
+La aplicación incorpora opciones de filtrado que permiten refinar los resultados según distintos criterios, como tipo de material, color, estado del lote o cercanía. Esta funcionalidad facilita a los artesanos encontrar materiales que se ajusten a sus necesidades específicas.
+
+**Búsqueda por ubicación**
+
+La plataforma utiliza la ubicación del usuario para mostrar los lotes disponibles más cercanos. Esto resulta clave para optimizar el proceso de recojo, permitiendo a los artesanos identificar rápidamente opciones accesibles dentro de su zona.
+
+**Búsqueda por mapa**
+
+Se incluye un mapa interactivo donde los usuarios pueden visualizar la ubicación de los lotes publicados. A través de indicadores visuales, es posible identificar rápidamente su estado (disponible, reservado, etc.), lo que facilita la toma de decisiones en tiempo real.
+
+Estos métodos se complementan entre sí, ofreciendo una experiencia de búsqueda eficiente y flexible, adaptada a las necesidades tanto de los talleres como de los artesanos dentro del ecosistema de reutilización textil.
+
+<a name="6.2.3."></a> 
+### 6.2.3. SEO Tags and Meta Tags. 
+
+Los SEO Tags y Meta Tags permiten que la landing page informativa de GamarraLoop sea fácilmente identificable por los motores de búsqueda, mejorando su visibilidad y facilitando que potenciales usuarios (talleres y artesanos) encuentren la solución. Además, contribuyen a una correcta visualización en distintos dispositivos y a una mejor organización del contenido web.
+
+**Title**
+
+El título define el nombre del proyecto en el navegador y en los resultados de búsqueda:
+
+<title>GamarraLoop - Reutilización de Residuos Textiles</title>
+
+**Description**
+
+Describe de forma breve el propósito de la plataforma, destacando su enfoque en economía circular:
+
+<meta name="description" content="GamarraLoop es una plataforma que conecta talleres textiles con artesanos para reutilizar residuos de tela, promoviendo la economía circular en Gamarra.">
+
+**Keywords y Viewport**
+
+Se incluyen etiquetas que ayudan a posicionar la página y asegurar su correcta adaptación en dispositivos móviles:
+
+<meta name="keywords" content="reciclaje textil, Gamarra, economía circular, reutilización de telas, residuos textiles, artesanos, talleres">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+**Author / Copyright**
+
+Identifica la autoría del contenido y los derechos del proyecto:
+
+<meta name="author" content="Equipo GamarraLoop">
+
+<meta name="copyright" content="GamarraLoop 2026">
+
+Estos elementos permiten mejorar la presencia digital de GamarraLoop y asegurar una correcta indexación en buscadores, facilitando la difusión de la propuesta y el acceso a nuevos usuarios interesados en la reutilización de materiales textiles.
+
+<a name="6.2.4."></a>
+### 6.2.4. Navigation Systems. 
+
+El sistema de navegación de GamarraLoop está diseñado para ser claro, intuitivo y consistente dentro de la aplicación móvil. Se busca que tanto talleres como artesanos puedan desplazarse por la plataforma sin dificultad, identificando rápidamente las acciones principales como publicar un lote, explorar materiales, reservar o gestionar sus actividades.
+En la aplicación móvil, la navegación se organiza mediante una barra inferior (bottom navigation) que agrupa las funciones más utilizadas, tales como Inicio, Explorar, Publicar, Mis actividades y Perfil. Esta estructura permite a los usuarios moverse rápidamente entre secciones y realizar acciones clave en pocos pasos, reduciendo la complejidad de uso.
+Adicionalmente, se emplea navegación contextual dentro de cada sección. Por ejemplo, desde la vista de exploración, el usuario puede acceder al detalle de un lote, visualizar su ubicación y ejecutar acciones como reservar o contactar al taller. Esto mantiene un flujo continuo y lógico durante la interacción.
+El uso de iconos, colores e indicadores visuales refuerza la navegación, facilitando la identificación de acciones importantes y estados de los lotes. Los colores de estado (disponible, reservado, etc.) permiten interpretar rápidamente la información sin necesidad de leer en detalle.
+Asimismo, la integración de funcionalidades como geolocalización y clasificación automática de materiales se presenta de forma transparente dentro de la navegación, asegurando que el usuario acceda a información relevante en el momento adecuado.
+En conjunto, el sistema de navegación está diseñado para ofrecer una experiencia fluida, rápida y sin fricciones, adaptándose a las necesidades de los distintos tipos de usuarios dentro del ecosistema de reutilización textil.
+
+<a name="6.3."></a>
+## 6.3. Landing Page UI Design.
+
+En esta sección se presenta la propuesta de UI para el Landing Page de GamarraLoop. La propuesta traduce las decisiones de arquitectura de información descritas en la sección 6.2 (Labeling, Searching, SEO/Meta y Navigation Systems) y los lineamientos visuales definidos en 6.1 (paleta beige/verde oscuro/negro, tipografía con jerarquía de cuatro niveles y componentes basados en Material Design) hacia un layout concreto y navegable.
+
+El objetivo del Landing es comunicar de forma directa la propuesta de valor del modelo de negocio a los tres segmentos objetivo (Confeccionistas de Gamarra, recolectores/artesanos y aliados del ecosistema circular) y conducir a cada uno hacia el call-to-action correspondiente. El recorrido visual prioriza un hero claro con la propuesta de valor, secciones secuenciales de beneficios por segmento, evidencia (modelo de economía circular y bounded contexts del producto), formulario de contacto y footer con enlaces legales e institucionales, de modo que la lectura siga el patrón Z típico de landings de conversión.
+
+Se elabora la propuesta en dos vistas obligatorias: Desktop Web Browser y Mobile Web Browser. Ambas comparten estructura semántica, jerarquía y CTAs, pero ajustan densidad de información, agrupamiento de secciones y patrón de navegación según el dispositivo, siguiendo principios de diseño responsivo y diseño inclusivo (contraste suficiente, áreas táctiles adecuadas, textos escalables y navegación operable por teclado).
+
+<a name="6.3.1."></a>
+### 6.3.1. Landing Page Wireframe.
+
+Los wireframes presentan la estructura de bloques, jerarquía y flujo de lectura del Landing Page antes de aplicar color, tipografía final e imágenes. Su objetivo es validar la arquitectura de información, el orden de los contenidos y la ubicación de los call-to-action por segmento.
+
+Herramienta utilizada: Figma. Enlace al archivo de wireframes: https://www.figma.com/design/J1GM7YvXifXyoHeMuIaHdP/Landing-Page?node-id=0-1
+
+**Versión Desktop Web Browser**
+
+<img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/landing-page/landing-page-wireframe-desktop.png" alt="Landing Page Wireframe — Desktop" width="900"/>
+
+El wireframe Desktop organiza el contenido en una retícula amplia que aprovecha el ancho del viewport. La barra de navegación superior fija expone las secciones principales del sitio (Inicio, Cómo funciona, Segmentos, Sobre nosotros, Contacto) y ubica el CTA primario a la derecha, siguiendo el principio de jerarquía visual y consistencia con los patrones convencionales de la web. El hero ocupa el primer pliegue con un encabezado que comunica la propuesta de valor y un CTA dominante; las secciones siguientes presentan los beneficios diferenciados por segmento (Confeccionistas y recolectores) en bloques paralelos, aplicando el principio de proximidad y simetría para facilitar la comparación. El cierre incluye un bloque de evidencia del modelo circular, un formulario de contacto y un footer con enlaces a términos y condiciones, política de privacidad y redes.
+
+La distribución refleja las decisiones de la sección 6.2: las etiquetas de navegación (Labeling Systems) se mantienen breves y orientadas a la acción del visitante; el buscador y los filtros previstos en 6.2.2 quedan reservados para las Web Applications, mientras que el Landing privilegia un recorrido lineal y guiado.
+
+**Versión Mobile Web Browser**
+
+<img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/landing-page/landing-page-wireframe-mobile.png" alt="Landing Page Wireframe — Mobile" width="320"/>
+
+El wireframe Mobile reorganiza el mismo contenido en una columna única. La barra de navegación se reduce a un patrón hamburger menu para liberar espacio del viewport y el CTA primario se mantiene visible en el hero. Las secciones que en Desktop aparecen en paralelo (beneficios por segmento) se apilan verticalmente, preservando el mismo orden de lectura y la misma jerarquía tipográfica. Se aplican principios de diseño inclusivo: tamaños de toque mínimos de 44px para botones y enlaces, contraste adecuado en los placeholders y suficiente espacio en blanco para evitar errores de pulsado.
+
+La consistencia entre ambas versiones garantiza que un visitante que descubra GamarraLoop desde el móvil y luego acceda desde escritorio reconozca la misma estructura, los mismos labels y los mismos puntos de conversión.
+
+<a name="6.3.2."></a>
+### 6.3.2. Landing Page Mock-up.
+
+Los mock-ups aplican sobre la estructura validada en los wireframes el Design System definido en 6.1: paleta beige claro como fondo, verde oscuro como color de interacción principal, negro para tipografía y elementos estructurales, jerarquía tipográfica de cuatro niveles (headings, body, buttons, links) y componentes de Material Design. El resultado refleja la identidad visual de GamarraLoop —sostenibilidad, reutilización y conexión con el ecosistema textil— manteniendo la legibilidad y el contraste necesarios para diseño inclusivo.
+
+Herramienta utilizada: Figma. Enlace al archivo de mock-ups: https://www.figma.com/design/J1GM7YvXifXyoHeMuIaHdP/Landing-Page?node-id=1-2
+
+**Versión Desktop Web Browser**
+
+<img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/landing-page/landing-page-mockup-desktop.png" alt="Landing Page Mock-up — Desktop" width="900"/>
+
+En la versión Desktop, los bloques heredados del wireframe se visten con la paleta institucional. El hero incorpora una imagen ilustrativa del contexto Gamarra/textil junto al headline principal y un CTA verde oscuro de alto contraste sobre el fondo beige, dirigido al segmento Confeccionista. Las secciones intermedias presentan los beneficios por segmento con iconografía coherente con el logotipo (hilo, aguja, ciclo) reforzando la asociación de marca, y aplican espaciado generoso para favorecer la legibilidad. Los CTAs secundarios mantienen el mismo color de interacción pero con variantes de jerarquía (botón sólido para acción primaria, botón outline para acción secundaria), siguiendo la guía de componentes establecida en 6.1.
+
+Las decisiones de arquitectura de información se preservan: las etiquetas de los CTAs son específicas por segmento (por ejemplo, "Publicar excedentes" para Confeccionistas y "Explorar lotes disponibles" para recolectores) y redirigen a las vistas correspondientes de las Web Applications o a la sección de descarga de la aplicación móvil, cumpliendo el requisito del enunciado sobre consistencia entre Landing y aplicaciones.
+
+**Versión Mobile Web Browser**
+
+<img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/landing-page/landing-page-mockup-mobile.png" alt="Landing Page Mock-up — Mobile" width="320"/>
+
+La versión Mobile traslada el Design System a la columna única definida en el wireframe. Los CTAs verde oscuro mantienen el mismo tamaño de toque y contraste que en Desktop; la tipografía conserva la jerarquía y se ajusta el tamaño base para garantizar legibilidad en pantallas pequeñas sin necesidad de zoom. El menú hamburger despliega la misma estructura de navegación definida en 6.2.4, y los formularios reducen los campos visibles por fila a uno solo, manteniendo un solo punto de foco a la vez para favorecer la accesibilidad.
+
+En conjunto, los mock-ups Desktop y Mobile evidencian la aplicación del Design System, los principios de diseño visual (jerarquía, contraste, proximidad, consistencia), el diseño inclusivo (contraste de color suficiente, áreas táctiles adecuadas, tipografía escalable, foco visible) y la arquitectura de información definida en 6.2, asegurando una experiencia coherente entre el Landing Page y los demás productos digitales de la solución.
+<a name="6.4."></a>
+## 6.4. Applications UX/UI Design.
+
+En esta sección se presenta la propuesta de UI/UX para las aplicaciones móviles que forman parte de la solución GamarraLoop. A diferencia del Landing Page (6.3), que opera como canal de adquisición sobre Desktop y Mobile Web Browser, los productos digitales que dan soporte a los flujos de negocio (publicación, clasificación, exploración, reserva, entrega y recepción de lotes) se materializan en dos aplicaciones móviles nativas, en línea con la Technical Story TS01 documentada en el Capítulo III, que exige acceso a cámara y geolocalización en campo dentro del emporio comercial de Gamarra.
+
+Las dos aplicaciones de alcance son:
+
+| Aplicación | User Persona destinatario (ver 2.3.1) | Justificación de plataforma |
+| --- | --- | --- |
+| **App Confeccionista** | Confeccionista — segmento Talleres | Necesita cámara para capturar el lote (US05) y GPS para asignar el punto de recojo (US06) en su stand o galería. |
+| **App Artesano** | Artesano / Recolector | Necesita geolocalización para llegar al taller (US13) y operar en movilidad dentro del emporio (TS01). |
+
+La propuesta traduce las decisiones de Style Guidelines (6.1: paleta beige claro / verde oscuro / negro, jerarquía tipográfica de cuatro niveles, componentes basados en Material Design) y de Arquitectura de Información (6.2: Labeling, Searching, SEO/Meta y Navigation Systems) hacia layouts concretos y navegables. Cada wireframe y cada wireflow se traza explícitamente a las User Stories del Capítulo III y a los User Persona del 2.3.1, garantizando consistencia entre el espacio del problema (Capítulos I–III) y el espacio de la solución (Capítulo VI).
+
+Las herramientas utilizadas son Figma para los wireframes (mismas que en 6.3) y un layout compuesto en Figma para los wireflows que reaprovecha los frames de 6.4.1 como pasos de cada flujo. Enlace al archivo Figma con todos los wireframes y wireflow diagrams de esta sección: https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design
+
+<a name="6.4.1"></a>
+### 6.4.1. Applications Wireframes.
+
+Los wireframes que se presentan a continuación son artefactos de baja fidelidad, deliberadamente en **escala de grises**, que validan la jerarquía, la arquitectura de información y la secuencia de interacción de cada aplicación antes de aplicar paleta de marca, tipografía final, imágenes y micro-interacciones. La aplicación del Design System completo (paleta beige / verde oscuro / negro definida en 6.1, iconografía y colores de estado) se reserva para los Mock-ups, según lo que el enunciado del Trabajo Final pide para la entrega TB2. Mantener los wireframes en grayscale es una práctica estándar de UX porque obliga al revisor a evaluar la arquitectura y la jerarquía sin que el color "compense" debilidades estructurales.
+
+Se trabajan en formato móvil nativo a 375×812 puntos (referencia iPhone 13/14), respetando para cada vista las áreas tácticas mínimas de 44 px definidas en los lineamientos de diseño inclusivo, una jerarquía tipográfica de cuatro niveles (heading / subheading / body / caption) y los componentes recurrentes de Material Design: app bar superior, bottom navigation, cards, chips, botones primarios y secundarios, y Floating Action Button para acciones de creación.
+
+Las decisiones de Labeling y Navigation Systems descritas en 6.2 se materializan aquí: las etiquetas de las secciones de navegación inferior, los nombres de acciones (Publicar, Explorar, Reservar, Confirmar) y los estados de los lotes (Disponible / Reservado / Entregado / Cancelado / Vencido) son los mismos en ambas aplicaciones, asegurando consistencia conceptual entre Confeccionistas y Artesanos. En esta capa de baja fidelidad, los estados se distinguen por **variación tonal y por label textual** (chip relleno oscuro para "Disponible" / chip outline para "Reservado", "Entregado" y demás), cumpliendo el criterio WCAG 1.4.1 que exige que ninguna información dependa exclusivamente del color. La diferenciación cromática propia del Design System (verde / amarillo / rojo) se introducirá recién en los Mock-ups.
+
+**App Confeccionista — 11 wireframes**
+
+La App Confeccionista cubre el ciclo completo de oferta: alta del usuario, publicación de un lote (foto + IA de clasificación + GPS + referencia), recepción de la reserva, confirmación de entrega física y cancelación de lotes obsoletos. La navegación inferior agrupa cinco secciones (Inicio, Mis lotes, Publicar, Notificaciones, Perfil) y se complementa con un FAB de publicación para que la acción de mayor frecuencia esté siempre a un toque.
+
+<table>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w01-splash.png" alt="C-W01 — Splash" width="220"/><br/><sub><b>C-W01</b> · Splash / Acceso</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w02-onboarding.png" alt="C-W02 — Onboarding" width="220"/><br/><sub><b>C-W02</b> · Onboarding (rol + datos)</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w03-home.png" alt="C-W03 — Home" width="220"/><br/><sub><b>C-W03</b> · Home / Mis lotes</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w04-publicar-foto.png" alt="C-W04 — Publicar foto" width="220"/><br/><sub><b>C-W04</b> · Publicar · Paso 1 (foto)</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w05-publicar-ia.png" alt="C-W05 — Publicar IA" width="220"/><br/><sub><b>C-W05</b> · Publicar · Paso 2 (clasificación IA)</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w06-publicar-ubicacion.png" alt="C-W06 — Publicar ubicación" width="220"/><br/><sub><b>C-W06</b> · Publicar · Paso 3 (ubicación)</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w07-publicar-confirmacion.png" alt="C-W07 — Publicar confirmación" width="220"/><br/><sub><b>C-W07</b> · Publicar · Paso 4 (confirmación)</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w08-detalle-lote.png" alt="C-W08 — Detalle de lote" width="220"/><br/><sub><b>C-W08</b> · Detalle de Mi Lote</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w09-notificacion.png" alt="C-W09 — Notificación" width="220"/><br/><sub><b>C-W09</b> · Notificación de reserva</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w10-confirmar-entrega.png" alt="C-W10 — Confirmar entrega" width="220"/><br/><sub><b>C-W10</b> · Confirmar entrega</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w11-cancelar-lote.png" alt="C-W11 — Cancelar lote" width="220"/><br/><sub><b>C-W11</b> · Cancelar lote (modal)</sub></td>
+    <td></td>
+  </tr>
+</table>
+
+**Detalle de cada vista — App Confeccionista**
+
+- **C-W01 — Splash / Acceso.** Pantalla de entrada con marca centrada (placeholder de logo en outline circular y wordmark "GamarraLoop") y dos CTAs de bifurcación que marcan el rol del usuario antes de cualquier otro paso. La jerarquía visual aplica el patrón de lectura central y respeta los tamaños táctiles de 44 px para los botones, en línea con los lineamientos de diseño inclusivo (TS05).
+- **C-W02 — Onboarding (rol + datos).** Implementa la US04 mediante un alta sin contraseñas: selector de rol con tarjetas grandes (la opción Confeccionista queda destacada con outline y fondo de relleno suave, aplicando el principio de retroalimentación visual mediante variación tonal) y un formulario mínimo de tres campos (nombre, contacto y stand/galería opcional). La etiqueta "Paso 1 de 1" comunica explícitamente la longitud del flujo, reduciendo la ansiedad de onboarding observada en los entrevistados con baja exposición digital (Cap. II).
+- **C-W03 — Home / Mis lotes.** Inicio de la aplicación una vez autenticado. Aplica el patrón Z descrito en 6.1.2: saludo personalizado en la esquina superior izquierda, indicadores agregados (Disponibles / Reservados) como cards adyacentes y lista cronológica de lotes recientes con thumbnail, chip de estado (relleno u outline según corresponda) y label textual. El FAB "Publicar" se ubica en la esquina inferior derecha siguiendo la convención de Material Design para acciones primarias persistentes. La bottom navigation expone las cinco secciones definidas en 6.2.4 y resalta el ítem activo (Inicio) con un cuadro relleno frente a los demás en outline, cumpliendo el principio de orientación espacial — la diferenciación cromática se aplicará en los Mock-ups.
+- **C-W04 — Publicar · Paso 1 (foto).** Materializa la US05. Viewfinder a pantalla completa con marcas de encuadre en las cuatro esquinas, indicador de paso (1/4) en la app bar y micro-tip al pie sobre cómo mejorar la calidad de imagen para la clasificación automática. El botón de captura sigue la convención de cámara nativa (círculo concéntrico) para reducir la curva de aprendizaje.
+- **C-W05 — Publicar · Paso 2 (clasificación IA).** Visualiza la US10 + US11. Resultado del servicio de Cloud Vision presentado en una card destacada con borde reforzado: material detectado, barra de confianza, chips de etiquetas sugeridas y dos acciones (aceptar la clasificación o corregir manualmente). La barra de confianza usa relleno oscuro sobre gris claro y porcentaje numérico, evitando depender solo del relleno como portador de información.
+- **C-W06 — Publicar · Paso 3 (ubicación).** Implementa US06 y US07. Mapa esquemático con pin destacado en la posición actual del GPS, card con coordenadas y dirección legible (Gamarra, La Victoria), y un campo libre opcional para agregar una referencia textual del stand o galería. La separación clara entre dato automático (GPS) y dato manual (referencia) cumple el principio de proximidad y de divulgación progresiva.
+- **C-W07 — Publicar · Paso 4 (confirmación).** Pantalla de revisión previa a la publicación. Resumen tabular de los cinco datos clave del lote (material, etiquetas, peso, ubicación, GPS) separados por divisores horizontales, aplicando proximidad y simetría. El CTA primario "Publicar lote" se diferencia visualmente del secundario "Volver atrás" mediante variante de relleno (sólido vs. outline) y peso tipográfico, alineado con la jerarquía de componentes definida en 6.1.
+- **C-W08 — Detalle de Mi Lote.** Vista de lectura de un lote ya publicado. El estado actual se muestra como chip (relleno u outline según corresponda) con etiqueta textual en la parte superior del bloque de contenido; el ciclo de vida del lote (publicación, reserva, entrega) se documenta en un mini-historial vertical bajo la card del mapa, anticipando trazabilidad y rendición de cuentas para el Confeccionista. Esta misma vista actúa como destino del wireflow de reserva (UG-C03) y del de cancelación (UG-C04).
+- **C-W09 — Notificación de reserva.** Implementa la US16. Notificación push superpuesta sobre la home con overlay semitransparente: encabezado de marca, timestamp relativo, headline con el mensaje principal y dos acciones contextuales ("Ver lote" / "Descartar"). El uso de modal sobre overlay obscurecido prioriza el evento sin abandonar el contexto actual.
+- **C-W10 — Confirmar entrega.** Implementa la US09. Vista de confirmación con foto del lote, identidad y contacto del artesano (recuperados del registro de la reserva), aviso explícito de irreversibilidad y checkbox de confirmación manual antes de habilitar el CTA primario. Este patrón de doble paso (checkbox + botón) sigue el principio de prevención de errores definido en Nielsen y refuerza el carácter consequencial de la acción.
+- **C-W11 — Cancelar lote (modal).** Implementa la US08. Modal centrado con icono de alerta, mensaje en formato pregunta-respuesta y dos acciones jerarquizadas (CTA primario destructivo + CTA secundario para volver). El overlay obscurecido detrás del modal cumple la pauta WCAG 2.4.7 (foco visible) al concentrar la atención en la decisión activa.
+
+**App Artesano — 8 wireframes**
+
+La App Artesano cubre el ciclo de demanda: alta del usuario, exploración de lotes publicados (con orden por proximidad), revisión de detalle, reserva y confirmación de recepción física. La navegación inferior agrupa tres secciones (Explorar, Mis reservas, Perfil) — menos densas que en la App Confeccionista porque el flujo del Artesano es predominantemente lineal y de consumo, mientras que el del Confeccionista es de creación y gestión.
+
+<table>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w01-splash.png" alt="A-W01 — Splash" width="220"/><br/><sub><b>A-W01</b> · Splash / Acceso</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w02-onboarding.png" alt="A-W02 — Onboarding" width="220"/><br/><sub><b>A-W02</b> · Onboarding (rol + datos)</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w03-home.png" alt="A-W03 — Home" width="220"/><br/><sub><b>A-W03</b> · Home / Explorar</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w04-lista-lotes.png" alt="A-W04 — Lista de lotes" width="220"/><br/><sub><b>A-W04</b> · Lista de lotes disponibles</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w05-detalle-lote.png" alt="A-W05 — Detalle de lote" width="220"/><br/><sub><b>A-W05</b> · Detalle de lote</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w06-reserva-confirmada.png" alt="A-W06 — Reserva confirmada" width="220"/><br/><sub><b>A-W06</b> · Reserva confirmada</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w07-mis-reservas.png" alt="A-W07 — Mis reservas" width="220"/><br/><sub><b>A-W07</b> · Mis reservas</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w08-confirmar-recepcion.png" alt="A-W08 — Confirmar recepción" width="220"/><br/><sub><b>A-W08</b> · Confirmar recepción</sub></td>
+    <td></td>
+  </tr>
+</table>
+
+**Detalle de cada vista — App Artesano**
+
+- **A-W01 — Splash / Acceso.** Espejo simétrico del C-W01: misma identidad de marca, mismo patrón de dos CTAs, pero con jerarquía invertida (la opción Artesano queda como CTA primario). Mantener la simetría entre ambas apps refuerza la consistencia conceptual definida en 6.2 y permite que un usuario que cambie de rol en el futuro reconozca la estructura inmediatamente.
+- **A-W02 — Onboarding (rol + datos).** Mismo patrón de alta que el de Confeccionista (US04) con la selección de rol invertida — la card "Artesano / Recolector" queda destacada y la card "Confeccionista" queda en estado outline. El campo opcional de "Tipo de trabajo" sustituye al de "Stand/Galería", reflejando la diferencia operativa entre ambos perfiles.
+- **A-W03 — Home / Explorar.** Implementa la entrada a la US12. La home del Artesano prioriza la exploración: saludo, contador de lotes disponibles cercanos, fila horizontal de filtros rápidos (Más cerca / Más reciente / Algodón / Mezclilla) que reflejan el Searching System definido en 6.2.2, y vista en cards verticales de los lotes priorizados por proximidad. El acceso al mapa se ofrece como link contextual ("Ver mapa") para no fragmentar la home con un toggle dominante.
+- **A-W04 — Lista de lotes disponibles.** Implementa la US12 en su vista completa. Encabezado con criterio de orden activo, contador de resultados y atajo a filtros aplicados (2 activos). Las cards aumentan en densidad respecto a la home (incluyen thumbnail más grande, dirección, distancia y estado) para soportar el modo de comparación que el Artesano usa al elegir entre varios lotes simultáneamente.
+- **A-W05 — Detalle de lote.** Implementa la US13. Hero superior con galería de fotos (indicador de paginación por puntos), chip de estado, encabezado con material y peso, card destacada con la clasificación de IA (etiquetas y porcentaje de confianza), punto de recojo con distancia explícita y mapa esquemático. El CTA "Reservar este lote" es el botón primario y se acompaña de un disclosure secundario ("Tenés 48 h para retirarlo") que comunica la regla de negocio de la US21.
+- **A-W06 — Reserva confirmada.** Implementa la confirmación visual de la US14. Pantalla de éxito con check grande sobre fondo de relleno suave, mensaje afirmativo y recap del lote reservado con el deadline de retiro en peso tipográfico fuerte (énfasis sobre la regla temporal). Las dos acciones secundarias permiten ir al mapa o volver a explorar — el patrón asume que el Artesano probablemente quiera continuar comparando otros lotes en la misma sesión.
+- **A-W07 — Mis reservas.** Aplica la US14 + US15 en la vista de gestión. Tabs internos para separar "Activas" e "Históricas" (cumple Labeling Systems del 6.2). La reserva activa se renderiza en card destacada con borde reforzado, chip de estado outline "Reservado", deadline visible con peso tipográfico fuerte (sirve de alarma cuando queda poco tiempo) y CTA primario "Confirmar recepción" en la propia card. Las reservas históricas usan cards más compactas y chips de cierre (Completado / Vencido).
+- **A-W08 — Confirmar recepción.** Espejo del C-W10 para el Artesano. Implementa la US15: foto, identidad del Confeccionista, aviso explícito de irreversibilidad, checkbox de confirmación manual y CTA primario "Marcar como recibido". La acción de escape "Aún no llegué" se diferencia tipográficamente y abandona el flujo sin penalización.
+
+**Aplicación de los principios y de la arquitectura de información**
+
+En todas las vistas anteriores se aplican de forma consistente los principios definidos en 6.1 y 6.2, sin recurrir aún a la paleta de marca:
+
+- **Jerarquía**: headings de 18–22 px en negro, body de 12–14 px, captions de 10–11 px en gris, en línea con la jerarquía de cuatro niveles que se cromatizará en los Mock-ups (TB2).
+- **Contraste**: combinaciones de gris oscuro y negro sobre blanco cumplen contraste mínimo WCAG AA (≥ 4.5:1) en headings y body, asegurando legibilidad incluso en condiciones de baja visión y bajo brillo de pantalla.
+- **Proximidad y simetría**: bloques relacionados se agrupan en cards con espaciado interno constante de 12 px y separación inter-card de 16 px; los formularios alinean labels con sus inputs y agrupan los campos del mismo dominio.
+- **Consistencia**: los mismos componentes (app bar, bottom navigation, chips de estado, cards con esquinas a 8–10 px, botones tipo pill de 44 px) se reutilizan en las dos aplicaciones y comparten convenciones de layout con el Landing Page (6.3).
+- **Diseño inclusivo**: áreas tácticas ≥ 44 px en todos los CTAs, foco visible en componentes interactivos, refuerzo textual de cualquier información transmitida por variación tonal (estados, validaciones, deadlines) y placeholders explícitos para contenidos visuales (`[ foto del lote ]`, `[ Mapa ]`) que evidencian dónde irán los recursos finales.
+- **Integración de IA**: las salidas de Google Cloud Vision (US10 + US11 + US17) se presentan con contexto explícito (porcentaje de confianza, etiquetas sugeridas y posibilidad de corrección manual), respetando los Quality Attribute Scenarios definidos en 4.1 sobre confiabilidad y trazabilidad de la clasificación.
+- **Reservas para Mock-ups (TB2)**: paleta de marca beige / verde oscuro / negro, colores de estado (verde Disponible / amarillo Reservado / rojo no disponible), iconografía coherente con el logotipo y fotografías reales del contexto Gamarra se aplicarán sobre esta misma estructura cuando se entreguen los Applications Mock-ups en el siguiente hito.
+
+<a name="6.4.2"></a>
+### 6.4.2. Applications Wireflow Diagrams.
+
+Los wireflow diagrams documentan cómo los wireframes de 6.4.1 se encadenan para resolver cada User Goal de las dos aplicaciones. Siguiendo la guía del enunciado, se elabora un wireflow por cada User Goal considerando los User Persona del 2.3.1, y cada flujo refleja explícitamente cómo un cambio de pantalla representa el resultado de una interacción concreta del usuario. Los User Goals se derivan agregando las User Stories del Capítulo III por persona y por intención, lo que garantiza trazabilidad total entre el espacio del problema (US) y el espacio de la solución (wireflows).
+
+Se documentan 7 wireflows en total: 4 para la App Confeccionista (UG-C01 a UG-C04) y 3 para la App Artesano (UG-A01 a UG-A03).
+
+**Wireflows — App Confeccionista**
+
+- **UG-C01 — "Como Confeccionista, quiero registrarme por primera vez en la app."** *User Stories:* US04. *Flujo:* C-W01 → C-W02 → C-W03. Desde la pantalla de Splash, el usuario toca "Ingresar como Confeccionista", lo que abre el formulario de alta simplificada de C-W02. Al completar nombre, contacto y stand opcional, el sistema da de alta el perfil sin contraseña (en línea con TS05) y lleva al Home con cero lotes y mensaje guiado.
+
+![Wireflow UG-C01](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-c01-registro.png)
+
+- **UG-C02 — "Como Confeccionista, quiero publicar un lote de tela."** *User Stories:* US05, US06, US07, US10, US11. *Flujo:* C-W03 → C-W04 → C-W05 → C-W06 → C-W07 → C-W08. El usuario inicia el flujo desde el Home mediante el FAB "Publicar". El paso 1 (C-W04) captura la foto (US05) y la envía al servicio de IA (US10). El paso 2 (C-W05) muestra los resultados de la clasificación (US11), que el Confeccionista puede aceptar o corregir manualmente. El paso 3 (C-W06) asigna la ubicación automática por GPS (US06) y permite agregar una referencia textual (US07). El paso 4 (C-W07) presenta el resumen completo del lote y, al confirmar, el sistema crea el lote en estado "Disponible" y lleva a la vista de detalle (C-W08) ya como lote publicado.
+
+![Wireflow UG-C02](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-c02-publicar-lote.png)
+
+- **UG-C03 — "Como Confeccionista, quiero recibir la reserva y confirmar la entrega."** *User Stories:* US16, US09. *Flujo:* C-W09 → C-W08 (estado Reservado) → C-W10 → C-W08 (estado Entregado). El flujo se dispara cuando un artesano reserva el lote: la notificación push (C-W09, US16) llega al dispositivo del Confeccionista. Al tocar "Ver lote", abre el detalle (C-W08), ahora con el chip de estado en amarillo ("Reservado") y el botón de cancelación reemplazado por "Confirmar entrega". Al avanzar a C-W10, el usuario revisa los datos del artesano, confirma manualmente que entregó físicamente el lote (checkbox + CTA) y el sistema actualiza el estado a "Entregado" (US09), reflejado al volver a C-W08.
+
+![Wireflow UG-C03](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-c03-reserva-entrega.png)
+
+- **UG-C04 — "Como Confeccionista, quiero cancelar un lote que ya no está disponible."** *User Stories:* US08. *Flujo:* C-W03 → C-W08 → C-W11 → C-W08 (estado Cancelado). Desde el Home (C-W03), el usuario toca un lote en estado "Disponible" y entra a su detalle (C-W08). El botón secundario "Cancelar publicación" abre un modal de confirmación (C-W11) con mensaje de irreversibilidad. Al confirmar, el sistema cambia el estado del lote a "Cancelado" (US08) y lo oculta de las consultas públicas, manteniéndolo visible solo en el historial del Confeccionista.
+
+![Wireflow UG-C04](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-c04-cancelar-lote.png)
+
+**Wireflows — App Artesano**
+
+- **UG-A01 — "Como Artesano, quiero registrarme por primera vez en la app."** *User Stories:* US04. *Flujo:* A-W01 → A-W02 → A-W03. Espejo del UG-C01: desde el Splash, el usuario toca "Ingresar como Artesano", completa el alta sin contraseña en A-W02 y aterriza directamente en la vista Explorar (A-W03), que ya muestra los lotes disponibles cercanos. Esta aterrizaje sin pasos intermedios prioriza el time-to-value para un perfil cuyo principal objetivo es encontrar materiales.
+
+![Wireflow UG-A01](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-a01-registro.png)
+
+- **UG-A02 — "Como Artesano, quiero explorar lotes disponibles y revisar su detalle."** *User Stories:* US12, US13. *Flujo:* A-W03 → A-W04 → A-W05. Desde el Home (A-W03), donde se muestran los tres lotes más cercanos como teaser, el usuario accede al listado completo en A-W04, donde puede filtrar y ordenar (US12). Al tocar una card específica entra al detalle del lote (A-W05, US13), que expone foto ampliada, clasificación de IA, ubicación exacta con distancia desde la posición actual y CTA primario para reservar.
+
+![Wireflow UG-A02](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-a02-explorar-detalle.png)
+
+- **UG-A03 — "Como Artesano, quiero reservar un lote y confirmar su recepción."** *User Stories:* US14, US15. *Flujo:* A-W05 → A-W06 → A-W07 → A-W08. Desde el detalle del lote (A-W05), el usuario toca "Reservar este lote" (US14). El sistema ejecuta la transición transaccional (US19 en backend) y muestra la pantalla de confirmación (A-W06) con el recap del lote, el deadline de retiro y el aviso al Confeccionista emitido en paralelo (US16). Posteriormente, desde la vista "Mis reservas" (A-W07), el Artesano accede a la card de la reserva activa y toca "Confirmar recepción" (A-W08), donde confirma manualmente la recepción física (US15) tras llegar al taller. El sistema marca el lote como completado en su histórico.
+
+![Wireflow UG-A03](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-a03-reservar-recibir.png)
+
+**Trazabilidad consolidada**
+
+La siguiente tabla consolida la trazabilidad de cada User Goal con sus User Stories, su User Persona destinatario y los Bounded Contexts del Capítulo IV a los que pertenecen las acciones soportadas:
+
+| User Goal | User Persona | User Stories | Bounded Context (Cap. IV) |
+| --- | --- | --- | --- |
+| UG-C01 — Registrarme | Confeccionista | US04 | User Profile Management |
+| UG-C02 — Publicar lote | Confeccionista | US05, US06, US07, US10, US11 | Lot Publication Management + Textile Classification |
+| UG-C03 — Reserva y entrega | Confeccionista | US16, US09 | Notification Management + Pickup and Delivery |
+| UG-C04 — Cancelar lote | Confeccionista | US08 | Lot Publication Management |
+| UG-A01 — Registrarme | Artesano | US04 | User Profile Management |
+| UG-A02 — Explorar y detalle | Artesano | US12, US13 | Reservation Management |
+| UG-A03 — Reservar y recibir | Artesano | US14, US15 | Reservation Management + Pickup and Delivery |
+
+Esta trazabilidad garantiza que cada User Goal cierra el bucle entre el espacio del problema (User Personas y User Stories) y el espacio de la solución (wireframes, bounded contexts y servicios documentados en los Capítulos IV y V).
+
+
 <a name="7."></a>
 
 
 
+<a name="8."></a>
 # Conclusiones
 
 <a name="9."></a>
