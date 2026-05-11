@@ -1805,7 +1805,11 @@ El diagrama muestra los siguientes componentes y sus interacciones:
 
 El siguiente diagrama de clases UML detalla las clases, interfaces, enumeraciones y sus relaciones para la capa de dominio del Bounded Context *Textile Classification*. Incluye atributos, métodos y sus modificadores de acceso (`+` público, `-` privado, `#` protegido). El diagrama fue elaborado en **LucidChart**.
 
+<p align="center">
+  <img src="./assets/TC_ClassDiagram.png" alt="Domain Layer Class Diagram — Textile Classification BC">
+</p>
 
+> **URL del diagrama en LucidChart:** [Textile Classification - Domain Layer Class Diagram](https://lucid.app/lucidchart/40532e9e-fa09-4910-96bb-9af9bdcd916d/edit?view_items=IxdWNX_8koxV&page=0_0&invitationId=inv_1bbae2c5-8451-4cbc-bbc2-3dcaa60090ae)
 
 **Descripción de relaciones principales:**
 
