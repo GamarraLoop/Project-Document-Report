@@ -201,20 +201,6 @@ El uso de iconos, colores e indicadores visuales refuerza la navegación, facili
 Asimismo, la integración de funcionalidades como geolocalización y clasificación automática de materiales se presenta de forma transparente dentro de la navegación, asegurando que el usuario acceda a información relevante en el momento adecuado.
 En conjunto, el sistema de navegación está diseñado para ofrecer una experiencia fluida, rápida y sin fricciones, adaptándose a las necesidades de los distintos tipos de usuarios dentro del ecosistema de reutilización textil.
 
-<a name="6.3."></a>
-## 6.3. Landing Page UI Design. 
-<a name="6.3.1."></a>
-### 6.3.1. Landing Page Wireframe. 
-<a name="6.3.2."></a>
-### 6.3.2. Landing Page Mock-up. 
-<a name="6.4."></a>
-## 6.4. Applications UX/UI Design. 
-<a name="6.4.1"></a>
-### 6.4.1. Applications Wireframes. 
-<a name="6.4.2"></a>
-### 6.4.2. Applications Wireflow Diagrams.
-
-
 <a name="7."></a>
 
 # Conclusiones
