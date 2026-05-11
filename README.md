@@ -1695,7 +1695,6 @@ El Bounded Context **Textile Classification** es el núcleo diferenciador de la 
 
 Las clases del contexto se distribuyen en cuatro capas siguiendo el patrón **Hexagonal Port + Adapter** adoptado en la decisión arquitectónica **D07** (sección 4.1.4.). A continuación, se detalla el diccionario completo de clases para cada capa.
 
----
 
 <a name="5.1.1."></a>
 
@@ -1718,7 +1717,6 @@ La capa de dominio contiene la lógica de negocio pura del proceso de clasificac
 | **ClassificationCompletedEvent** | Domain Event | Evento publicado cuando la clasificación finaliza exitosamente. Lo consume el Bounded Context de Publicación de Lotes. | `+ requestId: ClassificationRequestId` <br> `+ lotId: LotId` <br> `+ labels: List<TextileLabel>` <br> `+ occurredAt: LocalDateTime` | — |
 | **ClassificationFailedEvent** | Domain Event | Evento publicado cuando la clasificación falla después de agotar los reintentos. Permite al Bounded Context de Publicación mantener el lote en estado `PENDING_CLASSIFICATION`. | `+ requestId: ClassificationRequestId` <br> `+ lotId: LotId` <br> `+ reason: String` <br> `+ occurredAt: LocalDateTime` | — |
 
----
 
 <a name="5.1.2."></a>
 
@@ -1731,7 +1729,6 @@ La capa de interfaz expone el Bounded Context hacia el exterior: tanto hacia los
 | **ClassificationController** | REST Controller | Expone los endpoints HTTP para que la API REST reciba solicitudes de clasificación y consulte su estado. Es consumido por la aplicación móvil a través del API Gateway interno. | `POST /api/v1/classifications` — Inicia una solicitud de clasificación. <br> `GET /api/v1/classifications/{requestId}` — Consulta el estado y las etiquetas de una solicitud. <br> `GET /api/v1/classifications/lot/{lotId}` — Obtiene la clasificación asociada a un lote específico. | **Request (POST):** `{ lotId: UUID, imageUrl: String }` <br> **Response (GET):** `{ requestId, lotId, status, labels: [{name, confidence, category}], processedAt }` |
 | **LotPublishedEventConsumer** | Event Consumer (Pub/Sub) | Suscriptor del tópico `lot.published` de Google Cloud Pub/Sub. Cuando un nuevo lote se publica en el Bounded Context de Publicación, este consumer lanza automáticamente el proceso de clasificación de la imagen adjunta. | Suscripción: `lot-published-subscription` en el tópico `lot.published` | Mensaje esperado: `{ lotId: UUID, imageUrl: String, publishedAt: String }` |
 
----
 
 <a name="5.1.3."></a>
 
@@ -1748,7 +1745,6 @@ La capa de aplicación orquesta los flujos de negocio. No contiene lógica de do
 | **ProcessClassificationCommand** | Command | DTO de comando que ordena procesar una clasificación pendiente a partir de su ID. | — | — |
 | **ClassificationEventPublisher** | Application Service | Servicio de aplicación que abstrae la publicación de eventos de dominio hacia el bus de mensajes (Pub/Sub), desacoplando los handlers del mecanismo de transporte. | — | `IMessageBrokerPort.publish()` |
 
----
 
 <a name="5.1.4."></a>
 
@@ -1764,36 +1760,13 @@ La capa de infraestructura contiene las implementaciones concretas de los puerto
 | **ClassificationRequestEntity** | JPA Entity | Entidad JPA que mapea la tabla `classification_requests`. Realiza la traducción bidireccional entre el agregado de dominio y el modelo de persistencia, aislando así el dominio de los detalles de la base de datos. | JPA / Hibernate | Incluye conversores (`@Converter`) para los Value Objects (`ClassificationRequestId`, `LotId`, `ImageUrl`) y para el campo `labels` serializado como `jsonb`. |
 | **RawLabel** | Infrastructure DTO | DTO que representa la etiqueta cruda devuelta por Cloud Vision antes de ser transformada por el Domain Service. No debe salir de la capa de infraestructura. | — | Campos: `description: String`, `score: float`, `topicality: float`. |
 
----
 
 <a name="5.1.6."></a>
 
 ### 5.1.6. Bounded Context Software Architecture Component Level Diagrams
 
-En este diagrama de componentes (nivel 3 del C4 Model) se descompone el container **API REST** en los componentes internos que pertenecen exclusivamente al Bounded Context *Textile Classification*, mostrando sus responsabilidades, relaciones y tecnologías.
 
-El diagrama fue elaborado en **Structurizr** siguiendo la convención del workspace `c4/workspace.dsl` del repositorio.
 
-<p align="center">
-  <img src="./assets/TC_ComponentDiagram.png" width="900" alt="Component Level Diagram — Textile Classification BC">
-</p>
-
-> **URL del diagrama en Structurizr:** [Reemplazar con el enlace público del workspace en Structurizr]
-
-El diagrama muestra los siguientes componentes y sus interacciones:
-
-| Componente | Tecnología | Responsabilidad | Interactúa con |
-| :--- | :--- | :--- | :--- |
-| `ClassificationController` | Spring MVC `@RestController` | Recibe peticiones HTTP REST y delega al Application Layer | `RequestClassificationCommandHandler`, `IClassificationRequestRepository` |
-| `LotPublishedEventConsumer` | Spring `@Component` + Pub/Sub Listener | Suscribe el tópico `lot.published` y dispara el flujo de clasificación | `HandleLotPublishedEventHandler` |
-| `RequestClassificationCommandHandler` | Spring `@Service` | Orquesta la creación y persistencia de la solicitud | `IClassificationRequestRepository`, `ClassificationEventPublisher` |
-| `ProcessClassificationCommandHandler` | Spring `@Service` | Orquesta la llamada a IA y la actualización del agregado | `IVisionApiAdapter`, `ClassificationDomainService`, `IClassificationRequestRepository` |
-| `ClassificationDomainService` | Plain Java | Filtra, categoriza y evalúa etiquetas crudas | (ninguna dependencia externa) |
-| `JpaClassificationRequestRepository` | Spring Data JPA | Persiste y recupera el agregado de dominio | Supabase Postgres |
-| `CloudVisionAdapter` | Spring WebClient | Invoca Google Cloud Vision con reintentos | Google Cloud Vision API |
-| `PubSubMessageBrokerAdapter` | Pub/Sub Java Client | Publica eventos de dominio en Pub/Sub | Google Cloud Pub/Sub |
-
----
 
 <a name="5.1.7."></a>
 
@@ -1825,7 +1798,6 @@ El siguiente diagrama de clases UML detalla las clases, interfaces, enumeracione
 | `IClassificationRequestRepository` ← `ClassificationRequest` | Realización | — | El repositorio gestiona la persistencia del agregado. |
 | `IVisionApiAdapter` → `RawLabel` | Dependencia | 1..* | El puerto devuelve etiquetas crudas de la IA. |
 
----
 
 <a name="5.1.7.2."></a>
 
@@ -1837,7 +1809,7 @@ El siguiente diagrama de base de datos detalla los objetos de persistencia neces
   <img src="./assets/TC_DatabaseDiagram.png" width="900" alt="Database Design Diagram — Textile Classification BC">
 </p>
 
-> **URL del diagrama en LucidChart / Vertabelo:** [Reemplazar con el enlace público]
+> **URL del diagrama en LucidChart / Vertabelo:** [Textile Classification - Database Design Diagram](https://lucid.app/lucidchart/40532e9e-fa09-4910-96bb-9af9bdcd916d/edit?view_items=IxdWNX_8koxV&page=0_0&invitationId=inv_1bbae2c5-8451-4cbc-bbc2-3dcaa60090ae)
 
 **Descripción de la tabla principal:**
 
