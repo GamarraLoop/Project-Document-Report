@@ -23,13 +23,12 @@ El nombre GamarraLoop surge de la combinación de dos conceptos clave. Por un la
 El nombre transmite la idea de cerrar el ciclo de vida de los textiles, evitando que los residuos se conviertan en desecho y, en su lugar, se reintegren al sistema productivo. Además, el uso del término en inglés le da un enfoque moderno, tecnológico y fácil de recordar, alineado con una solución digital innovadora.
 A continuación, se presenta el logotipo de GamarraLoop, el cual refleja visualmente el concepto de reutilización textil mediante elementos como hilo, aguja y formas circulares que representan el flujo continuo de materiales dentro de la plataforma.
 
-<img src="./assets/logoGL.jpeg" alt="Logo GamarraLoop" width="591">
+<img src="./assets/logoGL.jpeg" alt="Logo GamarraLoop" width="601">
 
 **Typography**
 
-La tipografía en GamarraLoop cumple un papel importante en la claridad de la información y en la experiencia de uso dentro de la aplicación. Se ha priorizado el uso de fuentes modernas y altamente legibles, considerando que los usuarios necesitan interactuar de forma rápida y sencilla mientras gestionan o buscan materiales textiles.
-La jerarquía tipográfica se organiza en cuatro niveles principales: headings (encabezados) para destacar secciones clave, body (texto) para el contenido general, buttons (botones) para acciones relevantes dentro del sistema y links (enlaces) para la navegación. Esta estructura permite mantener un orden visual claro y consistente en toda la interfaz.
-Para el diseño se han seleccionado tipografías que equilibran estética y funcionalidad. Se emplea una fuente con mayor personalidad para títulos y elementos destacados, aportando identidad visual a la aplicación, mientras que para los textos se utiliza una tipografía limpia y fácil de leer, asegurando una correcta comprensión del contenido en distintos dispositivos. Además, el uso de colores como verde oscuro y negro en la tipografía refuerza la identidad del proyecto y mejora el contraste visual.
+La tipografía que seleccionamos en GamarraLoop es Playfair Display, esta cumple un papel importante en la claridad de la información y en la experiencia de uso dentro de la aplicación. Se ha priorizado el uso de fuentes modernas y altamente legibles, considerando que los usuarios necesitan interactuar de forma rápida y sencilla mientras gestionan o buscan materiales textiles.
+Para el diseño hemos seleccionado la tipografía ya que equilibra estética y funcionalidad. Se emplea una fuente con mayor personalidad para títulos y elementos destacados, aportando identidad visual a la aplicación, mientras que para los textos se utiliza una tipografía limpia y fácil de leer, asegurando una correcta comprensión del contenido en distintos dispositivos. Además, el uso de colores como verde oscuro y negro en la tipografía refuerza la identidad del proyecto y mejora el contraste visual.
 
 <img src="./assets/tipografia.png" alt="Typography" width="501">
 
