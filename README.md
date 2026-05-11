@@ -35,10 +35,10 @@ width=50%"/>
 
 El objetivo de esta sección es resumir las modificaciones relevantes que se realizan al informe durante el ciclo de vida del proyecto. Esta sección inicia en una página nueva y se incluye un cuadro con la siguiente estructura:
 
-| Versión |   Fecha    |             Autor             | Descripción de modificación                                                                                                                                                                       |
-| :-----: | :--------: | :---------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|   TB1   | 25/04/2026 | Huanaco Huayta, Elizabeth Lucero <br> Cuya Villegas, Rafael Alberto <br> Gongora Castillejos, Williams <br> Torres Garcia, Andrés Alberto <br> | Realización de: <br> - Capítulo I: Introducción<br>- Capítulo II: Requirements Elicitation & Analysis <br>- Capítulo III: Requirements specification <br>- Capítulo IV: Strategic-Level Software Design (Strategic-Level Attribute-Driven Design y Software Architecture) |
-|   TP    | 10/05/2026 | Huanaco Huayta, Elizabeth Lucero <br> Cuya Villegas, Rafael Alberto <br> Gongora Castillejos, Williams <br> Torres Garcia, Andrés Alberto | Realización de: <br> - Capítulo V: Tactical-Level Software DesignBounded Context: Textile Classification <br> - Capítulo V: Tactical-Level Software DesignBounded Context: Reservation Management <br> - Capítulo VI: Solution UX Design (6.1. Style Guidelines, 6.2. Information Architecture, 6.3. Landing Page UI Design: wireframes y mock-ups Desktop/Mobile, 6.4. Applications UX/UI Design) |
+| Versión |   Fecha    |                                                                     Autor                                                                      | Descripción de modificación                                                                                                                                                                                                                                                                                                                                                                        |
+| :-----: | :--------: | :--------------------------------------------------------------------------------------------------------------------------------------------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|   TB1   | 25/04/2026 | Huanaco Huayta, Elizabeth Lucero <br> Cuya Villegas, Rafael Alberto <br> Gongora Castillejos, Williams <br> Torres Garcia, Andrés Alberto <br> | Realización de: <br> - Capítulo I: Introducción<br>- Capítulo II: Requirements Elicitation & Analysis <br>- Capítulo III: Requirements specification <br>- Capítulo IV: Strategic-Level Software Design (Strategic-Level Attribute-Driven Design y Software Architecture)                                                                                                                          |
+|   TP    | 10/05/2026 |   Huanaco Huayta, Elizabeth Lucero <br> Cuya Villegas, Rafael Alberto <br> Gongora Castillejos, Williams <br> Torres Garcia, Andrés Alberto    | Realización de: <br> - Capítulo V: Tactical-Level Software DesignBounded Context: Textile Classification <br> - Capítulo V: Tactical-Level Software DesignBounded Context: Reservation Management <br> - Capítulo VI: Solution UX Design (6.1. Style Guidelines, 6.2. Information Architecture, 6.3. Landing Page UI Design: wireframes y mock-ups Desktop/Mobile, 6.4. Applications UX/UI Design) |
 
 # Project Report Collaboration Insights
 
@@ -52,12 +52,12 @@ URL del repositorio para el reporte del proyecto: https://github.com/GamarraLoop
 
 Para el desarrollo del informe perteneciente a la entrega TF, se dividió la implementación de secciones de la siguiente forma para cada integrante del equipo:
 
-| Integrante                       | Tareas Asignadas                                                            |
-| -------------------------------- | --------------------------------------------------------------------------- |
-| Cuya Villegas, Rafael Alberto    | Capítulo II: Requirements Elicitation & Analysis                            |
-| Gongora Castillejos, Williams    | Capítulo III: Requirements specification <br> Capítulo V: Tactical-Level Software Design (Bounded Context: Textile Classification)                                  |
-| Huanaco Huayta, Elizabeth Lucero | Capítulo I: Introducción <br> Capítulo V: Tactical-Level Software Design (Bounded Context: Reservation Management)                                                           |
-| Molina Falcon, Piero Leonardo    | Capítulo IV: Strategic-Level Domain-Driven Design                           |
+| Integrante                       | Tareas Asignadas                                                                                                                                                                                                                 |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cuya Villegas, Rafael Alberto    | Capítulo II: Requirements Elicitation & Analysis                                                                                                                                                                                 |
+| Gongora Castillejos, Williams    | Capítulo III: Requirements specification <br> Capítulo V: Tactical-Level Software Design (Bounded Context: Textile Classification)                                                                                               |
+| Huanaco Huayta, Elizabeth Lucero | Capítulo I: Introducción <br> Capítulo V: Tactical-Level Software Design (Bounded Context: Reservation Management)                                                                                                               |
+| Molina Falcon, Piero Leonardo    | Capítulo IV: Strategic-Level Domain-Driven Design                                                                                                                                                                                |
 | Torres Garcia, Andrés Alberto    | Capítulo IV: Strategic-Level Attribute-Driven Design, Software Architecture <br> Capítulo VI: Solution UX Design (6.1 Style Guidelines, 6.2 Information Architecture, 6.3 Landing Page UI Design, 6.4 Applications UX/UI Design) |
 
 **Github Collaboration Insights**
@@ -169,11 +169,10 @@ Los integrantes son:
 
 **ABET – EAC - Student Outcome 3:** Capacidad de comunicarse efectivamente con un rango de audiencias.
 
-| Criterio específico | Acciones realizadas | Conclusiones |
-| :--- | :--- | :--- |
-| Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br> **TB1:**  Compartí con el equipo diversas ideas orientadas a la creación y mejora de nuestro proyecto, comunicándolas de manera clara y objetiva. Asimismo, en el desarrollo del Capítulo II, estuve a cargo de la realización de entrevistas, lo que implicó interactuar con los participantes de forma estructurada y profesional, asegurando una comunicación efectiva con personas de diferentes niveles y contextos.<br><br>**Gongora Castillejos, Williams:**<br> **TB1:** Sustenté frente al equipo la viabilidad técnica y de negocio para la gestión de requerimientos (Capítulo III), argumentando la necesidad de aplicar IA y rediseñar el flujo logístico. <br><br> **TP:** Sustenté frente al equipo las decisiones de diseño arquitectónico a nivel táctico para el Capítulo V, argumentando la aplicación del patrón Hexagonal (Ports & Adapters) en el Bounded Context de Textile Classification. Expliqué cómo la separación en capas (Domain, Application, Infrastructure, Interface) garantiza la independencia de la lógica de negocio y cómo la integración asíncrona mediante Pub/Sub resuelve dependencias externas complejas, asegurando que la solución técnica sea escalable y fácil de comunicar al resto del equipo de desarrollo. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Sustenté frente al equipo la problemática, contexto y propuesta de solución del proyecto (Capítulo I), argumentando la necesidad de implementar una plataforma basada en IA para optimizar la gestión y reutilización de residuos textiles dentro de un enfoque de economía circular. <br><br> **TP:** Durante el desarrollo del bounded context Reservation Management de Gamarraloop, comuniqué de manera clara y objetiva las decisiones arquitectónicas y modelos de dominio aplicados en el sistema. Utilicé diagramas y documentación técnica para explicar conceptos de DDD a compañeros con distintos niveles de conocimiento. Además, sustenté las soluciones propuestas de forma ordenada y comprensible dentro del proyecto de ingeniería de software. <br><br> **Molina Falcon, Piero Leonardo** <br>**TB1:** Sustenté ante el equipo la definición de los bounded contexts y la delimitación del dominio en el Capítulo IV (Strategic Design), explicando la importancia del EventStorming, Candidate Context Discovery y Context Mapping para estructurar correctamente la arquitectura del sistema. Asimismo, argumenté cómo estas decisiones permitían mejorar la escalabilidad, mantenibilidad y claridad de los procesos de negocio dentro de GamarraLoop.<br><br> **Torres Garcia, Andrés Alberto** <br> **TB1:** Sustenté frente al equipo el proceso de Attribute-Driven Design aplicado al Capítulo IV, argumentando la priorización de los diez drivers arquitectónicos en dos ejes (importancia para stakeholders e impacto en complejidad técnica), la elección del estilo monolito modular frente a microservicios para una solución en fase de validación, y la distribución entre tres proveedores cloud heterogéneos (Google Cloud Platform, Supabase y GitHub Pages) priorizando free tiers permanentes sobre la uniformidad arquitectónica. Asimismo, expuse los trade-offs explícitos asumidos por la arquitectura: cold start de Cloud Run, optimistic vs pessimistic locking en la reserva concurrente, y clasificación asíncrona vs síncrona ante la dependencia con Google Cloud Vision. <br><br> **TP:** Sustenté frente al equipo las decisiones de diseño de experiencia para el Capítulo VI, argumentando cómo los Style Guidelines (paleta beige/verde oscuro/negro, tipografía y componentes Material Design) y la Arquitectura de Información (Labeling, Searching, SEO/Meta y Navigation Systems) se traducen en el Landing Page de GamarraLoop. Expliqué la racional detrás de las versiones Desktop y Mobile, la jerarquía de CTAs por segmento (Confeccionistas y recolectores) y la consistencia visual y de navegación entre el Landing Page y las Mobile Applications. Adicionalmente, sustenté la propuesta de Applications UX/UI Design (6.4), explicando por qué la solución se materializa en dos apps móviles nativas separadas (App Confeccionista y App Artesano) en línea con la Technical Story TS01, cómo cada wireflow se deriva agregando User Stories del Capítulo III por User Persona, y cómo la trazabilidad UG → US → Bounded Context cierra el bucle entre los Capítulos III, IV y VI. | **TB1:** El equipo logró alinear la visión del producto mediante debates estructurados, asegurando que todos los miembros comprendan a profundidad el modelo de negocio antes de iniciar el diseño arquitectónico. <br><br> **TP:** La discusión de las decisiones de UX permitió al equipo unificar criterios sobre la experiencia esperada por cada segmento objetivo, asegurando consistencia entre el Landing Page y las aplicaciones antes de avanzar con la implementación. |
-| Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br> **TB1:** Me encargué del desarrollo del Capítulo II, diseñando entrevistas y desarrollando herramientas como mapas de análisis con el objetivo de comprender mejor a los usuarios y sus necesidades. La información fue presentada de manera clara y objetiva.<br><br> **Gongora Castillejos, Williams:** <br> **TB1:** Redacté y estructuré el Capítulo III (Requirements Specification), elaborando diagramas estratégicos (Impact Mapping, To-Be Scenario) y estandarizando las User Stories en formato Gherkin. <br><br> **TP:** Redacté y estructuré la sección de Tactical-Level Software Design (Capítulo V) correspondiente al Bounded Context de Textile Classification. Documenté de manera objetiva y rigurosa la responsabilidad de cada capa arquitectónica (Domain, Interface, Application, Infrastructure) y elaboré los diagramas a nivel de componentes (C4 Model), clases y diseño de base de datos relacional. Utilicé herramientas especializadas como Structurizr, PlantUML y Vertabelo, garantizando que la documentación técnica mantenga una alta trazabilidad con los requerimientos previos y sea comprensible para el equipo técnico. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Redacté y estructuré el Capítulo I del proyecto, desarrollando el perfil de la startup, la problemática, los segmentos de usuarios y los artefactos de Lean UX, comunicando las ideas de manera clara, organizada y comprensible para públicos tanto técnicos como no técnicos. <br><br> **TP:** Durante el desarrollo del bounded context Reservation Management de Gamarraloop, elaboré documentación técnica y descripciones arquitectónicas de manera clara y estructurada. Desarrollé diagramas, modelos de dominio y decisiones de diseño utilizando un lenguaje comprensible para distintos niveles técnicos y jerárquicos. Esto permitió comunicar eficazmente los resultados y avances del proyecto de ingeniería de software. <br><br> **Molina Falcon, Piero Leonardo** <br>**TB1:** Redacté y estructuré el Capítulo IV (Strategic Design), desarrollando el EventStorming, Candidate Context Discovery, Domain Message Flows Modeling, Bounded Context Canvases y Context Mapping, organizando los bounded contexts del sistema y definiendo las relaciones estratégicas entre ellos para una arquitectura clara, escalable y alineada al dominio del negocio.<br><br> **Torres Garcia, Andrés Alberto** <br> **TB1:** Redacté y estructuré las secciones de Strategic-Level Attribute-Driven Design (4.1) y Software Architecture (4.3) del Capítulo IV. Documenté el Architectural Drivers Backlog con diez drivers priorizados (D01–D10), los siete escenarios de atributos de calidad en formato SEI de seis dimensiones (QA01–QA07), las seis Technical Stories que actúan como constraints (TS01–TS06), la matriz de Architectural Design Decisions con la evaluación de dos a tres patrones candidatos por driver con sus pros y contras, y los Quality Attribute Scenario Refinements con Business Goals, Questions e Issues asociados. Adicionalmente, modelé las cuatro vistas del C4 Model (System Landscape, Context, Container y Deployment) en Structurizr y las acompañé de tablas con trazabilidad explícita a los drivers, escenarios de calidad y User Stories del Capítulo III. <br><br> **TP:** Redacté y estructuré el Capítulo VI: Solution UX Design. Documenté en 6.1 los Style Guidelines de marca, tipografía, paleta de colores y componentes Material Design; en 6.2 la Arquitectura de Información (Labeling Systems, Searching Systems, SEO/Meta Tags y Navigation Systems); en 6.3 el Landing Page UI Design con wireframes y mock-ups para Desktop Web Browser y Mobile Web Browser elaborados en Figma, explicando la aplicación de principios de diseño visual, diseño inclusivo y arquitectura de información en cada vista; y en 6.4 el Applications UX/UI Design completo, con 19 wireframes móviles de baja fidelidad (11 para App Confeccionista y 8 para App Artesano) y 7 wireflow diagrams (UG-C01 a UG-C04 y UG-A01 a UG-A03), todos elaborados en Figma a 375×812 con el mismo Design System, y acompañados de una tabla de trazabilidad explícita que vincula cada User Goal con sus User Stories del Capítulo III y los Bounded Contexts del Capítulo IV. | **TB1:** La documentación rigurosa y estandarizada ha demostrado ser fundamental. Redactar requerimientos sin ambigüedades ni detalles de UI garantiza una base sólida y comprensible para el posterior diseño de software. <br><br> **TP:** Documentar la propuesta de UX por capa (Style Guidelines → Information Architecture → UI Design) demostró ser efectivo para mantener trazabilidad entre las decisiones de marca, la arquitectura de información y los artefactos visuales finales, facilitando la comprensión del informe por audiencias técnicas y no técnicas. |
-
+| Criterio específico                                                                                                                                                                   | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Conclusiones                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.    | **Cuya Villegas, Rafael Alberto** <br> **TB1:** Compartí con el equipo diversas ideas orientadas a la creación y mejora de nuestro proyecto, comunicándolas de manera clara y objetiva. Asimismo, en el desarrollo del Capítulo II, estuve a cargo de la realización de entrevistas, lo que implicó interactuar con los participantes de forma estructurada y profesional, asegurando una comunicación efectiva con personas de diferentes niveles y contextos.<br><br>**Gongora Castillejos, Williams:**<br> **TB1:** Sustenté frente al equipo la viabilidad técnica y de negocio para la gestión de requerimientos (Capítulo III), argumentando la necesidad de aplicar IA y rediseñar el flujo logístico. <br><br> **TP:** Sustenté frente al equipo las decisiones de diseño arquitectónico a nivel táctico para el Capítulo V, argumentando la aplicación del patrón Hexagonal (Ports & Adapters) en el Bounded Context de Textile Classification. Expliqué cómo la separación en capas (Domain, Application, Infrastructure, Interface) garantiza la independencia de la lógica de negocio y cómo la integración asíncrona mediante Pub/Sub resuelve dependencias externas complejas, asegurando que la solución técnica sea escalable y fácil de comunicar al resto del equipo de desarrollo. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Sustenté frente al equipo la problemática, contexto y propuesta de solución del proyecto (Capítulo I), argumentando la necesidad de implementar una plataforma basada en IA para optimizar la gestión y reutilización de residuos textiles dentro de un enfoque de economía circular. <br><br> **TP:** Durante el desarrollo del bounded context Reservation Management de Gamarraloop, comuniqué de manera clara y objetiva las decisiones arquitectónicas y modelos de dominio aplicados en el sistema. Utilicé diagramas y documentación técnica para explicar conceptos de DDD a compañeros con distintos niveles de conocimiento. Además, sustenté las soluciones propuestas de forma ordenada y comprensible dentro del proyecto de ingeniería de software. <br><br> **Molina Falcon, Piero Leonardo** <br>**TB1:** Sustenté ante el equipo la definición de los bounded contexts y la delimitación del dominio en el Capítulo IV (Strategic Design), explicando la importancia del EventStorming, Candidate Context Discovery y Context Mapping para estructurar correctamente la arquitectura del sistema. Asimismo, argumenté cómo estas decisiones permitían mejorar la escalabilidad, mantenibilidad y claridad de los procesos de negocio dentro de GamarraLoop.<br><br> **Torres Garcia, Andrés Alberto** <br> **TB1:** Sustenté frente al equipo el proceso de Attribute-Driven Design aplicado al Capítulo IV, argumentando la priorización de los diez drivers arquitectónicos en dos ejes (importancia para stakeholders e impacto en complejidad técnica), la elección del estilo monolito modular frente a microservicios para una solución en fase de validación, y la distribución entre tres proveedores cloud heterogéneos (Google Cloud Platform, Supabase y GitHub Pages) priorizando free tiers permanentes sobre la uniformidad arquitectónica. Asimismo, expuse los trade-offs explícitos asumidos por la arquitectura: cold start de Cloud Run, optimistic vs pessimistic locking en la reserva concurrente, y clasificación asíncrona vs síncrona ante la dependencia con Google Cloud Vision. <br><br> **TP:** Sustenté frente al equipo las decisiones de diseño de experiencia para el Capítulo VI, argumentando cómo los Style Guidelines (paleta beige/verde oscuro/negro, tipografía y componentes Material Design) y la Arquitectura de Información (Labeling, Searching, SEO/Meta y Navigation Systems) se traducen en el Landing Page de GamarraLoop. Expliqué la racional detrás de las versiones Desktop y Mobile, la jerarquía de CTAs por segmento (Confeccionistas y recolectores) y la consistencia visual y de navegación entre el Landing Page y las Mobile Applications. Adicionalmente, sustenté la propuesta de Applications UX/UI Design (6.4), explicando por qué la solución se materializa en dos apps móviles nativas separadas (App Confeccionista y App Artesano) en línea con la Technical Story TS01, cómo cada wireflow se deriva agregando User Stories del Capítulo III por User Persona, y cómo la trazabilidad UG → US → Bounded Context cierra el bucle entre los Capítulos III, IV y VI. | **TB1:** El equipo logró alinear la visión del producto mediante debates estructurados, asegurando que todos los miembros comprendan a profundidad el modelo de negocio antes de iniciar el diseño arquitectónico. <br><br> **TP:** La discusión de las decisiones de UX permitió al equipo unificar criterios sobre la experiencia esperada por cada segmento objetivo, asegurando consistencia entre el Landing Page y las aplicaciones antes de avanzar con la implementación.                                                                                             |
+| Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br> **TB1:** Me encargué del desarrollo del Capítulo II, diseñando entrevistas y desarrollando herramientas como mapas de análisis con el objetivo de comprender mejor a los usuarios y sus necesidades. La información fue presentada de manera clara y objetiva.<br><br> **Gongora Castillejos, Williams:** <br> **TB1:** Redacté y estructuré el Capítulo III (Requirements Specification), elaborando diagramas estratégicos (Impact Mapping, To-Be Scenario) y estandarizando las User Stories en formato Gherkin. <br><br> **TP:** Redacté y estructuré la sección de Tactical-Level Software Design (Capítulo V) correspondiente al Bounded Context de Textile Classification. Documenté de manera objetiva y rigurosa la responsabilidad de cada capa arquitectónica (Domain, Interface, Application, Infrastructure) y elaboré los diagramas a nivel de componentes (C4 Model), clases y diseño de base de datos relacional. Utilicé herramientas especializadas como Structurizr, PlantUML y Vertabelo, garantizando que la documentación técnica mantenga una alta trazabilidad con los requerimientos previos y sea comprensible para el equipo técnico. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Redacté y estructuré el Capítulo I del proyecto, desarrollando el perfil de la startup, la problemática, los segmentos de usuarios y los artefactos de Lean UX, comunicando las ideas de manera clara, organizada y comprensible para públicos tanto técnicos como no técnicos. <br><br> **TP:** Durante el desarrollo del bounded context Reservation Management de Gamarraloop, elaboré documentación técnica y descripciones arquitectónicas de manera clara y estructurada. Desarrollé diagramas, modelos de dominio y decisiones de diseño utilizando un lenguaje comprensible para distintos niveles técnicos y jerárquicos. Esto permitió comunicar eficazmente los resultados y avances del proyecto de ingeniería de software. <br><br> **Molina Falcon, Piero Leonardo** <br>**TB1:** Redacté y estructuré el Capítulo IV (Strategic Design), desarrollando el EventStorming, Candidate Context Discovery, Domain Message Flows Modeling, Bounded Context Canvases y Context Mapping, organizando los bounded contexts del sistema y definiendo las relaciones estratégicas entre ellos para una arquitectura clara, escalable y alineada al dominio del negocio.<br><br> **Torres Garcia, Andrés Alberto** <br> **TB1:** Redacté y estructuré las secciones de Strategic-Level Attribute-Driven Design (4.1) y Software Architecture (4.3) del Capítulo IV. Documenté el Architectural Drivers Backlog con diez drivers priorizados (D01–D10), los siete escenarios de atributos de calidad en formato SEI de seis dimensiones (QA01–QA07), las seis Technical Stories que actúan como constraints (TS01–TS06), la matriz de Architectural Design Decisions con la evaluación de dos a tres patrones candidatos por driver con sus pros y contras, y los Quality Attribute Scenario Refinements con Business Goals, Questions e Issues asociados. Adicionalmente, modelé las cuatro vistas del C4 Model (System Landscape, Context, Container y Deployment) en Structurizr y las acompañé de tablas con trazabilidad explícita a los drivers, escenarios de calidad y User Stories del Capítulo III. <br><br> **TP:** Redacté y estructuré el Capítulo VI: Solution UX Design. Documenté en 6.1 los Style Guidelines de marca, tipografía, paleta de colores y componentes Material Design; en 6.2 la Arquitectura de Información (Labeling Systems, Searching Systems, SEO/Meta Tags y Navigation Systems); en 6.3 el Landing Page UI Design con wireframes y mock-ups para Desktop Web Browser y Mobile Web Browser elaborados en Figma, explicando la aplicación de principios de diseño visual, diseño inclusivo y arquitectura de información en cada vista; y en 6.4 el Applications UX/UI Design completo, con 19 wireframes móviles de baja fidelidad (11 para App Confeccionista y 8 para App Artesano) y 7 wireflow diagrams (UG-C01 a UG-C04 y UG-A01 a UG-A03), todos elaborados en Figma a 375×812 con el mismo Design System, y acompañados de una tabla de trazabilidad explícita que vincula cada User Goal con sus User Stories del Capítulo III y los Bounded Contexts del Capítulo IV.                                                                                                                                     | **TB1:** La documentación rigurosa y estandarizada ha demostrado ser fundamental. Redactar requerimientos sin ambigüedades ni detalles de UI garantiza una base sólida y comprensible para el posterior diseño de software. <br><br> **TP:** Documentar la propuesta de UX por capa (Style Guidelines → Information Architecture → UI Design) demostró ser efectivo para mantener trazabilidad entre las decisiones de marca, la arquitectura de información y los artefactos visuales finales, facilitando la comprensión del informe por audiencias técnicas y no técnicas. |
 
 <a name="1."></a>
 
@@ -587,7 +586,6 @@ En esta sección, definiremos los perfiles específicos del público objetivo pa
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-
 ---
 
 **Estrategia Ofensiva**
@@ -612,7 +610,6 @@ Validar y adaptar nuestro sistema en distintos segmentos dentro del perfil texti
 
 Reforzar la diferenciación de GamarraLoop en todos los canales de marketing, destacando su facilidad de uso, enfoque sin transacciones monetarias y su impacto ambiental positivo en la reducción de residuos textiles. También, se implementará un sistema de acompañamiento y capacitación para usuarios, con el fin de reducir la resistencia al uso de tecnología. La retroalimentación constante permitirá llevar a cabo mejorar en nuestra app, incrementando su competitividad y fortaleciendo su adopción en el mercado.
 
-
 <a name="2.2."></a>
 
 ## 2.2. Entrevistas
@@ -622,15 +619,17 @@ Reforzar la diferenciación de GamarraLoop en todos los canales de marketing, de
 ### 2.2.1. Diseño de entrevistas
 
 ##### Preguntas Generales
+
 - ¿Cuál es tu nombre y apellido?
 - ¿Cuántos años tienes?
 - ¿A qué te dedicas?
 
 ---
 
-#### Segmento 1: Talleres de confección 
+#### Segmento 1: Talleres de confección
 
 ##### Preguntas principales
+
 - ¿Qué haces actualmente con los residuos o sobrantes textiles que generas?
 - ¿Qué tipo de materiales sueles desechar o acumular?
 - ¿Con qué frecuencia generas estos excedentes?
@@ -642,13 +641,12 @@ Reforzar la diferenciación de GamarraLoop en todos los canales de marketing, de
 - ¿Qué tan fácil sería para ti tomar una foto de un material y subirla a una app?
 - Si existiera una app donde solo tomas una foto y automáticamente se publica el material para que otros lo recojan, ¿la usarías? ¿Qué debería tener para que realmente te sea útil?
 
-
-
 ---
 
 #### Segmento 2: Artesanos/ recolectores
 
 ##### Preguntas principales
+
 - ¿Dónde consigues actualmente los materiales textiles que utilizas?
 - ¿Qué tipo de materiales buscas con mayor frecuencia?
 - ¿Qué dificultades tienes para encontrar materiales accesibles o reutilizables?
@@ -660,7 +658,6 @@ Reforzar la diferenciación de GamarraLoop en todos los canales de marketing, de
 - ¿Qué tan cómodo te sientes usando apps con mapas o ubicación?
 - Si existiera una app donde puedas ver materiales disponibles en un mapa y contactar al taller para recogerlos, ¿la usarías? ¿Qué funcionalidad sería indispensable para ti?
 
-
 ---
 
 <a name="2.2.2."></a>
@@ -671,99 +668,102 @@ Reforzar la diferenciación de GamarraLoop en todos los canales de marketing, de
 
 [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQCG3I3xirNgRLlYRp8jvFvdAVxnozrRDNJhoAe3dCki3OE?e=isARYl&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
-
 #### Entrevistas al Segmento 1: Talleres de confección
 
 #### Entrevista 1
 
-| Campo             | Detalle |
-|-------------------|---------|
-| **Entrevistado**  | Piero Gamio |
-| **Entrevistador** | Rafael Cuya |
-| **Sexo**          |Masculino |
-| **Edad**          | 32 |
-| **Distrito**      | Lince |
-| **Evidencia**      | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/31ec6e5c-a093-4842-a4ef-fbbd5eb8d613" /> |
-| **Timing**        | 05:28 |
-| **Link**          |  [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQAN7gYHGcYlSLXuoJ9JBJjkAf3Zrbft26IoBjtFGzD699k?e=QFawgz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
-| **Resumen**       | Piero nos comenta que genera retazos de tela casi todos los días y los acumula hasta que ocupan mucho espacio. A veces los regala o los da a recicladores, pero coordinar es complicado. Dice que le gustaría algo simple para deshacerse de esos materiales rápido, sin perder tiempo. |
+| Campo             | Detalle                                                                                                                                                                                                                                                                                                                                        |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Entrevistado**  | Piero Gamio                                                                                                                                                                                                                                                                                                                                    |
+| **Entrevistador** | Rafael Cuya                                                                                                                                                                                                                                                                                                                                    |
+| **Sexo**          | Masculino                                                                                                                                                                                                                                                                                                                                      |
+| **Edad**          | 32                                                                                                                                                                                                                                                                                                                                             |
+| **Distrito**      | Lince                                                                                                                                                                                                                                                                                                                                          |
+| **Evidencia**     | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/31ec6e5c-a093-4842-a4ef-fbbd5eb8d613" />                                                                                                                                                                                                             |
+| **Timing**        | 05:28                                                                                                                                                                                                                                                                                                                                          |
+| **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQAN7gYHGcYlSLXuoJ9JBJjkAf3Zrbft26IoBjtFGzD699k?e=QFawgz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| **Resumen**       | Piero nos comenta que genera retazos de tela casi todos los días y los acumula hasta que ocupan mucho espacio. A veces los regala o los da a recicladores, pero coordinar es complicado. Dice que le gustaría algo simple para deshacerse de esos materiales rápido, sin perder tiempo.                                                        |
 
 #### Entrevista 2
 
-| Campo             | Detalle |
-|-------------------|---------|
-| **Entrevistado**  | Rosa Martínez |
-| **Entrevistador** | Williams Gongora Castillejos |
-| **Sexo**          | Femenino |
-| **Edad**          | 34 |
-| **Distrito**      | La Victoria |
-| **Evidencia**      | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/dd520da8-4c74-437d-92a9-1ac85b71d07c" /> |
-| **Timing**        | 06:02 |
+| Campo             | Detalle                                                                                                                                                                                                                                                                                                                                        |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Entrevistado**  | Rosa Martínez                                                                                                                                                                                                                                                                                                                                  |
+| **Entrevistador** | Williams Gongora Castillejos                                                                                                                                                                                                                                                                                                                   |
+| **Sexo**          | Femenino                                                                                                                                                                                                                                                                                                                                       |
+| **Edad**          | 34                                                                                                                                                                                                                                                                                                                                             |
+| **Distrito**      | La Victoria                                                                                                                                                                                                                                                                                                                                    |
+| **Evidencia**     | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/dd520da8-4c74-437d-92a9-1ac85b71d07c" />                                                                                                                                                                                                             |
+| **Timing**        | 06:02                                                                                                                                                                                                                                                                                                                                          |
 | **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQArNG8BqQYzTr7f2-UB5DbSAeSejaqnHHuiyOv-EuvjNpw?e=DdlBtz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
-| **Resumen**       | Rosa menciona que en el taller juntan los residuos en bolsas y luego los botan o venden barato. El problema es que no siempre hay quién los compre. Para ella, sería útil una app donde pueda publicar rápido los materiales y que alguien los recoja sin tanto trámite. |
+| **Resumen**       | Rosa menciona que en el taller juntan los residuos en bolsas y luego los botan o venden barato. El problema es que no siempre hay quién los compre. Para ella, sería útil una app donde pueda publicar rápido los materiales y que alguien los recoja sin tanto trámite.                                                                       |
+
 ---
+
 #### Entrevista 3
 
-| Campo             | Detalle |
-|-------------------|---------|
-| **Entrevistado**  | Fabrizio |
-| **Entrevistador** | Andrés Torres |
-| **Sexo**          | Masculino |
-| **Edad**          | 22 |
-| **Distrito**      | Chorrillos |
-| **Evidencia**      | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/521237d3-acb0-47dc-a613-4a31956d8dd6" /> |
-| **Timing**        | 03:43  |
+| Campo             | Detalle                                                                                                                                                                                                                                                                                                                                        |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Entrevistado**  | Fabrizio                                                                                                                                                                                                                                                                                                                                       |
+| **Entrevistador** | Andrés Torres                                                                                                                                                                                                                                                                                                                                  |
+| **Sexo**          | Masculino                                                                                                                                                                                                                                                                                                                                      |
+| **Edad**          | 22                                                                                                                                                                                                                                                                                                                                             |
+| **Distrito**      | Chorrillos                                                                                                                                                                                                                                                                                                                                     |
+| **Evidencia**     | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/521237d3-acb0-47dc-a613-4a31956d8dd6" />                                                                                                                                                                                                             |
+| **Timing**        | 03:43                                                                                                                                                                                                                                                                                                                                          |
 | **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQDKYfua_SghSL9Ho4qeQKQHAfLgcdUG9dIqtuEfJrs-yLQ?e=Podp5t&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
-| **Resumen**       | Fabrizio explica que generan muchos residuos y aunque intentan reutilizar algunos, la mayoría se pierde. Siente que falta una forma organizada de conectar con personas interesadas. Dice que usaría una app si le facilita ubicar y coordinar el recojo. |
+| **Resumen**       | Fabrizio explica que generan muchos residuos y aunque intentan reutilizar algunos, la mayoría se pierde. Siente que falta una forma organizada de conectar con personas interesadas. Dice que usaría una app si le facilita ubicar y coordinar el recojo.                                                                                      |
 
 #### Entrevistas al Segmento 2: Artesanos/recolectores
 
 #### Entrevista 1
 
-| Campo             | Detalle |
-|-------------------|---------|
-| **Entrevistado**  | Anthony Martín Huapaya Cuevas |
-| **Entrevistador** | Elizabeth Lucero Huanaco Huayta |
-| **Sexo**          | Masculino |
-| **Edad**          | 26 |
-| **Distrito**      | Jesús Maria |
-| **Evidencia**      | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/8ee5a723-6712-4e05-a294-5a581f635fe0" /> |
-| **Timing**        | 08:05 |
+| Campo             | Detalle                                                                                                                                                                                                                                                                                                                                        |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Entrevistado**  | Anthony Martín Huapaya Cuevas                                                                                                                                                                                                                                                                                                                  |
+| **Entrevistador** | Elizabeth Lucero Huanaco Huayta                                                                                                                                                                                                                                                                                                                |
+| **Sexo**          | Masculino                                                                                                                                                                                                                                                                                                                                      |
+| **Edad**          | 26                                                                                                                                                                                                                                                                                                                                             |
+| **Distrito**      | Jesús Maria                                                                                                                                                                                                                                                                                                                                    |
+| **Evidencia**     | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/8ee5a723-6712-4e05-a294-5a581f635fe0" />                                                                                                                                                                                                             |
+| **Timing**        | 08:05                                                                                                                                                                                                                                                                                                                                          |
 | **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211g522_upc_edu_pe/IQDfTLJqZPgERq92KZQYQyIcAamOMdEuGeg0HEMG1UtIuTU?e=Pjbsgr&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
-| **Resumen**       | Anthony cuenta que busca materiales en Gamarra o con recicladores, pero muchas veces no encuentra lo que necesita. Pierde tiempo buscando y a veces termina comprando más caro. Le interesaría una app donde pueda ver materiales cercanos y elegir más rápido. |
+| **Resumen**       | Anthony cuenta que busca materiales en Gamarra o con recicladores, pero muchas veces no encuentra lo que necesita. Pierde tiempo buscando y a veces termina comprando más caro. Le interesaría una app donde pueda ver materiales cercanos y elegir más rápido.                                                                                |
 
 ---
 
 #### Entrevista 2
 
-| Campo             | Detalle |
-|-------------------|---------|
-| **Entrevistado**  | Carlos Ramos |
-| **Entrevistador** | Rafael Cuya |
-| **Sexo**          | Masculino |
-| **Edad**          | 28 |
-| **Distrito**      | Lince |
-| **Evidencia**      | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/6415258b-23a7-44e0-8c03-2cc2c0870cb2" /> |
-| **Timing**        | 05:01 |
-| **Link**          |  [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQBK4us_1WkPR468kAVyanV0ASwmeiolYIAU2Cb3FhJRLc8?e=i9k3rf&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
-| **Resumen**       | Carlos comenta que encuentra materiales caminando y preguntando en talleres. A veces pierde medio día sin conseguir nada. Dice que le serviría mucho saber dónde hay material disponible sin tener que buscar tanto. |
+| Campo             | Detalle                                                                                                                                                                                                                                                                                                                                        |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Entrevistado**  | Carlos Ramos                                                                                                                                                                                                                                                                                                                                   |
+| **Entrevistador** | Rafael Cuya                                                                                                                                                                                                                                                                                                                                    |
+| **Sexo**          | Masculino                                                                                                                                                                                                                                                                                                                                      |
+| **Edad**          | 28                                                                                                                                                                                                                                                                                                                                             |
+| **Distrito**      | Lince                                                                                                                                                                                                                                                                                                                                          |
+| **Evidencia**     | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/6415258b-23a7-44e0-8c03-2cc2c0870cb2" />                                                                                                                                                                                                             |
+| **Timing**        | 05:01                                                                                                                                                                                                                                                                                                                                          |
+| **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQBK4us_1WkPR468kAVyanV0ASwmeiolYIAU2Cb3FhJRLc8?e=i9k3rf&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| **Resumen**       | Carlos comenta que encuentra materiales caminando y preguntando en talleres. A veces pierde medio día sin conseguir nada. Dice que le serviría mucho saber dónde hay material disponible sin tener que buscar tanto.                                                                                                                           |
 
 ---
+
 #### Entrevista 3
 
-| Campo             | Detalle |
-|-------------------|---------|
-| **Entrevistado**  | Julio Rivera |
-| **Entrevistador** | Piero Molina |
-| **Sexo**          | Masculino|
-| **Edad**          | 31 |
-| **Distrito**      | Jesús Maria |
-| **Evidencia**      | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/c27f7c6c-cae9-405a-90d4-4e301c1661ff" />|
-| **Timing**        | 00:06:12 |
-| **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQCzJIS6m2xIRbHBWJGDkaK_AeiWOaK4J9QIwCrWbHR2qKw?e=d0M2U2&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| Campo             | Detalle                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Entrevistado**  | Julio Rivera                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Entrevistador** | Piero Molina                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Sexo**          | Masculino                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Edad**          | 31                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Distrito**      | Jesús Maria                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Evidencia**     | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/c27f7c6c-cae9-405a-90d4-4e301c1661ff" />                                                                                                                                                                                                                                                                                              |
+| **Timing**        | 00:06:12                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQCzJIS6m2xIRbHBWJGDkaK_AeiWOaK4J9QIwCrWbHR2qKw?e=d0M2U2&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)                                                                                  |
 | **Resumen**       | En la entrevista realizada a Julio Rivera, se identificó que los artesanos dependen principalmente de talleres de confección, mercados textiles y contactos informales para conseguir materiales reutilizables. La principal problemática es la dificultad para encontrar materiales disponibles, cercanos y en buen estado, por lo que una plataforma con geolocalización y reserva facilitaría significativamente su trabajo. |
 
 ---
+
 <a name="2.2.3."></a>
 
 ### 2.2.3. Análisis de entrevistas
@@ -780,62 +780,53 @@ De acuerdo con lo que hemos podido observar en las entrevistas realizadas a trab
 
 ### 2.3.1. User Personas
 
-
-
 **Figura 2**
 
-*User Persona del segmento Talleres*
+_User Persona del segmento Talleres_
 
 <img width="1050" height="1888" alt="Image" src="https://github.com/user-attachments/assets/5edf3c3f-8724-4b9c-8274-e6ea26feaf96" />
 
-*Nota.* Elaboración propia (2026) en UXPressia.
-
-
+_Nota._ Elaboración propia (2026) en UXPressia.
 
 ---
 
 **Figura 3**
 
-*User Persona del segmento Artesanos/Recolectores*
+_User Persona del segmento Artesanos/Recolectores_
 
 <img width="1050" height="1888" alt="Image" src="https://github.com/user-attachments/assets/0041d088-7aa4-48f5-ad0f-106b8d71a39e" />
 
-*Nota.* Elaboración propia (2026) en UXPressia.
+_Nota._ Elaboración propia (2026) en UXPressia.
 
 ---
-                                                                                                                                                                                                                                                                                                                                                                                                                          
+
 <a name="2.3.2."></a>
 
 ### 2.3.2. User Task Matrix
 
-
-
-| Tarea |Usuario 1 (Frecuencia) | Usuario 1 (Importancia) | Usuario 2 (Frecuencia) |Usuario 2 (Importancia) |
-|-------|-------------------------------|--------------------------------|--------------------------|--------------------------|
-| Registrar residuos textiles| Siempre | Alta | — | — |
-| Tomar foto del material| Siempre | Alta | — | — |
-| Publicar disponibilidad de materiales | Frecuentemente | Alta | — | — |
-| Coordinar recojo con interesados | Siempre | Alta | — | — |
-| Organizar residuos en el taller | Frecuentemente | Media | — | — |
-| Buscar a quién recoja materiales | Siempre | Alta | — | — |
-| Buscar materiales reutilizables | — | — | Siempre | Alta |
-| Revisar materiales reutilizables | — | — | Siempre | Alta |
-| Filtrar por tipo/color de tela | — | — | Siempre | Alta |
-| Ubicar materiales en el mapa | — | — | Frecuentemente | Alta |
-| Contactar al taller | — | — | Siempre | Alta |
-| Coordinar recojo | — | — | Frecuentemente | Alta |
-| Comparar opciones de materiales | — | — | Ocasionalmente | Alta |
-| Seleccionar material según preferencia | — | — | Frecuentemente | Media |
-
+| Tarea                                  | Usuario 1 (Frecuencia) | Usuario 1 (Importancia) | Usuario 2 (Frecuencia) | Usuario 2 (Importancia) |
+| -------------------------------------- | ---------------------- | ----------------------- | ---------------------- | ----------------------- |
+| Registrar residuos textiles            | Siempre                | Alta                    | —                      | —                       |
+| Tomar foto del material                | Siempre                | Alta                    | —                      | —                       |
+| Publicar disponibilidad de materiales  | Frecuentemente         | Alta                    | —                      | —                       |
+| Coordinar recojo con interesados       | Siempre                | Alta                    | —                      | —                       |
+| Organizar residuos en el taller        | Frecuentemente         | Media                   | —                      | —                       |
+| Buscar a quién recoja materiales       | Siempre                | Alta                    | —                      | —                       |
+| Buscar materiales reutilizables        | —                      | —                       | Siempre                | Alta                    |
+| Revisar materiales reutilizables       | —                      | —                       | Siempre                | Alta                    |
+| Filtrar por tipo/color de tela         | —                      | —                       | Siempre                | Alta                    |
+| Ubicar materiales en el mapa           | —                      | —                       | Frecuentemente         | Alta                    |
+| Contactar al taller                    | —                      | —                       | Siempre                | Alta                    |
+| Coordinar recojo                       | —                      | —                       | Frecuentemente         | Alta                    |
+| Comparar opciones de materiales        | —                      | —                       | Ocasionalmente         | Alta                    |
+| Seleccionar material según preferencia | —                      | —                       | Frecuentemente         | Media                   |
 
 **Análisis**
-En la matriz de tareas podemos observar las actividades con mayor frecuencia e importancia, tenemos acciones como registrar materiales, tomar fotos, publicar disponibilidad y coordinar recojo para los talleres de confección. Esto evidencia la necesidad de contar con un proceso rápido y sencillo que ayude a la gestión de residuos en estos establecimientos. 
+En la matriz de tareas podemos observar las actividades con mayor frecuencia e importancia, tenemos acciones como registrar materiales, tomar fotos, publicar disponibilidad y coordinar recojo para los talleres de confección. Esto evidencia la necesidad de contar con un proceso rápido y sencillo que ayude a la gestión de residuos en estos establecimientos.
 
 Por otro lado, para el segmento Artesano/recolectores, encontramos que dentro de las tareas mas importantes estan buscar materiales, visualizar opciones disponibles, ubicarlos mediante un mapa y conectase con tallers. Esto refleja que el principal valor para este segmento es la accesibilidad y visibilidad de recursos disponibles.
 
 La matriz de tareas nos perimite identificar cuales son las funcionalidades mas críticas del sistema y en que secciones debemos centrarnos para que nuestra aplicación sea eficiente.
-
-
 
 <a name="2.3.3."></a>
 
@@ -845,72 +836,69 @@ La matriz de tareas nos perimite identificar cuales son las funcionalidades mas 
 
 **Figura 4**
 
-*User Journey Map As-Is del segmento Talleres*
+_User Journey Map As-Is del segmento Talleres_
 
 <img width="1885" height="1153" alt="Image" src="https://github.com/user-attachments/assets/c3862956-ea87-4aa4-bc32-1acced3f846b" />
 
-*Nota.* Elaboración propia (2026) en UXPressia.
-
+_Nota._ Elaboración propia (2026) en UXPressia.
 
 ---
 
 **Figura 5**
 
-*User Journey Map As-Is del segmento Artesanos/Recolectores*
+_User Journey Map As-Is del segmento Artesanos/Recolectores_
 
 <img width="1885" height="1153" alt="Image" src="https://github.com/user-attachments/assets/d9381630-288b-4326-bcd6-5d439342852a" />
 
-*Nota.* Elaboración propia (2026) en UXPressia.
+_Nota._ Elaboración propia (2026) en UXPressia.
 
 <a name="2.3.4."></a>
 
 ### 2.3.4. Empathy Mapping
 
-
 ---
 
 **Figura 6**
 
-*Empathy Map del segmento Talleres*
+_Empathy Map del segmento Talleres_
 
 <img width="1050" height="1108" alt="Image" src="https://github.com/user-attachments/assets/44eb782a-2f9e-491a-9039-520134a19136" />
 
-*Nota.* Elaboración propia (2026) en UXPressia.
+_Nota._ Elaboración propia (2026) en UXPressia.
 
 ---
 
 **Figura 7**
 
-*Empathy Map del segmento Artesanos/Recolectores*
+_Empathy Map del segmento Artesanos/Recolectores_
 
 <img width="1050" height="1108" alt="Image" src="https://github.com/user-attachments/assets/b3477a65-6d03-45a5-9258-2236175e69f6" />
 
-*Nota.* Elaboración propia (2026) en UXPressia.
+_Nota._ Elaboración propia (2026) en UXPressia.
 
 <a name="2.3.5."></a>
 
 ### 2.3.5. As-is Scenario Mapping
 
-
 ---
 
 Figura 8
 
-*As-Is Scenario Map del segmento Talleres*
+_As-Is Scenario Map del segmento Talleres_
 
 <img width="1473" height="1060" alt="Image" src="https://github.com/user-attachments/assets/b988db87-3814-450e-be9b-5aac18b6c2df" />
 
-*Nota.* Elaboración propia (2026) en Miro.
+_Nota._ Elaboración propia (2026) en Miro.
 
 ---
 
 Figura 9
 
-*As-Is Scenario Map del segmento Artesanos/Recolectores*
+_As-Is Scenario Map del segmento Artesanos/Recolectores_
 
 <img width="1473" height="1060" alt="Image" src="https://github.com/user-attachments/assets/416f7ab8-266f-4519-b8b4-4506851515cb" />
 
-*Nota.* Elaboración propia (2026) en Miro.
+_Nota._ Elaboración propia (2026) en Miro.
 
 ---
 
@@ -918,32 +906,32 @@ Figura 9
 
 ## 2.4. Ubiquitous Language
 
-| Término | Definición |
-|--------|-----------|
+| Término                   | Definición                                                                                                           |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | GamarraLoop / GamarraLoop | Aplicación que conecta talleres de confección con artesanos/recolectores para la reutilización de residuos textiles. |
-| Residuo textil | Material sobrante generado en los procesos de confección (retazos, telas, excedentes). |
-| Excedente | Cantidad de material textil que no será utilizado por el taller y está disponible para reutilización. |
-| Lote de tela | Conjunto de residuos textiles agrupados y publicados como una unidad dentro del sistema. |
-| Taller de confección | Usuario que genera residuos textiles y los publica en la plataforma. |
-| Artesano | Usuario que reutiliza materiales textiles para crear nuevos productos. |
-| Recolector | Usuario que busca, recoge y reutiliza residuos textiles disponibles en la plataforma. |
-| Publicación de lote | Acción de registrar un lote de tela en el sistema mediante foto, ubicación y descripción. |
-| Clasificación automática | Proceso en el que la IA identifica el tipo de material y color a partir de una imagen. |
-| Geolocalización | Funcionalidad que permite ubicar los lotes en un mapa según su ubicación real. |
-| Punto de recojo | Ubicación física donde el artesano o recolector puede recoger el lote publicado. |
-| Estado del lote | Condición actual del lote dentro del sistema (Disponible, Reservado, Entregado, Expirado, Cancelado). |
-| Reserva de lote | Acción mediante la cual un artesano asegura un lote antes de recogerlo. |
-| Confirmación de entrega | Acción del taller para indicar que el lote fue entregado físicamente. |
-| Confirmación de recepción | Acción del artesano para indicar que recibió el lote correctamente. |
-| Directorio de materiales | Vista donde se muestran los lotes disponibles con información relevante. |
-| Usuario | Persona que utiliza la plataforma (taller o artesano). |
-| Perfil de usuario | Información básica del usuario dentro del sistema (nombre, rol, contacto). |
-| Interacción | Acción de contacto o coordinación entre taller y artesano. |
-| Economía circular | Modelo que promueve la reutilización de materiales para reducir residuos. |
-| Low-code | Enfoque de desarrollo que permite usar la aplicación con mínima complejidad técnica. |
-| API RESTful | Servicio backend que permite la comunicación entre frontend y sistema. |
-| Notificación | Mensaje enviado al usuario sobre eventos importantes (reserva, entrega, etc.). |
-| Expiración de lote | Estado automático que se asigna a un lote no recogido después de cierto tiempo. |
+| Residuo textil            | Material sobrante generado en los procesos de confección (retazos, telas, excedentes).                               |
+| Excedente                 | Cantidad de material textil que no será utilizado por el taller y está disponible para reutilización.                |
+| Lote de tela              | Conjunto de residuos textiles agrupados y publicados como una unidad dentro del sistema.                             |
+| Taller de confección      | Usuario que genera residuos textiles y los publica en la plataforma.                                                 |
+| Artesano                  | Usuario que reutiliza materiales textiles para crear nuevos productos.                                               |
+| Recolector                | Usuario que busca, recoge y reutiliza residuos textiles disponibles en la plataforma.                                |
+| Publicación de lote       | Acción de registrar un lote de tela en el sistema mediante foto, ubicación y descripción.                            |
+| Clasificación automática  | Proceso en el que la IA identifica el tipo de material y color a partir de una imagen.                               |
+| Geolocalización           | Funcionalidad que permite ubicar los lotes en un mapa según su ubicación real.                                       |
+| Punto de recojo           | Ubicación física donde el artesano o recolector puede recoger el lote publicado.                                     |
+| Estado del lote           | Condición actual del lote dentro del sistema (Disponible, Reservado, Entregado, Expirado, Cancelado).                |
+| Reserva de lote           | Acción mediante la cual un artesano asegura un lote antes de recogerlo.                                              |
+| Confirmación de entrega   | Acción del taller para indicar que el lote fue entregado físicamente.                                                |
+| Confirmación de recepción | Acción del artesano para indicar que recibió el lote correctamente.                                                  |
+| Directorio de materiales  | Vista donde se muestran los lotes disponibles con información relevante.                                             |
+| Usuario                   | Persona que utiliza la plataforma (taller o artesano).                                                               |
+| Perfil de usuario         | Información básica del usuario dentro del sistema (nombre, rol, contacto).                                           |
+| Interacción               | Acción de contacto o coordinación entre taller y artesano.                                                           |
+| Economía circular         | Modelo que promueve la reutilización de materiales para reducir residuos.                                            |
+| Low-code                  | Enfoque de desarrollo que permite usar la aplicación con mínima complejidad técnica.                                 |
+| API RESTful               | Servicio backend que permite la comunicación entre frontend y sistema.                                               |
+| Notificación              | Mensaje enviado al usuario sobre eventos importantes (reserva, entrega, etc.).                                       |
+| Expiración de lote        | Estado automático que se asigna a un lote no recogido después de cierto tiempo.                                      |
 
 <a name="3."></a>
 
@@ -1125,17 +1113,17 @@ De las 22 User Stories y 5 Epics consolidados en la [sección 3.2.](#3.2.) del C
 
 #### 4.1.2.2. Quality Attribute Scenarios
 
-Esta sección consolida la **primera versión** de los escenarios de atributos de calidad que el equipo identificó como relevantes para conducir el proceso de diseño. Los escenarios se especifican siguiendo el formato de seis dimensiones del *Software Engineering Institute* — *Source*, *Stimulus*, *Artifact*, *Environment*, *Response* y *Response Measure* — colapsado en una fila por escenario para facilitar la lectura comparativa. Esta versión es **input** al proceso ADD; las decisiones tomadas durante el *Quality Attribute Workshop* podrán refinar, priorizar o desdoblar estos escenarios en la [sección 4.1.5.](#4.1.5.).
+Esta sección consolida la **primera versión** de los escenarios de atributos de calidad que el equipo identificó como relevantes para conducir el proceso de diseño. Los escenarios se especifican siguiendo el formato de seis dimensiones del _Software Engineering Institute_ — _Source_, _Stimulus_, _Artifact_, _Environment_, _Response_ y _Response Measure_ — colapsado en una fila por escenario para facilitar la lectura comparativa. Esta versión es **input** al proceso ADD; las decisiones tomadas durante el _Quality Attribute Workshop_ podrán refinar, priorizar o desdoblar estos escenarios en la [sección 4.1.5.](#4.1.5.).
 
-| Atributo | Fuente | Estímulo | Artefacto | Entorno | Respuesta | Medida |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **QA01 — Performance** (Listado de lotes) | Artesano vía cliente móvil | Solicita el listado de lotes disponibles ordenados por proximidad | Endpoint REST de listado de lotes (US18) y su pipeline de lectura | Operación normal con hasta 1 000 lotes activos en el catálogo y red 4G estándar de Gamarra | El sistema responde con la lista paginada y ordenada por proximidad geográfica | Latencia ≤ 2 segundos en el percentil 95; primer bloque de 20 lotes en ≤ 1 segundo |
-| **QA02 — Disponibilidad** (Reserva concurrente) | Dos o más Artesanos en simultáneo | Reservan el mismo lote dentro de una ventana temporal menor a 1 segundo | Servicio transaccional de reserva (US19) y capa de persistencia | Operación normal con concurrencia entre clientes móviles | El sistema otorga la reserva a un único Artesano y rechaza las demás con un mensaje controlado | 100 % de los conflictos resueltos sin doble-reserva; respuesta exitosa o de rechazo en ≤ 500 ms en el percentil 95 |
-| **QA03 — Modificabilidad** (Sustitución del proveedor de IA) | Equipo de desarrollo | Reemplaza Google Cloud Vision por otro proveedor de clasificación o por un modelo propio | Adaptador de clasificación de imágenes y sus contratos con el dominio | Tiempo de diseño / mantenimiento programado | El cambio se confina al adaptador; el dominio y los servicios consumidores no requieren modificación | Sustitución completada modificando ≤ 1 componente y sin alterar contratos públicos del puerto |
-| **QA04 — Usabilidad** (Primera publicación de lote) | Confeccionista en primer uso, sin asistencia | Inicia el flujo completo de publicación (alta, foto, GPS, referencias, confirmación) | App móvil del Confeccionista y servicios de onboarding y publicación | Operación normal en sitio (taller o stand de Gamarra) con red móvil estándar | El usuario completa el flujo por su cuenta y recibe confirmación visual y notificación push de publicación exitosa | Tasa de finalización ≥ 80 % sin asistencia; tiempo total ≤ 3 minutos; ≤ 2 errores recuperables por sesión |
-| **QA05 — Disponibilidad / Resiliencia** (Degradación de Cloud Vision) | Servicio externo Google Cloud Vision | Latencia > 3 segundos o respuesta de error 5xx durante la clasificación | Adaptador de clasificación, cola de reintentos y servicio de publicación | Operación normal con dependencia externa degradada o caída completa | El lote se persiste en estado *Disponible* con atributo *clasificación pendiente* y se reintenta de forma asíncrona con *backoff* exponencial | 0 % de pérdida de lotes ante caída del proveedor; reintento exitoso en ≤ 30 minutos en el 95 % de los casos |
-| **QA06 — Seguridad** (Acceso al endpoint de reserva) | Cliente sin token o con token inválido | Envía petición POST al endpoint de reserva (US19) | Capa de autenticación / API Gateway frente al servicio transaccional | Operación normal | El sistema rechaza la petición con código 401 sin filtrar información del lote ni del estado interno | 100 % de peticiones no autenticadas rechazadas en ≤ 100 ms; 0 fugas de datos del lote en logs o respuesta |
-| **QA07 — Performance** (Compresión de imagen) | Confeccionista vía cliente móvil | Sube una imagen de hasta 8 MB para la publicación de un lote | Servicio de compresión de imagen (US20) y almacén de archivos | Operación normal con red 4G estándar de Gamarra | El sistema persiste la imagen comprimida y genera una versión *thumbnail* | Persistencia + *thumbnail* completados en ≤ 5 segundos en el percentil 90 |
+| Atributo                                                              | Fuente                                       | Estímulo                                                                                 | Artefacto                                                                | Entorno                                                                                    | Respuesta                                                                                                                                     | Medida                                                                                                             |
+| :-------------------------------------------------------------------- | :------------------------------------------- | :--------------------------------------------------------------------------------------- | :----------------------------------------------------------------------- | :----------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
+| **QA01 — Performance** (Listado de lotes)                             | Artesano vía cliente móvil                   | Solicita el listado de lotes disponibles ordenados por proximidad                        | Endpoint REST de listado de lotes (US18) y su pipeline de lectura        | Operación normal con hasta 1 000 lotes activos en el catálogo y red 4G estándar de Gamarra | El sistema responde con la lista paginada y ordenada por proximidad geográfica                                                                | Latencia ≤ 2 segundos en el percentil 95; primer bloque de 20 lotes en ≤ 1 segundo                                 |
+| **QA02 — Disponibilidad** (Reserva concurrente)                       | Dos o más Artesanos en simultáneo            | Reservan el mismo lote dentro de una ventana temporal menor a 1 segundo                  | Servicio transaccional de reserva (US19) y capa de persistencia          | Operación normal con concurrencia entre clientes móviles                                   | El sistema otorga la reserva a un único Artesano y rechaza las demás con un mensaje controlado                                                | 100 % de los conflictos resueltos sin doble-reserva; respuesta exitosa o de rechazo en ≤ 500 ms en el percentil 95 |
+| **QA03 — Modificabilidad** (Sustitución del proveedor de IA)          | Equipo de desarrollo                         | Reemplaza Google Cloud Vision por otro proveedor de clasificación o por un modelo propio | Adaptador de clasificación de imágenes y sus contratos con el dominio    | Tiempo de diseño / mantenimiento programado                                                | El cambio se confina al adaptador; el dominio y los servicios consumidores no requieren modificación                                          | Sustitución completada modificando ≤ 1 componente y sin alterar contratos públicos del puerto                      |
+| **QA04 — Usabilidad** (Primera publicación de lote)                   | Confeccionista en primer uso, sin asistencia | Inicia el flujo completo de publicación (alta, foto, GPS, referencias, confirmación)     | App móvil del Confeccionista y servicios de onboarding y publicación     | Operación normal en sitio (taller o stand de Gamarra) con red móvil estándar               | El usuario completa el flujo por su cuenta y recibe confirmación visual y notificación push de publicación exitosa                            | Tasa de finalización ≥ 80 % sin asistencia; tiempo total ≤ 3 minutos; ≤ 2 errores recuperables por sesión          |
+| **QA05 — Disponibilidad / Resiliencia** (Degradación de Cloud Vision) | Servicio externo Google Cloud Vision         | Latencia > 3 segundos o respuesta de error 5xx durante la clasificación                  | Adaptador de clasificación, cola de reintentos y servicio de publicación | Operación normal con dependencia externa degradada o caída completa                        | El lote se persiste en estado _Disponible_ con atributo _clasificación pendiente_ y se reintenta de forma asíncrona con _backoff_ exponencial | 0 % de pérdida de lotes ante caída del proveedor; reintento exitoso en ≤ 30 minutos en el 95 % de los casos        |
+| **QA06 — Seguridad** (Acceso al endpoint de reserva)                  | Cliente sin token o con token inválido       | Envía petición POST al endpoint de reserva (US19)                                        | Capa de autenticación / API Gateway frente al servicio transaccional     | Operación normal                                                                           | El sistema rechaza la petición con código 401 sin filtrar información del lote ni del estado interno                                          | 100 % de peticiones no autenticadas rechazadas en ≤ 100 ms; 0 fugas de datos del lote en logs o respuesta          |
+| **QA07 — Performance** (Compresión de imagen)                         | Confeccionista vía cliente móvil             | Sube una imagen de hasta 8 MB para la publicación de un lote                             | Servicio de compresión de imagen (US20) y almacén de archivos            | Operación normal con red 4G estándar de Gamarra                                            | El sistema persiste la imagen comprimida y genera una versión _thumbnail_                                                                     | Persistencia + _thumbnail_ completados en ≤ 5 segundos en el percentil 90                                          |
 
 <a name="4.1.2.3."></a>
 
@@ -1156,60 +1144,60 @@ Las restricciones que actúan como guardarraíles del diseño se consolidan a pa
 
 ### 4.1.3. Architectural Drivers Backlog
 
-El equipo consolidó el *Architectural Drivers Backlog* a partir de los tres inputs declarados en la sección anterior — funcionalidad primaria, escenarios de atributos de calidad y *constraints* —, agrupando todos los elementos con impacto arquitectónico en un único catálogo priorizado. El proceso seguido se inspiró en la dinámica de un *Quality Attribute Workshop* (QAW) reducido: cada miembro propuso *drivers* candidatos a partir de las *primary stories* y de los *Quality Attribute Scenarios*; luego se revisaron en sesión conjunta para acordar el peso de cada uno en dos ejes — **importancia para los stakeholders** (Confeccionistas, Artesanos, equipo de producto y equipo técnico) e **impacto sobre la complejidad técnica** del sistema —, y finalmente se ordenó el backlog colocando primero los *drivers* con la combinación más alta en ambos ejes. El resultado de esta priorización es la entrada directa para la evaluación de patrones documentada en la [sección 4.1.4.](#4.1.4.).
+El equipo consolidó el _Architectural Drivers Backlog_ a partir de los tres inputs declarados en la sección anterior — funcionalidad primaria, escenarios de atributos de calidad y _constraints_ —, agrupando todos los elementos con impacto arquitectónico en un único catálogo priorizado. El proceso seguido se inspiró en la dinámica de un _Quality Attribute Workshop_ (QAW) reducido: cada miembro propuso _drivers_ candidatos a partir de las _primary stories_ y de los _Quality Attribute Scenarios_; luego se revisaron en sesión conjunta para acordar el peso de cada uno en dos ejes — **importancia para los stakeholders** (Confeccionistas, Artesanos, equipo de producto y equipo técnico) e **impacto sobre la complejidad técnica** del sistema —, y finalmente se ordenó el backlog colocando primero los _drivers_ con la combinación más alta en ambos ejes. El resultado de esta priorización es la entrada directa para la evaluación de patrones documentada en la [sección 4.1.4.](#4.1.4.).
 
-| Driver ID | Título de Driver | Descripción | Importancia para Stakeholders (High/Medium/Low) | Impacto en Architecture Technical Complexity (High/Medium/Low) |
-| :--- | :--- | :--- | :--- | :--- |
-| **D01** | Reserva consistente sin doble-asignación de lotes | Garantizar que un lote único nunca quede asignado a más de un Artesano en simultáneo, preservando la confianza en el modelo de intercambio. *Origen: US14, US19, QA02.* | High | High |
-| **D02** | Listado de lotes con baja latencia y orden por proximidad | Entregar al Artesano la lista de lotes disponibles ordenada por cercanía geográfica y en tiempo casi-instantáneo, dado que el recorrido se decide sobre el dispositivo móvil en sitio. *Origen: US12, US18, QA01.* | High | High |
-| **D03** | Captura móvil de imagen y geolocalización del lote | Permitir al Confeccionista publicar un lote en sitio capturando foto y coordenadas GPS desde el dispositivo, con referencias adicionales de stand o galería. *Origen: US05, US06, TS01, TS04.* | High | Medium |
-| **D04** | Onboarding sin contraseñas para usuarios de baja exposición digital | Habilitar alta y operación inmediata sin gestionar contraseñas complejas ni MFA, en línea con el *Empathy Mapping* del Capítulo II. *Origen: US04, TS05, QA04.* | High | Medium |
-| **D05** | Clasificación automática de textiles a partir de la imagen | Generar etiquetas de material desde la foto del lote para alimentar la búsqueda del Artesano y validar el material publicado por el Confeccionista. *Origen: US10, US11, US17, TS03.* | High | Medium |
-| **D06** | Estados explícitos del ciclo de vida del lote | Modelar de forma controlada las transiciones *Disponible → Reservado → Entregado / Cancelado / Expirado*, con eventos de dominio asociados a cada cambio de estado. *Origen: US08, US09, US14, US15, US21.* | High | Medium |
-| **D07** | Aislamiento del proveedor de clasificación de imágenes | Confinar la dependencia con Google Cloud Vision en un único componente, permitiendo reemplazo o evolución sin afectar el dominio ni los servicios de aplicación. *Origen: TS03, QA03.* | Medium | High |
-| **D08** | Resiliencia ante degradación de Google Cloud Vision | Continuar operando el flujo de publicación ante latencia o caída del proveedor de IA, sin pérdida de lotes ni bloqueo del Confeccionista. *Origen: TS03, QA05.* | Medium | High |
-| **D09** | APIs RESTful versionadas y agnósticas al cliente | Exponer la totalidad de la lógica de negocio vía REST, soportando app móvil y *landing page* sin duplicar reglas en el cliente. *Origen: TS02, US18, US19.* | Medium | Low |
-| **D10** | Idioma único en español neutro en toda la solución | Garantizar consistencia léxica en interfaz, mensajes del sistema y notificaciones para reducir la fricción de adopción entre Confeccionistas y Artesanos. *Origen: TS06.* | Low | Low |
+| Driver ID | Título de Driver                                                    | Descripción                                                                                                                                                                                                        | Importancia para Stakeholders (High/Medium/Low) | Impacto en Architecture Technical Complexity (High/Medium/Low) |
+| :-------- | :------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------- | :------------------------------------------------------------- |
+| **D01**   | Reserva consistente sin doble-asignación de lotes                   | Garantizar que un lote único nunca quede asignado a más de un Artesano en simultáneo, preservando la confianza en el modelo de intercambio. _Origen: US14, US19, QA02._                                            | High                                            | High                                                           |
+| **D02**   | Listado de lotes con baja latencia y orden por proximidad           | Entregar al Artesano la lista de lotes disponibles ordenada por cercanía geográfica y en tiempo casi-instantáneo, dado que el recorrido se decide sobre el dispositivo móvil en sitio. _Origen: US12, US18, QA01._ | High                                            | High                                                           |
+| **D03**   | Captura móvil de imagen y geolocalización del lote                  | Permitir al Confeccionista publicar un lote en sitio capturando foto y coordenadas GPS desde el dispositivo, con referencias adicionales de stand o galería. _Origen: US05, US06, TS01, TS04._                     | High                                            | Medium                                                         |
+| **D04**   | Onboarding sin contraseñas para usuarios de baja exposición digital | Habilitar alta y operación inmediata sin gestionar contraseñas complejas ni MFA, en línea con el _Empathy Mapping_ del Capítulo II. _Origen: US04, TS05, QA04._                                                    | High                                            | Medium                                                         |
+| **D05**   | Clasificación automática de textiles a partir de la imagen          | Generar etiquetas de material desde la foto del lote para alimentar la búsqueda del Artesano y validar el material publicado por el Confeccionista. _Origen: US10, US11, US17, TS03._                              | High                                            | Medium                                                         |
+| **D06**   | Estados explícitos del ciclo de vida del lote                       | Modelar de forma controlada las transiciones _Disponible → Reservado → Entregado / Cancelado / Expirado_, con eventos de dominio asociados a cada cambio de estado. _Origen: US08, US09, US14, US15, US21._        | High                                            | Medium                                                         |
+| **D07**   | Aislamiento del proveedor de clasificación de imágenes              | Confinar la dependencia con Google Cloud Vision en un único componente, permitiendo reemplazo o evolución sin afectar el dominio ni los servicios de aplicación. _Origen: TS03, QA03._                             | Medium                                          | High                                                           |
+| **D08**   | Resiliencia ante degradación de Google Cloud Vision                 | Continuar operando el flujo de publicación ante latencia o caída del proveedor de IA, sin pérdida de lotes ni bloqueo del Confeccionista. _Origen: TS03, QA05._                                                    | Medium                                          | High                                                           |
+| **D09**   | APIs RESTful versionadas y agnósticas al cliente                    | Exponer la totalidad de la lógica de negocio vía REST, soportando app móvil y _landing page_ sin duplicar reglas en el cliente. _Origen: TS02, US18, US19._                                                        | Medium                                          | Low                                                            |
+| **D10**   | Idioma único en español neutro en toda la solución                  | Garantizar consistencia léxica en interfaz, mensajes del sistema y notificaciones para reducir la fricción de adopción entre Confeccionistas y Artesanos. _Origen: TS06._                                          | Low                                             | Low                                                            |
 
 <a name="4.1.4."></a>
 
 ### 4.1.4. Architectural Design Decisions
 
-El equipo aplicó un proceso iterativo inspirado en el *Quality Attribute Workshop* sobre los *drivers* de mayor impacto del [backlog](#4.1.3.). En cada iteración se tomó un *driver* desde la cabecera del catálogo, se identificaron entre dos y tres patrones reconocidos en la literatura capaces de satisfacer los escenarios de calidad asociados, y se evaluaron sus *pros* y *contras* a la luz del contexto del producto y de las restricciones declaradas. Los criterios transversales que el equipo aplicó al ponderar alternativas fueron: **alineamiento con DDD** —anticipando el trabajo estratégico de la [sección 4.2.](#4.2.) y la arquitectura de la [sección 4.3.](#4.3.)—, **simplicidad operacional** para una solución en fase de validación, **capacidad de evolución** sin reescritura, y **costo de adopción** para un equipo de cinco integrantes con experiencia heterogénea.
+El equipo aplicó un proceso iterativo inspirado en el _Quality Attribute Workshop_ sobre los _drivers_ de mayor impacto del [backlog](#4.1.3.). En cada iteración se tomó un _driver_ desde la cabecera del catálogo, se identificaron entre dos y tres patrones reconocidos en la literatura capaces de satisfacer los escenarios de calidad asociados, y se evaluaron sus _pros_ y _contras_ a la luz del contexto del producto y de las restricciones declaradas. Los criterios transversales que el equipo aplicó al ponderar alternativas fueron: **alineamiento con DDD** —anticipando el trabajo estratégico de la [sección 4.2.](#4.2.) y la arquitectura de la [sección 4.3.](#4.3.)—, **simplicidad operacional** para una solución en fase de validación, **capacidad de evolución** sin reescritura, y **costo de adopción** para un equipo de cinco integrantes con experiencia heterogénea.
 
-Los *drivers* de menor importancia y menor complejidad técnica (D09 — APIs RESTful y D10 — Idioma neutro) se atienden con decisiones directas, sin requerir matriz comparativa: para D09 se adopta REST sobre HTTP/JSON con versionado por *path* (`/api/v1/...`), patrón maduro y suficiente para el alcance actual; para D10 se establece una convención de copia centralizada en archivos de recursos por idioma, dejando la solución abierta a internacionalización futura sin trabajo arquitectónico adicional. La matriz a continuación documenta la evaluación de patrones para los *drivers* restantes; las decisiones definitivas se cierran junto con los refinamientos de escenarios en la [sección 4.1.5.](#4.1.5.) y se materializan en las vistas C4 de la [sección 4.3.](#4.3.).
+Los _drivers_ de menor importancia y menor complejidad técnica (D09 — APIs RESTful y D10 — Idioma neutro) se atienden con decisiones directas, sin requerir matriz comparativa: para D09 se adopta REST sobre HTTP/JSON con versionado por _path_ (`/api/v1/...`), patrón maduro y suficiente para el alcance actual; para D10 se establece una convención de copia centralizada en archivos de recursos por idioma, dejando la solución abierta a internacionalización futura sin trabajo arquitectónico adicional. La matriz a continuación documenta la evaluación de patrones para los _drivers_ restantes; las decisiones definitivas se cierran junto con los refinamientos de escenarios en la [sección 4.1.5.](#4.1.5.) y se materializan en las vistas C4 de la [sección 4.3.](#4.3.).
 
-| Driver ID | Título de Driver | Patrón 1 | Pros (P1) | Contras (P1) | Patrón 2 | Pros (P2) | Contras (P2) | Patrón 3 | Pros (P3) | Contras (P3) |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **D01** | Reserva consistente sin doble-asignación | **Pessimistic Locking** (`SELECT ... FOR UPDATE`) | Garantía dura de no doble-reserva; semántica explícita; sencilla sobre BD relacional | Bloqueos en BD reducen concurrencia; riesgo de *deadlocks*; peor latencia bajo alta carga | **Optimistic Locking** (versión + reintento) | Alta concurrencia sin bloqueos; escala horizontalmente; bajo costo en condiciones normales | Requiere reintento en cliente o servicio; el conflicto se vuelve visible al Artesano si compite | **Saga + Idempotencia** | Encaja con eventos de dominio (alimenta US22); útil si la reserva evoluciona a multi-paso | Sobre-ingeniería para una transacción atómica simple; aumenta latencia y deuda operativa |
-| **D02** | Listado performante con orden geográfico | **Cache distribuido (Redis)** con invalidación por evento | Latencia muy baja para el catálogo caliente; simple de operar inicialmente; escala lectura | Necesita coherencia entre BD y *cache*; riesgo de *stale reads* ante invalidación tardía | **Read Replica + índice geoespacial (PostGIS)** | Consultas geográficas eficientes nativas; desacopla lectura de escritura; estándar maduro | Complejidad operativa adicional (réplicas); latencia de replicación afecta otros flujos | **CQRS con vista materializada** | *Query* optimizada por proyección; separación clara de comandos y consultas | Complejidad alta; sólo se justifica si la lectura escala mucho más que la escritura |
-| **D03** | Captura móvil de imagen + GPS | **Direct API con SDK móvil ligero** | Simple, menos componentes; suficiente para MVP; menor latencia extremo a extremo | Lógica de agregación queda en el cliente; mayor riesgo de divergencia entre clientes | **Backend for Frontend (BFF)** | Optimiza *payload* por cliente; concentra agregaciones; aísla cambios del cliente | Componente adicional que mantener; duplica *concerns* en fase de validación | **Offline-first con sincronización** | Operativo sin red (Gamarra tiene cobertura irregular en ciertas galerías) | Complejidad de resolución de conflictos; no justificable hasta validar uso real |
-| **D04** | Onboarding sin contraseñas | **Token de dispositivo + datos de contacto** | Alta instantánea, alineado con el *Empathy Mapping* del Cap. II; sin canales externos | Re-alta requerida al cambiar de equipo; vulnerable a pérdida del dispositivo | **Magic Link** (email/SMS *one-time*) | Sin contraseñas; mecanismo conocido por usuarios; soporta cambio de dispositivo | Requiere infraestructura de email/SMS; latencia de entrega; muchos Confeccionistas usan email poco | **OAuth (Google/Facebook)** | Identidad verificada; sin contraseña local; reduce el abandono de registro | Muchos Confeccionistas no tienen una cuenta gestionada; introduce dependencia con terceros |
-| **D05** | Clasificación automática de textiles | **Adapter síncrono al servicio externo** | Simple de razonar; flujo lineal; respuesta inmediata si todo va bien | Bloquea publicación ante latencia o caída del proveedor; no resiliente sin trabajo extra | **Async Adapter + Cola de eventos** | Desacopla publicación de clasificación; soporta degradación del proveedor; reintentable | *Eventual consistency* en etiquetas; mayor complejidad operativa | **Strangler Fig** (intermediación progresiva) | Habilita migración futura sin *big-bang*; útil si se introducen modelos propios | Prematuro en fase de validación; *over-design* para la versión actual del producto |
-| **D06** | Estados explícitos del lote | **State Pattern** (clase `Lote` con objetos por estado) | Transiciones controladas en código; semántica clara; alta testabilidad | Clases adicionales por estado; puede inflar el modelo si los estados crecen | **Máquina de estados explícita (FSM)** | Transiciones declarativas y validables; documentables externamente | Puede sentirse pesado para 5 estados; requiere librería o infra propia | **Domain Events + Aggregate Lote** | Alineado con DDD (anticipa 4.2); cada transición emite evento (alimenta US22 y notificaciones) | Requiere infraestructura de eventos; mayor curva de aprendizaje del equipo |
-| **D07** | Aislamiento del proveedor de IA | **Hexagonal Port + Adapter** | Encaja naturalmente con DDD; testeable con dobles; el código de dominio queda limpio | Disciplina del equipo necesaria para no filtrar el modelo del proveedor al dominio | **Anti-Corruption Layer (ACL)** | Traduce el modelo del proveedor al lenguaje ubicuo del dominio; protege el dominio | Capa adicional que mantener; verbosidad para casos simples | **Strangler Fig** | Útil si en el futuro se reemplazan partes incrementalmente | Prematuro: hoy hay un único proveedor declarado en TS03 |
-| **D08** | Resiliencia ante caída de Cloud Vision | **Async Queue + Retry con backoff exponencial** | Persiste el lote sin bloquear; reintentos sin pérdida; resiliente a *outages* cortos | *Eventual consistency* en clasificación; cola adicional que operar | **Circuit Breaker + degradación a *pendiente*** | Protege al sistema de cascadas de fallo; simple de incorporar como cuña en el adaptador | No resuelve la clasificación, sólo la difiere | **Fallback con clasificación manual del usuario** | El Confeccionista valida la categoría desde el dispositivo | Agrega fricción al flujo y contradice TS05 (*onboarding* sin pasos extra) |
+| Driver ID | Título de Driver                         | Patrón 1                                                  | Pros (P1)                                                                                  | Contras (P1)                                                                              | Patrón 2                                        | Pros (P2)                                                                                  | Contras (P2)                                                                                       | Patrón 3                                          | Pros (P3)                                                                                      | Contras (P3)                                                                               |
+| :-------- | :--------------------------------------- | :-------------------------------------------------------- | :----------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------- | :---------------------------------------------- | :----------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------- | :------------------------------------------------ | :--------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------- |
+| **D01**   | Reserva consistente sin doble-asignación | **Pessimistic Locking** (`SELECT ... FOR UPDATE`)         | Garantía dura de no doble-reserva; semántica explícita; sencilla sobre BD relacional       | Bloqueos en BD reducen concurrencia; riesgo de _deadlocks_; peor latencia bajo alta carga | **Optimistic Locking** (versión + reintento)    | Alta concurrencia sin bloqueos; escala horizontalmente; bajo costo en condiciones normales | Requiere reintento en cliente o servicio; el conflicto se vuelve visible al Artesano si compite    | **Saga + Idempotencia**                           | Encaja con eventos de dominio (alimenta US22); útil si la reserva evoluciona a multi-paso      | Sobre-ingeniería para una transacción atómica simple; aumenta latencia y deuda operativa   |
+| **D02**   | Listado performante con orden geográfico | **Cache distribuido (Redis)** con invalidación por evento | Latencia muy baja para el catálogo caliente; simple de operar inicialmente; escala lectura | Necesita coherencia entre BD y _cache_; riesgo de _stale reads_ ante invalidación tardía  | **Read Replica + índice geoespacial (PostGIS)** | Consultas geográficas eficientes nativas; desacopla lectura de escritura; estándar maduro  | Complejidad operativa adicional (réplicas); latencia de replicación afecta otros flujos            | **CQRS con vista materializada**                  | _Query_ optimizada por proyección; separación clara de comandos y consultas                    | Complejidad alta; sólo se justifica si la lectura escala mucho más que la escritura        |
+| **D03**   | Captura móvil de imagen + GPS            | **Direct API con SDK móvil ligero**                       | Simple, menos componentes; suficiente para MVP; menor latencia extremo a extremo           | Lógica de agregación queda en el cliente; mayor riesgo de divergencia entre clientes      | **Backend for Frontend (BFF)**                  | Optimiza _payload_ por cliente; concentra agregaciones; aísla cambios del cliente          | Componente adicional que mantener; duplica _concerns_ en fase de validación                        | **Offline-first con sincronización**              | Operativo sin red (Gamarra tiene cobertura irregular en ciertas galerías)                      | Complejidad de resolución de conflictos; no justificable hasta validar uso real            |
+| **D04**   | Onboarding sin contraseñas               | **Token de dispositivo + datos de contacto**              | Alta instantánea, alineado con el _Empathy Mapping_ del Cap. II; sin canales externos      | Re-alta requerida al cambiar de equipo; vulnerable a pérdida del dispositivo              | **Magic Link** (email/SMS _one-time_)           | Sin contraseñas; mecanismo conocido por usuarios; soporta cambio de dispositivo            | Requiere infraestructura de email/SMS; latencia de entrega; muchos Confeccionistas usan email poco | **OAuth (Google/Facebook)**                       | Identidad verificada; sin contraseña local; reduce el abandono de registro                     | Muchos Confeccionistas no tienen una cuenta gestionada; introduce dependencia con terceros |
+| **D05**   | Clasificación automática de textiles     | **Adapter síncrono al servicio externo**                  | Simple de razonar; flujo lineal; respuesta inmediata si todo va bien                       | Bloquea publicación ante latencia o caída del proveedor; no resiliente sin trabajo extra  | **Async Adapter + Cola de eventos**             | Desacopla publicación de clasificación; soporta degradación del proveedor; reintentable    | _Eventual consistency_ en etiquetas; mayor complejidad operativa                                   | **Strangler Fig** (intermediación progresiva)     | Habilita migración futura sin _big-bang_; útil si se introducen modelos propios                | Prematuro en fase de validación; _over-design_ para la versión actual del producto         |
+| **D06**   | Estados explícitos del lote              | **State Pattern** (clase `Lote` con objetos por estado)   | Transiciones controladas en código; semántica clara; alta testabilidad                     | Clases adicionales por estado; puede inflar el modelo si los estados crecen               | **Máquina de estados explícita (FSM)**          | Transiciones declarativas y validables; documentables externamente                         | Puede sentirse pesado para 5 estados; requiere librería o infra propia                             | **Domain Events + Aggregate Lote**                | Alineado con DDD (anticipa 4.2); cada transición emite evento (alimenta US22 y notificaciones) | Requiere infraestructura de eventos; mayor curva de aprendizaje del equipo                 |
+| **D07**   | Aislamiento del proveedor de IA          | **Hexagonal Port + Adapter**                              | Encaja naturalmente con DDD; testeable con dobles; el código de dominio queda limpio       | Disciplina del equipo necesaria para no filtrar el modelo del proveedor al dominio        | **Anti-Corruption Layer (ACL)**                 | Traduce el modelo del proveedor al lenguaje ubicuo del dominio; protege el dominio         | Capa adicional que mantener; verbosidad para casos simples                                         | **Strangler Fig**                                 | Útil si en el futuro se reemplazan partes incrementalmente                                     | Prematuro: hoy hay un único proveedor declarado en TS03                                    |
+| **D08**   | Resiliencia ante caída de Cloud Vision   | **Async Queue + Retry con backoff exponencial**           | Persiste el lote sin bloquear; reintentos sin pérdida; resiliente a _outages_ cortos       | _Eventual consistency_ en clasificación; cola adicional que operar                        | **Circuit Breaker + degradación a _pendiente_** | Protege al sistema de cascadas de fallo; simple de incorporar como cuña en el adaptador    | No resuelve la clasificación, sólo la difiere                                                      | **Fallback con clasificación manual del usuario** | El Confeccionista valida la categoría desde el dispositivo                                     | Agrega fricción al flujo y contradice TS05 (_onboarding_ sin pasos extra)                  |
 
-A continuación se consolidan las **decisiones adoptadas** para cada *driver* que requirió evaluación comparativa, indicando el patrón ganador y la justificación que sustenta la elección a la luz de los criterios transversales declarados al inicio de la sección. Estas decisiones son el insumo directo para los refinamientos de escenarios de la [sección 4.1.5.](#4.1.5.) y se materializan en las vistas C4 de la [sección 4.3.](#4.3.).
+A continuación se consolidan las **decisiones adoptadas** para cada _driver_ que requirió evaluación comparativa, indicando el patrón ganador y la justificación que sustenta la elección a la luz de los criterios transversales declarados al inicio de la sección. Estas decisiones son el insumo directo para los refinamientos de escenarios de la [sección 4.1.5.](#4.1.5.) y se materializan en las vistas C4 de la [sección 4.3.](#4.3.).
 
-| Driver ID | Decisión adoptada | Justificación |
-| :--- | :--- | :--- |
-| **D01** | **P2 — Optimistic Locking** (`@Version` en JPA, reintento ante `OptimisticLockException`) | Preserva la concurrencia del catálogo sin introducir bloqueos en la base de datos; el conflicto es excepcional y manejable con un reintento corto en el cliente, asumible dada la baja frecuencia esperada de colisiones simultáneas en el MVP. Se descarta P1 (Pessimistic) por su impacto en latencia bajo carga, y P3 (Saga) por sobre-ingeniería frente a una transacción atómica simple. |
-| **D02** | **P2 — Read Replica + índice geoespacial PostGIS** | Las consultas geoespaciales son nativas y eficientes en PostGIS; la complejidad operativa adicional se contiene al ser Supabase un servicio gestionado. Se descarta P1 (cache distribuido) por el riesgo de *stale reads* sobre un catálogo cuya frescura es crítica para la confianza del Artesano, y P3 (CQRS) por complejidad no justificada en fase de validación. |
-| **D03** | **P1 — Direct API con SDK móvil ligero** | Suficiente para la fase de validación; introducir un BFF (P2) anticipa una capa de complejidad sin evidencia aún de divergencia entre clientes. La operación *offline-first* (P3) se descarta hasta validar la frecuencia real de pérdida de cobertura en Gamarra. |
-| **D04** | **P1 — Token de dispositivo + datos de contacto** | Alineado con el *Empathy Mapping* del Capítulo II y con el *constraint* TS05; permite *onboarding* instantáneo sin canales externos de email/SMS. P2 (*Magic Link*) se descarta por la baja exposición digital del segmento Confeccionista y por la dependencia con infraestructura de mensajería; P3 (OAuth) por la baja penetración de cuentas gestionadas en el segmento. |
-| **D05** | **P2 — Async Adapter + Cola de eventos** | Desacopla la publicación del lote de la disponibilidad del proveedor de IA; la *eventual consistency* en las etiquetas es aceptable para el flujo de descubrimiento del Artesano y habilita la resiliencia exigida por D08. Se descarta P1 (síncrono) por bloquear la publicación ante latencia, y P3 (*Strangler Fig*) por prematuro frente a un único proveedor declarado. |
-| **D06** | **P3 — Domain Events + Aggregate Lote** | Habilita la arquitectura DDD anticipada en la [sección 4.2.](#4.2.) y soportada por la decisión P1 de D07; cada transición de estado emite un evento de dominio que alimenta tanto las notificaciones (QA04) como la trazabilidad operacional. Se descarta P1 (*State Pattern*) y P2 (FSM) por ofrecer menor poder expresivo y no integrarse con la mensajería de eventos ya elegida en D05 y D08. |
-| **D07** | **P1 — Hexagonal Port + Adapter** | Encaja naturalmente con la decisión DDD de D06 y mantiene el dominio limpio frente al modelo del proveedor externo. La Anti-Corruption Layer (P2) se reserva como técnica complementaria dentro del propio *adapter* cuando la traducción del modelo externo lo amerite; la *Strangler Fig* (P3) es prematura al haber un único proveedor declarado en TS03. |
-| **D08** | **P1 — Async Queue + Retry con backoff exponencial** | Persiste el lote sin bloquear la publicación ante latencia o caída de Cloud Vision; reutiliza la infraestructura de cola adoptada en D05, evitando duplicar mecanismos de resiliencia. P2 (*Circuit Breaker*) se incorpora como cuña adicional dentro del *adapter* sin reemplazar la cola; P3 (*fallback* manual) se descarta por contradecir el *constraint* TS05. |
+| Driver ID | Decisión adoptada                                                                         | Justificación                                                                                                                                                                                                                                                                                                                                                                                      |
+| :-------- | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **D01**   | **P2 — Optimistic Locking** (`@Version` en JPA, reintento ante `OptimisticLockException`) | Preserva la concurrencia del catálogo sin introducir bloqueos en la base de datos; el conflicto es excepcional y manejable con un reintento corto en el cliente, asumible dada la baja frecuencia esperada de colisiones simultáneas en el MVP. Se descarta P1 (Pessimistic) por su impacto en latencia bajo carga, y P3 (Saga) por sobre-ingeniería frente a una transacción atómica simple.      |
+| **D02**   | **P2 — Read Replica + índice geoespacial PostGIS**                                        | Las consultas geoespaciales son nativas y eficientes en PostGIS; la complejidad operativa adicional se contiene al ser Supabase un servicio gestionado. Se descarta P1 (cache distribuido) por el riesgo de _stale reads_ sobre un catálogo cuya frescura es crítica para la confianza del Artesano, y P3 (CQRS) por complejidad no justificada en fase de validación.                             |
+| **D03**   | **P1 — Direct API con SDK móvil ligero**                                                  | Suficiente para la fase de validación; introducir un BFF (P2) anticipa una capa de complejidad sin evidencia aún de divergencia entre clientes. La operación _offline-first_ (P3) se descarta hasta validar la frecuencia real de pérdida de cobertura en Gamarra.                                                                                                                                 |
+| **D04**   | **P1 — Token de dispositivo + datos de contacto**                                         | Alineado con el _Empathy Mapping_ del Capítulo II y con el _constraint_ TS05; permite _onboarding_ instantáneo sin canales externos de email/SMS. P2 (_Magic Link_) se descarta por la baja exposición digital del segmento Confeccionista y por la dependencia con infraestructura de mensajería; P3 (OAuth) por la baja penetración de cuentas gestionadas en el segmento.                       |
+| **D05**   | **P2 — Async Adapter + Cola de eventos**                                                  | Desacopla la publicación del lote de la disponibilidad del proveedor de IA; la _eventual consistency_ en las etiquetas es aceptable para el flujo de descubrimiento del Artesano y habilita la resiliencia exigida por D08. Se descarta P1 (síncrono) por bloquear la publicación ante latencia, y P3 (_Strangler Fig_) por prematuro frente a un único proveedor declarado.                       |
+| **D06**   | **P3 — Domain Events + Aggregate Lote**                                                   | Habilita la arquitectura DDD anticipada en la [sección 4.2.](#4.2.) y soportada por la decisión P1 de D07; cada transición de estado emite un evento de dominio que alimenta tanto las notificaciones (QA04) como la trazabilidad operacional. Se descarta P1 (_State Pattern_) y P2 (FSM) por ofrecer menor poder expresivo y no integrarse con la mensajería de eventos ya elegida en D05 y D08. |
+| **D07**   | **P1 — Hexagonal Port + Adapter**                                                         | Encaja naturalmente con la decisión DDD de D06 y mantiene el dominio limpio frente al modelo del proveedor externo. La Anti-Corruption Layer (P2) se reserva como técnica complementaria dentro del propio _adapter_ cuando la traducción del modelo externo lo amerite; la _Strangler Fig_ (P3) es prematura al haber un único proveedor declarado en TS03.                                       |
+| **D08**   | **P1 — Async Queue + Retry con backoff exponencial**                                      | Persiste el lote sin bloquear la publicación ante latencia o caída de Cloud Vision; reutiliza la infraestructura de cola adoptada en D05, evitando duplicar mecanismos de resiliencia. P2 (_Circuit Breaker_) se incorpora como cuña adicional dentro del _adapter_ sin reemplazar la cola; P3 (_fallback_ manual) se descarta por contradecir el _constraint_ TS05.                               |
 
-Las decisiones para D09 y D10, atendidas sin matriz comparativa según se justificó al inicio de la sección, quedan así: **D09 — REST sobre HTTP/JSON con versionado por *path*** y **D10 — copia centralizada en archivos de recursos por idioma**.
+Las decisiones para D09 y D10, atendidas sin matriz comparativa según se justificó al inicio de la sección, quedan así: **D09 — REST sobre HTTP/JSON con versionado por _path_** y **D10 — copia centralizada en archivos de recursos por idioma**.
 
 <a name="4.1.5."></a>
 
 ### 4.1.5. Quality Attribute Scenario Refinements
 
-A continuación se presentan los escenarios de atributos de calidad **refinados** tras el *Quality Attribute Workshop*. Cada cuadro extiende un escenario inicial de la [sección 4.1.2.2.](#4.1.2.2.) con su detalle de seis dimensiones SEI, los *Business Goals* asociados, las *Questions* abiertas que el equipo dejará para validación posterior, y los *Issues* identificados que pueden afectar las decisiones de implementación. Los escenarios se presentan **en orden de prioridad** decreciente: comienzan los que el equipo considera críticos para preservar la confianza en el modelo (consistencia transaccional, performance del descubrimiento) y continúan con los que sostienen la operación bajo condiciones adversas (resiliencia, modificabilidad y usabilidad de adopción).
+A continuación se presentan los escenarios de atributos de calidad **refinados** tras el _Quality Attribute Workshop_. Cada cuadro extiende un escenario inicial de la [sección 4.1.2.2.](#4.1.2.2.) con su detalle de seis dimensiones SEI, los _Business Goals_ asociados, las _Questions_ abiertas que el equipo dejará para validación posterior, y los _Issues_ identificados que pueden afectar las decisiones de implementación. Los escenarios se presentan **en orden de prioridad** decreciente: comienzan los que el equipo considera críticos para preservar la confianza en el modelo (consistencia transaccional, performance del descubrimiento) y continúan con los que sostienen la operación bajo condiciones adversas (resiliencia, modificabilidad y usabilidad de adopción).
 
 #### Scenario Refinement #1 — Reserva concurrente de lote (QA02)
 
@@ -1443,6 +1431,7 @@ A continuación se presentan los escenarios de atributos de calidad **refinados*
 <a name="4.2.1."></a>
 
 ### 4.2.1. EventStorming
+
 Mediante la técnica del Event Storming definimos los siguientes Bounded Context los cuales son principales dentro del proyecto.
 
 **USUARIO REGISTRADO**
@@ -1500,7 +1489,6 @@ Administra el envío de notificaciones y alertas generadas por eventos important
 <p align="center">
   <img src="./assets/NotificationManagment.jpg" width="850">
 </p>
-
 
 El diagrama completo se encuentra en el siguiente enlace: [EventStorming](https://miro.com/app/board/uXjVHfI02Ag=/?share_link_id=281658940692)
 
@@ -1588,7 +1576,7 @@ Los bounded contexts definidos fueron: User Profile Management, Textile Classifi
   <img src="./assets/NotificationManagement.jpg" width="1000">
 </p>
 
-El diagrama completo se encuentra en el siguiente enlace: 
+El diagrama completo se encuentra en el siguiente enlace:
 [Bounded Context Canvases](https://miro.com/app/board/uXjVHc84QZA=/?share_link_id=254000344450)
 
 <a name="4.2.5."></a>
@@ -1603,14 +1591,13 @@ El Context Mapping permite identificar y visualizar las relaciones estructurales
 
 El diagrama presentado muestra cómo cada Bounded Context mantiene su independencia funcional mientras colabora con los demás para completar el flujo principal del negocio, desde el registro del usuario hasta la publicación, clasificación, reserva, recojo y notificación final del lote textil. Esta estructura permite una mejor escalabilidad del sistema, facilita el mantenimiento futuro y asegura que los cambios en un contexto no impacten directamente en todo el dominio, cumpliendo así con los principios fundamentales de Domain-Driven Design.
 
-
 El diagrama completo se encuentra en el siguiente enlace: [Context Mapping](https://lucid.app/lucidchart/ec20dbd0-3469-494a-b742-630a12a29cbd/edit?viewport_loc=-836%2C39%2C4359%2C1543%2C0_0&invitationId=inv_b8a17edd-7cb1-4abc-b7a9-cb7bc8908400)
 
 <a name="4.3."></a>
 
 ## 4.3. Software Architecture
 
-En esta sección se presenta y explica la arquitectura de software de la solución *Gamarra Loop / GamarraLoop* aplicando el **C4 Model** propuesto por Simon Brown como marco de visualización progresiva, comenzando por una vista organizacional amplia (System Landscape) y avanzando luego por niveles de detalle creciente (Context, Container y Deployment). Las cuatro vistas que se desarrollan a continuación constituyen la materialización visual de las decisiones arquitectónicas tomadas en la [sección 4.1.](#4.1.) — particularmente del *Architectural Drivers Backlog* de la [sección 4.1.3.](#4.1.3.) y de los patrones evaluados en la [sección 4.1.4.](#4.1.4.) — y consumen el modelado de bounded contexts elaborado en la [sección 4.2.](#4.2.) cuando es necesario establecer límites internos del sistema.
+En esta sección se presenta y explica la arquitectura de software de la solución _Gamarra Loop / GamarraLoop_ aplicando el **C4 Model** propuesto por Simon Brown como marco de visualización progresiva, comenzando por una vista organizacional amplia (System Landscape) y avanzando luego por niveles de detalle creciente (Context, Container y Deployment). Las cuatro vistas que se desarrollan a continuación constituyen la materialización visual de las decisiones arquitectónicas tomadas en la [sección 4.1.](#4.1.) — particularmente del _Architectural Drivers Backlog_ de la [sección 4.1.3.](#4.1.3.) y de los patrones evaluados en la [sección 4.1.4.](#4.1.4.) — y consumen el modelado de bounded contexts elaborado en la [sección 4.2.](#4.2.) cuando es necesario establecer límites internos del sistema.
 
 Toda la arquitectura se modeló utilizando **Structurizr**, herramienta indicada por la rúbrica del curso para C4 Model. Las vistas se especifican en el archivo [`c4/workspace.dsl`](c4/workspace.dsl) en la raíz del repositorio, lo cual permite versionar el modelo arquitectónico junto con el resto de la documentación y regenerar las imágenes en cualquier momento de forma reproducible. Las imágenes embebidas en cada subsección son el resultado de exportar dicho modelo desde Structurizr a PNG; los archivos PNG se almacenan en `Img/c4/`.
 
@@ -1618,45 +1605,45 @@ Toda la arquitectura se modeló utilizando **Structurizr**, herramienta indicada
 
 ### 4.3.1. Software Architecture System Landscape Diagram
 
-El **System Landscape Diagram** ofrece la mirada más amplia del C4 Model y representa la posición de *Gamarra Loop / GamarraLoop* dentro del ecosistema operativo del **emporio comercial de Gamarra**, mostrando exclusivamente al sistema y a los dos segmentos objetivo definidos en la [sección 1.3.](#1.3.) — Confeccionistas y Artesanos / Recolectores. A diferencia del *Context Diagram* desarrollado en la [sección 4.3.2.](#4.3.2.) —que detalla las integraciones técnicas con servicios de terceros—, esta vista omite deliberadamente los sistemas externos para enfocar la atención en la **dimensión humana** del producto: quiénes lo operan y qué intercambio habilita la plataforma dentro del distrito de La Victoria. Está pensada para comunicar el alcance de la solución a stakeholders no técnicos (cliente, equipo de producto, audiencia académica) sin introducir la complejidad de la integración cloud.
+El **System Landscape Diagram** ofrece la mirada más amplia del C4 Model y representa la posición de _Gamarra Loop / GamarraLoop_ dentro del ecosistema operativo del **emporio comercial de Gamarra**, mostrando exclusivamente al sistema y a los dos segmentos objetivo definidos en la [sección 1.3.](#1.3.) — Confeccionistas y Artesanos / Recolectores. A diferencia del _Context Diagram_ desarrollado en la [sección 4.3.2.](#4.3.2.) —que detalla las integraciones técnicas con servicios de terceros—, esta vista omite deliberadamente los sistemas externos para enfocar la atención en la **dimensión humana** del producto: quiénes lo operan y qué intercambio habilita la plataforma dentro del distrito de La Victoria. Está pensada para comunicar el alcance de la solución a stakeholders no técnicos (cliente, equipo de producto, audiencia académica) sin introducir la complejidad de la integración cloud.
 
 <img src="Img/c4/SystemLandscape.png" alt="Software Architecture System Landscape Diagram — Gamarra Loop"/>
 
 El diagrama integra dos categorías de elementos, ambos sustentados en capítulos previos del informe:
 
-| Categoría | Elementos | Rol en el ecosistema |
-| :--- | :--- | :--- |
+| Categoría                                                               | Elementos                             | Rol en el ecosistema                                                                                                                                                                                                                                                           |
+| :---------------------------------------------------------------------- | :------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Usuarios primarios** (actores con interacción directa con el sistema) | Confeccionista; Artesano / Recolector | Son los dos segmentos objetivo definidos en la [sección 1.3.](#1.3.), las personas elaboradas en la [sección 2.3.1.](#2.3.1.) y los autores de las User Stories del [Capítulo III](#3.). Operan los flujos de publicación, descubrimiento, reserva y recojo de lotes textiles. |
-| **Sistema in-scope** | *Gamarra Loop* | Plataforma compuesta por una aplicación móvil multiplataforma (Flutter, construida con FlutterFlow), una landing page (HTML5/CSS3/JS) y un conjunto de servicios REST internos (Spring Boot). Es el único elemento sobre el que el equipo tiene control de implementación. |
+| **Sistema in-scope**                                                    | _Gamarra Loop_                        | Plataforma compuesta por una aplicación móvil multiplataforma (Flutter, construida con FlutterFlow), una landing page (HTML5/CSS3/JS) y un conjunto de servicios REST internos (Spring Boot). Es el único elemento sobre el que el equipo tiene control de implementación.     |
 
 <a name="4.3.2."></a>
 
 ### 4.3.2. Software Architecture Context Level Diagrams
 
-El **Context Diagram** corresponde al primer nivel del C4 Model y representa el sistema *Gamarra Loop* como un único recuadro central rodeado por sus usuarios y por los sistemas externos con los que se integra técnicamente. A diferencia del *System Landscape* anterior, esta vista deliberadamente **excluye** a los stakeholders organizacionales (ONGs, gobierno, recicladoras) que no participan de las integraciones técnicas, y se enfoca en explicitar las dependencias externas que serán objeto de diseño detallado en la [sección 4.3.3.](#4.3.3.) (Container Level) y en el *Tactical-Level Software Design* del [Capítulo V](#5.).
+El **Context Diagram** corresponde al primer nivel del C4 Model y representa el sistema _Gamarra Loop_ como un único recuadro central rodeado por sus usuarios y por los sistemas externos con los que se integra técnicamente. A diferencia del _System Landscape_ anterior, esta vista deliberadamente **excluye** a los stakeholders organizacionales (ONGs, gobierno, recicladoras) que no participan de las integraciones técnicas, y se enfoca en explicitar las dependencias externas que serán objeto de diseño detallado en la [sección 4.3.3.](#4.3.3.) (Container Level) y en el _Tactical-Level Software Design_ del [Capítulo V](#5.).
 
 <img src="Img/c4/SystemContext.png" alt="Software Architecture Context Level Diagram — Gamarra Loop"/>
 
-El cuadro a continuación documenta las **integraciones externas** del sistema *Gamarra Loop*, especificando para cada una el propósito de la integración, el protocolo de comunicación y la decisión arquitectónica que la justifica con trazabilidad explícita al *Architectural Drivers Backlog* de la [sección 4.1.3.](#4.1.3.) y a las *Architectural Design Decisions* de la [sección 4.1.4.](#4.1.4.).
+El cuadro a continuación documenta las **integraciones externas** del sistema _Gamarra Loop_, especificando para cada una el propósito de la integración, el protocolo de comunicación y la decisión arquitectónica que la justifica con trazabilidad explícita al _Architectural Drivers Backlog_ de la [sección 4.1.3.](#4.1.3.) y a las _Architectural Design Decisions_ de la [sección 4.1.4.](#4.1.4.).
 
-| Sistema externo | Propósito de la integración | Protocolo | Decisión arquitectónica que la sustenta |
-| :--- | :--- | :--- | :--- |
-| **Google Cloud Vision** | Clasificación automática del material y color a partir de la fotografía del lote | REST/JSON sobre HTTPS | **TS03** (Constraint del Lean UX Canvas) + **D05** (Clasificación automática de textiles) + **D07** (Aislamiento del proveedor de IA bajo el patrón *Hexagonal Port + Adapter*). |
-| **Firebase Authentication** | Emisión y validación de JWT anónimos para identificar usuarios sin gestión de contraseñas | JWKS sobre HTTPS | **D04** (Onboarding sin contraseñas, decisión P1: *Token de dispositivo + datos de contacto*) + **TS05** (Onboarding simplificado para usuarios con baja exposición digital). |
-| **Google Cloud Storage** | Persistencia de imágenes originales y miniaturas comprimidas de los lotes | REST sobre HTTPS + Signed URLs | Soporte directo del escenario **QA07** (Performance — compresión de imagen ≤ 5 segundos en p90) y de la *primary story* **US05**. |
-| **Google Cloud Pub/Sub** | Mensajería asíncrona para desacoplar publicación de lote, clasificación con IA y notificaciones | Pub/Sub API sobre HTTPS | **D06** (Estados explícitos del ciclo de vida del lote bajo el patrón *Domain Events*) + **D08** (Resiliencia ante degradación de Cloud Vision con *Async Queue + Retry con backoff exponencial*). |
-| **Supabase Postgres** | Persistencia transaccional con extensión PostGIS para consultas por proximidad geográfica | JDBC sobre TLS | **D02** (Listado de lotes con baja latencia y orden por proximidad) + **D01** (Reserva consistente sin doble-asignación, soportada por *optimistic locking* JPA `@Version` o *pessimistic locking* `SELECT ... FOR UPDATE`). |
-| **Google Maps Platform** | Renderizado de mapas, geocoding inverso y obtención de referencias geográficas | Maps JavaScript API + tiles | **D03** (Captura móvil de imagen y geolocalización del lote) + **TS04** (Geolocalización del dispositivo como punto de recojo). |
-| **Firebase Cloud Messaging** | Envío de notificaciones push a los dispositivos móviles | FCM API sobre HTTPS | Soporte del escenario **QA04** (Usabilidad — confirmación visual y notificación push de publicación exitosa). |
+| Sistema externo              | Propósito de la integración                                                                     | Protocolo                      | Decisión arquitectónica que la sustenta                                                                                                                                                                                      |
+| :--------------------------- | :---------------------------------------------------------------------------------------------- | :----------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Google Cloud Vision**      | Clasificación automática del material y color a partir de la fotografía del lote                | REST/JSON sobre HTTPS          | **TS03** (Constraint del Lean UX Canvas) + **D05** (Clasificación automática de textiles) + **D07** (Aislamiento del proveedor de IA bajo el patrón _Hexagonal Port + Adapter_).                                             |
+| **Firebase Authentication**  | Emisión y validación de JWT anónimos para identificar usuarios sin gestión de contraseñas       | JWKS sobre HTTPS               | **D04** (Onboarding sin contraseñas, decisión P1: _Token de dispositivo + datos de contacto_) + **TS05** (Onboarding simplificado para usuarios con baja exposición digital).                                                |
+| **Google Cloud Storage**     | Persistencia de imágenes originales y miniaturas comprimidas de los lotes                       | REST sobre HTTPS + Signed URLs | Soporte directo del escenario **QA07** (Performance — compresión de imagen ≤ 5 segundos en p90) y de la _primary story_ **US05**.                                                                                            |
+| **Google Cloud Pub/Sub**     | Mensajería asíncrona para desacoplar publicación de lote, clasificación con IA y notificaciones | Pub/Sub API sobre HTTPS        | **D06** (Estados explícitos del ciclo de vida del lote bajo el patrón _Domain Events_) + **D08** (Resiliencia ante degradación de Cloud Vision con _Async Queue + Retry con backoff exponencial_).                           |
+| **Supabase Postgres**        | Persistencia transaccional con extensión PostGIS para consultas por proximidad geográfica       | JDBC sobre TLS                 | **D02** (Listado de lotes con baja latencia y orden por proximidad) + **D01** (Reserva consistente sin doble-asignación, soportada por _optimistic locking_ JPA `@Version` o _pessimistic locking_ `SELECT ... FOR UPDATE`). |
+| **Google Maps Platform**     | Renderizado de mapas, geocoding inverso y obtención de referencias geográficas                  | Maps JavaScript API + tiles    | **D03** (Captura móvil de imagen y geolocalización del lote) + **TS04** (Geolocalización del dispositivo como punto de recojo).                                                                                              |
+| **Firebase Cloud Messaging** | Envío de notificaciones push a los dispositivos móviles                                         | FCM API sobre HTTPS            | Soporte del escenario **QA04** (Usabilidad — confirmación visual y notificación push de publicación exitosa).                                                                                                                |
 
 Las **interacciones de los actores con el sistema** se documentan a continuación, también con trazabilidad al [Capítulo III](#3.):
 
-| Actor | Interacción primaria con *Gamarra Loop* | User Stories asociadas |
-| :--- | :--- | :--- |
-| **Confeccionista** | Publica lotes de retazos textiles capturando foto, ubicación GPS y referencias del taller | US05, US06, US07, US08 |
+| Actor                     | Interacción primaria con _Gamarra Loop_                                                   | User Stories asociadas |
+| :------------------------ | :---------------------------------------------------------------------------------------- | :--------------------- |
+| **Confeccionista**        | Publica lotes de retazos textiles capturando foto, ubicación GPS y referencias del taller | US05, US06, US07, US08 |
 | **Artesano / Recolector** | Consulta el catálogo geolocalizado de lotes disponibles, los reserva y confirma el recojo | US12, US13, US14, US15 |
 
-El diagrama explicita que **la totalidad de las dependencias externas son servicios gestionados de Google Cloud Platform**, con la única excepción de **Supabase Postgres**, que es un servicio gestionado externo a GCP. Esta heterogeneidad es una decisión consciente del equipo: Cloud SQL — la opción nativa de GCP para PostgreSQL — no dispone de un *free tier* permanente, mientras que Supabase ofrece PostgreSQL con extensión PostGIS habilitable de forma gratuita y sin límite temporal, lo cual hace viable la operación del sistema sin costos para el equipo durante toda la fase académica. La complejidad operativa adicional de gestionar dos *cloud providers* es marginal porque la conexión es estándar (JDBC sobre TLS) y se aísla detrás del *port* de persistencia del dominio en línea con el patrón *Hexagonal Port + Adapter* adoptado en la [sección 4.1.4.](#4.1.4.).
+El diagrama explicita que **la totalidad de las dependencias externas son servicios gestionados de Google Cloud Platform**, con la única excepción de **Supabase Postgres**, que es un servicio gestionado externo a GCP. Esta heterogeneidad es una decisión consciente del equipo: Cloud SQL — la opción nativa de GCP para PostgreSQL — no dispone de un _free tier_ permanente, mientras que Supabase ofrece PostgreSQL con extensión PostGIS habilitable de forma gratuita y sin límite temporal, lo cual hace viable la operación del sistema sin costos para el equipo durante toda la fase académica. La complejidad operativa adicional de gestionar dos _cloud providers_ es marginal porque la conexión es estándar (JDBC sobre TLS) y se aísla detrás del _port_ de persistencia del dominio en línea con el patrón _Hexagonal Port + Adapter_ adoptado en la [sección 4.1.4.](#4.1.4.).
 
 <a name="4.3.3."></a>
 
@@ -1668,31 +1655,31 @@ El **Container Diagram** corresponde al segundo nivel del C4 Model y descompone 
 
 El diagrama identifica **tres containers** dentro del sistema _Gamarra Loop_, todos ellos derivados directamente de la _primary functionality_ y de las _constraints_ declaradas en la [sección 4.1.2.](#4.1.2.):
 
-| Container             | Tecnología                  | Responsabilidad                                                                                                                                                                                                                                            | Driver / Decisión arquitectónica que lo sustenta                                                                                                                                                                                                                                                                                                                                            |
-| :-------------------- | :-------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Mobile App**        | Flutter (FlutterFlow) / Dart | Aplicación móvil multiplataforma para Confeccionistas y Artesanos. Captura foto y ubicación GPS del lote, consume el catálogo geolocalizado, gestiona reservas y recibe notificaciones push del recojo.                                                       | **D03** (Captura móvil de imagen y geolocalización del lote) + **TS01** y **TS04** (constraints de captura nativa y geolocalización del dispositivo) + decisión P1 del **D03** en la [sección 4.1.4.](#4.1.4.) — _Direct API con SDK móvil ligero_, alineada con _primary stories_ **US05**, **US06**, **US12**, **US14**.                                                                  |
-| **Landing Page**      | HTML5 / CSS3 / JavaScript    | Sitio estático informativo del proyecto _Gamarra Loop / GamarraLoop_. Presenta la propuesta de valor a Confeccionistas, Artesanos y stakeholders externos. No realiza llamadas al backend.                                                                       | **D09** (APIs RESTful versionadas y agnósticas al cliente) en su corolario inverso: separar el canal de marketing del canal transaccional, evitando acoplar la presencia pública del producto al ciclo de releases del backend. La estática también sostiene el escenario **QA04** (Usabilidad — primer contacto sin fricción).                                                              |
-| **API REST**          | Spring Boot / Java 21        | Backend monolítico modular que expone endpoints REST autenticados con JWT. Internamente se organiza en los **siete bounded contexts** elaborados en la [sección 4.2.](#4.2.) — _User Profile_, _Lot Publication_, _Textile Classification_, _Reservation_, _Pickup and Delivery_, _Expiration_ y _Notification_ — que se detallan a nivel **componente** en el [Capítulo V](#5.). | **D07** (Hexagonal Port + Adapter) + **D09** (REST versionada) + **D06** (Domain Events sobre _Aggregate_ Lote). El estilo **monolito modular** — un único deployable con separación lógica por bounded context — se eligió frente a microservicios por simplicidad operacional para el equipo y por evitar la complejidad de transacciones distribuidas que **D01** (consistencia de reserva) y **D06** (estados explícitos) acarrearían. |
+| Container        | Tecnología                   | Responsabilidad                                                                                                                                                                                                                                                                                                                                                                   | Driver / Decisión arquitectónica que lo sustenta                                                                                                                                                                                                                                                                                                                                                                                           |
+| :--------------- | :--------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Mobile App**   | Flutter (FlutterFlow) / Dart | Aplicación móvil multiplataforma para Confeccionistas y Artesanos. Captura foto y ubicación GPS del lote, consume el catálogo geolocalizado, gestiona reservas y recibe notificaciones push del recojo.                                                                                                                                                                           | **D03** (Captura móvil de imagen y geolocalización del lote) + **TS01** y **TS04** (constraints de captura nativa y geolocalización del dispositivo) + decisión P1 del **D03** en la [sección 4.1.4.](#4.1.4.) — _Direct API con SDK móvil ligero_, alineada con _primary stories_ **US05**, **US06**, **US12**, **US14**.                                                                                                                 |
+| **Landing Page** | HTML5 / CSS3 / JavaScript    | Sitio estático informativo del proyecto _Gamarra Loop / GamarraLoop_. Presenta la propuesta de valor a Confeccionistas, Artesanos y stakeholders externos. No realiza llamadas al backend.                                                                                                                                                                                        | **D09** (APIs RESTful versionadas y agnósticas al cliente) en su corolario inverso: separar el canal de marketing del canal transaccional, evitando acoplar la presencia pública del producto al ciclo de releases del backend. La estática también sostiene el escenario **QA04** (Usabilidad — primer contacto sin fricción).                                                                                                            |
+| **API REST**     | Spring Boot / Java 21        | Backend monolítico modular que expone endpoints REST autenticados con JWT. Internamente se organiza en los **siete bounded contexts** elaborados en la [sección 4.2.](#4.2.) — _User Profile_, _Lot Publication_, _Textile Classification_, _Reservation_, _Pickup and Delivery_, _Expiration_ y _Notification_ — que se detallan a nivel **componente** en el [Capítulo V](#5.). | **D07** (Hexagonal Port + Adapter) + **D09** (REST versionada) + **D06** (Domain Events sobre _Aggregate_ Lote). El estilo **monolito modular** — un único deployable con separación lógica por bounded context — se eligió frente a microservicios por simplicidad operacional para el equipo y por evitar la complejidad de transacciones distribuidas que **D01** (consistencia de reserva) y **D06** (estados explícitos) acarrearían. |
 
 La **única relación interna** entre containers se documenta a continuación; las dependencias externas se desglosan en el cuadro siguiente porque el _re-asignamiento_ desde el sistema completo (4.3.2.) hacia containers puntuales es uno de los aportes informativos centrales de esta vista:
 
-| Origen           | Destino           | Propósito                                                                                                                          | Protocolo                |
-| :--------------- | :---------------- | :--------------------------------------------------------------------------------------------------------------------------------- | :----------------------- |
-| **Mobile App**   | **API REST**      | Consumo de los endpoints transaccionales (publicación, listado geolocalizado, reserva, confirmación de recojo) autenticados con JWT | JSON sobre HTTPS         |
+| Origen         | Destino      | Propósito                                                                                                                           | Protocolo        |
+| :------------- | :----------- | :---------------------------------------------------------------------------------------------------------------------------------- | :--------------- |
+| **Mobile App** | **API REST** | Consumo de los endpoints transaccionales (publicación, listado geolocalizado, reserva, confirmación de recojo) autenticados con JWT | JSON sobre HTTPS |
 
 A diferencia del 4.3.2. — donde todas las integraciones externas se atribuyeron al sistema en su conjunto —, esta vista distribuye las **mismas siete dependencias** entre el container que las consume realmente. La separación importa porque revela qué piezas del sistema sufrirían en caso de degradación de cada proveedor:
 
-| Container que consume | Sistema externo              | Naturaleza de la dependencia                                                                                                                                                                  | Driver / Decisión que la sustenta                                                                                                                                                |
-| :-------------------- | :--------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Mobile App**        | **Firebase Authentication**  | Inicia sesión anónima del usuario y obtiene el JWT del dispositivo mediante el SDK de Firebase. El backend solo valida el token, no participa de su emisión.                                  | **D04** decisión P1 — _Token de dispositivo + datos de contacto_; **TS05** (onboarding sin contraseñas).                                                                          |
-| **Mobile App**        | **Google Maps Platform**     | Renderiza mapas y resuelve _geocoding_ inverso directamente en el dispositivo, evitando proxy a través de la API y reduciendo la latencia percibida por el Artesano en campo.                  | **D03** + **D02** (listado con orden por proximidad) — la presentación geográfica corresponde al cliente; el orden lo calcula el backend con PostGIS.                            |
-| **Mobile App**        | **Firebase Cloud Messaging** | Registra el _device token_ contra FCM al iniciar sesión y recibe los _push_ que la API REST emite cuando un evento del dominio (lote reservado, próximo a expirar, recojo confirmado) ocurre. | Soporte de **QA04** (Usabilidad — confirmación visual y notificación push).                                                                                                       |
-| **API REST**          | **Firebase Authentication**  | Valida el JWT entrante de cada petición HTTPS contra el JWKS público de Firebase. Sin emisión, sin gestión de sesión, sin almacenamiento de credenciales.                                     | **D04** + **TS05**; mantiene el backend _stateless_ y compatible con escalado horizontal en Cloud Run (ver [4.3.4.](#4.3.4.)).                                                    |
+| Container que consume | Sistema externo              | Naturaleza de la dependencia                                                                                                                                                                                              | Driver / Decisión que la sustenta                                                                                                                                                   |
+| :-------------------- | :--------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Mobile App**        | **Firebase Authentication**  | Inicia sesión anónima del usuario y obtiene el JWT del dispositivo mediante el SDK de Firebase. El backend solo valida el token, no participa de su emisión.                                                              | **D04** decisión P1 — _Token de dispositivo + datos de contacto_; **TS05** (onboarding sin contraseñas).                                                                            |
+| **Mobile App**        | **Google Maps Platform**     | Renderiza mapas y resuelve _geocoding_ inverso directamente en el dispositivo, evitando proxy a través de la API y reduciendo la latencia percibida por el Artesano en campo.                                             | **D03** + **D02** (listado con orden por proximidad) — la presentación geográfica corresponde al cliente; el orden lo calcula el backend con PostGIS.                               |
+| **Mobile App**        | **Firebase Cloud Messaging** | Registra el _device token_ contra FCM al iniciar sesión y recibe los _push_ que la API REST emite cuando un evento del dominio (lote reservado, próximo a expirar, recojo confirmado) ocurre.                             | Soporte de **QA04** (Usabilidad — confirmación visual y notificación push).                                                                                                         |
+| **API REST**          | **Firebase Authentication**  | Valida el JWT entrante de cada petición HTTPS contra el JWKS público de Firebase. Sin emisión, sin gestión de sesión, sin almacenamiento de credenciales.                                                                 | **D04** + **TS05**; mantiene el backend _stateless_ y compatible con escalado horizontal en Cloud Run (ver [4.3.4.](#4.3.4.)).                                                      |
 | **API REST**          | **Google Cloud Vision**      | Solicita la clasificación automática del material y color del lote a partir de la imagen. La invocación se hace desde un _adapter_ aislado en una **Anti-Corruption Layer** del bounded context _Textile Classification_. | **D05** (Clasificación automática) + **D07** (Hexagonal Port + Adapter, decisión P1) + **D08** (Resiliencia — _Async Queue + Retry con backoff exponencial_, decisión P1 en 4.1.4). |
-| **API REST**          | **Google Cloud Storage**     | Persiste imágenes originales y miniaturas comprimidas de los lotes. La compresión se realiza dentro del backend para garantizar la cota de tamaño antes de subir.                              | Soporte de **QA07** (Performance — compresión de imagen ≤ 5 segundos en p90) y de la _primary story_ **US05**.                                                                    |
-| **API REST**          | **Google Cloud Pub/Sub**     | Publica y consume eventos de dominio del bounded context _Notification_ (`lote.publicado`, `clasificacion.solicitada`, `lote.reservado`, `lote.expirado`) hacia los demás contextos.            | **D06** (Domain Events + Aggregate Lote, decisión P3 en 4.1.4) + **D08** (mismo patrón asíncrono que sostiene la resiliencia ante caída de Cloud Vision).                          |
-| **API REST**          | **Supabase Postgres**        | Persistencia transaccional con extensión PostGIS para consultas por proximidad geográfica. Usado por todos los bounded contexts a través del _port_ de persistencia del dominio.                | **D02** decisión P2 — _Read Replica + índice geoespacial PostGIS_; **D01** (reserva consistente) sostenida por _optimistic locking_ JPA `@Version`.                              |
-| **API REST**          | **Firebase Cloud Messaging** | Emite la notificación _push_ hacia FCM cuando un evento de dominio del contexto _Notification_ requiere alertar al usuario; el dispositivo del Artesano la recibe vía el SDK del cliente.      | Cierre del flujo iniciado en **D06** (eventos de dominio) y soporte de **QA04**.                                                                                                  |
+| **API REST**          | **Google Cloud Storage**     | Persiste imágenes originales y miniaturas comprimidas de los lotes. La compresión se realiza dentro del backend para garantizar la cota de tamaño antes de subir.                                                         | Soporte de **QA07** (Performance — compresión de imagen ≤ 5 segundos en p90) y de la _primary story_ **US05**.                                                                      |
+| **API REST**          | **Google Cloud Pub/Sub**     | Publica y consume eventos de dominio del bounded context _Notification_ (`lote.publicado`, `clasificacion.solicitada`, `lote.reservado`, `lote.expirado`) hacia los demás contextos.                                      | **D06** (Domain Events + Aggregate Lote, decisión P3 en 4.1.4) + **D08** (mismo patrón asíncrono que sostiene la resiliencia ante caída de Cloud Vision).                           |
+| **API REST**          | **Supabase Postgres**        | Persistencia transaccional con extensión PostGIS para consultas por proximidad geográfica. Usado por todos los bounded contexts a través del _port_ de persistencia del dominio.                                          | **D02** decisión P2 — _Read Replica + índice geoespacial PostGIS_; **D01** (reserva consistente) sostenida por _optimistic locking_ JPA `@Version`.                                 |
+| **API REST**          | **Firebase Cloud Messaging** | Emite la notificación _push_ hacia FCM cuando un evento de dominio del contexto _Notification_ requiere alertar al usuario; el dispositivo del Artesano la recibe vía el SDK del cliente.                                 | Cierre del flujo iniciado en **D06** (eventos de dominio) y soporte de **QA04**.                                                                                                    |
 
 La vista materializa la decisión de **monolito modular** del [Capítulo IV](#4.). Los siete bounded contexts del [4.2.](#4.2.) **no se vuelven** containers separados: viven dentro del único _container_ "API REST" como **componentes** organizados bajo el patrón _Hexagonal Port + Adapter_ ([D07](#4.1.4.)), con _ports_ de aplicación que los desacoplan entre sí y _adapters_ de infraestructura que los conectan a los proveedores cloud externos. Esta elección preserva la posibilidad futura de extraer cualquiera de los contextos como microservicio independiente — particularmente _Textile Classification_, dada su asimetría de carga frente al resto — sin requerir hoy la complejidad operativa que esa separación impondría sobre un equipo de cinco integrantes en fase de validación.
 
@@ -1706,13 +1693,13 @@ El **Deployment Diagram** corresponde al cuarto nivel del C4 Model y proyecta lo
 
 El entorno **_Production_** se compone de **cuatro _deployment nodes_** raíz, cada uno representando un proveedor o tipo de hospedaje distinto:
 
-| Deployment Node                       | Tecnología / Servicio                                       | Container o sistema desplegado                                                                                                                | Justificación arquitectónica                                                                                                                                                                                                                                                                                                                                                                                       |
-| :------------------------------------ | :---------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Dispositivo móvil del usuario**     | Android 8+ / iOS 14+                                        | _Mobile App_ (Flutter)                                                                                                                        | Cumple **TS01** (plataforma móvil nativa) y **TS04** (geolocalización del dispositivo). El _binary_ se distribuye vía Google Play / App Store y consume directamente, desde el dispositivo, los SDKs de _Firebase Authentication_, _Google Maps_ y _Firebase Cloud Messaging_, evitando la latencia y el costo de proxy a través del backend para operaciones puramente del cliente.                              |
-| **GitHub Pages**                      | CDN global de GitHub para sitios estáticos                  | _Landing Page_ (HTML5 / CSS3 / JavaScript)                                                                                                    | _Free tier_ permanente sin límite temporal y _deploy_ automático desde una rama del propio repositorio del equipo. Permite **desacoplar el ciclo de _release_** del canal de marketing (un cambio en la landing no requiere redeploy del backend ni del móvil) y elimina la necesidad de configurar CI específico, dado que la solución no incluye _build pipeline_ propio.                                       |
-| **Google Cloud Platform**             | Región _us-central1_                                        | _Cloud Run_ (con instancia del container _API REST_) + _software system instances_ de Cloud Vision, Cloud Storage, Pub/Sub, Maps, Firebase Auth y Firebase Cloud Messaging | Concentra el backend transaccional y la totalidad de los servicios gestionados de IA, mensajería, almacenamiento y autenticación. La selección de **GCP como proveedor primario** se sustenta en los _drivers_ **D05** (clasificación automática vía Cloud Vision), **D04** (onboarding sin contraseñas vía Firebase Auth) y **D08** (resiliencia mediante Pub/Sub asíncrono + reintentos), todos servicios first-class del ecosistema Google. |
-| **&nbsp;&nbsp;↳ Cloud Run**           | Servicio gestionado de contenedores _stateless_              | Instancia del container _API REST_ (Spring Boot)                                                                                              | Elegido frente a App Engine Standard y GKE por tres razones: (1) **escala automática a cero instancias** durante períodos de inactividad, alineado con la operación intermitente de la fase académica; (2) **_free tier_ permanente de 2M requests/mes**, suficiente para el volumen TB1/TP/TF; (3) la naturaleza _stateless_ del container — sostenida por **D04** (sin sesión local) + **D07** (Hexagonal: el estado vive en _adapters_ externos) — encaja sin fricción con el modelo de instancias efímeras de Cloud Run. |
-| **Supabase Cloud**                    | Región _us-east-1_                                          | Instancia gestionada de _Supabase Postgres_ (PostgreSQL 15 + extensión PostGIS habilitada)                                                    | Reemplaza a Cloud SQL — la opción nativa de GCP — porque Cloud SQL **no dispone de _free tier_ permanente**, mientras que Supabase ofrece PostgreSQL con PostGIS de forma gratuita y sin límite temporal. La heterogeneidad operativa adicional es marginal: la conexión es estándar (JDBC sobre TLS) y queda **aislada detrás del _port_ de persistencia** del dominio, en línea con el patrón Hexagonal Port + Adapter adoptado en la [sección 4.1.4.](#4.1.4.) ([D07](#4.1.4.)). Sostiene **D02** (consultas geoespaciales con índices PostGIS) y **D01** (consistencia transaccional). |
+| Deployment Node                   | Tecnología / Servicio                           | Container o sistema desplegado                                                                                                                                             | Justificación arquitectónica                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| :-------------------------------- | :---------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Dispositivo móvil del usuario** | Android 8+ / iOS 14+                            | _Mobile App_ (Flutter)                                                                                                                                                     | Cumple **TS01** (plataforma móvil nativa) y **TS04** (geolocalización del dispositivo). El _binary_ se distribuye vía Google Play / App Store y consume directamente, desde el dispositivo, los SDKs de _Firebase Authentication_, _Google Maps_ y _Firebase Cloud Messaging_, evitando la latencia y el costo de proxy a través del backend para operaciones puramente del cliente.                                                                                                                                                                                                       |
+| **GitHub Pages**                  | CDN global de GitHub para sitios estáticos      | _Landing Page_ (HTML5 / CSS3 / JavaScript)                                                                                                                                 | _Free tier_ permanente sin límite temporal y _deploy_ automático desde una rama del propio repositorio del equipo. Permite **desacoplar el ciclo de _release_** del canal de marketing (un cambio en la landing no requiere redeploy del backend ni del móvil) y elimina la necesidad de configurar CI específico, dado que la solución no incluye _build pipeline_ propio.                                                                                                                                                                                                                |
+| **Google Cloud Platform**         | Región _us-central1_                            | _Cloud Run_ (con instancia del container _API REST_) + _software system instances_ de Cloud Vision, Cloud Storage, Pub/Sub, Maps, Firebase Auth y Firebase Cloud Messaging | Concentra el backend transaccional y la totalidad de los servicios gestionados de IA, mensajería, almacenamiento y autenticación. La selección de **GCP como proveedor primario** se sustenta en los _drivers_ **D05** (clasificación automática vía Cloud Vision), **D04** (onboarding sin contraseñas vía Firebase Auth) y **D08** (resiliencia mediante Pub/Sub asíncrono + reintentos), todos servicios first-class del ecosistema Google.                                                                                                                                             |
+| **&nbsp;&nbsp;↳ Cloud Run**       | Servicio gestionado de contenedores _stateless_ | Instancia del container _API REST_ (Spring Boot)                                                                                                                           | Elegido frente a App Engine Standard y GKE por tres razones: (1) **escala automática a cero instancias** durante períodos de inactividad, alineado con la operación intermitente de la fase académica; (2) **_free tier_ permanente de 2M requests/mes**, suficiente para el volumen TB1/TP/TF; (3) la naturaleza _stateless_ del container — sostenida por **D04** (sin sesión local) + **D07** (Hexagonal: el estado vive en _adapters_ externos) — encaja sin fricción con el modelo de instancias efímeras de Cloud Run.                                                               |
+| **Supabase Cloud**                | Región _us-east-1_                              | Instancia gestionada de _Supabase Postgres_ (PostgreSQL 15 + extensión PostGIS habilitada)                                                                                 | Reemplaza a Cloud SQL — la opción nativa de GCP — porque Cloud SQL **no dispone de _free tier_ permanente**, mientras que Supabase ofrece PostgreSQL con PostGIS de forma gratuita y sin límite temporal. La heterogeneidad operativa adicional es marginal: la conexión es estándar (JDBC sobre TLS) y queda **aislada detrás del _port_ de persistencia** del dominio, en línea con el patrón Hexagonal Port + Adapter adoptado en la [sección 4.1.4.](#4.1.4.) ([D07](#4.1.4.)). Sostiene **D02** (consultas geoespaciales con índices PostGIS) y **D01** (consistencia transaccional). |
 
 La elección de **Cloud Run** como _runtime_ del backend introduce un único _trade-off_ explícito que el equipo asumió de manera consciente: el **_cold start_ de la JVM** — entre 2 y 5 segundos en la primera petición tras un período de inactividad prolongada — degrada la latencia percibida en escenarios de uso esporádico. Para el alcance académico actual el impacto es irrelevante, dado que la operación esperada concentra picos cortos durante demos y validaciones. En un escenario de producción con tráfico real, la mitigación canónica es configurar `min-instances=1` en el servicio de Cloud Run, lo cual sí incurre en costo continuo y debería ponderarse contra los escenarios de calidad **QA01** (latencia ≤ 2 s en p95 del listado) y **QA04** (usabilidad — confirmaciones inmediatas) refinados en la [sección 4.1.5.](#4.1.5.).
 
@@ -1730,40 +1717,37 @@ El Bounded Context **Textile Classification** es el núcleo diferenciador de la 
 
 Las clases del contexto se distribuyen en cuatro capas siguiendo el patrón **Hexagonal Port + Adapter** adoptado en la decisión arquitectónica **D07** (sección 4.1.4.). A continuación, se detalla el diccionario completo de clases para cada capa.
 
-
 <a name="5.1.1."></a>
 
 ### 5.1.1. Domain Layer
 
 La capa de dominio contiene la lógica de negocio pura del proceso de clasificación. Es totalmente independiente de frameworks, bases de datos y servicios externos.
 
-| Clase / Interfaz | Categoría | Propósito | Atributos | Métodos |
-| :--- | :--- | :--- | :--- | :--- |
-| **ClassificationRequest** | Entity / Aggregate Root | Representa la solicitud de clasificación de un lote. Es el agregado raíz que centraliza el estado del proceso de análisis de la imagen. | `- id: ClassificationRequestId` <br> `- lotId: LotId` <br> `- imageUrl: ImageUrl` <br> `- status: ClassificationStatus` <br> `- labels: List<TextileLabel>` <br> `- requestedAt: LocalDateTime` <br> `- processedAt: LocalDateTime` | `+ create(lotId, imageUrl): ClassificationRequest` <br> `+ markAsProcessing(): void` <br> `+ applyLabels(labels: List<TextileLabel>): void` <br> `+ markAsFailed(reason: String): void` <br> `+ isCompleted(): boolean` |
-| **TextileLabel** | Value Object | Representa una etiqueta descriptiva devuelta por el servicio de IA, inmutable. No tiene identidad propia fuera del agregado. | `- name: String` <br> `- confidence: float` <br> `- category: LabelCategory` | `+ of(name, confidence, category): TextileLabel` <br> `+ isHighConfidence(): boolean` (umbral: confidence ≥ 0.75) |
-| **ClassificationRequestId** | Value Object | Envuelve el identificador único de la solicitud (UUID). Garantiza type-safety. | `- value: UUID` | `+ generate(): ClassificationRequestId` <br> `+ of(uuid: UUID): ClassificationRequestId` |
-| **LotId** | Value Object | Referencia al lote del Bounded Context de Publicación. Es una referencia cruzada de contexto (no una clave foránea directa). | `- value: UUID` | `+ of(uuid: UUID): LotId` |
-| **ImageUrl** | Value Object | URL validada de la imagen almacenada en Google Cloud Storage. La validación se realiza en construcción. | `- value: String` | `+ of(url: String): ImageUrl` (lanza excepción si el formato no es válido) |
-| **ClassificationStatus** | Enumeration | Estado del ciclo de vida de la solicitud. | `PENDING, PROCESSING, COMPLETED, FAILED` | — |
-| **LabelCategory** | Enumeration | Categoría semántica de la etiqueta textil, derivada del resultado crudo de Cloud Vision. | `MATERIAL, COLOR, TEXTURE, PATTERN, QUALITY, OTHER` | — |
-| **ClassificationDomainService** | Domain Service | Contiene la lógica de negocio que no pertenece naturalmente a una sola entidad: filtrar las etiquetas crudas de la IA, aplicar el umbral de confianza y mapearlas a categorías del dominio. | — | `+ filterAndCategorize(rawLabels: List<RawLabel>): List<TextileLabel>` <br> `+ evaluateQuality(labels: List<TextileLabel>): ClassificationQuality` |
-| **IClassificationRequestRepository** | Repository (Interfaz) | Puerto de persistencia del agregado. Define el contrato de acceso a datos sin exponer la implementación. | — | `+ save(request: ClassificationRequest): void` <br> `+ findById(id: ClassificationRequestId): Optional<ClassificationRequest>` <br> `+ findByLotId(lotId: LotId): Optional<ClassificationRequest>` |
-| **IVisionApiAdapter** | Port (Interfaz) | Puerto de salida hacia el servicio de IA externo. Desacopla el dominio de Google Cloud Vision. | — | `+ analyze(imageUrl: ImageUrl): List<RawLabel>` |
-| **ClassificationCompletedEvent** | Domain Event | Evento publicado cuando la clasificación finaliza exitosamente. Lo consume el Bounded Context de Publicación de Lotes. | `+ requestId: ClassificationRequestId` <br> `+ lotId: LotId` <br> `+ labels: List<TextileLabel>` <br> `+ occurredAt: LocalDateTime` | — |
-| **ClassificationFailedEvent** | Domain Event | Evento publicado cuando la clasificación falla después de agotar los reintentos. Permite al Bounded Context de Publicación mantener el lote en estado `PENDING_CLASSIFICATION`. | `+ requestId: ClassificationRequestId` <br> `+ lotId: LotId` <br> `+ reason: String` <br> `+ occurredAt: LocalDateTime` | — |
-
+| Clase / Interfaz                     | Categoría               | Propósito                                                                                                                                                                                   | Atributos                                                                                                                                                                                                                           | Métodos                                                                                                                                                                                                                 |
+| :----------------------------------- | :---------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ClassificationRequest**            | Entity / Aggregate Root | Representa la solicitud de clasificación de un lote. Es el agregado raíz que centraliza el estado del proceso de análisis de la imagen.                                                     | `- id: ClassificationRequestId` <br> `- lotId: LotId` <br> `- imageUrl: ImageUrl` <br> `- status: ClassificationStatus` <br> `- labels: List<TextileLabel>` <br> `- requestedAt: LocalDateTime` <br> `- processedAt: LocalDateTime` | `+ create(lotId, imageUrl): ClassificationRequest` <br> `+ markAsProcessing(): void` <br> `+ applyLabels(labels: List<TextileLabel>): void` <br> `+ markAsFailed(reason: String): void` <br> `+ isCompleted(): boolean` |
+| **TextileLabel**                     | Value Object            | Representa una etiqueta descriptiva devuelta por el servicio de IA, inmutable. No tiene identidad propia fuera del agregado.                                                                | `- name: String` <br> `- confidence: float` <br> `- category: LabelCategory`                                                                                                                                                        | `+ of(name, confidence, category): TextileLabel` <br> `+ isHighConfidence(): boolean` (umbral: confidence ≥ 0.75)                                                                                                       |
+| **ClassificationRequestId**          | Value Object            | Envuelve el identificador único de la solicitud (UUID). Garantiza type-safety.                                                                                                              | `- value: UUID`                                                                                                                                                                                                                     | `+ generate(): ClassificationRequestId` <br> `+ of(uuid: UUID): ClassificationRequestId`                                                                                                                                |
+| **LotId**                            | Value Object            | Referencia al lote del Bounded Context de Publicación. Es una referencia cruzada de contexto (no una clave foránea directa).                                                                | `- value: UUID`                                                                                                                                                                                                                     | `+ of(uuid: UUID): LotId`                                                                                                                                                                                               |
+| **ImageUrl**                         | Value Object            | URL validada de la imagen almacenada en Google Cloud Storage. La validación se realiza en construcción.                                                                                     | `- value: String`                                                                                                                                                                                                                   | `+ of(url: String): ImageUrl` (lanza excepción si el formato no es válido)                                                                                                                                              |
+| **ClassificationStatus**             | Enumeration             | Estado del ciclo de vida de la solicitud.                                                                                                                                                   | `PENDING, PROCESSING, COMPLETED, FAILED`                                                                                                                                                                                            | —                                                                                                                                                                                                                       |
+| **LabelCategory**                    | Enumeration             | Categoría semántica de la etiqueta textil, derivada del resultado crudo de Cloud Vision.                                                                                                    | `MATERIAL, COLOR, TEXTURE, PATTERN, QUALITY, OTHER`                                                                                                                                                                                 | —                                                                                                                                                                                                                       |
+| **ClassificationDomainService**      | Domain Service          | Contiene la lógica de negocio que no pertenece naturalmente a una sola entidad: filtrar las etiquetas crudas de la IA, aplicar el umbral de confianza y mapearlas a categorías del dominio. | —                                                                                                                                                                                                                                   | `+ filterAndCategorize(rawLabels: List<RawLabel>): List<TextileLabel>` <br> `+ evaluateQuality(labels: List<TextileLabel>): ClassificationQuality`                                                                      |
+| **IClassificationRequestRepository** | Repository (Interfaz)   | Puerto de persistencia del agregado. Define el contrato de acceso a datos sin exponer la implementación.                                                                                    | —                                                                                                                                                                                                                                   | `+ save(request: ClassificationRequest): void` <br> `+ findById(id: ClassificationRequestId): Optional<ClassificationRequest>` <br> `+ findByLotId(lotId: LotId): Optional<ClassificationRequest>`                      |
+| **IVisionApiAdapter**                | Port (Interfaz)         | Puerto de salida hacia el servicio de IA externo. Desacopla el dominio de Google Cloud Vision.                                                                                              | —                                                                                                                                                                                                                                   | `+ analyze(imageUrl: ImageUrl): List<RawLabel>`                                                                                                                                                                         |
+| **ClassificationCompletedEvent**     | Domain Event            | Evento publicado cuando la clasificación finaliza exitosamente. Lo consume el Bounded Context de Publicación de Lotes.                                                                      | `+ requestId: ClassificationRequestId` <br> `+ lotId: LotId` <br> `+ labels: List<TextileLabel>` <br> `+ occurredAt: LocalDateTime`                                                                                                 | —                                                                                                                                                                                                                       |
+| **ClassificationFailedEvent**        | Domain Event            | Evento publicado cuando la clasificación falla después de agotar los reintentos. Permite al Bounded Context de Publicación mantener el lote en estado `PENDING_CLASSIFICATION`.             | `+ requestId: ClassificationRequestId` <br> `+ lotId: LotId` <br> `+ reason: String` <br> `+ occurredAt: LocalDateTime`                                                                                                             | —                                                                                                                                                                                                                       |
 
 <a name="5.1.2."></a>
 
 ### 5.1.2. Interface Layer
 
-La capa de interfaz expone el Bounded Context hacia el exterior: tanto hacia los clientes HTTP (la aplicación móvil) como hacia el sistema de mensajería (Google Cloud Pub/Sub). Actúa como adaptador de entrada (*driving adapter* en la arquitectura hexagonal).
+La capa de interfaz expone el Bounded Context hacia el exterior: tanto hacia los clientes HTTP (la aplicación móvil) como hacia el sistema de mensajería (Google Cloud Pub/Sub). Actúa como adaptador de entrada (_driving adapter_ en la arquitectura hexagonal).
 
-| Clase | Categoría | Propósito | Endpoints / Suscripciones | Request / Response |
-| :--- | :--- | :--- | :--- | :--- |
-| **ClassificationController** | REST Controller | Expone los endpoints HTTP para que la API REST reciba solicitudes de clasificación y consulte su estado. Es consumido por la aplicación móvil a través del API Gateway interno. | `POST /api/v1/classifications` — Inicia una solicitud de clasificación. <br> `GET /api/v1/classifications/{requestId}` — Consulta el estado y las etiquetas de una solicitud. <br> `GET /api/v1/classifications/lot/{lotId}` — Obtiene la clasificación asociada a un lote específico. | **Request (POST):** `{ lotId: UUID, imageUrl: String }` <br> **Response (GET):** `{ requestId, lotId, status, labels: [{name, confidence, category}], processedAt }` |
-| **LotPublishedEventConsumer** | Event Consumer (Pub/Sub) | Suscriptor del tópico `lot.published` de Google Cloud Pub/Sub. Cuando un nuevo lote se publica en el Bounded Context de Publicación, este consumer lanza automáticamente el proceso de clasificación de la imagen adjunta. | Suscripción: `lot-published-subscription` en el tópico `lot.published` | Mensaje esperado: `{ lotId: UUID, imageUrl: String, publishedAt: String }` |
-
+| Clase                         | Categoría                | Propósito                                                                                                                                                                                                                  | Endpoints / Suscripciones                                                                                                                                                                                                                                                              | Request / Response                                                                                                                                                   |
+| :---------------------------- | :----------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ClassificationController**  | REST Controller          | Expone los endpoints HTTP para que la API REST reciba solicitudes de clasificación y consulte su estado. Es consumido por la aplicación móvil a través del API Gateway interno.                                            | `POST /api/v1/classifications` — Inicia una solicitud de clasificación. <br> `GET /api/v1/classifications/{requestId}` — Consulta el estado y las etiquetas de una solicitud. <br> `GET /api/v1/classifications/lot/{lotId}` — Obtiene la clasificación asociada a un lote específico. | **Request (POST):** `{ lotId: UUID, imageUrl: String }` <br> **Response (GET):** `{ requestId, lotId, status, labels: [{name, confidence, category}], processedAt }` |
+| **LotPublishedEventConsumer** | Event Consumer (Pub/Sub) | Suscriptor del tópico `lot.published` de Google Cloud Pub/Sub. Cuando un nuevo lote se publica en el Bounded Context de Publicación, este consumer lanza automáticamente el proceso de clasificación de la imagen adjunta. | Suscripción: `lot-published-subscription` en el tópico `lot.published`                                                                                                                                                                                                                 | Mensaje esperado: `{ lotId: UUID, imageUrl: String, publishedAt: String }`                                                                                           |
 
 <a name="5.1.3."></a>
 
@@ -1771,15 +1755,14 @@ La capa de interfaz expone el Bounded Context hacia el exterior: tanto hacia los
 
 La capa de aplicación orquesta los flujos de negocio. No contiene lógica de dominio, sino que coordina la colaboración entre la capa de dominio, los repositorios y los adaptadores externos. Implementa el patrón **Command Handler** para peticiones explícitas y **Event Handler** para reaccionar a eventos del sistema.
 
-| Clase | Categoría | Propósito | Comandos / Eventos que procesa | Colaboraciones |
-| :--- | :--- | :--- | :--- | :--- |
-| **RequestClassificationCommandHandler** | Command Handler | Procesa el comando `RequestClassificationCommand`. Crea el agregado `ClassificationRequest`, lo persiste en estado `PENDING` y publica un mensaje en Pub/Sub para iniciar el procesamiento asíncrono. | `RequestClassificationCommand { lotId, imageUrl }` | `IClassificationRequestRepository.save()` → `ClassificationEventPublisher.publishClassificationRequested()` |
-| **ProcessClassificationCommandHandler** | Command Handler | Procesa el comando `ProcessClassificationCommand` (disparado por el worker asíncrono). Llama al adaptador de Cloud Vision, aplica el Domain Service para filtrar y categorizar las etiquetas, actualiza el agregado y publica el evento de dominio correspondiente. | `ProcessClassificationCommand { requestId }` | `IClassificationRequestRepository.findById()` → `IVisionApiAdapter.analyze()` → `ClassificationDomainService.filterAndCategorize()` → `ClassificationRequest.applyLabels()` → `IClassificationRequestRepository.save()` → `ClassificationEventPublisher.publishClassificationCompleted()` |
-| **HandleLotPublishedEventHandler** | Event Handler | Reacciona al evento externo `LotPublishedEvent` (recibido del Consumer de la capa Interface). Construye y despacha un `RequestClassificationCommand` al handler correspondiente. | `LotPublishedEvent { lotId, imageUrl }` | `RequestClassificationCommandHandler.handle()` |
-| **RequestClassificationCommand** | Command | DTO de comando inmutable que transporta los datos necesarios para iniciar una clasificación. | — | — |
-| **ProcessClassificationCommand** | Command | DTO de comando que ordena procesar una clasificación pendiente a partir de su ID. | — | — |
-| **ClassificationEventPublisher** | Application Service | Servicio de aplicación que abstrae la publicación de eventos de dominio hacia el bus de mensajes (Pub/Sub), desacoplando los handlers del mecanismo de transporte. | — | `IMessageBrokerPort.publish()` |
-
+| Clase                                   | Categoría           | Propósito                                                                                                                                                                                                                                                           | Comandos / Eventos que procesa                     | Colaboraciones                                                                                                                                                                                                                                                                            |
+| :-------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **RequestClassificationCommandHandler** | Command Handler     | Procesa el comando `RequestClassificationCommand`. Crea el agregado `ClassificationRequest`, lo persiste en estado `PENDING` y publica un mensaje en Pub/Sub para iniciar el procesamiento asíncrono.                                                               | `RequestClassificationCommand { lotId, imageUrl }` | `IClassificationRequestRepository.save()` → `ClassificationEventPublisher.publishClassificationRequested()`                                                                                                                                                                               |
+| **ProcessClassificationCommandHandler** | Command Handler     | Procesa el comando `ProcessClassificationCommand` (disparado por el worker asíncrono). Llama al adaptador de Cloud Vision, aplica el Domain Service para filtrar y categorizar las etiquetas, actualiza el agregado y publica el evento de dominio correspondiente. | `ProcessClassificationCommand { requestId }`       | `IClassificationRequestRepository.findById()` → `IVisionApiAdapter.analyze()` → `ClassificationDomainService.filterAndCategorize()` → `ClassificationRequest.applyLabels()` → `IClassificationRequestRepository.save()` → `ClassificationEventPublisher.publishClassificationCompleted()` |
+| **HandleLotPublishedEventHandler**      | Event Handler       | Reacciona al evento externo `LotPublishedEvent` (recibido del Consumer de la capa Interface). Construye y despacha un `RequestClassificationCommand` al handler correspondiente.                                                                                    | `LotPublishedEvent { lotId, imageUrl }`            | `RequestClassificationCommandHandler.handle()`                                                                                                                                                                                                                                            |
+| **RequestClassificationCommand**        | Command             | DTO de comando inmutable que transporta los datos necesarios para iniciar una clasificación.                                                                                                                                                                        | —                                                  | —                                                                                                                                                                                                                                                                                         |
+| **ProcessClassificationCommand**        | Command             | DTO de comando que ordena procesar una clasificación pendiente a partir de su ID.                                                                                                                                                                                   | —                                                  | —                                                                                                                                                                                                                                                                                         |
+| **ClassificationEventPublisher**        | Application Service | Servicio de aplicación que abstrae la publicación de eventos de dominio hacia el bus de mensajes (Pub/Sub), desacoplando los handlers del mecanismo de transporte.                                                                                                  | —                                                  | `IMessageBrokerPort.publish()`                                                                                                                                                                                                                                                            |
 
 <a name="5.1.4."></a>
 
@@ -1787,20 +1770,19 @@ La capa de aplicación orquesta los flujos de negocio. No contiene lógica de do
 
 La capa de infraestructura contiene las implementaciones concretas de los puertos definidos en el dominio. Aquí viven los adaptadores que conectan el sistema con Google Cloud Vision, Supabase Postgres y Google Cloud Pub/Sub.
 
-| Clase | Categoría | Propósito | Tecnología | Detalles de implementación |
-| :--- | :--- | :--- | :--- | :--- |
-| **JpaClassificationRequestRepository** | Repository Implementation | Implementación del `IClassificationRequestRepository` usando Spring Data JPA. Gestiona la persistencia del agregado `ClassificationRequest` en la tabla `classification_requests` de Supabase Postgres. | Spring Data JPA / Supabase Postgres | Mapeo del agregado con `@Entity` + `@Table("classification_requests")`. Los Value Objects (`TextileLabel`) se persisten como una columna `jsonb` en Postgres para evitar tablas de join innecesarias. |
-| **CloudVisionAdapter** | External Service Adapter | Implementación del puerto `IVisionApiAdapter`. Realiza la llamada HTTP a la API de Google Cloud Vision (`images:annotate`), transforma la respuesta cruda en una lista de `RawLabel` y maneja reintentos con *backoff* exponencial (máx. 3 intentos, intervalo inicial 1 s) según la decisión arquitectónica **D08**. | Google Cloud Vision REST API / Spring WebClient | Autenticación mediante `Application Default Credentials` (ADC) de GCP. Si los 3 reintentos fallan, lanza `VisionApiException` que el Command Handler captura para marcar la solicitud como `FAILED`. |
-| **PubSubMessageBrokerAdapter** | Message Broker Adapter | Implementación del puerto `IMessageBrokerPort`. Publica y serializa eventos de dominio como mensajes JSON en los tópicos de Google Cloud Pub/Sub (`classification.completed`, `classification.failed`). | Google Cloud Pub/Sub Java Client Library | Serialización con Jackson. Los mensajes incluyen atributos de cabecera (`eventType`, `occurredAt`) para facilitar el enrutamiento en los subscriptores. |
-| **ClassificationRequestEntity** | JPA Entity | Entidad JPA que mapea la tabla `classification_requests`. Realiza la traducción bidireccional entre el agregado de dominio y el modelo de persistencia, aislando así el dominio de los detalles de la base de datos. | JPA / Hibernate | Incluye conversores (`@Converter`) para los Value Objects (`ClassificationRequestId`, `LotId`, `ImageUrl`) y para el campo `labels` serializado como `jsonb`. |
-| **RawLabel** | Infrastructure DTO | DTO que representa la etiqueta cruda devuelta por Cloud Vision antes de ser transformada por el Domain Service. No debe salir de la capa de infraestructura. | — | Campos: `description: String`, `score: float`, `topicality: float`. |
-
+| Clase                                  | Categoría                 | Propósito                                                                                                                                                                                                                                                                                                             | Tecnología                                      | Detalles de implementación                                                                                                                                                                            |
+| :------------------------------------- | :------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **JpaClassificationRequestRepository** | Repository Implementation | Implementación del `IClassificationRequestRepository` usando Spring Data JPA. Gestiona la persistencia del agregado `ClassificationRequest` en la tabla `classification_requests` de Supabase Postgres.                                                                                                               | Spring Data JPA / Supabase Postgres             | Mapeo del agregado con `@Entity` + `@Table("classification_requests")`. Los Value Objects (`TextileLabel`) se persisten como una columna `jsonb` en Postgres para evitar tablas de join innecesarias. |
+| **CloudVisionAdapter**                 | External Service Adapter  | Implementación del puerto `IVisionApiAdapter`. Realiza la llamada HTTP a la API de Google Cloud Vision (`images:annotate`), transforma la respuesta cruda en una lista de `RawLabel` y maneja reintentos con _backoff_ exponencial (máx. 3 intentos, intervalo inicial 1 s) según la decisión arquitectónica **D08**. | Google Cloud Vision REST API / Spring WebClient | Autenticación mediante `Application Default Credentials` (ADC) de GCP. Si los 3 reintentos fallan, lanza `VisionApiException` que el Command Handler captura para marcar la solicitud como `FAILED`.  |
+| **PubSubMessageBrokerAdapter**         | Message Broker Adapter    | Implementación del puerto `IMessageBrokerPort`. Publica y serializa eventos de dominio como mensajes JSON en los tópicos de Google Cloud Pub/Sub (`classification.completed`, `classification.failed`).                                                                                                               | Google Cloud Pub/Sub Java Client Library        | Serialización con Jackson. Los mensajes incluyen atributos de cabecera (`eventType`, `occurredAt`) para facilitar el enrutamiento en los subscriptores.                                               |
+| **ClassificationRequestEntity**        | JPA Entity                | Entidad JPA que mapea la tabla `classification_requests`. Realiza la traducción bidireccional entre el agregado de dominio y el modelo de persistencia, aislando así el dominio de los detalles de la base de datos.                                                                                                  | JPA / Hibernate                                 | Incluye conversores (`@Converter`) para los Value Objects (`ClassificationRequestId`, `LotId`, `ImageUrl`) y para el campo `labels` serializado como `jsonb`.                                         |
+| **RawLabel**                           | Infrastructure DTO        | DTO que representa la etiqueta cruda devuelta por Cloud Vision antes de ser transformada por el Domain Service. No debe salir de la capa de infraestructura.                                                                                                                                                          | —                                               | Campos: `description: String`, `score: float`, `topicality: float`.                                                                                                                                   |
 
 <a name="5.1.6."></a>
 
 ### 5.1.6. Bounded Context Software Architecture Component Level Diagrams
 
-En este diagrama de componentes (nivel 3 del C4 Model) se descompone el container **API REST** en los componentes internos que pertenecen exclusivamente al Bounded Context *Textile Classification*, mostrando sus responsabilidades, relaciones y tecnologías.
+En este diagrama de componentes (nivel 3 del C4 Model) se descompone el container **API REST** en los componentes internos que pertenecen exclusivamente al Bounded Context _Textile Classification_, mostrando sus responsabilidades, relaciones y tecnologías.
 
 El diagrama fue elaborado en **Structurizr** siguiendo la convención del workspace `c4/workspace.dsl` del repositorio.
 
@@ -1812,17 +1794,16 @@ El diagrama fue elaborado en **Structurizr** siguiendo la convención del worksp
 
 El diagrama muestra los siguientes componentes y sus interacciones:
 
-| Componente | Tecnología | Responsabilidad | Interactúa con |
-| :--- | :--- | :--- | :--- |
-| `ClassificationController` | Spring MVC `@RestController` | Recibe peticiones HTTP REST y delega al Application Layer | `RequestClassificationCommandHandler`, `IClassificationRequestRepository` |
-| `LotPublishedEventConsumer` | Spring `@Component` + Pub/Sub Listener | Suscribe el tópico `lot.published` y dispara el flujo de clasificación | `HandleLotPublishedEventHandler` |
-| `RequestClassificationCommandHandler` | Spring `@Service` | Orquesta la creación y persistencia de la solicitud | `IClassificationRequestRepository`, `ClassificationEventPublisher` |
-| `ProcessClassificationCommandHandler` | Spring `@Service` | Orquesta la llamada a IA y la actualización del agregado | `IVisionApiAdapter`, `ClassificationDomainService`, `IClassificationRequestRepository` |
-| `ClassificationDomainService` | Plain Java | Filtra, categoriza y evalúa etiquetas crudas | (ninguna dependencia externa) |
-| `JpaClassificationRequestRepository` | Spring Data JPA | Persiste y recupera el agregado de dominio | Supabase Postgres |
-| `CloudVisionAdapter` | Spring WebClient | Invoca Google Cloud Vision con reintentos | Google Cloud Vision API |
-| `PubSubMessageBrokerAdapter` | Pub/Sub Java Client | Publica eventos de dominio en Pub/Sub | Google Cloud Pub/Sub |
-
+| Componente                            | Tecnología                             | Responsabilidad                                                        | Interactúa con                                                                         |
+| :------------------------------------ | :------------------------------------- | :--------------------------------------------------------------------- | :------------------------------------------------------------------------------------- |
+| `ClassificationController`            | Spring MVC `@RestController`           | Recibe peticiones HTTP REST y delega al Application Layer              | `RequestClassificationCommandHandler`, `IClassificationRequestRepository`              |
+| `LotPublishedEventConsumer`           | Spring `@Component` + Pub/Sub Listener | Suscribe el tópico `lot.published` y dispara el flujo de clasificación | `HandleLotPublishedEventHandler`                                                       |
+| `RequestClassificationCommandHandler` | Spring `@Service`                      | Orquesta la creación y persistencia de la solicitud                    | `IClassificationRequestRepository`, `ClassificationEventPublisher`                     |
+| `ProcessClassificationCommandHandler` | Spring `@Service`                      | Orquesta la llamada a IA y la actualización del agregado               | `IVisionApiAdapter`, `ClassificationDomainService`, `IClassificationRequestRepository` |
+| `ClassificationDomainService`         | Plain Java                             | Filtra, categoriza y evalúa etiquetas crudas                           | (ninguna dependencia externa)                                                          |
+| `JpaClassificationRequestRepository`  | Spring Data JPA                        | Persiste y recupera el agregado de dominio                             | Supabase Postgres                                                                      |
+| `CloudVisionAdapter`                  | Spring WebClient                       | Invoca Google Cloud Vision con reintentos                              | Google Cloud Vision API                                                                |
+| `PubSubMessageBrokerAdapter`          | Pub/Sub Java Client                    | Publica eventos de dominio en Pub/Sub                                  | Google Cloud Pub/Sub                                                                   |
 
 <a name="5.1.7."></a>
 
@@ -1832,7 +1813,7 @@ El diagrama muestra los siguientes componentes y sus interacciones:
 
 #### 5.1.7.1. Bounded Context Domain Layer Class Diagrams
 
-El siguiente diagrama de clases UML detalla las clases, interfaces, enumeraciones y sus relaciones para la capa de dominio del Bounded Context *Textile Classification*. Incluye atributos, métodos y sus modificadores de acceso (`+` público, `-` privado, `#` protegido). El diagrama fue elaborado en **LucidChart**.
+El siguiente diagrama de clases UML detalla las clases, interfaces, enumeraciones y sus relaciones para la capa de dominio del Bounded Context _Textile Classification_. Incluye atributos, métodos y sus modificadores de acceso (`+` público, `-` privado, `#` protegido). El diagrama fue elaborado en **LucidChart**.
 
 <p align="center">
   <img src="./assets/TC_ClassDiagram.png" alt="Domain Layer Class Diagram — Textile Classification BC">
@@ -1842,24 +1823,23 @@ El siguiente diagrama de clases UML detalla las clases, interfaces, enumeracione
 
 **Descripción de relaciones principales:**
 
-| Relación | Tipo | Multiplicidad | Descripción |
-| :--- | :--- | :--- | :--- |
-| `ClassificationRequest` → `TextileLabel` | Composición | 1..* | El agregado contiene y controla el ciclo de vida de sus etiquetas. Las etiquetas no existen fuera del agregado. |
-| `ClassificationRequest` → `ClassificationRequestId` | Dependencia | 1 | El agregado usa su Value Object como identidad. |
-| `ClassificationRequest` → `LotId` | Asociación | 1 | Referencia cruzada al lote del BC de Publicación. |
-| `ClassificationRequest` → `ImageUrl` | Asociación | 1 | URL validada de la imagen a clasificar. |
-| `ClassificationRequest` → `ClassificationStatus` | Uso | 1 | El agregado cambia su estado según el flujo. |
-| `TextileLabel` → `LabelCategory` | Uso | 1 | Cada etiqueta pertenece a una categoría semántica. |
-| `ClassificationDomainService` → `ClassificationRequest` | Dependencia | — | El servicio opera sobre el agregado como parámetro. |
-| `IClassificationRequestRepository` ← `ClassificationRequest` | Realización | — | El repositorio gestiona la persistencia del agregado. |
-| `IVisionApiAdapter` → `RawLabel` | Dependencia | 1..* | El puerto devuelve etiquetas crudas de la IA. |
-
+| Relación                                                     | Tipo        | Multiplicidad | Descripción                                                                                                     |
+| :----------------------------------------------------------- | :---------- | :------------ | :-------------------------------------------------------------------------------------------------------------- |
+| `ClassificationRequest` → `TextileLabel`                     | Composición | 1..\*         | El agregado contiene y controla el ciclo de vida de sus etiquetas. Las etiquetas no existen fuera del agregado. |
+| `ClassificationRequest` → `ClassificationRequestId`          | Dependencia | 1             | El agregado usa su Value Object como identidad.                                                                 |
+| `ClassificationRequest` → `LotId`                            | Asociación  | 1             | Referencia cruzada al lote del BC de Publicación.                                                               |
+| `ClassificationRequest` → `ImageUrl`                         | Asociación  | 1             | URL validada de la imagen a clasificar.                                                                         |
+| `ClassificationRequest` → `ClassificationStatus`             | Uso         | 1             | El agregado cambia su estado según el flujo.                                                                    |
+| `TextileLabel` → `LabelCategory`                             | Uso         | 1             | Cada etiqueta pertenece a una categoría semántica.                                                              |
+| `ClassificationDomainService` → `ClassificationRequest`      | Dependencia | —             | El servicio opera sobre el agregado como parámetro.                                                             |
+| `IClassificationRequestRepository` ← `ClassificationRequest` | Realización | —             | El repositorio gestiona la persistencia del agregado.                                                           |
+| `IVisionApiAdapter` → `RawLabel`                             | Dependencia | 1..\*         | El puerto devuelve etiquetas crudas de la IA.                                                                   |
 
 <a name="5.1.7.2."></a>
 
 #### 5.1.7.2. Bounded Context Database Design Diagram
 
-El siguiente diagrama de base de datos detalla los objetos de persistencia necesarios para el Bounded Context *Textile Classification* en **Supabase Postgres**. El diagrama fue elaborado en **LucidChart / Vertabelo**.
+El siguiente diagrama de base de datos detalla los objetos de persistencia necesarios para el Bounded Context _Textile Classification_ en **Supabase Postgres**. El diagrama fue elaborado en **LucidChart / Vertabelo**.
 
 <p align="center">
   <img src="./assets/TC_DatabaseDiagram.png" width="900" alt="Database Design Diagram — Textile Classification BC">
@@ -1871,109 +1851,113 @@ El siguiente diagrama de base de datos detalla los objetos de persistencia neces
 
 **Tabla: `classification_requests`**
 
-| Columna | Tipo | Constraints | Descripción |
-| :--- | :--- | :--- | :--- |
-| `id` | `UUID` | `PRIMARY KEY`, `NOT NULL` | Identificador único de la solicitud de clasificación. |
-| `lot_id` | `UUID` | `NOT NULL`, `INDEX` | Referencia al lote en el BC de Publicación. No es FK directa (contextos desacoplados). |
-| `image_url` | `VARCHAR(500)` | `NOT NULL` | URL validada de la imagen en Google Cloud Storage. |
-| `status` | `VARCHAR(20)` | `NOT NULL`, `DEFAULT 'PENDING'` | Estado del ciclo de vida: `PENDING`, `PROCESSING`, `COMPLETED`, `FAILED`. |
-| `labels` | `JSONB` | `NULL` | Array JSON con las etiquetas generadas: `[{name, confidence, category}]`. Se usa `JSONB` para consultas indexadas por etiqueta. |
-| `failure_reason` | `TEXT` | `NULL` | Descripción del error en caso de estado `FAILED`. |
-| `requested_at` | `TIMESTAMPTZ` | `NOT NULL`, `DEFAULT NOW()` | Timestamp de creación de la solicitud. |
-| `processed_at` | `TIMESTAMPTZ` | `NULL` | Timestamp de finalización del procesamiento (exitoso o fallido). |
+| Columna          | Tipo           | Constraints                     | Descripción                                                                                                                     |
+| :--------------- | :------------- | :------------------------------ | :------------------------------------------------------------------------------------------------------------------------------ |
+| `id`             | `UUID`         | `PRIMARY KEY`, `NOT NULL`       | Identificador único de la solicitud de clasificación.                                                                           |
+| `lot_id`         | `UUID`         | `NOT NULL`, `INDEX`             | Referencia al lote en el BC de Publicación. No es FK directa (contextos desacoplados).                                          |
+| `image_url`      | `VARCHAR(500)` | `NOT NULL`                      | URL validada de la imagen en Google Cloud Storage.                                                                              |
+| `status`         | `VARCHAR(20)`  | `NOT NULL`, `DEFAULT 'PENDING'` | Estado del ciclo de vida: `PENDING`, `PROCESSING`, `COMPLETED`, `FAILED`.                                                       |
+| `labels`         | `JSONB`        | `NULL`                          | Array JSON con las etiquetas generadas: `[{name, confidence, category}]`. Se usa `JSONB` para consultas indexadas por etiqueta. |
+| `failure_reason` | `TEXT`         | `NULL`                          | Descripción del error en caso de estado `FAILED`.                                                                               |
+| `requested_at`   | `TIMESTAMPTZ`  | `NOT NULL`, `DEFAULT NOW()`     | Timestamp de creación de la solicitud.                                                                                          |
+| `processed_at`   | `TIMESTAMPTZ`  | `NULL`                          | Timestamp de finalización del procesamiento (exitoso o fallido).                                                                |
 
 **Índices:**
 
-| Índice | Columnas | Tipo | Propósito |
-| :--- | :--- | :--- | :--- |
-| `idx_classification_lot_id` | `lot_id` | B-Tree | Consulta eficiente de la clasificación de un lote por su ID. |
+| Índice                      | Columnas | Tipo   | Propósito                                                                                      |
+| :-------------------------- | :------- | :----- | :--------------------------------------------------------------------------------------------- |
+| `idx_classification_lot_id` | `lot_id` | B-Tree | Consulta eficiente de la clasificación de un lote por su ID.                                   |
 | `idx_classification_status` | `status` | B-Tree | Filtrado rápido de solicitudes en estado `PENDING` o `PROCESSING` por el worker de reintentos. |
-| `idx_classification_labels` | `labels` | GIN | Búsqueda dentro del campo JSONB para filtrar lotes por tipo de material o categoría textil. |
+| `idx_classification_labels` | `labels` | GIN    | Búsqueda dentro del campo JSONB para filtrar lotes por tipo de material o categoría textil.    |
 
 > **Decisión de diseño:** Se optó por una **tabla única** con un campo `JSONB` para las etiquetas en lugar de una tabla normalizada `classification_labels` con FK. Esta decisión se justifica porque las etiquetas son inmutables una vez que la clasificación se completa (se generan y escriben una sola vez) y el patrón de acceso es siempre recuperar el conjunto completo de etiquetas de una solicitud, nunca etiquetas individuales en aislamiento. El índice GIN sobre el campo `JSONB` garantiza eficiencia en las consultas de búsqueda por material sin sacrificar la simplicidad del esquema.
 
 <a name="5.2."></a>
+
 ## 5.2. Bounded Context: Reservation Management
 
 El Bounded Context Reservation Management es responsable de gestionar el ciclo de vida de las reservas de lotes textiles dentro de la plataforma GamarraLoop. Este contexto permite que los artesanos o recolectores puedan reservar materiales disponibles publicados por los talleres de confección, evitando conflictos de disponibilidad y asegurando la trazabilidad del proceso de recojo.
 
 <a name="5.2.1."></a>
+
 ### 5.2.1. Domain Layer
 
-
 **Sub-capa Model**
-| Tipo         | Nombre                 | Descripción                                                                     | Responsabilidad Principal                                                                      | Relación con otros elementos                                               |
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 | ------------ | ---------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| Aggregate    | Reservation            | Representa la reserva de un lote textil realizada por un artesano o recolector. | Centralizar el ciclo de vida de la reserva y garantizar la consistencia del proceso de recojo. | Relacionado con PickupConfirmation, ReservationStatus, Publication y User. |
-| Entity    | PickupConfirmation     | Representa la confirmación de entrega y recepción de un lote reservado.         | Validar y registrar el recojo exitoso del lote textil.                                         | Relacionado con Reservation.                                               |
-| Value Object       | ReservationStatus      | Estado actual de una reserva dentro del sistema.                                | Controlar las transiciones válidas del flujo de reserva.                                       | Relacionado con Reservation.                                               |
-| Value Object | PickupLocation         | Representa la ubicación exacta donde será recogido el lote textil.              | Estandarizar la información geográfica asociada al recojo.                                     | Relacionado con Reservation y Publication.                                 |
-| Value Object | ReservationPeriod      | Intervalo de tiempo válido para una reserva.                                    | Gestionar expiraciones y tiempos límite de recojo.                                             | Relacionado con Reservation.                                               |
-| Value Object | ReservationNote        | Comentario adicional asociado a la reserva.                                     | Permitir agregar observaciones relevantes para la coordinación del recojo.                     | Relacionado con Reservation.                                               |
-| Command      | CreateReservation      | Registra una nueva reserva sobre un lote disponible.                            | Crear una reserva válida asociada a un lote textil.                                            | Usa Reservation, Publication y User.                                       |
-| Command      | CancelReservation      | Cancela una reserva activa.                                                     | Cambiar el estado de la reserva y liberar el lote.                                             | Usa Reservation.                                                           |
-| Command      | ConfirmPickup          | Registra la confirmación del recojo físico del lote.                            | Completar el proceso de entrega y recepción.                                                   | Usa Reservation y PickupConfirmation.                                      |
-| Command      | ExpireReservation      | Marca automáticamente una reserva como expirada.                                | Liberar reservas vencidas no atendidas.                                                        | Usa Reservation y ReservationPeriod.                                       |
-| Command      | UpdateReservationNote  | Actualiza observaciones asociadas a la reserva.                                 | Mantener información complementaria actualizada.                                               | Usa Reservation y ReservationNote.                                         |
-| Query        | GetReservationById     | Recupera la información detallada de una reserva.                               | Consultar datos completos de una reserva específica.                                           | Consulta Reservation y PickupConfirmation.                                 |
-| Query        | GetReservationsByUser  | Recupera las reservas realizadas por un usuario.                                | Permitir seguimiento de reservas activas e históricas.                                         | Consulta Reservation y User.                                               |
-| Query        | GetActiveReservations  | Recupera todas las reservas activas del sistema.                                | Facilitar monitoreo y gestión operativa.                                                       | Consulta Reservation.                                                      |
-| Query        | GetExpiredReservations | Recupera reservas expiradas automáticamente.                                    | Permitir auditoría y control de reservas vencidas.                                             | Consulta Reservation y ReservationPeriod.                                  |
-
+| Aggregate | Reservation | Representa la reserva de un lote textil realizada por un artesano o recolector. | Centralizar el ciclo de vida de la reserva y garantizar la consistencia del proceso de recojo. | Relacionado con PickupConfirmation, ReservationStatus, Publication y User. |
+| Entity | PickupConfirmation | Representa la confirmación de entrega y recepción de un lote reservado. | Validar y registrar el recojo exitoso del lote textil. | Relacionado con Reservation. |
+| Value Object | ReservationStatus | Estado actual de una reserva dentro del sistema. | Controlar las transiciones válidas del flujo de reserva. | Relacionado con Reservation. |
+| Value Object | PickupLocation | Representa la ubicación exacta donde será recogido el lote textil. | Estandarizar la información geográfica asociada al recojo. | Relacionado con Reservation y Publication. |
+| Value Object | ReservationPeriod | Intervalo de tiempo válido para una reserva. | Gestionar expiraciones y tiempos límite de recojo. | Relacionado con Reservation. |
+| Value Object | ReservationNote | Comentario adicional asociado a la reserva. | Permitir agregar observaciones relevantes para la coordinación del recojo. | Relacionado con Reservation. |
+| Command | CreateReservation | Registra una nueva reserva sobre un lote disponible. | Crear una reserva válida asociada a un lote textil. | Usa Reservation, Publication y User. |
+| Command | CancelReservation | Cancela una reserva activa. | Cambiar el estado de la reserva y liberar el lote. | Usa Reservation. |
+| Command | ConfirmPickup | Registra la confirmación del recojo físico del lote. | Completar el proceso de entrega y recepción. | Usa Reservation y PickupConfirmation. |
+| Command | ExpireReservation | Marca automáticamente una reserva como expirada. | Liberar reservas vencidas no atendidas. | Usa Reservation y ReservationPeriod. |
+| Command | UpdateReservationNote | Actualiza observaciones asociadas a la reserva. | Mantener información complementaria actualizada. | Usa Reservation y ReservationNote. |
+| Query | GetReservationById | Recupera la información detallada de una reserva. | Consultar datos completos de una reserva específica. | Consulta Reservation y PickupConfirmation. |
+| Query | GetReservationsByUser | Recupera las reservas realizadas por un usuario. | Permitir seguimiento de reservas activas e históricas. | Consulta Reservation y User. |
+| Query | GetActiveReservations | Recupera todas las reservas activas del sistema. | Facilitar monitoreo y gestión operativa. | Consulta Reservation. |
+| Query | GetExpiredReservations | Recupera reservas expiradas automáticamente. | Permitir auditoría y control de reservas vencidas. | Consulta Reservation y ReservationPeriod. |
 
 **Sub-capa Services**
-| Tipo      | Nombre                         | Descripción                                                        | Responsabilidad Principal                                     | Relación con otros elementos                                               |
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 | --------- | ------------------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| Interface | ReservationCommandService      | Servicio para comandos relacionados con reservas.                  | Declarar métodos para crear, cancelar, actualizar y confirmar reservas.  | Implementado por ReservationCommandServiceImpl. Usado en capa Application. |
-| Interface | ReservationQueryService        | Servicio para consultas relacionadas con reservas.                 | Declarar métodos para recuperar información de reservas.      | Implementado por ReservationQueryServiceImpl. Usado en capa Application.   |
-| Interface | ReservationExpirationService   | Servicio para expiración automática de reservas.                   | Detectar y procesar reservas vencidas.                        | Utiliza Reservation y ReservationPeriod.                                   |
-| Interface | ReservationNotificationService | Servicio para emisión de notificaciones relacionadas con reservas. | Informar eventos importantes del flujo de reserva.            | Relacionado con Notification Management.                                   |
+| Interface | ReservationCommandService | Servicio para comandos relacionados con reservas. | Declarar métodos para crear, cancelar, actualizar y confirmar reservas. | Implementado por ReservationCommandServiceImpl. Usado en capa Application. |
+| Interface | ReservationQueryService | Servicio para consultas relacionadas con reservas. | Declarar métodos para recuperar información de reservas. | Implementado por ReservationQueryServiceImpl. Usado en capa Application. |
+| Interface | ReservationExpirationService | Servicio para expiración automática de reservas. | Detectar y procesar reservas vencidas. | Utiliza Reservation y ReservationPeriod. |
+| Interface | ReservationNotificationService | Servicio para emisión de notificaciones relacionadas con reservas. | Informar eventos importantes del flujo de reserva. | Relacionado con Notification Management. |
 
 <a name="5.2.2."></a>
+
 ### 5.2.2. Interface Layer
 
 **Sub-capa REST**
 
-| Tipo       | Nombre                                            | Descripción                                                                       | Responsabilidad Principal                                                                           | Relación con otros elementos                                                                    |
-| ---------- | ------------------------------------------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| Controller | ReservationController                             | Controlador REST para gestionar reservas de lotes textiles.                       | Recibir solicitudes relacionadas con reservas, coordinar comandos y devolver respuestas al cliente. | Utiliza ReservationRequestResource, ReservationResponseResource y sus respectivos assemblers.   |
-| Resource   | CreateReservationRequestResource                  | Estructura de una petición para crear una nueva reserva.                          | Representar los datos enviados por el cliente para registrar una reserva.                           | Usado por ReservationController para enviar datos al sistema.                                   |
-| Resource   | CancelReservationRequestResource                  | Estructura de una petición para cancelar una reserva.                             | Representar los datos necesarios para cancelar una reserva activa.                                  | Usado por ReservationController.                                                                |
-| Resource   | UpdateReservationNoteRequestResource              | Estructura de una petición para actualizar observaciones de una reserva.          | Representar información complementaria asociada a la reserva.                                       | Usado por ReservationController.                                                                |
-| Resource   | ReservationResponseResource                       | Estructura de respuesta con información detallada de una reserva.                 | Devolver al cliente una representación clara del estado de la reserva.                              | Usado por ReservationController como respuesta.                                                 |
-| Resource | ConfirmPickupRequestResource | Estructura de una petición para confirmar el recojo de un lote textil. | Representar datos de confirmación enviados por el usuario. | Usado por ReservationController. |
-| Resource | ConfirmPickupResponseResource | Estructura de respuesta con información de confirmación de recojo. | Devolver al cliente el resultado del proceso de confirmación. | Usado por ReservationController. |
-| Assembler  | CreateReservationCommandFromResourceAssembler     | Convierte un recurso de petición en un comando de creación de reserva.            | Traducir datos de entrada del cliente a comandos de dominio.                                        | Usado por ReservationController.                                                                |
-| Assembler  | CancelReservationCommandFromResourceAssembler     | Convierte un recurso de petición en un comando de cancelación.                    | Transformar solicitudes del cliente en comandos del dominio.                                        | Usado por ReservationController.                                                                |
-| Assembler  | UpdateReservationNoteCommandFromResourceAssembler | Convierte un recurso de petición en un comando de actualización de observaciones. | Traducir solicitudes del cliente a comandos de dominio.                                             | Usado por ReservationController.                                                                |
-| Assembler | ConfirmPickupCommandFromResourceAssembler | Convierte un recurso de petición en un comando de confirmación de recojo. | Traducir datos del cliente a comandos de dominio relacionados con confirmaciones. | Usado por ReservationController. |
-| Assembler  | ReservationResourceFromEntityAssembler            | Convierte una entidad Reservation en un recurso de respuesta.                     | Traducir objetos del dominio a estructuras legibles para el cliente.                                | Usado por ReservationController.                                                                |
-| Assembler | ConfirmPickupResourceFromEntityAssembler | Convierte una entidad PickupConfirmation en un recurso de respuesta. | Traducir confirmaciones del dominio a respuestas claras para el cliente. | Usado por ReservationController. |
+| Tipo       | Nombre                                            | Descripción                                                                       | Responsabilidad Principal                                                                           | Relación con otros elementos                                                                  |
+| ---------- | ------------------------------------------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| Controller | ReservationController                             | Controlador REST para gestionar reservas de lotes textiles.                       | Recibir solicitudes relacionadas con reservas, coordinar comandos y devolver respuestas al cliente. | Utiliza ReservationRequestResource, ReservationResponseResource y sus respectivos assemblers. |
+| Resource   | CreateReservationRequestResource                  | Estructura de una petición para crear una nueva reserva.                          | Representar los datos enviados por el cliente para registrar una reserva.                           | Usado por ReservationController para enviar datos al sistema.                                 |
+| Resource   | CancelReservationRequestResource                  | Estructura de una petición para cancelar una reserva.                             | Representar los datos necesarios para cancelar una reserva activa.                                  | Usado por ReservationController.                                                              |
+| Resource   | UpdateReservationNoteRequestResource              | Estructura de una petición para actualizar observaciones de una reserva.          | Representar información complementaria asociada a la reserva.                                       | Usado por ReservationController.                                                              |
+| Resource   | ReservationResponseResource                       | Estructura de respuesta con información detallada de una reserva.                 | Devolver al cliente una representación clara del estado de la reserva.                              | Usado por ReservationController como respuesta.                                               |
+| Resource   | ConfirmPickupRequestResource                      | Estructura de una petición para confirmar el recojo de un lote textil.            | Representar datos de confirmación enviados por el usuario.                                          | Usado por ReservationController.                                                              |
+| Resource   | ConfirmPickupResponseResource                     | Estructura de respuesta con información de confirmación de recojo.                | Devolver al cliente el resultado del proceso de confirmación.                                       | Usado por ReservationController.                                                              |
+| Assembler  | CreateReservationCommandFromResourceAssembler     | Convierte un recurso de petición en un comando de creación de reserva.            | Traducir datos de entrada del cliente a comandos de dominio.                                        | Usado por ReservationController.                                                              |
+| Assembler  | CancelReservationCommandFromResourceAssembler     | Convierte un recurso de petición en un comando de cancelación.                    | Transformar solicitudes del cliente en comandos del dominio.                                        | Usado por ReservationController.                                                              |
+| Assembler  | UpdateReservationNoteCommandFromResourceAssembler | Convierte un recurso de petición en un comando de actualización de observaciones. | Traducir solicitudes del cliente a comandos de dominio.                                             | Usado por ReservationController.                                                              |
+| Assembler  | ConfirmPickupCommandFromResourceAssembler         | Convierte un recurso de petición en un comando de confirmación de recojo.         | Traducir datos del cliente a comandos de dominio relacionados con confirmaciones.                   | Usado por ReservationController.                                                              |
+| Assembler  | ReservationResourceFromEntityAssembler            | Convierte una entidad Reservation en un recurso de respuesta.                     | Traducir objetos del dominio a estructuras legibles para el cliente.                                | Usado por ReservationController.                                                              |
+| Assembler  | ConfirmPickupResourceFromEntityAssembler          | Convierte una entidad PickupConfirmation en un recurso de respuesta.              | Traducir confirmaciones del dominio a respuestas claras para el cliente.                            | Usado por ReservationController.                                                              |
 
 <a name="5.2.3."></a>
+
 ### 5.2.3. Application Layer
 
 **Sub-capa Internal**
-| Tipo    | Nombre                             | Descripción                                                              | Responsabilidad Principal                                                              | Relación con otros elementos                                                                             |
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 | ------- | ---------------------------------- | ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| Service | ReservationCommandServiceImpl      | Implementación del servicio de comandos para reservas.                   | Ejecutar la lógica de creación, cancelación, actualización y confirmación de reservas. | Implementa ReservationCommandService. Utiliza Reservation, PickupConfirmation y repositorios de dominio. |
-| Service | ReservationQueryServiceImpl        | Implementación del servicio de consultas para reservas.                  | Obtener información de reservas mediante distintas consultas del sistema.              | Implementa ReservationQueryService. Consulta entidades Reservation y PickupConfirmation.                 |
-| Service | ReservationExpirationServiceImpl   | Implementación del servicio de expiración automática de reservas.        | Detectar reservas vencidas y actualizar su estado automáticamente.                     | Implementa ReservationExpirationService. Utiliza Reservation y ReservationPeriod.                        |
-| Service | ReservationNotificationServiceImpl | Implementación del servicio de notificaciones relacionadas con reservas. | Gestionar el envío de notificaciones sobre eventos importantes del flujo de reservas.  | Implementa ReservationNotificationService. Interactúa con Notification Management.                       |
+| Service | ReservationCommandServiceImpl | Implementación del servicio de comandos para reservas. | Ejecutar la lógica de creación, cancelación, actualización y confirmación de reservas. | Implementa ReservationCommandService. Utiliza Reservation, PickupConfirmation y repositorios de dominio. |
+| Service | ReservationQueryServiceImpl | Implementación del servicio de consultas para reservas. | Obtener información de reservas mediante distintas consultas del sistema. | Implementa ReservationQueryService. Consulta entidades Reservation y PickupConfirmation. |
+| Service | ReservationExpirationServiceImpl | Implementación del servicio de expiración automática de reservas. | Detectar reservas vencidas y actualizar su estado automáticamente. | Implementa ReservationExpirationService. Utiliza Reservation y ReservationPeriod. |
+| Service | ReservationNotificationServiceImpl | Implementación del servicio de notificaciones relacionadas con reservas. | Gestionar el envío de notificaciones sobre eventos importantes del flujo de reservas. | Implementa ReservationNotificationService. Interactúa con Notification Management. |
 
 <a name="5.2.4."></a>
+
 ### 5.2.4. Infrastructure Layer
 
 **Sub-capa Infrastructure**
 
-| Tipo       | Nombre                       | Descripción                                                             | Responsabilidad Principal                                                             | Relación con otros elementos                                                                                              |
-| ---------- | ---------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Repository | ReservationRepository        | Repositorio para gestionar reservas de lotes textiles.                  | Encargado de la persistencia y recuperación de datos relacionados con reservas.       | Relacionado con la entidad Reservation, interactúa con la base de datos para almacenar y consultar reservas.              |
-| Service    | NotificationGateway          | Servicio de integración con el bounded context Notification Management. | Enviar notificaciones relacionadas con reservas y confirmaciones de recojo.           | Utilizado por ReservationNotificationServiceImpl.                                                                         |
-| Service    | PublicationGateway           | Servicio de integración con Publication Management.                     | Consultar disponibilidad y estado de publicaciones antes de generar reservas.         | Utilizado por ReservationCommandServiceImpl y ReservationExpirationServiceImpl.                                           |
-| Service    | SchedulerService             | Servicio encargado de tareas automáticas programadas.                   | Ejecutar procesos periódicos de expiración de reservas vencidas.                      | Utilizado por ReservationExpirationServiceImpl.  
+| Tipo       | Nombre                | Descripción                                                             | Responsabilidad Principal                                                       | Relación con otros elementos                                                                                 |
+| ---------- | --------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| Repository | ReservationRepository | Repositorio para gestionar reservas de lotes textiles.                  | Encargado de la persistencia y recuperación de datos relacionados con reservas. | Relacionado con la entidad Reservation, interactúa con la base de datos para almacenar y consultar reservas. |
+| Service    | NotificationGateway   | Servicio de integración con el bounded context Notification Management. | Enviar notificaciones relacionadas con reservas y confirmaciones de recojo.     | Utilizado por ReservationNotificationServiceImpl.                                                            |
+| Service    | PublicationGateway    | Servicio de integración con Publication Management.                     | Consultar disponibilidad y estado de publicaciones antes de generar reservas.   | Utilizado por ReservationCommandServiceImpl y ReservationExpirationServiceImpl.                              |
+| Service    | SchedulerService      | Servicio encargado de tareas automáticas programadas.                   | Ejecutar procesos periódicos de expiración de reservas vencidas.                | Utilizado por ReservationExpirationServiceImpl.                                                              |
 
 <a name="5.2.5."></a>
+
 ### 5.2.5. Bounded Context Software Architecture Component Level Diagrams
 
 <img src="Img/c4/reservation-management-component-diagram.png" alt="Reservation Management Component Diagram" style="margin-bottom: 5px;" width="1000"/>
@@ -1981,9 +1965,11 @@ El Bounded Context Reservation Management es responsable de gestionar el ciclo d
 > **URL del diagrama en Structurizr:** [Component Level Diagram — Reservation Management](https://structurizr.com/share/87648/2a7d9c28-bae2-436b-8916-703b4e1cc1a1)
 
 <a name="5.2.6."></a>
+
 ### 5.2.6. Bounded Context Software Architecture Code Level Diagrams
 
 <a name="5.2.6.1."></a>
+
 ### 5.2.6.1. Bounded Context Domain Layer Class Diagrams
 
 <img src="Img/class/reservation-management-class-diagram.svg" alt="Reservation Management Class Diagram" style="margin-bottom: 5px;" width="1000" height="500"/>
@@ -1991,6 +1977,7 @@ El Bounded Context Reservation Management es responsable de gestionar el ciclo d
 > **URL del diagrama en LucidChart:** [Reservation Management - Domain Layer Class Diagram](https://lucid.app/lucidchart/34041e0d-7674-4dfd-814e-27636277f650/edit?viewport_loc=-2594%2C-386%2C3108%2C1656%2CePIVMkaeuy2n&invitationId=inv_1ebd179d-ef67-4d10-99e2-dae5e795b0dd)
 
 <a name="5.2.6.2."></a>
+
 ### 5.2.6.2. Bounded Context Database Design Diagram
 
 <img src="Img/database/reservation-management-design-database.png" alt="Reservation Management Class Diagram" style="margin-bottom: 5px;" width="1000"/>
@@ -1998,14 +1985,17 @@ El Bounded Context Reservation Management es responsable de gestionar el ciclo d
 > **URL del diagrama en LucidChart / Vertabelo:** [Reservation Management - Database Design Diagram](https://lucid.app/lucidchart/34041e0d-7674-4dfd-814e-27636277f650/edit?invitationId=inv_1ebd179d-ef67-4d10-99e2-dae5e795b0dd)
 
 <a name="6."></a>
+
 # Capítulo VI: Solution UX Design
 
 <a name="6.1."></a>
-## 6.1. Style Guidelines. 
+
+## 6.1. Style Guidelines.
 
 En este capítulo se presentan los lineamientos de estilo y las herramientas que se emplearán para el diseño del proyecto. Se detallarán los criterios visuales, componentes y recursos que permitirán mantener una identidad a lo largo de la aplicación, así como una experiencia de usuario clara y consistente. Estos lineamientos servirán como base para el desarrollo de las interfaces, asegurando una experiencia confortable para el usuario.
 
 <a name="6.1.1."></a>
+
 ### 6.1.1. General Style Guidelines.
 
 **Brand Overview**
@@ -2048,7 +2038,8 @@ El negro complementa la paleta aportando contraste y elegancia. Se emplea princi
 
 El negro se utiliza para el contenido principal debido a su alta legibilidad sobre fondos claros. Por otro lado, el verde oscuro se emplea en títulos, etiquetas y elementos destacados, reforzando la identidad visual de la plataforma.
 
-<a name="6.1.2."></a> 
+<a name="6.1.2."></a>
+
 ### 6.1.2. Web, Mobile & Devices Style Guidelines.
 
 En GamarraLoop se contempla el desarrollo de una aplicación móvil, diseñada para ofrecer una experiencia fluida y accesible en distintos dispositivos. Se prioriza una interacción simple e intuitiva, donde tanto talleres como artesanos puedan utilizar la plataforma sin complicaciones, accediendo rápidamente a funciones clave como la publicación, búsqueda y reserva de lotes de material textil.
@@ -2056,14 +2047,16 @@ En cuanto al diseño, se aplicará el patrón visual en Z, organizando los eleme
 Para la interfaz, se utilizará una paleta de colores basada en tonos beige claro, verde oscuro y negro, transmitiendo una identidad visual alineada con la sostenibilidad y la reutilización de materiales. Asimismo, se incorporan colores de estado que permiten identificar rápidamente la disponibilidad de los lotes (verde para disponible, amarillo para reservado y rojo para no disponible), facilitando la toma de decisiones dentro de la aplicación.
 En relación con el componente tecnológico, la aplicación integrará servicios de clasificación automática de imágenes, permitiendo identificar el tipo de material textil a partir de fotografías. Esta información se mostrará de manera clara dentro de la interfaz, ayudando a los usuarios a evaluar rápidamente los lotes disponibles y mejorando la confiabilidad del sistema.
 
-<a name="6.2."></a> 
+<a name="6.2."></a>
+
 ## 6.2. Information Architecture.
 
 En esta sección se detallan las decisiones y fundamentos relacionados con la organización del contenido dentro de la aplicación móvil de GamarraLoop. Estas propuestas están orientadas a garantizar que los usuarios, tanto talleres como artesanos, puedan comprender y utilizar las funcionalidades de la plataforma de manera sencilla y sin fricciones.
 Las decisiones consideran aspectos clave como la organización de la información, el etiquetado de los elementos, la navegación dentro de la aplicación y los mecanismos de búsqueda y filtrado de lotes. Todo ello con el objetivo de facilitar el acceso a los materiales disponibles, optimizar la interacción entre usuarios y mejorar la experiencia general dentro del sistema.
 
 <a name="6.2.1."></a>
-### 6.2.1. Labeling Systems. 
+
+### 6.2.1. Labeling Systems.
 
 En esta sección se describen los sistemas de etiquetado utilizados en la aplicación móvil de GamarraLoop. El objetivo del etiquetado es facilitar la comprensión del sistema, permitiendo que los usuarios identifiquen rápidamente las funciones disponibles y naveguen de manera intuitiva. Se busca mantener consistencia en los nombres, utilizando términos claros, simples y familiares para los talleres y artesanos.
 
@@ -2071,48 +2064,49 @@ En esta sección se describen los sistemas de etiquetado utilizados en la aplica
 
 Las etiquetas de encabezado permiten organizar el contenido principal dentro de la aplicación:
 
--	Inicio (Home): Muestra un resumen de los lotes disponibles y accesos rápidos a las funciones principales.
--	Publicar Lote: Permite a los talleres registrar y publicar nuevos residuos textiles.
--	Explorar Materiales: Sección donde los artesanos pueden visualizar los lotes disponibles.
--	Mis Lotes: Lista de publicaciones realizadas por el usuario (taller).
--	Mis Reservas: Muestra los lotes que el artesano ha reservado.
--	Perfil: Información del usuario y configuración básica de la cuenta.
-  
+- Inicio (Home): Muestra un resumen de los lotes disponibles y accesos rápidos a las funciones principales.
+- Publicar Lote: Permite a los talleres registrar y publicar nuevos residuos textiles.
+- Explorar Materiales: Sección donde los artesanos pueden visualizar los lotes disponibles.
+- Mis Lotes: Lista de publicaciones realizadas por el usuario (taller).
+- Mis Reservas: Muestra los lotes que el artesano ha reservado.
+- Perfil: Información del usuario y configuración básica de la cuenta.
+
 **Etiquetas Textuales (Text Labels)**
 
 Estas etiquetas ayudan a los usuarios a identificar acciones dentro de la aplicación:
 
--	Publicar (Publish): Acción para registrar un nuevo lote de tela.
--	Tomar Foto (Take Photo): Permite capturar la imagen del material.
--	Reservar (Reserve): Acción para asegurar un lote disponible.
--	Disponible (Available): Indica que el lote puede ser recolectado.
--	Reservado (Reserved): Indica que el lote ya fue apartado por un usuario.
--	Entregado (Delivered): Confirma que el lote ya fue recogido.
--	Buscar (Search): Permite encontrar materiales específicos.
--	Filtrar (Filter): Ayuda a refinar resultados por tipo, color u otros atributos.
--	Ubicación (Location): Muestra el punto de recojo del lote.
--	Confirmar Entrega: Acción del taller para validar la entrega del lote.
--	Confirmar Recepción: Acción del artesano para confirmar que recibió el material.
-  
+- Publicar (Publish): Acción para registrar un nuevo lote de tela.
+- Tomar Foto (Take Photo): Permite capturar la imagen del material.
+- Reservar (Reserve): Acción para asegurar un lote disponible.
+- Disponible (Available): Indica que el lote puede ser recolectado.
+- Reservado (Reserved): Indica que el lote ya fue apartado por un usuario.
+- Entregado (Delivered): Confirma que el lote ya fue recogido.
+- Buscar (Search): Permite encontrar materiales específicos.
+- Filtrar (Filter): Ayuda a refinar resultados por tipo, color u otros atributos.
+- Ubicación (Location): Muestra el punto de recojo del lote.
+- Confirmar Entrega: Acción del taller para validar la entrega del lote.
+- Confirmar Recepción: Acción del artesano para confirmar que recibió el material.
+
 **Etiquetas Icónicas (Iconic Labels)**
 
 Se utilizan íconos para reforzar visualmente las acciones y facilitar la navegación:
 
--	Cámara: Representa la captura de imágenes del lote.
--	Ubicación (pin): Indica el punto de recojo en el mapa.
--	Caja / paquete: Representa los lotes de material textil.
--	Campana: Notificaciones sobre reservas o cambios de estado.
--	Check: Confirmación de entrega o recepción.
--	Reloj: Indica estado pendiente o en proceso.
--	Indicadores de estado:
-  - Verde: lote disponible
-  - Amarillo: lote reservado
-  -	Rojo: lote no disponible (cancelado o expirado)
-  -	Gris: lote entregado
- 	
+- Cámara: Representa la captura de imágenes del lote.
+- Ubicación (pin): Indica el punto de recojo en el mapa.
+- Caja / paquete: Representa los lotes de material textil.
+- Campana: Notificaciones sobre reservas o cambios de estado.
+- Check: Confirmación de entrega o recepción.
+- Reloj: Indica estado pendiente o en proceso.
+- Indicadores de estado:
+- Verde: lote disponible
+- Amarillo: lote reservado
+- Rojo: lote no disponible (cancelado o expirado)
+- Gris: lote entregado
+
 Estas etiquetas se aplican de manera consistente en toda la aplicación móvil, permitiendo que los usuarios reconozcan fácilmente las funciones sin necesidad de aprendizaje previo. Además, el uso de indicadores visuales facilita la interpretación rápida del estado de los lotes, mejorando la eficiencia y la experiencia general dentro de la plataforma.
 
 <a name="6.2.2"></a>
+
 ### 6.2.2. Searching Systems.
 
 Los sistemas de búsqueda de GamarraLoop están diseñados para que los usuarios puedan encontrar lotes de material textil de manera rápida e intuitiva dentro de la aplicación móvil. Estos métodos priorizan la simplicidad, la accesibilidad y la relevancia de la información, facilitando la conexión entre talleres y artesanos.
@@ -2134,8 +2128,9 @@ Se incluye un mapa interactivo donde los usuarios pueden visualizar la ubicació
 
 Estos métodos se complementan entre sí, ofreciendo una experiencia de búsqueda eficiente y flexible, adaptada a las necesidades tanto de los talleres como de los artesanos dentro del ecosistema de reutilización textil.
 
-<a name="6.2.3."></a> 
-### 6.2.3. SEO Tags and Meta Tags. 
+<a name="6.2.3."></a>
+
+### 6.2.3. SEO Tags and Meta Tags.
 
 Los SEO Tags y Meta Tags permiten que la landing page informativa de GamarraLoop sea fácilmente identificable por los motores de búsqueda, mejorando su visibilidad y facilitando que potenciales usuarios (talleres y artesanos) encuentren la solución. Además, contribuyen a una correcta visualización en distintos dispositivos y a una mejor organización del contenido web.
 
@@ -2170,7 +2165,8 @@ Identifica la autoría del contenido y los derechos del proyecto:
 Estos elementos permiten mejorar la presencia digital de GamarraLoop y asegurar una correcta indexación en buscadores, facilitando la difusión de la propuesta y el acceso a nuevos usuarios interesados en la reutilización de materiales textiles.
 
 <a name="6.2.4."></a>
-### 6.2.4. Navigation Systems. 
+
+### 6.2.4. Navigation Systems.
 
 El sistema de navegación de GamarraLoop está diseñado para ser claro, intuitivo y consistente dentro de la aplicación móvil. Se busca que tanto talleres como artesanos puedan desplazarse por la plataforma sin dificultad, identificando rápidamente las acciones principales como publicar un lote, explorar materiales, reservar o gestionar sus actividades.
 En la aplicación móvil, la navegación se organiza mediante una barra inferior (bottom navigation) que agrupa las funciones más utilizadas, tales como Inicio, Explorar, Publicar, Mis actividades y Perfil. Esta estructura permite a los usuarios moverse rápidamente entre secciones y realizar acciones clave en pocos pasos, reduciendo la complejidad de uso.
@@ -2180,6 +2176,7 @@ Asimismo, la integración de funcionalidades como geolocalización y clasificaci
 En conjunto, el sistema de navegación está diseñado para ofrecer una experiencia fluida, rápida y sin fricciones, adaptándose a las necesidades de los distintos tipos de usuarios dentro del ecosistema de reutilización textil.
 
 <a name="6.3."></a>
+
 ## 6.3. Landing Page UI Design.
 
 En esta sección se presenta la propuesta de UI para el Landing Page de GamarraLoop. La propuesta traduce las decisiones de arquitectura de información descritas en la sección 6.2 (Labeling, Searching, SEO/Meta y Navigation Systems) y los lineamientos visuales definidos en 6.1 (paleta beige/verde oscuro/negro, tipografía con jerarquía de cuatro niveles y componentes basados en Material Design) hacia un layout concreto y navegable.
@@ -2189,6 +2186,7 @@ El objetivo del Landing es comunicar de forma directa la propuesta de valor del 
 Se elabora la propuesta en dos vistas obligatorias: Desktop Web Browser y Mobile Web Browser. Ambas comparten estructura semántica, jerarquía y CTAs, pero ajustan densidad de información, agrupamiento de secciones y patrón de navegación según el dispositivo, siguiendo principios de diseño responsivo y diseño inclusivo (contraste suficiente, áreas táctiles adecuadas, textos escalables y navegación operable por teclado).
 
 <a name="6.3.1."></a>
+
 ### 6.3.1. Landing Page Wireframe.
 
 Los wireframes presentan la estructura de bloques, jerarquía y flujo de lectura del Landing Page antes de aplicar color, tipografía final e imágenes. Su objetivo es validar la arquitectura de información, el orden de los contenidos y la ubicación de los call-to-action por segmento.
@@ -2212,6 +2210,7 @@ El wireframe Mobile reorganiza el mismo contenido en una columna única. La barr
 La consistencia entre ambas versiones garantiza que un visitante que descubra GamarraLoop desde el móvil y luego acceda desde escritorio reconozca la misma estructura, los mismos labels y los mismos puntos de conversión.
 
 <a name="6.3.2."></a>
+
 ### 6.3.2. Landing Page Mock-up.
 
 Los mock-ups aplican sobre la estructura validada en los wireframes el Design System definido en 6.1: paleta beige claro como fondo, verde oscuro como color de interacción principal, negro para tipografía y elementos estructurales, jerarquía tipográfica de cuatro niveles (headings, body, buttons, links) y componentes de Material Design. El resultado refleja la identidad visual de GamarraLoop —sostenibilidad, reutilización y conexión con el ecosistema textil— manteniendo la legibilidad y el contraste necesarios para diseño inclusivo.
@@ -2234,23 +2233,25 @@ La versión Mobile traslada el Design System a la columna única definida en el 
 
 En conjunto, los mock-ups Desktop y Mobile evidencian la aplicación del Design System, los principios de diseño visual (jerarquía, contraste, proximidad, consistencia), el diseño inclusivo (contraste de color suficiente, áreas táctiles adecuadas, tipografía escalable, foco visible) y la arquitectura de información definida en 6.2, asegurando una experiencia coherente entre el Landing Page y los demás productos digitales de la solución.
 <a name="6.4."></a>
+
 ## 6.4. Applications UX/UI Design.
 
 En esta sección se presenta la propuesta de UI/UX para las aplicaciones móviles que forman parte de la solución GamarraLoop. A diferencia del Landing Page (6.3), que opera como canal de adquisición sobre Desktop y Mobile Web Browser, los productos digitales que dan soporte a los flujos de negocio (publicación, clasificación, exploración, reserva, entrega y recepción de lotes) se materializan en dos aplicaciones móviles nativas, en línea con la Technical Story TS01 documentada en el Capítulo III, que exige acceso a cámara y geolocalización en campo dentro del emporio comercial de Gamarra.
 
 Las dos aplicaciones de alcance son:
 
-| Aplicación | User Persona destinatario (ver 2.3.1) | Justificación de plataforma |
-| --- | --- | --- |
-| **App Confeccionista** | Confeccionista — segmento Talleres | Necesita cámara para capturar el lote (US05) y GPS para asignar el punto de recojo (US06) en su stand o galería. |
-| **App Artesano** | Artesano / Recolector | Necesita geolocalización para llegar al taller (US13) y operar en movilidad dentro del emporio (TS01). |
+| Aplicación             | User Persona destinatario (ver 2.3.1) | Justificación de plataforma                                                                                      |
+| ---------------------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| **App Confeccionista** | Confeccionista — segmento Talleres    | Necesita cámara para capturar el lote (US05) y GPS para asignar el punto de recojo (US06) en su stand o galería. |
+| **App Artesano**       | Artesano / Recolector                 | Necesita geolocalización para llegar al taller (US13) y operar en movilidad dentro del emporio (TS01).           |
 
 La propuesta traduce las decisiones de Style Guidelines (6.1: paleta beige claro / verde oscuro / negro, jerarquía tipográfica de cuatro niveles, componentes basados en Material Design) y de Arquitectura de Información (6.2: Labeling, Searching, SEO/Meta y Navigation Systems) hacia layouts concretos y navegables. Cada wireframe y cada wireflow se traza explícitamente a las User Stories del Capítulo III y a los User Persona del 2.3.1, garantizando consistencia entre el espacio del problema (Capítulos I–III) y el espacio de la solución (Capítulo VI).
 
-Las herramientas utilizadas son Figma para los wireframes (mismas que en 6.3) y un layout compuesto en Figma para los wireflows que reaprovecha los frames de 6.4.1 como pasos de cada flujo. Enlace al archivo Figma con todos los wireframes y wireflow diagrams de esta sección: 
+Las herramientas utilizadas son Figma para los wireframes (mismas que en 6.3) y un layout compuesto en Figma para los wireflows que reaprovecha los frames de 6.4.1 como pasos de cada flujo. Enlace al archivo Figma con todos los wireframes y wireflow diagrams de esta sección:
 [Applications Wireframes and Wireflows](https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design)
 
 <a name="6.4.1"></a>
+
 ### 6.4.1. Applications Wireframes.
 
 Los wireframes que se presentan a continuación son artefactos de baja fidelidad, deliberadamente en **escala de grises**, que validan la jerarquía, la arquitectura de información y la secuencia de interacción de cada aplicación antes de aplicar paleta de marca, tipografía final, imágenes y micro-interacciones. La aplicación del Design System completo (paleta beige / verde oscuro / negro definida en 6.1, iconografía y colores de estado) se reserva para los Mock-ups, según lo que el enunciado del Trabajo Final pide para la entrega TB2. Mantener los wireframes en grayscale es una práctica estándar de UX porque obliga al revisor a evaluar la arquitectura y la jerarquía sin que el color "compense" debilidades estructurales.
@@ -2346,6 +2347,7 @@ En todas las vistas anteriores se aplican de forma consistente los principios de
 - **Reservas para Mock-ups (TB2)**: paleta de marca beige / verde oscuro / negro, colores de estado (verde Disponible / amarillo Reservado / rojo no disponible), iconografía coherente con el logotipo y fotografías reales del contexto Gamarra se aplicarán sobre esta misma estructura cuando se entreguen los Applications Mock-ups en el siguiente hito.
 
 <a name="6.4.2"></a>
+
 ### 6.4.2. Applications Wireflow Diagrams.
 
 Los wireflow diagrams documentan cómo los wireframes de 6.4.1 se encadenan para resolver cada User Goal de las dos aplicaciones. Siguiendo la guía del enunciado, se elabora un wireflow por cada User Goal considerando los User Persona del 2.3.1, y cada flujo refleja explícitamente cómo un cambio de pantalla representa el resultado de una interacción concreta del usuario. Los User Goals se derivan agregando las User Stories del Capítulo III por persona y por intención, lo que garantiza trazabilidad total entre el espacio del problema (US) y el espacio de la solución (wireflows).
@@ -2354,33 +2356,33 @@ Se documentan 7 wireflows en total: 4 para la App Confeccionista (UG-C01 a UG-C0
 
 **Wireflows — App Confeccionista**
 
-- **UG-C01 — "Como Confeccionista, quiero registrarme por primera vez en la app."** *User Stories:* US04. *Flujo:* C-W01 → C-W02 → C-W03. Desde la pantalla de Splash, el usuario toca "Ingresar como Confeccionista", lo que abre el formulario de alta simplificada de C-W02. Al completar nombre, contacto y stand opcional, el sistema da de alta el perfil sin contraseña (en línea con TS05) y lleva al Home con cero lotes y mensaje guiado.
+- **UG-C01 — "Como Confeccionista, quiero registrarme por primera vez en la app."** _User Stories:_ US04. _Flujo:_ C-W01 → C-W02 → C-W03. Desde la pantalla de Splash, el usuario toca "Ingresar como Confeccionista", lo que abre el formulario de alta simplificada de C-W02. Al completar nombre, contacto y stand opcional, el sistema da de alta el perfil sin contraseña (en línea con TS05) y lleva al Home con cero lotes y mensaje guiado.
 
 ![Wireflow UG-C01](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-c01-registro.png)
 
-- **UG-C02 — "Como Confeccionista, quiero publicar un lote de tela."** *User Stories:* US05, US06, US07, US10, US11. *Flujo:* C-W03 → C-W04 → C-W05 → C-W06 → C-W07 → C-W08. El usuario inicia el flujo desde el Home mediante el FAB "Publicar". El paso 1 (C-W04) captura la foto (US05) y la envía al servicio de IA (US10). El paso 2 (C-W05) muestra los resultados de la clasificación (US11), que el Confeccionista puede aceptar o corregir manualmente. El paso 3 (C-W06) asigna la ubicación automática por GPS (US06) y permite agregar una referencia textual (US07). El paso 4 (C-W07) presenta el resumen completo del lote y, al confirmar, el sistema crea el lote en estado "Disponible" y lleva a la vista de detalle (C-W08) ya como lote publicado.
+- **UG-C02 — "Como Confeccionista, quiero publicar un lote de tela."** _User Stories:_ US05, US06, US07, US10, US11. _Flujo:_ C-W03 → C-W04 → C-W05 → C-W06 → C-W07 → C-W08. El usuario inicia el flujo desde el Home mediante el FAB "Publicar". El paso 1 (C-W04) captura la foto (US05) y la envía al servicio de IA (US10). El paso 2 (C-W05) muestra los resultados de la clasificación (US11), que el Confeccionista puede aceptar o corregir manualmente. El paso 3 (C-W06) asigna la ubicación automática por GPS (US06) y permite agregar una referencia textual (US07). El paso 4 (C-W07) presenta el resumen completo del lote y, al confirmar, el sistema crea el lote en estado "Disponible" y lleva a la vista de detalle (C-W08) ya como lote publicado.
 
 ![Wireflow UG-C02](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-c02-publicar-lote.png)
 
-- **UG-C03 — "Como Confeccionista, quiero recibir la reserva y confirmar la entrega."** *User Stories:* US16, US09. *Flujo:* C-W09 → C-W08 (estado Reservado) → C-W10 → C-W08 (estado Entregado). El flujo se dispara cuando un artesano reserva el lote: la notificación push (C-W09, US16) llega al dispositivo del Confeccionista. Al tocar "Ver lote", abre el detalle (C-W08), ahora con el chip de estado en amarillo ("Reservado") y el botón de cancelación reemplazado por "Confirmar entrega". Al avanzar a C-W10, el usuario revisa los datos del artesano, confirma manualmente que entregó físicamente el lote (checkbox + CTA) y el sistema actualiza el estado a "Entregado" (US09), reflejado al volver a C-W08.
+- **UG-C03 — "Como Confeccionista, quiero recibir la reserva y confirmar la entrega."** _User Stories:_ US16, US09. _Flujo:_ C-W09 → C-W08 (estado Reservado) → C-W10 → C-W08 (estado Entregado). El flujo se dispara cuando un artesano reserva el lote: la notificación push (C-W09, US16) llega al dispositivo del Confeccionista. Al tocar "Ver lote", abre el detalle (C-W08), ahora con el chip de estado en amarillo ("Reservado") y el botón de cancelación reemplazado por "Confirmar entrega". Al avanzar a C-W10, el usuario revisa los datos del artesano, confirma manualmente que entregó físicamente el lote (checkbox + CTA) y el sistema actualiza el estado a "Entregado" (US09), reflejado al volver a C-W08.
 
 ![Wireflow UG-C03](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-c03-reserva-entrega.png)
 
-- **UG-C04 — "Como Confeccionista, quiero cancelar un lote que ya no está disponible."** *User Stories:* US08. *Flujo:* C-W03 → C-W08 → C-W11 → C-W08 (estado Cancelado). Desde el Home (C-W03), el usuario toca un lote en estado "Disponible" y entra a su detalle (C-W08). El botón secundario "Cancelar publicación" abre un modal de confirmación (C-W11) con mensaje de irreversibilidad. Al confirmar, el sistema cambia el estado del lote a "Cancelado" (US08) y lo oculta de las consultas públicas, manteniéndolo visible solo en el historial del Confeccionista.
+- **UG-C04 — "Como Confeccionista, quiero cancelar un lote que ya no está disponible."** _User Stories:_ US08. _Flujo:_ C-W03 → C-W08 → C-W11 → C-W08 (estado Cancelado). Desde el Home (C-W03), el usuario toca un lote en estado "Disponible" y entra a su detalle (C-W08). El botón secundario "Cancelar publicación" abre un modal de confirmación (C-W11) con mensaje de irreversibilidad. Al confirmar, el sistema cambia el estado del lote a "Cancelado" (US08) y lo oculta de las consultas públicas, manteniéndolo visible solo en el historial del Confeccionista.
 
 ![Wireflow UG-C04](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-c04-cancelar-lote.png)
 
 **Wireflows — App Artesano**
 
-- **UG-A01 — "Como Artesano, quiero registrarme por primera vez en la app."** *User Stories:* US04. *Flujo:* A-W01 → A-W02 → A-W03. Espejo del UG-C01: desde el Splash, el usuario toca "Ingresar como Artesano", completa el alta sin contraseña en A-W02 y aterriza directamente en la vista Explorar (A-W03), que ya muestra los lotes disponibles cercanos. Esta aterrizaje sin pasos intermedios prioriza el time-to-value para un perfil cuyo principal objetivo es encontrar materiales.
+- **UG-A01 — "Como Artesano, quiero registrarme por primera vez en la app."** _User Stories:_ US04. _Flujo:_ A-W01 → A-W02 → A-W03. Espejo del UG-C01: desde el Splash, el usuario toca "Ingresar como Artesano", completa el alta sin contraseña en A-W02 y aterriza directamente en la vista Explorar (A-W03), que ya muestra los lotes disponibles cercanos. Esta aterrizaje sin pasos intermedios prioriza el time-to-value para un perfil cuyo principal objetivo es encontrar materiales.
 
 ![Wireflow UG-A01](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-a01-registro.png)
 
-- **UG-A02 — "Como Artesano, quiero explorar lotes disponibles y revisar su detalle."** *User Stories:* US12, US13. *Flujo:* A-W03 → A-W04 → A-W05. Desde el Home (A-W03), donde se muestran los tres lotes más cercanos como teaser, el usuario accede al listado completo en A-W04, donde puede filtrar y ordenar (US12). Al tocar una card específica entra al detalle del lote (A-W05, US13), que expone foto ampliada, clasificación de IA, ubicación exacta con distancia desde la posición actual y CTA primario para reservar.
+- **UG-A02 — "Como Artesano, quiero explorar lotes disponibles y revisar su detalle."** _User Stories:_ US12, US13. _Flujo:_ A-W03 → A-W04 → A-W05. Desde el Home (A-W03), donde se muestran los tres lotes más cercanos como teaser, el usuario accede al listado completo en A-W04, donde puede filtrar y ordenar (US12). Al tocar una card específica entra al detalle del lote (A-W05, US13), que expone foto ampliada, clasificación de IA, ubicación exacta con distancia desde la posición actual y CTA primario para reservar.
 
 ![Wireflow UG-A02](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-a02-explorar-detalle.png)
 
-- **UG-A03 — "Como Artesano, quiero reservar un lote y confirmar su recepción."** *User Stories:* US14, US15. *Flujo:* A-W05 → A-W06 → A-W07 → A-W08. Desde el detalle del lote (A-W05), el usuario toca "Reservar este lote" (US14). El sistema ejecuta la transición transaccional (US19 en backend) y muestra la pantalla de confirmación (A-W06) con el recap del lote, el deadline de retiro y el aviso al Confeccionista emitido en paralelo (US16). Posteriormente, desde la vista "Mis reservas" (A-W07), el Artesano accede a la card de la reserva activa y toca "Confirmar recepción" (A-W08), donde confirma manualmente la recepción física (US15) tras llegar al taller. El sistema marca el lote como completado en su histórico.
+- **UG-A03 — "Como Artesano, quiero reservar un lote y confirmar su recepción."** _User Stories:_ US14, US15. _Flujo:_ A-W05 → A-W06 → A-W07 → A-W08. Desde el detalle del lote (A-W05), el usuario toca "Reservar este lote" (US14). El sistema ejecuta la transición transaccional (US19 en backend) y muestra la pantalla de confirmación (A-W06) con el recap del lote, el deadline de retiro y el aviso al Confeccionista emitido en paralelo (US16). Posteriormente, desde la vista "Mis reservas" (A-W07), el Artesano accede a la card de la reserva activa y toca "Confirmar recepción" (A-W08), donde confirma manualmente la recepción física (US15) tras llegar al taller. El sistema marca el lote como completado en su histórico.
 
 ![Wireflow UG-A03](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-a03-reservar-recibir.png)
 
@@ -2388,18 +2390,17 @@ Se documentan 7 wireflows en total: 4 para la App Confeccionista (UG-C01 a UG-C0
 
 La siguiente tabla consolida la trazabilidad de cada User Goal con sus User Stories, su User Persona destinatario y los Bounded Contexts del Capítulo IV a los que pertenecen las acciones soportadas:
 
-| User Goal | User Persona | User Stories | Bounded Context (Cap. IV) |
-| --- | --- | --- | --- |
-| UG-C01 — Registrarme | Confeccionista | US04 | User Profile Management |
-| UG-C02 — Publicar lote | Confeccionista | US05, US06, US07, US10, US11 | Lot Publication Management + Textile Classification |
-| UG-C03 — Reserva y entrega | Confeccionista | US16, US09 | Notification Management + Pickup and Delivery |
-| UG-C04 — Cancelar lote | Confeccionista | US08 | Lot Publication Management |
-| UG-A01 — Registrarme | Artesano | US04 | User Profile Management |
-| UG-A02 — Explorar y detalle | Artesano | US12, US13 | Reservation Management |
-| UG-A03 — Reservar y recibir | Artesano | US14, US15 | Reservation Management + Pickup and Delivery |
+| User Goal                   | User Persona   | User Stories                 | Bounded Context (Cap. IV)                           |
+| --------------------------- | -------------- | ---------------------------- | --------------------------------------------------- |
+| UG-C01 — Registrarme        | Confeccionista | US04                         | User Profile Management                             |
+| UG-C02 — Publicar lote      | Confeccionista | US05, US06, US07, US10, US11 | Lot Publication Management + Textile Classification |
+| UG-C03 — Reserva y entrega  | Confeccionista | US16, US09                   | Notification Management + Pickup and Delivery       |
+| UG-C04 — Cancelar lote      | Confeccionista | US08                         | Lot Publication Management                          |
+| UG-A01 — Registrarme        | Artesano       | US04                         | User Profile Management                             |
+| UG-A02 — Explorar y detalle | Artesano       | US12, US13                   | Reservation Management                              |
+| UG-A03 — Reservar y recibir | Artesano       | US14, US15                   | Reservation Management + Pickup and Delivery        |
 
 Esta trazabilidad garantiza que cada User Goal cierra el bucle entre el espacio del problema (User Personas y User Stories) y el espacio de la solución (wireframes, bounded contexts y servicios documentados en los Capítulos IV y V).
-
 
 <a name="8."></a>
 
@@ -2416,4 +2417,3 @@ Esta trazabilidad garantiza que cada User Goal cierra el bucle entre el espacio 
 <a name="10."></a>
 
 # Anexos
-
