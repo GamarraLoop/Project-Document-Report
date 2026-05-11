@@ -1765,7 +1765,28 @@ La capa de infraestructura contiene las implementaciones concretas de los puerto
 
 ### 5.1.6. Bounded Context Software Architecture Component Level Diagrams
 
+En este diagrama de componentes (nivel 3 del C4 Model) se descompone el container **API REST** en los componentes internos que pertenecen exclusivamente al Bounded Context *Textile Classification*, mostrando sus responsabilidades, relaciones y tecnologías.
 
+El diagrama fue elaborado en **Structurizr** siguiendo la convención del workspace `c4/workspace.dsl` del repositorio.
+
+<p align="center">
+  <img src="./assets/TC_ComponentDiagram.png" alt="Component Level Diagram — Textile Classification BC">
+</p>
+
+> **URL del diagrama en Structurizr:** [Component Level Diagram — Textile Classification BC](https://structurizr.com/share/109739/d4c0c1d0-ff19-4acb-9c60-b841f1ceaca6)
+
+El diagrama muestra los siguientes componentes y sus interacciones:
+
+| Componente | Tecnología | Responsabilidad | Interactúa con |
+| :--- | :--- | :--- | :--- |
+| `ClassificationController` | Spring MVC `@RestController` | Recibe peticiones HTTP REST y delega al Application Layer | `RequestClassificationCommandHandler`, `IClassificationRequestRepository` |
+| `LotPublishedEventConsumer` | Spring `@Component` + Pub/Sub Listener | Suscribe el tópico `lot.published` y dispara el flujo de clasificación | `HandleLotPublishedEventHandler` |
+| `RequestClassificationCommandHandler` | Spring `@Service` | Orquesta la creación y persistencia de la solicitud | `IClassificationRequestRepository`, `ClassificationEventPublisher` |
+| `ProcessClassificationCommandHandler` | Spring `@Service` | Orquesta la llamada a IA y la actualización del agregado | `IVisionApiAdapter`, `ClassificationDomainService`, `IClassificationRequestRepository` |
+| `ClassificationDomainService` | Plain Java | Filtra, categoriza y evalúa etiquetas crudas | (ninguna dependencia externa) |
+| `JpaClassificationRequestRepository` | Spring Data JPA | Persiste y recupera el agregado de dominio | Supabase Postgres |
+| `CloudVisionAdapter` | Spring WebClient | Invoca Google Cloud Vision con reintentos | Google Cloud Vision API |
+| `PubSubMessageBrokerAdapter` | Pub/Sub Java Client | Publica eventos de dominio en Pub/Sub | Google Cloud Pub/Sub |
 
 
 <a name="5.1.7."></a>
