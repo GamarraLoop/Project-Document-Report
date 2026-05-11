@@ -22,7 +22,8 @@ El nombre GamarraLoop surge de la combinación de dos conceptos clave. Por un la
 
 El nombre transmite la idea de cerrar el ciclo de vida de los textiles, evitando que los residuos se conviertan en desecho y, en su lugar, se reintegren al sistema productivo. Además, el uso del término en inglés le da un enfoque moderno, tecnológico y fácil de recordar, alineado con una solución digital innovadora.
 A continuación, se presenta el logotipo de GamarraLoop, el cual refleja visualmente el concepto de reutilización textil mediante elementos como hilo, aguja y formas circulares que representan el flujo continuo de materiales dentro de la plataforma.
-<img src="./assets/GamarraLoop-logo.jpeg" alt="Logo GamarraLoop" width="591">
+
+<img src="./assets/logoGL.jpeg" alt="Logo GamarraLoop" width="591">
 
 **Typography**
 
@@ -30,25 +31,37 @@ La tipografía en GamarraLoop cumple un papel importante en la claridad de la in
 La jerarquía tipográfica se organiza en cuatro niveles principales: headings (encabezados) para destacar secciones clave, body (texto) para el contenido general, buttons (botones) para acciones relevantes dentro del sistema y links (enlaces) para la navegación. Esta estructura permite mantener un orden visual claro y consistente en toda la interfaz.
 Para el diseño se han seleccionado tipografías que equilibran estética y funcionalidad. Se emplea una fuente con mayor personalidad para títulos y elementos destacados, aportando identidad visual a la aplicación, mientras que para los textos se utiliza una tipografía limpia y fácil de leer, asegurando una correcta comprensión del contenido en distintos dispositivos. Además, el uso de colores como verde oscuro y negro en la tipografía refuerza la identidad del proyecto y mejora el contraste visual.
 
-<img src="./assets/Typograpy.png" alt="Typography" width="301">
+<img src="./assets/tipografia.png" alt="Typography" width="301">
 
 **Colors**
 
 La elección de colores en GamarraLoop está orientada a reflejar sostenibilidad, orden y conexión con el entorno textil, alineándose con el enfoque de economía circular del proyecto.
 
-**Color Primario(Beige claro):**
+**Color Primario:**
 
-El beige claro se utiliza como color predominante en los fondos de la aplicación. Este color transmite calidez, naturalidad y simplicidad, evocando materiales textiles y generando una experiencia visual más amigable. Además, permite que los demás elementos destaquen sin sobrecargar la interfaz.
+El gris claro se utiliza como color predominante en los fondos de la aplicación. Este color transmite calidez, naturalidad y simplicidad, evocando materiales textiles y generando una experiencia visual más amigable. Además, permite que los demás elementos destaquen sin sobrecargar la interfaz.
 
-**Colores Secundarios(Verde y negro):**
+<img src="./assets/colorfondo.png" alt="Typography" width="301">
+
+**Colores Secundarios:**
 
 El verde oscuro es el color principal de interacción dentro de la aplicación. Representa sostenibilidad, reutilización y crecimiento, valores clave del proyecto. Se utiliza en botones, encabezados y elementos importantes de la interfaz.
 
 El negro complementa la paleta aportando contraste y elegancia. Se emplea principalmente en textos y algunos elementos estructurales, garantizando una alta legibilidad.
 
-**Colores de texto(Negro y Verde):**
+<img src="./assets/fuentenegro.png" alt="Typography" width="301">
 
-El negro se utiliza para el contenido principal debido a su alta legibilidad sobre fondos claros. Por otro lado, el verde oscuro se emplea en títulos, etiquetas y elementos destacados, reforzando la identidad visual de la plataforma.
+<img src="./assets/colorletras.png" alt="Typography" width="301">
+
+**Colores de texto:**
+
+El negro y gris se usan para el contenido principal debido a su alta legibilidad sobre el fondo que tenemos. Por otro lado, el verde oscuro se emplea en títulos, etiquetas y elementos destacados, reforzando la identidad visual de la plataforma.
+
+<img src="./assets/fuentenegro.png" alt="Typography" width="301">
+
+<img src="./assets/fuenteplomo.png" alt="Typography" width="301">
+
+<img src="./assets/colorletras.png" alt="Typography" width="301">
 
 <a name="6.1.2."></a> 
 ### 6.1.2. Web, Mobile & Devices Style Guidelines.
