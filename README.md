@@ -205,6 +205,12 @@ En conjunto, el sistema de navegación está diseñado para ofrecer una experien
 
 # Conclusiones
 
+- El desarrollo de GamarraLoop permitió identificar la importancia de aplicar principios de experiencia de usuario y arquitectura de información para diseñar una aplicación móvil, facilitando la interacción entre talleres textiles y artesanos dentro de un entorno digital orientado a la reutilización de materiales.
+  
+- A través del análisis de User Personas, User Journey Maps, Empathy Maps y demás herramientas UX, se logró comprender las principales necesidades y problemáticas de los usuarios, permitiendo definir funcionalidades alineadas con los procesos reales de publicación, búsqueda y recojo de residuos textiles.
+  
+- La propuesta de GamarraLoop demuestra cómo el uso de tecnologías móviles junto con tecnologias emergentes puede contribuir a promover la economía circular en Gamarra, optimizando la gestión de residuos textiles y generando oportunidades de reutilización para distintos actores del sector.
+
 <a name="9."></a>
 
 # Referencia bibliográficas
