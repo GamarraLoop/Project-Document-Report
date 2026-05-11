@@ -31,7 +31,7 @@ La tipografía en GamarraLoop cumple un papel importante en la claridad de la in
 La jerarquía tipográfica se organiza en cuatro niveles principales: headings (encabezados) para destacar secciones clave, body (texto) para el contenido general, buttons (botones) para acciones relevantes dentro del sistema y links (enlaces) para la navegación. Esta estructura permite mantener un orden visual claro y consistente en toda la interfaz.
 Para el diseño se han seleccionado tipografías que equilibran estética y funcionalidad. Se emplea una fuente con mayor personalidad para títulos y elementos destacados, aportando identidad visual a la aplicación, mientras que para los textos se utiliza una tipografía limpia y fácil de leer, asegurando una correcta comprensión del contenido en distintos dispositivos. Además, el uso de colores como verde oscuro y negro en la tipografía refuerza la identidad del proyecto y mejora el contraste visual.
 
-<img src="./assets/tipografia.png" alt="Typography" width="301">
+<img src="./assets/tipografia.png" alt="Typography" width="501">
 
 **Colors**
 
@@ -41,7 +41,7 @@ La elección de colores en GamarraLoop está orientada a reflejar sostenibilidad
 
 El gris claro se utiliza como color predominante en los fondos de la aplicación. Este color transmite calidez, naturalidad y simplicidad, evocando materiales textiles y generando una experiencia visual más amigable. Además, permite que los demás elementos destaquen sin sobrecargar la interfaz.
 
-<img src="./assets/colorfondo.png" alt="Typography" width="301">
+<img src="./assets/colorfondo.png" alt="Typography" width="501">
 
 **Colores Secundarios:**
 
@@ -49,19 +49,19 @@ El verde oscuro es el color principal de interacción dentro de la aplicación. 
 
 El negro complementa la paleta aportando contraste y elegancia. Se emplea principalmente en textos y algunos elementos estructurales, garantizando una alta legibilidad.
 
-<img src="./assets/fuentenegro.png" alt="Typography" width="301">
+<img src="./assets/fuentenegro.png" alt="Typography" width="501">
 
-<img src="./assets/colorletras.png" alt="Typography" width="301">
+<img src="./assets/colorletras.png" alt="Typography" width="501">
 
 **Colores de texto:**
 
 El negro y gris se usan para el contenido principal debido a su alta legibilidad sobre el fondo que tenemos. Por otro lado, el verde oscuro se emplea en títulos, etiquetas y elementos destacados, reforzando la identidad visual de la plataforma.
 
-<img src="./assets/fuentenegro.png" alt="Typography" width="301">
+<img src="./assets/fuentenegro.png" alt="Typography" width="501">
 
-<img src="./assets/fuenteplomo.png" alt="Typography" width="301">
+<img src="./assets/fuenteplomo.png" alt="Typography" width="501">
 
-<img src="./assets/colorletras.png" alt="Typography" width="301">
+<img src="./assets/colorletras.png" alt="Typography" width="501">
 
 <a name="6.1.2."></a> 
 ### 6.1.2. Web, Mobile & Devices Style Guidelines.
