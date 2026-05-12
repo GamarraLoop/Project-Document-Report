@@ -2406,6 +2406,16 @@ Esta trazabilidad garantiza que cada User Goal cierra el bucle entre el espacio 
 
 # Conclusiones
 
+- El desarrollo de GamarraLoop permitió identificar la importancia de aplicar principios de experiencia de usuario y arquitectura de información para diseñar una aplicación móvil, facilitando la interacción entre talleres textiles y artesanos dentro de un entorno digital orientado a la reutilización de materiales.
+  
+- A través del análisis de User Personas, User Journey Maps, Empathy Maps y demás herramientas UX, se logró comprender las principales necesidades y problemáticas de los usuarios, permitiendo definir funcionalidades alineadas con los procesos reales de publicación, búsqueda y recojo de residuos textiles.
+  
+- La propuesta de GamarraLoop demuestra cómo el uso de tecnologías móviles junto con tecnologias emergentes puede contribuir a promover la economía circular en Gamarra, optimizando la gestión de residuos textiles y generando oportunidades de reutilización para distintos actores del sector.
+
+- El diseño del Landing Page UI traduce las decisiones de arquitectura de información y los lineamientos visuales del style guide hacia una propuesta concreta en vistas Desktop y Mobile, priorizando un recorrido en patrón Z que comunica la propuesta de valor a los tres segmentos objetivo (Confeccionistas, recolectores/artesanos y aliados del ecosistema) y los conduce hacia los call-to-action correspondientes mediante principios de diseño responsivo e inclusivo.
+
+- El trabajo de Applications UX/UI Design materializa los User Stories y los bounded contexts en wireframes en escala de grises y wireflows navegables para las aplicaciones móviles de Confeccionista y Artesano, garantizando trazabilidad entre cada User Goal y los servicios documentados en los Capítulos IV y V, y consolidando una base validada antes de avanzar hacia prototipos de alta fidelidad.
+
 <a name="9."></a>
 
 # Referencia bibliográficas
