@@ -2,7 +2,7 @@
 style="display: block; 
 margin-left:auto; 
 margin-right: auto; 
-width=50%"/>
+width=50%"/><br>
 
 <h3 align="center">Universidad Peruana de Ciencias Aplicadas</h3>
 
@@ -68,6 +68,8 @@ URL del repositorio para el reporte del proyecto: https://github.com/GamarraLoop
 <div align="center">
   <img alt="Image" src="https://github.com/user-attachments/assets/1b5e9b9b-09d7-4122-96b8-b233ad8a8cc8" />
 </div>
+
+*Figura: Project Report Collaboration Insights*
 
 Para el desarrollo del informe perteneciente a la entrega TF, se dividió la implementación de secciones de la siguiente forma para cada integrante del equipo:
 
@@ -188,8 +190,8 @@ Los integrantes son:
 
 **ABET – EAC - Student Outcome 3:** Capacidad de comunicarse efectivamente con un rango de audiencias.
 
-| Criterio específico                                                                                                                                                                   | Acciones realizadas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Conclusiones                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Criterio específico            | Acciones realizadas     | Conclusiones      |
+| :------------ | :---------------- | :--------------- |
 | Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.    | **Cuya Villegas, Rafael Alberto** <br> **TB1:** Compartí con el equipo diversas ideas orientadas a la creación y mejora de nuestro proyecto, comunicándolas de manera clara y objetiva. Asimismo, en el desarrollo del Capítulo II, estuve a cargo de la realización de entrevistas, lo que implicó interactuar con los participantes de forma estructurada y profesional, asegurando una comunicación efectiva con personas de diferentes niveles y contextos.<br><br>**Gongora Castillejos, Williams:**<br> **TB1:** Sustenté frente al equipo la viabilidad técnica y de negocio para la gestión de requerimientos (Capítulo III), argumentando la necesidad de aplicar IA y rediseñar el flujo logístico. <br><br> **TP:** Sustenté frente al equipo las decisiones de diseño arquitectónico a nivel táctico para el Capítulo V, argumentando la aplicación del patrón Hexagonal (Ports & Adapters) en el Bounded Context de Textile Classification. Expliqué cómo la separación en capas (Domain, Application, Infrastructure, Interface) garantiza la independencia de la lógica de negocio y cómo la integración asíncrona mediante Pub/Sub resuelve dependencias externas complejas, asegurando que la solución técnica sea escalable y fácil de comunicar al resto del equipo de desarrollo. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Sustenté frente al equipo la problemática, contexto y propuesta de solución del proyecto (Capítulo I), argumentando la necesidad de implementar una plataforma basada en IA para optimizar la gestión y reutilización de residuos textiles dentro de un enfoque de economía circular. <br><br> **TP:** Durante el desarrollo del bounded context Reservation Management de Gamarraloop, comuniqué de manera clara y objetiva las decisiones arquitectónicas y modelos de dominio aplicados en el sistema. Utilicé diagramas y documentación técnica para explicar conceptos de DDD a compañeros con distintos niveles de conocimiento. Además, sustenté las soluciones propuestas de forma ordenada y comprensible dentro del proyecto de ingeniería de software. <br><br> **Molina Falcon, Piero Leonardo** <br>**TB1:** Sustenté ante el equipo la definición de los bounded contexts y la delimitación del dominio en el Capítulo IV (Strategic Design), explicando la importancia del EventStorming, Candidate Context Discovery y Context Mapping para estructurar correctamente la arquitectura del sistema. Asimismo, argumenté cómo estas decisiones permitían mejorar la escalabilidad, mantenibilidad y claridad de los procesos de negocio dentro de GamarraLoop.<br><br> **Torres Garcia, Andrés Alberto** <br> **TB1:** Sustenté frente al equipo el proceso de Attribute-Driven Design aplicado al Capítulo IV, argumentando la priorización de los diez drivers arquitectónicos en dos ejes (importancia para stakeholders e impacto en complejidad técnica), la elección del estilo monolito modular frente a microservicios para una solución en fase de validación, y la distribución entre tres proveedores cloud heterogéneos (Google Cloud Platform, Supabase y GitHub Pages) priorizando free tiers permanentes sobre la uniformidad arquitectónica. Asimismo, expuse los trade-offs explícitos asumidos por la arquitectura: cold start de Cloud Run, optimistic vs pessimistic locking en la reserva concurrente, y clasificación asíncrona vs síncrona ante la dependencia con Google Cloud Vision. <br><br> **TP:** Sustenté frente al equipo las decisiones de diseño de experiencia para el Capítulo VI, argumentando cómo los Style Guidelines (paleta beige/verde oscuro/negro, tipografía y componentes Material Design) y la Arquitectura de Información (Labeling, Searching, SEO/Meta y Navigation Systems) se traducen en el Landing Page de GamarraLoop. Expliqué la racional detrás de las versiones Desktop y Mobile, la jerarquía de CTAs por segmento (Confeccionistas y recolectores) y la consistencia visual y de navegación entre el Landing Page y las Mobile Applications. Adicionalmente, sustenté la propuesta de Applications UX/UI Design (6.4), explicando por qué la solución se materializa en dos apps móviles nativas separadas (App Confeccionista y App Artesano) en línea con la Technical Story TS01, cómo cada wireflow se deriva agregando User Stories del Capítulo III por User Persona, y cómo la trazabilidad UG → US → Bounded Context cierra el bucle entre los Capítulos III, IV y VI. | **TB1:** El equipo logró alinear la visión del producto mediante debates estructurados, asegurando que todos los miembros comprendan a profundidad el modelo de negocio antes de iniciar el diseño arquitectónico. <br><br> **TP:** La discusión de las decisiones de UX permitió al equipo unificar criterios sobre la experiencia esperada por cada segmento objetivo, asegurando consistencia entre el Landing Page y las aplicaciones antes de avanzar con la implementación.                                                                                             |
 | Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br> **TB1:** Me encargué del desarrollo del Capítulo II, diseñando entrevistas y desarrollando herramientas como mapas de análisis con el objetivo de comprender mejor a los usuarios y sus necesidades. La información fue presentada de manera clara y objetiva.<br><br> **Gongora Castillejos, Williams:** <br> **TB1:** Redacté y estructuré el Capítulo III (Requirements Specification), elaborando diagramas estratégicos (Impact Mapping, To-Be Scenario) y estandarizando las User Stories en formato Gherkin. <br><br> **TP:** Redacté y estructuré la sección de Tactical-Level Software Design (Capítulo V) correspondiente al Bounded Context de Textile Classification. Documenté de manera objetiva y rigurosa la responsabilidad de cada capa arquitectónica (Domain, Interface, Application, Infrastructure) y elaboré los diagramas a nivel de componentes (C4 Model), clases y diseño de base de datos relacional. Utilicé herramientas especializadas como Structurizr, PlantUML y Vertabelo, garantizando que la documentación técnica mantenga una alta trazabilidad con los requerimientos previos y sea comprensible para el equipo técnico. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Redacté y estructuré el Capítulo I del proyecto, desarrollando el perfil de la startup, la problemática, los segmentos de usuarios y los artefactos de Lean UX, comunicando las ideas de manera clara, organizada y comprensible para públicos tanto técnicos como no técnicos. <br><br> **TP:** Durante el desarrollo del bounded context Reservation Management de Gamarraloop, elaboré documentación técnica y descripciones arquitectónicas de manera clara y estructurada. Desarrollé diagramas, modelos de dominio y decisiones de diseño utilizando un lenguaje comprensible para distintos niveles técnicos y jerárquicos. Esto permitió comunicar eficazmente los resultados y avances del proyecto de ingeniería de software. <br><br> **Molina Falcon, Piero Leonardo** <br>**TB1:** Redacté y estructuré el Capítulo IV (Strategic Design), desarrollando el EventStorming, Candidate Context Discovery, Domain Message Flows Modeling, Bounded Context Canvases y Context Mapping, organizando los bounded contexts del sistema y definiendo las relaciones estratégicas entre ellos para una arquitectura clara, escalable y alineada al dominio del negocio.<br><br> **Torres Garcia, Andrés Alberto** <br> **TB1:** Redacté y estructuré las secciones de Strategic-Level Attribute-Driven Design (4.1) y Software Architecture (4.3) del Capítulo IV. Documenté el Architectural Drivers Backlog con diez drivers priorizados (D01–D10), los siete escenarios de atributos de calidad en formato SEI de seis dimensiones (QA01–QA07), las seis Technical Stories que actúan como constraints (TS01–TS06), la matriz de Architectural Design Decisions con la evaluación de dos a tres patrones candidatos por driver con sus pros y contras, y los Quality Attribute Scenario Refinements con Business Goals, Questions e Issues asociados. Adicionalmente, modelé las cuatro vistas del C4 Model (System Landscape, Context, Container y Deployment) en Structurizr y las acompañé de tablas con trazabilidad explícita a los drivers, escenarios de calidad y User Stories del Capítulo III. <br><br> **TP:** Redacté y estructuré el Capítulo VI: Solution UX Design. Documenté en 6.1 los Style Guidelines de marca, tipografía, paleta de colores y componentes Material Design; en 6.2 la Arquitectura de Información (Labeling Systems, Searching Systems, SEO/Meta Tags y Navigation Systems); en 6.3 el Landing Page UI Design con wireframes y mock-ups para Desktop Web Browser y Mobile Web Browser elaborados en Figma, explicando la aplicación de principios de diseño visual, diseño inclusivo y arquitectura de información en cada vista; y en 6.4 el Applications UX/UI Design completo, con 19 wireframes móviles de baja fidelidad (11 para App Confeccionista y 8 para App Artesano) y 7 wireflow diagrams (UG-C01 a UG-C04 y UG-A01 a UG-A03), todos elaborados en Figma a 375×812 con el mismo Design System, y acompañados de una tabla de trazabilidad explícita que vincula cada User Goal con sus User Stories del Capítulo III y los Bounded Contexts del Capítulo IV.                                                                                                                                     | **TB1:** La documentación rigurosa y estandarizada ha demostrado ser fundamental. Redactar requerimientos sin ambigüedades ni detalles de UI garantiza una base sólida y comprensible para el posterior diseño de software. <br><br> **TP:** Documentar la propuesta de UX por capa (Style Guidelines → Information Architecture → UI Design) demostró ser efectivo para mantener trazabilidad entre las decisiones de marca, la arquitectura de información y los artefactos visuales finales, facilitando la comprensión del informe por audiencias técnicas y no técnicas. |
 
@@ -216,7 +218,7 @@ GamarraLoop está conformado por estudiantes de Ingeniería de Software con form
 <table align="center"  border="1" width="70%" style="text-align:center;">
     <tr align="center">
         <td rowspan="3">
-            <img src="Img/Rafael.jpg" alt="Cuya Villegas, Rafael Alberto" style="margin-bottom: 5px;" width="800"/> 
+            <img src="Img/Rafael.jpg" alt="Cuya Villegas, Rafael Alberto" style="margin-bottom: 5px;" width="800"/><br>
         </td>
         <td align="left">
             <b>Nombre y Apellido:</b>
@@ -240,7 +242,7 @@ GamarraLoop está conformado por estudiantes de Ingeniería de Software con form
     </tr>
     <tr align="center">
         <td rowspan="3">
-            <img src="Img/Williams-Gongora.png" alt="Gongora Castillejos, Williams" style="margin-bottom: 5px;" width="800"/>
+            <img src="Img/Williams-Gongora.png" alt="Gongora Castillejos, Williams" style="margin-bottom: 5px;" width="800"/><br>
         </td>
         <td align="left">
             <b>Nombre y Apellido:</b>
@@ -264,7 +266,7 @@ GamarraLoop está conformado por estudiantes de Ingeniería de Software con form
     </tr>
     <tr align="center">
         <td rowspan="3">
-            <img src="Img/Elizabeth-Huanaco.jpeg" alt="Huanaco Huayta, Elizabeth Lucero"  style="margin-bottom: 5px;" width="800"/>
+            <img src="Img/Elizabeth-Huanaco.jpeg" alt="Huanaco Huayta, Elizabeth Lucero"  style="margin-bottom: 5px;" width="800"/><br>
         </td>
         <td align="left">
             <b>Nombre y Apellido: </b>
@@ -288,7 +290,7 @@ GamarraLoop está conformado por estudiantes de Ingeniería de Software con form
     </tr>
     <tr align="center">
     <td rowspan="3">
-        <img src="assets/piero.png" alt="Molina Falcon, Piero Leonardo" style="margin-bottom: 5px;" width="800"/>
+        <img src="assets/piero.png" alt="Molina Falcon, Piero Leonardo" style="margin-bottom: 5px;" width="800"/><br>
     </td>
     <td align="left">
         <b>Nombre y Apellido:</b>
@@ -314,7 +316,7 @@ GamarraLoop está conformado por estudiantes de Ingeniería de Software con form
 </tr>
     <tr align="center">
         <td rowspan="3">
-            <img src="Img/Andres-Torres.jpg" alt="Torres Garcia, Andrés Alberto" style="margin-bottom: 5px;" width="800"/>
+            <img src="Img/Andres-Torres.jpg" alt="Torres Garcia, Andrés Alberto" style="margin-bottom: 5px;" width="800"/><br>
         </td>
         <td align="left">
             <b>Nombre y Apellido:</b>
@@ -449,7 +451,8 @@ Para los generadores de estos residuos, un problema común es la dificultad para
 
 #### 1.2.2.4. Lean UX Canvas
 
-<img src="Img/Lean-UX-Canvas.jpg" alt="Lean Ux Canvas" style="margin-bottom: 5px;" width="800"/>
+<img src="Img/Lean-UX-Canvas.jpg" alt="Lean Ux Canvas" style="margin-bottom: 5px;" width="800"/><br>
+*Figura: Lean Ux Canvas*
 
 <a name="1.3."></a>
 
@@ -507,11 +510,11 @@ En esta sección, definiremos los perfiles específicos del público objetivo pa
       <th colspan="5" align="left"> Identificar las fortalezas, debilidades, oportunidades y amenazas de los principales competidores nos perimite delimitar mejor nuestro proyecto y definir nuestra propuesta diferenciada en el mercado.</th>
     </tr>
     <tr>
-      <th colspan="2" align="left">(En la cabecera colocar por cada competidor nombre y logo)</th>
+      <th colspan="2" align="center">Startups</th>
       <th>GamarraLoop<br></th>
-      <th>Vinted<br><img width="100" height="70" alt="Image" src="https://github.com/user-attachments/assets/cf3e72d3-2b41-4568-b77a-d751fc31c81f" /></th>
-      <th>Facebook Marketplace<br><img width="100" height="70" alt="Image" src="https://github.com/user-attachments/assets/9a247260-211d-49f8-8c75-bc3fd80dcae5" /></th>
-      <th>Etsy<br><img width="100" height="70" alt="Image" src="https://github.com/user-attachments/assets/6d3a4d31-c35f-4fec-9143-d5eba85795dc" /></th>
+      <th>Vinted<br><img width="100" height="70" alt="Image" src="https://github.com/user-attachments/assets/cf3e72d3-2b41-4568-b77a-d751fc31c81f" /><br></th>
+      <th>Facebook Marketplace<br><img width="100" height="70" alt="Image" src="https://github.com/user-attachments/assets/9a247260-211d-49f8-8c75-bc3fd80dcae5" /><br></th>
+      <th>Etsy<br><img width="100" height="70" alt="Image" src="https://github.com/user-attachments/assets/6d3a4d31-c35f-4fec-9143-d5eba85795dc" /><br></th>
     </tr>
   </thead>
   <tbody>
@@ -698,7 +701,7 @@ Reforzar la diferenciación de GamarraLoop en todos los canales de marketing, de
 | **Sexo**          | Masculino                                                                                                                                                                                                                                                                                                                                      |
 | **Edad**          | 32                                                                                                                                                                                                                                                                                                                                             |
 | **Distrito**      | Lince                                                                                                                                                                                                                                                                                                                                          |
-| **Evidencia**     | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/31ec6e5c-a093-4842-a4ef-fbbd5eb8d613" />                                                                                                                                                                                                             |
+| **Evidencia**     | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/31ec6e5c-a093-4842-a4ef-fbbd5eb8d613" /><br>*Figura: Entrevista 1*                                                                                                                                                                                                             |
 | **Timing**        | 05:28                                                                                                                                                                                                                                                                                                                                          |
 | **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQAN7gYHGcYlSLXuoJ9JBJjkAf3Zrbft26IoBjtFGzD699k?e=QFawgz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 | **Resumen**       | Piero nos comenta que genera retazos de tela casi todos los días y los acumula hasta que ocupan mucho espacio. A veces los regala o los da a recicladores, pero coordinar es complicado. Dice que le gustaría algo simple para deshacerse de esos materiales rápido, sin perder tiempo.                                                        |
@@ -712,7 +715,7 @@ Reforzar la diferenciación de GamarraLoop en todos los canales de marketing, de
 | **Sexo**          | Femenino                                                                                                                                                                                                                                                                                                                                       |
 | **Edad**          | 34                                                                                                                                                                                                                                                                                                                                             |
 | **Distrito**      | La Victoria                                                                                                                                                                                                                                                                                                                                    |
-| **Evidencia**     | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/dd520da8-4c74-437d-92a9-1ac85b71d07c" />                                                                                                                                                                                                             |
+| **Evidencia**     | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/dd520da8-4c74-437d-92a9-1ac85b71d07c" /><br>*Figura: Entrevista 2*                                                                                                                                                                                                             |
 | **Timing**        | 06:02                                                                                                                                                                                                                                                                                                                                          |
 | **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQArNG8BqQYzTr7f2-UB5DbSAeSejaqnHHuiyOv-EuvjNpw?e=DdlBtz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 | **Resumen**       | Rosa menciona que en el taller juntan los residuos en bolsas y luego los botan o venden barato. El problema es que no siempre hay quién los compre. Para ella, sería útil una app donde pueda publicar rápido los materiales y que alguien los recoja sin tanto trámite.                                                                       |
@@ -728,7 +731,7 @@ Reforzar la diferenciación de GamarraLoop en todos los canales de marketing, de
 | **Sexo**          | Masculino                                                                                                                                                                                                                                                                                                                                      |
 | **Edad**          | 22                                                                                                                                                                                                                                                                                                                                             |
 | **Distrito**      | Chorrillos                                                                                                                                                                                                                                                                                                                                     |
-| **Evidencia**     | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/521237d3-acb0-47dc-a613-4a31956d8dd6" />                                                                                                                                                                                                             |
+| **Evidencia**     | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/521237d3-acb0-47dc-a613-4a31956d8dd6" /><br>*Figura: Entrevista 3*                                                                                                                                                                                                             |
 | **Timing**        | 03:43                                                                                                                                                                                                                                                                                                                                          |
 | **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQDKYfua_SghSL9Ho4qeQKQHAfLgcdUG9dIqtuEfJrs-yLQ?e=Podp5t&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 | **Resumen**       | Fabrizio explica que generan muchos residuos y aunque intentan reutilizar algunos, la mayoría se pierde. Siente que falta una forma organizada de conectar con personas interesadas. Dice que usaría una app si le facilita ubicar y coordinar el recojo.                                                                                      |
@@ -744,7 +747,7 @@ Reforzar la diferenciación de GamarraLoop en todos los canales de marketing, de
 | **Sexo**          | Masculino                                                                                                                                                                                                                                                                                                                                      |
 | **Edad**          | 26                                                                                                                                                                                                                                                                                                                                             |
 | **Distrito**      | Jesús Maria                                                                                                                                                                                                                                                                                                                                    |
-| **Evidencia**     | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/8ee5a723-6712-4e05-a294-5a581f635fe0" />                                                                                                                                                                                                             |
+| **Evidencia**     | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/8ee5a723-6712-4e05-a294-5a581f635fe0" /><br>*Figura: Entrevista 1*                                                                                                                                                                                                             |
 | **Timing**        | 08:05                                                                                                                                                                                                                                                                                                                                          |
 | **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211g522_upc_edu_pe/IQDfTLJqZPgERq92KZQYQyIcAamOMdEuGeg0HEMG1UtIuTU?e=Pjbsgr&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 | **Resumen**       | Anthony cuenta que busca materiales en Gamarra o con recicladores, pero muchas veces no encuentra lo que necesita. Pierde tiempo buscando y a veces termina comprando más caro. Le interesaría una app donde pueda ver materiales cercanos y elegir más rápido.                                                                                |
@@ -760,7 +763,7 @@ Reforzar la diferenciación de GamarraLoop en todos los canales de marketing, de
 | **Sexo**          | Masculino                                                                                                                                                                                                                                                                                                                                      |
 | **Edad**          | 28                                                                                                                                                                                                                                                                                                                                             |
 | **Distrito**      | Lince                                                                                                                                                                                                                                                                                                                                          |
-| **Evidencia**     | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/6415258b-23a7-44e0-8c03-2cc2c0870cb2" />                                                                                                                                                                                                             |
+| **Evidencia**     | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/6415258b-23a7-44e0-8c03-2cc2c0870cb2" /><br>*Figura: Entrevista 2*                                                                                                                                                                                                             |
 | **Timing**        | 05:01                                                                                                                                                                                                                                                                                                                                          |
 | **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQBK4us_1WkPR468kAVyanV0ASwmeiolYIAU2Cb3FhJRLc8?e=i9k3rf&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 | **Resumen**       | Carlos comenta que encuentra materiales caminando y preguntando en talleres. A veces pierde medio día sin conseguir nada. Dice que le serviría mucho saber dónde hay material disponible sin tener que buscar tanto.                                                                                                                           |
@@ -776,7 +779,7 @@ Reforzar la diferenciación de GamarraLoop en todos los canales de marketing, de
 | **Sexo**          | Masculino                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | **Edad**          | 31                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | **Distrito**      | Jesús Maria                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| **Evidencia**     | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/c27f7c6c-cae9-405a-90d4-4e301c1661ff" />                                                                                                                                                                                                                                                                                              |
+| **Evidencia**     | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/c27f7c6c-cae9-405a-90d4-4e301c1661ff" /><br>*Figura: Entrevista 3*                                                                                                                                                                                                                                                                                              |
 | **Timing**        | 00:06:12                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQCzJIS6m2xIRbHBWJGDkaK_AeiWOaK4J9QIwCrWbHR2qKw?e=d0M2U2&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)                                                                                  |
 | **Resumen**       | En la entrevista realizada a Julio Rivera, se identificó que los artesanos dependen principalmente de talleres de confección, mercados textiles y contactos informales para conseguir materiales reutilizables. La principal problemática es la dificultad para encontrar materiales disponibles, cercanos y en buen estado, por lo que una plataforma con geolocalización y reserva facilitaría significativamente su trabajo. |
@@ -803,7 +806,8 @@ De acuerdo con lo que hemos podido observar en las entrevistas realizadas a trab
 
 _User Persona del segmento Talleres_
 
-<img width="1050" height="1888" alt="Image" src="https://github.com/user-attachments/assets/5edf3c3f-8724-4b9c-8274-e6ea26feaf96" />
+<img width="1050" height="1888" alt="Image" src="https://github.com/user-attachments/assets/5edf3c3f-8724-4b9c-8274-e6ea26feaf96" /><br>
+*Figura: 2.3.1. User Personas*
 
 _Nota._ Elaboración propia (2026) en UXPressia.
 
@@ -813,7 +817,8 @@ _Nota._ Elaboración propia (2026) en UXPressia.
 
 _User Persona del segmento Artesanos/Recolectores_
 
-<img width="1050" height="1888" alt="Image" src="https://github.com/user-attachments/assets/0041d088-7aa4-48f5-ad0f-106b8d71a39e" />
+<img width="1050" height="1888" alt="Image" src="https://github.com/user-attachments/assets/0041d088-7aa4-48f5-ad0f-106b8d71a39e" /><br>
+*Figura: 2.3.1. User Personas*
 
 _Nota._ Elaboración propia (2026) en UXPressia.
 
@@ -857,7 +862,8 @@ La matriz de tareas nos perimite identificar cuales son las funcionalidades mas 
 
 _User Journey Map As-Is del segmento Talleres_
 
-<img width="1885" height="1153" alt="Image" src="https://github.com/user-attachments/assets/c3862956-ea87-4aa4-bc32-1acced3f846b" />
+<img width="1885" height="1153" alt="Image" src="https://github.com/user-attachments/assets/c3862956-ea87-4aa4-bc32-1acced3f846b" /><br>
+*Figura: 2.3.3. User Journey Mapping*
 
 _Nota._ Elaboración propia (2026) en UXPressia.
 
@@ -867,7 +873,8 @@ _Nota._ Elaboración propia (2026) en UXPressia.
 
 _User Journey Map As-Is del segmento Artesanos/Recolectores_
 
-<img width="1885" height="1153" alt="Image" src="https://github.com/user-attachments/assets/d9381630-288b-4326-bcd6-5d439342852a" />
+<img width="1885" height="1153" alt="Image" src="https://github.com/user-attachments/assets/d9381630-288b-4326-bcd6-5d439342852a" /><br>
+*Figura: 2.3.3. User Journey Mapping*
 
 _Nota._ Elaboración propia (2026) en UXPressia.
 
@@ -881,7 +888,8 @@ _Nota._ Elaboración propia (2026) en UXPressia.
 
 _Empathy Map del segmento Talleres_
 
-<img width="1050" height="1108" alt="Image" src="https://github.com/user-attachments/assets/44eb782a-2f9e-491a-9039-520134a19136" />
+<img width="1050" height="1108" alt="Image" src="https://github.com/user-attachments/assets/44eb782a-2f9e-491a-9039-520134a19136" /><br>
+*Figura: 2.3.4. Empathy Mapping*
 
 _Nota._ Elaboración propia (2026) en UXPressia.
 
@@ -891,7 +899,8 @@ _Nota._ Elaboración propia (2026) en UXPressia.
 
 _Empathy Map del segmento Artesanos/Recolectores_
 
-<img width="1050" height="1108" alt="Image" src="https://github.com/user-attachments/assets/b3477a65-6d03-45a5-9258-2236175e69f6" />
+<img width="1050" height="1108" alt="Image" src="https://github.com/user-attachments/assets/b3477a65-6d03-45a5-9258-2236175e69f6" /><br>
+*Figura: 2.3.4. Empathy Mapping*
 
 _Nota._ Elaboración propia (2026) en UXPressia.
 
@@ -905,7 +914,8 @@ Figura 8
 
 _As-Is Scenario Map del segmento Talleres_
 
-<img width="1473" height="1060" alt="Image" src="https://github.com/user-attachments/assets/b988db87-3814-450e-be9b-5aac18b6c2df" />
+<img width="1473" height="1060" alt="Image" src="https://github.com/user-attachments/assets/b988db87-3814-450e-be9b-5aac18b6c2df" /><br>
+*Figura: 2.3.5. As-is Scenario Mapping*
 
 _Nota._ Elaboración propia (2026) en Miro.
 
@@ -915,7 +925,8 @@ Figura 9
 
 _As-Is Scenario Map del segmento Artesanos/Recolectores_
 
-<img width="1473" height="1060" alt="Image" src="https://github.com/user-attachments/assets/416f7ab8-266f-4519-b8b4-4506851515cb" />
+<img width="1473" height="1060" alt="Image" src="https://github.com/user-attachments/assets/416f7ab8-266f-4519-b8b4-4506851515cb" /><br>
+*Figura: 2.3.5. As-is Scenario Mapping*
 
 _Nota._ Elaboración propia (2026) en Miro.
 
@@ -966,7 +977,8 @@ A continuación, se presentan las capturas de los To-Be Scenario Mapping elabora
 
 - **To-Be Scenario: Taller Textil**
 
-<img alt="Image" src="https://github.com/user-attachments/assets/b7df6679-2d37-4af3-9c3f-23807c3691f7" />
+<img alt="Image" src="https://github.com/user-attachments/assets/b7df6679-2d37-4af3-9c3f-23807c3691f7" /><br>
+*Figura: 3.1. To-Be Scenario Mapping*
 
 _Nota._ Elaboración propia (2026) en Miro.
 
@@ -974,7 +986,8 @@ _Nota._ Elaboración propia (2026) en Miro.
 
 - **To-Be Scenario: Artesano**
 
-<img alt="Image" src="https://github.com/user-attachments/assets/c48a9db9-af9d-477b-98a0-357f4b78126c" />
+<img alt="Image" src="https://github.com/user-attachments/assets/c48a9db9-af9d-477b-98a0-357f4b78126c" /><br>
+*Figura: 3.1. To-Be Scenario Mapping*
 
 _Nota._ Elaboración propia (2026) en Miro.
 
@@ -1035,7 +1048,8 @@ A continuación, se detalla el Impact Map elaborado en **UXpressia**:
 
 - Usuario: Taller Textil (Confeccionista)
 
-<img alt="Image" src="https://github.com/user-attachments/assets/640a2884-48e7-419d-8bd4-e57da8cadb94" />
+<img alt="Image" src="https://github.com/user-attachments/assets/640a2884-48e7-419d-8bd4-e57da8cadb94" /><br>
+*Figura: 3.3. Impact Mapping*
 
 _Nota._ Elaboración propia (2026) en UXPressia.
 
@@ -1043,7 +1057,8 @@ _Nota._ Elaboración propia (2026) en UXPressia.
 
 - Usuario: Artesano
 
-<img alt="Image" src="https://github.com/user-attachments/assets/8181b44c-a400-4e70-afc4-d7e4f4c22cba" />
+<img alt="Image" src="https://github.com/user-attachments/assets/8181b44c-a400-4e70-afc4-d7e4f4c22cba" /><br>
+*Figura: 3.3. Impact Mapping*
 
 _Nota._ Elaboración propia (2026) en UXPressia.
 
@@ -1085,7 +1100,8 @@ En esta sección se presenta el **Product Backlog** de Gamarra Loop. La prioriza
 - **URL del Product Backlog:** [Jira Product Backlog](https://williamsgongora1943.atlassian.net/jira/software/projects/US/list?jql=project+%3D+%22US%22+and+updatedDate+%3E%3D+-1w+ORDER+BY+resolution+ASC&atlOrigin=eyJpIjoiMDlhOTcwN2E1ZmE0NDZiNWI1MmI2Mjc3ZmE1M2Q1NGQiLCJwIjoiaiJ9)
 - **Captura de pantalla:**
 
-<img alt="productbacklog" src="https://github.com/user-attachments/assets/ab5f3c47-0d8f-4d16-9d8d-7ec465c889f4" />
+<img alt="productbacklog" src="https://github.com/user-attachments/assets/ab5f3c47-0d8f-4d16-9d8d-7ec465c889f4" /><br>
+*Figura: Product Backlog*
 
 _Nota._ Elaboración propia (2026) en Jira.
 
@@ -1458,56 +1474,70 @@ Mediante la técnica del Event Storming definimos los siguientes Bounded Context
 Gestiona las cuentas de usuario, perfiles y preferencias dentro de la plataforma. Permite el registro, autenticación, actualización de perfil y control de credenciales para confeccionistas y artesanos, asegurando que solo usuarios válidos y activos puedan participar en el sistema.
 
 <p align="center">
-  <img src="./assets/UserProfileManagment.jpg" width="850">
+  <img src="./assets/UserProfileManagment.jpg" width="850"><br>
 </p>
+
+*Figura: 4.2.1. EventStorming*
 
 **LOTE REGISTRADO**
 
 Gestiona la publicación de lotes textiles disponibles para reserva dentro de la plataforma. Permite al confeccionista capturar la información del lote, registrar la ubicación de recojo mediante GPS, enviar imágenes para clasificación automática y publicar únicamente lotes validados y completos.
 
 <p align="center">
-  <img src="./assets/LotPublicationManagment.jpg" width="850">
+  <img src="./assets/LotPublicationManagment.jpg" width="850"><br>
 </p>
+
+*Figura: 4.2.1. EventStorming*
 
 **LOTE CLASIFICADO POR IA**
 
 Se encarga de clasificar los lotes textiles según tipo de tela, color, material, calidad y cantidad disponible. Utiliza clasificación automática por imagen mediante servicios de IA y validación manual cuando sea necesario para asegurar la precisión de los datos antes de la publicación.
 
 <p align="center">
-  <img src="./assets/TextileClasification.jpg" width="850">
+  <img src="./assets/TextileClasification.jpg" width="850"><br>
 </p>
+
+*Figura: 4.2.1. EventStorming*
 
 **RESERVA SOLICITADA**
 
 Administra la reserva de lotes textiles publicados por parte de los artesanos. Controla la disponibilidad, confirmación, cancelación y expiración de reservas, garantizando que un lote solo pueda ser reservado por un usuario a la vez y dentro de un período válido.
 
 <p align="center">
-  <img src="./assets/ReservationManagment.jpg" width="850">
+  <img src="./assets/ReservationManagment.jpg" width="850"><br>
 </p>
+
+*Figura: 4.2.1. EventStorming*
 
 **RESERVA PROGRAMADA**
 
 Gestiona el proceso de recojo y entrega de los lotes reservados. Permite coordinar el punto de recogida, hacer seguimiento del estado de entrega, confirmar la recepción y cerrar correctamente el proceso logístico entre confeccionista y artesano.
 
 <p align="center">
-  <img src="./assets/PickupAndDelivery.jpg" width="850">
+  <img src="./assets/PickupAndDelivery.jpg" width="850"><br>
 </p>
+
+*Figura: 4.2.1. EventStorming*
 
 **LOTE EXPIRADO**
 
 Controla la expiración automática de los lotes cuando no son recogidos dentro del tiempo límite establecido. Verifica periódicamente los lotes pendientes, cambia su estado a expirado cuando corresponde y activa las notificaciones necesarias para informar a los usuarios involucrados.
 
 <p align="center">
-  <img src="./assets/ExpirationManagment.jpg" width="850">
+  <img src="./assets/ExpirationManagment.jpg" width="850"><br>
 </p>
+
+*Figura: 4.2.1. EventStorming*
 
 **NOTIFICACIÓN ENVIADA**
 
 Administra el envío de notificaciones y alertas generadas por eventos importantes del sistema, como publicación de lotes, reservas, entregas, recepciones y expiraciones. Garantiza la comunicación oportuna entre confeccionistas y artesanos mediante servicios de notificación push y alertas automáticas.
 
 <p align="center">
-  <img src="./assets/NotificationManagment.jpg" width="850">
+  <img src="./assets/NotificationManagment.jpg" width="850"><br>
 </p>
+
+*Figura: 4.2.1. EventStorming*
 
 El diagrama completo se encuentra en el siguiente enlace: [EventStorming](https://miro.com/app/board/uXjVHfI02Ag=/?share_link_id=281658940692)
 
@@ -1520,8 +1550,10 @@ A partir de ello, se identificaron capacidades principales como la publicación 
 El objetivo principal es definir bounded contexts claros que representen correctamente el dominio del negocio y permitan construir una arquitectura de software más organizada, flexible y sostenible.
 
 <p align="center">
-  <img src="./assets/CandidateContextDiscovery. .jpg" width="850">
+  <img src="./assets/CandidateContextDiscovery. .jpg" width="850"><br>
 </p>
+
+*Figura: 4.2.2. Candidate Context Discovery*
 
 El diagrama completo se encuentra en el siguiente enlace: [Candidate Context Discovery](https://miro.com/app/board/uXjVHfI02Ag=/?share_link_id=281658940692)
 
@@ -1541,8 +1573,10 @@ Notification Management
 Este modelado permite comprender cómo los bounded contexts colaboran entre sí para garantizar el correcto funcionamiento del sistema.
 
 <p align="center">
-  <img src="./assets/DomainMessageFlowsModelingLoop.jpg" width="850">
+  <img src="./assets/DomainMessageFlowsModelingLoop.jpg" width="850"><br>
 </p>
+
+*Figura: 4.2.3. Domain Message Flows Modeling*
 
 El diagrama completo se encuentra en el siguiente enlace: [Domain Message Flows Modeling](https://miro.com/app/board/uXjVHfI02Ag=/?share_link_id=281658940692)
 
@@ -1556,44 +1590,58 @@ Los bounded contexts definidos fueron: User Profile Management, Textile Classifi
 **Proceso metodológico**
 
 <p align="center">
-  <img src="./assets/ProcesoIterativo.jpg" width="1000">
+  <img src="./assets/ProcesoIterativo.jpg" width="1000"><br>
 </p>
+
+*Figura: 4.2.4. Bounded Context Canvases*
 
 **User Profile Management**
 
 <p align="center">
-  <img src="./assets/UserProfileManagement.jpg" width="1000">
+  <img src="./assets/UserProfileManagement.jpg" width="1000"><br>
 </p>
+
+*Figura: 4.2.4. Bounded Context Canvases*
 
 **Textile Classification**
 
 <p align="center">
-  <img src="./assets/TextileClassification.jpg" width="1000">
+  <img src="./assets/TextileClassification.jpg" width="1000"><br>
 </p>
+
+*Figura: 4.2.4. Bounded Context Canvases*
 
 **Lot Publication Management**
 
 <p align="center">
-  <img src="./assets/LotPublicationManagement.jpg" width="1000">
+  <img src="./assets/LotPublicationManagement.jpg" width="1000"><br>
 </p>
+
+*Figura: 4.2.4. Bounded Context Canvases*
 
 **Reservation Management**
 
 <p align="center">
-  <img src="./assets/ReservationManagement.jpg" width="1000">
+  <img src="./assets/ReservationManagement.jpg" width="1000"><br>
 </p>
+
+*Figura: 4.2.4. Bounded Context Canvases*
 
 **Pickup and Delivery**
 
 <p align="center">
-  <img src="./assets/PickupandDeliveryCanva.jpg" width="1000">
+  <img src="./assets/PickupandDeliveryCanva.jpg" width="1000"><br>
 </p>
+
+*Figura: 4.2.4. Bounded Context Canvases*
 
 **Notification Management**
 
 <p align="center">
-  <img src="./assets/NotificationManagement.jpg" width="1000">
+  <img src="./assets/NotificationManagement.jpg" width="1000"><br>
 </p>
+
+*Figura: 4.2.4. Bounded Context Canvases*
 
 El diagrama completo se encuentra en el siguiente enlace:
 [Bounded Context Canvases](https://miro.com/app/board/uXjVHc84QZA=/?share_link_id=254000344450)
@@ -1605,8 +1653,10 @@ El diagrama completo se encuentra en el siguiente enlace:
 El Context Mapping permite identificar y visualizar las relaciones estructurales entre los Bounded Contexts definidos en GamarraLoop, mostrando cómo colaboran entre sí y cómo se intercambia la información dentro del dominio del negocio. A través de este proceso se analizaron las dependencias entre contextos como publicación de lotes, clasificación textil, reservas, entregas, expiraciones y notificaciones, buscando mantener una arquitectura con bajo acoplamiento y alta cohesión. Además, se aplicaron patrones de Domain-Driven Design como Customer/Supplier, Conformist y Anti-Corruption Layer (ACL), permitiendo una mejor separación de responsabilidades y una integración más controlada con servicios externos como la clasificación automática mediante inteligencia artificial.
 
 <p align="center">
-  <img src="./assets/ContextMapingGamarraLoop.png" width="850">
+  <img src="./assets/ContextMapingGamarraLoop.png" width="850"><br>
 </p>
+
+*Figura: 4.2.5. Context Mapping*
 
 El diagrama presentado muestra cómo cada Bounded Context mantiene su independencia funcional mientras colabora con los demás para completar el flujo principal del negocio, desde el registro del usuario hasta la publicación, clasificación, reserva, recojo y notificación final del lote textil. Esta estructura permite una mejor escalabilidad del sistema, facilita el mantenimiento futuro y asegura que los cambios en un contexto no impacten directamente en todo el dominio, cumpliendo así con los principios fundamentales de Domain-Driven Design.
 
@@ -1626,7 +1676,8 @@ Toda la arquitectura se modeló utilizando **Structurizr**, herramienta indicada
 
 El **System Landscape Diagram** ofrece la mirada más amplia del C4 Model y representa la posición de _Gamarra Loop / GamarraLoop_ dentro del ecosistema operativo del **emporio comercial de Gamarra**, mostrando exclusivamente al sistema y a los dos segmentos objetivo definidos en la [sección 1.3.](#1.3.) — Confeccionistas y Artesanos / Recolectores. A diferencia del _Context Diagram_ desarrollado en la [sección 4.3.2.](#4.3.2.) —que detalla las integraciones técnicas con servicios de terceros—, esta vista omite deliberadamente los sistemas externos para enfocar la atención en la **dimensión humana** del producto: quiénes lo operan y qué intercambio habilita la plataforma dentro del distrito de La Victoria. Está pensada para comunicar el alcance de la solución a stakeholders no técnicos (cliente, equipo de producto, audiencia académica) sin introducir la complejidad de la integración cloud.
 
-<img src="Img/c4/SystemLandscape.png" alt="Software Architecture System Landscape Diagram — Gamarra Loop"/>
+<img src="Img/c4/SystemLandscape.png" alt="Software Architecture System Landscape Diagram — Gamarra Loop"/><br>
+*Figura: Software Architecture System Landscape Diagram — Gamarra Loop*
 
 El diagrama integra dos categorías de elementos, ambos sustentados en capítulos previos del informe:
 
@@ -1641,7 +1692,8 @@ El diagrama integra dos categorías de elementos, ambos sustentados en capítulo
 
 El **Context Diagram** corresponde al primer nivel del C4 Model y representa el sistema _Gamarra Loop_ como un único recuadro central rodeado por sus usuarios y por los sistemas externos con los que se integra técnicamente. A diferencia del _System Landscape_ anterior, esta vista deliberadamente **excluye** a los stakeholders organizacionales (ONGs, gobierno, recicladoras) que no participan de las integraciones técnicas, y se enfoca en explicitar las dependencias externas que serán objeto de diseño detallado en la [sección 4.3.3.](#4.3.3.) (Container Level) y en el _Tactical-Level Software Design_ del [Capítulo V](#5.).
 
-<img src="Img/c4/SystemContext.png" alt="Software Architecture Context Level Diagram — Gamarra Loop"/>
+<img src="Img/c4/SystemContext.png" alt="Software Architecture Context Level Diagram — Gamarra Loop"/><br>
+*Figura: Software Architecture Context Level Diagram — Gamarra Loop*
 
 El cuadro a continuación documenta las **integraciones externas** del sistema _Gamarra Loop_, especificando para cada una el propósito de la integración, el protocolo de comunicación y la decisión arquitectónica que la justifica con trazabilidad explícita al _Architectural Drivers Backlog_ de la [sección 4.1.3.](#4.1.3.) y a las _Architectural Design Decisions_ de la [sección 4.1.4.](#4.1.4.).
 
@@ -1670,7 +1722,8 @@ El diagrama explicita que **la totalidad de las dependencias externas son servic
 
 El **Container Diagram** corresponde al segundo nivel del C4 Model y descompone el sistema _Gamarra Loop_ — que en la [sección 4.3.2.](#4.3.2.) era una caja única — en las **unidades ejecutables** que lo constituyen, mostrando para cada una su tecnología, responsabilidad y forma de comunicación con las demás. A diferencia del _Context Diagram_, esta vista omite deliberadamente a los stakeholders organizacionales del [System Landscape](#4.3.1.) y se enfoca en lo que el equipo efectivamente construye, despliega y opera. Los sistemas externos del 4.3.2. se mantienen presentes pero su relación se _re-asigna_ desde el sistema completo hacia el container puntual que los consume, lo cual permite leer con precisión qué pieza del sistema depende de qué proveedor cloud.
 
-<img src="Img/c4/Containers.png" alt="Software Architecture Container Level Diagram — Gamarra Loop"/>
+<img src="Img/c4/Containers.png" alt="Software Architecture Container Level Diagram — Gamarra Loop"/><br>
+*Figura: Software Architecture Container Level Diagram — Gamarra Loop*
 
 El diagrama identifica **tres containers** dentro del sistema _Gamarra Loop_, todos ellos derivados directamente de la _primary functionality_ y de las _constraints_ declaradas en la [sección 4.1.2.](#4.1.2.):
 
@@ -1708,7 +1761,8 @@ La vista materializa la decisión de **monolito modular** del [Capítulo IV](#4.
 
 El **Deployment Diagram** corresponde al cuarto nivel del C4 Model y proyecta los _containers_ del [4.3.3.](#4.3.3.) sobre la **infraestructura concreta** donde corren en producción. A diferencia de los niveles previos —que describían la solución en términos puramente lógicos—, esta vista responde preguntas operativas explícitas: dónde se aloja cada pieza, qué proveedor cloud la sostiene, cómo se conecta el cliente final con el backend y qué propiedades de costo, escalabilidad y resiliencia se obtienen de cada elección. La organización de los nodos materializa, además, una decisión consciente del equipo: distribuir la solución entre **tres proveedores cloud heterogéneos** (Google Cloud Platform, Supabase y GitHub Pages) priorizando _free tiers_ permanentes sobre la uniformidad arquitectónica, en línea con la _constraint_ implícita de operar el sistema sin costos durante toda la fase académica.
 
-<img src="Img/c4/DeploymentProduction.png" alt="Software Architecture Deployment Diagram — Gamarra Loop / Production"/>
+<img src="Img/c4/DeploymentProduction.png" alt="Software Architecture Deployment Diagram — Gamarra Loop / Production"/><br>
+*Figura: Software Architecture Deployment Diagram — Gamarra Loop / Production*
 
 El entorno **_Production_** se compone de **cuatro _deployment nodes_** raíz, cada uno representando un proveedor o tipo de hospedaje distinto:
 
@@ -1806,8 +1860,10 @@ En este diagrama de componentes (nivel 3 del C4 Model) se descompone el containe
 El diagrama fue elaborado en **Structurizr** siguiendo la convención del workspace `c4/workspace.dsl` del repositorio.
 
 <p align="center">
-  <img src="./assets/TC_ComponentDiagram.png" alt="Component Level Diagram — Textile Classification BC">
+  <img src="./assets/TC_ComponentDiagram.png" alt="Component Level Diagram — Textile Classification BC"><br>
 </p>
+
+*Figura: Component Level Diagram — Textile Classification BC*
 
 > **URL del diagrama en Structurizr:** [Component Level Diagram — Textile Classification BC](https://structurizr.com/share/109739/d4c0c1d0-ff19-4acb-9c60-b841f1ceaca6)
 
@@ -1835,8 +1891,10 @@ El diagrama muestra los siguientes componentes y sus interacciones:
 El siguiente diagrama de clases UML detalla las clases, interfaces, enumeraciones y sus relaciones para la capa de dominio del Bounded Context _Textile Classification_. Incluye atributos, métodos y sus modificadores de acceso (`+` público, `-` privado, `#` protegido). El diagrama fue elaborado en **LucidChart**.
 
 <p align="center">
-  <img src="./assets/TC_ClassDiagram.png" alt="Domain Layer Class Diagram — Textile Classification BC">
+  <img src="./assets/TC_ClassDiagram.png" alt="Domain Layer Class Diagram — Textile Classification BC"><br>
 </p>
+
+*Figura: Domain Layer Class Diagram — Textile Classification BC*
 
 > **URL del diagrama en LucidChart:** [Textile Classification - Domain Layer Class Diagram](https://lucid.app/lucidchart/40532e9e-fa09-4910-96bb-9af9bdcd916d/edit?view_items=IxdWNX_8koxV&page=0_0&invitationId=inv_1bbae2c5-8451-4cbc-bbc2-3dcaa60090ae)
 
@@ -1861,8 +1919,10 @@ El siguiente diagrama de clases UML detalla las clases, interfaces, enumeracione
 El siguiente diagrama de base de datos detalla los objetos de persistencia necesarios para el Bounded Context _Textile Classification_ en **Supabase Postgres**. El diagrama fue elaborado en **LucidChart / Vertabelo**.
 
 <p align="center">
-  <img src="./assets/TC_DatabaseDiagram.png" width="900" alt="Database Design Diagram — Textile Classification BC">
+  <img src="./assets/TC_DatabaseDiagram.png" width="900" alt="Database Design Diagram — Textile Classification BC"><br>
 </p>
+
+*Figura: Database Design Diagram — Textile Classification BC*
 
 > **URL del diagrama en LucidChart / Vertabelo:** [Textile Classification - Database Design Diagram](https://lucid.app/lucidchart/40532e9e-fa09-4910-96bb-9af9bdcd916d/edit?view_items=IxdWNX_8koxV&page=0_0&invitationId=inv_1bbae2c5-8451-4cbc-bbc2-3dcaa60090ae)
 
@@ -1979,7 +2039,8 @@ El Bounded Context Reservation Management es responsable de gestionar el ciclo d
 
 ### 5.2.5. Bounded Context Software Architecture Component Level Diagrams
 
-<img src="Img/c4/reservation-management-component-diagram.png" alt="Reservation Management Component Diagram" style="margin-bottom: 5px;" width="1000"/>
+<img src="Img/c4/reservation-management-component-diagram.png" alt="Reservation Management Component Diagram" style="margin-bottom: 5px;" width="1000"/><br>
+*Figura: Reservation Management Component Diagram*
 
 > **URL del diagrama en Structurizr:** [Component Level Diagram — Reservation Management](https://structurizr.com/share/87648/2a7d9c28-bae2-436b-8916-703b4e1cc1a1)
 
@@ -1991,7 +2052,8 @@ El Bounded Context Reservation Management es responsable de gestionar el ciclo d
 
 ### 5.2.6.1. Bounded Context Domain Layer Class Diagrams
 
-<img src="Img/class/reservation-management-class-diagram.svg" alt="Reservation Management Class Diagram" style="margin-bottom: 5px;" width="1000" height="500"/>
+<img src="Img/class/reservation-management-class-diagram.svg" alt="Reservation Management Class Diagram" style="margin-bottom: 5px;" width="1000" height="500"/><br>
+*Figura: Reservation Management Class Diagram*
 
 > **URL del diagrama en LucidChart:** [Reservation Management - Domain Layer Class Diagram](https://lucid.app/lucidchart/34041e0d-7674-4dfd-814e-27636277f650/edit?viewport_loc=-2594%2C-386%2C3108%2C1656%2CePIVMkaeuy2n&invitationId=inv_1ebd179d-ef67-4d10-99e2-dae5e795b0dd)
 
@@ -1999,7 +2061,8 @@ El Bounded Context Reservation Management es responsable de gestionar el ciclo d
 
 ### 5.2.6.2. Bounded Context Database Design Diagram
 
-<img src="Img/database/reservation-management-design-database.png" alt="Reservation Management Class Diagram" style="margin-bottom: 5px;" width="1000"/>
+<img src="Img/database/reservation-management-design-database.png" alt="Reservation Management Class Diagram" style="margin-bottom: 5px;" width="1000"/><br>
+*Figura: Reservation Management Class Diagram*
 
 > **URL del diagrama en LucidChart / Vertabelo:** [Reservation Management - Database Design Diagram](https://lucid.app/lucidchart/34041e0d-7674-4dfd-814e-27636277f650/edit?invitationId=inv_1ebd179d-ef67-4d10-99e2-dae5e795b0dd)
 
@@ -2029,7 +2092,8 @@ El nombre GamarraLoop surge de la combinación de dos conceptos clave. Por un la
 
 El nombre transmite la idea de cerrar el ciclo de vida de los textiles, evitando que los residuos se conviertan en desecho y, en su lugar, se reintegren al sistema productivo. Además, el uso del término en inglés le da un enfoque moderno, tecnológico y fácil de recordar, alineado con una solución digital innovadora.
 A continuación, se presenta el logotipo de GamarraLoop, el cual refleja visualmente el concepto de reutilización textil mediante elementos como hilo, aguja y formas circulares que representan el flujo continuo de materiales dentro de la plataforma.
-<img src="./assets/GamarraLoop-logo.jpeg" alt="Logo GamarraLoop" width="591">
+<img src="./assets/GamarraLoop-logo.jpeg" alt="Logo GamarraLoop" width="591"><br>
+*Figura: Logo GamarraLoop*
 
 **Typography**
 
@@ -2037,7 +2101,8 @@ La tipografía en GamarraLoop cumple un papel importante en la claridad de la in
 La jerarquía tipográfica se organiza en cuatro niveles principales: headings (encabezados) para destacar secciones clave, body (texto) para el contenido general, buttons (botones) para acciones relevantes dentro del sistema y links (enlaces) para la navegación. Esta estructura permite mantener un orden visual claro y consistente en toda la interfaz.
 Para el diseño se han seleccionado tipografías que equilibran estética y funcionalidad. Se emplea una fuente con mayor personalidad para títulos y elementos destacados, aportando identidad visual a la aplicación, mientras que para los textos se utiliza una tipografía limpia y fácil de leer, asegurando una correcta comprensión del contenido en distintos dispositivos. Además, el uso de colores como verde oscuro y negro en la tipografía refuerza la identidad del proyecto y mejora el contraste visual.
 
-<img src="./assets/tipografia.png" alt="Typography" width="301">
+<img src="./assets/tipografia.png" alt="Typography" width="301"><br>
+*Figura: Typography*
 
 **Colors**
 
@@ -2214,7 +2279,8 @@ Herramienta utilizada: Figma. Enlace al archivo de wireframes: https://www.figma
 
 **Versión Desktop Web Browser**
 
-<img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/landing-page/landing-page-wireframe-desktop.png" alt="Landing Page Wireframe — Desktop" width="900"/>
+<img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/landing-page/landing-page-wireframe-desktop.png" alt="Landing Page Wireframe — Desktop" width="900"/><br>
+*Figura: Landing Page Wireframe — Desktop*
 
 El wireframe Desktop organiza el contenido en una retícula amplia que aprovecha el ancho del viewport. La barra de navegación superior fija expone las secciones principales del sitio (Inicio, Cómo funciona, Segmentos, Sobre nosotros, Contacto) y ubica el CTA primario a la derecha, siguiendo el principio de jerarquía visual y consistencia con los patrones convencionales de la web. El hero ocupa el primer pliegue con un encabezado que comunica la propuesta de valor y un CTA dominante; las secciones siguientes presentan los beneficios diferenciados por segmento (Confeccionistas y recolectores) en bloques paralelos, aplicando el principio de proximidad y simetría para facilitar la comparación. El cierre incluye un bloque de evidencia del modelo circular, un formulario de contacto y un footer con enlaces a términos y condiciones, política de privacidad y redes.
 
@@ -2222,7 +2288,8 @@ La distribución refleja las decisiones de la sección 6.2: las etiquetas de nav
 
 **Versión Mobile Web Browser**
 
-<img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/landing-page/landing-page-wireframe-mobile.png" alt="Landing Page Wireframe — Mobile" width="320"/>
+<img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/landing-page/landing-page-wireframe-mobile.png" alt="Landing Page Wireframe — Mobile" width="320"/><br>
+*Figura: Landing Page Wireframe — Mobile*
 
 El wireframe Mobile reorganiza el mismo contenido en una columna única. La barra de navegación se reduce a un patrón hamburger menu para liberar espacio del viewport y el CTA primario se mantiene visible en el hero. Las secciones que en Desktop aparecen en paralelo (beneficios por segmento) se apilan verticalmente, preservando el mismo orden de lectura y la misma jerarquía tipográfica. Se aplican principios de diseño inclusivo: tamaños de toque mínimos de 44px para botones y enlaces, contraste adecuado en los placeholders y suficiente espacio en blanco para evitar errores de pulsado.
 
@@ -2234,11 +2301,13 @@ La consistencia entre ambas versiones garantiza que un visitante que descubra Ga
 
 Los mock-ups aplican sobre la estructura validada en los wireframes el Design System definido en 6.1: paleta beige claro como fondo, verde oscuro como color de interacción principal, negro para tipografía y elementos estructurales, jerarquía tipográfica de cuatro niveles (headings, body, buttons, links) y componentes de Material Design. El resultado refleja la identidad visual de GamarraLoop —sostenibilidad, reutilización y conexión con el ecosistema textil— manteniendo la legibilidad y el contraste necesarios para diseño inclusivo.
 
-Herramienta utilizada: Figma. Enlace al archivo de mock-ups: https://www.figma.com/design/J1GM7YvXifXyoHeMuIaHdP/Landing-Page?node-id=1-2
+Herramienta utilizada: Figma. 
+Enlace al archivo de mock-ups: [Figma](https://www.figma.com/design/J1GM7YvXifXyoHeMuIaHdP/Landing-Page?node-id=1-2)
 
 **Versión Desktop Web Browser**
 
-<img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/landing-page/landing-page-mockup-desktop.png" alt="Landing Page Mock-up — Desktop" width="900"/>
+<img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/landing-page/landing-page-mockup-desktop.png" alt="Landing Page Mock-up — Desktop" width="900"/><br>
+*Figura: Landing Page Mock-up — Desktop*
 
 En la versión Desktop, los bloques heredados del wireframe se visten con la paleta institucional. El hero incorpora una imagen ilustrativa del contexto Gamarra/textil junto al headline principal y un CTA verde oscuro de alto contraste sobre el fondo beige, dirigido al segmento Confeccionista. Las secciones intermedias presentan los beneficios por segmento con iconografía coherente con el logotipo (hilo, aguja, ciclo) reforzando la asociación de marca, y aplican espaciado generoso para favorecer la legibilidad. Los CTAs secundarios mantienen el mismo color de interacción pero con variantes de jerarquía (botón sólido para acción primaria, botón outline para acción secundaria), siguiendo la guía de componentes establecida en 6.1.
 
@@ -2246,7 +2315,8 @@ Las decisiones de arquitectura de información se preservan: las etiquetas de lo
 
 **Versión Mobile Web Browser**
 
-<img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/landing-page/landing-page-mockup-mobile.png" alt="Landing Page Mock-up — Mobile" width="320"/>
+<img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/landing-page/landing-page-mockup-mobile.png" alt="Landing Page Mock-up — Mobile" width="320"/><br>
+*Figura: Landing Page Mock-up — Mobile*
 
 La versión Mobile traslada el Design System a la columna única definida en el wireframe. Los CTAs verde oscuro mantienen el mismo tamaño de toque y contraste que en Desktop; la tipografía conserva la jerarquía y se ajusta el tamaño base para garantizar legibilidad en pantallas pequeñas sin necesidad de zoom. El menú hamburger despliega la misma estructura de navegación definida en 6.2.4, y los formularios reducen los campos visibles por fila a uno solo, manteniendo un solo punto de foco a la vez para favorecer la accesibilidad.
 
@@ -2285,23 +2355,23 @@ La App Confeccionista cubre el ciclo completo de oferta: alta del usuario, publi
 
 <table>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w01-splash.png" alt="C-W01 — Splash" width="220"/><br/><sub><b>C-W01</b> · Splash / Acceso</sub></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w02-onboarding.png" alt="C-W02 — Onboarding" width="220"/><br/><sub><b>C-W02</b> · Onboarding (rol + datos)</sub></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w03-home.png" alt="C-W03 — Home" width="220"/><br/><sub><b>C-W03</b> · Home / Mis lotes</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w01-splash.png" alt="C-W01 — Splash" width="220"/><br><i>Figura: C-W01 — Splash</i><br/><sub><b>C-W01</b> · Splash / Acceso</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w02-onboarding.png" alt="C-W02 — Onboarding" width="220"/><br><i>Figura: C-W02 — Onboarding</i><br/><sub><b>C-W02</b> · Onboarding (rol + datos)</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w03-home.png" alt="C-W03 — Home" width="220"/><br><i>Figura: C-W03 — Home</i><br/><sub><b>C-W03</b> · Home / Mis lotes</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w04-publicar-foto.png" alt="C-W04 — Publicar foto" width="220"/><br/><sub><b>C-W04</b> · Publicar · Paso 1 (foto)</sub></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w05-publicar-ia.png" alt="C-W05 — Publicar IA" width="220"/><br/><sub><b>C-W05</b> · Publicar · Paso 2 (clasificación IA)</sub></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w06-publicar-ubicacion.png" alt="C-W06 — Publicar ubicación" width="220"/><br/><sub><b>C-W06</b> · Publicar · Paso 3 (ubicación)</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w04-publicar-foto.png" alt="C-W04 — Publicar foto" width="220"/><br><i>Figura: C-W04 — Publicar foto</i><br/><sub><b>C-W04</b> · Publicar · Paso 1 (foto)</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w05-publicar-ia.png" alt="C-W05 — Publicar IA" width="220"/><br><i>Figura: C-W05 — Publicar IA</i><br/><sub><b>C-W05</b> · Publicar · Paso 2 (clasificación IA)</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w06-publicar-ubicacion.png" alt="C-W06 — Publicar ubicación" width="220"/><br><i>Figura: C-W06 — Publicar ubicación</i><br/><sub><b>C-W06</b> · Publicar · Paso 3 (ubicación)</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w07-publicar-confirmacion.png" alt="C-W07 — Publicar confirmación" width="220"/><br/><sub><b>C-W07</b> · Publicar · Paso 4 (confirmación)</sub></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w08-detalle-lote.png" alt="C-W08 — Detalle de lote" width="220"/><br/><sub><b>C-W08</b> · Detalle de Mi Lote</sub></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w09-notificacion.png" alt="C-W09 — Notificación" width="220"/><br/><sub><b>C-W09</b> · Notificación de reserva</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w07-publicar-confirmacion.png" alt="C-W07 — Publicar confirmación" width="220"/><br><i>Figura: C-W07 — Publicar confirmación</i><br/><sub><b>C-W07</b> · Publicar · Paso 4 (confirmación)</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w08-detalle-lote.png" alt="C-W08 — Detalle de lote" width="220"/><br><i>Figura: C-W08 — Detalle de lote</i><br/><sub><b>C-W08</b> · Detalle de Mi Lote</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w09-notificacion.png" alt="C-W09 — Notificación" width="220"/><br><i>Figura: C-W09 — Notificación</i><br/><sub><b>C-W09</b> · Notificación de reserva</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w10-confirmar-entrega.png" alt="C-W10 — Confirmar entrega" width="220"/><br/><sub><b>C-W10</b> · Confirmar entrega</sub></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w11-cancelar-lote.png" alt="C-W11 — Cancelar lote" width="220"/><br/><sub><b>C-W11</b> · Cancelar lote (modal)</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w10-confirmar-entrega.png" alt="C-W10 — Confirmar entrega" width="220"/><br><i>Figura: C-W10 — Confirmar entrega</i><br/><sub><b>C-W10</b> · Confirmar entrega</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-confeccionista/c-w11-cancelar-lote.png" alt="C-W11 — Cancelar lote" width="220"/><br><i>Figura: C-W11 — Cancelar lote</i><br/><sub><b>C-W11</b> · Cancelar lote (modal)</sub></td>
     <td></td>
   </tr>
 </table>
@@ -2326,18 +2396,18 @@ La App Artesano cubre el ciclo de demanda: alta del usuario, exploración de lot
 
 <table>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w01-splash.png" alt="A-W01 — Splash" width="220"/><br/><sub><b>A-W01</b> · Splash / Acceso</sub></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w02-onboarding.png" alt="A-W02 — Onboarding" width="220"/><br/><sub><b>A-W02</b> · Onboarding (rol + datos)</sub></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w03-home.png" alt="A-W03 — Home" width="220"/><br/><sub><b>A-W03</b> · Home / Explorar</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w01-splash.png" alt="A-W01 — Splash" width="220"/><br><i>Figura: A-W01 — Splash</i><br/><sub><b>A-W01</b> · Splash / Acceso</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w02-onboarding.png" alt="A-W02 — Onboarding" width="220"/><br><i>Figura: A-W02 — Onboarding</i><br/><sub><b>A-W02</b> · Onboarding (rol + datos)</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w03-home.png" alt="A-W03 — Home" width="220"/><br><i>Figura: A-W03 — Home</i><br/><sub><b>A-W03</b> · Home / Explorar</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w04-lista-lotes.png" alt="A-W04 — Lista de lotes" width="220"/><br/><sub><b>A-W04</b> · Lista de lotes disponibles</sub></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w05-detalle-lote.png" alt="A-W05 — Detalle de lote" width="220"/><br/><sub><b>A-W05</b> · Detalle de lote</sub></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w06-reserva-confirmada.png" alt="A-W06 — Reserva confirmada" width="220"/><br/><sub><b>A-W06</b> · Reserva confirmada</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w04-lista-lotes.png" alt="A-W04 — Lista de lotes" width="220"/><br><i>Figura: A-W04 — Lista de lotes</i><br/><sub><b>A-W04</b> · Lista de lotes disponibles</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w05-detalle-lote.png" alt="A-W05 — Detalle de lote" width="220"/><br><i>Figura: A-W05 — Detalle de lote</i><br/><sub><b>A-W05</b> · Detalle de lote</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w06-reserva-confirmada.png" alt="A-W06 — Reserva confirmada" width="220"/><br><i>Figura: A-W06 — Reserva confirmada</i><br/><sub><b>A-W06</b> · Reserva confirmada</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w07-mis-reservas.png" alt="A-W07 — Mis reservas" width="220"/><br/><sub><b>A-W07</b> · Mis reservas</sub></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w08-confirmar-recepcion.png" alt="A-W08 — Confirmar recepción" width="220"/><br/><sub><b>A-W08</b> · Confirmar recepción</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w07-mis-reservas.png" alt="A-W07 — Mis reservas" width="220"/><br><i>Figura: A-W07 — Mis reservas</i><br/><sub><b>A-W07</b> · Mis reservas</sub></td>
+    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireframes-artesano/a-w08-confirmar-recepcion.png" alt="A-W08 — Confirmar recepción" width="220"/><br><i>Figura: A-W08 — Confirmar recepción</i><br/><sub><b>A-W08</b> · Confirmar recepción</sub></td>
     <td></td>
   </tr>
 </table>
@@ -2379,17 +2449,29 @@ Se documentan 7 wireflows en total: 4 para la App Confeccionista (UG-C01 a UG-C0
 
 ![Wireflow UG-C01](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-c01-registro.png)
 
+*Figura: Wireflow UG-C01*
+
+
 - **UG-C02 — "Como Confeccionista, quiero publicar un lote de tela."** _User Stories:_ US05, US06, US07, US10, US11. _Flujo:_ C-W03 → C-W04 → C-W05 → C-W06 → C-W07 → C-W08. El usuario inicia el flujo desde el Home mediante el FAB "Publicar". El paso 1 (C-W04) captura la foto (US05) y la envía al servicio de IA (US10). El paso 2 (C-W05) muestra los resultados de la clasificación (US11), que el Confeccionista puede aceptar o corregir manualmente. El paso 3 (C-W06) asigna la ubicación automática por GPS (US06) y permite agregar una referencia textual (US07). El paso 4 (C-W07) presenta el resumen completo del lote y, al confirmar, el sistema crea el lote en estado "Disponible" y lleva a la vista de detalle (C-W08) ya como lote publicado.
 
 ![Wireflow UG-C02](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-c02-publicar-lote.png)
+
+*Figura: Wireflow UG-C02*
+
 
 - **UG-C03 — "Como Confeccionista, quiero recibir la reserva y confirmar la entrega."** _User Stories:_ US16, US09. _Flujo:_ C-W09 → C-W08 (estado Reservado) → C-W10 → C-W08 (estado Entregado). El flujo se dispara cuando un artesano reserva el lote: la notificación push (C-W09, US16) llega al dispositivo del Confeccionista. Al tocar "Ver lote", abre el detalle (C-W08), ahora con el chip de estado en amarillo ("Reservado") y el botón de cancelación reemplazado por "Confirmar entrega". Al avanzar a C-W10, el usuario revisa los datos del artesano, confirma manualmente que entregó físicamente el lote (checkbox + CTA) y el sistema actualiza el estado a "Entregado" (US09), reflejado al volver a C-W08.
 
 ![Wireflow UG-C03](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-c03-reserva-entrega.png)
 
+*Figura: Wireflow UG-C03*
+
+
 - **UG-C04 — "Como Confeccionista, quiero cancelar un lote que ya no está disponible."** _User Stories:_ US08. _Flujo:_ C-W03 → C-W08 → C-W11 → C-W08 (estado Cancelado). Desde el Home (C-W03), el usuario toca un lote en estado "Disponible" y entra a su detalle (C-W08). El botón secundario "Cancelar publicación" abre un modal de confirmación (C-W11) con mensaje de irreversibilidad. Al confirmar, el sistema cambia el estado del lote a "Cancelado" (US08) y lo oculta de las consultas públicas, manteniéndolo visible solo en el historial del Confeccionista.
 
 ![Wireflow UG-C04](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-c04-cancelar-lote.png)
+
+*Figura: Wireflow UG-C04*
+
 
 **Wireflows — App Artesano**
 
@@ -2397,13 +2479,22 @@ Se documentan 7 wireflows en total: 4 para la App Confeccionista (UG-C01 a UG-C0
 
 ![Wireflow UG-A01](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-a01-registro.png)
 
+*Figura: Wireflow UG-A01*
+
+
 - **UG-A02 — "Como Artesano, quiero explorar lotes disponibles y revisar su detalle."** _User Stories:_ US12, US13. _Flujo:_ A-W03 → A-W04 → A-W05. Desde el Home (A-W03), donde se muestran los tres lotes más cercanos como teaser, el usuario accede al listado completo en A-W04, donde puede filtrar y ordenar (US12). Al tocar una card específica entra al detalle del lote (A-W05, US13), que expone foto ampliada, clasificación de IA, ubicación exacta con distancia desde la posición actual y CTA primario para reservar.
 
 ![Wireflow UG-A02](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-a02-explorar-detalle.png)
 
+*Figura: Wireflow UG-A02*
+
+
 - **UG-A03 — "Como Artesano, quiero reservar un lote y confirmar su recepción."** _User Stories:_ US14, US15. _Flujo:_ A-W05 → A-W06 → A-W07 → A-W08. Desde el detalle del lote (A-W05), el usuario toca "Reservar este lote" (US14). El sistema ejecuta la transición transaccional (US19 en backend) y muestra la pantalla de confirmación (A-W06) con el recap del lote, el deadline de retiro y el aviso al Confeccionista emitido en paralelo (US16). Posteriormente, desde la vista "Mis reservas" (A-W07), el Artesano accede a la card de la reserva activa y toca "Confirmar recepción" (A-W08), donde confirma manualmente la recepción física (US15) tras llegar al taller. El sistema marca el lote como completado en su histórico.
 
 ![Wireflow UG-A03](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/wireflows/ug-a03-reservar-recibir.png)
+
+*Figura: Wireflow UG-A03*
+
 
 **Trazabilidad consolidada**
 
