@@ -4,18 +4,33 @@ margin-left:auto;
 margin-right: auto; 
 width=50%"/>
 
-<h5 style="text-align: center"> Área: Ingeniería de Software </h5>
+<h3 align="center">Universidad Peruana de Ciencias Aplicadas</h3>
 
-<h5 style="text-align: center"> Curso: Arquitectura De Software Emergentes  </h5>
-<h5 style="text-align: center"> NRC: 10042 </h5>
+<h3 align="center">Ingeniería de Software</h3>
 
-<h5 style="text-align: center"> Docente: Rojas Malasquez, Royer Edelwer </h5>
+<h3 align="center">1ASI0728 Arquitecturas de Software Emergentes</h3>
 
-<h5 style="text-align: center"> Startup: Gamarra Loop </h5>
+<h3 align="center">202601</h3>
 
-<h5 style="text-align: center"> Producto: Gamarra Loop  </h5>
+<br>
 
-## Team members:
+<h3 align="center">NRC: 10042</h3>
+
+<br>
+
+<h3 align="center">Profesor: Rojas Malasquez, Royer Edelwer</h3>
+
+<br>
+
+<h3 align="center">Informe del Trabajo Final</h3>
+
+<br>
+
+<h3 align="center">Nombre del Producto: Gamarra Loop</h3>
+
+<br>
+
+<h3>Integrantes:</h3>
 
 <div style="text-align: center;">
   
@@ -29,7 +44,11 @@ width=50%"/>
 
 </div>
 
-<h5 style="text-align: center"> Ciclo 2026-10 </h5>
+<br>
+
+<h3 align="center">Mayo de 2026</h3>
+
+<br><br>
 
 # Registro de Versiones del Informe
 
