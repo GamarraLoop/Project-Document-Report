@@ -454,6 +454,8 @@ Para los generadores de estos residuos, un problema común es la dificultad para
 <img src="Img/Lean-UX-Canvas.jpg" alt="Lean Ux Canvas" style="margin-bottom: 5px;" width="800"/><br>
 *Figura: Lean Ux Canvas*
 
+> **URL del Lean UX Canvas:** [Lean UX Canvas](https://miro.com/app/board/uXjVHd6pQow=/?share_link_id=174494873351)
+
 <a name="1.3."></a>
 
 ## 1.3. Segmentos objetivo
