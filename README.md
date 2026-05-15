@@ -2068,6 +2068,202 @@ El Bounded Context Reservation Management es responsable de gestionar el ciclo d
 
 > **URL del diagrama en LucidChart / Vertabelo:** [Reservation Management - Database Design Diagram](https://lucid.app/lucidchart/34041e0d-7674-4dfd-814e-27636277f650/edit?invitationId=inv_1ebd179d-ef67-4d10-99e2-dae5e795b0dd)
 
+
+
+## 5.3. Bounded Context: Reservation Management
+
+Este bounded context se encarga de gestionar la publicación de lotes textiles registrados por los confeccionistas dentro de la plataforma GamarraLoop/Recitex. Su responsabilidad principal es permitir que un confeccionista cree, actualice, publique o retire un lote textil, manteniendo la información necesaria para que posteriormente pueda ser clasificado, visualizado y reservado por los artesanos.
+Este bounded context no clasifica los lotes, no gestiona reservas, no controla entregas y no expira lotes. Esas responsabilidades pertenecen a otros bounded contexts. Su foco está en el ciclo inicial del lote: registro, validación básica, publicación y disponibilidad inicial.
+
+
+## 5.3.1. Domain Layer
+
+La capa de interfaz expone el bounded context Lot Publication Management hacia el exterior, principalmente hacia los clientes HTTP, como la aplicación móvil, y hacia otros bounded contexts mediante eventos. Actúa como adaptador de entrada dentro de una arquitectura hexagonal, recibiendo solicitudes externas y delegando la ejecución a la capa de aplicación.
+
+
+| Clase / Interfaz | Categoría | Propósito | Atributos | Métodos |
+|---|---|---|---|---|
+| **Lot** | Entity / Aggregate Root | Representa un lote textil publicado por un confeccionista. Es el agregado raíz que controla su información, estado y transiciones del ciclo de publicación. | `lotId: LotId`<br>`publisherId: PublisherId`<br>`title: LotTitle`<br>`description: LotDescription`<br>`weight: LotWeight`<br>`location: LotLocation`<br>`images: List<LotImage>`<br>`status: LotStatus`<br>`createdAt: CreatedAt`<br>`publishedAt: PublishedAt` | `create(publisherId, title, description, weight, location, images): Lot`<br><br>`updateDetails(title, description, weight, location, images): void`<br><br>`submitForClassification(): void`<br><br>`publish(): void`<br><br>`withdraw(): void`<br><br>`canBeEdited(): boolean`<br><br>`isPublished(): boolean` |
+| **LotImage** | Value Object | Representa una imagen asociada al lote. Inmutable. | `imageUrl: ImageUrl`<br>`thumbnailUrl: ImageUrl`<br>`order: Integer` | `of(imageUrl: ImageUrl, thumbnailUrl: ImageUrl, order: Integer): LotImage` |
+| **PublisherId** | Value Object | Identificador único del confeccionista que publica el lote. | `value: UUID` | `of(uuid: UUID): PublisherId` |
+| **LotId** | Value Object | Identificador único del lote dentro del sistema. | `value: UUID` | `of(uuid: UUID): LotId` |
+| **LotTitle** | Value Object | Título descriptivo del lote. | `value: String` | `of(value: String): LotTitle` |
+| **LotDescription** | Value Object | Descripción detallada del lote textil. | `value: String` | `of(value: String): LotDescription` |
+| **LotWeight** | Value Object | Peso aproximado del lote textil (en kg). | `value: Decimal` | `of(value: Decimal): LotWeight` |
+| **LotLocation** | Value Object | Ubicación del lote para referencia y coordinación. | `address: String`<br>`district: String`<br>`coordinates: Coordinates` | `of(address, district, coordinates): LotLocation` |
+| **Coordinates** | Value Object | Coordenadas geográficas del lote. | `latitude: Decimal`<br>`longitude: Decimal` | `of(latitude: Decimal, longitude: Decimal): Coordinates` |
+| **LotStatus** | Enumeration | Estados posibles del ciclo de vida del lote dentro del proceso de publicación. | `DRAFT`<br>`PENDING_CLASSIFICATION`<br>`PUBLISHED`<br>`WITHDRAWN` | — |
+| **LotPublicationPolicy** | Domain Service | Contiene reglas de negocio para validar si un lote cumple con los requisitos para ser publicado. | — | `canBePublished(lot: Lot): ValidationResult`<br><br>`validateForSubmission(lot: Lot): ValidationResult` |
+| **LotRepository** | Repository (Interfaz) | Punto de persistencia del agregado `Lot`. Define el contrato de acceso a datos sin exponer la implementación. | — | `save(lot: Lot): void`<br><br>`findById(lotId: LotId): Optional<Lot>`<br><br>`existsById(lotId: LotId): boolean`<br><br>`findByPublisherId(publisherId: PublisherId): List<Lot>` |
+| **LotPublishedEvent** | Domain Event | Evento publicado cuando un lote pasa al estado `PUBLISHED`. | `lotId: LotId`<br>`publisherId: PublisherId`<br>`publishedAt: LocalDateTime` | — |
+| **LotWithdrawnEvent** | Domain Event | Evento publicado cuando un lote es retirado antes de ser reservado. | `lotId: LotId`<br>`publisherId: PublisherId`<br>`withdrawnAt: LocalDateTime`<br>`reason: String` | — |
+| **LotSubmittedForClassificationEvent** | Domain Event | Evento publicado cuando un lote es enviado al proceso de clasificación. | `lotId: LotId`<br>`publisherId: PublisherId`<br>`submittedAt: LocalDateTime` | — |
+
+
+### 5.3.2. Interface Layer
+
+
+La capa de interfaz expone el Bounded Context **Lot Publication Management** hacia el exterior. Atiende solicitudes de la aplicación móvil a través de API REST y se integra con otros Bounded Contexts mediante eventos (Google Cloud Pub/Sub). Actúa como adaptador de entrada (*driving adapter*).
+
+| Clase | Categoría | Propósito | Endpoints / Suscripciones | Request / Response |
+|---|---|---|---|---|
+| **LotPublicationController** | REST Controller | Expone los endpoints HTTP para registrar, actualizar, enviar a clasificación, publicar, retirar y consultar lotes. Es consumido por la aplicación móvil a través del API Gateway. | `POST /api/v1/lots` → Crea un nuevo lote (estado DRAFT).<br><br>`PUT /api/v1/lots/{lotId}` → Actualiza información básica del lote (editable).<br><br>`POST /api/v1/lots/{lotId}/submit-classification` → Envía el lote al proceso de clasificación.<br><br>`POST /api/v1/lots/{lotId}/publish` → Publica el lote cuando está clasificado.<br><br>`POST /api/v1/lots/{lotId}/withdraw` → Retira el lote publicado o pendiente.<br><br>`GET /api/v1/lots/{lotId}` → Obtiene detalle de un lote.<br><br>`GET /api/v1/lots/publisher/{publisherId}` → Lista lotes por confeccionista.<br><br>`GET /api/v1/lots?status={status}` → Lista lotes por estado (DRAFT, PENDING_CLASSIFICATION, PUBLISHED, WITHDRAWN). | **Request (POST / PUT):**<br><br>```json { "publisherId": "UUID", "title": "String", "description": "String", "weight": 12.5, "location": { "address": "String", "district": "String", "coordinates": { "latitude": -12.0464, "longitude": -77.0428 } }, "images": ["String"] } ```<br><br>**Response (ejemplo):**<br><br>```json { "lotId": "UUID", "status": "DRAFT", "createdAt": "2025-05-20T10:15:00Z" } ``` |
+| **LotQueryController** | REST Controller | Expone endpoints especializados en consultas (lecturas). No modifica el estado del dominio. | `GET /api/v1/lots/{lotId}`<br><br>`GET /api/v1/lots/publisher/{publisherId}`<br><br>`GET /api/v1/lots?status={status}` | **Response (GET):**<br><br>```json { "lotId": "UUID", "publisherId": "UUID", "title": "String", "description": "String", "weight": 12.5, "location": { ... }, "images": ["imageUrl", "String"], "status": "PUBLISHED", "createdAt": "2025-05-20T10:15:00Z", "publishedAt": "2025-05-22T08:30:00Z" } ``` |
+| **ClassificationCompletedEventConsumer** | Event Consumer (Pub/Sub) | Suscriptor del evento publicado por el Bounded Context Textile Classification Management cuando un lote ha sido clasificado exitosamente. Dispara el flujo para permitir su publicación. | Suscripción: `classification.completed-subscription`<br><br>Topic: `classification.completed` | **Mensaje esperado:**<br><br>```json { "lotId": "UUID", "classificationId": "UUID", "labels": [{ "name": "String", "confidence": 0.92 }], "processedAt": "2025-05-22T08:30:00Z" } ``` |
+| **ReservationStartedEventConsumer** | Event Consumer (Pub/Sub) | Suscriptor del evento publicado por el Bounded Context Reservation Management cuando un lote ha sido reservado. Evita modificaciones adicionales que sean inválidas según el dominio. | Suscripción: `reservation.started-subscription`<br><br>Topic: `reservation.started` | **Mensaje esperado:**<br><br>```json { "lotId": "UUID", "reservationId": "UUID", "artisanId": "UUID", "reservedAt": "2025-05-22T09:10:00Z" } ``` |
+| **LotPublicationEventPublisher** | Event Publisher | Publica eventos de dominio generados en este bounded context para que otros contextos reaccionen de forma desacoplada. | Tópicos publicados:<br><br>• `lot.submitted-for-classification`<br>• `lot.published`<br>• `lot.withdrawn` | **Mensajes publicados (ejemplo):**<br><br>```json { "lotId": "UUID", "publisherId": "UUID", "occurredAt": "2025-05-22T10:20:00Z", "reason": "String (solo para withdrawn)" } ``` |
+
+
+
+
+### 5.3.3. Application Layer
+
+
+La capa de aplicación orquesta los flujos de negocio del Bounded Context **Lot Publication Management**. No contiene lógica de dominio, sino que coordina la colaboración entre la capa de dominio, los repositorios y los adaptadores externos. Implementa el patrón **Command Handler** para peticiones explícitas, **Query Handler** para consultas y **Event Handler** para reaccionar a eventos del sistema.
+
+| Clase | Categoría | Propósito | Comandos / Eventos que procesa | Colaboraciones |
+|---|---|---|---|---|
+| **CreateLotCommandHandler** | Command Handler | Procesa el comando `CreateLotCommand`. Crea el agregado `Lot` en estado `DRAFT`, valida los datos iniciales y lo persiste mediante el repositorio. | ```text CreateLotCommand { publisherId, title, description, weight, location, images } ``` | `Lot.create()` →<br>`LotRepository.save()` |
+| **UpdateLotCommandHandler** | Command Handler | Procesa el comando `UpdateLotCommand`. Recupera el lote existente, valida que pueda ser editado y actualiza su información básica sin romper las reglas del dominio. | ```text UpdateLotCommand { lotId, title, description, weight, location, images } ``` | `LotRepository.findById()` →<br>`Lot.canBeEdited()` →<br>`Lot.updateDetails()` →<br>`LotRepository.save()` |
+| **SubmitLotForClassificationCommandHandler** | Command Handler | Procesa el comando `SubmitLotForClassificationCommand`. Recupera el lote, valida que tenga información suficiente y cambia su estado a `PENDING_CLASSIFICATION`. Luego publica un evento para iniciar el proceso de clasificación en otro BC. | ```text SubmitLotForClassificationCommand { lotId } ``` | `LotRepository.findById()` →<br>`LotPublicationPolicy.validateForSubmission()` →<br>`Lot.submitForClassification()` →<br>`LotRepository.save()` →<br>`LotPublicationEventPublisher.publishLotSubmittedForClassification()` |
+| **PublishLotCommandHandler** | Command Handler | Procesa el comando `PublishLotCommand`. Publica el lote cuando ya cumple las reglas necesarias del dominio y lo deja disponible para los artesanos. | ```text PublishLotCommand { lotId } ``` | `LotRepository.findById()` →<br>`LotPublicationPolicy.canBePublished()` →<br>`Lot.publish()` →<br>`LotRepository.save()` →<br>`LotPublicationEventPublisher.publishLotPublished()` |
+| **WithdrawLotCommandHandler** | Command Handler | Procesa el comando `WithdrawLotCommand`. Permite al confeccionista retirar un lote antes de que sea reservado, cambiando su estado a `WITHDRAWN`. | ```text WithdrawLotCommand { lotId, reason } ``` | `LotRepository.findById()` →<br>`Lot.withdraw()` →<br>`LotRepository.save()` →<br>`LotPublicationEventPublisher.publishLotWithdrawn()` |
+| **HandleClassificationCompletedEventHandler** | Event Handler | Reacciona al evento externo `ClassificationCompletedEvent`, recibido desde `Textile Classification Management`. Verifica el lote asociado y dispara el comando de publicación si corresponde. | ```text ClassificationCompletedEvent { lotId, classificationId, labels, processedAt } ``` | `LotRepository.findById()` →<br>`PublishLotCommandHandler.handle()` |
+| **HandleReservationStartedEventHandler** | Event Handler | Reacciona al evento externo `ReservationStartedEvent`, recibido desde `Reservation Management`. Marca internamente que el lote ya no debe seguir disponible para nuevas modificaciones o publicaciones paralelas. | ```text ReservationStartedEvent { lotId, reservationId, artisanId, reservedAt } ``` | `LotRepository.findById()` →<br>`Lot.markAsReserved()` →<br>`LotRepository.save()` |
+| **GetLotByIdQueryHandler** | Query Handler | Procesa la consulta para obtener la información detallada de un lote específico. | ```text GetLotByIdQuery { lotId } ``` | `LotRepository.findById()` →<br>`LotResponseAssembler.toResponse()` |
+| **GetLotsByPublisherQueryHandler** | Query Handler | Procesa la consulta para recuperar los lotes registrados por un confeccionista. | ```text GetLotsByPublisherQuery { publisherId } ``` | `LotRepository.findByPublisherId()` →<br>`LotResponseAssembler.toResponseList()` |
+| **GetPublishedLotsQueryHandler** | Query Handler | Procesa la consulta para listar los lotes publicados y disponibles para los artesanos. | ```text GetPublishedLotsQuery { status = PUBLISHED } ``` | `LotRepository.findByStatus()` →<br>`LotResponseAssembler.toResponseList()` |
+| **CreateLotCommand** | Command | DTO de comando inmutable que transporta los datos necesarios para registrar un nuevo lote. | — | — |
+| **UpdateLotCommand** | Command | DTO de comando inmutable que transporta los datos necesarios para actualizar un lote existente. | — | — |
+| **SubmitLotForClassificationCommand** | Command | DTO de comando que solicita enviar un lote al proceso de clasificación textil. | — | — |
+| **PublishLotCommand** | Command | DTO de comando que solicita publicar un lote validado en la plataforma. | — | — |
+| **WithdrawLotCommand** | Command | DTO de comando que solicita retirar un lote publicado o pendiente antes de ser reservado. | — | — |
+| **LotPublicationEventPublisher** | Application Service | Servicio de aplicación que abstrae la publicación de eventos hacia el bus de mensajería (Pub/Sub). | — | `MessageBrokerPort.publish()` |
+| **LotResponseAssembler** | Application Service / Assembler | Transforma objetos del dominio en respuestas de aplicación para la capa de interfaz. | — | `Lot → LotResponse` |
+
+### 5.3.4. Infrastructure Layer
+
+
+La capa de infraestructura contiene las implementaciones concretas de los puertos definidos en el dominio. Aquí viven los adaptadores que conectan el sistema con Supabase PostgreSQL y Google Cloud Pub/Sub. Esta capa depende de tecnologías específicas y provee mecanismos de persistencia, comunicación y configuración.
+
+| Clase | Categoría | Propósito | Tecnología | Detalles de implementación |
+|---|---|---|---|---|
+| **JpaLotRepository** | Repository Implementation | Implementación del puerto `LotRepository` usando Spring Data JPA. Gestiona la persistencia del agregado `Lot` en Supabase PostgreSQL. | Spring Data JPA / Hibernate / Supabase PostgreSQL | Mapeo del agregado con `@Entity` + `@Table("lots")`.<br><br>Los Value Objects (`LotId`, `PublisherId`, `LotTitle`, `LotDescription`, `LotWeight`, `LotLocation`) se persisten como columnas JSONB para evitar tablas de join innecesarias. |
+| **CloudVisionAdapter** | External Service Adapter | Implementación del puerto `IVisionApiAdapter`. Realiza la llamada HTTP a la API de Google Cloud Vision (`images:annotate`), transforma la respuesta en una lista de `RawLabel` y maneja reintentos con backoff exponencial (máx. 3 intentos, intervalo inicial 1 s) según la decisión arquitectónica D08. | Google Cloud Vision REST API / Spring WebClient | Autenticación mediante `Application Default Credentials (ADC)` de GCP. Si los 3 reintentos fallan, lanza `VisionApiException` que el Command Handler captura para marcar la solicitud como `FAILED`. |
+| **PubSubMessageBrokerAdapter** | Message Broker Adapter | Implementación del puerto `IMessageBrokerPort`. Publica y serializa eventos de dominio como mensajes JSON en los tópicos de Google Cloud Pub/Sub (`lot.submitted-for-classification`, `lot.published`, `lot.withdrawn`). | Google Cloud Pub/Sub Java Client Library | Serialización con Jackson. Los mensajes incluyen atributos de cabecera (`eventType`, `occurredAt`, `aggregateId`) para facilitar el enrutamiento en los subscriptores. |
+| **LotEntity** | JPA Entity | Entidad JPA que mapea la tabla `lots`. Realiza la traducción bidireccional entre el agregado de dominio y el modelo de persistencia, aislando los detalles de la base de datos. | JPA / Hibernate | Incluye conversores (`@Converter`) para los Value Objects (`LotId`, `PublisherId`, `LotTitle`, `LotDescription`, `LotWeight`, `LotLocation`) y para la colección de imágenes (`LotImage`). Los campos complejos se guardan como JSONB. |
+| **LotImageEmbeddable** | JPA Embeddable | Componente embebible que representa una imagen del lote. Se almacena dentro de la columna `images` (JSONB) en la tabla `lots`. | JPA / Hibernate | Campos:<br>`imageUrl: String`<br>`thumbnailUrl: String`<br>`order: Integer` |
+| **CoordinatesEmbeddable** | JPA Embeddable | Componente embebible que representa las coordenadas geográficas del lote. | JPA / Hibernate | Campos:<br>`latitude: Decimal`<br>`longitude: Decimal` |
+| **JsonbAttributeConverter** | Infrastructure Converter | Converter genérico para persistir Value Objects como JSONB en Supabase PostgreSQL. | JPA / Hibernate | Implementa `AttributeConverter<T, String>`. Serializa y deserializa Value Objects usando Jackson. |
+| **MessageHeaderProvider** | Infrastructure Component | Proveedor de metadatos para eventos publicados en Pub/Sub. | Java / Clock | Agrega automáticamente `eventType`, `occurredAt` y `aggregateId` a los mensajes salientes. |
+
+
+### 5.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+En este diagrama de componentes (nivel 3 del C4 Model) se descompone el contenedor API REST en los componentes internos que pertenecen exclusivamente al Bounded Context Lot Publication Management, mostrando sus responsabilidades, relaciones y tecnologías.
+El diagrama fue elaborado siguiendo el enfoque de arquitectura hexagonal y separación por capas (Interface, Application, Domain e Infrastructure), manteniendo coherencia con los principios de Domain-Driven Design y comunicación basada en eventos.
+
+
+<p align="center">
+  <img src="./assets/ArquitecturaBoundedContextLotPublication.png" width="900"/>
+</p>
+
+
+
+| Componente                             | Responsabilidad                                                             |
+| -------------------------------------- | --------------------------------------------------------------------------- |
+| `LotPublicationController`             | Recibe solicitudes HTTP desde la aplicación móvil.                          |
+| `Command Handlers`                     | Orquestan los casos de uso del bounded context.                             |
+| `LotPublicationPolicy`                 | Contiene reglas de validación del dominio.                                  |
+| `JpaLotRepository`                     | Implementa la persistencia del agregado `Lot`.                              |
+| `ClassificationCompletedEventConsumer` | Consume eventos externos provenientes de Textile Classification Management. |
+| `LotPublicationEventPublisher`         | Publica eventos del dominio hacia Pub/Sub.                                  |
+| `Supabase PostgreSQL`                  | Base de datos principal del bounded context.                                |
+| `Google Cloud Pub/Sub`                 | Broker de eventos para comunicación desacoplada.                            |
+
+
+### 5.3.6. Bounded Context Software Architecture Code Level Diagrams
+
+### 5.3.6.1. Bounded Context Domain Layer Class Diagrams
+
+
+<p align="center">
+  <img src="./assets/class-diagram-lot.png" width="900">
+</p>
+
+Descripción de relaciones principales: 
+
+## Domain Layer Class Diagram – Relationships Description
+
+**Bounded Context:** Lot Publication Management
+
+| # | Relación | Tipo | Elementos Relacionados | Cardinalidad | Descripción | Impacto en el Dominio |
+|---|---|---|---|---|---|---|
+| 1 | **Composición (Aggregate Root)** | Composición (Fuerte) | `Lot` contiene:<br><br>`LotId`<br>`PublisherId`<br>`LotTitle`<br>`LotDescription`<br>`LotWeight`<br>`LotLocation`<br>`LotImage`<br>`LotStatus` | `1 (Lot)` contiene `1..* (Value Objects / Entity)` | `Lot` es el Aggregate Root que posee y controla el ciclo de vida de todos los Value Objects y la entidad `LotImage`. | Garantiza la consistencia del agregado. Los Value Objects y `LotImage` no pueden existir fuera de un `Lot`. |
+| 2 | **Asociación** | Asociación (Débil) | `LotLocation` — `Coordinates` | `1 (LotLocation)` ↔ `1 (Coordinates)` | `LotLocation` utiliza un objeto `Coordinates` para representar las coordenadas geográficas (latitud y longitud). | `Coordinates` es un Value Object compartido que encapsula la ubicación geográfica del lote. |
+| 3 | **Dependencia** | Dependencia (Uso) | `Lot` → `LotPublicationPolicy` | `1 (Lot)` → `1 (Policy)` | `Lot` utiliza `LotPublicationPolicy` para validar reglas de negocio antes de permitir operaciones de publicación, retiro o envío a clasificación. | La política puede cambiar de implementación sin afectar el modelo del dominio. |
+| 4 | **Dependencia** | Dependencia (Persistencia) | `Application Layer` → `ILotRepository` | `1 (Application)` → `1 (Repository)` | El Application Layer depende del repositorio para persistir y recuperar agregados `Lot`. | Asegura la inversión de dependencias. El dominio no depende de detalles de persistencia. |
+| 5 | **Publicación de Evento** | Dependencia (Publicación) | `Lot` → `LotSubmittedForClassificationEvent`<br>`LotPublishedEvent`<br>`LotWithdrawnEvent` | `1 (Lot)` → `1 (Evento)` por evento emitido | `Lot` publica eventos de dominio cuando ocurren cambios de estado relevantes que deben ser comunicados a otros Bounded Contexts. | Permite integración asíncrona y desacoplada con otros contextos a través de eventos de dominio. |
+| 6 | **Dependencia entre Contextos** | Dependencia (Inter-Contexto) | `Lot Publication Management` ↔ `Textile Classification Management` | `N/A` (Integración vía eventos) | `Lot Publication Management` envía el evento `LotSubmittedForClassificationEvent` para solicitar procesamiento en el contexto de `Textile Classification Management`. | Mantiene el aislamiento entre contextos. No existe acoplamiento directo, solo comunicación asíncrona por eventos. |
+
+---
+
+## Leyenda de Símbolos
+
+| Símbolo | Significado |
+|---|---|
+| `◆────` | Composición (Fuerte) |
+| `────` | Asociación (Débil) |
+| `- - - ->` | Dependencia (Uso) |
+| `- - - ->` | Dependencia (Persistencia) |
+| `- - - ->` | Publicación de Evento |
+| `<- - - ->` | Dependencia entre Contextos |
+
+
+
+### 5.3.6.2. Bounded Context Database Design Diagram
+
+
+<p align="center">
+  <img src="./assets/TablaPrincipalLotPublication.png" width="700"/>
+</p>
+
+
+## Descripción de la tabla principal
+
+### Tabla: `lot_publications`
+
+| Columna | Tipo | Constraints | Descripción |
+|---|---|---|---|
+| `id` | UUID | PRIMARY KEY, NOT NULL | Identificador único del lote publicado. |
+| `publisher_id` | UUID | NOT NULL, INDEX | Referencia al publicador (usuario) que publica el lote. |
+| `title` | VARCHAR(200) | NOT NULL | Título o nombre del lote. |
+| `description` | TEXT | NOT NULL | Descripción detallada del lote. |
+| `weight_kg` | NUMERIC(10,2) | NOT NULL | Peso total del lote en kilogramos. |
+| `address` | VARCHAR(255) | NOT NULL | Dirección o referencia de ubicación del lote. |
+| `latitude` | NUMERIC(10,8) | NULL | Latitud geográfica de la ubicación del lote (coordenada decimal). |
+| `longitude` | NUMERIC(11,8) | NULL | Longitud geográfica de la ubicación del lote (coordenada decimal). |
+| `status` | VARCHAR(30) | NOT NULL, DEFAULT `'DRAFT'` | Estado actual del lote en su ciclo de vida.<br><br>Valores posibles:<br>`DRAFT`<br>`SUBMITTED_FOR_CLASSIFICATION`<br>`PUBLISHED`<br>`WITHDRAWN`<br>`EXPIRED` |
+| `image_urls` | JSONB | NULL | Array JSON con las URLs de las imágenes del lote. |
+| `created_at` | TIMESTAMPTZ | NOT NULL, DEFAULT `NOW()` | Timestamp de creación del registro. |
+| `updated_at` | TIMESTAMPTZ | NOT NULL, DEFAULT `NOW()` | Timestamp de última actualización del registro. |
+| `withdrawn_at` | TIMESTAMPTZ | NULL | Timestamp en que el lote fue retirado (si aplica). |
+
+
+## Índices
+
+| Índice | Columnas | Tipo | Propósito |
+|---|---|---|---|
+| `idx_classification_lot_id` | `lot_id` | B-Tree | Consulta eficiente de la clasificación de un lote por su ID. |
+| `idx_classification_status` | `status` | B-Tree | Filtrado rápido de solicitudes en estado `PENDING` o `PROCESSING` por el worker de reintentos. |
+| `idx_classification_labels` | `labels` | GIN | Búsqueda dentro del campo JSONB para filtrar lotes por tipo de material o categoría textil. |
+
+### Decisión de diseño
+
+Se optó por una tabla única con un campo `JSONB` para las etiquetas en lugar de una tabla normalizada `classification_labels` con FK. Esta decisión se justifica porque las etiquetas son inmutables una vez que la clasificación se completa (se generan y escriben una sola vez) y el patrón de acceso es siempre recuperar el conjunto completo de etiquetas de una solicitud, nunca etiquetas individuales en aislamiento. El índice `GIN` sobre el campo `JSONB` garantiza eficiencia en las consultas de búsqueda por material sin sacrificar la simplicidad del esquema.
+
+
+
 <a name="6."></a>
 
 # Capítulo VI: Solution UX Design
