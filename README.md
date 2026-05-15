@@ -2160,6 +2160,24 @@ La capa de infraestructura contiene las implementaciones concretas de los puerto
 
 ### 5.3.5. Bounded Context Software Architecture Component Level Diagrams
 
+En este diagrama de componentes (nivel 3 del C4 Model) se descompone el contenedor API REST en los componentes internos que pertenecen exclusivamente al Bounded Context Lot Publication Management, mostrando sus responsabilidades, relaciones y tecnologías.
+El diagrama fue elaborado siguiendo el enfoque de arquitectura hexagonal y separación por capas (Interface, Application, Domain e Infrastructure), manteniendo coherencia con los principios de Domain-Driven Design y comunicación basada en eventos.
+
+**Aqui va el diagrama**
+
+
+| Componente                             | Responsabilidad                                                             |
+| -------------------------------------- | --------------------------------------------------------------------------- |
+| `LotPublicationController`             | Recibe solicitudes HTTP desde la aplicación móvil.                          |
+| `Command Handlers`                     | Orquestan los casos de uso del bounded context.                             |
+| `LotPublicationPolicy`                 | Contiene reglas de validación del dominio.                                  |
+| `JpaLotRepository`                     | Implementa la persistencia del agregado `Lot`.                              |
+| `ClassificationCompletedEventConsumer` | Consume eventos externos provenientes de Textile Classification Management. |
+| `LotPublicationEventPublisher`         | Publica eventos del dominio hacia Pub/Sub.                                  |
+| `Supabase PostgreSQL`                  | Base de datos principal del bounded context.                                |
+| `Google Cloud Pub/Sub`                 | Broker de eventos para comunicación desacoplada.                            |
+
+
 ### 5.3.6. Bounded Context Software Architecture Code Level Diagrams
 
 ### 5.3.6.1. Bounded Context Domain Layer Class Diagrams
