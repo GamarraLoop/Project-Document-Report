@@ -2163,7 +2163,11 @@ La capa de infraestructura contiene las implementaciones concretas de los puerto
 En este diagrama de componentes (nivel 3 del C4 Model) se descompone el contenedor API REST en los componentes internos que pertenecen exclusivamente al Bounded Context Lot Publication Management, mostrando sus responsabilidades, relaciones y tecnologías.
 El diagrama fue elaborado siguiendo el enfoque de arquitectura hexagonal y separación por capas (Interface, Application, Domain e Infrastructure), manteniendo coherencia con los principios de Domain-Driven Design y comunicación basada en eventos.
 
-**Aqui va el diagrama**
+
+<p align="center">
+  <img src="./assets/ArquitecturaBoundedContextLotPublication.png" width="900"/>
+</p>
+
 
 
 | Componente                             | Responsabilidad                                                             |
@@ -2183,7 +2187,9 @@ El diagrama fue elaborado siguiendo el enfoque de arquitectura hexagonal y separ
 ### 5.3.6.1. Bounded Context Domain Layer Class Diagrams
 
 
-**Aqui va el dirgrama**
+<p align="center">
+  <img src="./assets/class-diagram-lot.png" width="900">
+</p>
 
 Descripción de relaciones principales: 
 
@@ -2217,7 +2223,11 @@ Descripción de relaciones principales:
 
 ### 5.3.6.2. Bounded Context Database Design Diagram
 
-**Aqui va la tabla**
+
+<p align="center">
+  <img src="./assets/TablaPrincipalLotPublication.png" width="700"/>
+</p>
+
 
 ## Descripción de la tabla principal
 
