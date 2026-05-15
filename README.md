@@ -2118,6 +2118,29 @@ La capa de interfaz expone el Bounded Context **Lot Publication Management** hac
 
 ### 5.3.3. Application Layer
 
+
+La capa de aplicación orquesta los flujos de negocio del Bounded Context **Lot Publication Management**. No contiene lógica de dominio, sino que coordina la colaboración entre la capa de dominio, los repositorios y los adaptadores externos. Implementa el patrón **Command Handler** para peticiones explícitas, **Query Handler** para consultas y **Event Handler** para reaccionar a eventos del sistema.
+
+| Clase | Categoría | Propósito | Comandos / Eventos que procesa | Colaboraciones |
+|---|---|---|---|---|
+| **CreateLotCommandHandler** | Command Handler | Procesa el comando `CreateLotCommand`. Crea el agregado `Lot` en estado `DRAFT`, valida los datos iniciales y lo persiste mediante el repositorio. | ```text CreateLotCommand { publisherId, title, description, weight, location, images } ``` | `Lot.create()` →<br>`LotRepository.save()` |
+| **UpdateLotCommandHandler** | Command Handler | Procesa el comando `UpdateLotCommand`. Recupera el lote existente, valida que pueda ser editado y actualiza su información básica sin romper las reglas del dominio. | ```text UpdateLotCommand { lotId, title, description, weight, location, images } ``` | `LotRepository.findById()` →<br>`Lot.canBeEdited()` →<br>`Lot.updateDetails()` →<br>`LotRepository.save()` |
+| **SubmitLotForClassificationCommandHandler** | Command Handler | Procesa el comando `SubmitLotForClassificationCommand`. Recupera el lote, valida que tenga información suficiente y cambia su estado a `PENDING_CLASSIFICATION`. Luego publica un evento para iniciar el proceso de clasificación en otro BC. | ```text SubmitLotForClassificationCommand { lotId } ``` | `LotRepository.findById()` →<br>`LotPublicationPolicy.validateForSubmission()` →<br>`Lot.submitForClassification()` →<br>`LotRepository.save()` →<br>`LotPublicationEventPublisher.publishLotSubmittedForClassification()` |
+| **PublishLotCommandHandler** | Command Handler | Procesa el comando `PublishLotCommand`. Publica el lote cuando ya cumple las reglas necesarias del dominio y lo deja disponible para los artesanos. | ```text PublishLotCommand { lotId } ``` | `LotRepository.findById()` →<br>`LotPublicationPolicy.canBePublished()` →<br>`Lot.publish()` →<br>`LotRepository.save()` →<br>`LotPublicationEventPublisher.publishLotPublished()` |
+| **WithdrawLotCommandHandler** | Command Handler | Procesa el comando `WithdrawLotCommand`. Permite al confeccionista retirar un lote antes de que sea reservado, cambiando su estado a `WITHDRAWN`. | ```text WithdrawLotCommand { lotId, reason } ``` | `LotRepository.findById()` →<br>`Lot.withdraw()` →<br>`LotRepository.save()` →<br>`LotPublicationEventPublisher.publishLotWithdrawn()` |
+| **HandleClassificationCompletedEventHandler** | Event Handler | Reacciona al evento externo `ClassificationCompletedEvent`, recibido desde `Textile Classification Management`. Verifica el lote asociado y dispara el comando de publicación si corresponde. | ```text ClassificationCompletedEvent { lotId, classificationId, labels, processedAt } ``` | `LotRepository.findById()` →<br>`PublishLotCommandHandler.handle()` |
+| **HandleReservationStartedEventHandler** | Event Handler | Reacciona al evento externo `ReservationStartedEvent`, recibido desde `Reservation Management`. Marca internamente que el lote ya no debe seguir disponible para nuevas modificaciones o publicaciones paralelas. | ```text ReservationStartedEvent { lotId, reservationId, artisanId, reservedAt } ``` | `LotRepository.findById()` →<br>`Lot.markAsReserved()` →<br>`LotRepository.save()` |
+| **GetLotByIdQueryHandler** | Query Handler | Procesa la consulta para obtener la información detallada de un lote específico. | ```text GetLotByIdQuery { lotId } ``` | `LotRepository.findById()` →<br>`LotResponseAssembler.toResponse()` |
+| **GetLotsByPublisherQueryHandler** | Query Handler | Procesa la consulta para recuperar los lotes registrados por un confeccionista. | ```text GetLotsByPublisherQuery { publisherId } ``` | `LotRepository.findByPublisherId()` →<br>`LotResponseAssembler.toResponseList()` |
+| **GetPublishedLotsQueryHandler** | Query Handler | Procesa la consulta para listar los lotes publicados y disponibles para los artesanos. | ```text GetPublishedLotsQuery { status = PUBLISHED } ``` | `LotRepository.findByStatus()` →<br>`LotResponseAssembler.toResponseList()` |
+| **CreateLotCommand** | Command | DTO de comando inmutable que transporta los datos necesarios para registrar un nuevo lote. | — | — |
+| **UpdateLotCommand** | Command | DTO de comando inmutable que transporta los datos necesarios para actualizar un lote existente. | — | — |
+| **SubmitLotForClassificationCommand** | Command | DTO de comando que solicita enviar un lote al proceso de clasificación textil. | — | — |
+| **PublishLotCommand** | Command | DTO de comando que solicita publicar un lote validado en la plataforma. | — | — |
+| **WithdrawLotCommand** | Command | DTO de comando que solicita retirar un lote publicado o pendiente antes de ser reservado. | — | — |
+| **LotPublicationEventPublisher** | Application Service | Servicio de aplicación que abstrae la publicación de eventos hacia el bus de mensajería (Pub/Sub). | — | `MessageBrokerPort.publish()` |
+| **LotResponseAssembler** | Application Service / Assembler | Transforma objetos del dominio en respuestas de aplicación para la capa de interfaz. | — | `Lot → LotResponse` |
+
 ### 5.3.4. Infrastructure Layer
 
 ### 5.3.5. Bounded Context Software Architecture Component Level Diagrams
