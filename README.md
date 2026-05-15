@@ -2180,6 +2180,39 @@ El diagrama fue elaborado siguiendo el enfoque de arquitectura hexagonal y separ
 
 ### 5.3.6. Bounded Context Software Architecture Code Level Diagrams
 
+5.3.6.1. Bounded Context Domain Layer Class Diagrams
+
+**Aqui va el dirgrama**
+
+Descripción de relaciones principales: 
+
+## 5.X.7.1. Domain Layer Class Diagram – Relationships Description
+
+**Bounded Context:** Lot Publication Management
+
+| # | Relación | Tipo | Elementos Relacionados | Cardinalidad | Descripción | Impacto en el Dominio |
+|---|---|---|---|---|---|---|
+| 1 | **Composición (Aggregate Root)** | Composición (Fuerte) | `Lot` contiene:<br><br>`LotId`<br>`PublisherId`<br>`LotTitle`<br>`LotDescription`<br>`LotWeight`<br>`LotLocation`<br>`LotImage`<br>`LotStatus` | `1 (Lot)` contiene `1..* (Value Objects / Entity)` | `Lot` es el Aggregate Root que posee y controla el ciclo de vida de todos los Value Objects y la entidad `LotImage`. | Garantiza la consistencia del agregado. Los Value Objects y `LotImage` no pueden existir fuera de un `Lot`. |
+| 2 | **Asociación** | Asociación (Débil) | `LotLocation` — `Coordinates` | `1 (LotLocation)` ↔ `1 (Coordinates)` | `LotLocation` utiliza un objeto `Coordinates` para representar las coordenadas geográficas (latitud y longitud). | `Coordinates` es un Value Object compartido que encapsula la ubicación geográfica del lote. |
+| 3 | **Dependencia** | Dependencia (Uso) | `Lot` → `LotPublicationPolicy` | `1 (Lot)` → `1 (Policy)` | `Lot` utiliza `LotPublicationPolicy` para validar reglas de negocio antes de permitir operaciones de publicación, retiro o envío a clasificación. | La política puede cambiar de implementación sin afectar el modelo del dominio. |
+| 4 | **Dependencia** | Dependencia (Persistencia) | `Application Layer` → `ILotRepository` | `1 (Application)` → `1 (Repository)` | El Application Layer depende del repositorio para persistir y recuperar agregados `Lot`. | Asegura la inversión de dependencias. El dominio no depende de detalles de persistencia. |
+| 5 | **Publicación de Evento** | Dependencia (Publicación) | `Lot` → `LotSubmittedForClassificationEvent`<br>`LotPublishedEvent`<br>`LotWithdrawnEvent` | `1 (Lot)` → `1 (Evento)` por evento emitido | `Lot` publica eventos de dominio cuando ocurren cambios de estado relevantes que deben ser comunicados a otros Bounded Contexts. | Permite integración asíncrona y desacoplada con otros contextos a través de eventos de dominio. |
+| 6 | **Dependencia entre Contextos** | Dependencia (Inter-Contexto) | `Lot Publication Management` ↔ `Textile Classification Management` | `N/A` (Integración vía eventos) | `Lot Publication Management` envía el evento `LotSubmittedForClassificationEvent` para solicitar procesamiento en el contexto de `Textile Classification Management`. | Mantiene el aislamiento entre contextos. No existe acoplamiento directo, solo comunicación asíncrona por eventos. |
+
+---
+
+## Leyenda de Símbolos
+
+| Símbolo | Significado |
+|---|---|
+| `◆────` | Composición (Fuerte) |
+| `────` | Asociación (Débil) |
+| `- - - ->` | Dependencia (Uso) |
+| `- - - ->` | Dependencia (Persistencia) |
+| `- - - ->` | Publicación de Evento |
+| `<- - - ->` | Dependencia entre Contextos |
+
+
 ### 5.3.6.1. Bounded Context Domain Layer Class Diagrams
 
 ### 5.3.6.2. Bounded Context Database Design Diagram
