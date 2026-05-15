@@ -2143,6 +2143,21 @@ La capa de aplicación orquesta los flujos de negocio del Bounded Context **Lot 
 
 ### 5.3.4. Infrastructure Layer
 
+
+La capa de infraestructura contiene las implementaciones concretas de los puertos definidos en el dominio. Aquí viven los adaptadores que conectan el sistema con Supabase PostgreSQL y Google Cloud Pub/Sub. Esta capa depende de tecnologías específicas y provee mecanismos de persistencia, comunicación y configuración.
+
+| Clase | Categoría | Propósito | Tecnología | Detalles de implementación |
+|---|---|---|---|---|
+| **JpaLotRepository** | Repository Implementation | Implementación del puerto `LotRepository` usando Spring Data JPA. Gestiona la persistencia del agregado `Lot` en Supabase PostgreSQL. | Spring Data JPA / Hibernate / Supabase PostgreSQL | Mapeo del agregado con `@Entity` + `@Table("lots")`.<br><br>Los Value Objects (`LotId`, `PublisherId`, `LotTitle`, `LotDescription`, `LotWeight`, `LotLocation`) se persisten como columnas JSONB para evitar tablas de join innecesarias. |
+| **CloudVisionAdapter** | External Service Adapter | Implementación del puerto `IVisionApiAdapter`. Realiza la llamada HTTP a la API de Google Cloud Vision (`images:annotate`), transforma la respuesta en una lista de `RawLabel` y maneja reintentos con backoff exponencial (máx. 3 intentos, intervalo inicial 1 s) según la decisión arquitectónica D08. | Google Cloud Vision REST API / Spring WebClient | Autenticación mediante `Application Default Credentials (ADC)` de GCP. Si los 3 reintentos fallan, lanza `VisionApiException` que el Command Handler captura para marcar la solicitud como `FAILED`. |
+| **PubSubMessageBrokerAdapter** | Message Broker Adapter | Implementación del puerto `IMessageBrokerPort`. Publica y serializa eventos de dominio como mensajes JSON en los tópicos de Google Cloud Pub/Sub (`lot.submitted-for-classification`, `lot.published`, `lot.withdrawn`). | Google Cloud Pub/Sub Java Client Library | Serialización con Jackson. Los mensajes incluyen atributos de cabecera (`eventType`, `occurredAt`, `aggregateId`) para facilitar el enrutamiento en los subscriptores. |
+| **LotEntity** | JPA Entity | Entidad JPA que mapea la tabla `lots`. Realiza la traducción bidireccional entre el agregado de dominio y el modelo de persistencia, aislando los detalles de la base de datos. | JPA / Hibernate | Incluye conversores (`@Converter`) para los Value Objects (`LotId`, `PublisherId`, `LotTitle`, `LotDescription`, `LotWeight`, `LotLocation`) y para la colección de imágenes (`LotImage`). Los campos complejos se guardan como JSONB. |
+| **LotImageEmbeddable** | JPA Embeddable | Componente embebible que representa una imagen del lote. Se almacena dentro de la columna `images` (JSONB) en la tabla `lots`. | JPA / Hibernate | Campos:<br>`imageUrl: String`<br>`thumbnailUrl: String`<br>`order: Integer` |
+| **CoordinatesEmbeddable** | JPA Embeddable | Componente embebible que representa las coordenadas geográficas del lote. | JPA / Hibernate | Campos:<br>`latitude: Decimal`<br>`longitude: Decimal` |
+| **JsonbAttributeConverter** | Infrastructure Converter | Converter genérico para persistir Value Objects como JSONB en Supabase PostgreSQL. | JPA / Hibernate | Implementa `AttributeConverter<T, String>`. Serializa y deserializa Value Objects usando Jackson. |
+| **MessageHeaderProvider** | Infrastructure Component | Proveedor de metadatos para eventos publicados en Pub/Sub. | Java / Clock | Agrega automáticamente `eventType`, `occurredAt` y `aggregateId` a los mensajes salientes. |
+
+
 ### 5.3.5. Bounded Context Software Architecture Component Level Diagrams
 
 ### 5.3.6. Bounded Context Software Architecture Code Level Diagrams
