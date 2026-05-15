@@ -2078,11 +2078,12 @@ Este bounded context no clasifica los lotes, no gestiona reservas, no controla e
 
 ## 5.3.1. Domain Layer
 
-La capa de dominio contiene la lógica de negocio pura del proceso de publicación de lotes textiles. Es totalmente independiente de frameworks, bases de datos y servicios externos.
+La capa de interfaz expone el bounded context Lot Publication Management hacia el exterior, principalmente hacia los clientes HTTP, como la aplicación móvil, y hacia otros bounded contexts mediante eventos. Actúa como adaptador de entrada dentro de una arquitectura hexagonal, recibiendo solicitudes externas y delegando la ejecución a la capa de aplicación.
+
 
 | Clase / Interfaz | Categoría | Propósito | Atributos | Métodos |
 |---|---|---|---|---|
-| **Lot** | Entity / Aggregate Root | Representa un lote textil publicado por un confeccionista. Es el agregado raíz que controla su información, estado y transiciones del ciclo de publicación. | `lotId: LotId`<br>`publisherId: PublisherId`<br>`title: LotTitle`<br>`description: LotDescription`<br>`weight: LotWeight`<br>`location: LotLocation`<br>`images: List<LotImage>`<br>`status: LotStatus`<br>`createdAt: CreatedAt`<br>`publishedAt: PublishedAt` | `create(publisherId, title, description, weight, location, images): Lot`<br>`updateDetails(title, description, weight, location, images): void`<br>`submitForClassification(): void`<br>`publish(): void`<br>`withdraw(): void`<br>`canBeEdited(): boolean`<br>`isPublished(): boolean` |
+| **Lot** | Entity / Aggregate Root | Representa un lote textil publicado por un confeccionista. Es el agregado raíz que controla su información, estado y transiciones del ciclo de publicación. | `lotId: LotId`<br>`publisherId: PublisherId`<br>`title: LotTitle`<br>`description: LotDescription`<br>`weight: LotWeight`<br>`location: LotLocation`<br>`images: List<LotImage>`<br>`status: LotStatus`<br>`createdAt: CreatedAt`<br>`publishedAt: PublishedAt` | `create(publisherId, title, description, weight, location, images): Lot`<br><br>`updateDetails(title, description, weight, location, images): void`<br><br>`submitForClassification(): void`<br><br>`publish(): void`<br><br>`withdraw(): void`<br><br>`canBeEdited(): boolean`<br><br>`isPublished(): boolean` |
 | **LotImage** | Value Object | Representa una imagen asociada al lote. Inmutable. | `imageUrl: ImageUrl`<br>`thumbnailUrl: ImageUrl`<br>`order: Integer` | `of(imageUrl: ImageUrl, thumbnailUrl: ImageUrl, order: Integer): LotImage` |
 | **PublisherId** | Value Object | Identificador único del confeccionista que publica el lote. | `value: UUID` | `of(uuid: UUID): PublisherId` |
 | **LotId** | Value Object | Identificador único del lote dentro del sistema. | `value: UUID` | `of(uuid: UUID): LotId` |
@@ -2092,15 +2093,28 @@ La capa de dominio contiene la lógica de negocio pura del proceso de publicaci�
 | **LotLocation** | Value Object | Ubicación del lote para referencia y coordinación. | `address: String`<br>`district: String`<br>`coordinates: Coordinates` | `of(address, district, coordinates): LotLocation` |
 | **Coordinates** | Value Object | Coordenadas geográficas del lote. | `latitude: Decimal`<br>`longitude: Decimal` | `of(latitude: Decimal, longitude: Decimal): Coordinates` |
 | **LotStatus** | Enumeration | Estados posibles del ciclo de vida del lote dentro del proceso de publicación. | `DRAFT`<br>`PENDING_CLASSIFICATION`<br>`PUBLISHED`<br>`WITHDRAWN` | — |
-| **LotPublicationPolicy** | Domain Service | Contiene reglas de negocio para validar si un lote cumple con los requisitos para ser publicado. | — | `canBePublished(lot: Lot): ValidationResult`<br>`validateForSubmission(lot: Lot): ValidationResult` |
-| **LotRepository** | Repository (Interfaz) | Punto de persistencia del agregado `Lot`. Define el contrato de acceso a datos sin exponer la implementación. | — | `save(lot: Lot): void`<br>`findById(lotId: LotId): Optional<Lot>`<br>`existsById(lotId: LotId): boolean`<br>`findByPublisherId(publisherId: PublisherId): List<Lot>` |
+| **LotPublicationPolicy** | Domain Service | Contiene reglas de negocio para validar si un lote cumple con los requisitos para ser publicado. | — | `canBePublished(lot: Lot): ValidationResult`<br><br>`validateForSubmission(lot: Lot): ValidationResult` |
+| **LotRepository** | Repository (Interfaz) | Punto de persistencia del agregado `Lot`. Define el contrato de acceso a datos sin exponer la implementación. | — | `save(lot: Lot): void`<br><br>`findById(lotId: LotId): Optional<Lot>`<br><br>`existsById(lotId: LotId): boolean`<br><br>`findByPublisherId(publisherId: PublisherId): List<Lot>` |
 | **LotPublishedEvent** | Domain Event | Evento publicado cuando un lote pasa al estado `PUBLISHED`. | `lotId: LotId`<br>`publisherId: PublisherId`<br>`publishedAt: LocalDateTime` | — |
 | **LotWithdrawnEvent** | Domain Event | Evento publicado cuando un lote es retirado antes de ser reservado. | `lotId: LotId`<br>`publisherId: PublisherId`<br>`withdrawnAt: LocalDateTime`<br>`reason: String` | — |
 | **LotSubmittedForClassificationEvent** | Domain Event | Evento publicado cuando un lote es enviado al proceso de clasificación. | `lotId: LotId`<br>`publisherId: PublisherId`<br>`submittedAt: LocalDateTime` | — |
 
-### 5.3.1. Domain Layer
 
 ### 5.3.2. Interface Layer
+
+
+La capa de interfaz expone el Bounded Context **Lot Publication Management** hacia el exterior. Atiende solicitudes de la aplicación móvil a través de API REST y se integra con otros Bounded Contexts mediante eventos (Google Cloud Pub/Sub). Actúa como adaptador de entrada (*driving adapter*).
+
+| Clase | Categoría | Propósito | Endpoints / Suscripciones | Request / Response |
+|---|---|---|---|---|
+| **LotPublicationController** | REST Controller | Expone los endpoints HTTP para registrar, actualizar, enviar a clasificación, publicar, retirar y consultar lotes. Es consumido por la aplicación móvil a través del API Gateway. | `POST /api/v1/lots` → Crea un nuevo lote (estado DRAFT).<br><br>`PUT /api/v1/lots/{lotId}` → Actualiza información básica del lote (editable).<br><br>`POST /api/v1/lots/{lotId}/submit-classification` → Envía el lote al proceso de clasificación.<br><br>`POST /api/v1/lots/{lotId}/publish` → Publica el lote cuando está clasificado.<br><br>`POST /api/v1/lots/{lotId}/withdraw` → Retira el lote publicado o pendiente.<br><br>`GET /api/v1/lots/{lotId}` → Obtiene detalle de un lote.<br><br>`GET /api/v1/lots/publisher/{publisherId}` → Lista lotes por confeccionista.<br><br>`GET /api/v1/lots?status={status}` → Lista lotes por estado (DRAFT, PENDING_CLASSIFICATION, PUBLISHED, WITHDRAWN). | **Request (POST / PUT):**<br><br>```json { "publisherId": "UUID", "title": "String", "description": "String", "weight": 12.5, "location": { "address": "String", "district": "String", "coordinates": { "latitude": -12.0464, "longitude": -77.0428 } }, "images": ["String"] } ```<br><br>**Response (ejemplo):**<br><br>```json { "lotId": "UUID", "status": "DRAFT", "createdAt": "2025-05-20T10:15:00Z" } ``` |
+| **LotQueryController** | REST Controller | Expone endpoints especializados en consultas (lecturas). No modifica el estado del dominio. | `GET /api/v1/lots/{lotId}`<br><br>`GET /api/v1/lots/publisher/{publisherId}`<br><br>`GET /api/v1/lots?status={status}` | **Response (GET):**<br><br>```json { "lotId": "UUID", "publisherId": "UUID", "title": "String", "description": "String", "weight": 12.5, "location": { ... }, "images": ["imageUrl", "String"], "status": "PUBLISHED", "createdAt": "2025-05-20T10:15:00Z", "publishedAt": "2025-05-22T08:30:00Z" } ``` |
+| **ClassificationCompletedEventConsumer** | Event Consumer (Pub/Sub) | Suscriptor del evento publicado por el Bounded Context Textile Classification Management cuando un lote ha sido clasificado exitosamente. Dispara el flujo para permitir su publicación. | Suscripción: `classification.completed-subscription`<br><br>Topic: `classification.completed` | **Mensaje esperado:**<br><br>```json { "lotId": "UUID", "classificationId": "UUID", "labels": [{ "name": "String", "confidence": 0.92 }], "processedAt": "2025-05-22T08:30:00Z" } ``` |
+| **ReservationStartedEventConsumer** | Event Consumer (Pub/Sub) | Suscriptor del evento publicado por el Bounded Context Reservation Management cuando un lote ha sido reservado. Evita modificaciones adicionales que sean inválidas según el dominio. | Suscripción: `reservation.started-subscription`<br><br>Topic: `reservation.started` | **Mensaje esperado:**<br><br>```json { "lotId": "UUID", "reservationId": "UUID", "artisanId": "UUID", "reservedAt": "2025-05-22T09:10:00Z" } ``` |
+| **LotPublicationEventPublisher** | Event Publisher | Publica eventos de dominio generados en este bounded context para que otros contextos reaccionen de forma desacoplada. | Tópicos publicados:<br><br>• `lot.submitted-for-classification`<br>• `lot.published`<br>• `lot.withdrawn` | **Mensajes publicados (ejemplo):**<br><br>```json { "lotId": "UUID", "publisherId": "UUID", "occurredAt": "2025-05-22T10:20:00Z", "reason": "String (solo para withdrawn)" } ``` |
+
+
+
 
 ### 5.3.3. Application Layer
 
