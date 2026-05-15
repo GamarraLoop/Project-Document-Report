@@ -2068,7 +2068,7 @@ El Bounded Context Reservation Management es responsable de gestionar el ciclo d
 
 
 
-## 5.3. Bounded Context: Reservation Management
+## 5.3. Bounded Context: Lot Publication Managment
 
 Este bounded context se encarga de gestionar la publicación de lotes textiles registrados por los confeccionistas dentro de la plataforma GamarraLoop/Recitex. Su responsabilidad principal es permitir que un confeccionista cree, actualice, publique o retire un lote textil, manteniendo la información necesaria para que posteriormente pueda ser clasificado, visualizado y reservado por los artesanos.
 Este bounded context no clasifica los lotes, no gestiona reservas, no controla entregas y no expira lotes. Esas responsabilidades pertenecen a otros bounded contexts. Su foco está en el ciclo inicial del lote: registro, validación básica, publicación y disponibilidad inicial.
