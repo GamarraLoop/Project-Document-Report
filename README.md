@@ -2068,6 +2068,53 @@ El Bounded Context Reservation Management es responsable de gestionar el ciclo d
 
 > **URL del diagrama en LucidChart / Vertabelo:** [Reservation Management - Database Design Diagram](https://lucid.app/lucidchart/34041e0d-7674-4dfd-814e-27636277f650/edit?invitationId=inv_1ebd179d-ef67-4d10-99e2-dae5e795b0dd)
 
+
+
+## 5.3. Bounded Context: Reservation Management
+
+Este bounded context se encarga de gestionar la publicación de lotes textiles registrados por los confeccionistas dentro de la plataforma GamarraLoop/Recitex. Su responsabilidad principal es permitir que un confeccionista cree, actualice, publique o retire un lote textil, manteniendo la información necesaria para que posteriormente pueda ser clasificado, visualizado y reservado por los artesanos.
+Este bounded context no clasifica los lotes, no gestiona reservas, no controla entregas y no expira lotes. Esas responsabilidades pertenecen a otros bounded contexts. Su foco está en el ciclo inicial del lote: registro, validación básica, publicación y disponibilidad inicial.
+
+
+## 5.3.1. Domain Layer
+
+La capa de dominio contiene la lógica de negocio pura del proceso de publicación de lotes textiles. Es totalmente independiente de frameworks, bases de datos y servicios externos.
+
+| Clase / Interfaz | Categoría | Propósito | Atributos | Métodos |
+|---|---|---|---|---|
+| **Lot** | Entity / Aggregate Root | Representa un lote textil publicado por un confeccionista. Es el agregado raíz que controla su información, estado y transiciones del ciclo de publicación. | `lotId: LotId`<br>`publisherId: PublisherId`<br>`title: LotTitle`<br>`description: LotDescription`<br>`weight: LotWeight`<br>`location: LotLocation`<br>`images: List<LotImage>`<br>`status: LotStatus`<br>`createdAt: CreatedAt`<br>`publishedAt: PublishedAt` | `create(publisherId, title, description, weight, location, images): Lot`<br>`updateDetails(title, description, weight, location, images): void`<br>`submitForClassification(): void`<br>`publish(): void`<br>`withdraw(): void`<br>`canBeEdited(): boolean`<br>`isPublished(): boolean` |
+| **LotImage** | Value Object | Representa una imagen asociada al lote. Inmutable. | `imageUrl: ImageUrl`<br>`thumbnailUrl: ImageUrl`<br>`order: Integer` | `of(imageUrl: ImageUrl, thumbnailUrl: ImageUrl, order: Integer): LotImage` |
+| **PublisherId** | Value Object | Identificador único del confeccionista que publica el lote. | `value: UUID` | `of(uuid: UUID): PublisherId` |
+| **LotId** | Value Object | Identificador único del lote dentro del sistema. | `value: UUID` | `of(uuid: UUID): LotId` |
+| **LotTitle** | Value Object | Título descriptivo del lote. | `value: String` | `of(value: String): LotTitle` |
+| **LotDescription** | Value Object | Descripción detallada del lote textil. | `value: String` | `of(value: String): LotDescription` |
+| **LotWeight** | Value Object | Peso aproximado del lote textil (en kg). | `value: Decimal` | `of(value: Decimal): LotWeight` |
+| **LotLocation** | Value Object | Ubicación del lote para referencia y coordinación. | `address: String`<br>`district: String`<br>`coordinates: Coordinates` | `of(address, district, coordinates): LotLocation` |
+| **Coordinates** | Value Object | Coordenadas geográficas del lote. | `latitude: Decimal`<br>`longitude: Decimal` | `of(latitude: Decimal, longitude: Decimal): Coordinates` |
+| **LotStatus** | Enumeration | Estados posibles del ciclo de vida del lote dentro del proceso de publicación. | `DRAFT`<br>`PENDING_CLASSIFICATION`<br>`PUBLISHED`<br>`WITHDRAWN` | — |
+| **LotPublicationPolicy** | Domain Service | Contiene reglas de negocio para validar si un lote cumple con los requisitos para ser publicado. | — | `canBePublished(lot: Lot): ValidationResult`<br>`validateForSubmission(lot: Lot): ValidationResult` |
+| **LotRepository** | Repository (Interfaz) | Punto de persistencia del agregado `Lot`. Define el contrato de acceso a datos sin exponer la implementación. | — | `save(lot: Lot): void`<br>`findById(lotId: LotId): Optional<Lot>`<br>`existsById(lotId: LotId): boolean`<br>`findByPublisherId(publisherId: PublisherId): List<Lot>` |
+| **LotPublishedEvent** | Domain Event | Evento publicado cuando un lote pasa al estado `PUBLISHED`. | `lotId: LotId`<br>`publisherId: PublisherId`<br>`publishedAt: LocalDateTime` | — |
+| **LotWithdrawnEvent** | Domain Event | Evento publicado cuando un lote es retirado antes de ser reservado. | `lotId: LotId`<br>`publisherId: PublisherId`<br>`withdrawnAt: LocalDateTime`<br>`reason: String` | — |
+| **LotSubmittedForClassificationEvent** | Domain Event | Evento publicado cuando un lote es enviado al proceso de clasificación. | `lotId: LotId`<br>`publisherId: PublisherId`<br>`submittedAt: LocalDateTime` | — |
+
+### 5.3.1. Domain Layer
+
+### 5.3.2. Interface Layer
+
+### 5.3.3. Application Layer
+
+### 5.3.4. Infrastructure Layer
+
+### 5.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+### 5.3.6. Bounded Context Software Architecture Code Level Diagrams
+
+### 5.3.6.1. Bounded Context Domain Layer Class Diagrams
+
+### 5.3.6.2. Bounded Context Database Design Diagram
+
+
 <a name="6."></a>
 
 # Capítulo VI: Solution UX Design
