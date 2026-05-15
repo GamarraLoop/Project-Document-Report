@@ -2180,13 +2180,14 @@ El diagrama fue elaborado siguiendo el enfoque de arquitectura hexagonal y separ
 
 ### 5.3.6. Bounded Context Software Architecture Code Level Diagrams
 
-5.3.6.1. Bounded Context Domain Layer Class Diagrams
+### 5.3.6.1. Bounded Context Domain Layer Class Diagrams
+
 
 **Aqui va el dirgrama**
 
 Descripción de relaciones principales: 
 
-## 5.X.7.1. Domain Layer Class Diagram – Relationships Description
+## Domain Layer Class Diagram – Relationships Description
 
 **Bounded Context:** Lot Publication Management
 
@@ -2213,9 +2214,44 @@ Descripción de relaciones principales:
 | `<- - - ->` | Dependencia entre Contextos |
 
 
-### 5.3.6.1. Bounded Context Domain Layer Class Diagrams
 
 ### 5.3.6.2. Bounded Context Database Design Diagram
+
+**Aqui va la tabla**
+
+## Descripción de la tabla principal
+
+### Tabla: `lot_publications`
+
+| Columna | Tipo | Constraints | Descripción |
+|---|---|---|---|
+| `id` | UUID | PRIMARY KEY, NOT NULL | Identificador único del lote publicado. |
+| `publisher_id` | UUID | NOT NULL, INDEX | Referencia al publicador (usuario) que publica el lote. |
+| `title` | VARCHAR(200) | NOT NULL | Título o nombre del lote. |
+| `description` | TEXT | NOT NULL | Descripción detallada del lote. |
+| `weight_kg` | NUMERIC(10,2) | NOT NULL | Peso total del lote en kilogramos. |
+| `address` | VARCHAR(255) | NOT NULL | Dirección o referencia de ubicación del lote. |
+| `latitude` | NUMERIC(10,8) | NULL | Latitud geográfica de la ubicación del lote (coordenada decimal). |
+| `longitude` | NUMERIC(11,8) | NULL | Longitud geográfica de la ubicación del lote (coordenada decimal). |
+| `status` | VARCHAR(30) | NOT NULL, DEFAULT `'DRAFT'` | Estado actual del lote en su ciclo de vida.<br><br>Valores posibles:<br>`DRAFT`<br>`SUBMITTED_FOR_CLASSIFICATION`<br>`PUBLISHED`<br>`WITHDRAWN`<br>`EXPIRED` |
+| `image_urls` | JSONB | NULL | Array JSON con las URLs de las imágenes del lote. |
+| `created_at` | TIMESTAMPTZ | NOT NULL, DEFAULT `NOW()` | Timestamp de creación del registro. |
+| `updated_at` | TIMESTAMPTZ | NOT NULL, DEFAULT `NOW()` | Timestamp de última actualización del registro. |
+| `withdrawn_at` | TIMESTAMPTZ | NULL | Timestamp en que el lote fue retirado (si aplica). |
+
+
+## Índices
+
+| Índice | Columnas | Tipo | Propósito |
+|---|---|---|---|
+| `idx_classification_lot_id` | `lot_id` | B-Tree | Consulta eficiente de la clasificación de un lote por su ID. |
+| `idx_classification_status` | `status` | B-Tree | Filtrado rápido de solicitudes en estado `PENDING` o `PROCESSING` por el worker de reintentos. |
+| `idx_classification_labels` | `labels` | GIN | Búsqueda dentro del campo JSONB para filtrar lotes por tipo de material o categoría textil. |
+
+### Decisión de diseño
+
+Se optó por una tabla única con un campo `JSONB` para las etiquetas en lugar de una tabla normalizada `classification_labels` con FK. Esta decisión se justifica porque las etiquetas son inmutables una vez que la clasificación se completa (se generan y escriben una sola vez) y el patrón de acceso es siempre recuperar el conjunto completo de etiquetas de una solicitud, nunca etiquetas individuales en aislamiento. El índice `GIN` sobre el campo `JSONB` garantiza eficiencia en las consultas de búsqueda por material sin sacrificar la simplicidad del esquema.
+
 
 
 <a name="6."></a>
