@@ -67,7 +67,15 @@ URL del repositorio para el reporte del proyecto: https://github.com/GamarraLoop
   <img alt="Image" src="https://github.com/user-attachments/assets/1b5e9b9b-09d7-4122-96b8-b233ad8a8cc8" />
 </div>
 
-*Figura: Project Report Collaboration Insights*
+*Figura: Project Report Collaboration Insights TB1*
+
+**TP**
+
+<div align="center">
+  <img alt="Image" src="https://github.com/user-attachments/assets/b719ea32-e18b-4707-b894-531a42ef49d0" />
+</div>
+
+*Figura: Project Report Collaboration Insights TP*
 
 Para el desarrollo del informe perteneciente a la entrega TF, se dividió la implementación de secciones de la siguiente forma para cada integrante del equipo:
 
@@ -165,6 +173,15 @@ Los integrantes son:
    5.2.6. [Bounded Context Software Architecture Code Level Diagrams.](#5.2.6.)<br>
    5.2.6.1. [Bounded Context Domain Layer Class Diagrams.](#5.2.6.1.)<br>
    5.2.6.2. [Bounded Context Database Design Diagram.](#5.2.6.2.)<br>
+   5.3. [Bounded Context: Lot Publication Management.](#5.3.)<br>
+   5.3.1. [Domain Layer.](#5.3.1.)<br>
+   5.3.2. [Interface Layer.](#5.3.2.)<br>
+   5.3.3. [Application Layer.](#5.3.3.)<br>
+   5.3.4. [Infrastructure Layer.](#5.3.4.)<br>
+   5.3.5. [Bounded Context Software Architecture Component Level Diagrams.](#5.3.5.)<br>
+   5.3.6. [Bounded Context Software Architecture Code Level Diagrams.](#5.3.6.)<br>
+   5.3.6.1. [Bounded Context Domain Layer Class Diagrams.](#5.3.6.1.)<br>
+   5.3.6.2. [Bounded Context Database Design Diagram.](#5.3.6.2.)<br>
 6. [**Capítulo VI: Solution UX Design.**](#6.)<br>
    6.1. [Style Guidelines.](#6.1.)<br>
    6.1.1. [General Style Guidelines.](#6.1.1.)<br>
@@ -2080,7 +2097,7 @@ El Bounded Context Reservation Management es responsable de gestionar el ciclo d
 
 
 
-## 5.3. Bounded Context: Lot Publication Managment
+## 5.3. Bounded Context: Lot Publication Management
 
 Este bounded context se encarga de gestionar la publicación de lotes textiles registrados por los confeccionistas dentro de la plataforma GamarraLoop/Recitex. Su responsabilidad principal es permitir que un confeccionista cree, actualice, publique o retire un lote textil, manteniendo la información necesaria para que posteriormente pueda ser clasificado, visualizado y reservado por los artesanos.
 Este bounded context no clasifica los lotes, no gestiona reservas, no controla entregas y no expira lotes. Esas responsabilidades pertenecen a otros bounded contexts. Su foco está en el ciclo inicial del lote: registro, validación básica, publicación y disponibilidad inicial.
@@ -2178,7 +2195,7 @@ El diagrama fue elaborado siguiendo el enfoque de arquitectura hexagonal y separ
   <img src="./assets/ArquitecturaBoundedContextLotPublication.png" width="900"/>
 </p>
 
-
+*Figura: Bounded Context Software Architecture Component Level Diagrams — Lot Publication Management*
 
 | Componente                             | Responsabilidad                                                             |
 | -------------------------------------- | --------------------------------------------------------------------------- |
@@ -2201,14 +2218,14 @@ El diagrama fue elaborado siguiendo el enfoque de arquitectura hexagonal y separ
   <img src="./assets/class-diagram-lot.png" width="900">
 </p>
 
+*Figura: Domain Layer Class Diagram — Lot Publication Management*
 
-### Lucidchart Diagram
-[Open Diagram](https://lucid.app/lucidchart/d9f453f5-325d-4c28-a424-548c741b3537/edit?viewport_loc=-3108%2C-4284%2C2593%2C1129%2C0_0&invitationId=inv_b892e46d-27a4-4567-9864-cc2cd041dc56)
+Enlace Lucidchart Diagram: [Open Diagram](https://lucid.app/lucidchart/d9f453f5-325d-4c28-a424-548c741b3537/edit?viewport_loc=-3108%2C-4284%2C2593%2C1129%2C0_0&invitationId=inv_b892e46d-27a4-4567-9864-cc2cd041dc56)
 
 
 Descripción de relaciones principales: 
 
-## Domain Layer Class Diagram – Relationships Description
+### Domain Layer Class Diagram – Relationships Description
 
 **Bounded Context:** Lot Publication Management
 
@@ -2243,6 +2260,7 @@ Descripción de relaciones principales:
   <img src="./assets/TablaPrincipalLotPublication.png" width="700"/>
 </p>
 
+*Figura: Bounded Context Database Design Diagram — Lot Publication Management*
 
 ## Descripción de la tabla principal
 
