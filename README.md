@@ -2754,23 +2754,23 @@ Aplican el Design System sobre el ciclo completo de oferta. La bottom navigation
 
 <table>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/mockups-confeccionista/c-m01-splash.png" alt="C-M01 — Splash" width="220"/><br><i>Figura: C-M01 — Splash</i><br/><sub><b>C-M01</b> · Splash / Acceso</sub></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/mockups-confeccionista/c-m02-onboarding.png" alt="C-M02 — Onboarding" width="220"/><br><i>Figura: C-M02 — Onboarding</i><br/><sub><b>C-M02</b> · Onboarding (rol + datos)</sub></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/mockups-confeccionista/c-m03-home.png" alt="C-M03 — Home" width="220"/><br><i>Figura: C-M03 — Home</i><br/><sub><b>C-M03</b> · Home / Mis lotes</sub></td>
+    <td align="center"><img src="assets/applications/mockups-confeccionista/c-m01-splash.png" alt="C-M01 — Splash" width="220"/><br><i>Figura: C-M01 — Splash</i><br/><sub><b>C-M01</b> · Splash / Acceso</sub></td>
+    <td align="center"><img src="assets/applications/mockups-confeccionista/c-m02-onboarding.png" alt="C-M02 — Onboarding" width="220"/><br><i>Figura: C-M02 — Onboarding</i><br/><sub><b>C-M02</b> · Onboarding (rol + datos)</sub></td>
+    <td align="center"><img src="assets/applications/mockups-confeccionista/c-m03-home.png" alt="C-M03 — Home" width="220"/><br><i>Figura: C-M03 — Home</i><br/><sub><b>C-M03</b> · Home / Mis lotes</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/mockups-confeccionista/c-m04-publicar-foto.png" alt="C-M04 — Publicar foto" width="220"/><br><i>Figura: C-M04 — Publicar foto</i><br/><sub><b>C-M04</b> · Publicar · Paso 1 (foto)</sub></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/mockups-confeccionista/c-m05-publicar-ia.png" alt="C-M05 — Publicar IA" width="220"/><br><i>Figura: C-M05 — Publicar IA</i><br/><sub><b>C-M05</b> · Publicar · Paso 2 (clasificación IA)</sub></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/mockups-confeccionista/c-m06-publicar-ubicacion.png" alt="C-M06 — Publicar ubicación" width="220"/><br><i>Figura: C-M06 — Publicar ubicación</i><br/><sub><b>C-M06</b> · Publicar · Paso 3 (ubicación)</sub></td>
+    <td align="center"><img src="assets/applications/mockups-confeccionista/c-m04-publicar-foto.png" alt="C-M04 — Publicar foto" width="220"/><br><i>Figura: C-M04 — Publicar foto</i><br/><sub><b>C-M04</b> · Publicar · Paso 1 (foto)</sub></td>
+    <td align="center"><img src="assets/applications/mockups-confeccionista/c-m05-publicar-ia.png" alt="C-M05 — Publicar IA" width="220"/><br><i>Figura: C-M05 — Publicar IA</i><br/><sub><b>C-M05</b> · Publicar · Paso 2 (clasificación IA)</sub></td>
+    <td align="center"><img src="assets/applications/mockups-confeccionista/c-m06-publicar-ubicacion.png" alt="C-M06 — Publicar ubicación" width="220"/><br><i>Figura: C-M06 — Publicar ubicación</i><br/><sub><b>C-M06</b> · Publicar · Paso 3 (ubicación)</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/mockups-confeccionista/c-m07-publicar-confirmacion.png" alt="C-M07 — Publicar confirmación" width="220"/><br><i>Figura: C-M07 — Publicar confirmación</i><br/><sub><b>C-M07</b> · Publicar · Paso 4 (confirmación)</sub></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/mockups-confeccionista/c-m08-detalle-lote.png" alt="C-M08 — Detalle de lote" width="220"/><br><i>Figura: C-M08 — Detalle de lote</i><br/><sub><b>C-M08</b> · Detalle de Mi Lote</sub></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/mockups-confeccionista/c-m09-notificacion.png" alt="C-M09 — Notificación" width="220"/><br><i>Figura: C-M09 — Notificación</i><br/><sub><b>C-M09</b> · Notificación de reserva</sub></td>
+    <td align="center"><img src="assets/applications/mockups-confeccionista/c-m07-publicar-confirmacion.png" alt="C-M07 — Publicar confirmación" width="220"/><br><i>Figura: C-M07 — Publicar confirmación</i><br/><sub><b>C-M07</b> · Publicar · Paso 4 (confirmación)</sub></td>
+    <td align="center"><img src="assets/applications/mockups-confeccionista/c-m08-detalle-lote.png" alt="C-M08 — Detalle de lote" width="220"/><br><i>Figura: C-M08 — Detalle de lote</i><br/><sub><b>C-M08</b> · Detalle de Mi Lote</sub></td>
+    <td align="center"><img src="assets/applications/mockups-confeccionista/c-m09-notificacion.png" alt="C-M09 — Notificación" width="220"/><br><i>Figura: C-M09 — Notificación</i><br/><sub><b>C-M09</b> · Notificación de reserva</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/mockups-confeccionista/c-m10-confirmar-entrega.png" alt="C-M10 — Confirmar entrega" width="220"/><br><i>Figura: C-M10 — Confirmar entrega</i><br/><sub><b>C-M10</b> · Confirmar entrega</sub></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/mockups-confeccionista/c-m11-cancelar-lote.png" alt="C-M11 — Cancelar lote" width="220"/><br><i>Figura: C-M11 — Cancelar lote</i><br/><sub><b>C-M11</b> · Cancelar lote (modal)</sub></td>
+    <td align="center"><img src="assets/applications/mockups-confeccionista/c-m10-confirmar-entrega.png" alt="C-M10 — Confirmar entrega" width="220"/><br><i>Figura: C-M10 — Confirmar entrega</i><br/><sub><b>C-M10</b> · Confirmar entrega</sub></td>
+    <td align="center"><img src="assets/applications/mockups-confeccionista/c-m11-cancelar-lote.png" alt="C-M11 — Cancelar lote" width="220"/><br><i>Figura: C-M11 — Cancelar lote</i><br/><sub><b>C-M11</b> · Cancelar lote (modal)</sub></td>
     <td></td>
   </tr>
 </table>
@@ -2795,18 +2795,18 @@ Aplican el Design System sobre el ciclo de demanda. La bottom navigation se redu
 
 <table>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/mockups-artesano/a-m01-splash.png" alt="A-M01 — Splash" width="220"/><br><i>Figura: A-M01 — Splash</i><br/><sub><b>A-M01</b> · Splash / Acceso</sub></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/mockups-artesano/a-m02-onboarding.png" alt="A-M02 — Onboarding" width="220"/><br><i>Figura: A-M02 — Onboarding</i><br/><sub><b>A-M02</b> · Onboarding (rol + datos)</sub></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/mockups-artesano/a-m03-home.png" alt="A-M03 — Home" width="220"/><br><i>Figura: A-M03 — Home</i><br/><sub><b>A-M03</b> · Home / Explorar</sub></td>
+    <td align="center"><img src="assets/applications/mockups-artesano/a-m01-splash.png" alt="A-M01 — Splash" width="220"/><br><i>Figura: A-M01 — Splash</i><br/><sub><b>A-M01</b> · Splash / Acceso</sub></td>
+    <td align="center"><img src="assets/applications/mockups-artesano/a-m02-onboarding.png" alt="A-M02 — Onboarding" width="220"/><br><i>Figura: A-M02 — Onboarding</i><br/><sub><b>A-M02</b> · Onboarding (rol + datos)</sub></td>
+    <td align="center"><img src="assets/applications/mockups-artesano/a-m03-home.png" alt="A-M03 — Home" width="220"/><br><i>Figura: A-M03 — Home</i><br/><sub><b>A-M03</b> · Home / Explorar</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/mockups-artesano/a-m04-lista-lotes.png" alt="A-M04 — Lista de lotes" width="220"/><br><i>Figura: A-M04 — Lista de lotes</i><br/><sub><b>A-M04</b> · Lista de lotes disponibles</sub></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/mockups-artesano/a-m05-detalle-lote.png" alt="A-M05 — Detalle de lote" width="220"/><br><i>Figura: A-M05 — Detalle de lote</i><br/><sub><b>A-M05</b> · Detalle de lote</sub></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/mockups-artesano/a-m06-reserva-confirmada.png" alt="A-M06 — Reserva confirmada" width="220"/><br><i>Figura: A-M06 — Reserva confirmada</i><br/><sub><b>A-M06</b> · Reserva confirmada</sub></td>
+    <td align="center"><img src="assets/applications/mockups-artesano/a-m04-lista-lotes.png" alt="A-M04 — Lista de lotes" width="220"/><br><i>Figura: A-M04 — Lista de lotes</i><br/><sub><b>A-M04</b> · Lista de lotes disponibles</sub></td>
+    <td align="center"><img src="assets/applications/mockups-artesano/a-m05-detalle-lote.png" alt="A-M05 — Detalle de lote" width="220"/><br><i>Figura: A-M05 — Detalle de lote</i><br/><sub><b>A-M05</b> · Detalle de lote</sub></td>
+    <td align="center"><img src="assets/applications/mockups-artesano/a-m06-reserva-confirmada.png" alt="A-M06 — Reserva confirmada" width="220"/><br><i>Figura: A-M06 — Reserva confirmada</i><br/><sub><b>A-M06</b> · Reserva confirmada</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/mockups-artesano/a-m07-mis-reservas.png" alt="A-M07 — Mis reservas" width="220"/><br><i>Figura: A-M07 — Mis reservas</i><br/><sub><b>A-M07</b> · Mis reservas</sub></td>
-    <td align="center"><img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/mockups-artesano/a-m08-confirmar-recepcion.png" alt="A-M08 — Confirmar recepción" width="220"/><br><i>Figura: A-M08 — Confirmar recepción</i><br/><sub><b>A-M08</b> · Confirmar recepción</sub></td>
+    <td align="center"><img src="assets/applications/mockups-artesano/a-m07-mis-reservas.png" alt="A-M07 — Mis reservas" width="220"/><br><i>Figura: A-M07 — Mis reservas</i><br/><sub><b>A-M07</b> · Mis reservas</sub></td>
+    <td align="center"><img src="assets/applications/mockups-artesano/a-m08-confirmar-recepcion.png" alt="A-M08 — Confirmar recepción" width="220"/><br><i>Figura: A-M08 — Confirmar recepción</i><br/><sub><b>A-M08</b> · Confirmar recepción</sub></td>
     <td></td>
   </tr>
 </table>
