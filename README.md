@@ -2527,7 +2527,7 @@ La consistencia entre ambas versiones garantiza que un visitante que descubra Ga
 Los mock-ups aplican sobre la estructura validada en los wireframes el Design System definido en 6.1: paleta beige claro como fondo, verde oscuro como color de interacción principal, negro para tipografía y elementos estructurales, jerarquía tipográfica de cuatro niveles (headings, body, buttons, links) y componentes de Material Design. El resultado refleja la identidad visual de GamarraLoop —sostenibilidad, reutilización y conexión con el ecosistema textil— manteniendo la legibilidad y el contraste necesarios para diseño inclusivo.
 
 Herramienta utilizada: Figma. 
-Enlace al archivo de mock-ups: [Figma](https://www.figma.com/design/J1GM7YvXifXyoHeMuIaHdP/Landing-Page?node-id=1-2)
+Enlace al archivo de mock-ups: https://www.figma.com/design/J1GM7YvXifXyoHeMuIaHdP/Landing-Page?node-id=1-2
 
 **Versión Desktop Web Browser**
 
@@ -2562,7 +2562,7 @@ Las dos aplicaciones de alcance son:
 La propuesta traduce las decisiones de Style Guidelines (6.1: paleta beige claro / verde oscuro / negro, jerarquía tipográfica de cuatro niveles, componentes basados en Material Design) y de Arquitectura de Información (6.2: Labeling, Searching, SEO/Meta y Navigation Systems) hacia layouts concretos y navegables. Cada wireframe y cada wireflow se traza explícitamente a las User Stories del Capítulo III y a los User Persona del 2.3.1, garantizando consistencia entre el espacio del problema (Capítulos I–III) y el espacio de la solución (Capítulo VI).
 
 Las herramientas utilizadas son Figma para los wireframes (mismas que en 6.3) y un layout compuesto en Figma para los wireflows que reaprovecha los frames de 6.4.1 como pasos de cada flujo. Enlace al archivo Figma con todos los wireframes y wireflow diagrams de esta sección:
-[Applications Wireframes and Wireflows](https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design)
+https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design
 
 <a name="6.4.1"></a>
 
@@ -2746,7 +2746,7 @@ Los mock-ups elevan a **alta fidelidad** los wireframes validados en 6.4.1, apli
 Se conservan los mismos identificadores de pantalla que en 6.4.1, sustituyendo el prefijo `C-W` / `A-W` (wireframe) por `C-M` / `A-M` (mock-up) para mantener la trazabilidad uno a uno entre baja y alta fidelidad.
 
 Herramienta utilizada: Figma. Enlace al archivo:
-[Applications Wireframes, Mock-ups and Prototyping](https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design)
+https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design
 
 **App Confeccionista — 11 mock-ups**
 
@@ -2830,7 +2830,7 @@ Aplican el Design System sobre el ciclo de demanda. La bottom navigation se redu
 
 Los User Flow Diagrams se derivan directamente de los Wireflow Diagrams de 6.4.2, elevando las pantallas a los mock-ups de alta fidelidad de 6.4.3 e incorporando de forma explícita, para cada User Goal, el **happy path** (ruta esperada) y los **unhappy paths** (rutas alternativas: errores, cancelaciones, expiraciones y validaciones fallidas). Se documenta un User Flow por cada User Goal de las dos aplicaciones, considerando su User Persona del 2.3.1, manteniendo la consistencia uno a uno con los wireflows de los que provienen (UG-C01…UG-C04, UG-A01…UG-A03).
 
-Herramienta utilizada: Figma. Enlace al archivo: [Applications Wireframes, Mock-ups and Prototyping](https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design)
+Herramienta utilizada: Figma. Enlace al archivo: https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design
 
 **User Flows — App Confeccionista**
 
@@ -2908,7 +2908,7 @@ El prototipo cubre los flujos UG-A01 a UG-A03, con foco en el flujo de exploraci
 
 > **Video de demostración (Microsoft Stream):** [Prototipo navegable — App Artesano](URL_PENDIENTE_STREAM_ARTESANO)
 
-Enlace al prototipo navegable en Figma: [GamarraLoop — Applications Prototype](https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design)
+Enlace al prototipo navegable en Figma: https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design
 
 > **Nota de assets:** por cada aplicación, el enunciado exige **1 screenshot del video + 1 enlace a un video subido a Microsoft Stream** que demuestre y explique los flujos principales. Reemplazá `URL_PENDIENTE_STREAM_CONFECCIONISTA` y `URL_PENDIENTE_STREAM_ARTESANO` por los enlaces reales de Stream, y subí las capturas a `assets/applications/prototyping/`.
 
