@@ -2822,8 +2822,6 @@ Aplican el Design System sobre el ciclo de demanda. La bottom navigation se redu
 - **A-M07 — Mis reservas.** Tabs Activas / Históricas; la reserva activa usa chip ámbar "Reservado" con label, deadline visible y CTA "Confirmar recepción" en verde dentro de la card.
 - **A-M08 — Confirmar recepción.** Espejo del C-M10: foto, identidad del Confeccionista, aviso de irreversibilidad en rojo de estado, checkbox y CTA "Marcar como recibido" en verde.
 
-> **Nota de assets:** los archivos `c-m01`…`c-m11` y `a-m01`…`a-m08` deben exportarse desde Figma y subirse a `assets/applications/mockups-confeccionista/` y `assets/applications/mockups-artesano/` del repositorio, siguiendo la misma convención de hotlink `raw.githubusercontent.com` usada en 6.4.1.
-
 <a name="6.4.4"></a>
 
 ### 6.4.4. Applications User Flow Diagrams.
@@ -2836,25 +2834,25 @@ Herramienta utilizada: Figma. Enlace al archivo: https://www.figma.com/design/85
 
 - **UG-C01 — "Como Confeccionista, quiero registrarme por primera vez en la app."** _User Stories:_ US04. _Happy path:_ C-M01 → C-M02 → C-M03; el usuario elige el rol, completa nombre, contacto y stand opcional y aterriza en el Home. _Unhappy paths:_ si un campo obligatorio queda vacío o el contacto tiene formato inválido, C-M02 muestra el error inline y bloquea el avance; si el contacto ya está registrado, se ofrece reingresar en lugar de duplicar el perfil.
 
-![User Flow UG-C01](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/userflows/ug-c01-registro.png)
+![User Flow UG-C01](assets/applications/userflows/ug-c01-registro.png)
 
 *Figura: User Flow UG-C01 — Registro Confeccionista*
 
 - **UG-C02 — "Como Confeccionista, quiero publicar un lote de tela."** _User Stories:_ US05, US06, US07, US10, US11. _Happy path:_ C-M03 → C-M04 → C-M05 → C-M06 → C-M07 → C-M08; foto, clasificación IA aceptada, GPS, referencia, confirmación y lote en estado Disponible. _Unhappy paths:_ si la foto es de baja calidad, C-M04 sugiere recapturar; si la clasificación de Cloud Vision falla o devuelve baja confianza, C-M05 permite la corrección manual de etiquetas (US11); si el GPS no está disponible, C-M06 exige el ingreso manual de la referencia antes de continuar.
 
-![User Flow UG-C02](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/userflows/ug-c02-publicar-lote.png)
+![User Flow UG-C02](assets/applications/userflows/ug-c02-publicar-lote.png)
 
 *Figura: User Flow UG-C02 — Publicar lote*
 
 - **UG-C03 — "Como Confeccionista, quiero recibir la reserva y confirmar la entrega."** _User Stories:_ US16, US09. _Happy path:_ C-M09 → C-M08 (Reservado) → C-M10 → C-M08 (Entregado). _Unhappy paths:_ si el Confeccionista no marca el checkbox de confirmación, el CTA de C-M10 permanece deshabilitado; si la reserva expira antes de la entrega, el lote vuelve a Disponible y la notificación se descarta.
 
-![User Flow UG-C03](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/userflows/ug-c03-reserva-entrega.png)
+![User Flow UG-C03](assets/applications/userflows/ug-c03-reserva-entrega.png)
 
 *Figura: User Flow UG-C03 — Reserva y entrega*
 
 - **UG-C04 — "Como Confeccionista, quiero cancelar un lote que ya no está disponible."** _User Stories:_ US08. _Happy path:_ C-M03 → C-M08 → C-M11 → C-M08 (Cancelado). _Unhappy paths:_ si el lote ya tiene una reserva activa, C-M11 advierte que la cancelación afectará al artesano y exige confirmación reforzada; si el usuario cierra el modal, el lote permanece Disponible sin cambios.
 
-![User Flow UG-C04](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/userflows/ug-c04-cancelar-lote.png)
+![User Flow UG-C04](assets/applications/userflows/ug-c04-cancelar-lote.png)
 
 *Figura: User Flow UG-C04 — Cancelar lote*
 
@@ -2862,23 +2860,21 @@ Herramienta utilizada: Figma. Enlace al archivo: https://www.figma.com/design/85
 
 - **UG-A01 — "Como Artesano, quiero registrarme por primera vez en la app."** _User Stories:_ US04. _Happy path:_ A-M01 → A-M02 → A-M03; alta sin contraseña y aterrizaje directo en Explorar. _Unhappy paths:_ campos inválidos muestran error inline en A-M02; si se deniega el permiso de ubicación, A-M03 se renderiza igualmente pero solicita activarlo para ordenar por proximidad.
 
-![User Flow UG-A01](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/userflows/ug-a01-registro.png)
+![User Flow UG-A01](assets/applications/userflows/ug-a01-registro.png)
 
 *Figura: User Flow UG-A01 — Registro Artesano*
 
 - **UG-A02 — "Como Artesano, quiero explorar lotes disponibles y revisar su detalle."** _User Stories:_ US12, US13. _Happy path:_ A-M03 → A-M04 → A-M05; exploración, filtrado y detalle del lote con clasificación IA y distancia. _Unhappy paths:_ si ningún lote cumple los filtros, A-M04 muestra estado vacío con sugerencia de ampliar criterios; si un lote pasa a Reservado mientras se navega, A-M05 deshabilita el CTA "Reservar" y muestra el estado actualizado.
 
-![User Flow UG-A02](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/userflows/ug-a02-explorar-detalle.png)
+![User Flow UG-A02](assets/applications/userflows/ug-a02-explorar-detalle.png)
 
 *Figura: User Flow UG-A02 — Explorar y detalle*
 
 - **UG-A03 — "Como Artesano, quiero reservar un lote y confirmar su recepción."** _User Stories:_ US14, US15. _Happy path:_ A-M05 → A-M06 → A-M07 → A-M08; reserva transaccional (US19 en backend), confirmación con deadline y recepción física confirmada. _Unhappy paths:_ si otro artesano reserva primero, la transacción falla y A-M05 informa que el lote ya no está disponible; si vence el plazo de 48 h (US21) sin confirmar recepción, la reserva expira y la card pasa a "Vencido" en A-M07.
 
-![User Flow UG-A03](https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/userflows/ug-a03-reservar-recibir.png)
+![User Flow UG-A03](assets/applications/userflows/ug-a03-reservar-recibir.png)
 
 *Figura: User Flow UG-A03 — Reservar y recibir*
-
-> **Nota de assets:** los diagramas `ug-c01`…`ug-c04` y `ug-a01`…`ug-a03` (versión User Flow sobre mock-ups, con happy/unhappy paths) deben exportarse desde Figma y subirse a `assets/applications/userflows/`.
 
 <a name="6.5."></a>
 
@@ -2909,8 +2905,6 @@ El prototipo cubre los flujos UG-A01 a UG-A03, con foco en el flujo de exploraci
 > **Video de demostración (Microsoft Stream):** [Prototipo navegable — App Artesano](URL_PENDIENTE_STREAM_ARTESANO)
 
 Enlace al prototipo navegable en Figma: https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design
-
-> **Nota de assets:** por cada aplicación, el enunciado exige **1 screenshot del video + 1 enlace a un video subido a Microsoft Stream** que demuestre y explique los flujos principales. Reemplazá `URL_PENDIENTE_STREAM_CONFECCIONISTA` y `URL_PENDIENTE_STREAM_ARTESANO` por los enlaces reales de Stream, y subí las capturas a `assets/applications/prototyping/`.
 
 <a name="8."></a>
 
