@@ -2893,7 +2893,7 @@ El prototipo cubre los flujos UG-C01 a UG-C04, con foco en el flujo de publicaci
 <img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/prototyping/proto-confeccionista-stream.png" alt="Prototipo navegable — App Confeccionista (captura del video)" width="600"/><br>
 *Figura: Captura del video de demostración — Prototipo App Confeccionista*
 
-> **Video de demostración (Microsoft Stream):** [Prototipo navegable — App Confeccionista](URL_PENDIENTE_STREAM_CONFECCIONISTA)
+> **Video de demostración (Microsoft Stream):** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220528_upc_edu_pe/IQCfE4Akn3KkSKxJGbF5blUpAYgmCNq9PNkOoKCYWdB-gDg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=8vfLhq
 
 **App Artesano**
 
@@ -2902,7 +2902,7 @@ El prototipo cubre los flujos UG-A01 a UG-A03, con foco en el flujo de exploraci
 <img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/prototyping/proto-artesano-stream.png" alt="Prototipo navegable — App Artesano (captura del video)" width="600"/><br>
 *Figura: Captura del video de demostración — Prototipo App Artesano*
 
-> **Video de demostración (Microsoft Stream):** [Prototipo navegable — App Artesano](URL_PENDIENTE_STREAM_ARTESANO)
+> **Video de demostración (Microsoft Stream):** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220528_upc_edu_pe/IQBC6WDZIPypR4p6OlF73_p3AU7xiFeQ_kONRYDf6ZO1TA8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=jQoxwB
 
 Enlace al prototipo navegable en Figma: https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design
 
