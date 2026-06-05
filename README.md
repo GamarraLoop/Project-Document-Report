@@ -3007,7 +3007,13 @@ La landing page de GamarraLoop fue desarrollada durante la fase inicial del proy
 
 Las siguientes capturas muestran las principales secciones implementadas, incluyendo la propuesta de valor, descripción del problema, funcionamiento de la solución, segmentos de usuarios, beneficios de la economía circular y mecanismos de contacto. Asimismo, se evidencia la implementación de una interfaz responsiva con soporte bilingüe (español e inglés), permitiendo una experiencia de navegación accesible desde distintos dispositivos.
 
-> **Video de demostración:** [Demostración de la Landing Page de GamarraLoop](https://miro.com/app/board/uXjVHd6pQow=/?share_link_id=174494873351)
+<img src="Img/landing-page/landing-page-deployed-desktop.png" alt="Landing Page Deployed" style="margin-bottom: 5px;" width="800"/><br>
+*Figura: Landing Page desplegada versión escritorio*
+
+<img src="Img/landing-page/landing-page-deployed-mobile.png" alt="Landing Page Deployed" style="margin-bottom: 5px;" width="800"/><br>
+*Figura: Landing Page desplegada versión móvil*
+
+> **Video de demostración:** [Demostración de la Landing Page de GamarraLoop](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211g522_upc_edu_pe/IQBtz6VKrPXwTYAS0uHEoDDnAcpis26c8AWhZXsU5S5Z4zs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=tk6lic)
 
 **Backend**
 
