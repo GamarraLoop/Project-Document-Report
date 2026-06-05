@@ -2906,6 +2906,234 @@ El prototipo cubre los flujos UG-A01 a UG-A03, con foco en el flujo de exploraci
 
 Enlace al prototipo navegable en Figma: https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design
 
+<a name="7."></a>
+
+# Capítulo VII: Product Implementation, Validation & Deployment
+
+<a name="7.1."></a>
+
+## 7.1. Software Configuration Management
+
+<a name="7.1.1."></a>
+
+### 7.1.1. Software Development Environment Configuration
+
+<a name="7.1.2."></a>
+
+### 7.1.2. Source Code Management
+
+<a name="7.1.3."></a>
+
+### 7.1.3. Source Code Style Guide & Conventions
+
+<a name="7.1.4."></a>
+
+### 7.1.4. Software Deployment Configuration
+
+<a name="7.2."></a>
+
+## 7.2. Software Implementation
+
+<a name="7.2.1."></a>
+
+### 7.2.1. Sprint 1
+
+El Sprint 1 representa el inicio de la fase de construcción de GamarraLoop, enfocándose en la implementación de los componentes tecnológicos fundamentales que soportarán el funcionamiento de la plataforma. Durante este sprint, el principal esfuerzo de desarrollo estuvo orientado a la construcción completa del backend de la solución, estableciendo la arquitectura base, la lógica de negocio y los servicios necesarios para gestionar las operaciones relacionadas con la reutilización y circulación de retazos textiles dentro del ecosistema de Gamarra. Asimismo, el proyecto cuenta con un landing page previamente desarrollado en etapas anteriores, el cual continúa sirviendo como medio de difusión de la propuesta de valor y de validación con potenciales usuarios.
+
+Como parte de este trabajo, se desarrolló una API RESTful basada en una arquitectura monolito sustentada en principios de Domain-Driven Design (DDD) y Arquitectura Hexagonal, donde se implementaron los bounded contexts del sistema, incluyendo la gestión de perfiles de usuario, lotes de textiles, reservas, entregas, notificaciones, clasificación automática de textiles mediante inteligencia artificial y la gestión automatizada de reservas vencidas, facilitando la validación temprana de los servicios desarrollados y la integración con futuros componentes del sistema.
+
+De manera complementaria, se inició el desarrollo del frontend móvil utilizando la plataforma Low-Code FlutterFlow, con el objetivo de acelerar la construcción de interfaces y validar tempranamente la experiencia de usuario. Si bien el alcance específico de las funcionalidades frontend a implementar será definido durante la ejecución del sprint, este trabajo permitirá avanzar progresivamente hacia la integración completa entre la capa de presentación y los servicios backend desarrollados.
+
+<a name="7.2.1.1."></a>
+
+#### 7.2.1.1. Sprint Planning 1
+
+| Sprint #                               | Sprint 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Sprint Planning Background**         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Date**                               | 2026-05-30                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Time**                               | 09:30 PM                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| **Location**                           | Llamada por la plataforma "Discord"                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Prepared By**                        | Gongora Castillejos, Williams                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Attendees (to planning meeting)**    | 	Huanaco Huayta, Elizabeth Lucero / Cuya Villegas, Rafael Alberto / Gongora Castillejos, Williams / Torres Garcia, Andrés Alberto / Molina Falcón, Piero Leonardo                                                                                                                                                                                                                                                                                                                                  |
+| **Sprint 1 – 1 Review Summary**        | Desarrollo completo del backend de GamarraLoop, incluyendo la implementación de los bounded contexts, la configuración de la base de datos PostgreSQL, la documentación de la API mediante Swagger/OpenAPI y la integración con servicios de clasificación de textiles mediante inteligencia artificial. Asimismo, se inició el desarrollo del frontend móvil utilizando FlutterFlow para integrar las interfaces con la API desarrollada.                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Sprint 1 – 1 Retrospective Summary** | Al tratarse del primer sprint de desarrollo, no existe una retrospectiva previa. Sin embargo, el equipo estableció los lineamientos técnicos, arquitectónicos y organizacionales que servirán de base para las siguientes iteraciones del proyecto.                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Sprint Goal & User Stories**         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Sprint #1 Goal**                     | Nuestro enfoque está en construir la infraestructura tecnológica fundamental de GamarraLoop mediante la implementación de una API REST robusta y escalable que soporte los procesos de publicación de lotes textiles, clasificación automática de materiales, reservas, entregas, notificaciones y gestión de usuarios. Creemos que esto permitirá disponer de una base sólida para el desarrollo progresivo de la aplicación móvil y la validación de los principales flujos de negocio. Esto se confirmará cuando los servicios backend se encuentren desplegados, documentados mediante Swagger e integrados progresivamente con la primera versión del frontend. |
+| **Sprint #1 Velocity**                 | [Horas comprometidas por el equipo]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Sum of Story Points**                | [Total de Story Points del Sprint]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+
+<a name="7.2.1.2."></a>
+
+#### 7.2.1.2. Sprint Backlog 1
+
+<a name="7.2.1.3."></a>
+
+#### 7.2.1.3. Development Evidence for Sprint Review
+
+Durante el Sprint 1, el equipo concentró sus esfuerzos en la consolidación de los principales componentes tecnológicos de GamarraLoop. Las actividades de desarrollo estuvieron enfocadas principalmente en la implementación completa del backend y la primera versión del frontend, así como en el mantenimiento y actualización del Landing Page utilizado para comunicar la propuesta de valor del proyecto.
+
+La evidencia presentada en esta sección corresponde a los commits registrados en los repositorios GitHub asociados a dichos componentes, los cuales permiten verificar el progreso realizado durante la iteración. Por otro lado, aunque se iniciaron actividades relacionadas con el desarrollo de la aplicación móvil mediante FlutterFlow, esta plataforma Low-Code no formó parte del flujo principal de control de versiones durante el Sprint 1. Por esta razón, la evidencia de desarrollo presentada se centra en los repositorios que registraron actividad mediante GitHub, constituyendo los principales entregables técnicos de la iteración.
+
+A continuación, se presentan los commits más representativos realizados durante el Sprint 1 para cada uno de los repositorios involucrados en el proyecto.
+
+**Landing Page**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|-----------|----------------|----------------|---------------------|
+| https://github.com/GamarraLoop/gamarra-loop-landing	 | main | 3d2d79be64414019817d1c3bdf39aad570a61ca1 | feat: initial landing page for GamarraLoop | Hero with brand wordmark, tagline, segmented language toggle (ES/EN), Side-rail navigation with scroll spy, Sections: problema, cómo funciona, segmentos, bento, testimonios, CTA, footer, Real photos for bento and lot card thumbnails (Pexels), Full ES/EN i18n (textContent + aria-label + alt), Brand palette: beige + verde oscuro (#2D5F3F) + negro, Mobile responsive with hamburger overlay, Vanilla HTML/CSS/JS — no build, no frameworks | 10/05/2026 |
+| https://github.com/GamarraLoop/gamarra-loop-landing	 | main | 9ca1386ccfb2c6d0c62a1138ee4ce60885d94031 | docs: add README with stack, structure, run instructions and team | | 10/05/2026 |
+
+
+
+**Backend**
+
+| Repository                                         | Branch | Commit Id | Commit Message                                                                 | Commit Message Body                                                                                                                                                                                                                                                                                                                                                                                         | Committed on (Date) |
+| -------------------------------------------------- | ------ | --------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| https://github.com/GamarraLoop/GamarraLoop-backend | main   | b2dc2759ab091b0b679c42636d9fc9c24713f5c8   | Initial commit: GamarraLoop Backend MVP                                        | Initial implementation of the GamarraLoop backend MVP using Spring Boot 3.4 and Java 21. Includes the bounded contexts for User Profiles, Lots, Reservations, Deliveries, Notifications, Classification and Expiration Scheduler. Integration with PostgreSQL (Supabase), Google Cloud Vision API, Swagger/OpenAPI documentation and RESTful endpoints following DDD and Hexagonal Architecture principles. | 29/05/2026          |
+| https://github.com/GamarraLoop/GamarraLoop-backend | main   | 8cc709aee5a6cd66ba2761287cb58b68fd51da01   | docs: add comprehensive README.md                                              | Added comprehensive project documentation including architecture overview, bounded contexts, setup instructions, technology stack and execution guidelines.                                                                                                                                                                                                                                                 | 29/05/2026          |
+| https://github.com/GamarraLoop/GamarraLoop-backend | main   | cee4f92820e57e81432c058a27f35d79fda74a64   | docs: Update README with project details and logo                              | Updated project documentation with branding assets, project description and additional repository information.                                                                                                                                                                                                                                                                                              | 29/05/2026          |
+
+<a name="7.2.1.4."></a>
+
+#### 7.2.1.4. Testing Suite Evidence for Sprint Review
+
+<a name="7.2.1.5."></a>
+
+#### 7.2.1.5. Execution Evidence for Sprint Review
+
+**Landing Page**
+La landing page de GamarraLoop fue desarrollada durante la fase inicial del proyecto como un canal de validación y difusión de la propuesta de valor. Su objetivo es comunicar la problemática asociada a los residuos textiles en Gamarra, presentar el funcionamiento de la plataforma y facilitar el acceso de potenciales usuarios a la aplicación móvil.
+
+Las siguientes capturas muestran las principales secciones implementadas, incluyendo la propuesta de valor, descripción del problema, funcionamiento de la solución, segmentos de usuarios, beneficios de la economía circular y mecanismos de contacto. Asimismo, se evidencia la implementación de una interfaz responsiva con soporte bilingüe (español e inglés), permitiendo una experiencia de navegación accesible desde distintos dispositivos.
+
+> **Video de demostración:** [Demostración de la Landing Page de GamarraLoop](https://miro.com/app/board/uXjVHd6pQow=/?share_link_id=174494873351)
+
+**Backend**
+
+Para el desarrollo del backend de GamarraLoop se implementó una arquitectura basada en Domain-Driven Design (DDD) y Arquitectura Hexagonal, organizando la solución en los bounded contexts de User Profiles, Lots, Classification, Reservations, Delivery y Notifications. Cada contexto encapsula una parte específica de la lógica de negocio relacionada con la gestión de usuarios, publicación y clasificación de lotes textiles, reservas, seguimiento de entregas, notificaciones y procesos automáticos de expiración.
+
+Los servicios desarrollados fueron expuestos mediante una API RESTful construida con Spring Boot y documentados utilizando Swagger/OpenAPI, permitiendo visualizar y validar los endpoints implementados durante el Sprint 1. Las capturas presentadas a continuación evidencian los controladores, recursos y operaciones disponibles para cada bounded context, facilitando la revisión funcional de la solución y la futura integración con la aplicación móvil desarrollada en FlutterFlow.
+
+<img src="Img/backend/swagger-lot-controller.png" alt="Lot Controller on Swagger" style="margin-bottom: 5px;" width="800"/><br>
+*Figura: Endpoints expuestos por el Bounded Context Lots*
+
+<img src="Img/backend/swagger-reservation-user-profile-controller.png" alt="Reservation and User Profile Controller on Swagger" style="margin-bottom: 5px;" width="800"/><br>
+*Figura: Endpoints expuestos por el Bounded Context Reservations y User Profiles*
+
+<img src="Img/backend/swagger-notification-delivery-controller.png" alt="Notification and Delivery Controller on Swagger" style="margin-bottom: 5px;" width="800"/><br>
+*Figura: Endpoints expuestos por el Bounded Context Notifications y Delivery*
+
+<img src="Img/backend/swagger-classification-controller.png" alt="Classification Controller on Swagger" style="margin-bottom: 5px;" width="800"/><br>
+*Figura: Endpoints expuestos por el Bounded Context Classification*
+
+> **Video de demostración:** [Demostración de la API Backend de GamarraLoop en Swagger](https://miro.com/app/board/uXjVHd6pQow=/?share_link_id=174494873351)
+
+
+**Frontend**
+
+> **Video de demostración:** [Demostración del frontend de GamarraLoop](https://miro.com/app/board/uXjVHd6pQow=/?share_link_id=174494873351)
+
+<a name="7.2.1.6."></a>
+
+#### 7.2.1.6. Services Documentation Evidence for Sprint Review
+
+A continuación se presentan las tablas resumen de los principales endpoints REST implementados en el backend de GamarraLoop durante el Sprint 1. Los endpoints se encuentran organizados según los bounded contexts definidos en la arquitectura del sistema, permitiendo identificar claramente las responsabilidades funcionales de cada módulo. Para cada endpoint se especifica el método HTTP utilizado, la ruta expuesta y una breve descripción de su propósito dentro de la plataforma.
+
+Esta documentación complementa la evidencia presentada mediante Swagger/OpenAPI y facilita la comprensión de los servicios disponibles para la integración con la aplicación móvil desarrollada en FlutterFlow y futuros consumidores de la API.
+
+**Bounded Context: Lots**
+El Bounded Context Lots constituye el núcleo funcional de GamarraLoop, ya que gestiona el ciclo de vida de los lotes textiles publicados por los confeccionistas. Este contexto permite registrar, consultar, actualizar y administrar la disponibilidad de los lotes, incluyendo información como la descripción del material, peso, imágenes y ubicación de recojo. Asimismo, controla los cambios de estado asociados a la publicación o retiro de los lotes, garantizando que la información presentada a los artesanos refleje en todo momento la disponibilidad real de los recursos textiles dentro de la plataforma.
+
+| Método HTTP | Acción realizada                                                                                 | Ruta del Endpoint            | Parámetros de entrada                                                                                               | Historia(s) de Usuario Relacionada(s)                                                                                               |
+| ----------- | ------------------------------------------------------------------------------------------------ | ---------------------------- | ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| GET         | Obtiene la información detallada de un lote específico.                                          | `/api/v1/lots/{id}`          | `id`                                                                                                                | US13 – Ver detalle del lote                                                                                                         |
+| GET         | Obtiene el listado de lotes registrados, permitiendo filtros opcionales por estado o publicador. | `/api/v1/lots`               | `status`, `publisherId`                                                                                             | US12 – Visualización de lotes disponibles                                                                                           |
+| POST        | Registra un nuevo lote textil en la plataforma.                                                  | `/api/v1/lots`               | `publisherId`, `title`, `description`, `textileType`, `weightKg`, `imageUrl`, `pickupLat`, `pickupLng`, `pickupRef` | US05 – Carga de imagen de lote de tela<br>US06 – Asignación automática de ubicación<br>US07 – Edición manual de ubicación de recojo |
+| PUT         | Actualiza la información de un lote existente.                                                   | `/api/v1/lots/{id}`          | `id`, `title`, `description`, `textileType`, `weightKg`, `imageUrl`, `pickupLat`, `pickupLng`, `pickupRef`          | US05 – Carga de imagen de lote de tela<br>US06 – Asignación automática de ubicación<br>US07 – Edición manual de ubicación de recojo |
+| PATCH       | Cambia el estado de un lote a retirado o cancelado, ocultándolo de las consultas públicas.       | `/api/v1/lots/{id}/withdraw` | `id`                                                                                                                | US08 – Cancelación de lote publicado                                                                                                |
+| PATCH       | Publica o republica un lote para que esté disponible para los artesanos.                         | `/api/v1/lots/{id}/publish`  | `id`                                                                                                                | US05 – Carga de imagen de lote de tela                                                                                              |
+
+**Bounded Context: Reservations**
+El Bounded Context Reservations gestiona el ciclo de vida de las reservas realizadas por los artesanos sobre los lotes textiles publicados en la plataforma. Este contexto permite registrar reservas, consultar su estado, acceder al historial asociado a lotes o artesanos y gestionar la finalización o cancelación de las mismas. La tabla presenta los endpoints REST implementados y su correspondencia con las historias de usuario y servicios definidos para este dominio.
+
+| Método HTTP | Acción realizada                                                                                                                       | Ruta del Endpoint                          | Parámetros de entrada | Historia(s) de Usuario Relacionada(s)                                            |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | --------------------- | -------------------------------------------------------------------------------- |
+| POST        | Registra una nueva reserva de un lote por parte de un artesano, asociando el lote seleccionado con el usuario que realizará el recojo. | `/api/v1/reservations`                     | `lotId`, `artisanId`  | US14 – Reserva de lote para recojo<br>US19 – Servicio transaccional de reserva   |
+| PATCH       | Marca una reserva como completada luego de que el artesano haya recibido físicamente el lote.                                          | `/api/v1/reservations/{id}/complete`       | `id`                  | US15 – Confirmación de recepción                                                 |
+| PATCH       | Cancela una reserva previamente realizada, liberando el lote para futuras reservas.                                                    | `/api/v1/reservations/{id}/cancel`         | `id`                  | US14 – Reserva de lote para recojo                                               |
+| GET         | Obtiene la información detallada de una reserva específica.                                                                            | `/api/v1/reservations/{id}`                | `id`                  | US14 – Reserva de lote para recojo                                               |
+| GET         | Obtiene todas las reservas asociadas a un lote determinado.                                                                            | `/api/v1/reservations/lot/{lotId}`         | `lotId`               | US09 – Confirmación de entrega al artesano<br>US14 – Reserva de lote para recojo |
+| GET         | Obtiene el historial de reservas realizadas por un artesano específico.                                                                | `/api/v1/reservations/artisan/{artisanId}` | `artisanId`           | US14 – Reserva de lote para recojo<br>US15 – Confirmación de recepción           |
+
+**Bounded Context: User Profiles**
+El Bounded Context User Profiles es responsable de la gestión de los perfiles de los usuarios que interactúan con la plataforma GamarraLoop. Este contexto permite registrar confeccionistas y artesanos, consultar información de perfiles existentes y mantener actualizados sus datos de contacto. La tabla presenta los endpoints REST implementados para la administración de perfiles y su relación con las historias de usuario definidas para el sistema.
+
+| Método HTTP | Acción realizada                                                                                                  | Ruta del Endpoint       | Parámetros de entrada                            | Historia(s) de Usuario Relacionada(s) |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------- | ------------------------------------------------ | ------------------------------------- |
+| GET         | Obtiene el listado de perfiles registrados en la plataforma, permitiendo filtrar por rol de usuario.              | `/api/v1/profiles`      | `role`                                           | US04 – Creación de perfil básico      |
+| POST        | Registra un nuevo perfil de usuario indicando sus datos básicos y el rol que desempeñará dentro de la plataforma. | `/api/v1/profiles`      | `fullName`, `email`, `phone`, `role`, `deviceId` | US04 – Creación de perfil básico      |
+| GET         | Obtiene la información detallada de un perfil específico.                                                         | `/api/v1/profiles/{id}` | `id`                                             | US04 – Creación de perfil básico      |
+| POST        | Actualiza la información de un perfil existente.                                                                  | `/api/v1/profiles/{id}` | `id`, `fullName`, `email`, `phone`               | US04 – Creación de perfil básico      |
+
+**Bounded Context: Notifications**
+El Bounded Context Notifications centraliza la gestión de alertas y mensajes generados por eventos relevantes dentro de GamarraLoop. Este contexto permite emitir notificaciones hacia los usuarios, consultar mensajes recibidos y gestionar su estado de lectura. Su implementación resulta fundamental para mantener informados a confeccionistas y artesanos sobre cambios importantes en el ciclo de vida de los lotes y reservas. La tabla presenta los endpoints REST implementados y su relación con las historias de usuario y servicios técnicos definidos para el sistema.
+
+| Método HTTP | Acción realizada                                                                                           | Ruta del Endpoint                     | Parámetros de entrada        | Historia(s) de Usuario Relacionada(s)                                                       |
+| ----------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------- | ---------------------------- | ------------------------------------------------------------------------------------------- |
+| POST        | Registra y envía una nueva notificación dirigida a un usuario específico de la plataforma.                 | `/api/v1/notifications`               | `userId`, `title`, `message` | US16 – Recepción de notificación de reserva<br>US22 – Servicio de emisión de notificaciones |
+| PATCH       | Marca una notificación como leída por el usuario destinatario.                                             | `/api/v1/notifications/{id}/read`     | `id`                         | US16 – Recepción de notificación de reserva                                                 |
+| GET         | Obtiene la información detallada de una notificación específica.                                           | `/api/v1/notifications/{id}`          | `id`                         | US16 – Recepción de notificación de reserva                                                 |
+| GET         | Obtiene el listado de notificaciones asociadas a un usuario, permitiendo filtrar únicamente las no leídas. | `/api/v1/notifications/user/{userId}` | `userId`, `unread`           | US16 – Recepción de notificación de reserva<br>US22 – Servicio de emisión de notificaciones |
+
+**Bounded Context: Delivery**
+El Bounded Context Delivery es responsable de gestionar el proceso de entrega y recepción de los lotes textiles reservados dentro de la plataforma GamarraLoop. Este contexto permite registrar el inicio de una entrega, realizar el seguimiento de su estado y confirmar su finalización o eventual fallo. De esta manera, se garantiza la trazabilidad de las transacciones entre confeccionistas y artesanos, asegurando que cada lote pase correctamente por las etapas posteriores a la reserva hasta su entrega efectiva.
+
+| Método HTTP | Acción realizada                                                                                                             | Ruta del Endpoint                                | Parámetros de entrada | Historia(s) de Usuario Relacionada(s)                                        |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | --------------------- | ---------------------------------------------------------------------------- |
+| POST        | Inicia el proceso de entrega asociado a una reserva previamente realizada, registrando el inicio del recojo del lote textil. | `/api/v1/deliveries/start`                       | `reservationId`       | US09 – Confirmación de entrega al artesano, US15 – Confirmación de recepción |
+| PATCH       | Marca una entrega como fallida cuando el proceso de recojo no pudo completarse exitosamente.                                 | `/api/v1/deliveries/{id}/fail`                   | `id`                  | US09 – Confirmación de entrega al artesano, US15 – Confirmación de recepción |
+| PATCH       | Marca una entrega como completada una vez que el artesano ha recibido correctamente el lote textil.                          | `/api/v1/deliveries/{id}/complete`               | `id`                  | US09 – Confirmación de entrega al artesano, US15 – Confirmación de recepción |
+| GET         | Obtiene la información detallada de una entrega específica, incluyendo su estado y fechas asociadas al proceso de recojo.    | `/api/v1/deliveries/{id}`                        | `id`                  | US09 – Confirmación de entrega al artesano, US15 – Confirmación de recepción |
+| GET         | Recupera el historial o registro de entregas asociadas a una reserva determinada.                                            | `/api/v1/deliveries/reservation/{reservationId}` | `reservationId`       | US09 – Confirmación de entrega al artesano, US15 – Confirmación de recepción |
+
+**Bounded Context: Classification**
+El Bounded Context Classification es responsable de gestionar el proceso de clasificación automática de los lotes textiles mediante el análisis de imágenes. Este contexto permite solicitar el procesamiento de una fotografía asociada a un lote, consultar el resultado de la clasificación realizada y recuperar las etiquetas generadas para un lote específico. Su propósito es proporcionar información descriptiva sobre los materiales textiles, facilitando la identificación y reutilización de los recursos disponibles dentro de la plataforma GamarraLoop.
+
+| Método HTTP | Acción realizada                                                                                                                                         | Ruta del Endpoint                     | Parámetros de entrada | Historia(s) de Usuario Relacionada(s)                                                |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- | --------------------- | ------------------------------------------------------------------------------------ |
+| POST        | Solicita la clasificación automática de un lote textil a partir de una imagen asociada, generando etiquetas descriptivas sobre el material identificado. | `/api/v1/classifications`             | `lotId`, `imageUrl`   | US10 – Extracción de metadatos de imagen, US17 – Integración con Google Cloud Vision |
+| GET         | Obtiene la información detallada de una clasificación específica, incluyendo su estado, etiquetas generadas y posibles errores de procesamiento.         | `/api/v1/classifications/{id}`        | `id`                  | US11 – Presentación de resultados de IA, US17 – Integración con Google Cloud Vision  |
+| GET         | Recupera la clasificación asociada a un lote determinado, permitiendo consultar los resultados obtenidos a partir del análisis de la imagen.             | `/api/v1/classifications/lot/{lotId}` | `lotId`               | US10 – Extracción de metadatos de imagen, US11 – Presentación de resultados de IA    |
+
+<a name="7.2.1.7."></a>
+
+#### 7.2.1.7. Software Deployment Evidence for Sprint Review
+
+<a name="7.2.1.8."></a>
+
+#### 7.2.1.8. Team Collaboration Insights during Sprint
+
+<a name="7.3."></a>
+
+## 7.3. Validation Interviews
+
+<a name="7.3.1."></a>
+
+### 7.3.1. Diseño de Entrevistas
+
+<a name="7.3.2."></a>
+
+### 7.3.2. Registro de Entrevistas
+
+<a name="7.3.3."></a>
+
+### 7.3.3. Evaluaciones según heurísticas
+
+<a name="7.4."></a>
+
+## 7.4. Video About-the-Product
+
 <a name="8."></a>
 
 # Conclusiones
