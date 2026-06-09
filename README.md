@@ -3060,7 +3060,10 @@ A continuación se presenta la relación de archivos `.feature` desarrollados pa
 
 > **Nota:** Los archivos `.feature` constituyen la especificación funcional de los Acceptance Tests del proyecto. La implementación de los archivos Step Definitions y la automatización de los escenarios se realizará en la siguiente iteración de desarrollo.
 
-**Uni Tests**
+<br> 
+
+**Uni Tests** 
+<br>
 Como parte de la estrategia de aseguramiento de calidad del Sprint 1, se desarrolló un conjunto de pruebas unitarias para validar el comportamiento de los principales agregados y servicios de aplicación implementados en el backend de GamarraLoop.
 
 Las pruebas fueron desarrolladas utilizando JUnit 5 y Mockito, permitiendo verificar de forma aislada las reglas de negocio, transiciones de estado y operaciones ejecutadas por los Command Services de los distintos bounded contexts.
@@ -3075,7 +3078,7 @@ A continuación se presenta la relación de las pruebas unitarias desarrolladas 
 
 **Bounded Context: Profiles**
 
-**UserProfileTest**
+**UserProfileTest**<br>
 Esta clase valida el comportamiento del Aggregate Root UserProfile, verificando la correcta creación de perfiles, actualización de datos y validación de reglas relacionadas con los roles de usuario.
 
 | Test Case                                    | Descripción                                                                                                | Comportamiento Validado                          |
@@ -3090,7 +3093,7 @@ Esta clase valida el comportamiento del Aggregate Root UserProfile, verificando 
 <img src="Img/testing/user-profile-unit-tests.png" alt="User Profile Unit Tests" style="margin-bottom: 5px;" width="800"/><br>
 *Figura: Pruebas unitarias desarrolladas exitosamente en el Aggregate Root User Profile*
 
-**UserProfileCommandServiceImplTest**
+**UserProfileCommandServiceImplTest**<br>
 Esta clase valida el comportamiento del servicio de aplicación UserProfileCommandServiceImpl, verificando la creación y actualización de perfiles, así como el manejo de errores cuando los recursos solicitados no existen.
 
 | Test Case                                                | Descripción                                                                                  | Comportamiento Validado                                 |
@@ -3104,7 +3107,7 @@ Esta clase valida el comportamiento del servicio de aplicación UserProfileComma
 
 **Bounded Context: Lots**
 
-**LotTest**
+**LotTest**<br>
 Esta clase valida el comportamiento del Aggregate Root Lot, verificando las transiciones de estado permitidas para un lote textil y las reglas de negocio asociadas a su publicación, actualización y reserva.
 
 | Test Case                                               | Descripción                                                                             | Comportamiento Validado                       |
@@ -3121,7 +3124,7 @@ Esta clase valida el comportamiento del Aggregate Root Lot, verificando las tran
 <img src="Img/testing/lot-unit-tests.png" alt="Lot Unit Tests" style="margin-bottom: 5px;" width="800"/><br>
 *Figura: Pruebas unitarias desarrolladas exitosamente en el Aggregate Root Lot*
 
-**LotCommandServiceImplTest**
+**LotCommandServiceImplTest**<br>
 Esta clase valida el comportamiento del servicio de aplicación LotCommandServiceImpl, verificando la correcta ejecución de los casos de uso relacionados con la creación, actualización, publicación y retiro de lotes, así como el manejo de errores cuando los recursos solicitados no existen o se encuentran en estados inválidos.
 
 | Test Case                                               | Descripción                                                                                | Comportamiento Validado                                 |
@@ -3141,7 +3144,7 @@ Esta clase valida el comportamiento del servicio de aplicación LotCommandServic
 
 **Bounded Context: Reservations**
 
-**ReservationTest**
+**ReservationTest**<br>
 Esta clase valida el comportamiento del Aggregate Root Reservation, verificando la correcta creación de reservas, las transiciones de estado permitidas y las restricciones de negocio asociadas a la finalización, cancelación y expiración de reservas.
 
 | Test Case                                                | Descripción                                                                                                                                   | Comportamiento Validado                                |
@@ -3159,7 +3162,7 @@ Esta clase valida el comportamiento del Aggregate Root Reservation, verificando 
 <img src="Img/testing/reservation-unit-tests.png" alt="Reservation Unit Tests" style="margin-bottom: 5px;" width="800"/><br>
 *Figura: Pruebas unitarias desarrolladas exitosamente en el Aggregate Root Reservation*
 
-**ReservationCommandServiceImplTest**
+**ReservationCommandServiceImplTest**<br>
 Esta clase valida el comportamiento del servicio de aplicación ReservationCommandServiceImpl, verificando la correcta creación, finalización, cancelación y expiración de reservas, así como el manejo de errores cuando una reserva no existe o cuando un lote ya posee una reserva activa.
 
 | Test Case                                                  | Descripción                                                                                             | Comportamiento Validado                                 |
