@@ -201,9 +201,30 @@ Los integrantes son:
    6.4.3. [Applications Mock-ups.](#6.4.3)<br>
    6.4.4. [Applications User Flow Diagrams.](#6.4.4)<br>
    6.5. [Applications Prototyping.](#6.5.)<br>
-7. [**Conclusiones**](#8.) <br>
-8. [**Referencias bibliográficas**](#9.) <br>
-9. [**Anexo**](#10.) <br>
+7. [**Capítulo VII: Product Implementation, Validation & Deployment.**](#7.)<br>
+   7.1. [Software Configuration Management.](#7.1.)<br>
+   7.1.1. [Software Development Environment Configuration.](#7.1.1.)<br>
+   7.1.2. [Source Code Management.](#7.1.2.)<br>
+   7.1.3. [Source Code Style Guide & Conventions.](#7.1.3.)<br>
+   7.1.4. [Software Deployment Configuration.](#7.1.4.)<br>
+   7.2. [Solution Implementation.](#7.2.)<br>
+   7.2.1. [Sprint 1.](#7.2.1.)<br>
+   7.2.1.1. [Sprint Planning 1.](#7.2.1.1.)<br>
+   7.2.1.2. [Sprint Backlog 1.](#7.2.1.2.)<br>
+   7.2.1.3. [Development Evidence for Sprint Review.](#7.2.1.3.)<br>
+   7.2.1.4. [Testing Suite Evidence for Sprint Review.](#7.2.1.4.)<br>
+   7.2.1.5. [Execution Evidence for Sprint Review.](#7.2.1.5.)<br>
+   7.2.1.6. [Services Documentation Evidence for Sprint Review.](#7.2.1.6.)<br>
+   7.2.1.7. [Software Deployment Evidence for Sprint Review.](#7.2.1.7.)<br>
+   7.2.1.8. [Team Collaboration Insights during Sprint.](#7.2.1.8.)<br>
+   7.3. [Validation Interviews.](#7.3.)<br>
+   7.3.1. [Interview Design.](#7.3.1.)<br>
+   7.3.2. [Interview Records.](#7.3.2.)<br>
+   7.3.3. [Heuristic Evaluation.](#7.3.3.)<br>
+   7.4. [Video About-the-Product.](#7.4.)<br>
+8. [**Conclusiones**](#8.) <br>
+9. [**Referencias bibliográficas**](#9.) <br>
+10. [**Anexo**](#10.) <br>
 
 # STUDENT OUTCOME
 
@@ -2997,6 +3018,163 @@ A continuación, se presentan los commits más representativos realizados durant
 <a name="7.2.1.4."></a>
 
 #### 7.2.1.4. Testing Suite Evidence for Sprint Review
+
+**Acceptance Tests (BDD) - Feature Files Design**
+
+Como parte de la estrategia de pruebas para el Sprint 1, se elaboró un conjunto inicial de archivos `.feature` utilizando el lenguaje Gherkin bajo el enfoque de Behavior-Driven Development (BDD). Estos archivos describen los escenarios funcionales esperados para cada User Story definida en el proyecto GamarraLoop, permitiendo establecer criterios de aceptación claros y compartidos entre los integrantes del equipo.
+
+Los escenarios fueron organizados de acuerdo con las épicas funcionales del sistema y constituyen la base para la futura implementación de pruebas automatizadas mediante herramientas como Cucumber. Esta etapa permitió validar el entendimiento de los requerimientos de negocio antes de desarrollar los correspondientes archivos Step Definitions y la automatización de las pruebas de aceptación.
+
+Los archivos fueron almacenados en el repositorio de pruebas del proyecto mediante el siguiente commit:
+
+| Repository                         | Branch    | Commit ID     | Commit Message                                               | Commit Message Body                   | Committed on(Date)|                                                                                                                                                  
+| ---------------------------------- | --------- | ------------- | ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |-------------|
+| https://github.com/GamarraLoop/GamarraLoop-Acceptance-Tests-Backend | main | db8dda573e061f529281da33eca118cb27fb3546 | `test: add Gherkin feature files for acceptance test design` | Added Gherkin feature files for all defined user stories. Organized scenarios by epic. Prepared acceptance test specifications for future Cucumber implementation. Covers US01 to US22. | 2026-06-08 |  
+
+A continuación se presenta la relación de archivos `.feature` desarrollados para cada User Story:
+
+| Archivo .feature                                           | Descripción                                                             | User Story Relacionada |
+|------------------------------------------------------------|-------------------------------------------------------------------------|------------------------|
+| US01-landing-page-value-proposition.feature                | Visualización de la propuesta de valor del proyecto en la Landing Page. | US01 |
+| US02-workshop-partnership-information.feature              | Consulta de información para afiliación de talleres textiles.           | US02 |
+| US03-mobile-application-download.feature                   | Redirección a la tienda de aplicaciones para descargar la app móvil.    | US03 |
+| US04-user-profile-creation.feature                         | Creación simplificada de perfiles para confeccionistas y artesanos.     | US04 |
+| US05-textile-lot-image-upload.feature                      | Carga de imágenes de lotes textiles para publicación.                   | US05 |
+| US06-automatic-pickup-location-assignmment.feature         | Asignación automática de ubicación mediante GPS.                        | US06 |
+| US07-manual-pickup-location-reference.feature              | Registro de referencias adicionales para el punto de recojo.            | US07 |
+| US08-lot-publication-cancellation.feature                  | Cancelación de publicaciones de lotes disponibles.                      | US08 |
+| US09-lot-delivery-confirmation.feature                     | Confirmación de entrega de lotes al artesano.                           | US09 |
+| US10-textile-image-metadata-extraction.feature             | Clasificación automática de textiles mediante IA.                       | US10 |
+| US11-AI-classification-results-presentation.feature        | Visualización de resultados generados por el servicio de IA.            | US11 |
+| US12-view-available-textile-lots.feature                   | Consulta de lotes disponibles para recojo.                              | US12 |
+| US13-view-lot-details.feature                              | Visualización detallada de información de un lote.                      | US13 |
+| US14-reserve-a-textile-lot-for-pickup.feature              | Reserva de lotes textiles por parte de artesanos.                       | US14 |
+| US15-confirm-receipt-of-a-textile-lot.feature              | Confirmación de recepción de lotes recolectados.                        | US15 |
+| US16-receive-reservation-notification.feature              | Notificación de reserva enviada al confeccionista.                      | US16 |
+| US17-integrate-with-google-cloud-vision.feature            | Integración con Google Cloud Vision para clasificación de imágenes.     | US17 |
+| US18-retrieve-available-textile-lots.feature               | Consulta de lotes activos mediante API REST.                            | US18 |
+| US19-transactional-lot-reservation-service.feature         | Reserva transaccional evitando concurrencia de reservas.                | US19 |
+| US20-automatic-image-compression-service.feature           | Generación automática de versiones comprimidas de imágenes.             | US20 |
+| US21-scheduled-lot-expiration-service.feature              | Expiración automática de lotes mediante tarea programada.               | US21 |
+| US22-notification-dispatch-service.feature                 | Emisión centralizada de notificaciones ante eventos de dominio.         | US22 |
+
+> **Nota:** Los archivos `.feature` constituyen la especificación funcional de los Acceptance Tests del proyecto. La implementación de los archivos Step Definitions y la automatización de los escenarios se realizará en la siguiente iteración de desarrollo.
+
+**Uni Tests**
+Como parte de la estrategia de aseguramiento de calidad del Sprint 1, se desarrolló un conjunto de pruebas unitarias para validar el comportamiento de los principales agregados y servicios de aplicación implementados en el backend de GamarraLoop.
+
+Las pruebas fueron desarrolladas utilizando JUnit 5 y Mockito, permitiendo verificar de forma aislada las reglas de negocio, transiciones de estado y operaciones ejecutadas por los Command Services de los distintos bounded contexts.
+
+El objetivo de estas pruebas fue asegurar que los componentes del dominio respondan correctamente ante escenarios válidos y situaciones excepcionales, garantizando el cumplimiento de las reglas de negocio definidas en las User Stories implementadas durante el Sprint.
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|---------|------------|----------------|--------------------|------|
+| https://github.com/GamarraLoop/GamarraLoop-backend | feature/testing-sprint-1 | 535363504127a8fd4cb32f17065ec2c023c51794 | `test: implement unit tests for Lot, Reservation and UserProfile aggregates and command services` | Added unit tests for Lot aggregate business rules. Added unit tests for Reservation aggregate lifecycle transitions. Added unit tests for UserProfile aggregate creation and updates. Added unit tests for LotCommandServiceImpl. Added unit tests for ReservationCommandServiceImpl. Added unit tests for UserProfileCommandServiceImpl. Covered success and exception scenarios using JUnit 5 and Mockito | 2026-06-08 |
+
+A continuación se presenta la relación de las pruebas unitarias desarrolladas para los tres bounded contexts seleccionados para este Sprint:
+
+**Bounded Context: Profiles**
+
+**UserProfileTest**
+Esta clase valida el comportamiento del Aggregate Root UserProfile, verificando la correcta creación de perfiles, actualización de datos y validación de reglas relacionadas con los roles de usuario.
+
+| Test Case                                    | Descripción                                                                                                | Comportamiento Validado                          |
+| -------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
+| `shouldCreateUserProfileSuccessfully`        | Verifica que un perfil se cree correctamente a partir de un `CreateUserProfileCommand`.                    | Construcción correcta del agregado UserProfile.  |
+| `shouldUpdateUserProfileSuccessfully`        | Verifica que los datos editables del perfil sean actualizados correctamente.                               | Actualización de nombre, correo y teléfono.      |
+| `shouldNotChangeRoleWhenUpdatingProfile`     | Verifica que el rol permanezca inalterable durante una actualización.                                      | Inmutabilidad del atributo `role`.               |
+| `shouldNotChangeDeviceIdWhenUpdatingProfile` | Verifica que el identificador del dispositivo no cambie al actualizar el perfil.                           | Conservación del atributo `deviceId`.            |
+| `shouldConvertRoleToUpperCaseEnum`           | Verifica que el rol recibido en minúsculas sea convertido correctamente al valor correspondiente del enum. | Conversión automática de roles hacia `UserRole`. |
+| `shouldThrowExceptionWhenRoleIsInvalid`      | Verifica que se lance una excepción cuando se proporciona un rol inexistente.                              | Validación de roles válidos del sistema.         |
+
+<img src="Img/testing/user-profile-unit-tests.png" alt="User Profile Unit Tests" style="margin-bottom: 5px;" width="800"/><br>
+*Figura: Pruebas unitarias desarrolladas exitosamente en el Aggregate Root User Profile*
+
+**UserProfileCommandServiceImplTest**
+Esta clase valida el comportamiento del servicio de aplicación UserProfileCommandServiceImpl, verificando la creación y actualización de perfiles, así como el manejo de errores cuando los recursos solicitados no existen.
+
+| Test Case                                                | Descripción                                                                                  | Comportamiento Validado                                 |
+| -------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| `shouldCreateUserProfileSuccessfully`                    | Verifica que el servicio cree correctamente un perfil y lo persista mediante el repositorio. | Caso de uso de creación de perfil.                      |
+| `shouldUpdateUserProfileSuccessfully`                    | Verifica que el servicio actualice correctamente un perfil existente.                        | Caso de uso de actualización de perfil.                 |
+| `shouldThrowExceptionWhenUpdatingNonExistingUserProfile` | Verifica que se lance una excepción cuando se intenta actualizar un perfil inexistente.      | Manejo de errores mediante `ResourceNotFoundException`. |
+
+<img src="Img/testing/user-profile-command-service-impl-unit-tests.png" alt="User Profile Command Service Implementation Unit Tests" style="margin-bottom: 5px;" width="800"/><br>
+*Figura: Pruebas unitarias desarrolladas exitosamente en la implementación de User Profile Command Service*
+
+**Bounded Context: Lots**
+
+**LotTest**
+Esta clase valida el comportamiento del Aggregate Root Lot, verificando las transiciones de estado permitidas para un lote textil y las reglas de negocio asociadas a su publicación, actualización y reserva.
+
+| Test Case                                               | Descripción                                                                             | Comportamiento Validado                       |
+| ------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------- |
+| `shouldCreateLotInDraftStatus`                          | Verifica que un lote recién creado se inicialice en estado DRAFT.                       | Estado inicial del agregado Lot.              |
+| `shouldPublishLotWhenStatusIsDraft`                     | Verifica que un lote en estado DRAFT pueda ser publicado correctamente.                 | Transición DRAFT → PUBLISHED.                 |
+| `shouldThrowExceptionWhenPublishingAlreadyPublishedLot` | Verifica que no sea posible publicar un lote que ya se encuentra publicado.             | Restricción de publicación múltiple.          |
+| `shouldWithdrawPublishedLot`                            | Verifica que un lote publicado pueda retirarse correctamente.                           | Transición PUBLISHED → WITHDRAWN.             |
+| `shouldThrowExceptionWhenWithdrawingDraftLot`           | Verifica que no se pueda retirar un lote que aún no ha sido publicado.                  | Validación de estado previo al retiro.        |
+| `shouldReservePublishedLot`                             | Verifica que un lote publicado pueda marcarse como reservado.                           | Transición PUBLISHED → RESERVED.              |
+| `shouldUpdateLotDetailsWhenDraft`                       | Verifica que los datos del lote puedan modificarse mientras permanezca en estado DRAFT. | Actualización de información del lote.        |
+| `shouldThrowExceptionWhenUpdatingPublishedLot`          | Verifica que no se puedan modificar los datos de un lote una vez publicado.             | Restricción de edición fuera de estado DRAFT. |
+
+<img src="Img/testing/lot-unit-tests.png" alt="Lot Unit Tests" style="margin-bottom: 5px;" width="800"/><br>
+*Figura: Pruebas unitarias desarrolladas exitosamente en el Aggregate Root Lot*
+
+**LotCommandServiceImplTest**
+Esta clase valida el comportamiento del servicio de aplicación LotCommandServiceImpl, verificando la correcta ejecución de los casos de uso relacionados con la creación, actualización, publicación y retiro de lotes, así como el manejo de errores cuando los recursos solicitados no existen o se encuentran en estados inválidos.
+
+| Test Case                                               | Descripción                                                                                | Comportamiento Validado                                 |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------- |
+| `shouldCreateLotSuccessfully`                           | Verifica que el servicio cree correctamente un lote y lo persista mediante el repositorio. | Caso de uso de creación de lotes.                       |
+| `shouldUpdateLotSuccessfully`                           | Verifica que un lote existente pueda actualizarse correctamente.                           | Caso de uso de actualización de lotes.                  |
+| `shouldThrowExceptionWhenUpdatingNonExistingLot`        | Verifica que se lance una excepción al intentar actualizar un lote inexistente.            | Manejo de errores mediante `ResourceNotFoundException`. |
+| `shouldPublishLotSuccessfully`                          | Verifica que un lote existente pueda publicarse correctamente.                             | Caso de uso de publicación de lotes.                    |
+| `shouldThrowExceptionWhenPublishingNonExistingLot`      | Verifica que se lance una excepción cuando el lote solicitado no existe.                   | Validación de existencia del lote.                      |
+| `shouldThrowExceptionWhenPublishingAlreadyPublishedLot` | Verifica que no sea posible publicar un lote ya publicado.                                 | Aplicación de reglas de negocio de publicación.         |
+| `shouldWithdrawLotSuccessfully`                         | Verifica que un lote publicado pueda retirarse correctamente.                              | Caso de uso de retiro de lotes.                         |
+| `shouldThrowExceptionWhenWithdrawingNonExistingLot`     | Verifica que se lance una excepción cuando se intenta retirar un lote inexistente.         | Manejo de errores de recursos inexistentes.             |
+| `shouldThrowExceptionWhenWithdrawingDraftLot`           | Verifica que no se pueda retirar un lote que aún no ha sido publicado.                     | Validación de estado antes del retiro.                  |
+
+<img src="Img/testing/lot-command-service-impl-unit-tests.png" alt="Lot Command Service Implementation Unit Tests" style="margin-bottom: 5px;" width="800"/><br>
+*Figura: Pruebas unitarias desarrolladas exitosamente en la implementación de Lot Command Service*
+
+**Bounded Context: Reservations**
+
+**ReservationTest**
+Esta clase valida el comportamiento del Aggregate Root Reservation, verificando la correcta creación de reservas, las transiciones de estado permitidas y las restricciones de negocio asociadas a la finalización, cancelación y expiración de reservas.
+
+| Test Case                                                | Descripción                                                                                                                                   | Comportamiento Validado                                |
+| -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| `shouldCreateReservationSuccessfully`                    | Verifica que una reserva se cree correctamente con los identificadores del lote y artesano, además de los valores iniciales correspondientes. | Creación correcta del agregado Reservation.            |
+| `shouldCompleteReservationSuccessfully`                  | Verifica que una reserva activa pueda marcarse como completada.                                                                               | Transición ACTIVE → COMPLETED.                         |
+| `shouldThrowExceptionWhenCompletingCancelledReservation` | Verifica que no sea posible completar una reserva previamente cancelada.                                                                      | Restricción de finalización sobre reservas canceladas. |
+| `shouldThrowExceptionWhenCompletingExpiredReservation`   | Verifica que no sea posible completar una reserva previamente expirada.                                                                       | Restricción de finalización sobre reservas expiradas.  |
+| `shouldCancelReservationSuccessfully`                    | Verifica que una reserva activa pueda cancelarse correctamente.                                                                               | Transición ACTIVE → CANCELLED.                         |
+| `shouldThrowExceptionWhenCancellingCompletedReservation` | Verifica que una reserva completada no pueda ser cancelada posteriormente.                                                                    | Restricción de cancelación sobre reservas completadas. |
+| `shouldExpireReservationSuccessfully`                    | Verifica que una reserva activa pueda marcarse como expirada.                                                                                 | Transición ACTIVE → EXPIRED.                           |
+| `shouldThrowExceptionWhenExpiringCompletedReservation`   | Verifica que una reserva completada no pueda expirar posteriormente.                                                                          | Restricción de expiración sobre reservas completadas.  |
+| `shouldSetExpirationTimeTo24HoursAfterReservation`       | Verifica que la fecha de expiración se configure automáticamente 24 horas después de la creación de la reserva.                               | Configuración automática de vigencia de reserva.       |
+
+<img src="Img/testing/reservation-unit-tests.png" alt="Reservation Unit Tests" style="margin-bottom: 5px;" width="800"/><br>
+*Figura: Pruebas unitarias desarrolladas exitosamente en el Aggregate Root Reservation*
+
+**ReservationCommandServiceImplTest**
+Esta clase valida el comportamiento del servicio de aplicación ReservationCommandServiceImpl, verificando la correcta creación, finalización, cancelación y expiración de reservas, así como el manejo de errores cuando una reserva no existe o cuando un lote ya posee una reserva activa.
+
+| Test Case                                                  | Descripción                                                                                             | Comportamiento Validado                                 |
+| ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| `shouldCreateReservationSuccessfully`                      | Verifica que el servicio cree correctamente una nueva reserva cuando el lote no posee reservas activas. | Caso de uso de creación de reservas.                    |
+| `shouldThrowExceptionWhenLotAlreadyHasActiveReservation`   | Verifica que no sea posible crear una nueva reserva para un lote que ya cuenta con una reserva activa.  | Prevención de reservas duplicadas sobre un mismo lote.  |
+| `shouldCompleteReservationSuccessfully`                    | Verifica que una reserva existente pueda completarse correctamente.                                     | Caso de uso de finalización de reservas.                |
+| `shouldThrowExceptionWhenCompletingNonExistingReservation` | Verifica que se lance una excepción cuando se intenta completar una reserva inexistente.                | Manejo de errores mediante `ResourceNotFoundException`. |
+| `shouldCancelReservationSuccessfully`                      | Verifica que una reserva existente pueda cancelarse correctamente.                                      | Caso de uso de cancelación de reservas.                 |
+| `shouldThrowExceptionWhenCancellingNonExistingReservation` | Verifica que se lance una excepción cuando se intenta cancelar una reserva inexistente.                 | Validación de existencia de la reserva.                 |
+| `shouldExpireReservationSuccessfully`                      | Verifica que una reserva existente pueda marcarse como expirada.                                        | Caso de uso de expiración de reservas.                  |
+| `shouldThrowExceptionWhenExpiringNonExistingReservation`   | Verifica que se lance una excepción cuando se intenta expirar una reserva inexistente.                  | Manejo de errores para recursos inexistentes.           |
+
+<img src="Img/testing/reservation-command-service-impl-unit-tests.png" alt="Reservation Command Service Implementation Unit Tests" style="margin-bottom: 5px;" width="800"/><br>
+*Figura: Pruebas unitarias desarrolladas exitosamente en la implementación de Reservation Command Service*
 
 <a name="7.2.1.5."></a>
 
