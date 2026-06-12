@@ -2951,6 +2951,33 @@ Enlace al prototipo navegable en Figma: https://www.figma.com/design/85CeQoBh8DO
 
 ### 7.1.4. Software Deployment Configuration
 
+En esta sección se especifica la configuración de despliegue para la solución GamarraLoop, detallando los procesos requeridos para llevar cada producto digital desde el repositorio de código fuente hasta su publicación en un entorno accesible para los usuarios finales.
+
+Nuestra arquitectura de despliegue y sus configuraciones clave están compuestas por los siguientes elementos:
+
+1.  **Backend (API REST):**
+    *   **Plataforma de despliegue:** El backend, desarrollado en Java 21 con el framework Spring Boot, se aloja en **Azure App Service** (Plan B1, entorno Linux).
+    *   **Proceso de Integración y Despliegue Continuo (CI/CD):** El despliegue está totalmente automatizado mediante **GitHub Actions**. Se ha configurado un flujo de trabajo (`workflow`) que se activa cada vez que se realiza un *push* o *merge* hacia la rama `main` del repositorio remoto (`GamarraLoop-backend`).
+    *   **Pasos del Workflow:** El servidor de integración clona el repositorio, ejecuta la compilación del código utilizando Maven (`mvnw clean package`) para empaquetarlo en un archivo ejecutable `.jar`, y finalmente publica directamente este artefacto en Azure App Service utilizando las credenciales de publicación generadas.
+    *   **Variables de Entorno y Seguridad:** Las variables críticas de configuración, tales como la cadena de conexión a la base de datos (`DATABASE_URL`), el usuario, la contraseña, y las claves para integraciones de inteligencia artificial (`VISION_API_KEY`), no se exponen en el código fuente. Se administran de forma segura como Variables de Entorno de Aplicación (Application Settings) directamente en el portal de configuración de Azure.
+
+2.  **Base de Datos Relacional:**
+    *   **Plataforma de despliegue:** Utilizamos **Supabase** (que corre sobre infraestructura de AWS en la región `us-east-2`) para proveer una instancia gestionada de **PostgreSQL**.
+    *   **Configuración:** El backend se conecta directamente a la instancia mediante una cadena de conexión remota por puerto 5432. El manejo del esquema (creación y actualización de tablas) está delegado a la propiedad `ddl-auto: update` de Hibernate, la cual evalúa y aplica los cambios en el modelo de entidades automáticamente durante el arranque del servicio backend desplegado.
+
+3.  **Frontend / Aplicación Móvil:**
+    *   **Plataforma de despliegue:** La aplicación móvil para Android y web se construye utilizando la plataforma de bajo código **FlutterFlow**.
+    *   **Configuración:** El código base generado por FlutterFlow se mantiene conectado y versionado. El entorno de FlutterFlow tiene configurado de manera centralizada en su módulo "API Calls" el `Base URL` apuntando hacia el dominio público provisto por nuestro backend en Azure (ej. `https://gamarraloop-api.azurewebsites.net/api/v1`).
+    *   **Publicación:** Para los *reviews* y distribución a los *stakeholders* y equipo de pruebas, FlutterFlow empaqueta el código fuente y permite descargar directamente el archivo instalable **APK (Android Application Package)** o probarlo vía el Test Mode en la web.
+
+**Diagrama de Despliegue (C4 Model)**
+
+A continuación, se presenta el diagrama de despliegue de nivel 4 del C4 Model, que ilustra gráficamente cómo se distribuyen los contenedores de software en la infraestructura de hardware y la plataforma en la nube utilizada para GamarraLoop.
+
+![Deployment Diagram - C4 Model](./Img/c4/deployment_diagram.png)
+
+*figura: Deployment Diagram*
+
 <a name="7.2."></a>
 
 ## 7.2. Software Implementation
@@ -3297,9 +3324,63 @@ El Bounded Context Classification es responsable de gestionar el proceso de clas
 
 #### 7.2.1.7. Software Deployment Evidence for Sprint Review
 
+Durante el presente Sprint, hemos enfocado esfuerzos significativos en establecer y configurar una infraestructura sólida en la nube que permita hospedar los servicios de GamarraLoop de manera estable, con alta disponibilidad y de forma integrada con nuestras herramientas de control de versiones. Todo esto enfocado en lograr un flujo de desarrollo y prueba ininterrumpido.
+
+Las actividades de despliegue realizadas abarcan la migración y creación de cuentas en proveedores Cloud, la configuración de recursos de cómputo y la automatización del proceso de despliegue (CI/CD). A continuación se resumen los procesos y las evidencias respectivas:
+
+1. **Migración a Azure App Service:** Se analizó el rendimiento del backend y, para evitar pausas automáticas (spin-downs) que afectaban las pruebas, se creó un entorno en la nube usando el programa *Azure for Students*. Se provisionó una instancia de **Azure App Service** (Plan Básico B1 en Linux) dedicada para correr la aplicación Spring Boot en Java 21, asegurando operatividad 24/7.
+2. **Automatización de CI/CD:** Se integró el repositorio de GitHub con el entorno de Azure. Al vincular ambas cuentas, se generó un flujo de trabajo (workflow) en **GitHub Actions** que permite que cada actualización de código (*push*) en la rama `main` sea compilada con Maven y desplegada en producción en cuestión de minutos sin intervención humana.
+3. **Inyección de Dependencias Seguras:** Se configuraron las credenciales de la base de datos de producción (Supabase/PostgreSQL) y las claves del servicio de inteligencia artificial (Google Cloud Vision API) directamente en el panel de configuración de la aplicación web en Azure, protegiendo así las variables de entorno.
+4. **Integración con Productos Finales (Frontend):** Finalmente, con el servidor en la nube funcionando y proveyendo un endpoint público estable, se ingresó a la plataforma **FlutterFlow** y se modificó la URL base del grupo de llamadas a la API, conectando con éxito el APK generado con el entorno de Azure.
+
+A continuación, se presentan las capturas en imagen que evidencian los pasos configurados y logrados durante este proceso en el Sprint:
+
+**Evidencia 1: Configuración de Recursos en el Cloud Provider (Azure)**
+*Captura de la creación o el panel principal del recurso App Service (gamarraloop-api) en el portal de Azure, mostrando el sistema operativo Linux y el runtime Java 21.*
+![Azure App Service Configuración](./Img/backend/azure1.png)
+
+*Figura: Azure App Service Configuración*
+
+**Evidencia 2: Variables de Entorno Seguras**
+*Captura del panel "Configuración > Variables de entorno" en Azure, donde se observan configuradas (con valor oculto) `DATABASE_URL`, `VISION_API_KEY`, etc.*
+![Variables de Entorno en Azure](./Img/backend/azure2.png)
+
+*Figura: Variables de Entorno en Azure*
+
+**Evidencia 3: Automatización del Despliegue (CI/CD)**
+*Captura de la pestaña "Actions" en el repositorio de GitHub, mostrando el flujo de trabajo "Build and deploy JAR app to Azure Web App" ejecutado con check verde (éxito).*
+![GitHub Actions CI/CD](./Img/backend/actions.png)
+
+*Figura: GitHub Actions CI/CD*
+
+**Evidencia 4: Producto Digital Desplegado y Disponible**
+*Captura del navegador mostrando la documentación interactiva (Swagger UI) de la API de GamarraLoop cargando desde el dominio público de Azure (`https://gamarraloop-...azurewebsites.net/api/v1/swagger-ui/index.html`).*
+![Swagger UI en Producción](./Img/backend/swagger-azure.png)
+
+*Figura: Swagger UI en Producción*
+
+**Evidencia 5: Integración Backend-Frontend**
+*Captura del panel de "API Calls" en FlutterFlow, mostrando la sección "Base URL" apuntando al dominio de Azure.*
+![Integración FlutterFlow - Azure](./Img/backend/apicalls.png)
+
+*Figura: Integración FlutterFlow - Azure*
+
 <a name="7.2.1.8."></a>
 
 #### 7.2.1.8. Team Collaboration Insights during Sprint
+
+Durante el desarrollo de las actividades de implementación de este Sprint, el equipo de GamarraLoop mantuvo un enfoque colaborativo bajo lineamientos ágiles y utilizando flujos de trabajo asíncronos y síncronos efectivos. 
+
+**Metodología de Colaboración e Implementación:**
+*   Las labores de programación se separaron por responsabilidades tecnológicas (Frontend vs. Backend), pero se mantuvieron sincronizadas mediante la definición previa de los contratos de la API (JSON requests/responses) y endpoints necesarios.
+*   **Gestión del Código Fuente:** Se utilizó **GitHub** como núcleo central de la colaboración. El equipo adoptó buenas prácticas subiendo los cambios a través de *commits* atómicos, con descripciones claras de los objetivos técnicos o funcionales alcanzados (ej. `feat: Implementación de servicio de reservas`, `fix: Corrección de latencia en peticiones a Supabase`).
+*   Todos los miembros del equipo han tenido participación demostrable en la implementación. Cada desarrollador asumió la responsabilidad de escribir código para módulos específicos, solucionar bugs, e integrar la documentación en el repositorio compartido. 
+
+A continuación, se presentan las capturas en imagen de las analíticas de colaboración provistas por GitHub y el registro de aportes que certifican la participación activa de cada integrante.
+
+![Team Collaboration Insights](./Img/contributors.png)
+
+*Figura: Team Collaboration Insights*
 
 <a name="7.3."></a>
 
