@@ -3363,7 +3363,7 @@ A continuación, se presentan las capturas en imagen que evidencian los pasos co
 *Captura del panel de "API Calls" en FlutterFlow, mostrando la sección "Base URL" apuntando al dominio de Azure.*
 ![Integración FlutterFlow - Azure](./Img/backend/apicalls.png)
 
-*Figura: Integración FlutterFlow - Azure*
+*Figura: Integración FlutterFlow - Azure - Api Calls*
 
 <a name="7.2.1.8."></a>
 
