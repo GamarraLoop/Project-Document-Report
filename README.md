@@ -3390,13 +3390,143 @@ A continuación, se presentan las capturas en imagen de las analíticas de colab
 
 ### 7.3.1. Diseño de Entrevistas
 
+Las personas entrevistadas pertenecen a los segmentos identificados del proyecto: generadores de residuos textiles (personas y talleres) y emprendedores o recicladores interesados en reutilizar estos materiales. Los participantes tendrán acceso al prototipo para conocer sus funcionalidades y brindar retroalimentación sobre la propuesta de valor. Las preguntas realizadas serán las siguientes:
+
+- ¿Qué te pareció la propuesta de GamarraLoop?
+- ¿Consideras útil una plataforma para publicar y reservar lotes de textiles reutilizables?
+- ¿Qué funcionalidad te llamó más la atención?
+- ¿Utilizarías esta plataforma en tu actividad diaria? ¿Por qué?
+- ¿Qué aspectos mejorarías de la plataforma?
+- ¿Recomendarías GamarraLoop a otras personas o negocios relacionados con el sector textil?
+
+
 <a name="7.3.2."></a>
 
 ### 7.3.2. Registro de Entrevistas
 
+| Nombre del Entrevistado | Edad | Distrito | Segmento Objetivo | Tiempo de inicio |
+|-------------------------|-------|-----------|-------------------|------------------|
+| Pendiente | Pendiente | Pendiente | Generador de Residuos Textiles | Pendiente |
+| Pendiente | Pendiente | Pendiente | Emprendedor / Reciclador Textil | Pendiente |
+
+<br>
+
+| Entrevistado | Segmento Objetivo | Resumen | Captura Video | Timing y Duración | Link del timing en el conglomerado de entrevistas |
+|--------------|------------------|----------|---------------|-------------------|---------------------------------------------------|
+| Pendiente | Generador de Residuos Textiles | Pendiente de entrevista. | Pendiente | Pendiente | Pendiente |
+| Pendiente | Emprendedor / Reciclador Textil | Pendiente de entrevista. | Pendiente | Pendiente | Pendiente |
+
 <a name="7.3.3."></a>
 
 ### 7.3.3. Evaluaciones según heurísticas
+
+**Carrera:** Ingeniería de Software  
+**Curso:** Arquitecturas de Software Emergentes  
+**Sección:** 10042  
+**Profesores:** Royer Edelwer Rojas Malasquez 
+**Auditor:** GamarraLoop Development Team
+**Cliente:** Pendiente  
+**SITE o APP a evaluar:** GamarraLoop
+
+#### Tareas a evaluar
+
+- Vista principal de la plataforma.
+- Registro e inicio de sesión.
+- Publicación de lotes textiles.
+- Visualización de lotes disponibles.
+- Reserva de lotes textiles.
+- Gestión de reservas.
+- Seguimiento de recolección y entrega.
+- Gestión de notificaciones.
+- Perfil de usuario.
+
+---
+
+#### Escala de severidad
+
+| Nivel | Descripción |
+|---------|-------------|
+| 1 | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser corregido inmediatamente. |
+| 2 | Problema menor: puede afectar la experiencia del usuario ocasionalmente. Se recomienda corregirlo en futuras versiones. |
+| 3 | Problema mayor: ocurre frecuentemente o dificulta significativamente el uso de la plataforma. Debe corregirse con prioridad alta. |
+| 4 | Problema crítico: impide completar tareas importantes o continuar utilizando la plataforma. Debe corregirse antes del despliegue final. |
+
+---
+
+#### Tabla de resumen
+
+| # | Problema | Escala de severidad | Heurística/Principio Violado(a) |
+|---|-----------|-------------------|--------------------------------|
+| 1 | Pendiente | - | - |
+| 2 | Pendiente | - | - |
+| 3 | Pendiente | - | - |
+| 4 | Pendiente | - | - |
+
+---
+
+#### Descripción de problemas
+
+### Problema #1
+
+**Severidad:** Pendiente
+
+**Heurística violada:** Pendiente
+
+**Problema:**
+
+Pendiente de evaluación heurística.
+
+**Recomendación:**
+
+Pendiente de evaluación heurística.
+
+---
+
+### Problema #2
+
+**Severidad:** Pendiente
+
+**Heurística violada:** Pendiente
+
+**Problema:**
+
+Pendiente de evaluación heurística.
+
+**Recomendación:**
+
+Pendiente de evaluación heurística.
+
+---
+
+### Problema #3
+
+**Severidad:** Pendiente
+
+**Heurística violada:** Pendiente
+
+**Problema:**
+
+Pendiente de evaluación heurística.
+
+**Recomendación:**
+
+Pendiente de evaluación heurística.
+
+---
+
+### Problema #4
+
+**Severidad:** Pendiente
+
+**Heurística violada:** Pendiente
+
+**Problema:**
+
+Pendiente de evaluación heurística.
+
+**Recomendación:**
+
+Pendiente de evaluación heurística.
 
 <a name="7.4."></a>
 
