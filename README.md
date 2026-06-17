@@ -2935,6 +2935,11 @@ Enlace al prototipo navegable en Figma: https://www.figma.com/design/85CeQoBh8DO
 
 ## 7.1. Software Configuration Management
 
+
+<a name="7.1.1."></a>
+
+### 7.1.1. Software Development Environment Configuration
+
 Para el desarrollo de GamarraLoop se utilizó una arquitectura compuesta por una aplicación móvil desarrollada en FlutterFlow y un backend implementado mediante Java y Spring Boot. Esta combinación permitió acelerar el desarrollo de la interfaz de usuario y, al mismo tiempo, contar con una capa de servicios robusta, escalable y alineada con buenas prácticas de arquitectura de software.
 
 Las herramientas y tecnologías utilizadas fueron las siguientes:
@@ -2955,10 +2960,6 @@ Las herramientas y tecnologías utilizadas fueron las siguientes:
 | Azure App Service | Despliegue del backend en producción |
 
 El backend fue desplegado en Azure App Service, permitiendo el acceso permanente a los servicios REST y a la documentación interactiva de la API mediante Swagger.
-
-<a name="7.1.1."></a>
-
-### 7.1.1. Software Development Environment Configuration
 
 <a name="7.1.2."></a>
 
