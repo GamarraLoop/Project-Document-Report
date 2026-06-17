@@ -2965,6 +2965,26 @@ El backend fue desplegado en Azure App Service, permitiendo el acceso permanente
 
 ### 7.1.2. Source Code Management
 
+La gestión del código fuente se realizó mediante Git y GitHub, permitiendo un desarrollo colaborativo y un seguimiento completo de los cambios realizados durante el proyecto. Se utilizó una estrategia basada en ramas para separar el trabajo de cada integrante y reducir conflictos durante la integración. Las funcionalidades fueron desarrolladas de manera independiente y posteriormente integradas mediante Pull Requests.
+
+| Rama | Descripción |
+| ---- | ----------- |
+| main | Versión estable del proyecto |
+| feature/* | Desarrollo de nuevas funcionalidades |
+| chapter-* | Desarrollo de documentación |
+| hotfix/* | Corrección de errores |
+
+Flujo de trabajo
+1. Creación de una rama para cada tarea asignada.
+2. Desarrollo y pruebas locales.
+3. Registro de cambios mediante commits descriptivos.
+4. Creación de Pull Requests.
+5. Revisión y resolución de conflictos.
+6. Integración mediante Merge hacia la rama principal.
+
+Este enfoque permitió mantener la trazabilidad de los cambios, facilitar la colaboración entre los miembros del equipo y reducir errores durante el proceso de integración.
+
+
 <a name="7.1.3."></a>
 
 ### 7.1.3. Source Code Style Guide & Conventions
