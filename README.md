@@ -2989,6 +2989,71 @@ Este enfoque permitió mantener la trazabilidad de los cambios, facilitar la col
 
 ### 7.1.3. Source Code Style Guide & Conventions
 
+Con el objetivo de mantener la calidad, legibilidad y mantenibilidad del software, se definieron convenciones de desarrollo alineadas con las buenas prácticas recomendadas para aplicaciones Java basadas en Spring Boot.
+
+| Elemento | Convención |
+| -------- | ---------- |
+| Clases | PascalCase |
+| Interfaces | PascalCase |
+| Métodos | camelCase |
+| Variables | camelCase |
+| Constantes | UPPER_SNAKE_CASE |
+| Endpoints REST | kebab-case |
+| Paquetes | lowercase |
+
+**Arquitectura del proyecto**
+
+El backend fue desarrollado siguiendo los principios de Domain-Driven Design (DDD) y Arquitectura Hexagonal (Ports & Adapters), organizando el sistema en siete Bounded Contexts independientes y un módulo compartido.
+
+Los principales módulos fueron:
+
+| Módulo | Responsabilidad |
+| ------- | -------------- |
+| Profiles | Gestión de perfiles de usuario |
+| Lots | Gestión de lotes textiles |
+| Classification | Clasificación automática mediante IA |
+| Reservations | Gestión de reservas |
+| Delivery | Seguimiento de entregas |
+| Notifications | Sistema de notificaciones |
+| Expiration | Expiración automática de reservas |
+| Shared | Componentes compartidos del sistema |
+
+La estructura general del proyecto se organizó en capas:
+
+domain/
+application/
+infrastructure/
+interfaces/
+
+Esta organización permitió separar claramente la lógica de negocio, los casos de uso, la persistencia de datos y la exposición de servicios REST.
+
+| Práctica | Descripción |
+| -------- | ----------- |
+| DTOs | Transferencia estructurada de datos entre capas |
+| Bean Validation | Validación de entradas mediante Jakarta Validation |
+| Spring Data JPA | Persistencia desacoplada de la lógica de negocio |
+| Lombok | Reducción de código repetitivo |
+| Swagger/OpenAPI | Documentación automática de servicios REST |
+| Global Exception Handler | Manejo centralizado de errores |
+| Google Cloud Vision API | Integración desacoplada con servicios externos |
+| DDD + Hexagonal | Separación clara de responsabilidades y dominios |
+
+**Convención de commits**
+
+Se utilizaron mensajes descriptivos para facilitar la trazabilidad de cambios:
+
+| Prefijo | Uso | Ejemplo |
+| -------- | ----------- | ----------- |
+| feat | Nueva funcionalidad | feat: implementar publicación de lotes textiles |
+| fix | Corrección de errores | fix: corregir validación de reservas |
+| docs | Cambios en documentación | docs: actualizar documentación del backend |
+| refactor | Reestructuración sin cambiar funcionalidad | refactor: reorganizar bounded contexts |
+| style | Cambios de formato o estilo de código | style: mejorar indentación de controladores |
+| test | Creación o actualización de pruebas | test: agregar pruebas para reservas |
+| chore | Tareas de mantenimiento o configuración | chore: actualizar dependencias Maven |
+
+La aplicación de estas convenciones permitió mantener un código consistente, facilitar el trabajo colaborativo y mejorar la mantenibilidad del sistema durante todo el ciclo de desarrollo.
+
 <a name="7.1.4."></a>
 
 ### 7.1.4. Software Deployment Configuration
