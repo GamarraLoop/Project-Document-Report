@@ -3113,14 +3113,33 @@ De manera complementaria, se inició el desarrollo del frontend móvil utilizand
 | **Attendees (to planning meeting)**    | 	Huanaco Huayta, Elizabeth Lucero / Cuya Villegas, Rafael Alberto / Gongora Castillejos, Williams / Torres Garcia, Andrés Alberto / Molina Falcón, Piero Leonardo                                                                                                                                                                                                                                                                                                                                  |
 | **Sprint 1 – 1 Review Summary**        | Desarrollo completo del backend de GamarraLoop, incluyendo la implementación de los bounded contexts, la configuración de la base de datos PostgreSQL, la documentación de la API mediante Swagger/OpenAPI y la integración con servicios de clasificación de textiles mediante inteligencia artificial. Asimismo, se inició el desarrollo del frontend móvil utilizando FlutterFlow para integrar las interfaces con la API desarrollada.                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | **Sprint 1 – 1 Retrospective Summary** | Al tratarse del primer sprint de desarrollo, no existe una retrospectiva previa. Sin embargo, el equipo estableció los lineamientos técnicos, arquitectónicos y organizacionales que servirán de base para las siguientes iteraciones del proyecto.                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| **Sprint Goal & User Stories**         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Sprint Goal & User Stories**         | Objetivo del Sprint: Implementar los bounded contexts principales del sistema (Profiles, Lots y Reservations), permitiendo registrar usuarios, publicar lotes textiles, consultar lotes disponibles y gestionar reservas de forma segura mediante servicios transaccionales. Esta iteración establece la base funcional sobre la cual se desarrollarán posteriormente los servicios de clasificación mediante IA, notificaciones y automatización de procesos.<br><br>Historias de Usuario comprometidas: US01, US02, US03, US04, US05, US06, US07, US08, US12, US13, US14, US18 y US19.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | **Sprint #1 Goal**                     | Nuestro enfoque está en construir la infraestructura tecnológica fundamental de GamarraLoop mediante la implementación de una API REST robusta y escalable que soporte los procesos de publicación de lotes textiles, clasificación automática de materiales, reservas, entregas, notificaciones y gestión de usuarios. Creemos que esto permitirá disponer de una base sólida para el desarrollo progresivo de la aplicación móvil y la validación de los principales flujos de negocio. Esto se confirmará cuando los servicios backend se encuentren desplegados, documentados mediante Swagger e integrados progresivamente con la primera versión del frontend. |
-| **Sprint #1 Velocity**                 | [Horas comprometidas por el equipo]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| **Sum of Story Points**                | [Total de Story Points del Sprint]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Sprint #1 Velocity**                 | 63 horas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Sum of Story Points**                | 47 puntos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
 <a name="7.2.1.2."></a>
 
 #### 7.2.1.2. Sprint Backlog 1
+
+Para el Sprint 1 se definió como objetivo desarrollar la primera versión funcional de la solución GamarraLoop, enfocándose principalmente en la implementación de los bounded contexts esenciales del backend relacionados con la gestión de perfiles de usuario, publicación de lotes textiles y reservas de lotes. Asimismo, se avanzó en la implementación de componentes clave del frontend móvil, permitiendo presentar la propuesta de valor del producto, facilitar el acceso a la aplicación y validar los principales flujos de interacción entre confeccionistas y artesanos. Este incremento sienta las bases arquitectónicas y funcionales necesarias para la incorporación de servicios avanzados y funcionalidades complementarias en el siguiente sprint.
+
+| User Story ID | Título                                | Work Item ID | Tarea Técnica                     | Descripción                                                                                 | Estimación (Horas) | Story Points | Asignado a | Estado |
+| ------------- | ------------------------------------- | ------------ | --------------------------------- | ------------------------------------------------------------------------------------------- | ------------------ | ------------ | ---------- | ------ |
+| US01          | Propuesta de valor en Landing Page    | WT-01        | Landing Page Hero Section         | Implementar la sección principal de la Landing Page con la propuesta de valor del proyecto. | 4h                 | 3            | Equipo     | Done   |
+| US02          | Sección de contacto para talleres     | WT-02        | Workshop Partnership Section      | Implementar sección informativa para afiliación de talleres textiles.                       | 4h                 | 3            | Equipo     | Done   |
+| US03          | Redirección a descarga de App         | WT-03        | Download Application Section      | Implementar botones de descarga y redirección a la aplicación móvil.                        | 2h                 | 2            | Equipo     | Done   |
+| US04          | Creación de perfil básico             | WT-04        | User Profile API                  | Implementar creación y persistencia de perfiles de usuario según rol seleccionado.          | 6h                 | 5            | Elizabeth  | Done   |
+| US05          | Carga de imagen de lote de tela       | WT-05        | Lot Creation Service              | Implementar recepción y almacenamiento inicial de imágenes de lotes textiles.               | 6h                 | 5            | Elizabeth  | Done   |
+| US06          | Asignación automática de ubicación    | WT-06        | GPS Location Service              | Registrar coordenadas geográficas asociadas al lote publicado.                              | 4h                 | 3            | Elizabeth  | Done   |
+| US07          | Edición manual de ubicación de recojo | WT-07        | Pickup Reference Service          | Permitir agregar referencias descriptivas para el punto de recojo.                          | 3h                 | 2            | Elizabeth  | Done   |
+| US08          | Cancelación de lote publicado         | WT-08        | Lot Withdrawal Service            | Implementar cambio de estado de lote publicado a retirado.                                  | 4h                 | 3            | Elizabeth  | Done   |
+| US12          | Visualización de lotes disponibles    | WT-09        | Lots Query Service                | Implementar consulta de lotes disponibles para artesanos.                                   | 6h                 | 5            | Elizabeth  | Done   |
+| US13          | Ver detalle del lote                  | WT-10        | Lot Detail Service                | Implementar consulta detallada de información de un lote específico.                        | 4h                 | 3            | Elizabeth  | Done   |
+| US14          | Reserva de lote para recojo           | WT-11        | Reservation Service               | Implementar creación y gestión inicial de reservas de lotes.                                | 8h                 | 5            | Elizabeth  | Done   |
+| US18          | Endpoint de listado de lotes activos  | WT-12        | Lots REST Endpoint                | Exponer endpoint REST para consulta de lotes disponibles.                                   | 4h                 | 3            | Elizabeth  | Done   |
+| US19          | Servicio transaccional de reserva     | WT-13        | Transactional Reservation Service | Implementar lógica transaccional para evitar reservas concurrentes sobre un mismo lote.     | 8h                 | 5            | Elizabeth  | Done   |
+
 
 <a name="7.2.1.3."></a>
 
@@ -3353,7 +3372,35 @@ Los servicios desarrollados fueron expuestos mediante una API RESTful construida
 
 **Frontend**
 
-> **Video de demostración:** [Demostración del frontend de GamarraLoop](https://miro.com/app/board/uXjVHd6pQow=/?share_link_id=174494873351)
+|  IAM                          |                                  |
+| ----------------------------- | -------------------------------- |
+| ![](Img/frontend/login-page.png)           | ![](Img/frontend/register-page.png)           |
+| *Figura: Inicio de sesión.* | *Figura: Registro de usuario.* |
+
+|       Lots                                     |                                             |
+| ------------------------------------------ | ------------------------------------------- |
+| ![](Img/frontend/lots-list.png)                         | ![](Img/frontend/available-lots.png)                     |
+| *Figura: Listado de lotes textiles.*     | *Figura: Lotes disponibles para reserva.* |
+| ![](Img/frontend/lot-details.png)                       | ![](Img/frontend/create-lot.png)                         |
+| *Figura: Detalle de lote textil.*        | *Figura: Creación de lote textil.*        |
+| ![](Img/frontend/cancel-lot.png)                        |                                             |
+| *Figura: Cancelación de lote publicado.* |                                             |
+
+
+| Reservations                                    |                                    |
+| ----------------------------------- | ---------------------------------- |
+| ![](Img/frontend/reservated-lot.png)             | ![](Img/frontend/my-reservations.png)           |
+| *Figura: Reserva de lote textil.* | *Figura: Historial de reservas.* |
+
+
+| Pick up and delivery                                              |
+| --------------------------------------------- |
+| ![](Img/frontend/gps-location-pickup.png)                  |
+| *Figura: Selección de ubicación de recojo.* |
+
+
+
+> **Video de demostración:** [Demostración del frontend de GamarraLoop](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211g522_upc_edu_pe/IQCfVTJL9sDxSp1S-xuUnBp-ARAJHiLwECK8116jlZ9ZlYE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=b6uUSh)
 
 <a name="7.2.1.6."></a>
 
