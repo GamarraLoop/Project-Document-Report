@@ -3367,10 +3367,19 @@ Los servicios desarrollados fueron expuestos mediante una API RESTful construida
 <img src="Img/backend/swagger-classification-controller.png" alt="Classification Controller on Swagger" style="margin-bottom: 5px;" width="800"/><br>
 *Figura: Endpoints expuestos por el Bounded Context Classification*
 
-> **Video de demostración:** [Demostración de la API Backend de GamarraLoop en Swagger](https://miro.com/app/board/uXjVHd6pQow=/?share_link_id=174494873351)
+> **Video de demostración:** [Demostración de la API Backend de GamarraLoop en Swagger](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c186_upc_edu_pe/IQA5qqRlUG1uQZd2ZuEb9yVoAbQvdftkbcyxRHdb8pozZBE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=VovDh4)
 
 
 **Frontend**
+
+Para el desarrollo del frontend de GamarraLoop se empleó la plataforma low-code *FlutterFlow*, permitiendo acelerar la construcción de la aplicación móvil mediante un enfoque visual basado en componentes, flujos de navegación e integración con servicios externos. La interfaz fue diseñada siguiendo la estructura de los bounded contexts definidos en la arquitectura del sistema, incluyendo Profiles, Lots, Classifications, Reservations, Pick Up and Delivery, y Notifications.
+
+Durante el Sprint 1 se implementaron las principales pantallas asociadas a los procesos de autenticación, gestión de perfiles, publicación y consulta de lotes textiles, reservas de materiales y coordinación de recojos. Asimismo, se definió la navegación parcial de la aplicación mediante un storyboard que representa las relaciones entre las distintas vistas y los flujos de interacción del usuario.
+
+<img src="Img/frontend/storyboard-1.png" alt="GamarraLoop´s storyboard" style="margin-bottom: 5px;" width="800"/><br>
+*Figura: Estructura de navegación parcial del frontend móvil desarrollada en FlutterFlow.*
+
+Las capturas presentadas a continuación evidencian las interfaces desarrolladas en FlutterFlow, mostrando las funcionalidades implementadas y la experiencia de usuario propuesta para la plataforma. Estas pantallas constituyen la primera versión funcional de la aplicación móvil y servirán como base para la integración progresiva con los servicios backend desarrollados durante el proyecto.
 
 |  IAM                          |                                  |
 | ----------------------------- | -------------------------------- |
