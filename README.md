@@ -3553,13 +3553,145 @@ A continuación, se presentan las capturas en imagen de las analíticas de colab
 
 ### 7.3.1. Diseño de Entrevistas
 
+Las personas entrevistadas pertenecen a los segmentos identificados del proyecto: generadores de residuos textiles (personas y talleres) y emprendedores o recicladores interesados en reutilizar estos materiales. Los participantes tendrán acceso al prototipo para conocer sus funcionalidades y brindar retroalimentación sobre la propuesta de valor. Las preguntas realizadas serán las siguientes:
+
+- ¿Qué te pareció la propuesta de GamarraLoop?
+- ¿Consideras útil una plataforma para publicar y reservar lotes de textiles reutilizables?
+- ¿Qué funcionalidad te llamó más la atención?
+- ¿Utilizarías esta plataforma en tu actividad diaria? ¿Por qué?
+- ¿Qué aspectos mejorarías de la plataforma?
+- ¿Recomendarías GamarraLoop a otras personas o negocios relacionados con el sector textil?
+
+
 <a name="7.3.2."></a>
 
 ### 7.3.2. Registro de Entrevistas
 
+| Nombre del Entrevistado | Edad | Distrito | Segmento Objetivo | Tiempo de inicio |
+|-------------------------|-------|-----------|-------------------|------------------|
+| Richard Velasquez  | 40 | Jesus Maria | Generador de Residuos Textiles | 0:04 |
+| Yolanda Quiroz | 32 | San Miguel | Emprendedor / Reciclador Textil | 0:03 |
+
+<br>
+
+| Entrevistado      | Segmento Objetivo               | Resumen                                                                                                                                                                                                                                                                                                                             | Captura Video | Timing y Duración         | Link del timing en el conglomerado de entrevistas |
+| ----------------- | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | ------------------------- | ------------------------------------------------- |
+| Richard Velasquez | Generador de Residuos Textiles  | Richard considera que GamarraLoop puede ayudar a reducir el desperdicio textil al conectar talleres con personas interesadas en reutilizar materiales. Indicó que utilizaría la plataforma porque le permitiría dar salida a excedentes textiles que actualmente desecha. Sugirió mejorar la visualización de los lotes publicados. | <img src="Img/Comerciante.png" width="150">   | Timing 0:04 Duración 6:56 | [Entrevista Comerciante](https://upcedupe-my.sharepoint.com/personal/u201610857_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu201610857%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevista%5Fcomerciante%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E90edde32%2D960e%2D41ef%2Dbe3c%2Dbbf5dc718c7f)                                              |
+| Yolanda Quiroz    | Emprendedor / Reciclador Textil | Yolanda destacó que la plataforma facilita encontrar materiales reutilizables para sus proyectos. Mencionó que la interfaz es sencilla y que utilizaría la aplicación para encontrar proveedores de textiles reciclables. Sugirió agregar más información sobre la calidad y estado de los materiales.                              | <img src="Img/Artesana.png" width="150">    | Timing: 0:03 Duración: 7:46 | [Entrevista Artesana](https://upcedupe-my.sharepoint.com/personal/u201610857_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu201610857%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevista%5FArtesana%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ecff49c4b%2D03f2%2D404a%2D9c82%2D32077b478a1e)
+                                              |
+
+                                              
 <a name="7.3.3."></a>
 
 ### 7.3.3. Evaluaciones según heurísticas
+
+**Carrera:** Ingeniería de Software  
+**Curso:** Arquitecturas de Software Emergentes  
+**Sección:** 10042  
+**Profesores:** Royer Edelwer Rojas Malasquez 
+**Auditor:** GamarraLoop Development Team
+**Cliente:** Richard Velasquez    
+**SITE o APP a evaluar:** GamarraLoop
+
+#### Tareas a evaluar
+
+- Vista principal de la plataforma.
+- Registro e inicio de sesión.
+- Publicación de lotes textiles.
+- Visualización de lotes disponibles.
+- Reserva de lotes textiles.
+- Gestión de reservas.
+- Seguimiento de recolección y entrega.
+- Gestión de notificaciones.
+- Perfil de usuario.
+
+---
+
+#### Escala de severidad
+
+| Nivel | Descripción |
+|---------|-------------|
+| 1 | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser corregido inmediatamente. |
+| 2 | Problema menor: puede afectar la experiencia del usuario ocasionalmente. Se recomienda corregirlo en futuras versiones. |
+| 3 | Problema mayor: ocurre frecuentemente o dificulta significativamente el uso de la plataforma. Debe corregirse con prioridad alta. |
+| 4 | Problema crítico: impide completar tareas importantes o continuar utilizando la plataforma. Debe corregirse antes del despliegue final. |
+
+---
+
+#### Tabla de resumen
+
+| # | Problema                                                                            | Escala de severidad | Heurística/Principio Violado(a)     |
+| - | ----------------------------------------------------------------------------------- | ------------------- | ----------------------------------- |
+| 1 | Información insuficiente sobre la calidad y estado de los lotes textiles publicados | 3                   | Match Between System and Real World |
+| 2 | Visualización poco clara de los lotes disponibles                                   | 2                   | Aesthetic and Minimalist Design     |
+| 3 | Falta de detalles sobre el proceso de reserva y recolección                         | 3                   | Visibility of System Status         |
+| 4 | Escasa información descriptiva en algunas publicaciones de textiles                 | 2                   | Recognition Rather Than Recall      |
+
+
+
+#### Descripción de problemas
+
+### Problema #1: La ubicación podría mostrarse de forma más amigable
+
+**Severidad:** 1
+
+**Heurística violada:** Match Between System and Real World
+
+**Problema:**
+
+En el detalle del lote se muestra el punto de recojo con mapa y coordenadas. Sin embargo, para algunos usuarios podría ser más claro visualizar también una referencia textual del lugar.
+
+**Recomendación:**
+
+Agregar una dirección o referencia breve junto al mapa para facilitar la comprensión del punto de recojo.
+
+---
+
+### Problema #2: Los estados de reserva podrían tener mayor detalle
+
+**Severidad:** 2
+
+**Heurística violada:** Visibility of System Status
+
+**Problema:**
+
+En la sección de reservas se muestran estados como "Completado" o "Vendido". Aunque permiten conocer el estado general, podrían complementarse con mayor detalle sobre el proceso.
+
+**Recomendación:**
+
+Agregar una breve descripción o historial simple para que el usuario entienda mejor el avance de cada reserva.
+
+---
+
+### Problema #3: La clasificación automática podría explicar mejor sus resultados
+
+**Severidad:** 2
+
+**Heurística violada:** Visibility of System Status
+
+**Problema:**
+
+La plataforma clasifica los lotes textiles mediante inteligencia artificial. Sin embargo, el resultado podría ser más claro si se muestran brevemente las características detectadas.
+
+**Recomendación:**
+
+Mostrar etiquetas o una pequeña explicación sobre las características identificadas por la IA, como tipo de tela, color o estado aproximado.
+
+---
+
+### Problema #4: El perfil podría mostrar más información del impacto del usuario
+
+**Severidad:** 1
+
+**Heurística violada:** Recognition Rather Than Recall
+
+**Problema:**
+
+La sección de perfil muestra el impacto del usuario mediante los lotes recuperados. No obstante, podría ser útil mostrar un poco más de detalle sobre cómo se generó ese impacto.
+
+**Recomendación:**
+
+Agregar un pequeño historial o resumen de actividad para visualizar los lotes recuperados y el aporte generado dentro de la plataforma.
 
 <a name="7.4."></a>
 
