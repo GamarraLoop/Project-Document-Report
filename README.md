@@ -3406,15 +3406,17 @@ Las personas entrevistadas pertenecen a los segmentos identificados del proyecto
 
 | Nombre del Entrevistado | Edad | Distrito | Segmento Objetivo | Tiempo de inicio |
 |-------------------------|-------|-----------|-------------------|------------------|
-| Pendiente | Pendiente | Pendiente | Generador de Residuos Textiles | Pendiente |
-| Pendiente | Pendiente | Pendiente | Emprendedor / Reciclador Textil | Pendiente |
+| Richard Velasquez  | 40 | Jesus Maria | Generador de Residuos Textiles | 0:04 |
+| Yolanda Quiroz | 32 | San Miguel | Emprendedor / Reciclador Textil | 0:03 |
 
 <br>
 
-| Entrevistado | Segmento Objetivo | Resumen | Captura Video | Timing y Duración | Link del timing en el conglomerado de entrevistas |
-|--------------|------------------|----------|---------------|-------------------|---------------------------------------------------|
-| Pendiente | Generador de Residuos Textiles | Pendiente de entrevista. | Pendiente | Pendiente | Pendiente |
-| Pendiente | Emprendedor / Reciclador Textil | Pendiente de entrevista. | Pendiente | Pendiente | Pendiente |
+| Entrevistado      | Segmento Objetivo               | Resumen                                                                                                                                                                                                                                                                                                                             | Captura Video | Timing y Duración         | Link del timing en el conglomerado de entrevistas |
+| ----------------- | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | ------------------------- | ------------------------------------------------- |
+| Richard Velasquez | Generador de Residuos Textiles  | Richard considera que GamarraLoop puede ayudar a reducir el desperdicio textil al conectar talleres con personas interesadas en reutilizar materiales. Indicó que utilizaría la plataforma porque le permitiría dar salida a excedentes textiles que actualmente desecha. Sugirió mejorar la visualización de los lotes publicados. | Captura 1     | Timing 0:04 Duración 6:56 | [Entrevista Comerciante](https://upcedupe-my.sharepoint.com/personal/u201610857_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu201610857%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevista%5Fcomerciante%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E90edde32%2D960e%2D41ef%2Dbe3c%2Dbbf5dc718c7f)                                              |
+| Yolanda Quiroz    | Emprendedor / Reciclador Textil | Yolanda destacó que la plataforma facilita encontrar materiales reutilizables para sus proyectos. Mencionó que la interfaz es sencilla y que utilizaría la aplicación para encontrar proveedores de textiles reciclables. Sugirió agregar más información sobre la calidad y estado de los materiales.                              | Captura 2     | Timing: 0:03 Duración: 7:46 | [Entrevista Artesana](https://upcedupe-my.sharepoint.com/personal/u201610857_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu201610857%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevista%5FArtesana%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ecff49c4b%2D03f2%2D404a%2D9c82%2D32077b478a1e)
+                                              |
+
 
 <a name="7.3.3."></a>
 
