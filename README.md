@@ -3413,11 +3413,11 @@ Las personas entrevistadas pertenecen a los segmentos identificados del proyecto
 
 | Entrevistado      | Segmento Objetivo               | Resumen                                                                                                                                                                                                                                                                                                                             | Captura Video | Timing y Duración         | Link del timing en el conglomerado de entrevistas |
 | ----------------- | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | ------------------------- | ------------------------------------------------- |
-| Richard Velasquez | Generador de Residuos Textiles  | Richard considera que GamarraLoop puede ayudar a reducir el desperdicio textil al conectar talleres con personas interesadas en reutilizar materiales. Indicó que utilizaría la plataforma porque le permitiría dar salida a excedentes textiles que actualmente desecha. Sugirió mejorar la visualización de los lotes publicados. | Captura 1     | Timing 0:04 Duración 6:56 | [Entrevista Comerciante](https://upcedupe-my.sharepoint.com/personal/u201610857_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu201610857%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevista%5Fcomerciante%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E90edde32%2D960e%2D41ef%2Dbe3c%2Dbbf5dc718c7f)                                              |
-| Yolanda Quiroz    | Emprendedor / Reciclador Textil | Yolanda destacó que la plataforma facilita encontrar materiales reutilizables para sus proyectos. Mencionó que la interfaz es sencilla y que utilizaría la aplicación para encontrar proveedores de textiles reciclables. Sugirió agregar más información sobre la calidad y estado de los materiales.                              | Captura 2     | Timing: 0:03 Duración: 7:46 | [Entrevista Artesana](https://upcedupe-my.sharepoint.com/personal/u201610857_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu201610857%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevista%5FArtesana%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ecff49c4b%2D03f2%2D404a%2D9c82%2D32077b478a1e)
+| Richard Velasquez | Generador de Residuos Textiles  | Richard considera que GamarraLoop puede ayudar a reducir el desperdicio textil al conectar talleres con personas interesadas en reutilizar materiales. Indicó que utilizaría la plataforma porque le permitiría dar salida a excedentes textiles que actualmente desecha. Sugirió mejorar la visualización de los lotes publicados. | <img src="Img/Comerciante.png" width="150">   | Timing 0:04 Duración 6:56 | [Entrevista Comerciante](https://upcedupe-my.sharepoint.com/personal/u201610857_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu201610857%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevista%5Fcomerciante%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E90edde32%2D960e%2D41ef%2Dbe3c%2Dbbf5dc718c7f)                                              |
+| Yolanda Quiroz    | Emprendedor / Reciclador Textil | Yolanda destacó que la plataforma facilita encontrar materiales reutilizables para sus proyectos. Mencionó que la interfaz es sencilla y que utilizaría la aplicación para encontrar proveedores de textiles reciclables. Sugirió agregar más información sobre la calidad y estado de los materiales.                              | <img src="Img/Artesana.png" width="150">    | Timing: 0:03 Duración: 7:46 | [Entrevista Artesana](https://upcedupe-my.sharepoint.com/personal/u201610857_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu201610857%5Fupc%5Fedu%5Fpe%2FDocuments%2FEntrevista%5FArtesana%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ecff49c4b%2D03f2%2D404a%2D9c82%2D32077b478a1e)
                                               |
 
-
+                                              
 <a name="7.3.3."></a>
 
 ### 7.3.3. Evaluaciones según heurísticas
@@ -3427,7 +3427,7 @@ Las personas entrevistadas pertenecen a los segmentos identificados del proyecto
 **Sección:** 10042  
 **Profesores:** Royer Edelwer Rojas Malasquez 
 **Auditor:** GamarraLoop Development Team
-**Cliente:** Pendiente  
+**Cliente:** Richard Velasquez    
 **SITE o APP a evaluar:** GamarraLoop
 
 #### Tareas a evaluar
@@ -3457,78 +3457,78 @@ Las personas entrevistadas pertenecen a los segmentos identificados del proyecto
 
 #### Tabla de resumen
 
-| # | Problema | Escala de severidad | Heurística/Principio Violado(a) |
-|---|-----------|-------------------|--------------------------------|
-| 1 | Pendiente | - | - |
-| 2 | Pendiente | - | - |
-| 3 | Pendiente | - | - |
-| 4 | Pendiente | - | - |
+| # | Problema                                                                            | Escala de severidad | Heurística/Principio Violado(a)     |
+| - | ----------------------------------------------------------------------------------- | ------------------- | ----------------------------------- |
+| 1 | Información insuficiente sobre la calidad y estado de los lotes textiles publicados | 3                   | Match Between System and Real World |
+| 2 | Visualización poco clara de los lotes disponibles                                   | 2                   | Aesthetic and Minimalist Design     |
+| 3 | Falta de detalles sobre el proceso de reserva y recolección                         | 3                   | Visibility of System Status         |
+| 4 | Escasa información descriptiva en algunas publicaciones de textiles                 | 2                   | Recognition Rather Than Recall      |
 
----
+
 
 #### Descripción de problemas
 
-### Problema #1
+### Problema #1: La ubicación podría mostrarse de forma más amigable
 
-**Severidad:** Pendiente
+**Severidad:** 1
 
-**Heurística violada:** Pendiente
+**Heurística violada:** Match Between System and Real World
 
 **Problema:**
 
-Pendiente de evaluación heurística.
+En el detalle del lote se muestra el punto de recojo con mapa y coordenadas. Sin embargo, para algunos usuarios podría ser más claro visualizar también una referencia textual del lugar.
 
 **Recomendación:**
 
-Pendiente de evaluación heurística.
+Agregar una dirección o referencia breve junto al mapa para facilitar la comprensión del punto de recojo.
 
 ---
 
-### Problema #2
+### Problema #2: Los estados de reserva podrían tener mayor detalle
 
-**Severidad:** Pendiente
+**Severidad:** 2
 
-**Heurística violada:** Pendiente
+**Heurística violada:** Visibility of System Status
 
 **Problema:**
 
-Pendiente de evaluación heurística.
+En la sección de reservas se muestran estados como "Completado" o "Vendido". Aunque permiten conocer el estado general, podrían complementarse con mayor detalle sobre el proceso.
 
 **Recomendación:**
 
-Pendiente de evaluación heurística.
+Agregar una breve descripción o historial simple para que el usuario entienda mejor el avance de cada reserva.
 
 ---
 
-### Problema #3
+### Problema #3: La clasificación automática podría explicar mejor sus resultados
 
-**Severidad:** Pendiente
+**Severidad:** 2
 
-**Heurística violada:** Pendiente
+**Heurística violada:** Visibility of System Status
 
 **Problema:**
 
-Pendiente de evaluación heurística.
+La plataforma clasifica los lotes textiles mediante inteligencia artificial. Sin embargo, el resultado podría ser más claro si se muestran brevemente las características detectadas.
 
 **Recomendación:**
 
-Pendiente de evaluación heurística.
+Mostrar etiquetas o una pequeña explicación sobre las características identificadas por la IA, como tipo de tela, color o estado aproximado.
 
 ---
 
-### Problema #4
+### Problema #4: El perfil podría mostrar más información del impacto del usuario
 
-**Severidad:** Pendiente
+**Severidad:** 1
 
-**Heurística violada:** Pendiente
+**Heurística violada:** Recognition Rather Than Recall
 
 **Problema:**
 
-Pendiente de evaluación heurística.
+La sección de perfil muestra el impacto del usuario mediante los lotes recuperados. No obstante, podría ser útil mostrar un poco más de detalle sobre cómo se generó ese impacto.
 
 **Recomendación:**
 
-Pendiente de evaluación heurística.
+Agregar un pequeño historial o resumen de actividad para visualizar los lotes recuperados y el aporte generado dentro de la plataforma.
 
 <a name="7.4."></a>
 
