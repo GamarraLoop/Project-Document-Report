@@ -10,7 +10,7 @@
 
 <h3 align="center">202601</h3>
 
-<br>
+
 
 <h3 align="center">NRC: 10042</h3>
 
@@ -26,8 +26,6 @@
 
 <h3 align="center">Nombre del Producto: Gamarra Loop</h3>
 
-<br>
-
 <h3>Integrantes:</h3>
 
 <div style="text-align: center;">
@@ -42,9 +40,7 @@
 
 </div>
 
-<br>
-
-<h3 align="center">Mayo de 2026</h3>
+<h3 align="center">Julio de 2026</h3>
 
 <br><br>
 
@@ -56,27 +52,23 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 | :-----: | :--------: | :--------------------------------------------------------------------------------------------------------------------------------------------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |   TB1   | 25/04/2026 | Huanaco Huayta, Elizabeth Lucero <br> Cuya Villegas, Rafael Alberto <br> Gongora Castillejos, Williams <br> Torres Garcia, Andrés Alberto <br> Molina Falcón, Piero Leonardo <br>| Realización de: <br> - Capítulo I: Introducción<br>- Capítulo II: Requirements Elicitation & Analysis <br>- Capítulo III: Requirements specification <br>- Capítulo IV: Strategic-Level Software Design (Strategic-Level Attribute-Driven Design y Software Architecture)                                                                                                                          |
 |   TP    | 10/05/2026 |   Huanaco Huayta, Elizabeth Lucero <br> Cuya Villegas, Rafael Alberto <br> Gongora Castillejos, Williams <br> Torres Garcia, Andrés Alberto  <br> Molina Falcón, Piero Leonardo <br>  | Realización de: <br> - Capítulo V: Tactical-Level Software DesignBounded Context: Textile Classification <br> - Capítulo V: Tactical-Level Software DesignBounded Context: Reservation Management <br> - Capítulo VI: Solution UX Design (6.1. Style Guidelines, 6.2. Information Architecture, 6.3. Landing Page UI Design: wireframes y mock-ups Desktop/Mobile, 6.4. Applications UX/UI Design) |
+ chapter-7-3
 |   TB2   | 14/06/2026 | Torres Garcia, Andrés Alberto <br> <br> Molina Falcón, Piero Leonardo <br> | Realización de: <br> - Capítulo VI: Solution UX Design (6.4.3. Applications Mock-ups, 6.4.4. Applications User Flow Diagrams, 6.5. Applications Prototyping) |
+
+|   TB2   | 20/06/2026 | Huanaco Huayta, Elizabeth Lucero <br> Cuya Villegas, Rafael Alberto <br> Gongora Castillejos, Williams <br> Torres Garcia, Andrés Alberto  <br> Molina Falcón, Piero Leonardo <br> | Realización de: <br> - Capítulo VI: Solution UX Design (6.4.3. Applications Mock-ups, 6.4.4. Applications User Flow Diagrams, 6.5. Applications Prototyping) <br> - Capítulo VII: Product Implementation, Validation & Deployment (7.1.1. Software Development Environment Configuration; 7.1.2. Source Code Management 7.1.4. Software Deployment Configuration) <br> - Sprint 1 (7.2.1.2. Sprint Backlog 1; 7.2.1.3. Development Evidence; 7.2.1.4. Testing Suite Evidence; 7.2.1.5. Execution Evidence; 7.2.1.6. Services Documentation Evidence; 7.2.1.7. Software Deployment Evidence)|
 
 # Project Report Collaboration Insights
 
 URL del repositorio para el reporte del proyecto: https://github.com/GamarraLoop/Project-Document-Report
 
-**TB1**
+**TB2:**
 
 <div align="center">
   <img alt="Image" src="https://github.com/user-attachments/assets/1b5e9b9b-09d7-4122-96b8-b233ad8a8cc8" />
 </div>
 
-*Figura: Project Report Collaboration Insights TB1*
+*Figura: Project Report Collaboration Insights TB2*
 
-**TP**
-
-<div align="center">
-  <img alt="Image" src="https://github.com/user-attachments/assets/b719ea32-e18b-4707-b894-531a42ef49d0" />
-</div>
-
-*Figura: Project Report Collaboration Insights TP*
 
 Para el desarrollo del informe perteneciente a la entrega TF, se dividió la implementación de secciones de la siguiente forma para cada integrante del equipo:
 
@@ -232,8 +224,8 @@ Los integrantes son:
 
 | Criterio específico            | Acciones realizadas     | Conclusiones      |
 | :------------ | :---------------- | :--------------- |
-| Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.    | **Cuya Villegas, Rafael Alberto** <br> **TB1:** Compartí con el equipo diversas ideas orientadas a la creación y mejora de nuestro proyecto, comunicándolas de manera clara y objetiva. Asimismo, en el desarrollo del Capítulo II, estuve a cargo de la realización de entrevistas, lo que implicó interactuar con los participantes de forma estructurada y profesional, asegurando una comunicación efectiva con personas de diferentes niveles y contextos.<br><br> **TP:** Para este entregable, estuve a cargo del capítulo 6, en el cual expuse y sustenté las decisiones relacionadas con el diseño de nuestra aplicación, como la selección de colores, la creación del logo y la propuesta visual de la landing page. Además, comuniqué al equipo diversas ideas orientadas a fortalecer la identidad visual del proyecto y colaboré en la elaboración de los prototipos, asegurando una presentación clara y objetiva de las propuestas durante el desarrollo del proyecto.<br><br>**Gongora Castillejos, Williams:**<br> **TB1:** Sustenté frente al equipo la viabilidad técnica y de negocio para la gestión de requerimientos (Capítulo III), argumentando la necesidad de aplicar IA y rediseñar el flujo logístico. <br><br> **TP:** Sustenté frente al equipo las decisiones de diseño arquitectónico a nivel táctico para el Capítulo V, argumentando la aplicación del patrón Hexagonal (Ports & Adapters) en el Bounded Context de Textile Classification. Expliqué cómo la separación en capas (Domain, Application, Infrastructure, Interface) garantiza la independencia de la lógica de negocio y cómo la integración asíncrona mediante Pub/Sub resuelve dependencias externas complejas, asegurando que la solución técnica sea escalable y fácil de comunicar al resto del equipo de desarrollo. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Sustenté frente al equipo la problemática, contexto y propuesta de solución del proyecto (Capítulo I), argumentando la necesidad de implementar una plataforma basada en IA para optimizar la gestión y reutilización de residuos textiles dentro de un enfoque de economía circular. <br><br> **TP:** Durante el desarrollo del bounded context Reservation Management de Gamarraloop, comuniqué de manera clara y objetiva las decisiones arquitectónicas y modelos de dominio aplicados en el sistema. Utilicé diagramas y documentación técnica para explicar conceptos de DDD a compañeros con distintos niveles de conocimiento. Además, sustenté las soluciones propuestas de forma ordenada y comprensible dentro del proyecto de ingeniería de software. <br><br> **Molina Falcón, Piero Leonardo** <br>**TB1:** Sustenté ante el equipo la definición de los bounded contexts y la delimitación del dominio en el Capítulo IV (Strategic Design), explicando la importancia del EventStorming, Candidate Context Discovery y Context Mapping para estructurar correctamente la arquitectura del sistema. Asimismo, argumenté cómo estas decisiones permitían mejorar la escalabilidad, mantenibilidad y claridad de los procesos de negocio dentro de GamarraLoop.<br><br> **TP:** Durante el desarrollo del bounded context Lot Publication Management de GamarraLoop, comuniqué de manera estructurada las decisiones de diseño y arquitectura relacionadas con la publicación y gestión de lotes textiles. Elaboré diagramas técnicos y documentación basada en Domain-Driven Design para facilitar la comprensión del modelo de dominio y la interacción entre componentes del sistema. Asimismo, expliqué las soluciones implementadas de forma clara y ordenada, permitiendo una mejor coordinación y entendimiento dentro del proyecto de ingeniería de software. <br><br> **Torres Garcia, Andrés Alberto** <br> **TB1:** Sustenté frente al equipo el proceso de Attribute-Driven Design aplicado al Capítulo IV, argumentando la priorización de los diez drivers arquitectónicos en dos ejes (importancia para stakeholders e impacto en complejidad técnica), la elección del estilo monolito modular frente a microservicios para una solución en fase de validación, y la distribución entre tres proveedores cloud heterogéneos (Google Cloud Platform, Supabase y GitHub Pages) priorizando free tiers permanentes sobre la uniformidad arquitectónica. Asimismo, expuse los trade-offs explícitos asumidos por la arquitectura: cold start de Cloud Run, optimistic vs pessimistic locking en la reserva concurrente, y clasificación asíncrona vs síncrona ante la dependencia con Google Cloud Vision. <br><br> **TP:** Sustenté frente al equipo las decisiones de diseño de experiencia para el Capítulo VI, argumentando cómo los Style Guidelines (paleta beige/verde oscuro/negro, tipografía y componentes Material Design) y la Arquitectura de Información (Labeling, Searching, SEO/Meta y Navigation Systems) se traducen en el Landing Page de GamarraLoop. Expliqué la racional detrás de las versiones Desktop y Mobile, la jerarquía de CTAs por segmento (Confeccionistas y recolectores) y la consistencia visual y de navegación entre el Landing Page y las Mobile Applications. Adicionalmente, sustenté la propuesta de Applications UX/UI Design (6.4), explicando por qué la solución se materializa en dos apps móviles nativas separadas (App Confeccionista y App Artesano) en línea con la Technical Story TS01, cómo cada wireflow se deriva agregando User Stories del Capítulo III por User Persona, y cómo la trazabilidad UG → US → Bounded Context cierra el bucle entre los Capítulos III, IV y VI. <br><br> **TB2:** Sustenté frente al equipo la propuesta de alta fidelidad de las aplicaciones móviles para el Capítulo VI, argumentando cómo los Applications Mock-ups (6.4.3) aplican el Design System de marca (paleta beige/verde oscuro/negro, iconografía y colores de estado Disponible/Reservado/Entregado) sobre los wireframes de baja fidelidad ya validados, y cómo los Applications User Flow Diagrams (6.4.4) y el Applications Prototyping (6.5) navegable evidencian la coherencia de cada flujo de usuario con las User Stories del Capítulo III. Expliqué de forma clara y objetiva las decisiones de interacción y los criterios de diseño inclusivo aplicados, asegurando que la propuesta visual fuera comprensible para audiencias técnicas y no técnicas del equipo. | **TB1:** El equipo logró alinear la visión del producto mediante debates estructurados, asegurando que todos los miembros comprendan a profundidad el modelo de negocio antes de iniciar el diseño arquitectónico. <br><br> **TP:** La discusión de las decisiones de UX permitió al equipo unificar criterios sobre la experiencia esperada por cada segmento objetivo, asegurando consistencia entre el Landing Page y las aplicaciones antes de avanzar con la implementación. <br><br> **TB2:** La revisión conjunta de los mock-ups y el prototipo navegable permitió al equipo validar la experiencia de alta fidelidad de ambas aplicaciones antes de la implementación, unificando criterios sobre interacción, identidad visual y accesibilidad.                                                                                             |
-| Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br> **TB1:** Me encargué del desarrollo del Capítulo II, diseñando entrevistas y desarrollando herramientas como mapas de análisis con el objetivo de comprender mejor a los usuarios y sus necesidades. La información fue presentada de manera clara y objetiva.<br><br> **TP:** Durante el desarrollo del proyecto, estuve a cargo de la elaboración del capítulo 6, comunicando de forma escrita las decisiones de diseño de la aplicación, incluyendo la elección de colores, el diseño del logo y la estructura visual de la landing page. Asimismo, compartí propuestas con el equipo y colaboré en el desarrollo de prototipos, contribuyendo a una comunicación clara y objetiva entre los integrantes del proyecto.<br><br> **Gongora Castillejos, Williams:** <br> **TB1:** Redacté y estructuré el Capítulo III (Requirements Specification), elaborando diagramas estratégicos (Impact Mapping, To-Be Scenario) y estandarizando las User Stories en formato Gherkin. <br><br> **TP:** Redacté y estructuré la sección de Tactical-Level Software Design (Capítulo V) correspondiente al Bounded Context de Textile Classification. Documenté de manera objetiva y rigurosa la responsabilidad de cada capa arquitectónica (Domain, Interface, Application, Infrastructure) y elaboré los diagramas a nivel de componentes (C4 Model), clases y diseño de base de datos relacional. Utilicé herramientas especializadas como Structurizr, PlantUML y Vertabelo, garantizando que la documentación técnica mantenga una alta trazabilidad con los requerimientos previos y sea comprensible para el equipo técnico. <br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Redacté y estructuré el Capítulo I del proyecto, desarrollando el perfil de la startup, la problemática, los segmentos de usuarios y los artefactos de Lean UX, comunicando las ideas de manera clara, organizada y comprensible para públicos tanto técnicos como no técnicos. <br><br> **TP:** Durante el desarrollo del bounded context Reservation Management de Gamarraloop, elaboré documentación técnica y descripciones arquitectónicas de manera clara y estructurada. Desarrollé diagramas, modelos de dominio y decisiones de diseño utilizando un lenguaje comprensible para distintos niveles técnicos y jerárquicos. Esto permitió comunicar eficazmente los resultados y avances del proyecto de ingeniería de software. <br><br> **Molina Falcón, Piero Leonardo** <br>**TB1:** Redacté y estructuré el Capítulo IV (Strategic Design), desarrollando el EventStorming, Candidate Context Discovery, Domain Message Flows Modeling, Bounded Context Canvases y Context Mapping, organizando los bounded contexts del sistema y definiendo las relaciones estratégicas entre ellos para una arquitectura clara, escalable y alineada al dominio del negocio. <br><br> **TP:** Redacté y estructuré la sección de Tactical-Level Software Design (Capítulo V) correspondiente al Bounded Context de Lot Publication Management. Documenté de manera clara y técnica la responsabilidad de cada capa arquitectónica (Domain, Interface, Application e Infrastructure), así como las interacciones entre componentes del sistema. Además, elaboré diagramas de arquitectura a nivel de componentes (C4 Model), diagramas de clases del dominio y el diseño de base de datos relacional asociado al bounded context. Para ello, utilicé herramientas de modelado y documentación técnica que permitieron mantener coherencia arquitectónica, trazabilidad con los requerimientos funcionales y una comunicación efectiva dentro del equipo de desarrollo. <br><br> **Torres Garcia, Andrés Alberto** <br> **TB1:** Redacté y estructuré las secciones de Strategic-Level Attribute-Driven Design (4.1) y Software Architecture (4.3) del Capítulo IV. Documenté el Architectural Drivers Backlog con diez drivers priorizados (D01–D10), los siete escenarios de atributos de calidad en formato SEI de seis dimensiones (QA01–QA07), las seis Technical Stories que actúan como constraints (TS01–TS06), la matriz de Architectural Design Decisions con la evaluación de dos a tres patrones candidatos por driver con sus pros y contras, y los Quality Attribute Scenario Refinements con Business Goals, Questions e Issues asociados. Adicionalmente, modelé las cuatro vistas del C4 Model (System Landscape, Context, Container y Deployment) en Structurizr y las acompañé de tablas con trazabilidad explícita a los drivers, escenarios de calidad y User Stories del Capítulo III. <br><br> **TP:** Redacté y estructuré el Capítulo VI: Solution UX Design. Documenté en 6.1 los Style Guidelines de marca, tipografía, paleta de colores y componentes Material Design; en 6.2 la Arquitectura de Información (Labeling Systems, Searching Systems, SEO/Meta Tags y Navigation Systems); en 6.3 el Landing Page UI Design con wireframes y mock-ups para Desktop Web Browser y Mobile Web Browser elaborados en Figma, explicando la aplicación de principios de diseño visual, diseño inclusivo y arquitectura de información en cada vista; y en 6.4 el Applications UX/UI Design completo, con 19 wireframes móviles de baja fidelidad (11 para App Confeccionista y 8 para App Artesano) y 7 wireflow diagrams (UG-C01 a UG-C04 y UG-A01 a UG-A03), todos elaborados en Figma a 375×812 con el mismo Design System, y acompañados de una tabla de trazabilidad explícita que vincula cada User Goal con sus User Stories del Capítulo III y los Bounded Contexts del Capítulo IV. <br><br> **TB2:** Redacté y estructuré la extensión del Capítulo VI: Solution UX Design, documentando en 6.4.3 los Applications Mock-ups de alta fidelidad para la App Confeccionista y la App Artesano, aplicando sobre los wireframes ya validados el Design System completo (paleta beige/verde oscuro/negro, iconografía coherente con el logotipo y colores de estado); en 6.4.4 los Applications User Flow Diagrams de cada User Goal de ambas aplicaciones; y en 6.5 el Applications Prototyping navegable elaborado en Figma. Acompañé cada artefacto con la explicación de la aplicación del Design System, los principios de diseño visual e inclusivo y la trazabilidad explícita hacia las User Stories del Capítulo III y los Bounded Contexts del Capítulo IV, manteniendo una comunicación escrita clara y rigurosa para audiencias técnicas y no técnicas.                                                                                                                                     | **TB1:** La documentación rigurosa y estandarizada ha demostrado ser fundamental. Redactar requerimientos sin ambigüedades ni detalles de UI garantiza una base sólida y comprensible para el posterior diseño de software. <br><br> **TP:** Documentar la propuesta de UX por capa (Style Guidelines → Information Architecture → UI Design) demostró ser efectivo para mantener trazabilidad entre las decisiones de marca, la arquitectura de información y los artefactos visuales finales, facilitando la comprensión del informe por audiencias técnicas y no técnicas. <br><br> **TB2:** Documentar la solución UX en alta fidelidad (Mock-ups → User Flow Diagrams → Prototyping) consolidó la trazabilidad entre las decisiones de diseño y los artefactos navegables, cerrando la transición entre el espacio del problema y una propuesta lista para implementación. |
+| Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.    | **Cuya Villegas, Rafael Alberto** <br> **TB1:** Compartí con el equipo diversas ideas orientadas a la creación y mejora de nuestro proyecto, comunicándolas de manera clara y objetiva. Asimismo, en el desarrollo del Capítulo II, estuve a cargo de la realización de entrevistas, lo que implicó interactuar con los participantes de forma estructurada y profesional, asegurando una comunicación efectiva con personas de diferentes niveles y contextos.<br><br> **TP:** Para este entregable, estuve a cargo del capítulo 6, en el cual expuse y sustenté las decisiones relacionadas con el diseño de nuestra aplicación, como la selección de colores, la creación del logo y la propuesta visual de la landing page. Además, comuniqué al equipo diversas ideas orientadas a fortalecer la identidad visual del proyecto y colaboré en la elaboración de los prototipos, asegurando una presentación clara y objetiva de las propuestas durante el desarrollo del proyecto.<br>**TB2:** Durante esta entrega, contribuí activamente a la comunicación y coordinación con el equipo para el desarrollo del backend y la elaboración del reporte. En particular, participé en la documentación de las herramientas y tecnologías de software empleadas en el proyecto, comunicando de manera clara y objetiva las decisiones técnicas adoptadas para facilitar su comprensión por parte de los diferentes integrantes del equipo.<br><br>**Gongora Castillejos, Williams:**<br> **TB1:** Sustenté frente al equipo la viabilidad técnica y de negocio para la gestión de requerimientos (Capítulo III), argumentando la necesidad de aplicar IA y rediseñar el flujo logístico. <br><br> **TP:** Sustenté frente al equipo las decisiones de diseño arquitectónico a nivel táctico para el Capítulo V, argumentando la aplicación del patrón Hexagonal (Ports & Adapters) en el Bounded Context de Textile Classification. Expliqué cómo la separación en capas (Domain, Application, Infrastructure, Interface) garantiza la independencia de la lógica de negocio y cómo la integración asíncrona mediante Pub/Sub resuelve dependencias externas complejas, asegurando que la solución técnica sea escalable y fácil de comunicar al resto del equipo de desarrollo. <br><br> **TB2:** Durante esta entrega comuniqué al equipo el avance del desarrollo de la mayor parte del backend y su documentación, además de las primeras pantallas de la aplicación. Asimismo, sustenté los avances y decisiones técnicas del proyecto de forma clara y objetiva, manteniendo una comunicación efectiva con el equipo durante el desarrollo de la solución.<br><br> **Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Sustenté frente al equipo la problemática, contexto y propuesta de solución del proyecto (Capítulo I), argumentando la necesidad de implementar una plataforma basada en IA para optimizar la gestión y reutilización de residuos textiles dentro de un enfoque de economía circular. <br><br> **TP:** Durante el desarrollo del bounded context Reservation Management de Gamarraloop, comuniqué de manera clara y objetiva las decisiones arquitectónicas y modelos de dominio aplicados en el sistema. Utilicé diagramas y documentación técnica para explicar conceptos de DDD a compañeros con distintos niveles de conocimiento. Además, sustenté las soluciones propuestas de forma ordenada y comprensible dentro del proyecto de ingeniería de software. <br><br> **TB2:** Durante esta entrega elaboré y organicé la documentación del backend y frontend de GamarraLoop, incluyendo la arquitectura implementada, el storyboard de navegación y las evidencias visuales de las funcionalidades desarrolladas. Asimismo, preparé el material para la demostración del sprint, estructurando la información por bounded contexts. Estas actividades fortalecieron mi capacidad para comunicar resultados técnicos de manera clara, objetiva y ordenada. Además, permitieron presentar los avances del proyecto de forma comprensible para personas con distintos niveles de conocimiento técnico.  <br><br> **Molina Falcón, Piero Leonardo** <br>**TB1:** Sustenté ante el equipo la definición de los bounded contexts y la delimitación del dominio en el Capítulo IV (Strategic Design), explicando la importancia del EventStorming, Candidate Context Discovery y Context Mapping para estructurar correctamente la arquitectura del sistema. Asimismo, argumenté cómo estas decisiones permitían mejorar la escalabilidad, mantenibilidad y claridad de los procesos de negocio dentro de GamarraLoop.<br><br> **TP:** Durante el desarrollo del bounded context Lot Publication Management de GamarraLoop, comuniqué de manera estructurada las decisiones de diseño y arquitectura relacionadas con la publicación y gestión de lotes textiles. Elaboré diagramas técnicos y documentación basada en Domain-Driven Design para facilitar la comprensión del modelo de dominio y la interacción entre componentes del sistema. Asimismo, expliqué las soluciones implementadas de forma clara y ordenada, permitiendo una mejor coordinación y entendimiento dentro del proyecto de ingeniería de software. <br><br> **Torres Garcia, Andrés Alberto** <br> **TB1:** Sustenté frente al equipo el proceso de Attribute-Driven Design aplicado al Capítulo IV, argumentando la priorización de los diez drivers arquitectónicos en dos ejes (importancia para stakeholders e impacto en complejidad técnica), la elección del estilo monolito modular frente a microservicios para una solución en fase de validación, y la distribución entre tres proveedores cloud heterogéneos (Google Cloud Platform, Supabase y GitHub Pages) priorizando free tiers permanentes sobre la uniformidad arquitectónica. Asimismo, expuse los trade-offs explícitos asumidos por la arquitectura: cold start de Cloud Run, optimistic vs pessimistic locking en la reserva concurrente, y clasificación asíncrona vs síncrona ante la dependencia con Google Cloud Vision. <br><br> **TP:** Sustenté frente al equipo las decisiones de diseño de experiencia para el Capítulo VI, argumentando cómo los Style Guidelines (paleta beige/verde oscuro/negro, tipografía y componentes Material Design) y la Arquitectura de Información (Labeling, Searching, SEO/Meta y Navigation Systems) se traducen en el Landing Page de GamarraLoop. Expliqué la racional detrás de las versiones Desktop y Mobile, la jerarquía de CTAs por segmento (Confeccionistas y recolectores) y la consistencia visual y de navegación entre el Landing Page y las Mobile Applications. Adicionalmente, sustenté la propuesta de Applications UX/UI Design (6.4), explicando por qué la solución se materializa en dos apps móviles nativas separadas (App Confeccionista y App Artesano) en línea con la Technical Story TS01, cómo cada wireflow se deriva agregando User Stories del Capítulo III por User Persona, y cómo la trazabilidad UG → US → Bounded Context cierra el bucle entre los Capítulos III, IV y VI. <br><br> **TB2:** Sustenté frente al equipo la propuesta de alta fidelidad de las aplicaciones móviles para el Capítulo VI, argumentando cómo los Applications Mock-ups (6.4.3) aplican el Design System de marca (paleta beige/verde oscuro/negro, iconografía y colores de estado Disponible/Reservado/Entregado) sobre los wireframes de baja fidelidad ya validados, y cómo los Applications User Flow Diagrams (6.4.4) y el Applications Prototyping (6.5) navegable evidencian la coherencia de cada flujo de usuario con las User Stories del Capítulo III. Expliqué de forma clara y objetiva las decisiones de interacción y los criterios de diseño inclusivo aplicados, asegurando que la propuesta visual fuera comprensible para audiencias técnicas y no técnicas del equipo. | **TB1:** El equipo logró alinear la visión del producto mediante debates estructurados, asegurando que todos los miembros comprendan a profundidad el modelo de negocio antes de iniciar el diseño arquitectónico. <br><br> **TP:** La discusión de las decisiones de UX permitió al equipo unificar criterios sobre la experiencia esperada por cada segmento objetivo, asegurando consistencia entre el Landing Page y las aplicaciones antes de avanzar con la implementación. <br><br> **TB2:** La revisión conjunta de los mock-ups y el prototipo navegable permitió al equipo validar la experiencia de alta fidelidad de ambas aplicaciones antes de la implementación, unificando criterios sobre interacción, identidad visual y accesibilidad.                                                                                             |
+| Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería. | **Cuya Villegas, Rafael Alberto** <br> **TB1:** Me encargué del desarrollo del Capítulo II, diseñando entrevistas y desarrollando herramientas como mapas de análisis con el objetivo de comprender mejor a los usuarios y sus necesidades. La información fue presentada de manera clara y objetiva.<br><br> **TP:** Durante el desarrollo del proyecto, estuve a cargo de la elaboración del capítulo 6, comunicando de forma escrita las decisiones de diseño de la aplicación, incluyendo la elección de colores, el diseño del logo y la estructura visual de la landing page. Asimismo, compartí propuestas con el equipo y colaboré en el desarrollo de prototipos, contribuyendo a una comunicación clara y objetiva entre los integrantes del proyecto.<br>**TB2:** Durante esta entrega, contribuí a la elaboración de la documentación del reporte de GamarraLoop, detallando las tecnologías y herramientas de software empleadas, sus especificaciones técnicas y su función dentro de la arquitectura de la solución, con el fin de comunicar de manera precisa las decisiones tecnológicas adoptadas por el equipo.<br><br> **Gongora Castillejos, Williams:** <br> **TB1:** Redacté y estructuré el Capítulo III (Requirements Specification), elaborando diagramas estratégicos (Impact Mapping, To-Be Scenario) y estandarizando las User Stories en formato Gherkin. <br><br> **TP:** Redacté y estructuré la sección de Tactical-Level Software Design (Capítulo V) correspondiente al Bounded Context de Textile Classification. Documenté de manera objetiva y rigurosa la responsabilidad de cada capa arquitectónica (Domain, Interface, Application, Infrastructure) y elaboré los diagramas a nivel de componentes (C4 Model), clases y diseño de base de datos relacional. Utilicé herramientas especializadas como Structurizr, PlantUML y Vertabelo, garantizando que la documentación técnica mantenga una alta trazabilidad con los requerimientos previos y sea comprensible para el equipo técnico. <br><br> **TB2:** Durante esta entrega redacté y estructuré la documentación correspondiente al avance del proyecto, describiendo de manera objetiva el desarrollo de la mayor parte del backend, su configuración de despliegue, la evidencia de ejecución y despliegue del Sprint 1, así como los insights de colaboración del equipo. Además, dejé documentadas las primeras pantallas de la aplicación y las secciones técnicas asociadas, cuidando que la información fuera clara. <br><br>**Huanaco Huayta, Elizabeth Lucero** <br> **TB1:** Redacté y estructuré el Capítulo I del proyecto, desarrollando el perfil de la startup, la problemática, los segmentos de usuarios y los artefactos de Lean UX, comunicando las ideas de manera clara, organizada y comprensible para públicos tanto técnicos como no técnicos. <br><br> **TP:** Durante el desarrollo del bounded context Reservation Management de Gamarraloop, elaboré documentación técnica y descripciones arquitectónicas de manera clara y estructurada. Desarrollé diagramas, modelos de dominio y decisiones de diseño utilizando un lenguaje comprensible para distintos niveles técnicos y jerárquicos. Esto permitió comunicar eficazmente los resultados y avances del proyecto de ingeniería de software. <br><br> **TB2:** Durante esta entrega redacté y estructuré la documentación técnica del proyecto GamarraLoop, incluyendo la descripción de la arquitectura, los bounded contexts implementados, el storyboard de navegación y las evidencias visuales del frontend y backend. La información fue organizada de manera clara y objetiva para facilitar su comprensión. Asimismo, se documentaron los avances alcanzados durante el sprint y las funcionalidades desarrolladas. Estas actividades fortalecieron mi capacidad de comunicar resultados de ingeniería de forma escrita, precisa y profesional. <br><br> **Molina Falcón, Piero Leonardo** <br>**TB1:** Redacté y estructuré el Capítulo IV (Strategic Design), desarrollando el EventStorming, Candidate Context Discovery, Domain Message Flows Modeling, Bounded Context Canvases y Context Mapping, organizando los bounded contexts del sistema y definiendo las relaciones estratégicas entre ellos para una arquitectura clara, escalable y alineada al dominio del negocio. <br><br> **TP:** Redacté y estructuré la sección de Tactical-Level Software Design (Capítulo V) correspondiente al Bounded Context de Lot Publication Management. Documenté de manera clara y técnica la responsabilidad de cada capa arquitectónica (Domain, Interface, Application e Infrastructure), así como las interacciones entre componentes del sistema. Además, elaboré diagramas de arquitectura a nivel de componentes (C4 Model), diagramas de clases del dominio y el diseño de base de datos relacional asociado al bounded context. Para ello, utilicé herramientas de modelado y documentación técnica que permitieron mantener coherencia arquitectónica, trazabilidad con los requerimientos funcionales y una comunicación efectiva dentro del equipo de desarrollo. <br><br> **Torres Garcia, Andrés Alberto** <br> **TB1:** Redacté y estructuré las secciones de Strategic-Level Attribute-Driven Design (4.1) y Software Architecture (4.3) del Capítulo IV. Documenté el Architectural Drivers Backlog con diez drivers priorizados (D01–D10), los siete escenarios de atributos de calidad en formato SEI de seis dimensiones (QA01–QA07), las seis Technical Stories que actúan como constraints (TS01–TS06), la matriz de Architectural Design Decisions con la evaluación de dos a tres patrones candidatos por driver con sus pros y contras, y los Quality Attribute Scenario Refinements con Business Goals, Questions e Issues asociados. Adicionalmente, modelé las cuatro vistas del C4 Model (System Landscape, Context, Container y Deployment) en Structurizr y las acompañé de tablas con trazabilidad explícita a los drivers, escenarios de calidad y User Stories del Capítulo III. <br><br> **TP:** Redacté y estructuré el Capítulo VI: Solution UX Design. Documenté en 6.1 los Style Guidelines de marca, tipografía, paleta de colores y componentes Material Design; en 6.2 la Arquitectura de Información (Labeling Systems, Searching Systems, SEO/Meta Tags y Navigation Systems); en 6.3 el Landing Page UI Design con wireframes y mock-ups para Desktop Web Browser y Mobile Web Browser elaborados en Figma, explicando la aplicación de principios de diseño visual, diseño inclusivo y arquitectura de información en cada vista; y en 6.4 el Applications UX/UI Design completo, con 19 wireframes móviles de baja fidelidad (11 para App Confeccionista y 8 para App Artesano) y 7 wireflow diagrams (UG-C01 a UG-C04 y UG-A01 a UG-A03), todos elaborados en Figma a 375×812 con el mismo Design System, y acompañados de una tabla de trazabilidad explícita que vincula cada User Goal con sus User Stories del Capítulo III y los Bounded Contexts del Capítulo IV. <br><br> **TB2:** Redacté y estructuré la extensión del Capítulo VI: Solution UX Design, documentando en 6.4.3 los Applications Mock-ups de alta fidelidad para la App Confeccionista y la App Artesano, aplicando sobre los wireframes ya validados el Design System completo (paleta beige/verde oscuro/negro, iconografía coherente con el logotipo y colores de estado); en 6.4.4 los Applications User Flow Diagrams de cada User Goal de ambas aplicaciones; y en 6.5 el Applications Prototyping navegable elaborado en Figma. Acompañé cada artefacto con la explicación de la aplicación del Design System, los principios de diseño visual e inclusivo y la trazabilidad explícita hacia las User Stories del Capítulo III y los Bounded Contexts del Capítulo IV, manteniendo una comunicación escrita clara y rigurosa para audiencias técnicas y no técnicas.                                                                                                                                     | **TB1:** La documentación rigurosa y estandarizada ha demostrado ser fundamental. Redactar requerimientos sin ambigüedades ni detalles de UI garantiza una base sólida y comprensible para el posterior diseño de software. <br><br> **TP:** Documentar la propuesta de UX por capa (Style Guidelines → Information Architecture → UI Design) demostró ser efectivo para mantener trazabilidad entre las decisiones de marca, la arquitectura de información y los artefactos visuales finales, facilitando la comprensión del informe por audiencias técnicas y no técnicas. <br><br> **TB2:** Documentar la solución UX en alta fidelidad (Mock-ups → User Flow Diagrams → Prototyping) consolidó la trazabilidad entre las decisiones de diseño y los artefactos navegables, cerrando la transición entre el espacio del problema y una propuesta lista para implementación. |
 
 <a name="1."></a>
 
@@ -2521,7 +2513,8 @@ Se elabora la propuesta en dos vistas obligatorias: Desktop Web Browser y Mobile
 
 Los wireframes presentan la estructura de bloques, jerarquía y flujo de lectura del Landing Page antes de aplicar color, tipografía final e imágenes. Su objetivo es validar la arquitectura de información, el orden de los contenidos y la ubicación de los call-to-action por segmento.
 
-Herramienta utilizada: Figma. Enlace al archivo de wireframes: https://www.figma.com/design/J1GM7YvXifXyoHeMuIaHdP/Landing-Page?node-id=0-1
+> **Herramienta utilizada:** Figma  
+> **Enlace al archivo de wireframes:** [Landing Page — Wireframes en Figma](https://www.figma.com/design/J1GM7YvXifXyoHeMuIaHdP/Landing-Page?node-id=0-1)
 
 **Versión Desktop Web Browser**
 
@@ -2547,8 +2540,8 @@ La consistencia entre ambas versiones garantiza que un visitante que descubra Ga
 
 Los mock-ups aplican sobre la estructura validada en los wireframes el Design System definido en 6.1: paleta beige claro como fondo, verde oscuro como color de interacción principal, negro para tipografía y elementos estructurales, jerarquía tipográfica de cuatro niveles (headings, body, buttons, links) y componentes de Material Design. El resultado refleja la identidad visual de GamarraLoop —sostenibilidad, reutilización y conexión con el ecosistema textil— manteniendo la legibilidad y el contraste necesarios para diseño inclusivo.
 
-Herramienta utilizada: Figma. 
-Enlace al archivo de mock-ups: https://www.figma.com/design/J1GM7YvXifXyoHeMuIaHdP/Landing-Page?node-id=1-2
+> **Herramienta utilizada:** Figma  
+> **Enlace al archivo de mock-ups:** [Landing Page — Mock-ups en Figma](https://www.figma.com/design/J1GM7YvXifXyoHeMuIaHdP/Landing-Page?node-id=1-2)
 
 **Versión Desktop Web Browser**
 
@@ -2582,8 +2575,9 @@ Las dos aplicaciones de alcance son:
 
 La propuesta traduce las decisiones de Style Guidelines (6.1: paleta beige claro / verde oscuro / negro, jerarquía tipográfica de cuatro niveles, componentes basados en Material Design) y de Arquitectura de Información (6.2: Labeling, Searching, SEO/Meta y Navigation Systems) hacia layouts concretos y navegables. Cada wireframe y cada wireflow se traza explícitamente a las User Stories del Capítulo III y a los User Persona del 2.3.1, garantizando consistencia entre el espacio del problema (Capítulos I–III) y el espacio de la solución (Capítulo VI).
 
-Las herramientas utilizadas son Figma para los wireframes (mismas que en 6.3) y un layout compuesto en Figma para los wireflows que reaprovecha los frames de 6.4.1 como pasos de cada flujo. Enlace al archivo Figma con todos los wireframes y wireflow diagrams de esta sección:
-https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design
+Las herramientas utilizadas son Figma para los wireframes (mismas que en 6.3) y un layout compuesto en Figma para los wireflows que reaprovecha los frames de 6.4.1 como pasos de cada flujo.
+
+> **Enlace al archivo Figma (wireframes y wireflow diagrams):** [GamarraLoop — Applications UX/UI Design en Figma](https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design)
 
 <a name="6.4.1"></a>
 
@@ -2766,8 +2760,8 @@ Los mock-ups elevan a **alta fidelidad** los wireframes validados en 6.4.1, apli
 
 Se conservan los mismos identificadores de pantalla que en 6.4.1, sustituyendo el prefijo `C-W` / `A-W` (wireframe) por `C-M` / `A-M` (mock-up) para mantener la trazabilidad uno a uno entre baja y alta fidelidad.
 
-Herramienta utilizada: Figma. Enlace al archivo:
-https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design
+> **Herramienta utilizada:** Figma  
+> **Enlace al archivo de mock-ups:** [GamarraLoop — Applications UX/UI Design en Figma](https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design)
 
 **App Confeccionista — 11 mock-ups**
 
@@ -2849,7 +2843,8 @@ Aplican el Design System sobre el ciclo de demanda. La bottom navigation se redu
 
 Los User Flow Diagrams se derivan directamente de los Wireflow Diagrams de 6.4.2, elevando las pantallas a los mock-ups de alta fidelidad de 6.4.3 e incorporando de forma explícita, para cada User Goal, el **happy path** (ruta esperada) y los **unhappy paths** (rutas alternativas: errores, cancelaciones, expiraciones y validaciones fallidas). Se documenta un User Flow por cada User Goal de las dos aplicaciones, considerando su User Persona del 2.3.1, manteniendo la consistencia uno a uno con los wireflows de los que provienen (UG-C01…UG-C04, UG-A01…UG-A03).
 
-Herramienta utilizada: Figma. Enlace al archivo: https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design
+> **Herramienta utilizada:** Figma  
+> **Enlace al archivo de User Flow Diagrams:** [GamarraLoop — Applications UX/UI Design en Figma](https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design)
 
 **User Flows — App Confeccionista**
 
@@ -2914,7 +2909,7 @@ El prototipo cubre los flujos UG-C01 a UG-C04, con foco en el flujo de publicaci
 <img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/prototyping/proto-confeccionista-stream.png" alt="Prototipo navegable — App Confeccionista (captura del video)" width="600"/><br>
 *Figura: Captura del video de demostración — Prototipo App Confeccionista*
 
-> **Video de demostración (Microsoft Stream):** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220528_upc_edu_pe/IQCfE4Akn3KkSKxJGbF5blUpAYgmCNq9PNkOoKCYWdB-gDg?e=03ZAjZ
+> **Video de demostración (Microsoft Stream):** [Prototipo navegable App Confeccionista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220528_upc_edu_pe/IQCfE4Akn3KkSKxJGbF5blUpAYgmCNq9PNkOoKCYWdB-gDg?e=03ZAjZ)
 
 **App Artesano**
 
@@ -2923,9 +2918,9 @@ El prototipo cubre los flujos UG-A01 a UG-A03, con foco en el flujo de exploraci
 <img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/prototyping/proto-artesano-stream.png" alt="Prototipo navegable — App Artesano (captura del video)" width="600"/><br>
 *Figura: Captura del video de demostración — Prototipo App Artesano*
 
-> **Video de demostración (Microsoft Stream):** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220528_upc_edu_pe/IQBC6WDZIPypR4p6OlF73_p3AejradgONAmWfsrieUaROOo?e=Lar9f8
+> **Video de demostración (Microsoft Stream):** [Prototipo navegable App Artesano](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220528_upc_edu_pe/IQBC6WDZIPypR4p6OlF73_p3AejradgONAmWfsrieUaROOo?e=Lar9f8)
 
-Enlace al prototipo navegable en Figma: https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design
+> **Prototipo navegable en Figma:** [GamarraLoop — Applications UX/UI Design en Figma](https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design)
 
 <a name="7."></a>
 
@@ -2935,17 +2930,124 @@ Enlace al prototipo navegable en Figma: https://www.figma.com/design/85CeQoBh8DO
 
 ## 7.1. Software Configuration Management
 
+
 <a name="7.1.1."></a>
 
 ### 7.1.1. Software Development Environment Configuration
+
+Para el desarrollo de GamarraLoop se utilizó una arquitectura compuesta por una aplicación móvil desarrollada en FlutterFlow y un backend implementado mediante Java y Spring Boot. Esta combinación permitió acelerar el desarrollo de la interfaz de usuario y, al mismo tiempo, contar con una capa de servicios robusta, escalable y alineada con buenas prácticas de arquitectura de software.
+
+Las herramientas y tecnologías utilizadas fueron las siguientes:
+
+| Herramienta / Tecnología | Propósito |
+| ------------------------ | --------- |
+| FlutterFlow | Desarrollo de la aplicación móvil |
+| Java 21 | Lenguaje principal del backend |
+| Spring Boot 3.4.1 | Desarrollo de APIs REST |
+| PostgreSQL (Supabase) | Base de datos relacional |
+| Hibernate / Spring Data JPA | Persistencia de datos |
+| Google Cloud Vision API | Clasificación automática de textiles mediante IA |
+| Spring WebFlux | Comunicación con servicios externos |
+| Maven | Gestión de dependencias y compilación |
+| Git y GitHub | Control de versiones |
+| Jira | Gestión de requerimientos y tareas |
+| Swagger UI (OpenAPI 3) | Documentación y pruebas de APIs |
+| Azure App Service | Despliegue del backend en producción |
+
+El backend fue desplegado en Azure App Service, permitiendo el acceso permanente a los servicios REST y a la documentación interactiva de la API mediante Swagger.
 
 <a name="7.1.2."></a>
 
 ### 7.1.2. Source Code Management
 
+La gestión del código fuente se realizó mediante Git y GitHub, permitiendo un desarrollo colaborativo y un seguimiento completo de los cambios realizados durante el proyecto. Se utilizó una estrategia basada en ramas para separar el trabajo de cada integrante y reducir conflictos durante la integración. Las funcionalidades fueron desarrolladas de manera independiente y posteriormente integradas mediante Pull Requests.
+
+| Rama | Descripción |
+| ---- | ----------- |
+| main | Versión estable del proyecto |
+| feature/* | Desarrollo de nuevas funcionalidades |
+| chapter-* | Desarrollo de documentación |
+| hotfix/* | Corrección de errores |
+
+Flujo de trabajo
+1. Creación de una rama para cada tarea asignada.
+2. Desarrollo y pruebas locales.
+3. Registro de cambios mediante commits descriptivos.
+4. Creación de Pull Requests.
+5. Revisión y resolución de conflictos.
+6. Integración mediante Merge hacia la rama principal.
+
+Este enfoque permitió mantener la trazabilidad de los cambios, facilitar la colaboración entre los miembros del equipo y reducir errores durante el proceso de integración.
+
+
 <a name="7.1.3."></a>
 
 ### 7.1.3. Source Code Style Guide & Conventions
+
+Con el objetivo de mantener la calidad, legibilidad y mantenibilidad del software, se definieron convenciones de desarrollo alineadas con las buenas prácticas recomendadas para aplicaciones Java basadas en Spring Boot.
+
+| Elemento | Convención |
+| -------- | ---------- |
+| Clases | PascalCase |
+| Interfaces | PascalCase |
+| Métodos | camelCase |
+| Variables | camelCase |
+| Constantes | UPPER_SNAKE_CASE |
+| Endpoints REST | kebab-case |
+| Paquetes | lowercase |
+
+**Arquitectura del proyecto**
+
+El backend fue desarrollado siguiendo los principios de Domain-Driven Design (DDD) y Arquitectura Hexagonal (Ports & Adapters), organizando el sistema en siete Bounded Contexts independientes y un módulo compartido.
+
+Los principales módulos fueron:
+
+| Módulo | Responsabilidad |
+| ------- | -------------- |
+| Profiles | Gestión de perfiles de usuario |
+| Lots | Gestión de lotes textiles |
+| Classification | Clasificación automática mediante IA |
+| Reservations | Gestión de reservas |
+| Delivery | Seguimiento de entregas |
+| Notifications | Sistema de notificaciones |
+| Expiration | Expiración automática de reservas |
+| Shared | Componentes compartidos del sistema |
+
+La estructura general del proyecto se organizó en capas:
+
+domain/
+application/
+infrastructure/
+interfaces/
+
+Esta organización permitió separar claramente la lógica de negocio, los casos de uso, la persistencia de datos y la exposición de servicios REST.
+
+| Práctica | Descripción |
+| -------- | ----------- |
+| DTOs | Transferencia estructurada de datos entre capas |
+| Bean Validation | Validación de entradas mediante Jakarta Validation |
+| Spring Data JPA | Persistencia desacoplada de la lógica de negocio |
+| Lombok | Reducción de código repetitivo |
+| Swagger/OpenAPI | Documentación automática de servicios REST |
+| Global Exception Handler | Manejo centralizado de errores |
+| Google Cloud Vision API | Integración desacoplada con servicios externos |
+| DDD + Hexagonal | Separación clara de responsabilidades y dominios |
+
+**Convención de commits**
+
+Se utilizaron mensajes descriptivos para facilitar la trazabilidad de cambios:
+
+| Prefijo | Uso | Ejemplo |
+| -------- | ----------- | ----------- |
+| feat | Nueva funcionalidad | feat: implementar publicación de lotes textiles |
+| fix | Corrección de errores | fix: corregir validación de reservas |
+| docs | Cambios en documentación | docs: actualizar documentación del backend |
+| refactor | Reestructuración sin cambiar funcionalidad | refactor: reorganizar bounded contexts |
+| style | Cambios de formato o estilo de código | style: mejorar indentación de controladores |
+| test | Creación o actualización de pruebas | test: agregar pruebas para reservas |
+| chore | Tareas de mantenimiento o configuración | chore: actualizar dependencias Maven |
+
+La aplicación de estas convenciones permitió mantener un código consistente, facilitar el trabajo colaborativo y mejorar la mantenibilidad del sistema durante todo el ciclo de desarrollo.
 
 <a name="7.1.4."></a>
 
@@ -3006,14 +3108,33 @@ De manera complementaria, se inició el desarrollo del frontend móvil utilizand
 | **Attendees (to planning meeting)**    | 	Huanaco Huayta, Elizabeth Lucero / Cuya Villegas, Rafael Alberto / Gongora Castillejos, Williams / Torres Garcia, Andrés Alberto / Molina Falcón, Piero Leonardo                                                                                                                                                                                                                                                                                                                                  |
 | **Sprint 1 – 1 Review Summary**        | Desarrollo completo del backend de GamarraLoop, incluyendo la implementación de los bounded contexts, la configuración de la base de datos PostgreSQL, la documentación de la API mediante Swagger/OpenAPI y la integración con servicios de clasificación de textiles mediante inteligencia artificial. Asimismo, se inició el desarrollo del frontend móvil utilizando FlutterFlow para integrar las interfaces con la API desarrollada.                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | **Sprint 1 – 1 Retrospective Summary** | Al tratarse del primer sprint de desarrollo, no existe una retrospectiva previa. Sin embargo, el equipo estableció los lineamientos técnicos, arquitectónicos y organizacionales que servirán de base para las siguientes iteraciones del proyecto.                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| **Sprint Goal & User Stories**         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **Sprint Goal & User Stories**         | Objetivo del Sprint: Implementar los bounded contexts principales del sistema (Profiles, Lots y Reservations), permitiendo registrar usuarios, publicar lotes textiles, consultar lotes disponibles y gestionar reservas de forma segura mediante servicios transaccionales. Esta iteración establece la base funcional sobre la cual se desarrollarán posteriormente los servicios de clasificación mediante IA, notificaciones y automatización de procesos.<br><br>Historias de Usuario comprometidas: US01, US02, US03, US04, US05, US06, US07, US08, US12, US13, US14, US18 y US19.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | **Sprint #1 Goal**                     | Nuestro enfoque está en construir la infraestructura tecnológica fundamental de GamarraLoop mediante la implementación de una API REST robusta y escalable que soporte los procesos de publicación de lotes textiles, clasificación automática de materiales, reservas, entregas, notificaciones y gestión de usuarios. Creemos que esto permitirá disponer de una base sólida para el desarrollo progresivo de la aplicación móvil y la validación de los principales flujos de negocio. Esto se confirmará cuando los servicios backend se encuentren desplegados, documentados mediante Swagger e integrados progresivamente con la primera versión del frontend. |
-| **Sprint #1 Velocity**                 | [Horas comprometidas por el equipo]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| **Sum of Story Points**                | [Total de Story Points del Sprint]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Sprint #1 Velocity**                 | 63 horas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **Sum of Story Points**                | 47 puntos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
 <a name="7.2.1.2."></a>
 
 #### 7.2.1.2. Sprint Backlog 1
+
+Para el Sprint 1 se definió como objetivo desarrollar la primera versión funcional de la solución GamarraLoop, enfocándose principalmente en la implementación de los bounded contexts esenciales del backend relacionados con la gestión de perfiles de usuario, publicación de lotes textiles y reservas de lotes. Asimismo, se avanzó en la implementación de componentes clave del frontend móvil, permitiendo presentar la propuesta de valor del producto, facilitar el acceso a la aplicación y validar los principales flujos de interacción entre confeccionistas y artesanos. Este incremento sienta las bases arquitectónicas y funcionales necesarias para la incorporación de servicios avanzados y funcionalidades complementarias en el siguiente sprint.
+
+| User Story ID | Título                                | Work Item ID | Tarea Técnica                     | Descripción                                                                                 | Estimación (Horas) | Story Points | Asignado a | Estado |
+| ------------- | ------------------------------------- | ------------ | --------------------------------- | ------------------------------------------------------------------------------------------- | ------------------ | ------------ | ---------- | ------ |
+| US01          | Propuesta de valor en Landing Page    | WT-01        | Landing Page Hero Section         | Implementar la sección principal de la Landing Page con la propuesta de valor del proyecto. | 4h                 | 3            | Equipo     | Done   |
+| US02          | Sección de contacto para talleres     | WT-02        | Workshop Partnership Section      | Implementar sección informativa para afiliación de talleres textiles.                       | 4h                 | 3            | Equipo     | Done   |
+| US03          | Redirección a descarga de App         | WT-03        | Download Application Section      | Implementar botones de descarga y redirección a la aplicación móvil.                        | 2h                 | 2            | Equipo     | Done   |
+| US04          | Creación de perfil básico             | WT-04        | User Profile API                  | Implementar creación y persistencia de perfiles de usuario según rol seleccionado.          | 6h                 | 5            | Elizabeth  | Done   |
+| US05          | Carga de imagen de lote de tela       | WT-05        | Lot Creation Service              | Implementar recepción y almacenamiento inicial de imágenes de lotes textiles.               | 6h                 | 5            | Elizabeth  | Done   |
+| US06          | Asignación automática de ubicación    | WT-06        | GPS Location Service              | Registrar coordenadas geográficas asociadas al lote publicado.                              | 4h                 | 3            | Elizabeth  | Done   |
+| US07          | Edición manual de ubicación de recojo | WT-07        | Pickup Reference Service          | Permitir agregar referencias descriptivas para el punto de recojo.                          | 3h                 | 2            | Elizabeth  | Done   |
+| US08          | Cancelación de lote publicado         | WT-08        | Lot Withdrawal Service            | Implementar cambio de estado de lote publicado a retirado.                                  | 4h                 | 3            | Elizabeth  | Done   |
+| US12          | Visualización de lotes disponibles    | WT-09        | Lots Query Service                | Implementar consulta de lotes disponibles para artesanos.                                   | 6h                 | 5            | Elizabeth  | Done   |
+| US13          | Ver detalle del lote                  | WT-10        | Lot Detail Service                | Implementar consulta detallada de información de un lote específico.                        | 4h                 | 3            | Elizabeth  | Done   |
+| US14          | Reserva de lote para recojo           | WT-11        | Reservation Service               | Implementar creación y gestión inicial de reservas de lotes.                                | 8h                 | 5            | Elizabeth  | Done   |
+| US18          | Endpoint de listado de lotes activos  | WT-12        | Lots REST Endpoint                | Exponer endpoint REST para consulta de lotes disponibles.                                   | 4h                 | 3            | Elizabeth  | Done   |
+| US19          | Servicio transaccional de reserva     | WT-13        | Transactional Reservation Service | Implementar lógica transaccional para evitar reservas concurrentes sobre un mismo lote.     | 8h                 | 5            | Elizabeth  | Done   |
+
 
 <a name="7.2.1.3."></a>
 
@@ -3027,20 +3148,20 @@ A continuación, se presentan los commits más representativos realizados durant
 
 **Landing Page**
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
-|------------|--------|-----------|----------------|----------------|---------------------|
-| https://github.com/GamarraLoop/gamarra-loop-landing	 | main | 3d2d79be64414019817d1c3bdf39aad570a61ca1 | feat: initial landing page for GamarraLoop | Hero with brand wordmark, tagline, segmented language toggle (ES/EN), Side-rail navigation with scroll spy, Sections: problema, cómo funciona, segmentos, bento, testimonios, CTA, footer, Real photos for bento and lot card thumbnails (Pexels), Full ES/EN i18n (textContent + aria-label + alt), Brand palette: beige + verde oscuro (#2D5F3F) + negro, Mobile responsive with hamburger overlay, Vanilla HTML/CSS/JS — no build, no frameworks | 10/05/2026 |
-| https://github.com/GamarraLoop/gamarra-loop-landing	 | main | 9ca1386ccfb2c6d0c62a1138ee4ce60885d94031 | docs: add README with stack, structure, run instructions and team | | 10/05/2026 |
+| Repositorio | Branch | Commit Id | Commit Message | Fecha |
+|-------------|--------|-----------|----------------|-------|
+| [gamarra-loop-landing](https://github.com/GamarraLoop/gamarra-loop-landing) | main | `3d2d79be` | feat: initial landing page for GamarraLoop | 10/05/2026 |
+| [gamarra-loop-landing](https://github.com/GamarraLoop/gamarra-loop-landing) | main | `9ca1386c` | docs: add README with stack, structure, run instructions and team | 10/05/2026 |
 
 
 
 **Backend**
 
-| Repository                                         | Branch | Commit Id | Commit Message                                                                 | Commit Message Body                                                                                                                                                                                                                                                                                                                                                                                         | Committed on (Date) |
-| -------------------------------------------------- | ------ | --------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| https://github.com/GamarraLoop/GamarraLoop-backend | main   | b2dc2759ab091b0b679c42636d9fc9c24713f5c8   | Initial commit: GamarraLoop Backend MVP                                        | Initial implementation of the GamarraLoop backend MVP using Spring Boot 3.4 and Java 21. Includes the bounded contexts for User Profiles, Lots, Reservations, Deliveries, Notifications, Classification and Expiration Scheduler. Integration with PostgreSQL (Supabase), Google Cloud Vision API, Swagger/OpenAPI documentation and RESTful endpoints following DDD and Hexagonal Architecture principles. | 29/05/2026          |
-| https://github.com/GamarraLoop/GamarraLoop-backend | main   | 8cc709aee5a6cd66ba2761287cb58b68fd51da01   | docs: add comprehensive README.md                                              | Added comprehensive project documentation including architecture overview, bounded contexts, setup instructions, technology stack and execution guidelines.                                                                                                                                                                                                                                                 | 29/05/2026          |
-| https://github.com/GamarraLoop/GamarraLoop-backend | main   | cee4f92820e57e81432c058a27f35d79fda74a64   | docs: Update README with project details and logo                              | Updated project documentation with branding assets, project description and additional repository information.                                                                                                                                                                                                                                                                                              | 29/05/2026          |
+| Repositorio | Branch | Commit Id | Commit Message | Fecha |
+| ----------- | ------ | --------- | -------------- | ----- |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | main | `b2dc2759` | Initial commit: GamarraLoop Backend MVP | 29/05/2026 |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | main | `8cc709ae` | docs: add comprehensive README.md | 29/05/2026 |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | main | `cee4f928` | docs: Update README with project details and logo | 29/05/2026 |
 
 <a name="7.2.1.4."></a>
 
@@ -3054,9 +3175,9 @@ Los escenarios fueron organizados de acuerdo con las épicas funcionales del sis
 
 Los archivos fueron almacenados en el repositorio de pruebas del proyecto mediante el siguiente commit:
 
-| Repository                         | Branch    | Commit ID     | Commit Message                                               | Commit Message Body                   | Committed on(Date)|                                                                                                                                                  
-| ---------------------------------- | --------- | ------------- | ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |-------------|
-| https://github.com/GamarraLoop/GamarraLoop-Acceptance-Tests-Backend | main | db8dda573e061f529281da33eca118cb27fb3546 | `test: add Gherkin feature files for acceptance test design` | Added Gherkin feature files for all defined user stories. Organized scenarios by epic. Prepared acceptance test specifications for future Cucumber implementation. Covers US01 to US22. | 2026-06-08 |  
+| Repositorio | Branch | Commit ID | Commit Message | Fecha |
+| ----------- | ------ | --------- | -------------- | ----- |
+| [GamarraLoop-Acceptance-Tests-Backend](https://github.com/GamarraLoop/GamarraLoop-Acceptance-Tests-Backend) | main | `db8dda57` | test: add Gherkin feature files for acceptance test design | 2026-06-08 |
 
 A continuación se presenta la relación de archivos `.feature` desarrollados para cada User Story:
 
@@ -3097,9 +3218,9 @@ Las pruebas fueron desarrolladas utilizando JUnit 5 y Mockito, permitiendo verif
 
 El objetivo de estas pruebas fue asegurar que los componentes del dominio respondan correctamente ante escenarios válidos y situaciones excepcionales, garantizando el cumplimiento de las reglas de negocio definidas en las User Stories implementadas durante el Sprint.
 
-| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
-|------------|---------|------------|----------------|--------------------|------|
-| https://github.com/GamarraLoop/GamarraLoop-backend | feature/testing-sprint-1 | 535363504127a8fd4cb32f17065ec2c023c51794 | `test: implement unit tests for Lot, Reservation and UserProfile aggregates and command services` | Added unit tests for Lot aggregate business rules. Added unit tests for Reservation aggregate lifecycle transitions. Added unit tests for UserProfile aggregate creation and updates. Added unit tests for LotCommandServiceImpl. Added unit tests for ReservationCommandServiceImpl. Added unit tests for UserProfileCommandServiceImpl. Covered success and exception scenarios using JUnit 5 and Mockito | 2026-06-08 |
+| Repositorio | Branch | Commit ID | Commit Message | Fecha |
+| ----------- | ------ | --------- | -------------- | ----- |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | feature/testing-sprint-1 | `53536350` | test: implement unit tests for Lot, Reservation and UserProfile aggregates and command services | 2026-06-08 |
 
 A continuación se presenta la relación de las pruebas unitarias desarrolladas para los tres bounded contexts seleccionados para este Sprint:
 
@@ -3241,12 +3362,49 @@ Los servicios desarrollados fueron expuestos mediante una API RESTful construida
 <img src="Img/backend/swagger-classification-controller.png" alt="Classification Controller on Swagger" style="margin-bottom: 5px;" width="800"/><br>
 *Figura: Endpoints expuestos por el Bounded Context Classification*
 
-> **Video de demostración:** [Demostración de la API Backend de GamarraLoop en Swagger](https://miro.com/app/board/uXjVHd6pQow=/?share_link_id=174494873351)
+> **Video de demostración:** [Demostración de la API Backend de GamarraLoop en Swagger](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c186_upc_edu_pe/IQA5qqRlUG1uQZd2ZuEb9yVoAbQvdftkbcyxRHdb8pozZBE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=VovDh4)
 
 
 **Frontend**
 
-> **Video de demostración:** [Demostración del frontend de GamarraLoop](https://miro.com/app/board/uXjVHd6pQow=/?share_link_id=174494873351)
+Para el desarrollo del frontend de GamarraLoop se empleó la plataforma low-code *FlutterFlow*, permitiendo acelerar la construcción de la aplicación móvil mediante un enfoque visual basado en componentes, flujos de navegación e integración con servicios externos. La interfaz fue diseñada siguiendo la estructura de los bounded contexts definidos en la arquitectura del sistema, incluyendo Profiles, Lots, Classifications, Reservations, Pick Up and Delivery, y Notifications.
+
+Durante el Sprint 1 se implementaron las principales pantallas asociadas a los procesos de autenticación, gestión de perfiles, publicación y consulta de lotes textiles, reservas de materiales y coordinación de recojos. Asimismo, se definió la navegación parcial de la aplicación mediante un storyboard que representa las relaciones entre las distintas vistas y los flujos de interacción del usuario.
+
+<img src="Img/frontend/storyboard-1.png" alt="GamarraLoop´s storyboard" style="margin-bottom: 5px;" width="800"/><br>
+*Figura: Estructura de navegación parcial del frontend móvil desarrollada en FlutterFlow.*
+
+Las capturas presentadas a continuación evidencian las interfaces desarrolladas en FlutterFlow, mostrando las funcionalidades implementadas y la experiencia de usuario propuesta para la plataforma. Estas pantallas constituyen la primera versión funcional de la aplicación móvil y servirán como base para la integración progresiva con los servicios backend desarrollados durante el proyecto.
+
+|  IAM                          |                                  |
+| ----------------------------- | -------------------------------- |
+| ![](Img/frontend/login-page.png)           | ![](Img/frontend/register-page.png)           |
+| *Figura: Inicio de sesión.* | *Figura: Registro de usuario.* |
+
+|       Lots                                     |                                             |
+| ------------------------------------------ | ------------------------------------------- |
+| ![](Img/frontend/lots-list.png)                         | ![](Img/frontend/available-lots.png)                     |
+| *Figura: Listado de lotes textiles.*     | *Figura: Lotes disponibles para reserva.* |
+| ![](Img/frontend/lot-details.png)                       | ![](Img/frontend/create-lot.png)                         |
+| *Figura: Detalle de lote textil.*        | *Figura: Creación de lote textil.*        |
+| ![](Img/frontend/cancel-lot.png)                        |                                             |
+| *Figura: Cancelación de lote publicado.* |                                             |
+
+
+| Reservations                                    |                                    |
+| ----------------------------------- | ---------------------------------- |
+| ![](Img/frontend/reservated-lot.png)             | ![](Img/frontend/my-reservations.png)           |
+| *Figura: Reserva de lote textil.* | *Figura: Historial de reservas.* |
+
+
+| Pick up and delivery                                              |
+| --------------------------------------------- |
+| ![](Img/frontend/gps-location-pickup.png)                  |
+| *Figura: Selección de ubicación de recojo.* |
+
+
+
+> **Video de demostración:** [Demostración del frontend de GamarraLoop](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211g522_upc_edu_pe/IQCfVTJL9sDxSp1S-xuUnBp-ARAJHiLwECK8116jlZ9ZlYE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=b6uUSh)
 
 <a name="7.2.1.6."></a>
 
@@ -3354,7 +3512,10 @@ A continuación, se presentan las capturas en imagen que evidencian los pasos co
 *Figura: GitHub Actions CI/CD*
 
 **Evidencia 4: Producto Digital Desplegado y Disponible**
-*Captura del navegador mostrando la documentación interactiva (Swagger UI) de la API de GamarraLoop cargando desde el dominio público de Azure (`https://gamarraloop-...azurewebsites.net/api/v1/swagger-ui/index.html`).*
+*Captura del navegador mostrando la documentación interactiva (Swagger UI) de la API de GamarraLoop cargando desde el dominio público de Azure.*
+
+> **Enlace al Swagger UI en producción:** [GamarraLoop API — Swagger UI](https://gamarraloop-e3f8a6dmaah4gdae.eastus-01.azurewebsites.net/api/v1/swagger-ui/index.html#/)
+
 ![Swagger UI en Producción](./Img/backend/swagger-azure.png)
 
 *Figura: Swagger UI en Producción*
