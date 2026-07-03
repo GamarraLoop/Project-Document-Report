@@ -209,6 +209,15 @@ Los integrantes son:
    7.2.1.6. [Services Documentation Evidence for Sprint Review.](#7.2.1.6.)<br>
    7.2.1.7. [Software Deployment Evidence for Sprint Review.](#7.2.1.7.)<br>
    7.2.1.8. [Team Collaboration Insights during Sprint.](#7.2.1.8.)<br>
+   7.2.2. [Sprint 2.](#7.2.2.)<br>
+   7.2.2.1. [Sprint Planning 2.](#7.2.2.1.)<br>
+   7.2.2.2. [Sprint Backlog 2.](#7.2.2.2.)<br>
+   7.2.2.3. [Development Evidence for Sprint Review.](#7.2.2.3.)<br>
+   7.2.2.4. [Testing Suite Evidence for Sprint Review.](#7.2.2.4.)<br>
+   7.2.2.5. [Execution Evidence for Sprint Review.](#7.2.2.5.)<br>
+   7.2.2.6. [Services Documentation Evidence for Sprint Review.](#7.2.2.6.)<br>
+   7.2.2.7. [Software Deployment Evidence for Sprint Review.](#7.2.2.7.)<br>
+   7.2.2.8. [Team Collaboration Insights during Sprint.](#7.2.2.8.)<br>
    7.3. [Validation Interviews.](#7.3.)<br>
    7.3.1. [Interview Design.](#7.3.1.)<br>
    7.3.2. [Interview Records.](#7.3.2.)<br>
@@ -3542,6 +3551,42 @@ A continuación, se presentan las capturas en imagen de las analíticas de colab
 ![Team Collaboration Insights](./Img/contributors.png)
 
 *Figura: Team Collaboration Insights*
+
+<a name="7.2.2."></a>
+
+### 7.2.2. Sprint 2
+
+<a name="7.2.2.1."></a>
+
+#### 7.2.2.1. Sprint Planning 2
+
+<a name="7.2.2.2."></a>
+
+#### 7.2.2.2. Sprint Backlog 2
+
+<a name="7.2.2.3."></a>
+
+#### 7.2.2.3. Development Evidence for Sprint Review
+
+<a name="7.2.2.4."></a>
+
+#### 7.2.2.4. Testing Suite Evidence for Sprint Review
+
+<a name="7.2.2.5."></a>
+
+#### 7.2.2.5. Execution Evidence for Sprint Review
+
+<a name="7.2.2.6."></a>
+
+#### 7.2.2.6. Services Documentation Evidence for Sprint Review
+
+<a name="7.2.2.7."></a>
+
+#### 7.2.2.7. Software Deployment Evidence for Sprint Review
+
+<a name="7.2.2.8."></a>
+
+#### 7.2.2.8. Team Collaboration Insights during Sprint
 
 <a name="7.3."></a>
 
