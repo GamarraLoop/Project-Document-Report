@@ -10,7 +10,7 @@
 
 <h3 align="center">202601</h3>
 
-<br>
+
 
 <h3 align="center">NRC: 10042</h3>
 
@@ -26,8 +26,6 @@
 
 <h3 align="center">Nombre del Producto: Gamarra Loop</h3>
 
-<br>
-
 <h3>Integrantes:</h3>
 
 <div style="text-align: center;">
@@ -42,9 +40,7 @@
 
 </div>
 
-<br>
-
-<h3 align="center">Mayo de 2026</h3>
+<h3 align="center">Julio de 2026</h3>
 
 <br><br>
 
@@ -2513,7 +2509,8 @@ Se elabora la propuesta en dos vistas obligatorias: Desktop Web Browser y Mobile
 
 Los wireframes presentan la estructura de bloques, jerarquía y flujo de lectura del Landing Page antes de aplicar color, tipografía final e imágenes. Su objetivo es validar la arquitectura de información, el orden de los contenidos y la ubicación de los call-to-action por segmento.
 
-Herramienta utilizada: Figma. Enlace al archivo de wireframes: https://www.figma.com/design/J1GM7YvXifXyoHeMuIaHdP/Landing-Page?node-id=0-1
+> **Herramienta utilizada:** Figma  
+> **Enlace al archivo de wireframes:** [Landing Page — Wireframes en Figma](https://www.figma.com/design/J1GM7YvXifXyoHeMuIaHdP/Landing-Page?node-id=0-1)
 
 **Versión Desktop Web Browser**
 
@@ -2539,8 +2536,8 @@ La consistencia entre ambas versiones garantiza que un visitante que descubra Ga
 
 Los mock-ups aplican sobre la estructura validada en los wireframes el Design System definido en 6.1: paleta beige claro como fondo, verde oscuro como color de interacción principal, negro para tipografía y elementos estructurales, jerarquía tipográfica de cuatro niveles (headings, body, buttons, links) y componentes de Material Design. El resultado refleja la identidad visual de GamarraLoop —sostenibilidad, reutilización y conexión con el ecosistema textil— manteniendo la legibilidad y el contraste necesarios para diseño inclusivo.
 
-Herramienta utilizada: Figma. 
-Enlace al archivo de mock-ups: https://www.figma.com/design/J1GM7YvXifXyoHeMuIaHdP/Landing-Page?node-id=1-2
+> **Herramienta utilizada:** Figma  
+> **Enlace al archivo de mock-ups:** [Landing Page — Mock-ups en Figma](https://www.figma.com/design/J1GM7YvXifXyoHeMuIaHdP/Landing-Page?node-id=1-2)
 
 **Versión Desktop Web Browser**
 
@@ -2574,8 +2571,9 @@ Las dos aplicaciones de alcance son:
 
 La propuesta traduce las decisiones de Style Guidelines (6.1: paleta beige claro / verde oscuro / negro, jerarquía tipográfica de cuatro niveles, componentes basados en Material Design) y de Arquitectura de Información (6.2: Labeling, Searching, SEO/Meta y Navigation Systems) hacia layouts concretos y navegables. Cada wireframe y cada wireflow se traza explícitamente a las User Stories del Capítulo III y a los User Persona del 2.3.1, garantizando consistencia entre el espacio del problema (Capítulos I–III) y el espacio de la solución (Capítulo VI).
 
-Las herramientas utilizadas son Figma para los wireframes (mismas que en 6.3) y un layout compuesto en Figma para los wireflows que reaprovecha los frames de 6.4.1 como pasos de cada flujo. Enlace al archivo Figma con todos los wireframes y wireflow diagrams de esta sección:
-https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design
+Las herramientas utilizadas son Figma para los wireframes (mismas que en 6.3) y un layout compuesto en Figma para los wireflows que reaprovecha los frames de 6.4.1 como pasos de cada flujo.
+
+> **Enlace al archivo Figma (wireframes y wireflow diagrams):** [GamarraLoop — Applications UX/UI Design en Figma](https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design)
 
 <a name="6.4.1"></a>
 
@@ -2758,8 +2756,8 @@ Los mock-ups elevan a **alta fidelidad** los wireframes validados en 6.4.1, apli
 
 Se conservan los mismos identificadores de pantalla que en 6.4.1, sustituyendo el prefijo `C-W` / `A-W` (wireframe) por `C-M` / `A-M` (mock-up) para mantener la trazabilidad uno a uno entre baja y alta fidelidad.
 
-Herramienta utilizada: Figma. Enlace al archivo:
-https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design
+> **Herramienta utilizada:** Figma  
+> **Enlace al archivo de mock-ups:** [GamarraLoop — Applications UX/UI Design en Figma](https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design)
 
 **App Confeccionista — 11 mock-ups**
 
@@ -2841,7 +2839,8 @@ Aplican el Design System sobre el ciclo de demanda. La bottom navigation se redu
 
 Los User Flow Diagrams se derivan directamente de los Wireflow Diagrams de 6.4.2, elevando las pantallas a los mock-ups de alta fidelidad de 6.4.3 e incorporando de forma explícita, para cada User Goal, el **happy path** (ruta esperada) y los **unhappy paths** (rutas alternativas: errores, cancelaciones, expiraciones y validaciones fallidas). Se documenta un User Flow por cada User Goal de las dos aplicaciones, considerando su User Persona del 2.3.1, manteniendo la consistencia uno a uno con los wireflows de los que provienen (UG-C01…UG-C04, UG-A01…UG-A03).
 
-Herramienta utilizada: Figma. Enlace al archivo: https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design
+> **Herramienta utilizada:** Figma  
+> **Enlace al archivo de User Flow Diagrams:** [GamarraLoop — Applications UX/UI Design en Figma](https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design)
 
 **User Flows — App Confeccionista**
 
@@ -2906,7 +2905,7 @@ El prototipo cubre los flujos UG-C01 a UG-C04, con foco en el flujo de publicaci
 <img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/prototyping/proto-confeccionista-stream.png" alt="Prototipo navegable — App Confeccionista (captura del video)" width="600"/><br>
 *Figura: Captura del video de demostración — Prototipo App Confeccionista*
 
-> **Video de demostración (Microsoft Stream):** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220528_upc_edu_pe/IQCfE4Akn3KkSKxJGbF5blUpAYgmCNq9PNkOoKCYWdB-gDg?e=03ZAjZ
+> **Video de demostración (Microsoft Stream):** [Prototipo navegable App Confeccionista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220528_upc_edu_pe/IQCfE4Akn3KkSKxJGbF5blUpAYgmCNq9PNkOoKCYWdB-gDg?e=03ZAjZ)
 
 **App Artesano**
 
@@ -2915,9 +2914,9 @@ El prototipo cubre los flujos UG-A01 a UG-A03, con foco en el flujo de exploraci
 <img src="https://raw.githubusercontent.com/GamarraLoop/Project-Document-Report/main/assets/applications/prototyping/proto-artesano-stream.png" alt="Prototipo navegable — App Artesano (captura del video)" width="600"/><br>
 *Figura: Captura del video de demostración — Prototipo App Artesano*
 
-> **Video de demostración (Microsoft Stream):** https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220528_upc_edu_pe/IQBC6WDZIPypR4p6OlF73_p3AejradgONAmWfsrieUaROOo?e=Lar9f8
+> **Video de demostración (Microsoft Stream):** [Prototipo navegable App Artesano](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202220528_upc_edu_pe/IQBC6WDZIPypR4p6OlF73_p3AejradgONAmWfsrieUaROOo?e=Lar9f8)
 
-Enlace al prototipo navegable en Figma: https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design
+> **Prototipo navegable en Figma:** [GamarraLoop — Applications UX/UI Design en Figma](https://www.figma.com/design/85CeQoBh8DOJBiIarBx5al/GamarraLoop-%E2%80%94-Applications-UX-UI-Design)
 
 <a name="7."></a>
 
@@ -3145,20 +3144,20 @@ A continuación, se presentan los commits más representativos realizados durant
 
 **Landing Page**
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
-|------------|--------|-----------|----------------|----------------|---------------------|
-| https://github.com/GamarraLoop/gamarra-loop-landing	 | main | 3d2d79be64414019817d1c3bdf39aad570a61ca1 | feat: initial landing page for GamarraLoop | Hero with brand wordmark, tagline, segmented language toggle (ES/EN), Side-rail navigation with scroll spy, Sections: problema, cómo funciona, segmentos, bento, testimonios, CTA, footer, Real photos for bento and lot card thumbnails (Pexels), Full ES/EN i18n (textContent + aria-label + alt), Brand palette: beige + verde oscuro (#2D5F3F) + negro, Mobile responsive with hamburger overlay, Vanilla HTML/CSS/JS — no build, no frameworks | 10/05/2026 |
-| https://github.com/GamarraLoop/gamarra-loop-landing	 | main | 9ca1386ccfb2c6d0c62a1138ee4ce60885d94031 | docs: add README with stack, structure, run instructions and team | | 10/05/2026 |
+| Repositorio | Branch | Commit Id | Commit Message | Fecha |
+|-------------|--------|-----------|----------------|-------|
+| [gamarra-loop-landing](https://github.com/GamarraLoop/gamarra-loop-landing) | main | `3d2d79be` | feat: initial landing page for GamarraLoop | 10/05/2026 |
+| [gamarra-loop-landing](https://github.com/GamarraLoop/gamarra-loop-landing) | main | `9ca1386c` | docs: add README with stack, structure, run instructions and team | 10/05/2026 |
 
 
 
 **Backend**
 
-| Repository                                         | Branch | Commit Id | Commit Message                                                                 | Commit Message Body                                                                                                                                                                                                                                                                                                                                                                                         | Committed on (Date) |
-| -------------------------------------------------- | ------ | --------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| https://github.com/GamarraLoop/GamarraLoop-backend | main   | b2dc2759ab091b0b679c42636d9fc9c24713f5c8   | Initial commit: GamarraLoop Backend MVP                                        | Initial implementation of the GamarraLoop backend MVP using Spring Boot 3.4 and Java 21. Includes the bounded contexts for User Profiles, Lots, Reservations, Deliveries, Notifications, Classification and Expiration Scheduler. Integration with PostgreSQL (Supabase), Google Cloud Vision API, Swagger/OpenAPI documentation and RESTful endpoints following DDD and Hexagonal Architecture principles. | 29/05/2026          |
-| https://github.com/GamarraLoop/GamarraLoop-backend | main   | 8cc709aee5a6cd66ba2761287cb58b68fd51da01   | docs: add comprehensive README.md                                              | Added comprehensive project documentation including architecture overview, bounded contexts, setup instructions, technology stack and execution guidelines.                                                                                                                                                                                                                                                 | 29/05/2026          |
-| https://github.com/GamarraLoop/GamarraLoop-backend | main   | cee4f92820e57e81432c058a27f35d79fda74a64   | docs: Update README with project details and logo                              | Updated project documentation with branding assets, project description and additional repository information.                                                                                                                                                                                                                                                                                              | 29/05/2026          |
+| Repositorio | Branch | Commit Id | Commit Message | Fecha |
+| ----------- | ------ | --------- | -------------- | ----- |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | main | `b2dc2759` | Initial commit: GamarraLoop Backend MVP | 29/05/2026 |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | main | `8cc709ae` | docs: add comprehensive README.md | 29/05/2026 |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | main | `cee4f928` | docs: Update README with project details and logo | 29/05/2026 |
 
 <a name="7.2.1.4."></a>
 
@@ -3172,9 +3171,9 @@ Los escenarios fueron organizados de acuerdo con las épicas funcionales del sis
 
 Los archivos fueron almacenados en el repositorio de pruebas del proyecto mediante el siguiente commit:
 
-| Repository                         | Branch    | Commit ID     | Commit Message                                               | Commit Message Body                   | Committed on(Date)|                                                                                                                                                  
-| ---------------------------------- | --------- | ------------- | ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |-------------|
-| https://github.com/GamarraLoop/GamarraLoop-Acceptance-Tests-Backend | main | db8dda573e061f529281da33eca118cb27fb3546 | `test: add Gherkin feature files for acceptance test design` | Added Gherkin feature files for all defined user stories. Organized scenarios by epic. Prepared acceptance test specifications for future Cucumber implementation. Covers US01 to US22. | 2026-06-08 |  
+| Repositorio | Branch | Commit ID | Commit Message | Fecha |
+| ----------- | ------ | --------- | -------------- | ----- |
+| [GamarraLoop-Acceptance-Tests-Backend](https://github.com/GamarraLoop/GamarraLoop-Acceptance-Tests-Backend) | main | `db8dda57` | test: add Gherkin feature files for acceptance test design | 2026-06-08 |
 
 A continuación se presenta la relación de archivos `.feature` desarrollados para cada User Story:
 
@@ -3215,9 +3214,9 @@ Las pruebas fueron desarrolladas utilizando JUnit 5 y Mockito, permitiendo verif
 
 El objetivo de estas pruebas fue asegurar que los componentes del dominio respondan correctamente ante escenarios válidos y situaciones excepcionales, garantizando el cumplimiento de las reglas de negocio definidas en las User Stories implementadas durante el Sprint.
 
-| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
-|------------|---------|------------|----------------|--------------------|------|
-| https://github.com/GamarraLoop/GamarraLoop-backend | feature/testing-sprint-1 | 535363504127a8fd4cb32f17065ec2c023c51794 | `test: implement unit tests for Lot, Reservation and UserProfile aggregates and command services` | Added unit tests for Lot aggregate business rules. Added unit tests for Reservation aggregate lifecycle transitions. Added unit tests for UserProfile aggregate creation and updates. Added unit tests for LotCommandServiceImpl. Added unit tests for ReservationCommandServiceImpl. Added unit tests for UserProfileCommandServiceImpl. Covered success and exception scenarios using JUnit 5 and Mockito | 2026-06-08 |
+| Repositorio | Branch | Commit ID | Commit Message | Fecha |
+| ----------- | ------ | --------- | -------------- | ----- |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | feature/testing-sprint-1 | `53536350` | test: implement unit tests for Lot, Reservation and UserProfile aggregates and command services | 2026-06-08 |
 
 A continuación se presenta la relación de las pruebas unitarias desarrolladas para los tres bounded contexts seleccionados para este Sprint:
 
@@ -3509,7 +3508,10 @@ A continuación, se presentan las capturas en imagen que evidencian los pasos co
 *Figura: GitHub Actions CI/CD*
 
 **Evidencia 4: Producto Digital Desplegado y Disponible**
-*Captura del navegador mostrando la documentación interactiva (Swagger UI) de la API de GamarraLoop cargando desde el dominio público de Azure (`https://gamarraloop-...azurewebsites.net/api/v1/swagger-ui/index.html`).*
+*Captura del navegador mostrando la documentación interactiva (Swagger UI) de la API de GamarraLoop cargando desde el dominio público de Azure.*
+
+> **Enlace al Swagger UI en producción:** [GamarraLoop API — Swagger UI](https://gamarraloop-e3f8a6dmaah4gdae.eastus-01.azurewebsites.net/api/v1/swagger-ui/index.html#/)
+
 ![Swagger UI en Producción](./Img/backend/swagger-azure.png)
 
 *Figura: Swagger UI en Producción*
