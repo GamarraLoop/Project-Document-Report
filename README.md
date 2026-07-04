@@ -3591,21 +3591,32 @@ Las personas entrevistadas pertenecen a los segmentos identificados del proyecto
 **Curso:** Arquitecturas de Software Emergentes  
 **Sección:** 10042  
 **Profesores:** Royer Edelwer Rojas Malasquez 
-**Auditor:** GamarraLoop Development Team
-**Cliente:** Richard Velasquez    
+**Auditor:** GamarraLoop Development Team  
+**Clientes:** Participantes de las entrevistas de validación  
 **SITE o APP a evaluar:** GamarraLoop
 
 #### Tareas a evaluar
 
+- Navegación general de la plataforma.
+- Diseño de la interfaz de usuario (UI).
+- Experiencia de usuario (UX).
+- Consistencia visual del menú de navegación.
 - Vista principal de la plataforma.
 - Registro e inicio de sesión.
+- Exploración y filtrado de lotes textiles.
+- Clasificación automática de lotes mediante Inteligencia Artificial.
+- Visualización del detalle de un lote textil.
 - Publicación de lotes textiles.
-- Visualización de lotes disponibles.
-- Reserva de lotes textiles.
-- Gestión de reservas.
-- Seguimiento de recolección y entrega.
-- Gestión de notificaciones.
-- Perfil de usuario.
+- Proceso de reserva de lotes.
+- Gestión y seguimiento de reservas.
+- Visualización del mapa y punto de recojo.
+- Retroalimentación del sistema durante las acciones del usuario.
+- Visualización y edición del perfil de usuario.
+- Presentación del impacto ambiental generado por el usuario.
+- Adaptabilidad de la interfaz para dispositivos móviles.
+- Claridad de iconos, botones y elementos interactivos.
+- Tiempo de respuesta percibido durante las principales acciones.
+- Accesibilidad y facilidad de aprendizaje para nuevos usuarios.
 
 ---
 
@@ -3622,18 +3633,72 @@ Las personas entrevistadas pertenecen a los segmentos identificados del proyecto
 
 #### Tabla de resumen
 
-| # | Problema                                                                            | Escala de severidad | Heurística/Principio Violado(a)     |
-| - | ----------------------------------------------------------------------------------- | ------------------- | ----------------------------------- |
-| 1 | Información insuficiente sobre la calidad y estado de los lotes textiles publicados | 3                   | Match Between System and Real World |
-| 2 | Visualización poco clara de los lotes disponibles                                   | 2                   | Aesthetic and Minimalist Design     |
-| 3 | Falta de detalles sobre el proceso de reserva y recolección                         | 3                   | Visibility of System Status         |
-| 4 | Escasa información descriptiva en algunas publicaciones de textiles                 | 2                   | Recognition Rather Than Recall      |
+| # | Problema | Escala de severidad | Heurística/Principio Violado(a) |
+|---|----------|---------------------|---------------------------------|
+| 1 | Los botones del menú de navegación podrían destacar mejor la opción actualmente seleccionada. | 1 | Visibility of System Status |
+| 2 | Los filtros de búsqueda de lotes podrían indicar de forma más clara cuál se encuentra activo. | 1 | Visibility of System Status |
+| 3 | El proceso de publicación de un lote podría mostrar una barra de progreso más visible entre los cuatro pasos. | 2 | Visibility of System Status |
+| 4 | El punto de recojo podría complementarse con una dirección o referencia textual además del mapa y las coordenadas. | 1 | Match Between System and Real World |
+| 5 | Los estados de las reservas podrían incluir una breve descripción de lo que significa cada estado para el usuario. | 2 | Recognition Rather Than Recall |
+| 6 | El perfil del usuario podría incorporar un historial detallado del impacto generado mediante las publicaciones y reservas realizadas. | 1 | Flexibility and Efficiency of Use |
+| 7 | El detalle del lote podría permitir ampliar la imagen o visualizar varias fotografías del mismo material textil. | 1 | Flexibility and Efficiency of Use |
+| 8 | Los indicadores del panel principal (Disponibles, Reservados y Entregados) podrían ser interactivos para acceder directamente al listado correspondiente. | 1 | Flexibility and Efficiency of Use |
+| 9 | La clasificación realizada por la inteligencia artificial podría mostrar un porcentaje de confianza o una breve explicación del resultado obtenido. | 2 | Visibility of System Status |
+| 10 | Los filtros por tipo de tela podrían complementarse con una búsqueda por texto para localizar lotes de forma más rápida. | 1 | Flexibility and Efficiency of Use |
 
 
 
 #### Descripción de problemas
 
-### Problema #1: La ubicación podría mostrarse de forma más amigable
+### Problema #1: Los botones del menú de navegación podrían destacar mejor la opción actualmente seleccionada
+
+**Severidad:** 1
+
+**Heurística violada:** Visibility of System Status
+
+**Problema:**
+
+Durante la navegación por la aplicación, la diferencia visual entre la opción activa y las demás opciones del menú inferior es poco evidente. Esto puede dificultar que algunos usuarios identifiquen rápidamente la sección en la que se encuentran.
+
+**Recomendación:**
+
+Incrementar el contraste visual del botón seleccionado mediante cambios de color, tamaño o indicadores gráficos que faciliten su identificación.
+
+---
+
+### Problema #2: Los filtros de búsqueda de lotes podrían indicar de forma más clara cuál se encuentra activo
+
+**Severidad:** 1
+
+**Heurística violada:** Visibility of System Status
+
+**Problema:**
+
+La plataforma permite filtrar los lotes por tipo de material; sin embargo, el filtro seleccionado podría diferenciarse mejor del resto para facilitar la navegación entre categorías.
+
+**Recomendación:**
+
+Aplicar un estilo visual más distintivo al filtro activo, utilizando colores, bordes o indicadores que permitan reconocerlo rápidamente.
+
+---
+
+### Problema #3: El proceso de publicación de un lote podría mostrar una barra de progreso más visible entre los cuatro pasos
+
+**Severidad:** 2
+
+**Heurística violada:** Visibility of System Status
+
+**Problema:**
+
+Durante la publicación de un lote se indica el paso actual mediante un texto ("Paso 1 de 4"), pero el progreso general del proceso podría visualizarse de manera más intuitiva.
+
+**Recomendación:**
+
+Incorporar una barra o indicador gráfico de progreso que permita conocer fácilmente el avance y los pasos restantes.
+
+---
+
+### Problema #4: El punto de recojo podría complementarse con una dirección o referencia textual además del mapa y las coordenadas
 
 **Severidad:** 1
 
@@ -3641,59 +3706,107 @@ Las personas entrevistadas pertenecen a los segmentos identificados del proyecto
 
 **Problema:**
 
-En el detalle del lote se muestra el punto de recojo con mapa y coordenadas. Sin embargo, para algunos usuarios podría ser más claro visualizar también una referencia textual del lugar.
+El detalle del lote presenta correctamente la ubicación mediante un mapa y coordenadas geográficas. Sin embargo, algunos usuarios podrían comprender más fácilmente el punto de recojo si también se muestra una referencia textual.
 
 **Recomendación:**
 
-Agregar una dirección o referencia breve junto al mapa para facilitar la comprensión del punto de recojo.
+Agregar una dirección aproximada o un punto de referencia conocido junto al mapa para facilitar la ubicación del lugar.
 
 ---
 
-### Problema #2: Los estados de reserva podrían tener mayor detalle
+### Problema #5: Los estados de las reservas podrían incluir una breve descripción de lo que significa cada estado para el usuario
 
 **Severidad:** 2
-
-**Heurística violada:** Visibility of System Status
-
-**Problema:**
-
-En la sección de reservas se muestran estados como "Completado" o "Vendido". Aunque permiten conocer el estado general, podrían complementarse con mayor detalle sobre el proceso.
-
-**Recomendación:**
-
-Agregar una breve descripción o historial simple para que el usuario entienda mejor el avance de cada reserva.
-
----
-
-### Problema #3: La clasificación automática podría explicar mejor sus resultados
-
-**Severidad:** 2
-
-**Heurística violada:** Visibility of System Status
-
-**Problema:**
-
-La plataforma clasifica los lotes textiles mediante inteligencia artificial. Sin embargo, el resultado podría ser más claro si se muestran brevemente las características detectadas.
-
-**Recomendación:**
-
-Mostrar etiquetas o una pequeña explicación sobre las características identificadas por la IA, como tipo de tela, color o estado aproximado.
-
----
-
-### Problema #4: El perfil podría mostrar más información del impacto del usuario
-
-**Severidad:** 1
 
 **Heurística violada:** Recognition Rather Than Recall
 
 **Problema:**
 
-La sección de perfil muestra el impacto del usuario mediante los lotes recuperados. No obstante, podría ser útil mostrar un poco más de detalle sobre cómo se generó ese impacto.
+La plataforma utiliza estados como "Activa", "Reservada", "Entregada" o "Vencida". Aunque son comprensibles, algunos usuarios podrían requerir una explicación adicional sobre las acciones o el significado de cada estado.
 
 **Recomendación:**
 
-Agregar un pequeño historial o resumen de actividad para visualizar los lotes recuperados y el aporte generado dentro de la plataforma.
+Mostrar una breve descripción o ayuda contextual para cada estado de la reserva, permitiendo comprender el flujo del proceso sin necesidad de consultar información adicional.
+
+---
+
+### Problema #6: El perfil del usuario podría incorporar un historial detallado del impacto generado mediante las publicaciones y reservas realizadas
+
+**Severidad:** 1
+
+**Heurística violada:** Flexibility and Efficiency of Use
+
+**Problema:**
+
+La sección de perfil muestra el impacto ambiental generado por el usuario mediante la reutilización de textiles. Sin embargo, no se ofrece un historial que permita conocer qué publicaciones o reservas contribuyeron a dicho resultado.
+
+**Recomendación:**
+
+Incorporar un historial de actividad donde el usuario pueda visualizar las publicaciones, reservas y contribuciones que conforman su impacto ambiental.
+
+---
+
+### Problema #7: El detalle del lote podría permitir ampliar la imagen o visualizar varias fotografías del mismo material textil
+
+**Severidad:** 1
+
+**Heurística violada:** Flexibility and Efficiency of Use
+
+**Problema:**
+
+Cada lote presenta una imagen representativa del material textil. No obstante, algunos usuarios podrían requerir observar más detalles del lote antes de realizar una reserva.
+
+**Recomendación:**
+
+Permitir ampliar la imagen principal o incluir una galería con fotografías adicionales del lote para facilitar su evaluación.
+
+---
+
+### Problema #8: Los indicadores del panel principal (Disponibles, Reservados y Entregados) podrían ser interactivos para acceder directamente al listado correspondiente
+
+**Severidad:** 1
+
+**Heurística violada:** Flexibility and Efficiency of Use
+
+**Problema:**
+
+En la pantalla principal del comerciante se muestran indicadores con estadísticas de los lotes disponibles, reservados y entregados. Sin embargo, estos indicadores funcionan únicamente como elementos informativos.
+
+**Recomendación:**
+
+Permitir que cada indicador redireccione al listado correspondiente para facilitar el acceso rápido a la información relacionada.
+
+---
+
+### Problema #9: La clasificación realizada por la inteligencia artificial podría mostrar un porcentaje de confianza o una breve explicación del resultado obtenido
+
+**Severidad:** 2
+
+**Heurística violada:** Visibility of System Status
+
+**Problema:**
+
+La plataforma clasifica automáticamente los lotes textiles mediante inteligencia artificial durante el proceso de publicación. Sin embargo, el usuario únicamente visualiza el resultado final sin información adicional sobre el análisis realizado.
+
+**Recomendación:**
+
+Mostrar una breve explicación del resultado obtenido o un porcentaje de confianza de la clasificación realizada por la inteligencia artificial para aumentar la transparencia del proceso.
+
+---
+
+### Problema #10: Los filtros por tipo de tela podrían complementarse con una búsqueda por texto para localizar lotes de forma más rápida
+
+**Severidad:** 1
+
+**Heurística violada:** Flexibility and Efficiency of Use
+
+**Problema:**
+
+Actualmente la exploración de lotes se realiza mediante filtros por categorías de materiales textiles. Aunque esta funcionalidad facilita la navegación, algunos usuarios podrían requerir localizar un lote específico de manera más rápida.
+
+**Recomendación:**
+
+Incorporar un campo de búsqueda por texto que permita localizar lotes utilizando palabras clave como nombre del material, categoría o descripción.
 
 <a name="7.4."></a>
 
