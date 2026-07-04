@@ -3577,8 +3577,8 @@ Las personas entrevistadas pertenecen a los segmentos identificados del proyecto
 
 | Entrevistado | Segmento Objetivo | Resumen | Captura Video | Timing y Duración | Link del timing en el conglomerado de entrevistas |
 |--------------|-------------------|---------|---------------|-------------------|---------------------------------------------------|
-| Richard Velasquez | Generador de Residuos Textiles | Richard considera que GamarraLoop puede ayudar a reducir el desperdicio textil al conectar talleres con personas interesadas en reutilizar materiales. Indicó que utilizaría la plataforma porque le permitiría dar salida a excedentes textiles que actualmente desecha. Sugirió mejorar la visualización de los lotes publicados. | <img src="Img/Comerciante.png" width="150"> | Timing: 0:04 · Duración: 6:56 | [Entrevista Comerciante](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201610857_upc_edu_pe/IQDMAHBFMLZaTajm7O_8SOgHAT-lhx1QVuc1ZJBsT6Seris?e=lTctba) |
-| Yolanda Quiroz | Emprendedor / Reciclador Textil | Yolanda destacó que la plataforma facilita encontrar materiales reutilizables para sus proyectos. Mencionó que la interfaz es sencilla y que utilizaría la aplicación para encontrar proveedores de textiles reciclables. Sugirió agregar más información sobre la calidad y estado de los materiales. | <img src="Img/Artesana.png" width="150"> | Timing: 0:03 · Duración: 7:46 | [Entrevista Artesana](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201610857_upc_edu_pe/IQB5GM6BPegmSZtO0JElawgSAVSsvgjeonjKflOhTS_qRzg?e=3TixjN) |
+| Richard Velasquez | Generador de Residuos Textiles (Comerciante) | Richard considera que GamarraLoop puede ayudar a reducir el desperdicio textil al conectar talleres con personas interesadas en reutilizar materiales. Indicó que utilizaría la plataforma porque le permitiría dar salida a excedentes textiles que actualmente desecha. Sugirió mejorar la visualización de los lotes publicados. | <img src="Img/Comerciante.png" width="150"> | Timing: 0:04 · Duración: 6:56 | [Entrevista Comerciante](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201610857_upc_edu_pe/IQDMAHBFMLZaTajm7O_8SOgHAT-lhx1QVuc1ZJBsT6Seris?e=lTctba) |
+| Yolanda Quiroz | Emprendedor / Reciclador Textil (Artesano) | Yolanda destacó que la plataforma facilita encontrar materiales reutilizables para sus proyectos. Mencionó que la interfaz es sencilla y que utilizaría la aplicación para encontrar proveedores de textiles reciclables. Sugirió agregar más información sobre la calidad y estado de los materiales. | <img src="Img/Artesana.png" width="150"> | Timing: 0:03 · Duración: 7:46 | [Entrevista Artesana](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201610857_upc_edu_pe/IQB5GM6BPegmSZtO0JElawgSAVSsvgjeonjKflOhTS_qRzg?e=3TixjN) |
 | Jasmin Natali | Generador de Residuos Textiles (Comerciante) | Jasmin consideró que GamarraLoop es una plataforma atractiva y fácil de utilizar. Destacó especialmente la funcionalidad de inteligencia artificial para clasificar automáticamente los lotes textiles a partir de una fotografía, ya que le permite ahorrar tiempo y reducir el desperdicio de telas. Comentó que utilizaría la plataforma en su actividad diaria y la recomendaría a otros comerciantes por ser una herramienta innovadora y accesible. No sugirió mejoras adicionales. | <img src="Img/EntrevistaComerciante2.jpeg" width="150"> | Duración: 7:29 | [Entrevista Comerciante 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201610857_upc_edu_pe/IQB2q-E_7UiQTbrJtZ3COfA0AZeggDF64_WuSo5a-x6geLw?e=4O376S) |
 | Juan Hernando | Emprendedor / Reciclador Textil (Artesano) | Juan destacó que GamarraLoop representa una propuesta interesante para optimizar el tiempo en la búsqueda y gestión de materiales textiles. Valoró la posibilidad de visualizar la ubicación de los lotes y acceder fácilmente a la información sin necesidad de contactar constantemente al vendedor. Indicó que utilizaría la plataforma para apoyar el negocio familiar y recomendó mejorar la visibilidad de los botones del menú para facilitar aún más la navegación. | <img src="Img/EntrevistaArtesano2.jpeg" width="150"> | Duración: 10:46 | [Entrevista Artesano 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201610857_upc_edu_pe/IQA5A0Lo_-AMTqFvOFsyah-LARmyChYE9PPrugHsX6smIiw?e=IRDgrU) |
 
@@ -3640,10 +3640,10 @@ Las personas entrevistadas pertenecen a los segmentos identificados del proyecto
 | 3 | El proceso de publicación de un lote podría mostrar una barra de progreso más visible entre los cuatro pasos. | 2 | Visibility of System Status |
 | 4 | El punto de recojo podría complementarse con una dirección o referencia textual además del mapa y las coordenadas. | 1 | Match Between System and Real World |
 | 5 | Los estados de las reservas podrían incluir una breve descripción de lo que significa cada estado para el usuario. | 2 | Recognition Rather Than Recall |
-| 6 | El perfil del usuario podría incorporar un historial detallado del impacto generado mediante las publicaciones y reservas realizadas. | 1 | Flexibility and Efficiency of Use |
+| 6 | La sección de impacto del perfil podría complementar el indicador general con un desglose más detallado de las contribuciones realizadas por el usuario. | 1 | Flexibility and Efficiency of Use |
 | 7 | El detalle del lote podría permitir ampliar la imagen o visualizar varias fotografías del mismo material textil. | 1 | Flexibility and Efficiency of Use |
 | 8 | Los indicadores del panel principal (Disponibles, Reservados y Entregados) podrían ser interactivos para acceder directamente al listado correspondiente. | 1 | Flexibility and Efficiency of Use |
-| 9 | La clasificación realizada por la inteligencia artificial podría mostrar un porcentaje de confianza o una breve explicación del resultado obtenido. | 2 | Visibility of System Status |
+| 9 | La clasificación realizada por la inteligencia artificial podría conservar un resumen del análisis para que el usuario pueda consultarlo posteriormente. | 1 | Visibility of System Status |
 | 10 | Los filtros por tipo de tela podrían complementarse con una búsqueda por texto para localizar lotes de forma más rápida. | 1 | Flexibility and Efficiency of Use |
 
 
@@ -3664,6 +3664,8 @@ Durante la navegación por la aplicación, la diferencia visual entre la opción
 
 Incrementar el contraste visual del botón seleccionado mediante cambios de color, tamaño o indicadores gráficos que faciliten su identificación.
 
+![Figura 1](Img/Problema1.png)
+
 ---
 
 ### Problema #2: Los filtros de búsqueda de lotes podrían indicar de forma más clara cuál se encuentra activo
@@ -3679,6 +3681,8 @@ La plataforma permite filtrar los lotes por tipo de material; sin embargo, el fi
 **Recomendación:**
 
 Aplicar un estilo visual más distintivo al filtro activo, utilizando colores, bordes o indicadores que permitan reconocerlo rápidamente.
+
+![Figura 2](Img/Problema2.png)
 
 ---
 
@@ -3696,6 +3700,9 @@ Durante la publicación de un lote se indica el paso actual mediante un texto ("
 
 Incorporar una barra o indicador gráfico de progreso que permita conocer fácilmente el avance y los pasos restantes.
 
+![Figura 3](Img/problema3.png)
+
+
 ---
 
 ### Problema #4: El punto de recojo podría complementarse con una dirección o referencia textual además del mapa y las coordenadas
@@ -3711,6 +3718,8 @@ El detalle del lote presenta correctamente la ubicación mediante un mapa y coor
 **Recomendación:**
 
 Agregar una dirección aproximada o un punto de referencia conocido junto al mapa para facilitar la ubicación del lugar.
+
+![Figura 4](Img/problema4.png)
 
 ---
 
@@ -3728,9 +3737,11 @@ La plataforma utiliza estados como "Activa", "Reservada", "Entregada" o "Vencida
 
 Mostrar una breve descripción o ayuda contextual para cada estado de la reserva, permitiendo comprender el flujo del proceso sin necesidad de consultar información adicional.
 
+![Figura 5](Img/problema5.png)
+
 ---
 
-### Problema #6: El perfil del usuario podría incorporar un historial detallado del impacto generado mediante las publicaciones y reservas realizadas
+### Problema #6: La sección de impacto del perfil podría complementar el indicador general con un desglose más detallado de las contribuciones realizadas
 
 **Severidad:** 1
 
@@ -3738,11 +3749,13 @@ Mostrar una breve descripción o ayuda contextual para cada estado de la reserva
 
 **Problema:**
 
-La sección de perfil muestra el impacto ambiental generado por el usuario mediante la reutilización de textiles. Sin embargo, no se ofrece un historial que permita conocer qué publicaciones o reservas contribuyeron a dicho resultado.
+La sección de perfil presenta un indicador general del impacto ambiental generado por el usuario, mostrando la cantidad de lotes recuperados. Sin embargo, no ofrece un desglose que permita identificar qué publicaciones o reservas contribuyeron a dicho resultado, lo que limita la consulta de información más específica.
 
 **Recomendación:**
 
-Incorporar un historial de actividad donde el usuario pueda visualizar las publicaciones, reservas y contribuciones que conforman su impacto ambiental.
+Complementar el indicador de impacto con un desglose o historial de las contribuciones realizadas por el usuario, permitiendo visualizar las publicaciones, reservas o lotes recuperados que conforman el impacto ambiental mostrado.
+
+![Figura 6](Img/problema6.png)
 
 ---
 
@@ -3760,6 +3773,8 @@ Cada lote presenta una imagen representativa del material textil. No obstante, a
 
 Permitir ampliar la imagen principal o incluir una galería con fotografías adicionales del lote para facilitar su evaluación.
 
+![Figura 7](Img/problema7.png)
+
 ---
 
 ### Problema #8: Los indicadores del panel principal (Disponibles, Reservados y Entregados) podrían ser interactivos para acceder directamente al listado correspondiente
@@ -3776,21 +3791,25 @@ En la pantalla principal del comerciante se muestran indicadores con estadístic
 
 Permitir que cada indicador redireccione al listado correspondiente para facilitar el acceso rápido a la información relacionada.
 
+![Figura 8](Img/problema8.png)
+
 ---
 
-### Problema #9: La clasificación realizada por la inteligencia artificial podría mostrar un porcentaje de confianza o una breve explicación del resultado obtenido
+### Problema #9: La clasificación realizada por la inteligencia artificial podría permitir consultar el análisis nuevamente después de finalizar el proceso
 
-**Severidad:** 2
+**Severidad:** 1
 
-**Heurística violada:** Visibility of System Status
+**Heurística violada:** Flexibility and Efficiency of Use
 
 **Problema:**
 
-La plataforma clasifica automáticamente los lotes textiles mediante inteligencia artificial durante el proceso de publicación. Sin embargo, el usuario únicamente visualiza el resultado final sin información adicional sobre el análisis realizado.
+La plataforma realiza la clasificación automática de los lotes textiles mediante inteligencia artificial durante el proceso de publicación. Sin embargo, una vez finalizado el análisis, el usuario no dispone de una opción para volver a consultar fácilmente la información obtenida sin repetir el proceso.
 
 **Recomendación:**
 
-Mostrar una breve explicación del resultado obtenido o un porcentaje de confianza de la clasificación realizada por la inteligencia artificial para aumentar la transparencia del proceso.
+Incorporar una opción que permita consultar nuevamente el análisis realizado por la inteligencia artificial después de finalizar el proceso, facilitando al usuario revisar la información obtenida sin necesidad de ejecutar una nueva clasificación.
+
+![Figura 9](Img/problema9.png)
 
 ---
 
@@ -3807,6 +3826,8 @@ Actualmente la exploración de lotes se realiza mediante filtros por categorías
 **Recomendación:**
 
 Incorporar un campo de búsqueda por texto que permita localizar lotes utilizando palabras clave como nombre del material, categoría o descripción.
+
+![Figura 10](Img/problema10.png)
 
 <a name="7.4."></a>
 
