@@ -3628,6 +3628,29 @@ A continuación, se presentan los commits más representativos realizados durant
 
 #### 7.2.2.4. Testing Suite Evidence for Sprint Review
 
+**Acceptance Tests (BDD) – Functional Validation**
+
+Durante el Sprint 2, los archivos .feature elaborados durante la iteración anterior fueron utilizados como referencia para validar el cumplimiento de los criterios de aceptación definidos para las historias de usuario implementadas. Estos escenarios permitieron verificar el correcto funcionamiento de los principales flujos de negocio de GamarraLoop, incluyendo la clasificación automática de textiles mediante inteligencia artificial, la confirmación de entrega y recepción de lotes, el envío de notificaciones y los procesos automatizados implementados en el backend.
+
+Las validaciones fueron realizadas mediante pruebas funcionales ejecutadas sobre la aplicación móvil desarrollada en FlutterFlow y los servicios backend implementados con Spring Boot, comprobando la correcta interacción entre ambos componentes. Aunque la automatización mediante herramientas como Cucumber no formó parte del alcance del proyecto, los escenarios definidos en lenguaje Gherkin sirvieron como base para ejecutar las pruebas de aceptación de manera manual, verificando que las funcionalidades desarrolladas satisfacen los criterios establecidos en el Product Backlog.
+
+A continuación, se presentan las historias de usuario validadas durante el Sprint 2:
+
+| Historias de Usuario validadas | Funcionalidad validada                                                                  |
+| ------------------------------ | --------------------------------------------------------------------------------------- |
+| **US09**                       | Confirmación de entrega del lote al artesano.                                           |
+| **US10**                       | Extracción automática de metadatos de la imagen mediante inteligencia artificial.       |
+| **US11**                       | Visualización de la clasificación y etiquetas generadas por la inteligencia artificial. |
+| **US15**                       | Confirmación de recepción del lote por parte del artesano.                              |
+| **US16**                       | Recepción de notificaciones cuando un lote es reservado.                                |
+| **US17**                       | Integración con Google Cloud Vision para el reconocimiento de imágenes.                 |
+| **US20**                       | Compresión automática de imágenes almacenadas en el servidor.                           |
+| **US21**                       | Expiración automática de lotes mediante una tarea programada.                           |
+| **US22**                       | Emisión centralizada de notificaciones ante eventos relevantes del sistema.             |
+
+
+Las evidencias de la ejecución de estas pruebas funcionales se presentan en las secciones posteriores del informe, donde se muestran capturas del funcionamiento de la aplicación móvil, los servicios backend y la documentación de la API.
+
 <a name="7.2.2.5."></a>
 
 #### 7.2.2.5. Execution Evidence for Sprint Review
