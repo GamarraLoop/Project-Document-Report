@@ -3651,6 +3651,120 @@ A continuación, se presentan las historias de usuario validadas durante el Spri
 
 Las evidencias de la ejecución de estas pruebas funcionales se presentan en las secciones posteriores del informe, donde se muestran capturas del funcionamiento de la aplicación móvil, los servicios backend y la documentación de la API.
 
+**Unit Tests**
+
+Como parte de la estrategia de aseguramiento de calidad del Sprint 2, se desarrollaron pruebas unitarias para los bounded contexts pendientes implementados en el backend de GamarraLoop, completando la cobertura de los principales agregados y servicios de aplicación definidos para la solución.
+
+Las pruebas fueron desarrolladas utilizando JUnit 5 y Mockito, permitiendo validar de forma aislada el comportamiento de los agregados de dominio, las reglas de negocio, las transiciones de estado y la lógica implementada en los Command Services correspondientes a los bounded contexts de Classification, Delivery, Notifications y Expiration.
+
+El objetivo de estas pruebas fue garantizar que las funcionalidades incorporadas durante esta iteración respondan correctamente tanto en escenarios exitosos como en situaciones excepcionales, verificando la correcta integración entre los componentes del dominio, los repositorios y los servicios de infraestructura. De esta manera, se completó la estrategia de pruebas unitarias del backend iniciada durante el Sprint 1, proporcionando mayor confiabilidad y estabilidad a la solución desarrollada.
+
+| Repositorio         | Branch                   | Commit ID     | Commit Message                                                                                             | Fecha     |
+| ------------------- | ------------------------ | ------------- | ---------------------------------------------------------------------------------------------------------- | --------- |
+| https://github.com/GamarraLoop/GamarraLoop-backend | feature/testing-sprint-2 | *94e9d1f8e396374d778c19f4cdb817ae245ef4f0* | test: implement unit tests for Classification, Delivery, Notifications and Expiration bounded contexts | *05-07-26* |
+
+A continuación se presenta la relación de las pruebas unitarias desarrolladas para los cuatro bounded contexts restantes en este Sprint:
+
+**Bounded Context: Classification**
+
+**ClassificationRequestTest**<br>
+Esta clase valida el comportamiento del Aggregate Root ClassificationRequest, verificando el ciclo de vida de una solicitud de clasificación de textiles, desde su creación hasta su procesamiento exitoso o fallido mediante el servicio de inteligencia artificial.
+
+| Test Case                                               | Descripción                                                                                                                      | Comportamiento Validado                                                            |
+| ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| `shouldCreateClassificationRequestSuccessfully`         | Verifica que una solicitud de clasificación se cree correctamente a partir de un `RequestClassificationCommand`.                 | Creación correcta del agregado `ClassificationRequest`.                            |
+| `shouldMarkClassificationRequestAsProcessing`           | Verifica que una solicitud pendiente pueda cambiar al estado **PROCESSING**.                                                     | Transición **PENDING → PROCESSING**.                                               |
+| `shouldCompleteClassificationRequestSuccessfully`       | Verifica que una solicitud pueda completarse correctamente almacenando las etiquetas obtenidas por el servicio de clasificación. | Transición **PROCESSING → COMPLETED** y almacenamiento de las etiquetas generadas. |
+| `shouldFailClassificationRequestSuccessfully`           | Verifica que una solicitud pueda finalizar en estado **FAILED** cuando ocurre un error durante el procesamiento.                 | Transición **PROCESSING → FAILED** y registro del motivo del fallo.                |
+| `shouldSetRequestedAtWhenCreatingClassificationRequest` | Verifica que al crear una solicitud de clasificación se registre automáticamente la fecha y hora de la petición.                 | Inicialización automática del atributo `requestedAt`.                              |
+
+<img src="Img/testing/classification-request-unit-tests.png" alt="Classification Request Unit Tests" style="margin-bottom: 5px;" width="800"/><br>
+Figura: Pruebas unitarias desarrolladas exitosamente en el Aggregate Root *Classification Request.*
+
+**ClassificationCommandServiceImplTest**<br>
+Esta clase valida el comportamiento del servicio de aplicación ClassificationCommandServiceImpl, verificando la correcta ejecución del proceso de clasificación de imágenes textiles, la interacción con el repositorio de solicitudes de clasificación y el servicio externo de visión artificial, así como el manejo de errores cuando ocurre una excepción durante el análisis de la imagen.
+
+| Test Case                                              | Descripción                                                                                                                                  | Comportamiento Validado                                       |
+| ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| `shouldRequestClassificationSuccessfully`              | Verifica que el servicio procese correctamente una solicitud de clasificación cuando el servicio de visión artificial responde exitosamente. | Caso de uso de clasificación automática de imágenes textiles. |
+| `shouldFailClassificationWhenVisionApiThrowsException` | Verifica que la solicitud sea marcada como fallida cuando el servicio de visión artificial genera una excepción durante el procesamiento.    | Manejo de errores y transición al estado **FAILED**.          |
+
+<img src="Img/testing/classification-command-service-impl-unit-tests.png" alt="Classification Command Service Implementation Unit Tests" style="margin-bottom: 5px;" width="800"/><br>
+*Figura: Pruebas unitarias desarrolladas exitosamente en la implementación de Classification Command Service.*
+
+**Bounded Context: Delivery**
+
+**DeliveryProcessTest**<br>
+Esta clase valida el comportamiento del Aggregate Root DeliveryProcess, verificando la correcta creación de un proceso de entrega, las transiciones de estado permitidas y las restricciones de negocio asociadas a la finalización o fallo de una entrega.
+
+| Test Case                                             | Descripción                                                                                        | Comportamiento Validado                                                   |
+| ----------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| `shouldCreateDeliveryProcessSuccessfully`             | Verifica que un proceso de entrega se cree correctamente a partir de un `StartDeliveryCommand`.    | Creación correcta del agregado `DeliveryProcess`.                         |
+| `shouldCompleteDeliverySuccessfully`                  | Verifica que una entrega en estado **IN_TRANSIT** pueda marcarse como entregada correctamente.     | Transición **IN_TRANSIT → DELIVERED**.                                    |
+| `shouldThrowExceptionWhenCompletingDeliveredDelivery` | Verifica que no sea posible completar una entrega que ya fue entregada previamente.                | Restricción de finalización sobre entregas ya completadas.                |
+| `shouldFailDeliverySuccessfully`                      | Verifica que una entrega en estado **IN_TRANSIT** pueda marcarse como fallida.                     | Transición **IN_TRANSIT → FAILED**.                                       |
+| `shouldThrowExceptionWhenFailingDeliveredDelivery`    | Verifica que no sea posible marcar como fallida una entrega que ya fue completada.                 | Restricción de cambio de estado sobre entregas ya finalizadas.            |
+| `shouldSetStartedAtWhenCreatingDeliveryProcess`       | Verifica que al crear un proceso de entrega se registre automáticamente la fecha y hora de inicio. | Inicialización automática del atributo `startedAt`.                       |
+| `shouldSetCompletedAtWhenDeliveryIsCompleted`         | Verifica que al completar una entrega se registre la fecha y hora de finalización.                 | Asignación automática del atributo `completedAt` al completar la entrega. |
+| `shouldSetCompletedAtWhenDeliveryFails`               | Verifica que al marcar una entrega como fallida se registre la fecha y hora de finalización.       | Asignación automática del atributo `completedAt` al fallar la entrega.    |
+
+<img src="Img/testing/delivery-process-unit-tests.png" alt="Delivery Process Unit Tests" style="margin-bottom: 5px;" width="800"/><br>
+*Figura: Pruebas unitarias desarrolladas exitosamente en el Aggregate Root Delivery Process.*
+
+**DeliveryCommandServiceImplTest**<br>
+Esta clase valida el comportamiento del servicio de aplicación DeliveryCommandServiceImpl, verificando la correcta ejecución de los casos de uso relacionados con el inicio, finalización y fallo de procesos de entrega, así como el manejo de errores cuando el proceso solicitado no existe.
+
+| Test Case                                               | Descripción                                                                                                    | Comportamiento Validado                                |
+| ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| `shouldStartDeliverySuccessfully`                       | Verifica que el servicio cree correctamente un nuevo proceso de entrega y lo persista mediante el repositorio. | Caso de uso de inicio de entrega.                      |
+| `shouldCompleteDeliverySuccessfully`                    | Verifica que un proceso de entrega existente pueda completarse correctamente.                                  | Caso de uso de confirmación de entrega.                |
+| `shouldThrowExceptionWhenCompletingNonExistingDelivery` | Verifica que se lance una excepción cuando se intenta completar un proceso de entrega inexistente.             | Manejo de errores mediante `IllegalArgumentException`. |
+| `shouldFailDeliverySuccessfully`                        | Verifica que un proceso de entrega existente pueda marcarse como fallido.                                      | Caso de uso de fallo de entrega.                       |
+| `shouldThrowExceptionWhenFailingNonExistingDelivery`    | Verifica que se lance una excepción cuando se intenta marcar como fallido un proceso de entrega inexistente.   | Validación de existencia del proceso de entrega.       |
+
+<img src="Img/testing/delivery-command-service-impl-unit-tests.png" alt="Delivery Command Service Implementation Unit Tests" style="margin-bottom: 5px;" width="800"/><br>
+*Figura: Pruebas unitarias desarrolladas exitosamente en la implementación de Delivery Command Service.*
+
+**Bounded Context: Notifications**
+
+**NotificationTest**<br>
+Esta clase valida el comportamiento del Aggregate Root Notification, verificando la correcta creación de notificaciones y la actualización de su estado cuando el usuario marca una notificación como leída.
+
+| Test Case                              | Descripción                                                                                     | Comportamiento Validado                                      |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| `shouldCreateNotificationSuccessfully` | Verifica que una notificación se cree correctamente a partir de un `CreateNotificationCommand`. | Creación correcta del agregado `Notification`.               |
+| `shouldInitializeNotificationAsUnread` | Verifica que toda notificación recién creada se inicialice con el estado de no leída.           | Inicialización del atributo `isRead` con el valor **false**. |
+| `shouldMarkNotificationAsRead`         | Verifica que una notificación pendiente pueda marcarse como leída.                              | Actualización del atributo `isRead` de **false** a **true**. |
+
+<img src="Img/testing/notification-unit-tests.png" alt="Notification Unit Tests" style="margin-bottom: 5px;" width="800"/><br>
+*Figura: Pruebas unitarias desarrolladas exitosamente en el Aggregate Root Notification.*
+
+**NotificationCommandServiceImplTest**<br>
+Esta clase valida el comportamiento del servicio de aplicación NotificationCommandServiceImpl, verificando la correcta creación de notificaciones, su persistencia en el repositorio y la actualización de su estado cuando son marcadas como leídas.
+
+| Test Case                                       | Descripción                                                                                                              | Comportamiento Validado                              |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------- |
+| `shouldCreateNotificationSuccessfully`          | Verifica que el servicio cree correctamente una nueva notificación y la persista mediante el repositorio.                | Caso de uso de creación de notificaciones.           |
+| `shouldMarkNotificationAsReadSuccessfully`      | Verifica que una notificación existente pueda marcarse correctamente como leída.                                         | Caso de uso de actualización del estado de lectura.  |
+| `shouldReturnEmptyWhenNotificationDoesNotExist` | Verifica que el servicio retorne un `Optional.empty()` cuando se intenta marcar como leída una notificación inexistente. | Manejo de recursos inexistentes mediante `Optional`. |
+
+<img src="Img/testing/notification-command-service-impl-unit-tests.png" alt="Notification Command Service Implementation Unit Tests" style="margin-bottom: 5px;" width="800"/><br>
+*Figura: Pruebas unitarias desarrolladas exitosamente en la implementación de Notification Command Service.*
+
+**Bounded Context: Expiration**
+
+**ExpirationSchedulerTest**<br>
+Esta clase valida el comportamiento del servicio programado ExpirationScheduler, verificando que las reservas expiradas sean identificadas y procesadas correctamente durante la ejecución de la tarea automática del sistema. Asimismo, las pruebas comprueban que el scheduler continúe procesando el resto de las reservas aun cuando ocurra un error durante la expiración de alguna de ellas, garantizando la robustez del proceso de mantenimiento.
+
+| Test Case                                      | Descripción                                                                                                           | Comportamiento Validado                                              |
+| ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| shouldExpireAllExpiredReservations             | Verifica que el scheduler procese todas las reservas activas que hayan superado el tiempo permitido de vigencia.      | Ejecución correcta del proceso automático de expiración de reservas. |
+| shouldDoNothingWhenNoExpiredReservationsExist  | Verifica que no se intente expirar ninguna reserva cuando la consulta no retorna registros vencidos.                  | Finalización del proceso sin ejecutar operaciones innecesarias.      |
+| shouldContinueExpiringReservationsWhenOneFails | Verifica que el scheduler continúe procesando las demás reservas aunque ocurra una excepción al expirar una de ellas. | Tolerancia a fallos durante la ejecución de la tarea programada.     |
+
+<img src="Img/testing/expiration-scheduler-unit-tests.png" alt="Expiration Scheduler Unit Tests" style="margin-bottom: 5px;" width="800"/><br>
+*Figura: Pruebas unitarias desarrolladas exitosamente para el servicio programado Expiration Scheduler.*
+
 <a name="7.2.2.5."></a>
 
 #### 7.2.2.5. Execution Evidence for Sprint Review
