@@ -4305,4 +4305,61 @@ El video demostrativo del producto se encuentra disponible en el siguiente enlac
 
 # Anexos
 
+<div style="page-break-before: always;"></div>
+
+## Anexo A: Historial completo de commits por repositorio de código
+
+En las secciones 7.2.1.3 y 7.2.2.3 (Development Evidence for Sprint Review) se presentaron únicamente los commits más representativos de cada Sprint. A continuación se documenta el historial completo de commits de los tres repositorios de código del proyecto (Landing Page, Backend y Acceptance Tests), incluyendo aquellos que, por su naturaleza (merges, ajustes menores de configuración, correcciones de documentación), no fueron incluidos en el cuerpo principal del informe.
+
+**Repositorio: Landing Page**
+
+| Repositorio | Branch | Commit ID | Commit Message | Fecha |
+| ----------- | ------ | --------- | --------------- | ----- |
+| [gamarra-loop-landing](https://github.com/GamarraLoop/gamarra-loop-landing) | main | `3d2d79b` | feat: initial landing page for GamarraLoop | 10/05/2026 |
+| [gamarra-loop-landing](https://github.com/GamarraLoop/gamarra-loop-landing) | main | `9ca1386` | docs: add README with stack, structure, run instructions and team | 10/05/2026 |
+| [gamarra-loop-landing](https://github.com/GamarraLoop/gamarra-loop-landing) | main | `5bf7d5e` | docs: add logo to README header | 10/05/2026 |
+
+**Repositorio: Backend**
+
+| Repositorio | Branch | Commit ID | Commit Message | Fecha |
+| ----------- | ------ | --------- | --------------- | ----- |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | main | `b2dc275` | Initial commit: GamarraLoop Backend MVP | 29/05/2026 |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | main | `8cc709a` | docs: add comprehensive README.md | 29/05/2026 |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | main | `cee4f92` | docs: Update README with project details and logo | 29/05/2026 |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | main | `9f239ef` | docs: add JWT roadmap note to README | 29/05/2026 |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | main | `7f1f521` | Merge branch 'main' of https://github.com/GamarraLoop/GamarraLoop-backend | 29/05/2026 |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | main | `c00b903` | docs: remove roadmap section regarding security and authentication from README | 29/05/2026 |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | main | `fdbd19d` | fix: resolve critical audit issues - remove exposed credentials, fix duplicate @Id mappings, add state guards, fix BC violations | 02/06/2026 |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | main | `1372dc8` | fix: change UserProfileController update from POST to PUT with @Valid | 03/06/2026 |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | main | `fe18c57` | feat: add environment variable loader script and ignore .env file | 03/06/2026 |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | main | `9e3bfd7` | feat: implement reservation, lot management, and textile classification modules with associated REST APIs and domain services | 12/06/2026 |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | main | `8cf1bf3` | docs: update README with detailed technical stack, architectural breakdown, and bounded context specifications | 12/06/2026 |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | main | `e1881cd` | Add or update the Azure App Service build and deployment workflow config | 12/06/2026 |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | main | `9c376c0` | docs: Actualizar README con la URL de producción de Azure | 12/06/2026 |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | feature/testing-sprint-1 | `5353635` | test: implement unit tests for Lot, Reservation and UserProfile aggregates and command services | 08/06/2026 |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | feature/testing-sprint-2 | `94e9d1f` | test: implement unit tests for Classification, Delivery, Expiration and Notifications aggregates and command services | 05/07/2026 |
+
+**Repositorio: Acceptance Tests**
+
+| Repositorio | Branch | Commit ID | Commit Message | Fecha |
+| ----------- | ------ | --------- | --------------- | ----- |
+| [GamarraLoop-Acceptance-Tests-Backend](https://github.com/GamarraLoop/GamarraLoop-Acceptance-Tests-Backend) | main | `db8dda5` | test: add Gherkin feature files for acceptance test design | 08/06/2026 |
+
+<div style="page-break-before: always;"></div>
+
+## Anexo B: GitHub Collaboration Insights por entrega (Reporte del Proyecto)
+
+La sección "Project Report Collaboration Insights" presenta el gráfico acumulado de contribuciones del repositorio del reporte (`Project-Document-Report`) al cierre del proyecto. Para complementar esa evidencia con el detalle por entrega, se calculó — a partir del historial real de commits (`git log`, excluyendo merges) — la cantidad de commits realizados por cada integrante dentro de la ventana de fechas correspondiente a cada entrega, según lo registrado en la tabla "Registro de Versiones del Informe": TB1 (hasta el 25/04/2026), TP (26/04/2026 – 10/05/2026), TB2 (11/05/2026 – 14/06/2026) y TF (desde el 15/06/2026).
+
+| Autor | TB1 | TP | TB2 | TF | Total |
+| ----- | :-: | :-: | :-: | :-: | :---: |
+| Cuya Villegas, Rafael Alberto | 23 | 15 | 11 | 5 | 54 |
+| Gongora Castillejos, Williams | 13 | 3 | 9 | 6 | 31 |
+| Huanaco Huayta, Elizabeth Lucero | 3 | 1 | 6 | 8 | 18 |
+| Molina Falcón, Piero Leonardo | 3 | 18 | 13 | 15 | 46 |
+| Torres Garcia, Andrés Alberto | 3 | 11 | 11 | 0 | 25 |
+| **Total** | **42** | **48** | **50** | **34** | **174** |
+
+Esta tabla evidencia que la participación de cada integrante se mantuvo activa a lo largo de las cuatro entregas, con variaciones naturales según el capítulo o Sprint asignado en cada periodo (ver tabla de tareas asignadas en la sección "Project Report Collaboration Insights").
+
 
