@@ -241,8 +241,9 @@ Los integrantes son:
    7.3.3. [Heuristic Evaluation.](#7.3.3.)<br>
    7.4. [Video About-the-Product.](#7.4.)<br>
 8. [**Conclusiones**](#8.) <br>
-9. [**Referencias bibliográficas**](#9.) <br>
-10. [**Anexo**](#10.) <br>
+9. [**Video About-The-Team**](#9.) <br>
+10. [**Referencias bibliográficas**](#10.) <br>
+11. [**Anexo**](#11.) <br>
 
 # STUDENT OUTCOME
 
@@ -3812,6 +3813,14 @@ A diferencia de la Sección [7.2.1.5](#7.2.1.5.), donde se presentaron las panta
 
 *Figura: App State en FlutterFlow*
 
+**Evidencia 5: Demostración funcional de la aplicación**
+*Video que evidencia el funcionamiento de la aplicación móvil ya integrada con el backend, mostrando el flujo de uso de las funcionalidades finalizadas en este sprint.*
+
+<img src="Img/frontend/app-demo-screenshot.png" alt="Demostración funcional de la aplicación GamarraLoop" style="margin-bottom: 5px;" width="800"/><br>
+*Figura: Captura del video de demostración funcional de la aplicación*
+
+> **Video de demostración:** [Demostración de la aplicación de GamarraLoop](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c186_upc_edu_pe/IQDVM9L3dnIpQJZnnRdLQS1PAbMOnFQwNIDj-agqOVzyf7I?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=o5FqZj)
+
 <a name="7.2.2.6."></a>
 
 #### 7.2.2.6. Services Documentation Evidence for Sprint Review
@@ -4242,8 +4251,6 @@ Incorporar un campo de búsqueda por texto que permita localizar lotes utilizand
 
 ## 7.4. Video About-the-Product
 
-<a name="8."></a>
-
 Como parte de la validación del incremento desarrollado durante el Sprint 2, se elaboró un Video About the Product, cuyo propósito es presentar de manera demostrativa las principales funcionalidades implementadas en GamarraLoop. A través de este video se muestra el flujo de uso de la aplicación desde la perspectiva de los distintos tipos de usuarios, evidenciando la publicación de lotes textiles, la clasificación automática mediante inteligencia artificial, la consulta y reserva de lotes disponibles, así como el proceso de entrega y recepción de materiales.
 
 Este material complementa la Sprint Review al permitir visualizar el funcionamiento integrado de los componentes desarrollados durante la iteración, incluyendo la interacción entre la aplicación móvil, los servicios backend y las integraciones con servicios externos como Google Cloud Vision.
@@ -4255,19 +4262,37 @@ El video demostrativo del producto se encuentra disponible en el siguiente enlac
 <img src="Img/gamarraloop-about-the-product-screenshot.png" alt="Gamarraloop video about the product screenshot" style="margin-bottom: 5px;" width="800"/><br>
 *Figura: Screenshot del video about the product de GamarraLoop.*
 
+<a name="8."></a>
+
 # Conclusiones
 
-- El desarrollo de GamarraLoop permitió identificar la importancia de aplicar principios de experiencia de usuario y arquitectura de información para diseñar una aplicación móvil, facilitando la interacción entre talleres textiles y artesanos dentro de un entorno digital orientado a la reutilización de materiales.
-  
-- A través del análisis de User Personas, User Journey Maps, Empathy Maps y demás herramientas UX, se logró comprender las principales necesidades y problemáticas de los usuarios, permitiendo definir funcionalidades alineadas con los procesos reales de publicación, búsqueda y recojo de residuos textiles.
-  
-- La propuesta de GamarraLoop demuestra cómo el uso de tecnologías móviles junto con tecnologias emergentes puede contribuir a promover la economía circular en Gamarra, optimizando la gestión de residuos textiles y generando oportunidades de reutilización para distintos actores del sector.
+- GamarraLoop demuestra, de punta a punta, cómo el uso de tecnologías móviles junto con tecnologías emergentes (inteligencia artificial para clasificación textil) puede promover la economía circular en Gamarra, optimizando la gestión de residuos textiles y generando oportunidades de reutilización concretas entre talleres confeccionistas y artesanos recicladores.
 
-- El diseño del Landing Page UI traduce las decisiones de arquitectura de información y los lineamientos visuales del style guide hacia una propuesta concreta en vistas Desktop y Mobile, priorizando un recorrido en patrón Z que comunica la propuesta de valor a los tres segmentos objetivo (Confeccionistas, recolectores/artesanos y aliados del ecosistema) y los conduce hacia los call-to-action correspondientes mediante principios de diseño responsivo e inclusivo.
+- El análisis de User Personas, User Journey Maps, Empathy Maps y entrevistas de need-finding permitió comprender las necesidades reales de los usuarios desde etapas tempranas, traduciéndose en User Stories y un Product Backlog priorizado por valor de negocio que mantuvo trazabilidad hasta la implementación final.
 
-- El trabajo de Applications UX/UI Design materializa los User Stories y los bounded contexts en wireframes en escala de grises y wireflows navegables para las aplicaciones móviles de Confeccionista y Artesano, garantizando trazabilidad entre cada User Goal y los servicios documentados en los Capítulos IV y V, y consolidando una base validada antes de avanzar hacia prototipos de alta fidelidad.
+- El diseño estratégico y táctico del software (EventStorming, Bounded Context Canvases, Context Mapping y Attribute-Driven Design) permitió tomar decisiones arquitectónicas fundamentadas — como la adopción de un monolito modular con Arquitectura Hexagonal sobre seis bounded contexts (Profiles, Lots, Reservations, Classification, Delivery y Notifications) — priorizando la validación temprana del modelo de negocio frente a la complejidad operativa de una arquitectura distribuida.
+
+- El diseño de experiencia de usuario, materializado en el Landing Page UI y en los wireframes, wireflows, mock-ups y prototipos navegables de las Applications UX/UI Design, garantizó trazabilidad entre cada User Goal, los Bounded Contexts y los servicios REST finalmente implementados, sirviendo como base validada que se llevó exitosamente hasta el desarrollo de las aplicaciones móviles en FlutterFlow.
+
+- La ejecución de los Sprints 1 y 2 permitió completar el ciclo funcional de GamarraLoop: un backend en Spring Boot con los seis bounded contexts operativos, una aplicación móvil desarrollada sobre la plataforma low-code FlutterFlow, y la integración end-to-end entre ambos componentes, incluyendo la clasificación automática de textiles mediante Google Cloud Vision.
+
+- La estrategia de pruebas (acceptance tests en Gherkin/BDD y pruebas unitarias por bounded context) junto con el despliegue continuo del backend en Azure App Service mediante GitHub Actions evidenciaron la estabilidad técnica de la solución y la viabilidad de mantener un flujo de entrega continua sin intervención manual.
+
+- Las entrevistas de validación y la evaluación heurística realizadas sobre la aplicación confirmaron una recepción positiva de la propuesta por parte de los segmentos objetivo, identificando únicamente oportunidades de mejora de severidad baja a media (principalmente de visibilidad y flexibilidad de uso), lo que valida a GamarraLoop como una solución usable y técnicamente viable para su contexto de aplicación.
 
 <a name="9."></a>
+
+# Video About-The-Team
+
+En esta sección se presenta el video About-The-Team de GamarraLoop, el cual resume el testimonio individual de cada integrante sobre las actividades realizadas, los outcomes alcanzados y las competencias desarrolladas.
+
+<img src="Img/PENDIENTE-about-the-team-screenshot.png" alt="Gamarraloop video about the team screenshot" style="margin-bottom: 5px;" width="800"/><br>
+*Figura: Screenshot del video about the team de GamarraLoop.*
+
+> **Video de demostración (Microsoft Stream):** [Video About the Team de GamarraLoop](PENDIENTE-URL-MICROSOFT-STREAM)
+
+
+<a name="10."></a>
 
 # Referencia bibliográficas
 
@@ -4301,7 +4326,7 @@ El video demostrativo del producto se encuentra disponible en el siguiente enlac
 
 - United Nations Environment Programme. (2023). Sustainability and Circularity in the Textile Value Chain. https://www.unep.org/
 
-<a name="10."></a>
+<a name="11."></a>
 
 # Anexos
 
