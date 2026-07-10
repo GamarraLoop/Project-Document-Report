@@ -6,41 +6,60 @@
 
 <h3 align="center">Ingeniería de Software</h3>
 
-<h3 align="center">1ASI0728 Arquitecturas de Software Emergentes</h3>
+<h3 align="center">Ciclo 8</h3>
 
-<h3 align="center">202601</h3>
+<h3 align="center">Curso:</h3>
 
-
+<h3 align="center">1ASI0728 ARQUITECTURA DE SOFTWARE EN TECNOLOGÍAS EMERGENTES</h3>
 
 <h3 align="center">NRC: 10042</h3>
 
-<br>
-
 <h3 align="center">Profesor: Rojas Malasquez, Royer Edelwer</h3>
-
-<br>
 
 <h3 align="center">Informe del Trabajo Final</h3>
 
+
+<h3 align="center">Ciclo: 2026-10</h3>
 <br>
 
-<h3 align="center">Nombre del Producto: Gamarra Loop</h3>
+<h3 align="center">Startup: Gamarra Loop</h3>
 
-<h3>Integrantes:</h3>
+<h3 align="center">Producto: Gamarra Loop</h3>
 
-<div style="text-align: center;">
-  
-|                Nombre                 |   Código   |
-| :-----------------------------------: | :--------: |
-|  Cuya Villegas, Rafael Alberto        | u201913495 |
-|  Gongora Castillejos, Williams        | u20221c186 |
-|  Huanaco Huayta, Elizabeth Lucero     | u20211g522 |
-|  Molina Falón, Piero Leonardo         | u201610857 |
-|  Torres Garcia, Andrés Alberto        | u202220528 |
+<h3 align="center">Integrantes</h3>
+
+<div align="center">
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Código</th>
+  </tr>
+  <tr>
+    <td>Cuya Villegas, Rafael Alberto</td>
+    <td>U201913495</td>
+  </tr>
+  <tr>
+    <td>Gongora Castillejos, Williams</td>
+    <td>U20221C186</td>
+  </tr>
+  <tr>
+    <td>Huanaco Huayta, Elizabeth Lucero</td>
+    <td>U20211G522</td>
+  </tr>
+  <tr>
+    <td>Molina Falón, Piero Leonardo</td>
+    <td>U201610857</td>
+  </tr>
+  <tr>
+    <td>Torres Garcia, Andrés Alberto</td>
+    <td>U202220528</td>
+  </tr>
+</table>
 
 </div>
 
-<h3 align="center">Julio de 2026</h3>
+<h3 align="center">Julio 2026</h3>
 
 <br><br>
 
@@ -4199,6 +4218,17 @@ Incorporar un campo de búsqueda por texto que permita localizar lotes utilizand
 
 <a name="8."></a>
 
+Como parte de la validación del incremento desarrollado durante el Sprint 2, se elaboró un Video About the Product, cuyo propósito es presentar de manera demostrativa las principales funcionalidades implementadas en GamarraLoop. A través de este video se muestra el flujo de uso de la aplicación desde la perspectiva de los distintos tipos de usuarios, evidenciando la publicación de lotes textiles, la clasificación automática mediante inteligencia artificial, la consulta y reserva de lotes disponibles, así como el proceso de entrega y recepción de materiales.
+
+Este material complementa la Sprint Review al permitir visualizar el funcionamiento integrado de los componentes desarrollados durante la iteración, incluyendo la interacción entre la aplicación móvil, los servicios backend y las integraciones con servicios externos como Google Cloud Vision.
+
+El video demostrativo del producto se encuentra disponible en el siguiente enlace. 
+
+Video About the Product: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211g522_upc_edu_pe/IQD5ncN0QM2oTLrafJs_ELfGAVy3muBAza9IonjFkNoYFMQ?e=uzIKcW
+
+<img src="Img/gamarraloop-about-the-product-screenshot.png" alt="Gamarraloop video about the product screenshot" style="margin-bottom: 5px;" width="800"/><br>
+*Figura: Screenshot del video about the product de GamarraLoop.*
+
 # Conclusiones
 
 - El desarrollo de GamarraLoop permitió identificar la importancia de aplicar principios de experiencia de usuario y arquitectura de información para diseñar una aplicación móvil, facilitando la interacción entre talleres textiles y artesanos dentro de un entorno digital orientado a la reutilización de materiales.
@@ -4215,9 +4245,35 @@ Incorporar un campo de búsqueda por texto que permita localizar lotes utilizand
 
 # Referencia bibliográficas
 
+- Brown, S. (2024). The C4 Model for Visualising Software Architecture. https://c4model.com/
+
+- Cockburn, A. (2005). Hexagonal Architecture. https://alistair.cockburn.us/hexagonal-architecture/
+
 - Ellen MacArthur Foundation. (2017). _A new textiles economy: Redesigning fashion’s future_. https://ellenmacarthurfoundation.org/
 
 - European Environment Agency. (2019). _Textiles in Europe’s circular economy_. https://www.eea.europa.eu/
+
+- FlutterFlow. (2026). *FlutterFlow Documentation*. https://docs.flutterflow.io/
+
+- Google Cloud. (2026). *Cloud Vision API Documentation*. https://cloud.google.com/vision/docs
+
+- Google Cloud. (2026). *Label Detection*. https://cloud.google.com/vision/docs/labels
+
+- Google Maps Platform. (2026). *Maps Platform Documentation*. https://developers.google.com/maps
+
+- Hibernate. (2026). Hibernate ORM Documentation. https://hibernate.org/orm/documentation/
+
+- OpenAPI Initiative. (2024). OpenAPI Specification. https://spec.openapis.org/oas/latest.html
+
+- PostgreSQL Global Development Group. (2026). PostgreSQL Documentation. https://www.postgresql.org/docs/
+
+- Spring. (2026). Spring Boot Documentation. https://docs.spring.io/spring-boot/
+
+- Spring. (2026). Spring Data JPA Reference Documentation. https://docs.spring.io/spring-data/jpa/reference/
+
+- Supabase. (2026). *Supabase Documentation*. https://supabase.com/docs
+
+- United Nations Environment Programme. (2023). Sustainability and Circularity in the Textile Value Chain. https://www.unep.org/
 
 <a name="10."></a>
 
