@@ -62,10 +62,10 @@ URL del repositorio para el reporte del proyecto: https://github.com/GamarraLoop
 **TB2:**
 
 <div align="center">
-  <img alt="Image" src="https://github.com/user-attachments/assets/1b5e9b9b-09d7-4122-96b8-b233ad8a8cc8" />
+  <img alt="Image" src="https://github.com/user-attachments/assets/a590d9b7-4251-434e-9621-dab48533cee4" />
 </div>
 
-*Figura: Project Report Collaboration Insights TB2*
+*Figura: Project Report Collaboration Insights TF*
 
 
 Para el desarrollo del informe perteneciente a la entrega TF, se dividió la implementación de secciones de la siguiente forma para cada integrante del equipo:
@@ -3771,13 +3771,141 @@ Esta clase valida el comportamiento del servicio programado ExpirationScheduler,
 
 #### 7.2.2.6. Services Documentation Evidence for Sprint Review
 
+A continuación se presenta el estado consolidado de los endpoints REST del backend de GamarraLoop al cierre del Sprint 2. Los bounded contexts **Lots**, **Reservations** y **User Profiles** fueron implementados y documentados durante el Sprint 1, y se mantienen aquí sin cambios funcionales relevantes por tratarse de servicios ya estables. En cambio, los bounded contexts **Notifications**, **Delivery** y **Classification** corresponden a las historias de usuario comprometidas específicamente para este sprint (US09, US10, US11, US15, US16, US17 y US22), y fueron finalizados, probados e integrados con el frontend móvil durante esta iteración.
+
+Esta documentación complementa la evidencia presentada mediante Swagger/OpenAPI y facilita la comprensión de los servicios disponibles para la integración con la aplicación móvil desarrollada en FlutterFlow y futuros consumidores de la API.
+
+**Bounded Context: Lots** *(implementado en Sprint 1 — sin cambios)*
+El Bounded Context Lots constituye el núcleo funcional de GamarraLoop, ya que gestiona el ciclo de vida de los lotes textiles publicados por los confeccionistas. Este contexto permite registrar, consultar, actualizar y administrar la disponibilidad de los lotes, incluyendo información como la descripción del material, peso, imágenes y ubicación de recojo. Asimismo, controla los cambios de estado asociados a la publicación o retiro de los lotes, garantizando que la información presentada a los artesanos refleje en todo momento la disponibilidad real de los recursos textiles dentro de la plataforma.
+
+| Método HTTP | Acción realizada                                                                                 | Ruta del Endpoint            | Parámetros de entrada                                                                                               | Historia(s) de Usuario Relacionada(s)                                                                                               |
+| ----------- | ------------------------------------------------------------------------------------------------ | ---------------------------- | ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| GET         | Obtiene la información detallada de un lote específico.                                          | `/api/v1/lots/{id}`          | `id`                                                                                                                | US13 – Ver detalle del lote                                                                                                         |
+| GET         | Obtiene el listado de lotes registrados, permitiendo filtros opcionales por estado o publicador. | `/api/v1/lots`               | `status`, `publisherId`                                                                                             | US12 – Visualización de lotes disponibles                                                                                           |
+| POST        | Registra un nuevo lote textil en la plataforma.                                                  | `/api/v1/lots`               | `publisherId`, `title`, `description`, `textileType`, `weightKg`, `imageUrl`, `pickupLat`, `pickupLng`, `pickupRef` | US05 – Carga de imagen de lote de tela<br>US06 – Asignación automática de ubicación<br>US07 – Edición manual de ubicación de recojo |
+| PUT         | Actualiza la información de un lote existente.                                                   | `/api/v1/lots/{id}`          | `id`, `title`, `description`, `textileType`, `weightKg`, `imageUrl`, `pickupLat`, `pickupLng`, `pickupRef`          | US05 – Carga de imagen de lote de tela<br>US06 – Asignación automática de ubicación<br>US07 – Edición manual de ubicación de recojo |
+| PATCH       | Cambia el estado de un lote a retirado o cancelado, ocultándolo de las consultas públicas.       | `/api/v1/lots/{id}/withdraw` | `id`                                                                                                                | US08 – Cancelación de lote publicado                                                                                                |
+| PATCH       | Publica o republica un lote para que esté disponible para los artesanos.                         | `/api/v1/lots/{id}/publish`  | `id`                                                                                                                | US05 – Carga de imagen de lote de tela                                                                                              |
+
+**Bounded Context: Reservations** *(implementado en Sprint 1 — sin cambios)*
+El Bounded Context Reservations gestiona el ciclo de vida de las reservas realizadas por los artesanos sobre los lotes textiles publicados en la plataforma. Este contexto permite registrar reservas, consultar su estado, acceder al historial asociado a lotes o artesanos y gestionar la finalización o cancelación de las mismas. La tabla presenta los endpoints REST implementados y su correspondencia con las historias de usuario y servicios definidos para este dominio.
+
+| Método HTTP | Acción realizada                                                                                                                       | Ruta del Endpoint                          | Parámetros de entrada | Historia(s) de Usuario Relacionada(s)                                            |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | --------------------- | -------------------------------------------------------------------------------- |
+| POST        | Registra una nueva reserva de un lote por parte de un artesano, asociando el lote seleccionado con el usuario que realizará el recojo. | `/api/v1/reservations`                     | `lotId`, `artisanId`  | US14 – Reserva de lote para recojo<br>US19 – Servicio transaccional de reserva   |
+| PATCH       | Marca una reserva como completada luego de que el artesano haya recibido físicamente el lote.                                          | `/api/v1/reservations/{id}/complete`       | `id`                  | US15 – Confirmación de recepción                                                 |
+| PATCH       | Cancela una reserva previamente realizada, liberando el lote para futuras reservas.                                                    | `/api/v1/reservations/{id}/cancel`         | `id`                  | US14 – Reserva de lote para recojo                                               |
+| GET         | Obtiene la información detallada de una reserva específica.                                                                            | `/api/v1/reservations/{id}`                | `id`                  | US14 – Reserva de lote para recojo                                               |
+| GET         | Obtiene todas las reservas asociadas a un lote determinado.                                                                            | `/api/v1/reservations/lot/{lotId}`         | `lotId`               | US09 – Confirmación de entrega al artesano<br>US14 – Reserva de lote para recojo |
+| GET         | Obtiene el historial de reservas realizadas por un artesano específico.                                                                | `/api/v1/reservations/artisan/{artisanId}` | `artisanId`           | US14 – Reserva de lote para recojo<br>US15 – Confirmación de recepción           |
+
+**Bounded Context: User Profiles** *(implementado en Sprint 1 — sin cambios)*
+El Bounded Context User Profiles es responsable de la gestión de los perfiles de los usuarios que interactúan con la plataforma GamarraLoop. Este contexto permite registrar confeccionistas y artesanos, consultar información de perfiles existentes y mantener actualizados sus datos de contacto. La tabla presenta los endpoints REST implementados para la administración de perfiles y su relación con las historias de usuario definidas para el sistema.
+
+| Método HTTP | Acción realizada                                                                                                  | Ruta del Endpoint       | Parámetros de entrada                            | Historia(s) de Usuario Relacionada(s) |
+| ----------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------- | ------------------------------------------------ | ------------------------------------- |
+| GET         | Obtiene el listado de perfiles registrados en la plataforma, permitiendo filtrar por rol de usuario.              | `/api/v1/profiles`      | `role`                                           | US04 – Creación de perfil básico      |
+| POST        | Registra un nuevo perfil de usuario indicando sus datos básicos y el rol que desempeñará dentro de la plataforma. | `/api/v1/profiles`      | `fullName`, `email`, `phone`, `role`, `deviceId` | US04 – Creación de perfil básico      |
+| GET         | Obtiene la información detallada de un perfil específico.                                                         | `/api/v1/profiles/{id}` | `id`                                             | US04 – Creación de perfil básico      |
+| POST        | Actualiza la información de un perfil existente.                                                                  | `/api/v1/profiles/{id}` | `id`, `fullName`, `email`, `phone`               | US04 – Creación de perfil básico      |
+
+**Bounded Context: Notifications** *(finalizado en Sprint 2)*
+El Bounded Context Notifications centraliza la gestión de alertas y mensajes generados por eventos relevantes dentro de GamarraLoop. Este contexto permite emitir notificaciones hacia los usuarios, consultar mensajes recibidos y gestionar su estado de lectura. Su implementación resulta fundamental para mantener informados a confeccionistas y artesanos sobre cambios importantes en el ciclo de vida de los lotes y reservas. La tabla presenta los endpoints REST implementados y su relación con las historias de usuario y servicios técnicos definidos para el sistema.
+
+| Método HTTP | Acción realizada                                                                                           | Ruta del Endpoint                     | Parámetros de entrada        | Historia(s) de Usuario Relacionada(s)                                                       |
+| ----------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------- | ---------------------------- | ------------------------------------------------------------------------------------------- |
+| POST        | Registra y envía una nueva notificación dirigida a un usuario específico de la plataforma.                 | `/api/v1/notifications`               | `userId`, `title`, `message` | US16 – Recepción de notificación de reserva<br>US22 – Servicio de emisión de notificaciones |
+| PATCH       | Marca una notificación como leída por el usuario destinatario.                                             | `/api/v1/notifications/{id}/read`     | `id`                         | US16 – Recepción de notificación de reserva                                                 |
+| GET         | Obtiene la información detallada de una notificación específica.                                           | `/api/v1/notifications/{id}`          | `id`                         | US16 – Recepción de notificación de reserva                                                 |
+| GET         | Obtiene el listado de notificaciones asociadas a un usuario, permitiendo filtrar únicamente las no leídas. | `/api/v1/notifications/user/{userId}` | `userId`, `unread`           | US16 – Recepción de notificación de reserva<br>US22 – Servicio de emisión de notificaciones |
+
+**Bounded Context: Delivery** *(finalizado en Sprint 2)*
+El Bounded Context Delivery es responsable de gestionar el proceso de entrega y recepción de los lotes textiles reservados dentro de la plataforma GamarraLoop. Este contexto permite registrar el inicio de una entrega, realizar el seguimiento de su estado y confirmar su finalización o eventual fallo. De esta manera, se garantiza la trazabilidad de las transacciones entre confeccionistas y artesanos, asegurando que cada lote pase correctamente por las etapas posteriores a la reserva hasta su entrega efectiva.
+
+| Método HTTP | Acción realizada                                                                                                             | Ruta del Endpoint                                | Parámetros de entrada | Historia(s) de Usuario Relacionada(s)                                        |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | --------------------- | ---------------------------------------------------------------------------- |
+| POST        | Inicia el proceso de entrega asociado a una reserva previamente realizada, registrando el inicio del recojo del lote textil. | `/api/v1/deliveries/start`                       | `reservationId`       | US09 – Confirmación de entrega al artesano, US15 – Confirmación de recepción |
+| PATCH       | Marca una entrega como fallida cuando el proceso de recojo no pudo completarse exitosamente.                                 | `/api/v1/deliveries/{id}/fail`                   | `id`                  | US09 – Confirmación de entrega al artesano, US15 – Confirmación de recepción |
+| PATCH       | Marca una entrega como completada una vez que el artesano ha recibido correctamente el lote textil.                          | `/api/v1/deliveries/{id}/complete`               | `id`                  | US09 – Confirmación de entrega al artesano, US15 – Confirmación de recepción |
+| GET         | Obtiene la información detallada de una entrega específica, incluyendo su estado y fechas asociadas al proceso de recojo.    | `/api/v1/deliveries/{id}`                        | `id`                  | US09 – Confirmación de entrega al artesano, US15 – Confirmación de recepción |
+| GET         | Recupera el historial o registro de entregas asociadas a una reserva determinada.                                            | `/api/v1/deliveries/reservation/{reservationId}` | `reservationId`       | US09 – Confirmación de entrega al artesano, US15 – Confirmación de recepción |
+
+**Bounded Context: Classification** *(finalizado en Sprint 2)*
+El Bounded Context Classification es responsable de gestionar el proceso de clasificación automática de los lotes textiles mediante el análisis de imágenes. Este contexto permite solicitar el procesamiento de una fotografía asociada a un lote, consultar el resultado de la clasificación realizada y recuperar las etiquetas generadas para un lote específico. Su propósito es proporcionar información descriptiva sobre los materiales textiles, facilitando la identificación y reutilización de los recursos disponibles dentro de la plataforma GamarraLoop.
+
+| Método HTTP | Acción realizada                                                                                                                                         | Ruta del Endpoint                     | Parámetros de entrada | Historia(s) de Usuario Relacionada(s)                                                |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- | --------------------- | ------------------------------------------------------------------------------------ |
+| POST        | Solicita la clasificación automática de un lote textil a partir de una imagen asociada, generando etiquetas descriptivas sobre el material identificado. | `/api/v1/classifications`             | `lotId`, `imageUrl`   | US10 – Extracción de metadatos de imagen, US17 – Integración con Google Cloud Vision |
+| GET         | Obtiene la información detallada de una clasificación específica, incluyendo su estado, etiquetas generadas y posibles errores de procesamiento.         | `/api/v1/classifications/{id}`        | `id`                  | US11 – Presentación de resultados de IA, US17 – Integración con Google Cloud Vision  |
+| GET         | Recupera la clasificación asociada a un lote determinado, permitiendo consultar los resultados obtenidos a partir del análisis de la imagen.             | `/api/v1/classifications/lot/{lotId}` | `lotId`               | US10 – Extracción de metadatos de imagen, US11 – Presentación de resultados de IA    |
+
 <a name="7.2.2.7."></a>
 
 #### 7.2.2.7. Software Deployment Evidence for Sprint Review
 
+A diferencia del Sprint 1, durante el Sprint 2 no se realizaron cambios en la infraestructura cloud: el entorno de producción en **Azure App Service** y el pipeline de **CI/CD** con GitHub Actions fueron establecidos en el sprint anterior (ver sección [7.2.1.7](#7.2.1.7.)) y se mantuvieron activos y sin modificaciones durante toda esta iteración. Dado que el frontend se desarrolla en FlutterFlow, tampoco existe un proceso de despliegue propio para esa capa; su "publicación" se limita a la generación del APK de prueba desde la propia plataforma.
+
+Lo relevante en este sprint no es la creación de infraestructura nueva, sino que dicha infraestructura demostró estabilidad al recibir y desplegar automáticamente, sin intervención manual, todas las funcionalidades finalizadas en esta iteración (Classification, Delivery y Notifications):
+
+1. **Continuidad del entorno Azure App Service:** La instancia provisionada en el Sprint 1 (Plan Básico B1, Linux, Java 21) permaneció activa durante todo el Sprint 2, sin pausas ni reconfiguraciones, sosteniendo las pruebas de integración entre backend y frontend a lo largo de la iteración.
+2. **Despliegue continuo verificado:** Cada `push` a la rama `main` con el código de los bounded contexts finalizados en este sprint fue compilado con Maven y desplegado automáticamente por el workflow de GitHub Actions configurado en el Sprint 1, confirmando que el pipeline de CI/CD sigue funcionando correctamente ante los cambios acumulados.
+3. **Variables de entorno sin cambios:** Las credenciales de la base de datos de producción (Supabase/PostgreSQL) y la clave de Google Cloud Vision, configuradas desde el Sprint 1, no requirieron modificaciones durante este sprint.
+4. **Validación final de la integración Backend-Frontend:** Con el backend ya completo, se volvió a validar en FlutterFlow que la Base URL apunta al entorno de Azure y que los nuevos endpoints (Classification, Delivery, Notifications) son consumidos correctamente desde la aplicación móvil.
+
+A continuación, se presenta nuevamente la evidencia de la infraestructura configurada en el Sprint 1, la cual se mantuvo vigente y operativa sin cambios durante todo el Sprint 2:
+
+**Evidencia 1: Configuración de Recursos en el Cloud Provider (Azure)**
+*Captura de la creación o el panel principal del recurso App Service (gamarraloop-api) en el portal de Azure, mostrando el sistema operativo Linux y el runtime Java 21.*
+![Azure App Service Configuración](./Img/backend/azure1.png)
+
+*Figura: Azure App Service Configuración*
+
+**Evidencia 2: Variables de Entorno Seguras**
+*Captura del panel "Configuración > Variables de entorno" en Azure, donde se observan configuradas (con valor oculto) `DATABASE_URL`, `VISION_API_KEY`, etc.*
+![Variables de Entorno en Azure](./Img/backend/azure2.png)
+
+*Figura: Variables de Entorno en Azure*
+
+**Evidencia 3: Automatización del Despliegue (CI/CD)**
+*Captura de la pestaña "Actions" en el repositorio de GitHub, mostrando el flujo de trabajo "Build and deploy JAR app to Azure Web App" ejecutado con check verde (éxito).*
+![GitHub Actions CI/CD](./Img/backend/actions.png)
+
+*Figura: GitHub Actions CI/CD*
+
+**Evidencia 4: Producto Digital Desplegado y Disponible**
+*Captura del navegador mostrando la documentación interactiva (Swagger UI) de la API de GamarraLoop cargando desde el dominio público de Azure.*
+
+> **Enlace al Swagger UI en producción:** [GamarraLoop API — Swagger UI](https://gamarraloop-e3f8a6dmaah4gdae.eastus-01.azurewebsites.net/api/v1/swagger-ui/index.html#/)
+
+![Swagger UI en Producción](./Img/backend/swagger-azure.png)
+
+*Figura: Swagger UI en Producción*
+
+**Evidencia 5: Integración Backend-Frontend**
+*Captura del panel de "API Calls" en FlutterFlow, mostrando la sección "Base URL" apuntando al dominio de Azure.*
+![Integración FlutterFlow - Azure](./Img/backend/apicalls.png)
+
+*Figura: Integración FlutterFlow - Azure - Api Calls*
+
+
 <a name="7.2.2.8."></a>
 
 #### 7.2.2.8. Team Collaboration Insights during Sprint
+
+Al ser el Sprint 2 la iteración de cierre del proyecto, el equipo mantuvo la misma metodología ágil validada en el Sprint 1, pero el foco de la colaboración cambió: en lugar de construir módulos desde cero, el esfuerzo se concentró en la integración cruzada entre lo ya existente (Lots, Reservations, Profiles) y lo finalizado en este sprint (Classification, Delivery, Notifications), así como en las pruebas end-to-end entre el backend y la versión completa del frontend en FlutterFlow.
+
+**Metodología de Colaboración e Implementación:**
+*   Al tratarse de un sprint de consolidación, la coordinación entre Frontend y Backend fue más intensa que en el Sprint 1, ya que cada módulo finalizado debía integrarse y validarse de inmediato contra los contratos de API ya definidos, en vez de desarrollarse de forma aislada.
+*   **Gestión del Código Fuente:** Se mantuvo el uso de **GitHub** como núcleo de la colaboración, con commits atómicos orientados al cierre de las historias de usuario pendientes (ej. `feat: Integración de clasificación automática con Google Cloud Vision`, `feat: Flujo de notificaciones de reserva`, `fix: Sincronización de estados en el proceso de entrega`).
+*   Todos los integrantes tuvieron participación demostrable durante este sprint, orientada principalmente a pruebas de integración end-to-end, corrección de incidencias detectadas en la validación conjunta y cierre de la documentación final del proyecto.
+
+A continuación, se presenta el registro de aportes acumulados en GitHub al cierre del Sprint 2, que certifica la participación activa de cada integrante durante el desarrollo completo del proyecto.
+
+![Team Collaboration Insights](./Img/contributors.png)
+
+*Figura: Team Collaboration Insights*
+
+
 
 <a name="7.3."></a>
 
