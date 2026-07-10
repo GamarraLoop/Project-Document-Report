@@ -3767,6 +3767,32 @@ Esta clase valida el comportamiento del servicio programado ExpirationScheduler,
 
 #### 7.2.2.5. Execution Evidence for Sprint Review
 
+A diferencia de la Sección [7.2.1.5](#7.2.1.5.), donde se presentaron las pantallas finales de la aplicación en funcionamiento durante el Sprint 1, esta sección documenta el **proceso de implementación del frontend dentro del entorno visual de FlutterFlow**, evidenciando que la aplicación móvil fue efectivamente construida sobre esta plataforma low-code (y no únicamente diseñada de forma estática o codificada de manera tradicional). Las siguientes capturas muestran el editor de FlutterFlow durante la configuración de los bounded contexts finalizados en este sprint (Classification, Delivery y Notifications).
+
+**Evidencia 1: Conexión y configuración de endpoints (API Calls)**
+*Captura del panel "API Calls" de FlutterFlow, mostrando la definición de una llamada REST hacia el backend (método HTTP, URL, headers y parámetros) correspondiente a uno de los endpoints finalizados en este sprint.*
+![Configuración de API Calls en FlutterFlow](./Img/frontend/flutterflow-api-calls-editor.png)
+
+*Figura: Configuración de API Calls en FlutterFlow*
+
+**Evidencia 2: Implementación visual de interfaces (Page Editor / Widget Tree)**
+*Captura del editor de páginas de FlutterFlow, mostrando el árbol de widgets (Widget Tree) y la composición visual de una de las pantallas de la aplicación (ej. detalle de lote o resultado de clasificación automática).*
+![Widget Tree en FlutterFlow](./Img/frontend/flutterflow-widget-tree.png)
+
+*Figura: Widget Tree en FlutterFlow*
+
+**Evidencia 3: Lógica de acciones (Action Flow Editor)**
+*Captura del editor de Action Flows de FlutterFlow, mostrando la secuencia de acciones configurada para invocar un endpoint del backend (ej. acción ejecutada al confirmar una entrega o enviar una notificación).*
+![Action Flow Editor en FlutterFlow](./Img/frontend/flutterflow-action-flow.png)
+
+*Figura: Action Flow Editor en FlutterFlow*
+
+**Evidencia 4: Gestión de variables y estado (App State / Widget State)**
+*Captura del panel de variables de FlutterFlow (App State o Page State) utilizado para almacenar la respuesta de un endpoint consumido y reflejarla dinámicamente en la interfaz.*
+![App State en FlutterFlow](./Img/frontend/flutterflow-app-state.png)
+
+*Figura: App State en FlutterFlow*
+
 <a name="7.2.2.6."></a>
 
 #### 7.2.2.6. Services Documentation Evidence for Sprint Review
@@ -3901,7 +3927,7 @@ Al ser el Sprint 2 la iteración de cierre del proyecto, el equipo mantuvo la mi
 
 A continuación, se presenta el registro de aportes acumulados en GitHub al cierre del Sprint 2, que certifica la participación activa de cada integrante durante el desarrollo completo del proyecto.
 
-![Team Collaboration Insights](./Img/contributors.png)
+![Team Collaboration Insights](./Img/contributors2.png)
 
 *Figura: Team Collaboration Insights*
 
