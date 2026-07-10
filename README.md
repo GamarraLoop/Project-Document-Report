@@ -3634,11 +3634,11 @@ A continuación, se presentan los commits más representativos realizados durant
 
 | Repositorio         | Branch | Commit Id     | Commit Message                                                                                                                   | Fecha      |
 | ------------------- | ------ | ------------- | -------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| https://github.com/GamarraLoop/GamarraLoop-backend | main   | `9e3bfd79f04e88b38908f15c8eb8e1f6bbcb6785` | feat: implement reservation, lot management, and textile classification modules with associated REST APIs and domain services    | 12/06/2026 |
-| https://github.com/GamarraLoop/GamarraLoop-backend | main   | `e1881cdd3859d0935e4834c06977f642f18b5111` | Add or update the Azure App Service build and deployment workflow config                                                         | 12/06/2026 |
-| https://github.com/GamarraLoop/GamarraLoop-backend | main   | `8cf1bf35515465190d5af2bfd357e3bed8aba173` | docs: update README with detailed technical stack, architectural breakdown, and bounded context specifications                   | 12/06/2026 |
-| https://github.com/GamarraLoop/GamarraLoop-backend | main   | `1372dc8977f2f87c04f408e2e47c1edcdef79944` | fix: change UserProfileController update from POST to PUT with @Valid                                                            | 03/06/2026 |
-| https://github.com/GamarraLoop/GamarraLoop-backend | main   | `fdbd19dde118a1dc9382371289ec09ac79748167` | fix: resolve critical audit issues - remove exposed credentials, fix duplicate @id mappings, add state guards, fix BC violations | 02/06/2026 |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | main   | `9e3bfd79f04e88b38908f15c8eb8e1f6bbcb6785` | feat: implement reservation, lot management, and textile classification modules with associated REST APIs and domain services    | 12/06/2026 |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | main   | `e1881cdd3859d0935e4834c06977f642f18b5111` | Add or update the Azure App Service build and deployment workflow config                                                         | 12/06/2026 |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | main   | `8cf1bf35515465190d5af2bfd357e3bed8aba173` | docs: update README with detailed technical stack, architectural breakdown, and bounded context specifications                   | 12/06/2026 |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | main   | `1372dc8977f2f87c04f408e2e47c1edcdef79944` | fix: change UserProfileController update from POST to PUT with @Valid                                                            | 03/06/2026 |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | main   | `fdbd19dde118a1dc9382371289ec09ac79748167` | fix: resolve critical audit issues - remove exposed credentials, fix duplicate @id mappings, add state guards, fix BC violations | 02/06/2026 |
 
 
 <a name="7.2.2.4."></a>
@@ -3678,7 +3678,7 @@ El objetivo de estas pruebas fue garantizar que las funcionalidades incorporadas
 
 | Repositorio         | Branch                   | Commit ID     | Commit Message                                                                                             | Fecha     |
 | ------------------- | ------------------------ | ------------- | ---------------------------------------------------------------------------------------------------------- | --------- |
-| https://github.com/GamarraLoop/GamarraLoop-backend | feature/testing-sprint-2 | *94e9d1f8e396374d778c19f4cdb817ae245ef4f0* | test: implement unit tests for Classification, Delivery, Notifications and Expiration bounded contexts | *05-07-26* |
+| [GamarraLoop-backend](https://github.com/GamarraLoop/GamarraLoop-backend) | feature/testing-sprint-2 | *94e9d1f8e396374d778c19f4cdb817ae245ef4f0* | test: implement unit tests for Classification, Delivery, Notifications and Expiration bounded contexts | *05-07-26* |
 
 A continuación se presenta la relación de las pruebas unitarias desarrolladas para los cuatro bounded contexts restantes en este Sprint:
 
@@ -4248,9 +4248,9 @@ Como parte de la validación del incremento desarrollado durante el Sprint 2, se
 
 Este material complementa la Sprint Review al permitir visualizar el funcionamiento integrado de los componentes desarrollados durante la iteración, incluyendo la interacción entre la aplicación móvil, los servicios backend y las integraciones con servicios externos como Google Cloud Vision.
 
-El video demostrativo del producto se encuentra disponible en el siguiente enlace. 
+El video demostrativo del producto se encuentra disponible en el siguiente enlace.
 
-Video About the Product: https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211g522_upc_edu_pe/IQD5ncN0QM2oTLrafJs_ELfGAVy3muBAza9IonjFkNoYFMQ?e=uzIKcW
+> **Video de demostración:** [Video About the Product de GamarraLoop](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211g522_upc_edu_pe/IQD5ncN0QM2oTLrafJs_ELfGAVy3muBAza9IonjFkNoYFMQ?e=uzIKcW)
 
 <img src="Img/gamarraloop-about-the-product-screenshot.png" alt="Gamarraloop video about the product screenshot" style="margin-bottom: 5px;" width="800"/><br>
 *Figura: Screenshot del video about the product de GamarraLoop.*
