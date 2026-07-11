@@ -76,7 +76,7 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 
 # Project Report Collaboration Insights
 
-URL del repositorio para el reporte del proyecto: https://github.com/GamarraLoop/Project-Document-Report
+URL del repositorio para el reporte del proyecto: <https://github.com/GamarraLoop/Project-Document-Report>
 
 **TB2:**
 
@@ -747,9 +747,9 @@ Reforzar la diferenciación de GamarraLoop en todos los canales de marketing, de
 
 ### 2.2.2. Registro de entrevistas
 
-#### Entrevistas Recopiladas
+#### Entrevistas Recopiladas:
 
-[Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQCG3I3xirNgRLlYRp8jvFvdAVxnozrRDNJhoAe3dCki3OE?e=isARYl&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+[Video de Entrevistas](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQCG3I3xirNgRLlYRp8jvFvdAZO8IUd30QGAzxoU_R_oBKc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=JkH7cU)
 
 #### Entrevistas al Segmento 1: Talleres de confección
 
@@ -764,7 +764,7 @@ Reforzar la diferenciación de GamarraLoop en todos los canales de marketing, de
 | **Distrito**      | Lince                                                                                                                                                                                                                                                                                                                                          |
 | **Evidencia**     | <img width="301" height="201" alt="Image" src="https://github.com/user-attachments/assets/31ec6e5c-a093-4842-a4ef-fbbd5eb8d613" /><br>*Figura: Entrevista 1*                                                                                                                                                                                                             |
 | **Timing**        | 05:28                                                                                                                                                                                                                                                                                                                                          |
-| **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQAN7gYHGcYlSLXuoJ9JBJjkAf3Zrbft26IoBjtFGzD699k?e=QFawgz&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| **Link**          | [Video de Entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201913495_upc_edu_pe/IQAN7gYHGcYlSLXuoJ9JBJjkAWE4fKpDABxqv3ZzcxLTzFY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=IOsAIE) |
 | **Resumen**       | Piero nos comenta que genera retazos de tela casi todos los días y los acumula hasta que ocupan mucho espacio. A veces los regala o los da a recicladores, pero coordinar es complicado. Dice que le gustaría algo simple para deshacerse de esos materiales rápido, sin perder tiempo.                                                        |
 
 #### Entrevista 2
@@ -4296,41 +4296,40 @@ En esta sección se presenta el video About-The-Team de GamarraLoop, el cual res
 
 # Referencia bibliográficas
 
-- Brown, S. (2024). The C4 Model for Visualising Software Architecture. https://c4model.com/
+- Brown, S. (2024). The C4 Model for Visualising Software Architecture. <https://c4model.com/>
 
-- Cockburn, A. (2005). Hexagonal Architecture. https://alistair.cockburn.us/hexagonal-architecture/
+- Cockburn, A. (2005). Hexagonal Architecture. <https://alistair.cockburn.us/hexagonal-architecture/>
 
-- Ellen MacArthur Foundation. (2017). _A new textiles economy: Redesigning fashion’s future_. https://ellenmacarthurfoundation.org/
+- Ellen MacArthur Foundation. (2017). _A new textiles economy: Redesigning fashion’s future_. <https://ellenmacarthurfoundation.org/>
 
-- European Environment Agency. (2019). _Textiles in Europe’s circular economy_. https://www.eea.europa.eu/
+- European Environment Agency. (2019). _Textiles in Europe’s circular economy_. <https://www.eea.europa.eu/>
 
-- FlutterFlow. (2026). *FlutterFlow Documentation*. https://docs.flutterflow.io/
+- FlutterFlow. (2026). *FlutterFlow Documentation*. <https://docs.flutterflow.io/>
 
-- Google Cloud. (2026). *Cloud Vision API Documentation*. https://cloud.google.com/vision/docs
+- Google Cloud. (2026). *Cloud Vision API Documentation*. <https://cloud.google.com/vision/docs>
 
-- Google Cloud. (2026). *Label Detection*. https://cloud.google.com/vision/docs/labels
+- Google Cloud. (2026). *Label Detection*. <https://cloud.google.com/vision/docs/labels>
 
-- Google Maps Platform. (2026). *Maps Platform Documentation*. https://developers.google.com/maps
+- Google Maps Platform. (2026). *Maps Platform Documentation*. <https://developers.google.com/maps>
 
-- Hibernate. (2026). Hibernate ORM Documentation. https://hibernate.org/orm/documentation/
+- Hibernate. (2026). Hibernate ORM Documentation. <https://hibernate.org/orm/documentation/>
 
-- OpenAPI Initiative. (2024). OpenAPI Specification. https://spec.openapis.org/oas/latest.html
+- OpenAPI Initiative. (2024). OpenAPI Specification. <https://spec.openapis.org/oas/latest.html>
 
-- PostgreSQL Global Development Group. (2026). PostgreSQL Documentation. https://www.postgresql.org/docs/
+- PostgreSQL Global Development Group. (2026). PostgreSQL Documentation. <https://www.postgresql.org/docs/>
 
-- Spring. (2026). Spring Boot Documentation. https://docs.spring.io/spring-boot/
+- Spring. (2026). Spring Boot Documentation. <https://docs.spring.io/spring-boot/>
 
-- Spring. (2026). Spring Data JPA Reference Documentation. https://docs.spring.io/spring-data/jpa/reference/
+- Spring. (2026). Spring Data JPA Reference Documentation. <https://docs.spring.io/spring-data/jpa/reference/>
 
-- Supabase. (2026). *Supabase Documentation*. https://supabase.com/docs
+- Supabase. (2026). *Supabase Documentation*. <https://supabase.com/docs>
 
-- United Nations Environment Programme. (2023). Sustainability and Circularity in the Textile Value Chain. https://www.unep.org/
+- United Nations Environment Programme. (2023). Sustainability and Circularity in the Textile Value Chain. <https://www.unep.org/>
 
 <a name="11."></a>
 
 # Anexos
 
-<div style="page-break-before: always;"></div>
 
 ## Anexo A: Historial completo de commits por repositorio de código
 
@@ -4370,7 +4369,6 @@ En las secciones 7.2.1.3 y 7.2.2.3 (Development Evidence for Sprint Review) se p
 | ----------- | ------ | --------- | --------------- | ----- |
 | [GamarraLoop-Acceptance-Tests-Backend](https://github.com/GamarraLoop/GamarraLoop-Acceptance-Tests-Backend) | main | `db8dda5` | test: add Gherkin feature files for acceptance test design | 08/06/2026 |
 
-<div style="page-break-before: always;"></div>
 
 ## Anexo B: GitHub Collaboration Insights por entrega (Reporte del Proyecto)
 
