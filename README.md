@@ -111,6 +111,7 @@ Los integrantes son:
 
 # Contenido
 
+[**Student Outcome.**](#0.1.) <br>
 1. [**Capítulo I: Introducción.**](#1.) <br>
    1.1. [Startup Profile.](#1.1.) <br>
    1.1.1. [Descripción del startup.](#1.1.1.)<br>
@@ -245,9 +246,17 @@ Los integrantes son:
 10. [**Referencias bibliográficas**](#10.) <br>
 11. [**Anexo**](#11.) <br>
 
+<a name="0.1."></a>
+
 # STUDENT OUTCOME
 
-**ABET – EAC - Student Outcome 3:** Capacidad de comunicarse efectivamente con un rango de audiencias.
+El curso contribuye al cumplimiento del Student Outcome ABET:
+
+**ABET – EAC – Student Outcome 3**
+
+**Criterio:** *Capacidad de comunicarse efectivamente con un rango de audiencias.*
+
+En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 3.
 
 | Criterio específico            | Acciones realizadas     | Conclusiones      |
 | :------------ | :---------------- | :--------------- |
@@ -257,6 +266,8 @@ Los integrantes son:
 <a name="1."></a>
 
 # Capítulo I: Introducción
+
+Como parte del enfoque de Arquitectura de Software en Tecnologías Emergentes, GamarraLoop incorpora explícitamente dos tecnologías emergentes en su solución: (1) **Inteligencia Artificial**, mediante la API de **Google Cloud Vision**, empleada para la clasificación automática del tipo de material y color a partir de una fotografía del lote textil; y (2) **desarrollo Low-Code**, mediante la plataforma **FlutterFlow**, empleada para la construcción ágil y visual de la aplicación móvil que consume los servicios REST del backend.
 
 <a name="1.1."></a>
 
@@ -1849,6 +1860,8 @@ La **distribución entre tres proveedores** (GCP + Supabase + GitHub Pages) mate
 
 ## 5.1. Bounded Context: Textile Classification
 
+> **Tecnología Emergente #1 — Inteligencia Artificial:** este Bounded Context es el punto central de integración de la primera de las dos tecnologías emergentes empleadas en GamarraLoop, mediante el servicio de Computer Vision **Google Cloud Vision**.
+
 El Bounded Context **Textile Classification** es el núcleo diferenciador de la plataforma Gamarra Loop. Su única responsabilidad es recibir una imagen de un lote textil, delegar el análisis visual a un servicio externo de Inteligencia Artificial (Google Cloud Vision), transformar el resultado crudo en un conjunto de etiquetas de dominio comprensibles para el negocio y, finalmente, notificar al Bounded Context de Publicación de Lotes que la clasificación está lista para revisión.
 
 Las clases del contexto se distribuyen en cuatro capas siguiendo el patrón **Hexagonal Port + Adapter** adoptado en la decisión arquitectónica **D07** (sección 4.1.4.). A continuación, se detalla el diccionario completo de clases para cada capa.
@@ -3394,6 +3407,8 @@ Los servicios desarrollados fueron expuestos mediante una API RESTful construida
 
 **Frontend**
 
+> **Tecnología Emergente #2 — Desarrollo Low-Code:** el frontend de GamarraLoop se construye íntegramente sobre la segunda de las dos tecnologías emergentes empleadas en el proyecto, la plataforma low-code **FlutterFlow**.
+
 Para el desarrollo del frontend de GamarraLoop se empleó la plataforma low-code *FlutterFlow*, permitiendo acelerar la construcción de la aplicación móvil mediante un enfoque visual basado en componentes, flujos de navegación e integración con servicios externos. La interfaz fue diseñada siguiendo la estructura de los bounded contexts definidos en la arquitectura del sistema, incluyendo Profiles, Lots, Classifications, Reservations, Pick Up and Delivery, y Notifications.
 
 Durante el Sprint 1 se implementaron las principales pantallas asociadas a los procesos de autenticación, gestión de perfiles, publicación y consulta de lotes textiles, reservas de materiales y coordinación de recojos. Asimismo, se definió la navegación parcial de la aplicación mediante un storyboard que representa las relaciones entre las distintas vistas y los flujos de interacción del usuario.
@@ -4266,7 +4281,7 @@ El video demostrativo del producto se encuentra disponible en el siguiente enlac
 
 # Conclusiones
 
-- GamarraLoop demuestra, de punta a punta, cómo el uso de tecnologías móviles junto con tecnologías emergentes (inteligencia artificial para clasificación textil) puede promover la economía circular en Gamarra, optimizando la gestión de residuos textiles y generando oportunidades de reutilización concretas entre talleres confeccionistas y artesanos recicladores.
+- GamarraLoop demuestra, de punta a punta, cómo el uso de tecnologías móviles junto con las dos tecnologías emergentes adoptadas en el proyecto —**Inteligencia Artificial** (Google Cloud Vision, para la clasificación automática de textiles) y **desarrollo Low-Code** (FlutterFlow, para la construcción de la aplicación móvil)— puede promover la economía circular en Gamarra, optimizando la gestión de residuos textiles y generando oportunidades de reutilización concretas entre talleres confeccionistas y artesanos recicladores.
 
 - El análisis de User Personas, User Journey Maps, Empathy Maps y entrevistas de need-finding permitió comprender las necesidades reales de los usuarios desde etapas tempranas, traduciéndose en User Stories y un Product Backlog priorizado por valor de negocio que mantuvo trazabilidad hasta la implementación final.
 
