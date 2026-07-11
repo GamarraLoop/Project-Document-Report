@@ -4289,7 +4289,7 @@ En esta sección se presenta el video About-The-Team de GamarraLoop, el cual res
 <img src="Img/PENDIENTE-about-the-team-screenshot.png" alt="Gamarraloop video about the team screenshot" style="margin-bottom: 5px;" width="800"/><br>
 *Figura: Screenshot del video about the team de GamarraLoop.*
 
-> **Video de demostración (Microsoft Stream):** [Video About the Team de GamarraLoop](PENDIENTE-URL-MICROSOFT-STREAM)
+> **Video de demostración (Microsoft Stream):** [Video About the Team de GamarraLoop](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221c186_upc_edu_pe/IQA9AQgETfftTLPx4nQDP9w5AcWN5ixeL67F_epQtvbFI4M?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=la5RXy)
 
 
 <a name="10."></a>
